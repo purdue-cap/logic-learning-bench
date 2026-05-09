@@ -1,6 +1,6 @@
 (require "../theories/ctl-all-e-5b426fe2.sl")
-(require "common/models/peterson2.sl")
-(require "common/models/peterson2_m6.sl")
+(require "../common/models/peterson2.sl")
+(require "../common/models/peterson2_m6.sl")
 
 (synth-fun phi () CTL)
 

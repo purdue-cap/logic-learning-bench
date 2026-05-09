@@ -1,8 +1,8 @@
 (require "../theories/ctl-full-4ff7af62.sl")
-(require "common/models/small.sl")
-(require "common/models/small_m3.sl")
-(require "common/models/small_m4.sl")
-(require "common/models/small_m5.sl")
+(require "../common/models/small.sl")
+(require "../common/models/small_m3.sl")
+(require "../common/models/small_m4.sl")
+(require "../common/models/small_m5.sl")
 
 (synth-fun phi () CTL)
 

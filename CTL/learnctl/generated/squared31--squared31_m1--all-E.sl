@@ -1,6 +1,6 @@
 (require "../theories/ctl-all-e-06bdbfd0.sl")
-(require "common/models/squared31.sl")
-(require "common/models/squared31_m1.sl")
+(require "../common/models/squared31.sl")
+(require "../common/models/squared31_m1.sl")
 
 (synth-fun phi () CTL)
 

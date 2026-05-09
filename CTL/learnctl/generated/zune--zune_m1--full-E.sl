@@ -1,6 +1,6 @@
 (require "../theories/ctl-full-e-97925d19.sl")
-(require "common/models/zune.sl")
-(require "common/models/zune_m1.sl")
+(require "../common/models/zune.sl")
+(require "../common/models/zune_m1.sl")
 
 (synth-fun phi () CTL)
 

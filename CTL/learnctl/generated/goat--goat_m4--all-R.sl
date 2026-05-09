@@ -1,6 +1,6 @@
 (require "../theories/ctl-all-00dc3888.sl")
-(require "common/models/goat.sl")
-(require "common/models/goat_m4.sl")
+(require "../common/models/goat.sl")
+(require "../common/models/goat_m4.sl")
 
 (synth-fun phi () CTL)
 

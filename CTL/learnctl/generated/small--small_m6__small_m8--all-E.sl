@@ -1,7 +1,7 @@
 (require "../theories/ctl-all-e-7200bbf4.sl")
-(require "common/models/small.sl")
-(require "common/models/small_m6.sl")
-(require "common/models/small_m8.sl")
+(require "../common/models/small.sl")
+(require "../common/models/small_m6.sl")
+(require "../common/models/small_m8.sl")
 
 (synth-fun phi () CTL)
 

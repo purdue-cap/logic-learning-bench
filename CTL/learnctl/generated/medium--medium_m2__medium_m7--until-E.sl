@@ -1,7 +1,7 @@
 (require "../theories/ctl-until-e-cb3f35bf.sl")
-(require "common/models/medium.sl")
-(require "common/models/medium_m2.sl")
-(require "common/models/medium_m7.sl")
+(require "../common/models/medium.sl")
+(require "../common/models/medium_m2.sl")
+(require "../common/models/medium_m7.sl")
 
 (synth-fun phi () CTL)
 

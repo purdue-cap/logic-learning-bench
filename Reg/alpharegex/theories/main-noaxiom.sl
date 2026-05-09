@@ -1,7 +1,5 @@
-(provide Pos zero one RegLan ReAsp RegLan.Sem)
-(declare-sort Pos 0)
-(declare-fun zero (Pos) Bool)
-(declare-fun one (Pos) Bool)
+(provide RegLan ReAsp RegLan.Sem)
+(require "../signatures/main.sl")
 
 (declare-term-types
  ((RegLan 0))

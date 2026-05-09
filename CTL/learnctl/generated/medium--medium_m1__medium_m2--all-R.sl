@@ -1,7 +1,7 @@
 (require "../theories/ctl-all-bb52f665.sl")
-(require "common/models/medium.sl")
-(require "common/models/medium_m1.sl")
-(require "common/models/medium_m2.sl")
+(require "../common/models/medium.sl")
+(require "../common/models/medium_m1.sl")
+(require "../common/models/medium_m2.sl")
 
 (synth-fun phi () CTL)
 

@@ -1,6 +1,6 @@
 (require "../theories/ctl-until-e-db5b3cf0.sl")
-(require "common/models/goat.sl")
-(require "common/models/goat_m5.sl")
+(require "../common/models/goat.sl")
+(require "../common/models/goat_m5.sl")
 
 (synth-fun phi () CTL)
 

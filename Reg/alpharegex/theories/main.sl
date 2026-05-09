@@ -1,7 +1,5 @@
-(provide Pos zero one RegLan ReAsp RegLan.Sem)
-(declare-sort Pos 0)
-(declare-fun zero (Pos) Bool)
-(declare-fun one (Pos) Bool)
+(provide RegLan ReAsp RegLan.Sem)
+(require "../signatures/main.sl")
 
 (declare-term-types
  ((RegLan 0))
@@ -12,13 +10,13 @@
    (re.union RegLan RegLan)
    (re.* RegLan))))
 
-; Canonical algebraic axioms for pruning during synthesis.
+; Canonical algebraic axioms for pruning.
 (declare-axiom (= (re.union x y) (re.union y x)))
 (declare-axiom (= (re.union (re.union x y) z) (re.union x (re.union y z))))
 (declare-axiom (= (re.union x x) x))
 (declare-axiom (= (re.++ (re.++ x y) z) (re.++ x (re.++ y z))))
 
-; Useful regex-specific simplifications used by AlphaRegex normalization.
+; Regex simplifications from AlphaRegex-style normalization.
 (declare-axiom (= (re.* (re.* x)) (re.* x)))
 (declare-axiom (= (re.opt (re.opt x)) (re.opt x)))
 (declare-axiom (= (re.opt (re.* x)) (re.* x)))
