@@ -3,7 +3,7 @@
 
 (declare-term-types
  ((Formula0 0) (Formula.x0.epoch 0) (Formula.x0.node 0) (Formula.x1.epoch 0) (Formula.x1.node 0) (Formula.x2.epoch 0) (Formula.x2.node 0) (Formula.x0.epoch.x1.epoch 0) (Formula.x0.epoch.x1.node 0) (Formula.x0.node.x1.epoch 0) (Formula.x0.node.x1.node 0) (Formula.x0.epoch.x2.epoch 0) (Formula.x0.epoch.x2.node 0) (Formula.x0.node.x2.epoch 0) (Formula.x0.node.x2.node 0) (Formula.x1.epoch.x2.epoch 0) (Formula.x1.epoch.x2.node 0) (Formula.x1.node.x2.epoch 0) (Formula.x1.node.x2.node 0) (Formula.x0.epoch.x1.epoch.x2.epoch 0) (Formula.x0.epoch.x1.epoch.x2.node 0) (Formula.x0.epoch.x1.node.x2.epoch 0) (Formula.x0.epoch.x1.node.x2.node 0) (Formula.x0.node.x1.epoch.x2.epoch 0) (Formula.x0.node.x1.epoch.x2.node 0) (Formula.x0.node.x1.node.x2.epoch 0) (Formula.x0.node.x1.node.x2.node 0) (Term.0.epoch 0) (Term.x0.epoch.epoch 0) (Term.x0.node.epoch 0) (Term.x0.node.node 0) (Term.x1.epoch.epoch 0) (Term.x1.node.epoch 0) (Term.x1.node.node 0) (Term.x2.epoch.epoch 0) (Term.x2.node.epoch 0) (Term.x2.node.node 0) (Term.x0.epoch.x1.epoch.epoch 0) (Term.x0.epoch.x1.node.epoch 0) (Term.x0.epoch.x1.node.node 0) (Term.x0.node.x1.epoch.epoch 0) (Term.x0.node.x1.epoch.node 0) (Term.x0.node.x1.node.epoch 0) (Term.x0.node.x1.node.node 0) (Term.x0.epoch.x2.epoch.epoch 0) (Term.x0.epoch.x2.node.epoch 0) (Term.x0.epoch.x2.node.node 0) (Term.x0.node.x2.epoch.epoch 0) (Term.x0.node.x2.epoch.node 0) (Term.x0.node.x2.node.epoch 0) (Term.x0.node.x2.node.node 0) (Term.x1.epoch.x2.epoch.epoch 0) (Term.x1.epoch.x2.node.epoch 0) (Term.x1.epoch.x2.node.node 0) (Term.x1.node.x2.epoch.epoch 0) (Term.x1.node.x2.epoch.node 0) (Term.x1.node.x2.node.epoch 0) (Term.x1.node.x2.node.node 0) (Term.x0.epoch.x1.epoch.x2.epoch.epoch 0) (Term.x0.epoch.x1.epoch.x2.node.epoch 0) (Term.x0.epoch.x1.epoch.x2.node.node 0) (Term.x0.epoch.x1.node.x2.epoch.epoch 0) (Term.x0.epoch.x1.node.x2.epoch.node 0) (Term.x0.epoch.x1.node.x2.node.epoch 0) (Term.x0.epoch.x1.node.x2.node.node 0) (Term.x0.node.x1.epoch.x2.epoch.epoch 0) (Term.x0.node.x1.epoch.x2.epoch.node 0) (Term.x0.node.x1.epoch.x2.node.epoch 0) (Term.x0.node.x1.epoch.x2.node.node 0) (Term.x0.node.x1.node.x2.epoch.epoch 0) (Term.x0.node.x1.node.x2.epoch.node 0) (Term.x0.node.x1.node.x2.node.epoch 0) (Term.x0.node.x1.node.x2.node.node 0))
-  ((fol.0.true)
+ (((fol.0.true)
    (fol.0.false)
    (fol.0.not Formula0)
    (fol.0.and Formula0 Formula0)
@@ -592,35 +592,29 @@
    (fol.ctx-x0-node-x1-node-x2-node.atom.le Term.x0.node.x1.node.x2.node.epoch Term.x0.node.x1.node.x2.node.epoch)
    (fol.ctx-x0-node-x1-node-x2-node.atom.locked Term.x0.node.x1.node.x2.node.epoch Term.x0.node.x1.node.x2.node.node)
    (fol.ctx-x0-node-x1-node-x2-node.atom.transfer Term.x0.node.x1.node.x2.node.epoch Term.x0.node.x1.node.x2.node.node))
-  (
   ((fol.0.term.zero))
   ((fol.ctx-x0-epoch.var.x0.epoch)
    (fol.ctx-x0-epoch.term.zero))
   ((fol.ctx-x0-node.term.zero)
    (fol.ctx-x0-node.term.ep Term.x0.node.node))
-  (
   ((fol.ctx-x0-node.var.x0.node))
   ((fol.ctx-x1-epoch.var.x1.epoch)
    (fol.ctx-x1-epoch.term.zero))
   ((fol.ctx-x1-node.term.zero)
    (fol.ctx-x1-node.term.ep Term.x1.node.node))
-  (
   ((fol.ctx-x1-node.var.x1.node))
   ((fol.ctx-x2-epoch.var.x2.epoch)
    (fol.ctx-x2-epoch.term.zero))
   ((fol.ctx-x2-node.term.zero)
    (fol.ctx-x2-node.term.ep Term.x2.node.node))
-  (
   ((fol.ctx-x2-node.var.x2.node))
   ((fol.ctx-x0-epoch-x1-epoch.var.x0.epoch) (fol.ctx-x0-epoch-x1-epoch.var.x1.epoch)
    (fol.ctx-x0-epoch-x1-epoch.term.zero))
   ((fol.ctx-x0-epoch-x1-node.var.x0.epoch) (fol.ctx-x0-epoch-x1-node.term.zero)
    (fol.ctx-x0-epoch-x1-node.term.ep Term.x0.epoch.x1.node.node))
-  (
   ((fol.ctx-x0-epoch-x1-node.var.x1.node))
   ((fol.ctx-x0-node-x1-epoch.var.x1.epoch) (fol.ctx-x0-node-x1-epoch.term.zero)
    (fol.ctx-x0-node-x1-epoch.term.ep Term.x0.node.x1.epoch.node))
-  (
   ((fol.ctx-x0-node-x1-epoch.var.x0.node))
   ((fol.ctx-x0-node-x1-node.term.zero)
    (fol.ctx-x0-node-x1-node.term.ep Term.x0.node.x1.node.node))
@@ -630,11 +624,9 @@
    (fol.ctx-x0-epoch-x2-epoch.term.zero))
   ((fol.ctx-x0-epoch-x2-node.var.x0.epoch) (fol.ctx-x0-epoch-x2-node.term.zero)
    (fol.ctx-x0-epoch-x2-node.term.ep Term.x0.epoch.x2.node.node))
-  (
   ((fol.ctx-x0-epoch-x2-node.var.x2.node))
   ((fol.ctx-x0-node-x2-epoch.var.x2.epoch) (fol.ctx-x0-node-x2-epoch.term.zero)
    (fol.ctx-x0-node-x2-epoch.term.ep Term.x0.node.x2.epoch.node))
-  (
   ((fol.ctx-x0-node-x2-epoch.var.x0.node))
   ((fol.ctx-x0-node-x2-node.term.zero)
    (fol.ctx-x0-node-x2-node.term.ep Term.x0.node.x2.node.node))
@@ -644,11 +636,9 @@
    (fol.ctx-x1-epoch-x2-epoch.term.zero))
   ((fol.ctx-x1-epoch-x2-node.var.x1.epoch) (fol.ctx-x1-epoch-x2-node.term.zero)
    (fol.ctx-x1-epoch-x2-node.term.ep Term.x1.epoch.x2.node.node))
-  (
   ((fol.ctx-x1-epoch-x2-node.var.x2.node))
   ((fol.ctx-x1-node-x2-epoch.var.x2.epoch) (fol.ctx-x1-node-x2-epoch.term.zero)
    (fol.ctx-x1-node-x2-epoch.term.ep Term.x1.node.x2.epoch.node))
-  (
   ((fol.ctx-x1-node-x2-epoch.var.x1.node))
   ((fol.ctx-x1-node-x2-node.term.zero)
    (fol.ctx-x1-node-x2-node.term.ep Term.x1.node.x2.node.node))
@@ -658,11 +648,9 @@
    (fol.ctx-x0-epoch-x1-epoch-x2-epoch.term.zero))
   ((fol.ctx-x0-epoch-x1-epoch-x2-node.var.x0.epoch) (fol.ctx-x0-epoch-x1-epoch-x2-node.var.x1.epoch) (fol.ctx-x0-epoch-x1-epoch-x2-node.term.zero)
    (fol.ctx-x0-epoch-x1-epoch-x2-node.term.ep Term.x0.epoch.x1.epoch.x2.node.node))
-  (
   ((fol.ctx-x0-epoch-x1-epoch-x2-node.var.x2.node))
   ((fol.ctx-x0-epoch-x1-node-x2-epoch.var.x0.epoch) (fol.ctx-x0-epoch-x1-node-x2-epoch.var.x2.epoch) (fol.ctx-x0-epoch-x1-node-x2-epoch.term.zero)
    (fol.ctx-x0-epoch-x1-node-x2-epoch.term.ep Term.x0.epoch.x1.node.x2.epoch.node))
-  (
   ((fol.ctx-x0-epoch-x1-node-x2-epoch.var.x1.node))
   ((fol.ctx-x0-epoch-x1-node-x2-node.var.x0.epoch) (fol.ctx-x0-epoch-x1-node-x2-node.term.zero)
    (fol.ctx-x0-epoch-x1-node-x2-node.term.ep Term.x0.epoch.x1.node.x2.node.node))
@@ -670,7 +658,6 @@
    (fol.ctx-x0-epoch-x1-node-x2-node.var.x2.node))
   ((fol.ctx-x0-node-x1-epoch-x2-epoch.var.x1.epoch) (fol.ctx-x0-node-x1-epoch-x2-epoch.var.x2.epoch) (fol.ctx-x0-node-x1-epoch-x2-epoch.term.zero)
    (fol.ctx-x0-node-x1-epoch-x2-epoch.term.ep Term.x0.node.x1.epoch.x2.epoch.node))
-  (
   ((fol.ctx-x0-node-x1-epoch-x2-epoch.var.x0.node))
   ((fol.ctx-x0-node-x1-epoch-x2-node.var.x1.epoch) (fol.ctx-x0-node-x1-epoch-x2-node.term.zero)
    (fol.ctx-x0-node-x1-epoch-x2-node.term.ep Term.x0.node.x1.epoch.x2.node.node))
@@ -683,7 +670,7 @@
   ((fol.ctx-x0-node-x1-node-x2-node.term.zero)
    (fol.ctx-x0-node-x1-node-x2-node.term.ep Term.x0.node.x1.node.x2.node.node))
   ((fol.ctx-x0-node-x1-node-x2-node.var.x0.node) (fol.ctx-x0-node-x1-node-x2-node.var.x1.node)
-   (fol.ctx-x0-node-x1-node-x2-node.var.x2.node))
+   (fol.ctx-x0-node-x1-node-x2-node.var.x2.node)))
 )
 
 (define-finite FoAsp0 (record (model Model)))

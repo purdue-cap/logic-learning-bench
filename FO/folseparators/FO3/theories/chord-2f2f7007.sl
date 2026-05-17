@@ -3,7 +3,7 @@
 
 (declare-term-types
  ((Formula0 0) (Formula.x0.chord.node 0) (Formula.x1.chord.node 0) (Formula.x2.chord.node 0) (Formula.x0.chord.node.x1.chord.node 0) (Formula.x0.chord.node.x2.chord.node 0) (Formula.x1.chord.node.x2.chord.node 0) (Formula.x0.chord.node.x1.chord.node.x2.chord.node 0) (Term.0.chord.node 0) (Term.x0.chord.node.chord.node 0) (Term.x1.chord.node.chord.node 0) (Term.x2.chord.node.chord.node 0) (Term.x0.chord.node.x1.chord.node.chord.node 0) (Term.x0.chord.node.x2.chord.node.chord.node 0) (Term.x1.chord.node.x2.chord.node.chord.node 0) (Term.x0.chord.node.x1.chord.node.x2.chord.node.chord.node 0))
-  ((fol.0.true)
+ (((fol.0.true)
    (fol.0.false)
    (fol.0.not Formula0)
    (fol.0.and Formula0 Formula0)
@@ -179,7 +179,6 @@
    (fol.ctx-x0-chord.node-x1-chord.node-x2-chord.node.atom.chord.scheduled_stabilize Term.x0.chord.node.x1.chord.node.x2.chord.node.chord.node Term.x0.chord.node.x1.chord.node.x2.chord.node.chord.node)
    (fol.ctx-x0-chord.node-x1-chord.node-x2-chord.node.atom.chord.stable )
    (fol.ctx-x0-chord.node-x1-chord.node-x2-chord.node.atom.chord.started ))
-  (
   ((fol.0.term.chord.tp1.n0))
   ((fol.ctx-x0-chord.node.var.x0.chord.node)
    (fol.ctx-x0-chord.node.term.chord.tp1.n0))
@@ -194,7 +193,7 @@
   ((fol.ctx-x1-chord.node-x2-chord.node.var.x1.chord.node) (fol.ctx-x1-chord.node-x2-chord.node.var.x2.chord.node)
    (fol.ctx-x1-chord.node-x2-chord.node.term.chord.tp1.n0))
   ((fol.ctx-x0-chord.node-x1-chord.node-x2-chord.node.var.x0.chord.node) (fol.ctx-x0-chord.node-x1-chord.node-x2-chord.node.var.x1.chord.node) (fol.ctx-x0-chord.node-x1-chord.node-x2-chord.node.var.x2.chord.node)
-   (fol.ctx-x0-chord.node-x1-chord.node-x2-chord.node.term.chord.tp1.n0))
+   (fol.ctx-x0-chord.node-x1-chord.node-x2-chord.node.term.chord.tp1.n0)))
 )
 
 (define-finite FoAsp0 (record (model Model)))

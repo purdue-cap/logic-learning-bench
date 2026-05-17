@@ -3,7 +3,7 @@
 
 (declare-term-types
  ((Formula0 0) (Formula.x0.abp.ack_msg_t 0) (Formula.x0.abp.data_msg_t 0) (Formula.x0.abp.index_t 0) (Formula.x0.abp.value 0) (Formula.x1.abp.ack_msg_t 0) (Formula.x1.abp.data_msg_t 0) (Formula.x1.abp.index_t 0) (Formula.x1.abp.value 0) (Formula.x2.abp.ack_msg_t 0) (Formula.x2.abp.data_msg_t 0) (Formula.x2.abp.index_t 0) (Formula.x2.abp.value 0) (Formula.x0.abp.ack_msg_t.x1.abp.ack_msg_t 0) (Formula.x0.abp.ack_msg_t.x1.abp.data_msg_t 0) (Formula.x0.abp.ack_msg_t.x1.abp.index_t 0) (Formula.x0.abp.ack_msg_t.x1.abp.value 0) (Formula.x0.abp.data_msg_t.x1.abp.ack_msg_t 0) (Formula.x0.abp.data_msg_t.x1.abp.data_msg_t 0) (Formula.x0.abp.data_msg_t.x1.abp.index_t 0) (Formula.x0.abp.data_msg_t.x1.abp.value 0) (Formula.x0.abp.index_t.x1.abp.ack_msg_t 0) (Formula.x0.abp.index_t.x1.abp.data_msg_t 0) (Formula.x0.abp.index_t.x1.abp.index_t 0) (Formula.x0.abp.index_t.x1.abp.value 0) (Formula.x0.abp.value.x1.abp.ack_msg_t 0) (Formula.x0.abp.value.x1.abp.data_msg_t 0) (Formula.x0.abp.value.x1.abp.index_t 0) (Formula.x0.abp.value.x1.abp.value 0) (Formula.x0.abp.ack_msg_t.x2.abp.ack_msg_t 0) (Formula.x0.abp.ack_msg_t.x2.abp.data_msg_t 0) (Formula.x0.abp.ack_msg_t.x2.abp.index_t 0) (Formula.x0.abp.ack_msg_t.x2.abp.value 0) (Formula.x0.abp.data_msg_t.x2.abp.ack_msg_t 0) (Formula.x0.abp.data_msg_t.x2.abp.data_msg_t 0) (Formula.x0.abp.data_msg_t.x2.abp.index_t 0) (Formula.x0.abp.data_msg_t.x2.abp.value 0) (Formula.x0.abp.index_t.x2.abp.ack_msg_t 0) (Formula.x0.abp.index_t.x2.abp.data_msg_t 0) (Formula.x0.abp.index_t.x2.abp.index_t 0) (Formula.x0.abp.index_t.x2.abp.value 0) (Formula.x0.abp.value.x2.abp.ack_msg_t 0) (Formula.x0.abp.value.x2.abp.data_msg_t 0) (Formula.x0.abp.value.x2.abp.index_t 0) (Formula.x0.abp.value.x2.abp.value 0) (Formula.x1.abp.ack_msg_t.x2.abp.ack_msg_t 0) (Formula.x1.abp.ack_msg_t.x2.abp.data_msg_t 0) (Formula.x1.abp.ack_msg_t.x2.abp.index_t 0) (Formula.x1.abp.ack_msg_t.x2.abp.value 0) (Formula.x1.abp.data_msg_t.x2.abp.ack_msg_t 0) (Formula.x1.abp.data_msg_t.x2.abp.data_msg_t 0) (Formula.x1.abp.data_msg_t.x2.abp.index_t 0) (Formula.x1.abp.data_msg_t.x2.abp.value 0) (Formula.x1.abp.index_t.x2.abp.ack_msg_t 0) (Formula.x1.abp.index_t.x2.abp.data_msg_t 0) (Formula.x1.abp.index_t.x2.abp.index_t 0) (Formula.x1.abp.index_t.x2.abp.value 0) (Formula.x1.abp.value.x2.abp.ack_msg_t 0) (Formula.x1.abp.value.x2.abp.data_msg_t 0) (Formula.x1.abp.value.x2.abp.index_t 0) (Formula.x1.abp.value.x2.abp.value 0) (Formula.x0.abp.ack_msg_t.x1.abp.ack_msg_t.x2.abp.ack_msg_t 0) (Formula.x0.abp.ack_msg_t.x1.abp.ack_msg_t.x2.abp.data_msg_t 0) (Formula.x0.abp.ack_msg_t.x1.abp.ack_msg_t.x2.abp.index_t 0) (Formula.x0.abp.ack_msg_t.x1.abp.ack_msg_t.x2.abp.value 0) (Formula.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.ack_msg_t 0) (Formula.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.data_msg_t 0) (Formula.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.index_t 0) (Formula.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.value 0) (Formula.x0.abp.ack_msg_t.x1.abp.index_t.x2.abp.ack_msg_t 0) (Formula.x0.abp.ack_msg_t.x1.abp.index_t.x2.abp.data_msg_t 0) (Formula.x0.abp.ack_msg_t.x1.abp.index_t.x2.abp.index_t 0) (Formula.x0.abp.ack_msg_t.x1.abp.index_t.x2.abp.value 0) (Formula.x0.abp.ack_msg_t.x1.abp.value.x2.abp.ack_msg_t 0) (Formula.x0.abp.ack_msg_t.x1.abp.value.x2.abp.data_msg_t 0) (Formula.x0.abp.ack_msg_t.x1.abp.value.x2.abp.index_t 0) (Formula.x0.abp.ack_msg_t.x1.abp.value.x2.abp.value 0) (Formula.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.ack_msg_t 0) (Formula.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.data_msg_t 0) (Formula.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.index_t 0) (Formula.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.value 0) (Formula.x0.abp.data_msg_t.x1.abp.data_msg_t.x2.abp.ack_msg_t 0) (Formula.x0.abp.data_msg_t.x1.abp.data_msg_t.x2.abp.data_msg_t 0) (Formula.x0.abp.data_msg_t.x1.abp.data_msg_t.x2.abp.index_t 0) (Formula.x0.abp.data_msg_t.x1.abp.data_msg_t.x2.abp.value 0) (Formula.x0.abp.data_msg_t.x1.abp.index_t.x2.abp.ack_msg_t 0) (Formula.x0.abp.data_msg_t.x1.abp.index_t.x2.abp.data_msg_t 0) (Formula.x0.abp.data_msg_t.x1.abp.index_t.x2.abp.index_t 0) (Formula.x0.abp.data_msg_t.x1.abp.index_t.x2.abp.value 0) (Formula.x0.abp.data_msg_t.x1.abp.value.x2.abp.ack_msg_t 0) (Formula.x0.abp.data_msg_t.x1.abp.value.x2.abp.data_msg_t 0) (Formula.x0.abp.data_msg_t.x1.abp.value.x2.abp.index_t 0) (Formula.x0.abp.data_msg_t.x1.abp.value.x2.abp.value 0) (Formula.x0.abp.index_t.x1.abp.ack_msg_t.x2.abp.ack_msg_t 0) (Formula.x0.abp.index_t.x1.abp.ack_msg_t.x2.abp.data_msg_t 0) (Formula.x0.abp.index_t.x1.abp.ack_msg_t.x2.abp.index_t 0) (Formula.x0.abp.index_t.x1.abp.ack_msg_t.x2.abp.value 0) (Formula.x0.abp.index_t.x1.abp.data_msg_t.x2.abp.ack_msg_t 0) (Formula.x0.abp.index_t.x1.abp.data_msg_t.x2.abp.data_msg_t 0) (Formula.x0.abp.index_t.x1.abp.data_msg_t.x2.abp.index_t 0) (Formula.x0.abp.index_t.x1.abp.data_msg_t.x2.abp.value 0) (Formula.x0.abp.index_t.x1.abp.index_t.x2.abp.ack_msg_t 0) (Formula.x0.abp.index_t.x1.abp.index_t.x2.abp.data_msg_t 0) (Formula.x0.abp.index_t.x1.abp.index_t.x2.abp.index_t 0) (Formula.x0.abp.index_t.x1.abp.index_t.x2.abp.value 0) (Formula.x0.abp.index_t.x1.abp.value.x2.abp.ack_msg_t 0) (Formula.x0.abp.index_t.x1.abp.value.x2.abp.data_msg_t 0) (Formula.x0.abp.index_t.x1.abp.value.x2.abp.index_t 0) (Formula.x0.abp.index_t.x1.abp.value.x2.abp.value 0) (Formula.x0.abp.value.x1.abp.ack_msg_t.x2.abp.ack_msg_t 0) (Formula.x0.abp.value.x1.abp.ack_msg_t.x2.abp.data_msg_t 0) (Formula.x0.abp.value.x1.abp.ack_msg_t.x2.abp.index_t 0) (Formula.x0.abp.value.x1.abp.ack_msg_t.x2.abp.value 0) (Formula.x0.abp.value.x1.abp.data_msg_t.x2.abp.ack_msg_t 0) (Formula.x0.abp.value.x1.abp.data_msg_t.x2.abp.data_msg_t 0) (Formula.x0.abp.value.x1.abp.data_msg_t.x2.abp.index_t 0) (Formula.x0.abp.value.x1.abp.data_msg_t.x2.abp.value 0) (Formula.x0.abp.value.x1.abp.index_t.x2.abp.ack_msg_t 0) (Formula.x0.abp.value.x1.abp.index_t.x2.abp.data_msg_t 0) (Formula.x0.abp.value.x1.abp.index_t.x2.abp.index_t 0) (Formula.x0.abp.value.x1.abp.index_t.x2.abp.value 0) (Formula.x0.abp.value.x1.abp.value.x2.abp.ack_msg_t 0) (Formula.x0.abp.value.x1.abp.value.x2.abp.data_msg_t 0) (Formula.x0.abp.value.x1.abp.value.x2.abp.index_t 0) (Formula.x0.abp.value.x1.abp.value.x2.abp.value 0) (Term.0.abp.index_t 0) (Term.0.abp.value 0) (Term.x0.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x0.abp.ack_msg_t.abp.index_t 0) (Term.x0.abp.ack_msg_t.abp.value 0) (Term.x0.abp.data_msg_t.abp.data_msg_t 0) (Term.x0.abp.data_msg_t.abp.index_t 0) (Term.x0.abp.data_msg_t.abp.value 0) (Term.x0.abp.index_t.abp.index_t 0) (Term.x0.abp.index_t.abp.value 0) (Term.x0.abp.value.abp.index_t 0) (Term.x0.abp.value.abp.value 0) (Term.x1.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x1.abp.ack_msg_t.abp.index_t 0) (Term.x1.abp.ack_msg_t.abp.value 0) (Term.x1.abp.data_msg_t.abp.data_msg_t 0) (Term.x1.abp.data_msg_t.abp.index_t 0) (Term.x1.abp.data_msg_t.abp.value 0) (Term.x1.abp.index_t.abp.index_t 0) (Term.x1.abp.index_t.abp.value 0) (Term.x1.abp.value.abp.index_t 0) (Term.x1.abp.value.abp.value 0) (Term.x2.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x2.abp.ack_msg_t.abp.index_t 0) (Term.x2.abp.ack_msg_t.abp.value 0) (Term.x2.abp.data_msg_t.abp.data_msg_t 0) (Term.x2.abp.data_msg_t.abp.index_t 0) (Term.x2.abp.data_msg_t.abp.value 0) (Term.x2.abp.index_t.abp.index_t 0) (Term.x2.abp.index_t.abp.value 0) (Term.x2.abp.value.abp.index_t 0) (Term.x2.abp.value.abp.value 0) (Term.x0.abp.ack_msg_t.x1.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x0.abp.ack_msg_t.x1.abp.ack_msg_t.abp.index_t 0) (Term.x0.abp.ack_msg_t.x1.abp.ack_msg_t.abp.value 0) (Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.abp.ack_msg_t 0) (Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.abp.data_msg_t 0) (Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.abp.index_t 0) (Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.abp.value 0) (Term.x0.abp.ack_msg_t.x1.abp.index_t.abp.ack_msg_t 0) (Term.x0.abp.ack_msg_t.x1.abp.index_t.abp.index_t 0) (Term.x0.abp.ack_msg_t.x1.abp.index_t.abp.value 0) (Term.x0.abp.ack_msg_t.x1.abp.value.abp.ack_msg_t 0) (Term.x0.abp.ack_msg_t.x1.abp.value.abp.index_t 0) (Term.x0.abp.ack_msg_t.x1.abp.value.abp.value 0) (Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.abp.data_msg_t 0) (Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.abp.index_t 0) (Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.abp.value 0) (Term.x0.abp.data_msg_t.x1.abp.data_msg_t.abp.data_msg_t 0) (Term.x0.abp.data_msg_t.x1.abp.data_msg_t.abp.index_t 0) (Term.x0.abp.data_msg_t.x1.abp.data_msg_t.abp.value 0) (Term.x0.abp.data_msg_t.x1.abp.index_t.abp.data_msg_t 0) (Term.x0.abp.data_msg_t.x1.abp.index_t.abp.index_t 0) (Term.x0.abp.data_msg_t.x1.abp.index_t.abp.value 0) (Term.x0.abp.data_msg_t.x1.abp.value.abp.data_msg_t 0) (Term.x0.abp.data_msg_t.x1.abp.value.abp.index_t 0) (Term.x0.abp.data_msg_t.x1.abp.value.abp.value 0) (Term.x0.abp.index_t.x1.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x0.abp.index_t.x1.abp.ack_msg_t.abp.index_t 0) (Term.x0.abp.index_t.x1.abp.ack_msg_t.abp.value 0) (Term.x0.abp.index_t.x1.abp.data_msg_t.abp.data_msg_t 0) (Term.x0.abp.index_t.x1.abp.data_msg_t.abp.index_t 0) (Term.x0.abp.index_t.x1.abp.data_msg_t.abp.value 0) (Term.x0.abp.index_t.x1.abp.index_t.abp.index_t 0) (Term.x0.abp.index_t.x1.abp.index_t.abp.value 0) (Term.x0.abp.index_t.x1.abp.value.abp.index_t 0) (Term.x0.abp.index_t.x1.abp.value.abp.value 0) (Term.x0.abp.value.x1.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x0.abp.value.x1.abp.ack_msg_t.abp.index_t 0) (Term.x0.abp.value.x1.abp.ack_msg_t.abp.value 0) (Term.x0.abp.value.x1.abp.data_msg_t.abp.data_msg_t 0) (Term.x0.abp.value.x1.abp.data_msg_t.abp.index_t 0) (Term.x0.abp.value.x1.abp.data_msg_t.abp.value 0) (Term.x0.abp.value.x1.abp.index_t.abp.index_t 0) (Term.x0.abp.value.x1.abp.index_t.abp.value 0) (Term.x0.abp.value.x1.abp.value.abp.index_t 0) (Term.x0.abp.value.x1.abp.value.abp.value 0) (Term.x0.abp.ack_msg_t.x2.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x0.abp.ack_msg_t.x2.abp.ack_msg_t.abp.index_t 0) (Term.x0.abp.ack_msg_t.x2.abp.ack_msg_t.abp.value 0) (Term.x0.abp.ack_msg_t.x2.abp.data_msg_t.abp.ack_msg_t 0) (Term.x0.abp.ack_msg_t.x2.abp.data_msg_t.abp.data_msg_t 0) (Term.x0.abp.ack_msg_t.x2.abp.data_msg_t.abp.index_t 0) (Term.x0.abp.ack_msg_t.x2.abp.data_msg_t.abp.value 0) (Term.x0.abp.ack_msg_t.x2.abp.index_t.abp.ack_msg_t 0) (Term.x0.abp.ack_msg_t.x2.abp.index_t.abp.index_t 0) (Term.x0.abp.ack_msg_t.x2.abp.index_t.abp.value 0) (Term.x0.abp.ack_msg_t.x2.abp.value.abp.ack_msg_t 0) (Term.x0.abp.ack_msg_t.x2.abp.value.abp.index_t 0) (Term.x0.abp.ack_msg_t.x2.abp.value.abp.value 0) (Term.x0.abp.data_msg_t.x2.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x0.abp.data_msg_t.x2.abp.ack_msg_t.abp.data_msg_t 0) (Term.x0.abp.data_msg_t.x2.abp.ack_msg_t.abp.index_t 0) (Term.x0.abp.data_msg_t.x2.abp.ack_msg_t.abp.value 0) (Term.x0.abp.data_msg_t.x2.abp.data_msg_t.abp.data_msg_t 0) (Term.x0.abp.data_msg_t.x2.abp.data_msg_t.abp.index_t 0) (Term.x0.abp.data_msg_t.x2.abp.data_msg_t.abp.value 0) (Term.x0.abp.data_msg_t.x2.abp.index_t.abp.data_msg_t 0) (Term.x0.abp.data_msg_t.x2.abp.index_t.abp.index_t 0) (Term.x0.abp.data_msg_t.x2.abp.index_t.abp.value 0) (Term.x0.abp.data_msg_t.x2.abp.value.abp.data_msg_t 0) (Term.x0.abp.data_msg_t.x2.abp.value.abp.index_t 0) (Term.x0.abp.data_msg_t.x2.abp.value.abp.value 0) (Term.x0.abp.index_t.x2.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x0.abp.index_t.x2.abp.ack_msg_t.abp.index_t 0) (Term.x0.abp.index_t.x2.abp.ack_msg_t.abp.value 0) (Term.x0.abp.index_t.x2.abp.data_msg_t.abp.data_msg_t 0) (Term.x0.abp.index_t.x2.abp.data_msg_t.abp.index_t 0) (Term.x0.abp.index_t.x2.abp.data_msg_t.abp.value 0) (Term.x0.abp.index_t.x2.abp.index_t.abp.index_t 0) (Term.x0.abp.index_t.x2.abp.index_t.abp.value 0) (Term.x0.abp.index_t.x2.abp.value.abp.index_t 0) (Term.x0.abp.index_t.x2.abp.value.abp.value 0) (Term.x0.abp.value.x2.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x0.abp.value.x2.abp.ack_msg_t.abp.index_t 0) (Term.x0.abp.value.x2.abp.ack_msg_t.abp.value 0) (Term.x0.abp.value.x2.abp.data_msg_t.abp.data_msg_t 0) (Term.x0.abp.value.x2.abp.data_msg_t.abp.index_t 0) (Term.x0.abp.value.x2.abp.data_msg_t.abp.value 0) (Term.x0.abp.value.x2.abp.index_t.abp.index_t 0) (Term.x0.abp.value.x2.abp.index_t.abp.value 0) (Term.x0.abp.value.x2.abp.value.abp.index_t 0) (Term.x0.abp.value.x2.abp.value.abp.value 0) (Term.x1.abp.ack_msg_t.x2.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x1.abp.ack_msg_t.x2.abp.ack_msg_t.abp.index_t 0) (Term.x1.abp.ack_msg_t.x2.abp.ack_msg_t.abp.value 0) (Term.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.ack_msg_t 0) (Term.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.data_msg_t 0) (Term.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.index_t 0) (Term.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.value 0) (Term.x1.abp.ack_msg_t.x2.abp.index_t.abp.ack_msg_t 0) (Term.x1.abp.ack_msg_t.x2.abp.index_t.abp.index_t 0) (Term.x1.abp.ack_msg_t.x2.abp.index_t.abp.value 0) (Term.x1.abp.ack_msg_t.x2.abp.value.abp.ack_msg_t 0) (Term.x1.abp.ack_msg_t.x2.abp.value.abp.index_t 0) (Term.x1.abp.ack_msg_t.x2.abp.value.abp.value 0) (Term.x1.abp.data_msg_t.x2.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x1.abp.data_msg_t.x2.abp.ack_msg_t.abp.data_msg_t 0) (Term.x1.abp.data_msg_t.x2.abp.ack_msg_t.abp.index_t 0) (Term.x1.abp.data_msg_t.x2.abp.ack_msg_t.abp.value 0) (Term.x1.abp.data_msg_t.x2.abp.data_msg_t.abp.data_msg_t 0) (Term.x1.abp.data_msg_t.x2.abp.data_msg_t.abp.index_t 0) (Term.x1.abp.data_msg_t.x2.abp.data_msg_t.abp.value 0) (Term.x1.abp.data_msg_t.x2.abp.index_t.abp.data_msg_t 0) (Term.x1.abp.data_msg_t.x2.abp.index_t.abp.index_t 0) (Term.x1.abp.data_msg_t.x2.abp.index_t.abp.value 0) (Term.x1.abp.data_msg_t.x2.abp.value.abp.data_msg_t 0) (Term.x1.abp.data_msg_t.x2.abp.value.abp.index_t 0) (Term.x1.abp.data_msg_t.x2.abp.value.abp.value 0) (Term.x1.abp.index_t.x2.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x1.abp.index_t.x2.abp.ack_msg_t.abp.index_t 0) (Term.x1.abp.index_t.x2.abp.ack_msg_t.abp.value 0) (Term.x1.abp.index_t.x2.abp.data_msg_t.abp.data_msg_t 0) (Term.x1.abp.index_t.x2.abp.data_msg_t.abp.index_t 0) (Term.x1.abp.index_t.x2.abp.data_msg_t.abp.value 0) (Term.x1.abp.index_t.x2.abp.index_t.abp.index_t 0) (Term.x1.abp.index_t.x2.abp.index_t.abp.value 0) (Term.x1.abp.index_t.x2.abp.value.abp.index_t 0) (Term.x1.abp.index_t.x2.abp.value.abp.value 0) (Term.x1.abp.value.x2.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x1.abp.value.x2.abp.ack_msg_t.abp.index_t 0) (Term.x1.abp.value.x2.abp.ack_msg_t.abp.value 0) (Term.x1.abp.value.x2.abp.data_msg_t.abp.data_msg_t 0) (Term.x1.abp.value.x2.abp.data_msg_t.abp.index_t 0) (Term.x1.abp.value.x2.abp.data_msg_t.abp.value 0) (Term.x1.abp.value.x2.abp.index_t.abp.index_t 0) (Term.x1.abp.value.x2.abp.index_t.abp.value 0) (Term.x1.abp.value.x2.abp.value.abp.index_t 0) (Term.x1.abp.value.x2.abp.value.abp.value 0) (Term.x0.abp.ack_msg_t.x1.abp.ack_msg_t.x2.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x0.abp.ack_msg_t.x1.abp.ack_msg_t.x2.abp.ack_msg_t.abp.index_t 0) (Term.x0.abp.ack_msg_t.x1.abp.ack_msg_t.x2.abp.ack_msg_t.abp.value 0) (Term.x0.abp.ack_msg_t.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.ack_msg_t 0) (Term.x0.abp.ack_msg_t.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.data_msg_t 0) (Term.x0.abp.ack_msg_t.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.index_t 0) (Term.x0.abp.ack_msg_t.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.value 0) (Term.x0.abp.ack_msg_t.x1.abp.ack_msg_t.x2.abp.index_t.abp.ack_msg_t 0) (Term.x0.abp.ack_msg_t.x1.abp.ack_msg_t.x2.abp.index_t.abp.index_t 0) (Term.x0.abp.ack_msg_t.x1.abp.ack_msg_t.x2.abp.index_t.abp.value 0) (Term.x0.abp.ack_msg_t.x1.abp.ack_msg_t.x2.abp.value.abp.ack_msg_t 0) (Term.x0.abp.ack_msg_t.x1.abp.ack_msg_t.x2.abp.value.abp.index_t 0) (Term.x0.abp.ack_msg_t.x1.abp.ack_msg_t.x2.abp.value.abp.value 0) (Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.ack_msg_t.abp.data_msg_t 0) (Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.ack_msg_t.abp.index_t 0) (Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.ack_msg_t.abp.value 0) (Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.data_msg_t.abp.ack_msg_t 0) (Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.data_msg_t.abp.data_msg_t 0) (Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.data_msg_t.abp.index_t 0) (Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.data_msg_t.abp.value 0) (Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.index_t.abp.ack_msg_t 0) (Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.index_t.abp.data_msg_t 0) (Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.index_t.abp.index_t 0) (Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.index_t.abp.value 0) (Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.value.abp.ack_msg_t 0) (Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.value.abp.data_msg_t 0) (Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.value.abp.index_t 0) (Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.value.abp.value 0) (Term.x0.abp.ack_msg_t.x1.abp.index_t.x2.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x0.abp.ack_msg_t.x1.abp.index_t.x2.abp.ack_msg_t.abp.index_t 0) (Term.x0.abp.ack_msg_t.x1.abp.index_t.x2.abp.ack_msg_t.abp.value 0) (Term.x0.abp.ack_msg_t.x1.abp.index_t.x2.abp.data_msg_t.abp.ack_msg_t 0) (Term.x0.abp.ack_msg_t.x1.abp.index_t.x2.abp.data_msg_t.abp.data_msg_t 0) (Term.x0.abp.ack_msg_t.x1.abp.index_t.x2.abp.data_msg_t.abp.index_t 0) (Term.x0.abp.ack_msg_t.x1.abp.index_t.x2.abp.data_msg_t.abp.value 0) (Term.x0.abp.ack_msg_t.x1.abp.index_t.x2.abp.index_t.abp.ack_msg_t 0) (Term.x0.abp.ack_msg_t.x1.abp.index_t.x2.abp.index_t.abp.index_t 0) (Term.x0.abp.ack_msg_t.x1.abp.index_t.x2.abp.index_t.abp.value 0) (Term.x0.abp.ack_msg_t.x1.abp.index_t.x2.abp.value.abp.ack_msg_t 0) (Term.x0.abp.ack_msg_t.x1.abp.index_t.x2.abp.value.abp.index_t 0) (Term.x0.abp.ack_msg_t.x1.abp.index_t.x2.abp.value.abp.value 0) (Term.x0.abp.ack_msg_t.x1.abp.value.x2.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x0.abp.ack_msg_t.x1.abp.value.x2.abp.ack_msg_t.abp.index_t 0) (Term.x0.abp.ack_msg_t.x1.abp.value.x2.abp.ack_msg_t.abp.value 0) (Term.x0.abp.ack_msg_t.x1.abp.value.x2.abp.data_msg_t.abp.ack_msg_t 0) (Term.x0.abp.ack_msg_t.x1.abp.value.x2.abp.data_msg_t.abp.data_msg_t 0) (Term.x0.abp.ack_msg_t.x1.abp.value.x2.abp.data_msg_t.abp.index_t 0) (Term.x0.abp.ack_msg_t.x1.abp.value.x2.abp.data_msg_t.abp.value 0) (Term.x0.abp.ack_msg_t.x1.abp.value.x2.abp.index_t.abp.ack_msg_t 0) (Term.x0.abp.ack_msg_t.x1.abp.value.x2.abp.index_t.abp.index_t 0) (Term.x0.abp.ack_msg_t.x1.abp.value.x2.abp.index_t.abp.value 0) (Term.x0.abp.ack_msg_t.x1.abp.value.x2.abp.value.abp.ack_msg_t 0) (Term.x0.abp.ack_msg_t.x1.abp.value.x2.abp.value.abp.index_t 0) (Term.x0.abp.ack_msg_t.x1.abp.value.x2.abp.value.abp.value 0) (Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.ack_msg_t.abp.data_msg_t 0) (Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.ack_msg_t.abp.index_t 0) (Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.ack_msg_t.abp.value 0) (Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.ack_msg_t 0) (Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.data_msg_t 0) (Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.index_t 0) (Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.value 0) (Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.index_t.abp.ack_msg_t 0) (Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.index_t.abp.data_msg_t 0) (Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.index_t.abp.index_t 0) (Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.index_t.abp.value 0) (Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.value.abp.ack_msg_t 0) (Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.value.abp.data_msg_t 0) (Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.value.abp.index_t 0) (Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.value.abp.value 0) (Term.x0.abp.data_msg_t.x1.abp.data_msg_t.x2.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x0.abp.data_msg_t.x1.abp.data_msg_t.x2.abp.ack_msg_t.abp.data_msg_t 0) (Term.x0.abp.data_msg_t.x1.abp.data_msg_t.x2.abp.ack_msg_t.abp.index_t 0) (Term.x0.abp.data_msg_t.x1.abp.data_msg_t.x2.abp.ack_msg_t.abp.value 0) (Term.x0.abp.data_msg_t.x1.abp.data_msg_t.x2.abp.data_msg_t.abp.data_msg_t 0) (Term.x0.abp.data_msg_t.x1.abp.data_msg_t.x2.abp.data_msg_t.abp.index_t 0) (Term.x0.abp.data_msg_t.x1.abp.data_msg_t.x2.abp.data_msg_t.abp.value 0) (Term.x0.abp.data_msg_t.x1.abp.data_msg_t.x2.abp.index_t.abp.data_msg_t 0) (Term.x0.abp.data_msg_t.x1.abp.data_msg_t.x2.abp.index_t.abp.index_t 0) (Term.x0.abp.data_msg_t.x1.abp.data_msg_t.x2.abp.index_t.abp.value 0) (Term.x0.abp.data_msg_t.x1.abp.data_msg_t.x2.abp.value.abp.data_msg_t 0) (Term.x0.abp.data_msg_t.x1.abp.data_msg_t.x2.abp.value.abp.index_t 0) (Term.x0.abp.data_msg_t.x1.abp.data_msg_t.x2.abp.value.abp.value 0) (Term.x0.abp.data_msg_t.x1.abp.index_t.x2.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x0.abp.data_msg_t.x1.abp.index_t.x2.abp.ack_msg_t.abp.data_msg_t 0) (Term.x0.abp.data_msg_t.x1.abp.index_t.x2.abp.ack_msg_t.abp.index_t 0) (Term.x0.abp.data_msg_t.x1.abp.index_t.x2.abp.ack_msg_t.abp.value 0) (Term.x0.abp.data_msg_t.x1.abp.index_t.x2.abp.data_msg_t.abp.data_msg_t 0) (Term.x0.abp.data_msg_t.x1.abp.index_t.x2.abp.data_msg_t.abp.index_t 0) (Term.x0.abp.data_msg_t.x1.abp.index_t.x2.abp.data_msg_t.abp.value 0) (Term.x0.abp.data_msg_t.x1.abp.index_t.x2.abp.index_t.abp.data_msg_t 0) (Term.x0.abp.data_msg_t.x1.abp.index_t.x2.abp.index_t.abp.index_t 0) (Term.x0.abp.data_msg_t.x1.abp.index_t.x2.abp.index_t.abp.value 0) (Term.x0.abp.data_msg_t.x1.abp.index_t.x2.abp.value.abp.data_msg_t 0) (Term.x0.abp.data_msg_t.x1.abp.index_t.x2.abp.value.abp.index_t 0) (Term.x0.abp.data_msg_t.x1.abp.index_t.x2.abp.value.abp.value 0) (Term.x0.abp.data_msg_t.x1.abp.value.x2.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x0.abp.data_msg_t.x1.abp.value.x2.abp.ack_msg_t.abp.data_msg_t 0) (Term.x0.abp.data_msg_t.x1.abp.value.x2.abp.ack_msg_t.abp.index_t 0) (Term.x0.abp.data_msg_t.x1.abp.value.x2.abp.ack_msg_t.abp.value 0) (Term.x0.abp.data_msg_t.x1.abp.value.x2.abp.data_msg_t.abp.data_msg_t 0) (Term.x0.abp.data_msg_t.x1.abp.value.x2.abp.data_msg_t.abp.index_t 0) (Term.x0.abp.data_msg_t.x1.abp.value.x2.abp.data_msg_t.abp.value 0) (Term.x0.abp.data_msg_t.x1.abp.value.x2.abp.index_t.abp.data_msg_t 0) (Term.x0.abp.data_msg_t.x1.abp.value.x2.abp.index_t.abp.index_t 0) (Term.x0.abp.data_msg_t.x1.abp.value.x2.abp.index_t.abp.value 0) (Term.x0.abp.data_msg_t.x1.abp.value.x2.abp.value.abp.data_msg_t 0) (Term.x0.abp.data_msg_t.x1.abp.value.x2.abp.value.abp.index_t 0) (Term.x0.abp.data_msg_t.x1.abp.value.x2.abp.value.abp.value 0) (Term.x0.abp.index_t.x1.abp.ack_msg_t.x2.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x0.abp.index_t.x1.abp.ack_msg_t.x2.abp.ack_msg_t.abp.index_t 0) (Term.x0.abp.index_t.x1.abp.ack_msg_t.x2.abp.ack_msg_t.abp.value 0) (Term.x0.abp.index_t.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.ack_msg_t 0) (Term.x0.abp.index_t.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.data_msg_t 0) (Term.x0.abp.index_t.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.index_t 0) (Term.x0.abp.index_t.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.value 0) (Term.x0.abp.index_t.x1.abp.ack_msg_t.x2.abp.index_t.abp.ack_msg_t 0) (Term.x0.abp.index_t.x1.abp.ack_msg_t.x2.abp.index_t.abp.index_t 0) (Term.x0.abp.index_t.x1.abp.ack_msg_t.x2.abp.index_t.abp.value 0) (Term.x0.abp.index_t.x1.abp.ack_msg_t.x2.abp.value.abp.ack_msg_t 0) (Term.x0.abp.index_t.x1.abp.ack_msg_t.x2.abp.value.abp.index_t 0) (Term.x0.abp.index_t.x1.abp.ack_msg_t.x2.abp.value.abp.value 0) (Term.x0.abp.index_t.x1.abp.data_msg_t.x2.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x0.abp.index_t.x1.abp.data_msg_t.x2.abp.ack_msg_t.abp.data_msg_t 0) (Term.x0.abp.index_t.x1.abp.data_msg_t.x2.abp.ack_msg_t.abp.index_t 0) (Term.x0.abp.index_t.x1.abp.data_msg_t.x2.abp.ack_msg_t.abp.value 0) (Term.x0.abp.index_t.x1.abp.data_msg_t.x2.abp.data_msg_t.abp.data_msg_t 0) (Term.x0.abp.index_t.x1.abp.data_msg_t.x2.abp.data_msg_t.abp.index_t 0) (Term.x0.abp.index_t.x1.abp.data_msg_t.x2.abp.data_msg_t.abp.value 0) (Term.x0.abp.index_t.x1.abp.data_msg_t.x2.abp.index_t.abp.data_msg_t 0) (Term.x0.abp.index_t.x1.abp.data_msg_t.x2.abp.index_t.abp.index_t 0) (Term.x0.abp.index_t.x1.abp.data_msg_t.x2.abp.index_t.abp.value 0) (Term.x0.abp.index_t.x1.abp.data_msg_t.x2.abp.value.abp.data_msg_t 0) (Term.x0.abp.index_t.x1.abp.data_msg_t.x2.abp.value.abp.index_t 0) (Term.x0.abp.index_t.x1.abp.data_msg_t.x2.abp.value.abp.value 0) (Term.x0.abp.index_t.x1.abp.index_t.x2.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x0.abp.index_t.x1.abp.index_t.x2.abp.ack_msg_t.abp.index_t 0) (Term.x0.abp.index_t.x1.abp.index_t.x2.abp.ack_msg_t.abp.value 0) (Term.x0.abp.index_t.x1.abp.index_t.x2.abp.data_msg_t.abp.data_msg_t 0) (Term.x0.abp.index_t.x1.abp.index_t.x2.abp.data_msg_t.abp.index_t 0) (Term.x0.abp.index_t.x1.abp.index_t.x2.abp.data_msg_t.abp.value 0) (Term.x0.abp.index_t.x1.abp.index_t.x2.abp.index_t.abp.index_t 0) (Term.x0.abp.index_t.x1.abp.index_t.x2.abp.index_t.abp.value 0) (Term.x0.abp.index_t.x1.abp.index_t.x2.abp.value.abp.index_t 0) (Term.x0.abp.index_t.x1.abp.index_t.x2.abp.value.abp.value 0) (Term.x0.abp.index_t.x1.abp.value.x2.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x0.abp.index_t.x1.abp.value.x2.abp.ack_msg_t.abp.index_t 0) (Term.x0.abp.index_t.x1.abp.value.x2.abp.ack_msg_t.abp.value 0) (Term.x0.abp.index_t.x1.abp.value.x2.abp.data_msg_t.abp.data_msg_t 0) (Term.x0.abp.index_t.x1.abp.value.x2.abp.data_msg_t.abp.index_t 0) (Term.x0.abp.index_t.x1.abp.value.x2.abp.data_msg_t.abp.value 0) (Term.x0.abp.index_t.x1.abp.value.x2.abp.index_t.abp.index_t 0) (Term.x0.abp.index_t.x1.abp.value.x2.abp.index_t.abp.value 0) (Term.x0.abp.index_t.x1.abp.value.x2.abp.value.abp.index_t 0) (Term.x0.abp.index_t.x1.abp.value.x2.abp.value.abp.value 0) (Term.x0.abp.value.x1.abp.ack_msg_t.x2.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x0.abp.value.x1.abp.ack_msg_t.x2.abp.ack_msg_t.abp.index_t 0) (Term.x0.abp.value.x1.abp.ack_msg_t.x2.abp.ack_msg_t.abp.value 0) (Term.x0.abp.value.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.ack_msg_t 0) (Term.x0.abp.value.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.data_msg_t 0) (Term.x0.abp.value.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.index_t 0) (Term.x0.abp.value.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.value 0) (Term.x0.abp.value.x1.abp.ack_msg_t.x2.abp.index_t.abp.ack_msg_t 0) (Term.x0.abp.value.x1.abp.ack_msg_t.x2.abp.index_t.abp.index_t 0) (Term.x0.abp.value.x1.abp.ack_msg_t.x2.abp.index_t.abp.value 0) (Term.x0.abp.value.x1.abp.ack_msg_t.x2.abp.value.abp.ack_msg_t 0) (Term.x0.abp.value.x1.abp.ack_msg_t.x2.abp.value.abp.index_t 0) (Term.x0.abp.value.x1.abp.ack_msg_t.x2.abp.value.abp.value 0) (Term.x0.abp.value.x1.abp.data_msg_t.x2.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x0.abp.value.x1.abp.data_msg_t.x2.abp.ack_msg_t.abp.data_msg_t 0) (Term.x0.abp.value.x1.abp.data_msg_t.x2.abp.ack_msg_t.abp.index_t 0) (Term.x0.abp.value.x1.abp.data_msg_t.x2.abp.ack_msg_t.abp.value 0) (Term.x0.abp.value.x1.abp.data_msg_t.x2.abp.data_msg_t.abp.data_msg_t 0) (Term.x0.abp.value.x1.abp.data_msg_t.x2.abp.data_msg_t.abp.index_t 0) (Term.x0.abp.value.x1.abp.data_msg_t.x2.abp.data_msg_t.abp.value 0) (Term.x0.abp.value.x1.abp.data_msg_t.x2.abp.index_t.abp.data_msg_t 0) (Term.x0.abp.value.x1.abp.data_msg_t.x2.abp.index_t.abp.index_t 0) (Term.x0.abp.value.x1.abp.data_msg_t.x2.abp.index_t.abp.value 0) (Term.x0.abp.value.x1.abp.data_msg_t.x2.abp.value.abp.data_msg_t 0) (Term.x0.abp.value.x1.abp.data_msg_t.x2.abp.value.abp.index_t 0) (Term.x0.abp.value.x1.abp.data_msg_t.x2.abp.value.abp.value 0) (Term.x0.abp.value.x1.abp.index_t.x2.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x0.abp.value.x1.abp.index_t.x2.abp.ack_msg_t.abp.index_t 0) (Term.x0.abp.value.x1.abp.index_t.x2.abp.ack_msg_t.abp.value 0) (Term.x0.abp.value.x1.abp.index_t.x2.abp.data_msg_t.abp.data_msg_t 0) (Term.x0.abp.value.x1.abp.index_t.x2.abp.data_msg_t.abp.index_t 0) (Term.x0.abp.value.x1.abp.index_t.x2.abp.data_msg_t.abp.value 0) (Term.x0.abp.value.x1.abp.index_t.x2.abp.index_t.abp.index_t 0) (Term.x0.abp.value.x1.abp.index_t.x2.abp.index_t.abp.value 0) (Term.x0.abp.value.x1.abp.index_t.x2.abp.value.abp.index_t 0) (Term.x0.abp.value.x1.abp.index_t.x2.abp.value.abp.value 0) (Term.x0.abp.value.x1.abp.value.x2.abp.ack_msg_t.abp.ack_msg_t 0) (Term.x0.abp.value.x1.abp.value.x2.abp.ack_msg_t.abp.index_t 0) (Term.x0.abp.value.x1.abp.value.x2.abp.ack_msg_t.abp.value 0) (Term.x0.abp.value.x1.abp.value.x2.abp.data_msg_t.abp.data_msg_t 0) (Term.x0.abp.value.x1.abp.value.x2.abp.data_msg_t.abp.index_t 0) (Term.x0.abp.value.x1.abp.value.x2.abp.data_msg_t.abp.value 0) (Term.x0.abp.value.x1.abp.value.x2.abp.index_t.abp.index_t 0) (Term.x0.abp.value.x1.abp.value.x2.abp.index_t.abp.value 0) (Term.x0.abp.value.x1.abp.value.x2.abp.value.abp.index_t 0) (Term.x0.abp.value.x1.abp.value.x2.abp.value.abp.value 0))
-  ((fol.0.true)
+ (((fol.0.true)
    (fol.0.false)
    (fol.0.not Formula0)
    (fol.0.and Formula0 Formula0)
@@ -5373,13 +5373,11 @@
    (fol.0.term.abp.tp1.sk0))
   ((fol.0.term.abp.bot) (fol.0.term.abp.receiver_array Term.0.abp.index_t)
    (fol.0.term.abp.sender_array Term.0.abp.index_t))
-  (
   ((fol.ctx-x0-abp.ack_msg_t.var.x0.abp.ack_msg_t))
   ((fol.ctx-x0-abp.ack_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.ack_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.ack_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.ack_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.ack_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.ack_msg_t.term.abp.bot) (fol.ctx-x0-abp.ack_msg_t.term.abp.receiver_array Term.x0.abp.ack_msg_t.abp.index_t)
    (fol.ctx-x0-abp.ack_msg_t.term.abp.sender_array Term.x0.abp.ack_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.data_msg_t.var.x0.abp.data_msg_t))
   ((fol.ctx-x0-abp.data_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.data_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.data_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.data_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.data_msg_t.term.abp.tp1.sk0))
@@ -5393,13 +5391,11 @@
    (fol.ctx-x0-abp.value.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.value.var.x0.abp.value) (fol.ctx-x0-abp.value.term.abp.bot) (fol.ctx-x0-abp.value.term.abp.receiver_array Term.x0.abp.value.abp.index_t)
    (fol.ctx-x0-abp.value.term.abp.sender_array Term.x0.abp.value.abp.index_t))
-  (
   ((fol.ctx-x1-abp.ack_msg_t.var.x1.abp.ack_msg_t))
   ((fol.ctx-x1-abp.ack_msg_t.term.abp.index.zero) (fol.ctx-x1-abp.ack_msg_t.term.abp.receiver_i) (fol.ctx-x1-abp.ack_msg_t.term.abp.sender_gen_i) (fol.ctx-x1-abp.ack_msg_t.term.abp.sender_i)
    (fol.ctx-x1-abp.ack_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x1-abp.ack_msg_t.term.abp.bot) (fol.ctx-x1-abp.ack_msg_t.term.abp.receiver_array Term.x1.abp.ack_msg_t.abp.index_t)
    (fol.ctx-x1-abp.ack_msg_t.term.abp.sender_array Term.x1.abp.ack_msg_t.abp.index_t))
-  (
   ((fol.ctx-x1-abp.data_msg_t.var.x1.abp.data_msg_t))
   ((fol.ctx-x1-abp.data_msg_t.term.abp.index.zero) (fol.ctx-x1-abp.data_msg_t.term.abp.receiver_i) (fol.ctx-x1-abp.data_msg_t.term.abp.sender_gen_i) (fol.ctx-x1-abp.data_msg_t.term.abp.sender_i)
    (fol.ctx-x1-abp.data_msg_t.term.abp.tp1.sk0))
@@ -5413,13 +5409,11 @@
    (fol.ctx-x1-abp.value.term.abp.tp1.sk0))
   ((fol.ctx-x1-abp.value.var.x1.abp.value) (fol.ctx-x1-abp.value.term.abp.bot) (fol.ctx-x1-abp.value.term.abp.receiver_array Term.x1.abp.value.abp.index_t)
    (fol.ctx-x1-abp.value.term.abp.sender_array Term.x1.abp.value.abp.index_t))
-  (
   ((fol.ctx-x2-abp.ack_msg_t.var.x2.abp.ack_msg_t))
   ((fol.ctx-x2-abp.ack_msg_t.term.abp.index.zero) (fol.ctx-x2-abp.ack_msg_t.term.abp.receiver_i) (fol.ctx-x2-abp.ack_msg_t.term.abp.sender_gen_i) (fol.ctx-x2-abp.ack_msg_t.term.abp.sender_i)
    (fol.ctx-x2-abp.ack_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x2-abp.ack_msg_t.term.abp.bot) (fol.ctx-x2-abp.ack_msg_t.term.abp.receiver_array Term.x2.abp.ack_msg_t.abp.index_t)
    (fol.ctx-x2-abp.ack_msg_t.term.abp.sender_array Term.x2.abp.ack_msg_t.abp.index_t))
-  (
   ((fol.ctx-x2-abp.data_msg_t.var.x2.abp.data_msg_t))
   ((fol.ctx-x2-abp.data_msg_t.term.abp.index.zero) (fol.ctx-x2-abp.data_msg_t.term.abp.receiver_i) (fol.ctx-x2-abp.data_msg_t.term.abp.sender_gen_i) (fol.ctx-x2-abp.data_msg_t.term.abp.sender_i)
    (fol.ctx-x2-abp.data_msg_t.term.abp.tp1.sk0))
@@ -5439,29 +5433,23 @@
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.ack_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.ack_msg_t.term.abp.bot) (fol.ctx-x0-abp.ack_msg_t-x1-abp.ack_msg_t.term.abp.receiver_array Term.x0.abp.ack_msg_t.x1.abp.ack_msg_t.abp.index_t)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.ack_msg_t.term.abp.sender_array Term.x0.abp.ack_msg_t.x1.abp.ack_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t.var.x0.abp.ack_msg_t))
-  (
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t.var.x1.abp.data_msg_t))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t.term.abp.bot) (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t.term.abp.d Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.abp.data_msg_t) (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t.term.abp.receiver_array Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.abp.index_t)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t.term.abp.sender_array Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t.var.x0.abp.ack_msg_t))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t.var.x1.abp.index_t) (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t.term.abp.index.zero) (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t.term.abp.receiver_i) (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t.term.abp.sender_i)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t.term.abp.bot) (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t.term.abp.receiver_array Term.x0.abp.ack_msg_t.x1.abp.index_t.abp.index_t)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t.term.abp.sender_array Term.x0.abp.ack_msg_t.x1.abp.index_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.value.var.x0.abp.ack_msg_t))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.value.term.abp.index.zero) (fol.ctx-x0-abp.ack_msg_t-x1-abp.value.term.abp.receiver_i) (fol.ctx-x0-abp.ack_msg_t-x1-abp.value.term.abp.sender_gen_i) (fol.ctx-x0-abp.ack_msg_t-x1-abp.value.term.abp.sender_i)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.value.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.value.var.x1.abp.value) (fol.ctx-x0-abp.ack_msg_t-x1-abp.value.term.abp.bot) (fol.ctx-x0-abp.ack_msg_t-x1-abp.value.term.abp.receiver_array Term.x0.abp.ack_msg_t.x1.abp.value.abp.index_t)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.value.term.abp.sender_array Term.x0.abp.ack_msg_t.x1.abp.value.abp.index_t))
-  (
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t.var.x1.abp.ack_msg_t))
-  (
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t.var.x0.abp.data_msg_t))
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t.term.abp.tp1.sk0))
@@ -5473,25 +5461,21 @@
    (fol.ctx-x0-abp.data_msg_t-x1-abp.data_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.data_msg_t.term.abp.bot) (fol.ctx-x0-abp.data_msg_t-x1-abp.data_msg_t.term.abp.d Term.x0.abp.data_msg_t.x1.abp.data_msg_t.abp.data_msg_t) (fol.ctx-x0-abp.data_msg_t-x1-abp.data_msg_t.term.abp.receiver_array Term.x0.abp.data_msg_t.x1.abp.data_msg_t.abp.index_t)
    (fol.ctx-x0-abp.data_msg_t-x1-abp.data_msg_t.term.abp.sender_array Term.x0.abp.data_msg_t.x1.abp.data_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.index_t.var.x0.abp.data_msg_t))
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.index_t.var.x1.abp.index_t) (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t.term.abp.index.zero) (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t.term.abp.receiver_i) (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t.term.abp.sender_i)
    (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.index_t.term.abp.bot) (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t.term.abp.d Term.x0.abp.data_msg_t.x1.abp.index_t.abp.data_msg_t) (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t.term.abp.receiver_array Term.x0.abp.data_msg_t.x1.abp.index_t.abp.index_t)
    (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t.term.abp.sender_array Term.x0.abp.data_msg_t.x1.abp.index_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.value.var.x0.abp.data_msg_t))
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.value.term.abp.index.zero) (fol.ctx-x0-abp.data_msg_t-x1-abp.value.term.abp.receiver_i) (fol.ctx-x0-abp.data_msg_t-x1-abp.value.term.abp.sender_gen_i) (fol.ctx-x0-abp.data_msg_t-x1-abp.value.term.abp.sender_i)
    (fol.ctx-x0-abp.data_msg_t-x1-abp.value.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.value.var.x1.abp.value) (fol.ctx-x0-abp.data_msg_t-x1-abp.value.term.abp.bot) (fol.ctx-x0-abp.data_msg_t-x1-abp.value.term.abp.d Term.x0.abp.data_msg_t.x1.abp.value.abp.data_msg_t) (fol.ctx-x0-abp.data_msg_t-x1-abp.value.term.abp.receiver_array Term.x0.abp.data_msg_t.x1.abp.value.abp.index_t)
    (fol.ctx-x0-abp.data_msg_t-x1-abp.value.term.abp.sender_array Term.x0.abp.data_msg_t.x1.abp.value.abp.index_t))
-  (
   ((fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t.var.x1.abp.ack_msg_t))
   ((fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t.var.x0.abp.index_t) (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t.term.abp.bot) (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t.term.abp.receiver_array Term.x0.abp.index_t.x1.abp.ack_msg_t.abp.index_t)
    (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t.term.abp.sender_array Term.x0.abp.index_t.x1.abp.ack_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.index_t-x1-abp.data_msg_t.var.x1.abp.data_msg_t))
   ((fol.ctx-x0-abp.index_t-x1-abp.data_msg_t.var.x0.abp.index_t) (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t.term.abp.tp1.sk0))
@@ -5505,13 +5489,11 @@
    (fol.ctx-x0-abp.index_t-x1-abp.value.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.index_t-x1-abp.value.var.x1.abp.value) (fol.ctx-x0-abp.index_t-x1-abp.value.term.abp.bot) (fol.ctx-x0-abp.index_t-x1-abp.value.term.abp.receiver_array Term.x0.abp.index_t.x1.abp.value.abp.index_t)
    (fol.ctx-x0-abp.index_t-x1-abp.value.term.abp.sender_array Term.x0.abp.index_t.x1.abp.value.abp.index_t))
-  (
   ((fol.ctx-x0-abp.value-x1-abp.ack_msg_t.var.x1.abp.ack_msg_t))
   ((fol.ctx-x0-abp.value-x1-abp.ack_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.value-x1-abp.ack_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.value-x1-abp.ack_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.value-x1-abp.ack_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.value-x1-abp.ack_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.value-x1-abp.ack_msg_t.var.x0.abp.value) (fol.ctx-x0-abp.value-x1-abp.ack_msg_t.term.abp.bot) (fol.ctx-x0-abp.value-x1-abp.ack_msg_t.term.abp.receiver_array Term.x0.abp.value.x1.abp.ack_msg_t.abp.index_t)
    (fol.ctx-x0-abp.value-x1-abp.ack_msg_t.term.abp.sender_array Term.x0.abp.value.x1.abp.ack_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.value-x1-abp.data_msg_t.var.x1.abp.data_msg_t))
   ((fol.ctx-x0-abp.value-x1-abp.data_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.value-x1-abp.data_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.value-x1-abp.data_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.value-x1-abp.data_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.value-x1-abp.data_msg_t.term.abp.tp1.sk0))
@@ -5531,29 +5513,23 @@
    (fol.ctx-x0-abp.ack_msg_t-x2-abp.ack_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.ack_msg_t-x2-abp.ack_msg_t.term.abp.bot) (fol.ctx-x0-abp.ack_msg_t-x2-abp.ack_msg_t.term.abp.receiver_array Term.x0.abp.ack_msg_t.x2.abp.ack_msg_t.abp.index_t)
    (fol.ctx-x0-abp.ack_msg_t-x2-abp.ack_msg_t.term.abp.sender_array Term.x0.abp.ack_msg_t.x2.abp.ack_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.ack_msg_t-x2-abp.data_msg_t.var.x0.abp.ack_msg_t))
-  (
   ((fol.ctx-x0-abp.ack_msg_t-x2-abp.data_msg_t.var.x2.abp.data_msg_t))
   ((fol.ctx-x0-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.bot) (fol.ctx-x0-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.d Term.x0.abp.ack_msg_t.x2.abp.data_msg_t.abp.data_msg_t) (fol.ctx-x0-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.receiver_array Term.x0.abp.ack_msg_t.x2.abp.data_msg_t.abp.index_t)
    (fol.ctx-x0-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.sender_array Term.x0.abp.ack_msg_t.x2.abp.data_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.ack_msg_t-x2-abp.index_t.var.x0.abp.ack_msg_t))
   ((fol.ctx-x0-abp.ack_msg_t-x2-abp.index_t.var.x2.abp.index_t) (fol.ctx-x0-abp.ack_msg_t-x2-abp.index_t.term.abp.index.zero) (fol.ctx-x0-abp.ack_msg_t-x2-abp.index_t.term.abp.receiver_i) (fol.ctx-x0-abp.ack_msg_t-x2-abp.index_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.ack_msg_t-x2-abp.index_t.term.abp.sender_i)
    (fol.ctx-x0-abp.ack_msg_t-x2-abp.index_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.ack_msg_t-x2-abp.index_t.term.abp.bot) (fol.ctx-x0-abp.ack_msg_t-x2-abp.index_t.term.abp.receiver_array Term.x0.abp.ack_msg_t.x2.abp.index_t.abp.index_t)
    (fol.ctx-x0-abp.ack_msg_t-x2-abp.index_t.term.abp.sender_array Term.x0.abp.ack_msg_t.x2.abp.index_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.ack_msg_t-x2-abp.value.var.x0.abp.ack_msg_t))
   ((fol.ctx-x0-abp.ack_msg_t-x2-abp.value.term.abp.index.zero) (fol.ctx-x0-abp.ack_msg_t-x2-abp.value.term.abp.receiver_i) (fol.ctx-x0-abp.ack_msg_t-x2-abp.value.term.abp.sender_gen_i) (fol.ctx-x0-abp.ack_msg_t-x2-abp.value.term.abp.sender_i)
    (fol.ctx-x0-abp.ack_msg_t-x2-abp.value.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.ack_msg_t-x2-abp.value.var.x2.abp.value) (fol.ctx-x0-abp.ack_msg_t-x2-abp.value.term.abp.bot) (fol.ctx-x0-abp.ack_msg_t-x2-abp.value.term.abp.receiver_array Term.x0.abp.ack_msg_t.x2.abp.value.abp.index_t)
    (fol.ctx-x0-abp.ack_msg_t-x2-abp.value.term.abp.sender_array Term.x0.abp.ack_msg_t.x2.abp.value.abp.index_t))
-  (
   ((fol.ctx-x0-abp.data_msg_t-x2-abp.ack_msg_t.var.x2.abp.ack_msg_t))
-  (
   ((fol.ctx-x0-abp.data_msg_t-x2-abp.ack_msg_t.var.x0.abp.data_msg_t))
   ((fol.ctx-x0-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.tp1.sk0))
@@ -5565,25 +5541,21 @@
    (fol.ctx-x0-abp.data_msg_t-x2-abp.data_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.data_msg_t-x2-abp.data_msg_t.term.abp.bot) (fol.ctx-x0-abp.data_msg_t-x2-abp.data_msg_t.term.abp.d Term.x0.abp.data_msg_t.x2.abp.data_msg_t.abp.data_msg_t) (fol.ctx-x0-abp.data_msg_t-x2-abp.data_msg_t.term.abp.receiver_array Term.x0.abp.data_msg_t.x2.abp.data_msg_t.abp.index_t)
    (fol.ctx-x0-abp.data_msg_t-x2-abp.data_msg_t.term.abp.sender_array Term.x0.abp.data_msg_t.x2.abp.data_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.data_msg_t-x2-abp.index_t.var.x0.abp.data_msg_t))
   ((fol.ctx-x0-abp.data_msg_t-x2-abp.index_t.var.x2.abp.index_t) (fol.ctx-x0-abp.data_msg_t-x2-abp.index_t.term.abp.index.zero) (fol.ctx-x0-abp.data_msg_t-x2-abp.index_t.term.abp.receiver_i) (fol.ctx-x0-abp.data_msg_t-x2-abp.index_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.data_msg_t-x2-abp.index_t.term.abp.sender_i)
    (fol.ctx-x0-abp.data_msg_t-x2-abp.index_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.data_msg_t-x2-abp.index_t.term.abp.bot) (fol.ctx-x0-abp.data_msg_t-x2-abp.index_t.term.abp.d Term.x0.abp.data_msg_t.x2.abp.index_t.abp.data_msg_t) (fol.ctx-x0-abp.data_msg_t-x2-abp.index_t.term.abp.receiver_array Term.x0.abp.data_msg_t.x2.abp.index_t.abp.index_t)
    (fol.ctx-x0-abp.data_msg_t-x2-abp.index_t.term.abp.sender_array Term.x0.abp.data_msg_t.x2.abp.index_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.data_msg_t-x2-abp.value.var.x0.abp.data_msg_t))
   ((fol.ctx-x0-abp.data_msg_t-x2-abp.value.term.abp.index.zero) (fol.ctx-x0-abp.data_msg_t-x2-abp.value.term.abp.receiver_i) (fol.ctx-x0-abp.data_msg_t-x2-abp.value.term.abp.sender_gen_i) (fol.ctx-x0-abp.data_msg_t-x2-abp.value.term.abp.sender_i)
    (fol.ctx-x0-abp.data_msg_t-x2-abp.value.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.data_msg_t-x2-abp.value.var.x2.abp.value) (fol.ctx-x0-abp.data_msg_t-x2-abp.value.term.abp.bot) (fol.ctx-x0-abp.data_msg_t-x2-abp.value.term.abp.d Term.x0.abp.data_msg_t.x2.abp.value.abp.data_msg_t) (fol.ctx-x0-abp.data_msg_t-x2-abp.value.term.abp.receiver_array Term.x0.abp.data_msg_t.x2.abp.value.abp.index_t)
    (fol.ctx-x0-abp.data_msg_t-x2-abp.value.term.abp.sender_array Term.x0.abp.data_msg_t.x2.abp.value.abp.index_t))
-  (
   ((fol.ctx-x0-abp.index_t-x2-abp.ack_msg_t.var.x2.abp.ack_msg_t))
   ((fol.ctx-x0-abp.index_t-x2-abp.ack_msg_t.var.x0.abp.index_t) (fol.ctx-x0-abp.index_t-x2-abp.ack_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.index_t-x2-abp.ack_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.index_t-x2-abp.ack_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.index_t-x2-abp.ack_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.index_t-x2-abp.ack_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.index_t-x2-abp.ack_msg_t.term.abp.bot) (fol.ctx-x0-abp.index_t-x2-abp.ack_msg_t.term.abp.receiver_array Term.x0.abp.index_t.x2.abp.ack_msg_t.abp.index_t)
    (fol.ctx-x0-abp.index_t-x2-abp.ack_msg_t.term.abp.sender_array Term.x0.abp.index_t.x2.abp.ack_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.index_t-x2-abp.data_msg_t.var.x2.abp.data_msg_t))
   ((fol.ctx-x0-abp.index_t-x2-abp.data_msg_t.var.x0.abp.index_t) (fol.ctx-x0-abp.index_t-x2-abp.data_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.index_t-x2-abp.data_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.index_t-x2-abp.data_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.index_t-x2-abp.data_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.index_t-x2-abp.data_msg_t.term.abp.tp1.sk0))
@@ -5597,13 +5569,11 @@
    (fol.ctx-x0-abp.index_t-x2-abp.value.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.index_t-x2-abp.value.var.x2.abp.value) (fol.ctx-x0-abp.index_t-x2-abp.value.term.abp.bot) (fol.ctx-x0-abp.index_t-x2-abp.value.term.abp.receiver_array Term.x0.abp.index_t.x2.abp.value.abp.index_t)
    (fol.ctx-x0-abp.index_t-x2-abp.value.term.abp.sender_array Term.x0.abp.index_t.x2.abp.value.abp.index_t))
-  (
   ((fol.ctx-x0-abp.value-x2-abp.ack_msg_t.var.x2.abp.ack_msg_t))
   ((fol.ctx-x0-abp.value-x2-abp.ack_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.value-x2-abp.ack_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.value-x2-abp.ack_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.value-x2-abp.ack_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.value-x2-abp.ack_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.value-x2-abp.ack_msg_t.var.x0.abp.value) (fol.ctx-x0-abp.value-x2-abp.ack_msg_t.term.abp.bot) (fol.ctx-x0-abp.value-x2-abp.ack_msg_t.term.abp.receiver_array Term.x0.abp.value.x2.abp.ack_msg_t.abp.index_t)
    (fol.ctx-x0-abp.value-x2-abp.ack_msg_t.term.abp.sender_array Term.x0.abp.value.x2.abp.ack_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.value-x2-abp.data_msg_t.var.x2.abp.data_msg_t))
   ((fol.ctx-x0-abp.value-x2-abp.data_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.value-x2-abp.data_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.value-x2-abp.data_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.value-x2-abp.data_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.value-x2-abp.data_msg_t.term.abp.tp1.sk0))
@@ -5623,29 +5593,23 @@
    (fol.ctx-x1-abp.ack_msg_t-x2-abp.ack_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x1-abp.ack_msg_t-x2-abp.ack_msg_t.term.abp.bot) (fol.ctx-x1-abp.ack_msg_t-x2-abp.ack_msg_t.term.abp.receiver_array Term.x1.abp.ack_msg_t.x2.abp.ack_msg_t.abp.index_t)
    (fol.ctx-x1-abp.ack_msg_t-x2-abp.ack_msg_t.term.abp.sender_array Term.x1.abp.ack_msg_t.x2.abp.ack_msg_t.abp.index_t))
-  (
   ((fol.ctx-x1-abp.ack_msg_t-x2-abp.data_msg_t.var.x1.abp.ack_msg_t))
-  (
   ((fol.ctx-x1-abp.ack_msg_t-x2-abp.data_msg_t.var.x2.abp.data_msg_t))
   ((fol.ctx-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.index.zero) (fol.ctx-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.receiver_i) (fol.ctx-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.sender_gen_i) (fol.ctx-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.sender_i)
    (fol.ctx-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.bot) (fol.ctx-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.d Term.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.data_msg_t) (fol.ctx-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.receiver_array Term.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.index_t)
    (fol.ctx-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.sender_array Term.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.index_t))
-  (
   ((fol.ctx-x1-abp.ack_msg_t-x2-abp.index_t.var.x1.abp.ack_msg_t))
   ((fol.ctx-x1-abp.ack_msg_t-x2-abp.index_t.var.x2.abp.index_t) (fol.ctx-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.index.zero) (fol.ctx-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.receiver_i) (fol.ctx-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.sender_gen_i) (fol.ctx-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.sender_i)
    (fol.ctx-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.tp1.sk0))
   ((fol.ctx-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.bot) (fol.ctx-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.receiver_array Term.x1.abp.ack_msg_t.x2.abp.index_t.abp.index_t)
    (fol.ctx-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.sender_array Term.x1.abp.ack_msg_t.x2.abp.index_t.abp.index_t))
-  (
   ((fol.ctx-x1-abp.ack_msg_t-x2-abp.value.var.x1.abp.ack_msg_t))
   ((fol.ctx-x1-abp.ack_msg_t-x2-abp.value.term.abp.index.zero) (fol.ctx-x1-abp.ack_msg_t-x2-abp.value.term.abp.receiver_i) (fol.ctx-x1-abp.ack_msg_t-x2-abp.value.term.abp.sender_gen_i) (fol.ctx-x1-abp.ack_msg_t-x2-abp.value.term.abp.sender_i)
    (fol.ctx-x1-abp.ack_msg_t-x2-abp.value.term.abp.tp1.sk0))
   ((fol.ctx-x1-abp.ack_msg_t-x2-abp.value.var.x2.abp.value) (fol.ctx-x1-abp.ack_msg_t-x2-abp.value.term.abp.bot) (fol.ctx-x1-abp.ack_msg_t-x2-abp.value.term.abp.receiver_array Term.x1.abp.ack_msg_t.x2.abp.value.abp.index_t)
    (fol.ctx-x1-abp.ack_msg_t-x2-abp.value.term.abp.sender_array Term.x1.abp.ack_msg_t.x2.abp.value.abp.index_t))
-  (
   ((fol.ctx-x1-abp.data_msg_t-x2-abp.ack_msg_t.var.x2.abp.ack_msg_t))
-  (
   ((fol.ctx-x1-abp.data_msg_t-x2-abp.ack_msg_t.var.x1.abp.data_msg_t))
   ((fol.ctx-x1-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.index.zero) (fol.ctx-x1-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.receiver_i) (fol.ctx-x1-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.sender_gen_i) (fol.ctx-x1-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.sender_i)
    (fol.ctx-x1-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.tp1.sk0))
@@ -5657,25 +5621,21 @@
    (fol.ctx-x1-abp.data_msg_t-x2-abp.data_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x1-abp.data_msg_t-x2-abp.data_msg_t.term.abp.bot) (fol.ctx-x1-abp.data_msg_t-x2-abp.data_msg_t.term.abp.d Term.x1.abp.data_msg_t.x2.abp.data_msg_t.abp.data_msg_t) (fol.ctx-x1-abp.data_msg_t-x2-abp.data_msg_t.term.abp.receiver_array Term.x1.abp.data_msg_t.x2.abp.data_msg_t.abp.index_t)
    (fol.ctx-x1-abp.data_msg_t-x2-abp.data_msg_t.term.abp.sender_array Term.x1.abp.data_msg_t.x2.abp.data_msg_t.abp.index_t))
-  (
   ((fol.ctx-x1-abp.data_msg_t-x2-abp.index_t.var.x1.abp.data_msg_t))
   ((fol.ctx-x1-abp.data_msg_t-x2-abp.index_t.var.x2.abp.index_t) (fol.ctx-x1-abp.data_msg_t-x2-abp.index_t.term.abp.index.zero) (fol.ctx-x1-abp.data_msg_t-x2-abp.index_t.term.abp.receiver_i) (fol.ctx-x1-abp.data_msg_t-x2-abp.index_t.term.abp.sender_gen_i) (fol.ctx-x1-abp.data_msg_t-x2-abp.index_t.term.abp.sender_i)
    (fol.ctx-x1-abp.data_msg_t-x2-abp.index_t.term.abp.tp1.sk0))
   ((fol.ctx-x1-abp.data_msg_t-x2-abp.index_t.term.abp.bot) (fol.ctx-x1-abp.data_msg_t-x2-abp.index_t.term.abp.d Term.x1.abp.data_msg_t.x2.abp.index_t.abp.data_msg_t) (fol.ctx-x1-abp.data_msg_t-x2-abp.index_t.term.abp.receiver_array Term.x1.abp.data_msg_t.x2.abp.index_t.abp.index_t)
    (fol.ctx-x1-abp.data_msg_t-x2-abp.index_t.term.abp.sender_array Term.x1.abp.data_msg_t.x2.abp.index_t.abp.index_t))
-  (
   ((fol.ctx-x1-abp.data_msg_t-x2-abp.value.var.x1.abp.data_msg_t))
   ((fol.ctx-x1-abp.data_msg_t-x2-abp.value.term.abp.index.zero) (fol.ctx-x1-abp.data_msg_t-x2-abp.value.term.abp.receiver_i) (fol.ctx-x1-abp.data_msg_t-x2-abp.value.term.abp.sender_gen_i) (fol.ctx-x1-abp.data_msg_t-x2-abp.value.term.abp.sender_i)
    (fol.ctx-x1-abp.data_msg_t-x2-abp.value.term.abp.tp1.sk0))
   ((fol.ctx-x1-abp.data_msg_t-x2-abp.value.var.x2.abp.value) (fol.ctx-x1-abp.data_msg_t-x2-abp.value.term.abp.bot) (fol.ctx-x1-abp.data_msg_t-x2-abp.value.term.abp.d Term.x1.abp.data_msg_t.x2.abp.value.abp.data_msg_t) (fol.ctx-x1-abp.data_msg_t-x2-abp.value.term.abp.receiver_array Term.x1.abp.data_msg_t.x2.abp.value.abp.index_t)
    (fol.ctx-x1-abp.data_msg_t-x2-abp.value.term.abp.sender_array Term.x1.abp.data_msg_t.x2.abp.value.abp.index_t))
-  (
   ((fol.ctx-x1-abp.index_t-x2-abp.ack_msg_t.var.x2.abp.ack_msg_t))
   ((fol.ctx-x1-abp.index_t-x2-abp.ack_msg_t.var.x1.abp.index_t) (fol.ctx-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.index.zero) (fol.ctx-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.receiver_i) (fol.ctx-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.sender_gen_i) (fol.ctx-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.sender_i)
    (fol.ctx-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.bot) (fol.ctx-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.receiver_array Term.x1.abp.index_t.x2.abp.ack_msg_t.abp.index_t)
    (fol.ctx-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.sender_array Term.x1.abp.index_t.x2.abp.ack_msg_t.abp.index_t))
-  (
   ((fol.ctx-x1-abp.index_t-x2-abp.data_msg_t.var.x2.abp.data_msg_t))
   ((fol.ctx-x1-abp.index_t-x2-abp.data_msg_t.var.x1.abp.index_t) (fol.ctx-x1-abp.index_t-x2-abp.data_msg_t.term.abp.index.zero) (fol.ctx-x1-abp.index_t-x2-abp.data_msg_t.term.abp.receiver_i) (fol.ctx-x1-abp.index_t-x2-abp.data_msg_t.term.abp.sender_gen_i) (fol.ctx-x1-abp.index_t-x2-abp.data_msg_t.term.abp.sender_i)
    (fol.ctx-x1-abp.index_t-x2-abp.data_msg_t.term.abp.tp1.sk0))
@@ -5689,13 +5649,11 @@
    (fol.ctx-x1-abp.index_t-x2-abp.value.term.abp.tp1.sk0))
   ((fol.ctx-x1-abp.index_t-x2-abp.value.var.x2.abp.value) (fol.ctx-x1-abp.index_t-x2-abp.value.term.abp.bot) (fol.ctx-x1-abp.index_t-x2-abp.value.term.abp.receiver_array Term.x1.abp.index_t.x2.abp.value.abp.index_t)
    (fol.ctx-x1-abp.index_t-x2-abp.value.term.abp.sender_array Term.x1.abp.index_t.x2.abp.value.abp.index_t))
-  (
   ((fol.ctx-x1-abp.value-x2-abp.ack_msg_t.var.x2.abp.ack_msg_t))
   ((fol.ctx-x1-abp.value-x2-abp.ack_msg_t.term.abp.index.zero) (fol.ctx-x1-abp.value-x2-abp.ack_msg_t.term.abp.receiver_i) (fol.ctx-x1-abp.value-x2-abp.ack_msg_t.term.abp.sender_gen_i) (fol.ctx-x1-abp.value-x2-abp.ack_msg_t.term.abp.sender_i)
    (fol.ctx-x1-abp.value-x2-abp.ack_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x1-abp.value-x2-abp.ack_msg_t.var.x1.abp.value) (fol.ctx-x1-abp.value-x2-abp.ack_msg_t.term.abp.bot) (fol.ctx-x1-abp.value-x2-abp.ack_msg_t.term.abp.receiver_array Term.x1.abp.value.x2.abp.ack_msg_t.abp.index_t)
    (fol.ctx-x1-abp.value-x2-abp.ack_msg_t.term.abp.sender_array Term.x1.abp.value.x2.abp.ack_msg_t.abp.index_t))
-  (
   ((fol.ctx-x1-abp.value-x2-abp.data_msg_t.var.x2.abp.data_msg_t))
   ((fol.ctx-x1-abp.value-x2-abp.data_msg_t.term.abp.index.zero) (fol.ctx-x1-abp.value-x2-abp.data_msg_t.term.abp.receiver_i) (fol.ctx-x1-abp.value-x2-abp.data_msg_t.term.abp.sender_gen_i) (fol.ctx-x1-abp.value-x2-abp.data_msg_t.term.abp.sender_i)
    (fol.ctx-x1-abp.value-x2-abp.data_msg_t.term.abp.tp1.sk0))
@@ -5717,7 +5675,6 @@
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.ack_msg_t-x2-abp.ack_msg_t.term.abp.sender_array Term.x0.abp.ack_msg_t.x1.abp.ack_msg_t.x2.abp.ack_msg_t.abp.index_t))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.ack_msg_t-x2-abp.data_msg_t.var.x0.abp.ack_msg_t)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.ack_msg_t-x2-abp.data_msg_t.var.x1.abp.ack_msg_t))
-  (
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.ack_msg_t-x2-abp.data_msg_t.var.x2.abp.data_msg_t))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.ack_msg_t-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.ack_msg_t-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.ack_msg_t-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.tp1.sk0))
@@ -5737,13 +5694,11 @@
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.ack_msg_t-x2-abp.value.term.abp.sender_array Term.x0.abp.ack_msg_t.x1.abp.ack_msg_t.x2.abp.value.abp.index_t))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.ack_msg_t.var.x0.abp.ack_msg_t)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.ack_msg_t.var.x2.abp.ack_msg_t))
-  (
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.ack_msg_t.var.x1.abp.data_msg_t))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.bot) (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.d Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.ack_msg_t.abp.data_msg_t) (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.receiver_array Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.ack_msg_t.abp.index_t)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.sender_array Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.ack_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.data_msg_t.var.x0.abp.ack_msg_t))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.data_msg_t.var.x1.abp.data_msg_t)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.data_msg_t.var.x2.abp.data_msg_t))
@@ -5751,17 +5706,13 @@
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.data_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.data_msg_t.term.abp.bot) (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.data_msg_t.term.abp.d Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.data_msg_t.abp.data_msg_t) (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.data_msg_t.term.abp.receiver_array Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.data_msg_t.abp.index_t)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.data_msg_t.term.abp.sender_array Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.data_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.index_t.var.x0.abp.ack_msg_t))
-  (
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.index_t.var.x1.abp.data_msg_t))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.index_t.var.x2.abp.index_t) (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.index_t.term.abp.index.zero) (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.index_t.term.abp.receiver_i) (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.index_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.index_t.term.abp.sender_i)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.index_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.index_t.term.abp.bot) (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.index_t.term.abp.d Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.index_t.abp.data_msg_t) (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.index_t.term.abp.receiver_array Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.index_t.abp.index_t)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.index_t.term.abp.sender_array Term.x0.abp.ack_msg_t.x1.abp.data_msg_t.x2.abp.index_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.value.var.x0.abp.ack_msg_t))
-  (
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.value.var.x1.abp.data_msg_t))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.value.term.abp.index.zero) (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.value.term.abp.receiver_i) (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.value.term.abp.sender_gen_i) (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.value.term.abp.sender_i)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.data_msg_t-x2-abp.value.term.abp.tp1.sk0))
@@ -5773,21 +5724,17 @@
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.bot) (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.receiver_array Term.x0.abp.ack_msg_t.x1.abp.index_t.x2.abp.ack_msg_t.abp.index_t)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.sender_array Term.x0.abp.ack_msg_t.x1.abp.index_t.x2.abp.ack_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.data_msg_t.var.x0.abp.ack_msg_t))
-  (
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.data_msg_t.var.x2.abp.data_msg_t))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.data_msg_t.var.x1.abp.index_t) (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.data_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.data_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.data_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.data_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.data_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.data_msg_t.term.abp.bot) (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.data_msg_t.term.abp.d Term.x0.abp.ack_msg_t.x1.abp.index_t.x2.abp.data_msg_t.abp.data_msg_t) (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.data_msg_t.term.abp.receiver_array Term.x0.abp.ack_msg_t.x1.abp.index_t.x2.abp.data_msg_t.abp.index_t)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.data_msg_t.term.abp.sender_array Term.x0.abp.ack_msg_t.x1.abp.index_t.x2.abp.data_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.index_t.var.x0.abp.ack_msg_t))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.index_t.var.x1.abp.index_t) (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.index_t.var.x2.abp.index_t) (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.index_t.term.abp.index.zero) (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.index_t.term.abp.receiver_i) (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.index_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.index_t.term.abp.sender_i)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.index_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.index_t.term.abp.bot) (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.index_t.term.abp.receiver_array Term.x0.abp.ack_msg_t.x1.abp.index_t.x2.abp.index_t.abp.index_t)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.index_t.term.abp.sender_array Term.x0.abp.ack_msg_t.x1.abp.index_t.x2.abp.index_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.value.var.x0.abp.ack_msg_t))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.value.var.x1.abp.index_t) (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.value.term.abp.index.zero) (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.value.term.abp.receiver_i) (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.value.term.abp.sender_gen_i) (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.value.term.abp.sender_i)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.index_t-x2-abp.value.term.abp.tp1.sk0))
@@ -5799,21 +5746,17 @@
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.ack_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.ack_msg_t.var.x1.abp.value) (fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.ack_msg_t.term.abp.bot) (fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.ack_msg_t.term.abp.receiver_array Term.x0.abp.ack_msg_t.x1.abp.value.x2.abp.ack_msg_t.abp.index_t)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.ack_msg_t.term.abp.sender_array Term.x0.abp.ack_msg_t.x1.abp.value.x2.abp.ack_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.data_msg_t.var.x0.abp.ack_msg_t))
-  (
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.data_msg_t.var.x2.abp.data_msg_t))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.data_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.data_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.data_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.data_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.data_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.data_msg_t.var.x1.abp.value) (fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.data_msg_t.term.abp.bot) (fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.data_msg_t.term.abp.d Term.x0.abp.ack_msg_t.x1.abp.value.x2.abp.data_msg_t.abp.data_msg_t) (fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.data_msg_t.term.abp.receiver_array Term.x0.abp.ack_msg_t.x1.abp.value.x2.abp.data_msg_t.abp.index_t)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.data_msg_t.term.abp.sender_array Term.x0.abp.ack_msg_t.x1.abp.value.x2.abp.data_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.index_t.var.x0.abp.ack_msg_t))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.index_t.var.x2.abp.index_t) (fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.index_t.term.abp.index.zero) (fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.index_t.term.abp.receiver_i) (fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.index_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.index_t.term.abp.sender_i)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.index_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.index_t.var.x1.abp.value) (fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.index_t.term.abp.bot) (fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.index_t.term.abp.receiver_array Term.x0.abp.ack_msg_t.x1.abp.value.x2.abp.index_t.abp.index_t)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.index_t.term.abp.sender_array Term.x0.abp.ack_msg_t.x1.abp.value.x2.abp.index_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.value.var.x0.abp.ack_msg_t))
   ((fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.value.term.abp.index.zero) (fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.value.term.abp.receiver_i) (fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.value.term.abp.sender_gen_i) (fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.value.term.abp.sender_i)
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.value.term.abp.tp1.sk0))
@@ -5821,13 +5764,11 @@
    (fol.ctx-x0-abp.ack_msg_t-x1-abp.value-x2-abp.value.term.abp.sender_array Term.x0.abp.ack_msg_t.x1.abp.value.x2.abp.value.abp.index_t))
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.ack_msg_t.var.x1.abp.ack_msg_t)
    (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.ack_msg_t.var.x2.abp.ack_msg_t))
-  (
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.ack_msg_t.var.x0.abp.data_msg_t))
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.ack_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.ack_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.ack_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.ack_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.ack_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.ack_msg_t.term.abp.bot) (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.ack_msg_t.term.abp.d Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.ack_msg_t.abp.data_msg_t) (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.ack_msg_t.term.abp.receiver_array Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.ack_msg_t.abp.index_t)
    (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.ack_msg_t.term.abp.sender_array Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.ack_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.data_msg_t.var.x1.abp.ack_msg_t))
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.data_msg_t.var.x0.abp.data_msg_t)
    (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.data_msg_t.var.x2.abp.data_msg_t))
@@ -5835,23 +5776,18 @@
    (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.bot) (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.d Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.data_msg_t) (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.receiver_array Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.index_t)
    (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.sender_array Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.index_t.var.x1.abp.ack_msg_t))
-  (
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.index_t.var.x0.abp.data_msg_t))
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.index_t.var.x2.abp.index_t) (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.index.zero) (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.receiver_i) (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.sender_i)
    (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.bot) (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.d Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.index_t.abp.data_msg_t) (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.receiver_array Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.index_t.abp.index_t)
    (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.sender_array Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.index_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.value.var.x1.abp.ack_msg_t))
-  (
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.value.var.x0.abp.data_msg_t))
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.value.term.abp.index.zero) (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.value.term.abp.receiver_i) (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.value.term.abp.sender_gen_i) (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.value.term.abp.sender_i)
    (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.value.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.value.var.x2.abp.value) (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.value.term.abp.bot) (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.value.term.abp.d Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.value.abp.data_msg_t) (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.value.term.abp.receiver_array Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.value.abp.index_t)
    (fol.ctx-x0-abp.data_msg_t-x1-abp.ack_msg_t-x2-abp.value.term.abp.sender_array Term.x0.abp.data_msg_t.x1.abp.ack_msg_t.x2.abp.value.abp.index_t))
-  (
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.data_msg_t-x2-abp.ack_msg_t.var.x2.abp.ack_msg_t))
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.data_msg_t-x2-abp.ack_msg_t.var.x0.abp.data_msg_t)
    (fol.ctx-x0-abp.data_msg_t-x1-abp.data_msg_t-x2-abp.ack_msg_t.var.x1.abp.data_msg_t))
@@ -5877,9 +5813,7 @@
    (fol.ctx-x0-abp.data_msg_t-x1-abp.data_msg_t-x2-abp.value.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.data_msg_t-x2-abp.value.var.x2.abp.value) (fol.ctx-x0-abp.data_msg_t-x1-abp.data_msg_t-x2-abp.value.term.abp.bot) (fol.ctx-x0-abp.data_msg_t-x1-abp.data_msg_t-x2-abp.value.term.abp.d Term.x0.abp.data_msg_t.x1.abp.data_msg_t.x2.abp.value.abp.data_msg_t) (fol.ctx-x0-abp.data_msg_t-x1-abp.data_msg_t-x2-abp.value.term.abp.receiver_array Term.x0.abp.data_msg_t.x1.abp.data_msg_t.x2.abp.value.abp.index_t)
    (fol.ctx-x0-abp.data_msg_t-x1-abp.data_msg_t-x2-abp.value.term.abp.sender_array Term.x0.abp.data_msg_t.x1.abp.data_msg_t.x2.abp.value.abp.index_t))
-  (
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.ack_msg_t.var.x2.abp.ack_msg_t))
-  (
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.ack_msg_t.var.x0.abp.data_msg_t))
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.ack_msg_t.var.x1.abp.index_t) (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.tp1.sk0))
@@ -5891,21 +5825,17 @@
    (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.data_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.data_msg_t.term.abp.bot) (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.data_msg_t.term.abp.d Term.x0.abp.data_msg_t.x1.abp.index_t.x2.abp.data_msg_t.abp.data_msg_t) (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.data_msg_t.term.abp.receiver_array Term.x0.abp.data_msg_t.x1.abp.index_t.x2.abp.data_msg_t.abp.index_t)
    (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.data_msg_t.term.abp.sender_array Term.x0.abp.data_msg_t.x1.abp.index_t.x2.abp.data_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.index_t.var.x0.abp.data_msg_t))
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.index_t.var.x1.abp.index_t) (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.index_t.var.x2.abp.index_t) (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.index_t.term.abp.index.zero) (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.index_t.term.abp.receiver_i) (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.index_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.index_t.term.abp.sender_i)
    (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.index_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.index_t.term.abp.bot) (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.index_t.term.abp.d Term.x0.abp.data_msg_t.x1.abp.index_t.x2.abp.index_t.abp.data_msg_t) (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.index_t.term.abp.receiver_array Term.x0.abp.data_msg_t.x1.abp.index_t.x2.abp.index_t.abp.index_t)
    (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.index_t.term.abp.sender_array Term.x0.abp.data_msg_t.x1.abp.index_t.x2.abp.index_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.value.var.x0.abp.data_msg_t))
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.value.var.x1.abp.index_t) (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.value.term.abp.index.zero) (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.value.term.abp.receiver_i) (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.value.term.abp.sender_gen_i) (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.value.term.abp.sender_i)
    (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.value.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.value.var.x2.abp.value) (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.value.term.abp.bot) (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.value.term.abp.d Term.x0.abp.data_msg_t.x1.abp.index_t.x2.abp.value.abp.data_msg_t) (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.value.term.abp.receiver_array Term.x0.abp.data_msg_t.x1.abp.index_t.x2.abp.value.abp.index_t)
    (fol.ctx-x0-abp.data_msg_t-x1-abp.index_t-x2-abp.value.term.abp.sender_array Term.x0.abp.data_msg_t.x1.abp.index_t.x2.abp.value.abp.index_t))
-  (
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.ack_msg_t.var.x2.abp.ack_msg_t))
-  (
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.ack_msg_t.var.x0.abp.data_msg_t))
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.ack_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.ack_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.ack_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.ack_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.ack_msg_t.term.abp.tp1.sk0))
@@ -5917,13 +5847,11 @@
    (fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.data_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.data_msg_t.var.x1.abp.value) (fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.data_msg_t.term.abp.bot) (fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.data_msg_t.term.abp.d Term.x0.abp.data_msg_t.x1.abp.value.x2.abp.data_msg_t.abp.data_msg_t) (fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.data_msg_t.term.abp.receiver_array Term.x0.abp.data_msg_t.x1.abp.value.x2.abp.data_msg_t.abp.index_t)
    (fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.data_msg_t.term.abp.sender_array Term.x0.abp.data_msg_t.x1.abp.value.x2.abp.data_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.index_t.var.x0.abp.data_msg_t))
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.index_t.var.x2.abp.index_t) (fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.index_t.term.abp.index.zero) (fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.index_t.term.abp.receiver_i) (fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.index_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.index_t.term.abp.sender_i)
    (fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.index_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.index_t.var.x1.abp.value) (fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.index_t.term.abp.bot) (fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.index_t.term.abp.d Term.x0.abp.data_msg_t.x1.abp.value.x2.abp.index_t.abp.data_msg_t) (fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.index_t.term.abp.receiver_array Term.x0.abp.data_msg_t.x1.abp.value.x2.abp.index_t.abp.index_t)
    (fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.index_t.term.abp.sender_array Term.x0.abp.data_msg_t.x1.abp.value.x2.abp.index_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.value.var.x0.abp.data_msg_t))
   ((fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.value.term.abp.index.zero) (fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.value.term.abp.receiver_i) (fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.value.term.abp.sender_gen_i) (fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.value.term.abp.sender_i)
    (fol.ctx-x0-abp.data_msg_t-x1-abp.value-x2-abp.value.term.abp.tp1.sk0))
@@ -5935,29 +5863,23 @@
    (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.ack_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.ack_msg_t.term.abp.bot) (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.ack_msg_t.term.abp.receiver_array Term.x0.abp.index_t.x1.abp.ack_msg_t.x2.abp.ack_msg_t.abp.index_t)
    (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.ack_msg_t.term.abp.sender_array Term.x0.abp.index_t.x1.abp.ack_msg_t.x2.abp.ack_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.data_msg_t.var.x1.abp.ack_msg_t))
-  (
   ((fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.data_msg_t.var.x2.abp.data_msg_t))
   ((fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.data_msg_t.var.x0.abp.index_t) (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.bot) (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.d Term.x0.abp.index_t.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.data_msg_t) (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.receiver_array Term.x0.abp.index_t.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.index_t)
    (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.sender_array Term.x0.abp.index_t.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.index_t.var.x1.abp.ack_msg_t))
   ((fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.index_t.var.x0.abp.index_t) (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.index_t.var.x2.abp.index_t) (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.index.zero) (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.receiver_i) (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.sender_i)
    (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.bot) (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.receiver_array Term.x0.abp.index_t.x1.abp.ack_msg_t.x2.abp.index_t.abp.index_t)
    (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.sender_array Term.x0.abp.index_t.x1.abp.ack_msg_t.x2.abp.index_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.value.var.x1.abp.ack_msg_t))
   ((fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.value.var.x0.abp.index_t) (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.value.term.abp.index.zero) (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.value.term.abp.receiver_i) (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.value.term.abp.sender_gen_i) (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.value.term.abp.sender_i)
    (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.value.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.value.var.x2.abp.value) (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.value.term.abp.bot) (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.value.term.abp.receiver_array Term.x0.abp.index_t.x1.abp.ack_msg_t.x2.abp.value.abp.index_t)
    (fol.ctx-x0-abp.index_t-x1-abp.ack_msg_t-x2-abp.value.term.abp.sender_array Term.x0.abp.index_t.x1.abp.ack_msg_t.x2.abp.value.abp.index_t))
-  (
   ((fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.ack_msg_t.var.x2.abp.ack_msg_t))
-  (
   ((fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.ack_msg_t.var.x1.abp.data_msg_t))
   ((fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.ack_msg_t.var.x0.abp.index_t) (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.tp1.sk0))
@@ -5969,25 +5891,21 @@
    (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.data_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.data_msg_t.term.abp.bot) (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.data_msg_t.term.abp.d Term.x0.abp.index_t.x1.abp.data_msg_t.x2.abp.data_msg_t.abp.data_msg_t) (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.data_msg_t.term.abp.receiver_array Term.x0.abp.index_t.x1.abp.data_msg_t.x2.abp.data_msg_t.abp.index_t)
    (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.data_msg_t.term.abp.sender_array Term.x0.abp.index_t.x1.abp.data_msg_t.x2.abp.data_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.index_t.var.x1.abp.data_msg_t))
   ((fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.index_t.var.x0.abp.index_t) (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.index_t.var.x2.abp.index_t) (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.index_t.term.abp.index.zero) (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.index_t.term.abp.receiver_i) (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.index_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.index_t.term.abp.sender_i)
    (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.index_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.index_t.term.abp.bot) (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.index_t.term.abp.d Term.x0.abp.index_t.x1.abp.data_msg_t.x2.abp.index_t.abp.data_msg_t) (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.index_t.term.abp.receiver_array Term.x0.abp.index_t.x1.abp.data_msg_t.x2.abp.index_t.abp.index_t)
    (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.index_t.term.abp.sender_array Term.x0.abp.index_t.x1.abp.data_msg_t.x2.abp.index_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.value.var.x1.abp.data_msg_t))
   ((fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.value.var.x0.abp.index_t) (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.value.term.abp.index.zero) (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.value.term.abp.receiver_i) (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.value.term.abp.sender_gen_i) (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.value.term.abp.sender_i)
    (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.value.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.value.var.x2.abp.value) (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.value.term.abp.bot) (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.value.term.abp.d Term.x0.abp.index_t.x1.abp.data_msg_t.x2.abp.value.abp.data_msg_t) (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.value.term.abp.receiver_array Term.x0.abp.index_t.x1.abp.data_msg_t.x2.abp.value.abp.index_t)
    (fol.ctx-x0-abp.index_t-x1-abp.data_msg_t-x2-abp.value.term.abp.sender_array Term.x0.abp.index_t.x1.abp.data_msg_t.x2.abp.value.abp.index_t))
-  (
   ((fol.ctx-x0-abp.index_t-x1-abp.index_t-x2-abp.ack_msg_t.var.x2.abp.ack_msg_t))
   ((fol.ctx-x0-abp.index_t-x1-abp.index_t-x2-abp.ack_msg_t.var.x0.abp.index_t) (fol.ctx-x0-abp.index_t-x1-abp.index_t-x2-abp.ack_msg_t.var.x1.abp.index_t) (fol.ctx-x0-abp.index_t-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.index_t-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.index_t-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.index_t-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.index_t-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.index_t-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.bot) (fol.ctx-x0-abp.index_t-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.receiver_array Term.x0.abp.index_t.x1.abp.index_t.x2.abp.ack_msg_t.abp.index_t)
    (fol.ctx-x0-abp.index_t-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.sender_array Term.x0.abp.index_t.x1.abp.index_t.x2.abp.ack_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.index_t-x1-abp.index_t-x2-abp.data_msg_t.var.x2.abp.data_msg_t))
   ((fol.ctx-x0-abp.index_t-x1-abp.index_t-x2-abp.data_msg_t.var.x0.abp.index_t) (fol.ctx-x0-abp.index_t-x1-abp.index_t-x2-abp.data_msg_t.var.x1.abp.index_t) (fol.ctx-x0-abp.index_t-x1-abp.index_t-x2-abp.data_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.index_t-x1-abp.index_t-x2-abp.data_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.index_t-x1-abp.index_t-x2-abp.data_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.index_t-x1-abp.index_t-x2-abp.data_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.index_t-x1-abp.index_t-x2-abp.data_msg_t.term.abp.tp1.sk0))
@@ -6001,13 +5919,11 @@
    (fol.ctx-x0-abp.index_t-x1-abp.index_t-x2-abp.value.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.index_t-x1-abp.index_t-x2-abp.value.var.x2.abp.value) (fol.ctx-x0-abp.index_t-x1-abp.index_t-x2-abp.value.term.abp.bot) (fol.ctx-x0-abp.index_t-x1-abp.index_t-x2-abp.value.term.abp.receiver_array Term.x0.abp.index_t.x1.abp.index_t.x2.abp.value.abp.index_t)
    (fol.ctx-x0-abp.index_t-x1-abp.index_t-x2-abp.value.term.abp.sender_array Term.x0.abp.index_t.x1.abp.index_t.x2.abp.value.abp.index_t))
-  (
   ((fol.ctx-x0-abp.index_t-x1-abp.value-x2-abp.ack_msg_t.var.x2.abp.ack_msg_t))
   ((fol.ctx-x0-abp.index_t-x1-abp.value-x2-abp.ack_msg_t.var.x0.abp.index_t) (fol.ctx-x0-abp.index_t-x1-abp.value-x2-abp.ack_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.index_t-x1-abp.value-x2-abp.ack_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.index_t-x1-abp.value-x2-abp.ack_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.index_t-x1-abp.value-x2-abp.ack_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.index_t-x1-abp.value-x2-abp.ack_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.index_t-x1-abp.value-x2-abp.ack_msg_t.var.x1.abp.value) (fol.ctx-x0-abp.index_t-x1-abp.value-x2-abp.ack_msg_t.term.abp.bot) (fol.ctx-x0-abp.index_t-x1-abp.value-x2-abp.ack_msg_t.term.abp.receiver_array Term.x0.abp.index_t.x1.abp.value.x2.abp.ack_msg_t.abp.index_t)
    (fol.ctx-x0-abp.index_t-x1-abp.value-x2-abp.ack_msg_t.term.abp.sender_array Term.x0.abp.index_t.x1.abp.value.x2.abp.ack_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.index_t-x1-abp.value-x2-abp.data_msg_t.var.x2.abp.data_msg_t))
   ((fol.ctx-x0-abp.index_t-x1-abp.value-x2-abp.data_msg_t.var.x0.abp.index_t) (fol.ctx-x0-abp.index_t-x1-abp.value-x2-abp.data_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.index_t-x1-abp.value-x2-abp.data_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.index_t-x1-abp.value-x2-abp.data_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.index_t-x1-abp.value-x2-abp.data_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.index_t-x1-abp.value-x2-abp.data_msg_t.term.abp.tp1.sk0))
@@ -6027,29 +5943,23 @@
    (fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.ack_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.ack_msg_t.var.x0.abp.value) (fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.ack_msg_t.term.abp.bot) (fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.ack_msg_t.term.abp.receiver_array Term.x0.abp.value.x1.abp.ack_msg_t.x2.abp.ack_msg_t.abp.index_t)
    (fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.ack_msg_t.term.abp.sender_array Term.x0.abp.value.x1.abp.ack_msg_t.x2.abp.ack_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.data_msg_t.var.x1.abp.ack_msg_t))
-  (
   ((fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.data_msg_t.var.x2.abp.data_msg_t))
   ((fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.data_msg_t.var.x0.abp.value) (fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.bot) (fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.d Term.x0.abp.value.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.data_msg_t) (fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.receiver_array Term.x0.abp.value.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.index_t)
    (fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.data_msg_t.term.abp.sender_array Term.x0.abp.value.x1.abp.ack_msg_t.x2.abp.data_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.index_t.var.x1.abp.ack_msg_t))
   ((fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.index_t.var.x2.abp.index_t) (fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.index.zero) (fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.receiver_i) (fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.sender_i)
    (fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.index_t.var.x0.abp.value) (fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.bot) (fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.receiver_array Term.x0.abp.value.x1.abp.ack_msg_t.x2.abp.index_t.abp.index_t)
    (fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.index_t.term.abp.sender_array Term.x0.abp.value.x1.abp.ack_msg_t.x2.abp.index_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.value.var.x1.abp.ack_msg_t))
   ((fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.value.term.abp.index.zero) (fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.value.term.abp.receiver_i) (fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.value.term.abp.sender_gen_i) (fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.value.term.abp.sender_i)
    (fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.value.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.value.var.x0.abp.value) (fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.value.var.x2.abp.value) (fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.value.term.abp.bot) (fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.value.term.abp.receiver_array Term.x0.abp.value.x1.abp.ack_msg_t.x2.abp.value.abp.index_t)
    (fol.ctx-x0-abp.value-x1-abp.ack_msg_t-x2-abp.value.term.abp.sender_array Term.x0.abp.value.x1.abp.ack_msg_t.x2.abp.value.abp.index_t))
-  (
   ((fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.ack_msg_t.var.x2.abp.ack_msg_t))
-  (
   ((fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.ack_msg_t.var.x1.abp.data_msg_t))
   ((fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.ack_msg_t.term.abp.tp1.sk0))
@@ -6061,25 +5971,21 @@
    (fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.data_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.data_msg_t.var.x0.abp.value) (fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.data_msg_t.term.abp.bot) (fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.data_msg_t.term.abp.d Term.x0.abp.value.x1.abp.data_msg_t.x2.abp.data_msg_t.abp.data_msg_t) (fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.data_msg_t.term.abp.receiver_array Term.x0.abp.value.x1.abp.data_msg_t.x2.abp.data_msg_t.abp.index_t)
    (fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.data_msg_t.term.abp.sender_array Term.x0.abp.value.x1.abp.data_msg_t.x2.abp.data_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.index_t.var.x1.abp.data_msg_t))
   ((fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.index_t.var.x2.abp.index_t) (fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.index_t.term.abp.index.zero) (fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.index_t.term.abp.receiver_i) (fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.index_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.index_t.term.abp.sender_i)
    (fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.index_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.index_t.var.x0.abp.value) (fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.index_t.term.abp.bot) (fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.index_t.term.abp.d Term.x0.abp.value.x1.abp.data_msg_t.x2.abp.index_t.abp.data_msg_t) (fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.index_t.term.abp.receiver_array Term.x0.abp.value.x1.abp.data_msg_t.x2.abp.index_t.abp.index_t)
    (fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.index_t.term.abp.sender_array Term.x0.abp.value.x1.abp.data_msg_t.x2.abp.index_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.value.var.x1.abp.data_msg_t))
   ((fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.value.term.abp.index.zero) (fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.value.term.abp.receiver_i) (fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.value.term.abp.sender_gen_i) (fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.value.term.abp.sender_i)
    (fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.value.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.value.var.x0.abp.value) (fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.value.var.x2.abp.value) (fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.value.term.abp.bot) (fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.value.term.abp.d Term.x0.abp.value.x1.abp.data_msg_t.x2.abp.value.abp.data_msg_t) (fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.value.term.abp.receiver_array Term.x0.abp.value.x1.abp.data_msg_t.x2.abp.value.abp.index_t)
    (fol.ctx-x0-abp.value-x1-abp.data_msg_t-x2-abp.value.term.abp.sender_array Term.x0.abp.value.x1.abp.data_msg_t.x2.abp.value.abp.index_t))
-  (
   ((fol.ctx-x0-abp.value-x1-abp.index_t-x2-abp.ack_msg_t.var.x2.abp.ack_msg_t))
   ((fol.ctx-x0-abp.value-x1-abp.index_t-x2-abp.ack_msg_t.var.x1.abp.index_t) (fol.ctx-x0-abp.value-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.value-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.value-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.value-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.value-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.value-x1-abp.index_t-x2-abp.ack_msg_t.var.x0.abp.value) (fol.ctx-x0-abp.value-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.bot) (fol.ctx-x0-abp.value-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.receiver_array Term.x0.abp.value.x1.abp.index_t.x2.abp.ack_msg_t.abp.index_t)
    (fol.ctx-x0-abp.value-x1-abp.index_t-x2-abp.ack_msg_t.term.abp.sender_array Term.x0.abp.value.x1.abp.index_t.x2.abp.ack_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.value-x1-abp.index_t-x2-abp.data_msg_t.var.x2.abp.data_msg_t))
   ((fol.ctx-x0-abp.value-x1-abp.index_t-x2-abp.data_msg_t.var.x1.abp.index_t) (fol.ctx-x0-abp.value-x1-abp.index_t-x2-abp.data_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.value-x1-abp.index_t-x2-abp.data_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.value-x1-abp.index_t-x2-abp.data_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.value-x1-abp.index_t-x2-abp.data_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.value-x1-abp.index_t-x2-abp.data_msg_t.term.abp.tp1.sk0))
@@ -6093,13 +5999,11 @@
    (fol.ctx-x0-abp.value-x1-abp.index_t-x2-abp.value.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.value-x1-abp.index_t-x2-abp.value.var.x0.abp.value) (fol.ctx-x0-abp.value-x1-abp.index_t-x2-abp.value.var.x2.abp.value) (fol.ctx-x0-abp.value-x1-abp.index_t-x2-abp.value.term.abp.bot) (fol.ctx-x0-abp.value-x1-abp.index_t-x2-abp.value.term.abp.receiver_array Term.x0.abp.value.x1.abp.index_t.x2.abp.value.abp.index_t)
    (fol.ctx-x0-abp.value-x1-abp.index_t-x2-abp.value.term.abp.sender_array Term.x0.abp.value.x1.abp.index_t.x2.abp.value.abp.index_t))
-  (
   ((fol.ctx-x0-abp.value-x1-abp.value-x2-abp.ack_msg_t.var.x2.abp.ack_msg_t))
   ((fol.ctx-x0-abp.value-x1-abp.value-x2-abp.ack_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.value-x1-abp.value-x2-abp.ack_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.value-x1-abp.value-x2-abp.ack_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.value-x1-abp.value-x2-abp.ack_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.value-x1-abp.value-x2-abp.ack_msg_t.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.value-x1-abp.value-x2-abp.ack_msg_t.var.x0.abp.value) (fol.ctx-x0-abp.value-x1-abp.value-x2-abp.ack_msg_t.var.x1.abp.value) (fol.ctx-x0-abp.value-x1-abp.value-x2-abp.ack_msg_t.term.abp.bot) (fol.ctx-x0-abp.value-x1-abp.value-x2-abp.ack_msg_t.term.abp.receiver_array Term.x0.abp.value.x1.abp.value.x2.abp.ack_msg_t.abp.index_t)
    (fol.ctx-x0-abp.value-x1-abp.value-x2-abp.ack_msg_t.term.abp.sender_array Term.x0.abp.value.x1.abp.value.x2.abp.ack_msg_t.abp.index_t))
-  (
   ((fol.ctx-x0-abp.value-x1-abp.value-x2-abp.data_msg_t.var.x2.abp.data_msg_t))
   ((fol.ctx-x0-abp.value-x1-abp.value-x2-abp.data_msg_t.term.abp.index.zero) (fol.ctx-x0-abp.value-x1-abp.value-x2-abp.data_msg_t.term.abp.receiver_i) (fol.ctx-x0-abp.value-x1-abp.value-x2-abp.data_msg_t.term.abp.sender_gen_i) (fol.ctx-x0-abp.value-x1-abp.value-x2-abp.data_msg_t.term.abp.sender_i)
    (fol.ctx-x0-abp.value-x1-abp.value-x2-abp.data_msg_t.term.abp.tp1.sk0))
@@ -6112,7 +6016,7 @@
   ((fol.ctx-x0-abp.value-x1-abp.value-x2-abp.value.term.abp.index.zero) (fol.ctx-x0-abp.value-x1-abp.value-x2-abp.value.term.abp.receiver_i) (fol.ctx-x0-abp.value-x1-abp.value-x2-abp.value.term.abp.sender_gen_i) (fol.ctx-x0-abp.value-x1-abp.value-x2-abp.value.term.abp.sender_i)
    (fol.ctx-x0-abp.value-x1-abp.value-x2-abp.value.term.abp.tp1.sk0))
   ((fol.ctx-x0-abp.value-x1-abp.value-x2-abp.value.var.x0.abp.value) (fol.ctx-x0-abp.value-x1-abp.value-x2-abp.value.var.x1.abp.value) (fol.ctx-x0-abp.value-x1-abp.value-x2-abp.value.var.x2.abp.value) (fol.ctx-x0-abp.value-x1-abp.value-x2-abp.value.term.abp.bot) (fol.ctx-x0-abp.value-x1-abp.value-x2-abp.value.term.abp.receiver_array Term.x0.abp.value.x1.abp.value.x2.abp.value.abp.index_t)
-   (fol.ctx-x0-abp.value-x1-abp.value-x2-abp.value.term.abp.sender_array Term.x0.abp.value.x1.abp.value.x2.abp.value.abp.index_t))
+   (fol.ctx-x0-abp.value-x1-abp.value-x2-abp.value.term.abp.sender_array Term.x0.abp.value.x1.abp.value.x2.abp.value.abp.index_t)))
 )
 
 (define-finite FoAsp0 (record (model Model)))

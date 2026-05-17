@@ -3,7 +3,7 @@
 
 (declare-term-types
  ((Formula0 0) (Formula.x0.node 0) (Formula.x1.node 0) (Formula.x2.node 0) (Formula.x0.node.x1.node 0) (Formula.x0.node.x2.node 0) (Formula.x1.node.x2.node 0) (Formula.x0.node.x1.node.x2.node 0) (Term.x0.node.node 0) (Term.x1.node.node 0) (Term.x2.node.node 0) (Term.x0.node.x1.node.node 0) (Term.x0.node.x2.node.node 0) (Term.x1.node.x2.node.node 0) (Term.x0.node.x1.node.x2.node.node 0))
-  ((fol.0.true)
+ (((fol.0.true)
    (fol.0.false)
    (fol.0.not Formula0)
    (fol.0.and Formula0 Formula0)
@@ -134,11 +134,8 @@
    (fol.ctx-x0-node-x1-node-x2-node.atom.lock_msg Term.x0.node.x1.node.x2.node.node)
    (fol.ctx-x0-node-x1-node-x2-node.atom.server_holds_lock )
    (fol.ctx-x0-node-x1-node-x2-node.atom.unlock_msg Term.x0.node.x1.node.x2.node.node))
-  (
   ((fol.ctx-x0-node.var.x0.node))
-  (
   ((fol.ctx-x1-node.var.x1.node))
-  (
   ((fol.ctx-x2-node.var.x2.node))
   ((fol.ctx-x0-node-x1-node.var.x0.node)
    (fol.ctx-x0-node-x1-node.var.x1.node))
@@ -147,7 +144,7 @@
   ((fol.ctx-x1-node-x2-node.var.x1.node)
    (fol.ctx-x1-node-x2-node.var.x2.node))
   ((fol.ctx-x0-node-x1-node-x2-node.var.x0.node) (fol.ctx-x0-node-x1-node-x2-node.var.x1.node)
-   (fol.ctx-x0-node-x1-node-x2-node.var.x2.node))
+   (fol.ctx-x0-node-x1-node-x2-node.var.x2.node)))
 )
 
 (define-finite FoAsp0 (record (model Model)))

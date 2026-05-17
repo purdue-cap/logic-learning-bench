@@ -3,7 +3,7 @@
 
 (declare-term-types
  ((Formula0 0) (Formula.x0.ticket_protocol.thread 0) (Formula.x0.ticket_protocol.ticket 0) (Formula.x1.ticket_protocol.thread 0) (Formula.x1.ticket_protocol.ticket 0) (Formula.x2.ticket_protocol.thread 0) (Formula.x2.ticket_protocol.ticket 0) (Formula.x0.ticket_protocol.thread.x1.ticket_protocol.thread 0) (Formula.x0.ticket_protocol.thread.x1.ticket_protocol.ticket 0) (Formula.x0.ticket_protocol.ticket.x1.ticket_protocol.thread 0) (Formula.x0.ticket_protocol.ticket.x1.ticket_protocol.ticket 0) (Formula.x0.ticket_protocol.thread.x2.ticket_protocol.thread 0) (Formula.x0.ticket_protocol.thread.x2.ticket_protocol.ticket 0) (Formula.x0.ticket_protocol.ticket.x2.ticket_protocol.thread 0) (Formula.x0.ticket_protocol.ticket.x2.ticket_protocol.ticket 0) (Formula.x1.ticket_protocol.thread.x2.ticket_protocol.thread 0) (Formula.x1.ticket_protocol.thread.x2.ticket_protocol.ticket 0) (Formula.x1.ticket_protocol.ticket.x2.ticket_protocol.thread 0) (Formula.x1.ticket_protocol.ticket.x2.ticket_protocol.ticket 0) (Formula.x0.ticket_protocol.thread.x1.ticket_protocol.thread.x2.ticket_protocol.thread 0) (Formula.x0.ticket_protocol.thread.x1.ticket_protocol.thread.x2.ticket_protocol.ticket 0) (Formula.x0.ticket_protocol.thread.x1.ticket_protocol.ticket.x2.ticket_protocol.thread 0) (Formula.x0.ticket_protocol.thread.x1.ticket_protocol.ticket.x2.ticket_protocol.ticket 0) (Formula.x0.ticket_protocol.ticket.x1.ticket_protocol.thread.x2.ticket_protocol.thread 0) (Formula.x0.ticket_protocol.ticket.x1.ticket_protocol.thread.x2.ticket_protocol.ticket 0) (Formula.x0.ticket_protocol.ticket.x1.ticket_protocol.ticket.x2.ticket_protocol.thread 0) (Formula.x0.ticket_protocol.ticket.x1.ticket_protocol.ticket.x2.ticket_protocol.ticket 0) (Term.0.ticket_protocol.thread 0) (Term.0.ticket_protocol.ticket 0) (Term.x0.ticket_protocol.thread.ticket_protocol.thread 0) (Term.x0.ticket_protocol.thread.ticket_protocol.ticket 0) (Term.x0.ticket_protocol.ticket.ticket_protocol.thread 0) (Term.x0.ticket_protocol.ticket.ticket_protocol.ticket 0) (Term.x1.ticket_protocol.thread.ticket_protocol.thread 0) (Term.x1.ticket_protocol.thread.ticket_protocol.ticket 0) (Term.x1.ticket_protocol.ticket.ticket_protocol.thread 0) (Term.x1.ticket_protocol.ticket.ticket_protocol.ticket 0) (Term.x2.ticket_protocol.thread.ticket_protocol.thread 0) (Term.x2.ticket_protocol.thread.ticket_protocol.ticket 0) (Term.x2.ticket_protocol.ticket.ticket_protocol.thread 0) (Term.x2.ticket_protocol.ticket.ticket_protocol.ticket 0) (Term.x0.ticket_protocol.thread.x1.ticket_protocol.thread.ticket_protocol.thread 0) (Term.x0.ticket_protocol.thread.x1.ticket_protocol.thread.ticket_protocol.ticket 0) (Term.x0.ticket_protocol.thread.x1.ticket_protocol.ticket.ticket_protocol.thread 0) (Term.x0.ticket_protocol.thread.x1.ticket_protocol.ticket.ticket_protocol.ticket 0) (Term.x0.ticket_protocol.ticket.x1.ticket_protocol.thread.ticket_protocol.thread 0) (Term.x0.ticket_protocol.ticket.x1.ticket_protocol.thread.ticket_protocol.ticket 0) (Term.x0.ticket_protocol.ticket.x1.ticket_protocol.ticket.ticket_protocol.thread 0) (Term.x0.ticket_protocol.ticket.x1.ticket_protocol.ticket.ticket_protocol.ticket 0) (Term.x0.ticket_protocol.thread.x2.ticket_protocol.thread.ticket_protocol.thread 0) (Term.x0.ticket_protocol.thread.x2.ticket_protocol.thread.ticket_protocol.ticket 0) (Term.x0.ticket_protocol.thread.x2.ticket_protocol.ticket.ticket_protocol.thread 0) (Term.x0.ticket_protocol.thread.x2.ticket_protocol.ticket.ticket_protocol.ticket 0) (Term.x0.ticket_protocol.ticket.x2.ticket_protocol.thread.ticket_protocol.thread 0) (Term.x0.ticket_protocol.ticket.x2.ticket_protocol.thread.ticket_protocol.ticket 0) (Term.x0.ticket_protocol.ticket.x2.ticket_protocol.ticket.ticket_protocol.thread 0) (Term.x0.ticket_protocol.ticket.x2.ticket_protocol.ticket.ticket_protocol.ticket 0) (Term.x1.ticket_protocol.thread.x2.ticket_protocol.thread.ticket_protocol.thread 0) (Term.x1.ticket_protocol.thread.x2.ticket_protocol.thread.ticket_protocol.ticket 0) (Term.x1.ticket_protocol.thread.x2.ticket_protocol.ticket.ticket_protocol.thread 0) (Term.x1.ticket_protocol.thread.x2.ticket_protocol.ticket.ticket_protocol.ticket 0) (Term.x1.ticket_protocol.ticket.x2.ticket_protocol.thread.ticket_protocol.thread 0) (Term.x1.ticket_protocol.ticket.x2.ticket_protocol.thread.ticket_protocol.ticket 0) (Term.x1.ticket_protocol.ticket.x2.ticket_protocol.ticket.ticket_protocol.thread 0) (Term.x1.ticket_protocol.ticket.x2.ticket_protocol.ticket.ticket_protocol.ticket 0) (Term.x0.ticket_protocol.thread.x1.ticket_protocol.thread.x2.ticket_protocol.thread.ticket_protocol.thread 0) (Term.x0.ticket_protocol.thread.x1.ticket_protocol.thread.x2.ticket_protocol.thread.ticket_protocol.ticket 0) (Term.x0.ticket_protocol.thread.x1.ticket_protocol.thread.x2.ticket_protocol.ticket.ticket_protocol.thread 0) (Term.x0.ticket_protocol.thread.x1.ticket_protocol.thread.x2.ticket_protocol.ticket.ticket_protocol.ticket 0) (Term.x0.ticket_protocol.thread.x1.ticket_protocol.ticket.x2.ticket_protocol.thread.ticket_protocol.thread 0) (Term.x0.ticket_protocol.thread.x1.ticket_protocol.ticket.x2.ticket_protocol.thread.ticket_protocol.ticket 0) (Term.x0.ticket_protocol.thread.x1.ticket_protocol.ticket.x2.ticket_protocol.ticket.ticket_protocol.thread 0) (Term.x0.ticket_protocol.thread.x1.ticket_protocol.ticket.x2.ticket_protocol.ticket.ticket_protocol.ticket 0) (Term.x0.ticket_protocol.ticket.x1.ticket_protocol.thread.x2.ticket_protocol.thread.ticket_protocol.thread 0) (Term.x0.ticket_protocol.ticket.x1.ticket_protocol.thread.x2.ticket_protocol.thread.ticket_protocol.ticket 0) (Term.x0.ticket_protocol.ticket.x1.ticket_protocol.thread.x2.ticket_protocol.ticket.ticket_protocol.thread 0) (Term.x0.ticket_protocol.ticket.x1.ticket_protocol.thread.x2.ticket_protocol.ticket.ticket_protocol.ticket 0) (Term.x0.ticket_protocol.ticket.x1.ticket_protocol.ticket.x2.ticket_protocol.thread.ticket_protocol.thread 0) (Term.x0.ticket_protocol.ticket.x1.ticket_protocol.ticket.x2.ticket_protocol.thread.ticket_protocol.ticket 0) (Term.x0.ticket_protocol.ticket.x1.ticket_protocol.ticket.x2.ticket_protocol.ticket.ticket_protocol.thread 0) (Term.x0.ticket_protocol.ticket.x1.ticket_protocol.ticket.x2.ticket_protocol.ticket.ticket_protocol.ticket 0))
-  ((fol.0.true)
+ (((fol.0.true)
    (fol.0.false)
    (fol.0.not Formula0)
    (fol.0.and Formula0 Formula0)
@@ -678,7 +678,6 @@
    (fol.ctx-x0-ticket_protocol.ticket-x1-ticket_protocol.ticket-x2-ticket_protocol.ticket.atom.ticket_protocol.pc2 Term.x0.ticket_protocol.ticket.x1.ticket_protocol.ticket.x2.ticket_protocol.ticket.ticket_protocol.thread)
    (fol.ctx-x0-ticket_protocol.ticket-x1-ticket_protocol.ticket-x2-ticket_protocol.ticket.atom.ticket_protocol.pc3 Term.x0.ticket_protocol.ticket.x1.ticket_protocol.ticket.x2.ticket_protocol.ticket.ticket_protocol.thread)
    (fol.ctx-x0-ticket_protocol.ticket-x1-ticket_protocol.ticket-x2-ticket_protocol.ticket.atom.ticket_protocol.scheduled Term.x0.ticket_protocol.ticket.x1.ticket_protocol.ticket.x2.ticket_protocol.ticket.ticket_protocol.thread))
-  (
   ((fol.0.term.ticket_protocol.tp1.sk0))
   ((fol.0.term.ticket_protocol.next_ticket) (fol.0.term.ticket_protocol.service)
    (fol.0.term.ticket_protocol.zero))
@@ -686,7 +685,6 @@
    (fol.ctx-x0-ticket_protocol.thread.term.ticket_protocol.tp1.sk0))
   ((fol.ctx-x0-ticket_protocol.thread.term.ticket_protocol.next_ticket) (fol.ctx-x0-ticket_protocol.thread.term.ticket_protocol.service)
    (fol.ctx-x0-ticket_protocol.thread.term.ticket_protocol.zero))
-  (
   ((fol.ctx-x0-ticket_protocol.ticket.term.ticket_protocol.tp1.sk0))
   ((fol.ctx-x0-ticket_protocol.ticket.var.x0.ticket_protocol.ticket) (fol.ctx-x0-ticket_protocol.ticket.term.ticket_protocol.next_ticket) (fol.ctx-x0-ticket_protocol.ticket.term.ticket_protocol.service)
    (fol.ctx-x0-ticket_protocol.ticket.term.ticket_protocol.zero))
@@ -694,7 +692,6 @@
    (fol.ctx-x1-ticket_protocol.thread.term.ticket_protocol.tp1.sk0))
   ((fol.ctx-x1-ticket_protocol.thread.term.ticket_protocol.next_ticket) (fol.ctx-x1-ticket_protocol.thread.term.ticket_protocol.service)
    (fol.ctx-x1-ticket_protocol.thread.term.ticket_protocol.zero))
-  (
   ((fol.ctx-x1-ticket_protocol.ticket.term.ticket_protocol.tp1.sk0))
   ((fol.ctx-x1-ticket_protocol.ticket.var.x1.ticket_protocol.ticket) (fol.ctx-x1-ticket_protocol.ticket.term.ticket_protocol.next_ticket) (fol.ctx-x1-ticket_protocol.ticket.term.ticket_protocol.service)
    (fol.ctx-x1-ticket_protocol.ticket.term.ticket_protocol.zero))
@@ -702,7 +699,6 @@
    (fol.ctx-x2-ticket_protocol.thread.term.ticket_protocol.tp1.sk0))
   ((fol.ctx-x2-ticket_protocol.thread.term.ticket_protocol.next_ticket) (fol.ctx-x2-ticket_protocol.thread.term.ticket_protocol.service)
    (fol.ctx-x2-ticket_protocol.thread.term.ticket_protocol.zero))
-  (
   ((fol.ctx-x2-ticket_protocol.ticket.term.ticket_protocol.tp1.sk0))
   ((fol.ctx-x2-ticket_protocol.ticket.var.x2.ticket_protocol.ticket) (fol.ctx-x2-ticket_protocol.ticket.term.ticket_protocol.next_ticket) (fol.ctx-x2-ticket_protocol.ticket.term.ticket_protocol.service)
    (fol.ctx-x2-ticket_protocol.ticket.term.ticket_protocol.zero))
@@ -718,7 +714,6 @@
    (fol.ctx-x0-ticket_protocol.ticket-x1-ticket_protocol.thread.term.ticket_protocol.tp1.sk0))
   ((fol.ctx-x0-ticket_protocol.ticket-x1-ticket_protocol.thread.var.x0.ticket_protocol.ticket) (fol.ctx-x0-ticket_protocol.ticket-x1-ticket_protocol.thread.term.ticket_protocol.next_ticket) (fol.ctx-x0-ticket_protocol.ticket-x1-ticket_protocol.thread.term.ticket_protocol.service)
    (fol.ctx-x0-ticket_protocol.ticket-x1-ticket_protocol.thread.term.ticket_protocol.zero))
-  (
   ((fol.ctx-x0-ticket_protocol.ticket-x1-ticket_protocol.ticket.term.ticket_protocol.tp1.sk0))
   ((fol.ctx-x0-ticket_protocol.ticket-x1-ticket_protocol.ticket.var.x0.ticket_protocol.ticket) (fol.ctx-x0-ticket_protocol.ticket-x1-ticket_protocol.ticket.var.x1.ticket_protocol.ticket) (fol.ctx-x0-ticket_protocol.ticket-x1-ticket_protocol.ticket.term.ticket_protocol.next_ticket) (fol.ctx-x0-ticket_protocol.ticket-x1-ticket_protocol.ticket.term.ticket_protocol.service)
    (fol.ctx-x0-ticket_protocol.ticket-x1-ticket_protocol.ticket.term.ticket_protocol.zero))
@@ -734,7 +729,6 @@
    (fol.ctx-x0-ticket_protocol.ticket-x2-ticket_protocol.thread.term.ticket_protocol.tp1.sk0))
   ((fol.ctx-x0-ticket_protocol.ticket-x2-ticket_protocol.thread.var.x0.ticket_protocol.ticket) (fol.ctx-x0-ticket_protocol.ticket-x2-ticket_protocol.thread.term.ticket_protocol.next_ticket) (fol.ctx-x0-ticket_protocol.ticket-x2-ticket_protocol.thread.term.ticket_protocol.service)
    (fol.ctx-x0-ticket_protocol.ticket-x2-ticket_protocol.thread.term.ticket_protocol.zero))
-  (
   ((fol.ctx-x0-ticket_protocol.ticket-x2-ticket_protocol.ticket.term.ticket_protocol.tp1.sk0))
   ((fol.ctx-x0-ticket_protocol.ticket-x2-ticket_protocol.ticket.var.x0.ticket_protocol.ticket) (fol.ctx-x0-ticket_protocol.ticket-x2-ticket_protocol.ticket.var.x2.ticket_protocol.ticket) (fol.ctx-x0-ticket_protocol.ticket-x2-ticket_protocol.ticket.term.ticket_protocol.next_ticket) (fol.ctx-x0-ticket_protocol.ticket-x2-ticket_protocol.ticket.term.ticket_protocol.service)
    (fol.ctx-x0-ticket_protocol.ticket-x2-ticket_protocol.ticket.term.ticket_protocol.zero))
@@ -750,7 +744,6 @@
    (fol.ctx-x1-ticket_protocol.ticket-x2-ticket_protocol.thread.term.ticket_protocol.tp1.sk0))
   ((fol.ctx-x1-ticket_protocol.ticket-x2-ticket_protocol.thread.var.x1.ticket_protocol.ticket) (fol.ctx-x1-ticket_protocol.ticket-x2-ticket_protocol.thread.term.ticket_protocol.next_ticket) (fol.ctx-x1-ticket_protocol.ticket-x2-ticket_protocol.thread.term.ticket_protocol.service)
    (fol.ctx-x1-ticket_protocol.ticket-x2-ticket_protocol.thread.term.ticket_protocol.zero))
-  (
   ((fol.ctx-x1-ticket_protocol.ticket-x2-ticket_protocol.ticket.term.ticket_protocol.tp1.sk0))
   ((fol.ctx-x1-ticket_protocol.ticket-x2-ticket_protocol.ticket.var.x1.ticket_protocol.ticket) (fol.ctx-x1-ticket_protocol.ticket-x2-ticket_protocol.ticket.var.x2.ticket_protocol.ticket) (fol.ctx-x1-ticket_protocol.ticket-x2-ticket_protocol.ticket.term.ticket_protocol.next_ticket) (fol.ctx-x1-ticket_protocol.ticket-x2-ticket_protocol.ticket.term.ticket_protocol.service)
    (fol.ctx-x1-ticket_protocol.ticket-x2-ticket_protocol.ticket.term.ticket_protocol.zero))
@@ -782,10 +775,9 @@
    (fol.ctx-x0-ticket_protocol.ticket-x1-ticket_protocol.ticket-x2-ticket_protocol.thread.term.ticket_protocol.tp1.sk0))
   ((fol.ctx-x0-ticket_protocol.ticket-x1-ticket_protocol.ticket-x2-ticket_protocol.thread.var.x0.ticket_protocol.ticket) (fol.ctx-x0-ticket_protocol.ticket-x1-ticket_protocol.ticket-x2-ticket_protocol.thread.var.x1.ticket_protocol.ticket) (fol.ctx-x0-ticket_protocol.ticket-x1-ticket_protocol.ticket-x2-ticket_protocol.thread.term.ticket_protocol.next_ticket) (fol.ctx-x0-ticket_protocol.ticket-x1-ticket_protocol.ticket-x2-ticket_protocol.thread.term.ticket_protocol.service)
    (fol.ctx-x0-ticket_protocol.ticket-x1-ticket_protocol.ticket-x2-ticket_protocol.thread.term.ticket_protocol.zero))
-  (
   ((fol.ctx-x0-ticket_protocol.ticket-x1-ticket_protocol.ticket-x2-ticket_protocol.ticket.term.ticket_protocol.tp1.sk0))
   ((fol.ctx-x0-ticket_protocol.ticket-x1-ticket_protocol.ticket-x2-ticket_protocol.ticket.var.x0.ticket_protocol.ticket) (fol.ctx-x0-ticket_protocol.ticket-x1-ticket_protocol.ticket-x2-ticket_protocol.ticket.var.x1.ticket_protocol.ticket) (fol.ctx-x0-ticket_protocol.ticket-x1-ticket_protocol.ticket-x2-ticket_protocol.ticket.var.x2.ticket_protocol.ticket) (fol.ctx-x0-ticket_protocol.ticket-x1-ticket_protocol.ticket-x2-ticket_protocol.ticket.term.ticket_protocol.next_ticket) (fol.ctx-x0-ticket_protocol.ticket-x1-ticket_protocol.ticket-x2-ticket_protocol.ticket.term.ticket_protocol.service)
-   (fol.ctx-x0-ticket_protocol.ticket-x1-ticket_protocol.ticket-x2-ticket_protocol.ticket.term.ticket_protocol.zero))
+   (fol.ctx-x0-ticket_protocol.ticket-x1-ticket_protocol.ticket-x2-ticket_protocol.ticket.term.ticket_protocol.zero)))
 )
 
 (define-finite FoAsp0 (record (model Model)))

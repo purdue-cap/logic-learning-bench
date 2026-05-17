@@ -3,7 +3,7 @@
 
 (declare-term-types
  ((Formula0 0) (Formula.x0.node 0) (Formula.x0.quorum_a 0) (Formula.x0.quorum_b 0) (Formula.x1.node 0) (Formula.x1.quorum_a 0) (Formula.x1.quorum_b 0) (Formula.x2.node 0) (Formula.x2.quorum_a 0) (Formula.x2.quorum_b 0) (Formula.x0.node.x1.node 0) (Formula.x0.node.x1.quorum_a 0) (Formula.x0.node.x1.quorum_b 0) (Formula.x0.quorum_a.x1.node 0) (Formula.x0.quorum_a.x1.quorum_a 0) (Formula.x0.quorum_a.x1.quorum_b 0) (Formula.x0.quorum_b.x1.node 0) (Formula.x0.quorum_b.x1.quorum_a 0) (Formula.x0.quorum_b.x1.quorum_b 0) (Formula.x0.node.x2.node 0) (Formula.x0.node.x2.quorum_a 0) (Formula.x0.node.x2.quorum_b 0) (Formula.x0.quorum_a.x2.node 0) (Formula.x0.quorum_a.x2.quorum_a 0) (Formula.x0.quorum_a.x2.quorum_b 0) (Formula.x0.quorum_b.x2.node 0) (Formula.x0.quorum_b.x2.quorum_a 0) (Formula.x0.quorum_b.x2.quorum_b 0) (Formula.x1.node.x2.node 0) (Formula.x1.node.x2.quorum_a 0) (Formula.x1.node.x2.quorum_b 0) (Formula.x1.quorum_a.x2.node 0) (Formula.x1.quorum_a.x2.quorum_a 0) (Formula.x1.quorum_a.x2.quorum_b 0) (Formula.x1.quorum_b.x2.node 0) (Formula.x1.quorum_b.x2.quorum_a 0) (Formula.x1.quorum_b.x2.quorum_b 0) (Formula.x0.node.x1.node.x2.node 0) (Formula.x0.node.x1.node.x2.quorum_a 0) (Formula.x0.node.x1.node.x2.quorum_b 0) (Formula.x0.node.x1.quorum_a.x2.node 0) (Formula.x0.node.x1.quorum_a.x2.quorum_a 0) (Formula.x0.node.x1.quorum_a.x2.quorum_b 0) (Formula.x0.node.x1.quorum_b.x2.node 0) (Formula.x0.node.x1.quorum_b.x2.quorum_a 0) (Formula.x0.node.x1.quorum_b.x2.quorum_b 0) (Formula.x0.quorum_a.x1.node.x2.node 0) (Formula.x0.quorum_a.x1.node.x2.quorum_a 0) (Formula.x0.quorum_a.x1.node.x2.quorum_b 0) (Formula.x0.quorum_a.x1.quorum_a.x2.node 0) (Formula.x0.quorum_a.x1.quorum_a.x2.quorum_a 0) (Formula.x0.quorum_a.x1.quorum_a.x2.quorum_b 0) (Formula.x0.quorum_a.x1.quorum_b.x2.node 0) (Formula.x0.quorum_a.x1.quorum_b.x2.quorum_a 0) (Formula.x0.quorum_a.x1.quorum_b.x2.quorum_b 0) (Formula.x0.quorum_b.x1.node.x2.node 0) (Formula.x0.quorum_b.x1.node.x2.quorum_a 0) (Formula.x0.quorum_b.x1.node.x2.quorum_b 0) (Formula.x0.quorum_b.x1.quorum_a.x2.node 0) (Formula.x0.quorum_b.x1.quorum_a.x2.quorum_a 0) (Formula.x0.quorum_b.x1.quorum_a.x2.quorum_b 0) (Formula.x0.quorum_b.x1.quorum_b.x2.node 0) (Formula.x0.quorum_b.x1.quorum_b.x2.quorum_a 0) (Formula.x0.quorum_b.x1.quorum_b.x2.quorum_b 0) (Term.0.node 0) (Term.x0.node.node 0) (Term.x0.quorum_a.node 0) (Term.x0.quorum_a.quorum_a 0) (Term.x0.quorum_b.node 0) (Term.x0.quorum_b.quorum_b 0) (Term.x1.node.node 0) (Term.x1.quorum_a.node 0) (Term.x1.quorum_a.quorum_a 0) (Term.x1.quorum_b.node 0) (Term.x1.quorum_b.quorum_b 0) (Term.x2.node.node 0) (Term.x2.quorum_a.node 0) (Term.x2.quorum_a.quorum_a 0) (Term.x2.quorum_b.node 0) (Term.x2.quorum_b.quorum_b 0) (Term.x0.node.x1.node.node 0) (Term.x0.node.x1.quorum_a.node 0) (Term.x0.node.x1.quorum_a.quorum_a 0) (Term.x0.node.x1.quorum_b.node 0) (Term.x0.node.x1.quorum_b.quorum_b 0) (Term.x0.quorum_a.x1.node.node 0) (Term.x0.quorum_a.x1.node.quorum_a 0) (Term.x0.quorum_a.x1.quorum_a.node 0) (Term.x0.quorum_a.x1.quorum_a.quorum_a 0) (Term.x0.quorum_a.x1.quorum_b.node 0) (Term.x0.quorum_a.x1.quorum_b.quorum_a 0) (Term.x0.quorum_a.x1.quorum_b.quorum_b 0) (Term.x0.quorum_b.x1.node.node 0) (Term.x0.quorum_b.x1.node.quorum_b 0) (Term.x0.quorum_b.x1.quorum_a.node 0) (Term.x0.quorum_b.x1.quorum_a.quorum_a 0) (Term.x0.quorum_b.x1.quorum_a.quorum_b 0) (Term.x0.quorum_b.x1.quorum_b.node 0) (Term.x0.quorum_b.x1.quorum_b.quorum_b 0) (Term.x0.node.x2.node.node 0) (Term.x0.node.x2.quorum_a.node 0) (Term.x0.node.x2.quorum_a.quorum_a 0) (Term.x0.node.x2.quorum_b.node 0) (Term.x0.node.x2.quorum_b.quorum_b 0) (Term.x0.quorum_a.x2.node.node 0) (Term.x0.quorum_a.x2.node.quorum_a 0) (Term.x0.quorum_a.x2.quorum_a.node 0) (Term.x0.quorum_a.x2.quorum_a.quorum_a 0) (Term.x0.quorum_a.x2.quorum_b.node 0) (Term.x0.quorum_a.x2.quorum_b.quorum_a 0) (Term.x0.quorum_a.x2.quorum_b.quorum_b 0) (Term.x0.quorum_b.x2.node.node 0) (Term.x0.quorum_b.x2.node.quorum_b 0) (Term.x0.quorum_b.x2.quorum_a.node 0) (Term.x0.quorum_b.x2.quorum_a.quorum_a 0) (Term.x0.quorum_b.x2.quorum_a.quorum_b 0) (Term.x0.quorum_b.x2.quorum_b.node 0) (Term.x0.quorum_b.x2.quorum_b.quorum_b 0) (Term.x1.node.x2.node.node 0) (Term.x1.node.x2.quorum_a.node 0) (Term.x1.node.x2.quorum_a.quorum_a 0) (Term.x1.node.x2.quorum_b.node 0) (Term.x1.node.x2.quorum_b.quorum_b 0) (Term.x1.quorum_a.x2.node.node 0) (Term.x1.quorum_a.x2.node.quorum_a 0) (Term.x1.quorum_a.x2.quorum_a.node 0) (Term.x1.quorum_a.x2.quorum_a.quorum_a 0) (Term.x1.quorum_a.x2.quorum_b.node 0) (Term.x1.quorum_a.x2.quorum_b.quorum_a 0) (Term.x1.quorum_a.x2.quorum_b.quorum_b 0) (Term.x1.quorum_b.x2.node.node 0) (Term.x1.quorum_b.x2.node.quorum_b 0) (Term.x1.quorum_b.x2.quorum_a.node 0) (Term.x1.quorum_b.x2.quorum_a.quorum_a 0) (Term.x1.quorum_b.x2.quorum_a.quorum_b 0) (Term.x1.quorum_b.x2.quorum_b.node 0) (Term.x1.quorum_b.x2.quorum_b.quorum_b 0) (Term.x0.node.x1.node.x2.node.node 0) (Term.x0.node.x1.node.x2.quorum_a.node 0) (Term.x0.node.x1.node.x2.quorum_a.quorum_a 0) (Term.x0.node.x1.node.x2.quorum_b.node 0) (Term.x0.node.x1.node.x2.quorum_b.quorum_b 0) (Term.x0.node.x1.quorum_a.x2.node.node 0) (Term.x0.node.x1.quorum_a.x2.node.quorum_a 0) (Term.x0.node.x1.quorum_a.x2.quorum_a.node 0) (Term.x0.node.x1.quorum_a.x2.quorum_a.quorum_a 0) (Term.x0.node.x1.quorum_a.x2.quorum_b.node 0) (Term.x0.node.x1.quorum_a.x2.quorum_b.quorum_a 0) (Term.x0.node.x1.quorum_a.x2.quorum_b.quorum_b 0) (Term.x0.node.x1.quorum_b.x2.node.node 0) (Term.x0.node.x1.quorum_b.x2.node.quorum_b 0) (Term.x0.node.x1.quorum_b.x2.quorum_a.node 0) (Term.x0.node.x1.quorum_b.x2.quorum_a.quorum_a 0) (Term.x0.node.x1.quorum_b.x2.quorum_a.quorum_b 0) (Term.x0.node.x1.quorum_b.x2.quorum_b.node 0) (Term.x0.node.x1.quorum_b.x2.quorum_b.quorum_b 0) (Term.x0.quorum_a.x1.node.x2.node.node 0) (Term.x0.quorum_a.x1.node.x2.node.quorum_a 0) (Term.x0.quorum_a.x1.node.x2.quorum_a.node 0) (Term.x0.quorum_a.x1.node.x2.quorum_a.quorum_a 0) (Term.x0.quorum_a.x1.node.x2.quorum_b.node 0) (Term.x0.quorum_a.x1.node.x2.quorum_b.quorum_a 0) (Term.x0.quorum_a.x1.node.x2.quorum_b.quorum_b 0) (Term.x0.quorum_a.x1.quorum_a.x2.node.node 0) (Term.x0.quorum_a.x1.quorum_a.x2.node.quorum_a 0) (Term.x0.quorum_a.x1.quorum_a.x2.quorum_a.node 0) (Term.x0.quorum_a.x1.quorum_a.x2.quorum_a.quorum_a 0) (Term.x0.quorum_a.x1.quorum_a.x2.quorum_b.node 0) (Term.x0.quorum_a.x1.quorum_a.x2.quorum_b.quorum_a 0) (Term.x0.quorum_a.x1.quorum_a.x2.quorum_b.quorum_b 0) (Term.x0.quorum_a.x1.quorum_b.x2.node.node 0) (Term.x0.quorum_a.x1.quorum_b.x2.node.quorum_a 0) (Term.x0.quorum_a.x1.quorum_b.x2.node.quorum_b 0) (Term.x0.quorum_a.x1.quorum_b.x2.quorum_a.node 0) (Term.x0.quorum_a.x1.quorum_b.x2.quorum_a.quorum_a 0) (Term.x0.quorum_a.x1.quorum_b.x2.quorum_a.quorum_b 0) (Term.x0.quorum_a.x1.quorum_b.x2.quorum_b.node 0) (Term.x0.quorum_a.x1.quorum_b.x2.quorum_b.quorum_a 0) (Term.x0.quorum_a.x1.quorum_b.x2.quorum_b.quorum_b 0) (Term.x0.quorum_b.x1.node.x2.node.node 0) (Term.x0.quorum_b.x1.node.x2.node.quorum_b 0) (Term.x0.quorum_b.x1.node.x2.quorum_a.node 0) (Term.x0.quorum_b.x1.node.x2.quorum_a.quorum_a 0) (Term.x0.quorum_b.x1.node.x2.quorum_a.quorum_b 0) (Term.x0.quorum_b.x1.node.x2.quorum_b.node 0) (Term.x0.quorum_b.x1.node.x2.quorum_b.quorum_b 0) (Term.x0.quorum_b.x1.quorum_a.x2.node.node 0) (Term.x0.quorum_b.x1.quorum_a.x2.node.quorum_a 0) (Term.x0.quorum_b.x1.quorum_a.x2.node.quorum_b 0) (Term.x0.quorum_b.x1.quorum_a.x2.quorum_a.node 0) (Term.x0.quorum_b.x1.quorum_a.x2.quorum_a.quorum_a 0) (Term.x0.quorum_b.x1.quorum_a.x2.quorum_a.quorum_b 0) (Term.x0.quorum_b.x1.quorum_a.x2.quorum_b.node 0) (Term.x0.quorum_b.x1.quorum_a.x2.quorum_b.quorum_a 0) (Term.x0.quorum_b.x1.quorum_a.x2.quorum_b.quorum_b 0) (Term.x0.quorum_b.x1.quorum_b.x2.node.node 0) (Term.x0.quorum_b.x1.quorum_b.x2.node.quorum_b 0) (Term.x0.quorum_b.x1.quorum_b.x2.quorum_a.node 0) (Term.x0.quorum_b.x1.quorum_b.x2.quorum_a.quorum_a 0) (Term.x0.quorum_b.x1.quorum_b.x2.quorum_a.quorum_b 0) (Term.x0.quorum_b.x1.quorum_b.x2.quorum_b.node 0) (Term.x0.quorum_b.x1.quorum_b.x2.quorum_b.quorum_b 0))
-  ((fol.0.true)
+ (((fol.0.true)
    (fol.0.false)
    (fol.0.not Formula0)
    (fol.0.and Formula0 Formula0)
@@ -2525,45 +2525,36 @@
    (fol.ctx-x0-node.term.rb.tp_relay.n2))
   ((fol.ctx-x0-quorum_a.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_a.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_a.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-quorum_a.var.x0.quorum_a))
   ((fol.ctx-x0-quorum_b.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_b.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_b.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-quorum_b.var.x0.quorum_b))
   ((fol.ctx-x1-node.var.x1.node) (fol.ctx-x1-node.term.rb.tp_correctness.n0) (fol.ctx-x1-node.term.rb.tp_relay.n1)
    (fol.ctx-x1-node.term.rb.tp_relay.n2))
   ((fol.ctx-x1-quorum_a.term.rb.tp_correctness.n0) (fol.ctx-x1-quorum_a.term.rb.tp_relay.n1)
    (fol.ctx-x1-quorum_a.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x1-quorum_a.var.x1.quorum_a))
   ((fol.ctx-x1-quorum_b.term.rb.tp_correctness.n0) (fol.ctx-x1-quorum_b.term.rb.tp_relay.n1)
    (fol.ctx-x1-quorum_b.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x1-quorum_b.var.x1.quorum_b))
   ((fol.ctx-x2-node.var.x2.node) (fol.ctx-x2-node.term.rb.tp_correctness.n0) (fol.ctx-x2-node.term.rb.tp_relay.n1)
    (fol.ctx-x2-node.term.rb.tp_relay.n2))
   ((fol.ctx-x2-quorum_a.term.rb.tp_correctness.n0) (fol.ctx-x2-quorum_a.term.rb.tp_relay.n1)
    (fol.ctx-x2-quorum_a.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x2-quorum_a.var.x2.quorum_a))
   ((fol.ctx-x2-quorum_b.term.rb.tp_correctness.n0) (fol.ctx-x2-quorum_b.term.rb.tp_relay.n1)
    (fol.ctx-x2-quorum_b.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x2-quorum_b.var.x2.quorum_b))
   ((fol.ctx-x0-node-x1-node.var.x0.node) (fol.ctx-x0-node-x1-node.var.x1.node) (fol.ctx-x0-node-x1-node.term.rb.tp_correctness.n0) (fol.ctx-x0-node-x1-node.term.rb.tp_relay.n1)
    (fol.ctx-x0-node-x1-node.term.rb.tp_relay.n2))
   ((fol.ctx-x0-node-x1-quorum_a.var.x0.node) (fol.ctx-x0-node-x1-quorum_a.term.rb.tp_correctness.n0) (fol.ctx-x0-node-x1-quorum_a.term.rb.tp_relay.n1)
    (fol.ctx-x0-node-x1-quorum_a.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-node-x1-quorum_a.var.x1.quorum_a))
   ((fol.ctx-x0-node-x1-quorum_b.var.x0.node) (fol.ctx-x0-node-x1-quorum_b.term.rb.tp_correctness.n0) (fol.ctx-x0-node-x1-quorum_b.term.rb.tp_relay.n1)
    (fol.ctx-x0-node-x1-quorum_b.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-node-x1-quorum_b.var.x1.quorum_b))
   ((fol.ctx-x0-quorum_a-x1-node.var.x1.node) (fol.ctx-x0-quorum_a-x1-node.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_a-x1-node.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_a-x1-node.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-quorum_a-x1-node.var.x0.quorum_a))
   ((fol.ctx-x0-quorum_a-x1-quorum_a.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_a-x1-quorum_a.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_a-x1-quorum_a.term.rb.tp_relay.n2))
@@ -2571,19 +2562,14 @@
    (fol.ctx-x0-quorum_a-x1-quorum_a.var.x1.quorum_a))
   ((fol.ctx-x0-quorum_a-x1-quorum_b.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_a-x1-quorum_b.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_a-x1-quorum_b.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-quorum_a-x1-quorum_b.var.x0.quorum_a))
-  (
   ((fol.ctx-x0-quorum_a-x1-quorum_b.var.x1.quorum_b))
   ((fol.ctx-x0-quorum_b-x1-node.var.x1.node) (fol.ctx-x0-quorum_b-x1-node.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_b-x1-node.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_b-x1-node.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-quorum_b-x1-node.var.x0.quorum_b))
   ((fol.ctx-x0-quorum_b-x1-quorum_a.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_b-x1-quorum_a.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_b-x1-quorum_a.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-quorum_b-x1-quorum_a.var.x1.quorum_a))
-  (
   ((fol.ctx-x0-quorum_b-x1-quorum_a.var.x0.quorum_b))
   ((fol.ctx-x0-quorum_b-x1-quorum_b.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_b-x1-quorum_b.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_b-x1-quorum_b.term.rb.tp_relay.n2))
@@ -2593,15 +2579,12 @@
    (fol.ctx-x0-node-x2-node.term.rb.tp_relay.n2))
   ((fol.ctx-x0-node-x2-quorum_a.var.x0.node) (fol.ctx-x0-node-x2-quorum_a.term.rb.tp_correctness.n0) (fol.ctx-x0-node-x2-quorum_a.term.rb.tp_relay.n1)
    (fol.ctx-x0-node-x2-quorum_a.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-node-x2-quorum_a.var.x2.quorum_a))
   ((fol.ctx-x0-node-x2-quorum_b.var.x0.node) (fol.ctx-x0-node-x2-quorum_b.term.rb.tp_correctness.n0) (fol.ctx-x0-node-x2-quorum_b.term.rb.tp_relay.n1)
    (fol.ctx-x0-node-x2-quorum_b.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-node-x2-quorum_b.var.x2.quorum_b))
   ((fol.ctx-x0-quorum_a-x2-node.var.x2.node) (fol.ctx-x0-quorum_a-x2-node.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_a-x2-node.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_a-x2-node.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-quorum_a-x2-node.var.x0.quorum_a))
   ((fol.ctx-x0-quorum_a-x2-quorum_a.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_a-x2-quorum_a.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_a-x2-quorum_a.term.rb.tp_relay.n2))
@@ -2609,19 +2592,14 @@
    (fol.ctx-x0-quorum_a-x2-quorum_a.var.x2.quorum_a))
   ((fol.ctx-x0-quorum_a-x2-quorum_b.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_a-x2-quorum_b.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_a-x2-quorum_b.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-quorum_a-x2-quorum_b.var.x0.quorum_a))
-  (
   ((fol.ctx-x0-quorum_a-x2-quorum_b.var.x2.quorum_b))
   ((fol.ctx-x0-quorum_b-x2-node.var.x2.node) (fol.ctx-x0-quorum_b-x2-node.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_b-x2-node.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_b-x2-node.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-quorum_b-x2-node.var.x0.quorum_b))
   ((fol.ctx-x0-quorum_b-x2-quorum_a.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_b-x2-quorum_a.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_b-x2-quorum_a.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-quorum_b-x2-quorum_a.var.x2.quorum_a))
-  (
   ((fol.ctx-x0-quorum_b-x2-quorum_a.var.x0.quorum_b))
   ((fol.ctx-x0-quorum_b-x2-quorum_b.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_b-x2-quorum_b.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_b-x2-quorum_b.term.rb.tp_relay.n2))
@@ -2631,15 +2609,12 @@
    (fol.ctx-x1-node-x2-node.term.rb.tp_relay.n2))
   ((fol.ctx-x1-node-x2-quorum_a.var.x1.node) (fol.ctx-x1-node-x2-quorum_a.term.rb.tp_correctness.n0) (fol.ctx-x1-node-x2-quorum_a.term.rb.tp_relay.n1)
    (fol.ctx-x1-node-x2-quorum_a.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x1-node-x2-quorum_a.var.x2.quorum_a))
   ((fol.ctx-x1-node-x2-quorum_b.var.x1.node) (fol.ctx-x1-node-x2-quorum_b.term.rb.tp_correctness.n0) (fol.ctx-x1-node-x2-quorum_b.term.rb.tp_relay.n1)
    (fol.ctx-x1-node-x2-quorum_b.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x1-node-x2-quorum_b.var.x2.quorum_b))
   ((fol.ctx-x1-quorum_a-x2-node.var.x2.node) (fol.ctx-x1-quorum_a-x2-node.term.rb.tp_correctness.n0) (fol.ctx-x1-quorum_a-x2-node.term.rb.tp_relay.n1)
    (fol.ctx-x1-quorum_a-x2-node.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x1-quorum_a-x2-node.var.x1.quorum_a))
   ((fol.ctx-x1-quorum_a-x2-quorum_a.term.rb.tp_correctness.n0) (fol.ctx-x1-quorum_a-x2-quorum_a.term.rb.tp_relay.n1)
    (fol.ctx-x1-quorum_a-x2-quorum_a.term.rb.tp_relay.n2))
@@ -2647,19 +2622,14 @@
    (fol.ctx-x1-quorum_a-x2-quorum_a.var.x2.quorum_a))
   ((fol.ctx-x1-quorum_a-x2-quorum_b.term.rb.tp_correctness.n0) (fol.ctx-x1-quorum_a-x2-quorum_b.term.rb.tp_relay.n1)
    (fol.ctx-x1-quorum_a-x2-quorum_b.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x1-quorum_a-x2-quorum_b.var.x1.quorum_a))
-  (
   ((fol.ctx-x1-quorum_a-x2-quorum_b.var.x2.quorum_b))
   ((fol.ctx-x1-quorum_b-x2-node.var.x2.node) (fol.ctx-x1-quorum_b-x2-node.term.rb.tp_correctness.n0) (fol.ctx-x1-quorum_b-x2-node.term.rb.tp_relay.n1)
    (fol.ctx-x1-quorum_b-x2-node.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x1-quorum_b-x2-node.var.x1.quorum_b))
   ((fol.ctx-x1-quorum_b-x2-quorum_a.term.rb.tp_correctness.n0) (fol.ctx-x1-quorum_b-x2-quorum_a.term.rb.tp_relay.n1)
    (fol.ctx-x1-quorum_b-x2-quorum_a.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x1-quorum_b-x2-quorum_a.var.x2.quorum_a))
-  (
   ((fol.ctx-x1-quorum_b-x2-quorum_a.var.x1.quorum_b))
   ((fol.ctx-x1-quorum_b-x2-quorum_b.term.rb.tp_correctness.n0) (fol.ctx-x1-quorum_b-x2-quorum_b.term.rb.tp_relay.n1)
    (fol.ctx-x1-quorum_b-x2-quorum_b.term.rb.tp_relay.n2))
@@ -2669,15 +2639,12 @@
    (fol.ctx-x0-node-x1-node-x2-node.term.rb.tp_relay.n2))
   ((fol.ctx-x0-node-x1-node-x2-quorum_a.var.x0.node) (fol.ctx-x0-node-x1-node-x2-quorum_a.var.x1.node) (fol.ctx-x0-node-x1-node-x2-quorum_a.term.rb.tp_correctness.n0) (fol.ctx-x0-node-x1-node-x2-quorum_a.term.rb.tp_relay.n1)
    (fol.ctx-x0-node-x1-node-x2-quorum_a.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-node-x1-node-x2-quorum_a.var.x2.quorum_a))
   ((fol.ctx-x0-node-x1-node-x2-quorum_b.var.x0.node) (fol.ctx-x0-node-x1-node-x2-quorum_b.var.x1.node) (fol.ctx-x0-node-x1-node-x2-quorum_b.term.rb.tp_correctness.n0) (fol.ctx-x0-node-x1-node-x2-quorum_b.term.rb.tp_relay.n1)
    (fol.ctx-x0-node-x1-node-x2-quorum_b.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-node-x1-node-x2-quorum_b.var.x2.quorum_b))
   ((fol.ctx-x0-node-x1-quorum_a-x2-node.var.x0.node) (fol.ctx-x0-node-x1-quorum_a-x2-node.var.x2.node) (fol.ctx-x0-node-x1-quorum_a-x2-node.term.rb.tp_correctness.n0) (fol.ctx-x0-node-x1-quorum_a-x2-node.term.rb.tp_relay.n1)
    (fol.ctx-x0-node-x1-quorum_a-x2-node.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-node-x1-quorum_a-x2-node.var.x1.quorum_a))
   ((fol.ctx-x0-node-x1-quorum_a-x2-quorum_a.var.x0.node) (fol.ctx-x0-node-x1-quorum_a-x2-quorum_a.term.rb.tp_correctness.n0) (fol.ctx-x0-node-x1-quorum_a-x2-quorum_a.term.rb.tp_relay.n1)
    (fol.ctx-x0-node-x1-quorum_a-x2-quorum_a.term.rb.tp_relay.n2))
@@ -2685,19 +2652,14 @@
    (fol.ctx-x0-node-x1-quorum_a-x2-quorum_a.var.x2.quorum_a))
   ((fol.ctx-x0-node-x1-quorum_a-x2-quorum_b.var.x0.node) (fol.ctx-x0-node-x1-quorum_a-x2-quorum_b.term.rb.tp_correctness.n0) (fol.ctx-x0-node-x1-quorum_a-x2-quorum_b.term.rb.tp_relay.n1)
    (fol.ctx-x0-node-x1-quorum_a-x2-quorum_b.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-node-x1-quorum_a-x2-quorum_b.var.x1.quorum_a))
-  (
   ((fol.ctx-x0-node-x1-quorum_a-x2-quorum_b.var.x2.quorum_b))
   ((fol.ctx-x0-node-x1-quorum_b-x2-node.var.x0.node) (fol.ctx-x0-node-x1-quorum_b-x2-node.var.x2.node) (fol.ctx-x0-node-x1-quorum_b-x2-node.term.rb.tp_correctness.n0) (fol.ctx-x0-node-x1-quorum_b-x2-node.term.rb.tp_relay.n1)
    (fol.ctx-x0-node-x1-quorum_b-x2-node.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-node-x1-quorum_b-x2-node.var.x1.quorum_b))
   ((fol.ctx-x0-node-x1-quorum_b-x2-quorum_a.var.x0.node) (fol.ctx-x0-node-x1-quorum_b-x2-quorum_a.term.rb.tp_correctness.n0) (fol.ctx-x0-node-x1-quorum_b-x2-quorum_a.term.rb.tp_relay.n1)
    (fol.ctx-x0-node-x1-quorum_b-x2-quorum_a.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-node-x1-quorum_b-x2-quorum_a.var.x2.quorum_a))
-  (
   ((fol.ctx-x0-node-x1-quorum_b-x2-quorum_a.var.x1.quorum_b))
   ((fol.ctx-x0-node-x1-quorum_b-x2-quorum_b.var.x0.node) (fol.ctx-x0-node-x1-quorum_b-x2-quorum_b.term.rb.tp_correctness.n0) (fol.ctx-x0-node-x1-quorum_b-x2-quorum_b.term.rb.tp_relay.n1)
    (fol.ctx-x0-node-x1-quorum_b-x2-quorum_b.term.rb.tp_relay.n2))
@@ -2705,7 +2667,6 @@
    (fol.ctx-x0-node-x1-quorum_b-x2-quorum_b.var.x2.quorum_b))
   ((fol.ctx-x0-quorum_a-x1-node-x2-node.var.x1.node) (fol.ctx-x0-quorum_a-x1-node-x2-node.var.x2.node) (fol.ctx-x0-quorum_a-x1-node-x2-node.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_a-x1-node-x2-node.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_a-x1-node-x2-node.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-quorum_a-x1-node-x2-node.var.x0.quorum_a))
   ((fol.ctx-x0-quorum_a-x1-node-x2-quorum_a.var.x1.node) (fol.ctx-x0-quorum_a-x1-node-x2-quorum_a.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_a-x1-node-x2-quorum_a.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_a-x1-node-x2-quorum_a.term.rb.tp_relay.n2))
@@ -2713,9 +2674,7 @@
    (fol.ctx-x0-quorum_a-x1-node-x2-quorum_a.var.x2.quorum_a))
   ((fol.ctx-x0-quorum_a-x1-node-x2-quorum_b.var.x1.node) (fol.ctx-x0-quorum_a-x1-node-x2-quorum_b.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_a-x1-node-x2-quorum_b.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_a-x1-node-x2-quorum_b.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-quorum_a-x1-node-x2-quorum_b.var.x0.quorum_a))
-  (
   ((fol.ctx-x0-quorum_a-x1-node-x2-quorum_b.var.x2.quorum_b))
   ((fol.ctx-x0-quorum_a-x1-quorum_a-x2-node.var.x2.node) (fol.ctx-x0-quorum_a-x1-quorum_a-x2-node.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_a-x1-quorum_a-x2-node.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_a-x1-quorum_a-x2-node.term.rb.tp_relay.n2))
@@ -2729,35 +2688,27 @@
    (fol.ctx-x0-quorum_a-x1-quorum_a-x2-quorum_b.term.rb.tp_relay.n2))
   ((fol.ctx-x0-quorum_a-x1-quorum_a-x2-quorum_b.var.x0.quorum_a)
    (fol.ctx-x0-quorum_a-x1-quorum_a-x2-quorum_b.var.x1.quorum_a))
-  (
   ((fol.ctx-x0-quorum_a-x1-quorum_a-x2-quorum_b.var.x2.quorum_b))
   ((fol.ctx-x0-quorum_a-x1-quorum_b-x2-node.var.x2.node) (fol.ctx-x0-quorum_a-x1-quorum_b-x2-node.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_a-x1-quorum_b-x2-node.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_a-x1-quorum_b-x2-node.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-quorum_a-x1-quorum_b-x2-node.var.x0.quorum_a))
-  (
   ((fol.ctx-x0-quorum_a-x1-quorum_b-x2-node.var.x1.quorum_b))
   ((fol.ctx-x0-quorum_a-x1-quorum_b-x2-quorum_a.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_a-x1-quorum_b-x2-quorum_a.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_a-x1-quorum_b-x2-quorum_a.term.rb.tp_relay.n2))
   ((fol.ctx-x0-quorum_a-x1-quorum_b-x2-quorum_a.var.x0.quorum_a)
    (fol.ctx-x0-quorum_a-x1-quorum_b-x2-quorum_a.var.x2.quorum_a))
-  (
   ((fol.ctx-x0-quorum_a-x1-quorum_b-x2-quorum_a.var.x1.quorum_b))
   ((fol.ctx-x0-quorum_a-x1-quorum_b-x2-quorum_b.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_a-x1-quorum_b-x2-quorum_b.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_a-x1-quorum_b-x2-quorum_b.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-quorum_a-x1-quorum_b-x2-quorum_b.var.x0.quorum_a))
   ((fol.ctx-x0-quorum_a-x1-quorum_b-x2-quorum_b.var.x1.quorum_b)
    (fol.ctx-x0-quorum_a-x1-quorum_b-x2-quorum_b.var.x2.quorum_b))
   ((fol.ctx-x0-quorum_b-x1-node-x2-node.var.x1.node) (fol.ctx-x0-quorum_b-x1-node-x2-node.var.x2.node) (fol.ctx-x0-quorum_b-x1-node-x2-node.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_b-x1-node-x2-node.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_b-x1-node-x2-node.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-quorum_b-x1-node-x2-node.var.x0.quorum_b))
   ((fol.ctx-x0-quorum_b-x1-node-x2-quorum_a.var.x1.node) (fol.ctx-x0-quorum_b-x1-node-x2-quorum_a.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_b-x1-node-x2-quorum_a.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_b-x1-node-x2-quorum_a.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-quorum_b-x1-node-x2-quorum_a.var.x2.quorum_a))
-  (
   ((fol.ctx-x0-quorum_b-x1-node-x2-quorum_a.var.x0.quorum_b))
   ((fol.ctx-x0-quorum_b-x1-node-x2-quorum_b.var.x1.node) (fol.ctx-x0-quorum_b-x1-node-x2-quorum_b.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_b-x1-node-x2-quorum_b.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_b-x1-node-x2-quorum_b.term.rb.tp_relay.n2))
@@ -2765,19 +2716,15 @@
    (fol.ctx-x0-quorum_b-x1-node-x2-quorum_b.var.x2.quorum_b))
   ((fol.ctx-x0-quorum_b-x1-quorum_a-x2-node.var.x2.node) (fol.ctx-x0-quorum_b-x1-quorum_a-x2-node.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_b-x1-quorum_a-x2-node.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_b-x1-quorum_a-x2-node.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-quorum_b-x1-quorum_a-x2-node.var.x1.quorum_a))
-  (
   ((fol.ctx-x0-quorum_b-x1-quorum_a-x2-node.var.x0.quorum_b))
   ((fol.ctx-x0-quorum_b-x1-quorum_a-x2-quorum_a.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_b-x1-quorum_a-x2-quorum_a.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_b-x1-quorum_a-x2-quorum_a.term.rb.tp_relay.n2))
   ((fol.ctx-x0-quorum_b-x1-quorum_a-x2-quorum_a.var.x1.quorum_a)
    (fol.ctx-x0-quorum_b-x1-quorum_a-x2-quorum_a.var.x2.quorum_a))
-  (
   ((fol.ctx-x0-quorum_b-x1-quorum_a-x2-quorum_a.var.x0.quorum_b))
   ((fol.ctx-x0-quorum_b-x1-quorum_a-x2-quorum_b.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_b-x1-quorum_a-x2-quorum_b.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_b-x1-quorum_a-x2-quorum_b.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-quorum_b-x1-quorum_a-x2-quorum_b.var.x1.quorum_a))
   ((fol.ctx-x0-quorum_b-x1-quorum_a-x2-quorum_b.var.x0.quorum_b)
    (fol.ctx-x0-quorum_b-x1-quorum_a-x2-quorum_b.var.x2.quorum_b))
@@ -2787,14 +2734,13 @@
    (fol.ctx-x0-quorum_b-x1-quorum_b-x2-node.var.x1.quorum_b))
   ((fol.ctx-x0-quorum_b-x1-quorum_b-x2-quorum_a.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_b-x1-quorum_b-x2-quorum_a.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_b-x1-quorum_b-x2-quorum_a.term.rb.tp_relay.n2))
-  (
   ((fol.ctx-x0-quorum_b-x1-quorum_b-x2-quorum_a.var.x2.quorum_a))
   ((fol.ctx-x0-quorum_b-x1-quorum_b-x2-quorum_a.var.x0.quorum_b)
    (fol.ctx-x0-quorum_b-x1-quorum_b-x2-quorum_a.var.x1.quorum_b))
   ((fol.ctx-x0-quorum_b-x1-quorum_b-x2-quorum_b.term.rb.tp_correctness.n0) (fol.ctx-x0-quorum_b-x1-quorum_b-x2-quorum_b.term.rb.tp_relay.n1)
    (fol.ctx-x0-quorum_b-x1-quorum_b-x2-quorum_b.term.rb.tp_relay.n2))
   ((fol.ctx-x0-quorum_b-x1-quorum_b-x2-quorum_b.var.x0.quorum_b) (fol.ctx-x0-quorum_b-x1-quorum_b-x2-quorum_b.var.x1.quorum_b)
-   (fol.ctx-x0-quorum_b-x1-quorum_b-x2-quorum_b.var.x2.quorum_b))
+   (fol.ctx-x0-quorum_b-x1-quorum_b-x2-quorum_b.var.x2.quorum_b)))
 )
 
 (define-finite FoAsp0 (record (model Model)))

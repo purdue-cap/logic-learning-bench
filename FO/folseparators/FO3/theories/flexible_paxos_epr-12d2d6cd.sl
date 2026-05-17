@@ -3,7 +3,7 @@
 
 (declare-term-types
  ((Formula0 0) (Formula.x0.node 0) (Formula.x0.quorum_1 0) (Formula.x0.quorum_2 0) (Formula.x0.round 0) (Formula.x0.value 0) (Formula.x1.node 0) (Formula.x1.quorum_1 0) (Formula.x1.quorum_2 0) (Formula.x1.round 0) (Formula.x1.value 0) (Formula.x2.node 0) (Formula.x2.quorum_1 0) (Formula.x2.quorum_2 0) (Formula.x2.round 0) (Formula.x2.value 0) (Formula.x0.node.x1.node 0) (Formula.x0.node.x1.quorum_1 0) (Formula.x0.node.x1.quorum_2 0) (Formula.x0.node.x1.round 0) (Formula.x0.node.x1.value 0) (Formula.x0.quorum_1.x1.node 0) (Formula.x0.quorum_1.x1.quorum_1 0) (Formula.x0.quorum_1.x1.quorum_2 0) (Formula.x0.quorum_1.x1.round 0) (Formula.x0.quorum_1.x1.value 0) (Formula.x0.quorum_2.x1.node 0) (Formula.x0.quorum_2.x1.quorum_1 0) (Formula.x0.quorum_2.x1.quorum_2 0) (Formula.x0.quorum_2.x1.round 0) (Formula.x0.quorum_2.x1.value 0) (Formula.x0.round.x1.node 0) (Formula.x0.round.x1.quorum_1 0) (Formula.x0.round.x1.quorum_2 0) (Formula.x0.round.x1.round 0) (Formula.x0.round.x1.value 0) (Formula.x0.value.x1.node 0) (Formula.x0.value.x1.quorum_1 0) (Formula.x0.value.x1.quorum_2 0) (Formula.x0.value.x1.round 0) (Formula.x0.value.x1.value 0) (Formula.x0.node.x2.node 0) (Formula.x0.node.x2.quorum_1 0) (Formula.x0.node.x2.quorum_2 0) (Formula.x0.node.x2.round 0) (Formula.x0.node.x2.value 0) (Formula.x0.quorum_1.x2.node 0) (Formula.x0.quorum_1.x2.quorum_1 0) (Formula.x0.quorum_1.x2.quorum_2 0) (Formula.x0.quorum_1.x2.round 0) (Formula.x0.quorum_1.x2.value 0) (Formula.x0.quorum_2.x2.node 0) (Formula.x0.quorum_2.x2.quorum_1 0) (Formula.x0.quorum_2.x2.quorum_2 0) (Formula.x0.quorum_2.x2.round 0) (Formula.x0.quorum_2.x2.value 0) (Formula.x0.round.x2.node 0) (Formula.x0.round.x2.quorum_1 0) (Formula.x0.round.x2.quorum_2 0) (Formula.x0.round.x2.round 0) (Formula.x0.round.x2.value 0) (Formula.x0.value.x2.node 0) (Formula.x0.value.x2.quorum_1 0) (Formula.x0.value.x2.quorum_2 0) (Formula.x0.value.x2.round 0) (Formula.x0.value.x2.value 0) (Formula.x1.node.x2.node 0) (Formula.x1.node.x2.quorum_1 0) (Formula.x1.node.x2.quorum_2 0) (Formula.x1.node.x2.round 0) (Formula.x1.node.x2.value 0) (Formula.x1.quorum_1.x2.node 0) (Formula.x1.quorum_1.x2.quorum_1 0) (Formula.x1.quorum_1.x2.quorum_2 0) (Formula.x1.quorum_1.x2.round 0) (Formula.x1.quorum_1.x2.value 0) (Formula.x1.quorum_2.x2.node 0) (Formula.x1.quorum_2.x2.quorum_1 0) (Formula.x1.quorum_2.x2.quorum_2 0) (Formula.x1.quorum_2.x2.round 0) (Formula.x1.quorum_2.x2.value 0) (Formula.x1.round.x2.node 0) (Formula.x1.round.x2.quorum_1 0) (Formula.x1.round.x2.quorum_2 0) (Formula.x1.round.x2.round 0) (Formula.x1.round.x2.value 0) (Formula.x1.value.x2.node 0) (Formula.x1.value.x2.quorum_1 0) (Formula.x1.value.x2.quorum_2 0) (Formula.x1.value.x2.round 0) (Formula.x1.value.x2.value 0) (Formula.x0.node.x1.node.x2.node 0) (Formula.x0.node.x1.node.x2.quorum_1 0) (Formula.x0.node.x1.node.x2.quorum_2 0) (Formula.x0.node.x1.node.x2.round 0) (Formula.x0.node.x1.node.x2.value 0) (Formula.x0.node.x1.quorum_1.x2.node 0) (Formula.x0.node.x1.quorum_1.x2.quorum_1 0) (Formula.x0.node.x1.quorum_1.x2.quorum_2 0) (Formula.x0.node.x1.quorum_1.x2.round 0) (Formula.x0.node.x1.quorum_1.x2.value 0) (Formula.x0.node.x1.quorum_2.x2.node 0) (Formula.x0.node.x1.quorum_2.x2.quorum_1 0) (Formula.x0.node.x1.quorum_2.x2.quorum_2 0) (Formula.x0.node.x1.quorum_2.x2.round 0) (Formula.x0.node.x1.quorum_2.x2.value 0) (Formula.x0.node.x1.round.x2.node 0) (Formula.x0.node.x1.round.x2.quorum_1 0) (Formula.x0.node.x1.round.x2.quorum_2 0) (Formula.x0.node.x1.round.x2.round 0) (Formula.x0.node.x1.round.x2.value 0) (Formula.x0.node.x1.value.x2.node 0) (Formula.x0.node.x1.value.x2.quorum_1 0) (Formula.x0.node.x1.value.x2.quorum_2 0) (Formula.x0.node.x1.value.x2.round 0) (Formula.x0.node.x1.value.x2.value 0) (Formula.x0.quorum_1.x1.node.x2.node 0) (Formula.x0.quorum_1.x1.node.x2.quorum_1 0) (Formula.x0.quorum_1.x1.node.x2.quorum_2 0) (Formula.x0.quorum_1.x1.node.x2.round 0) (Formula.x0.quorum_1.x1.node.x2.value 0) (Formula.x0.quorum_1.x1.quorum_1.x2.node 0) (Formula.x0.quorum_1.x1.quorum_1.x2.quorum_1 0) (Formula.x0.quorum_1.x1.quorum_1.x2.quorum_2 0) (Formula.x0.quorum_1.x1.quorum_1.x2.round 0) (Formula.x0.quorum_1.x1.quorum_1.x2.value 0) (Formula.x0.quorum_1.x1.quorum_2.x2.node 0) (Formula.x0.quorum_1.x1.quorum_2.x2.quorum_1 0) (Formula.x0.quorum_1.x1.quorum_2.x2.quorum_2 0) (Formula.x0.quorum_1.x1.quorum_2.x2.round 0) (Formula.x0.quorum_1.x1.quorum_2.x2.value 0) (Formula.x0.quorum_1.x1.round.x2.node 0) (Formula.x0.quorum_1.x1.round.x2.quorum_1 0) (Formula.x0.quorum_1.x1.round.x2.quorum_2 0) (Formula.x0.quorum_1.x1.round.x2.round 0) (Formula.x0.quorum_1.x1.round.x2.value 0) (Formula.x0.quorum_1.x1.value.x2.node 0) (Formula.x0.quorum_1.x1.value.x2.quorum_1 0) (Formula.x0.quorum_1.x1.value.x2.quorum_2 0) (Formula.x0.quorum_1.x1.value.x2.round 0) (Formula.x0.quorum_1.x1.value.x2.value 0) (Formula.x0.quorum_2.x1.node.x2.node 0) (Formula.x0.quorum_2.x1.node.x2.quorum_1 0) (Formula.x0.quorum_2.x1.node.x2.quorum_2 0) (Formula.x0.quorum_2.x1.node.x2.round 0) (Formula.x0.quorum_2.x1.node.x2.value 0) (Formula.x0.quorum_2.x1.quorum_1.x2.node 0) (Formula.x0.quorum_2.x1.quorum_1.x2.quorum_1 0) (Formula.x0.quorum_2.x1.quorum_1.x2.quorum_2 0) (Formula.x0.quorum_2.x1.quorum_1.x2.round 0) (Formula.x0.quorum_2.x1.quorum_1.x2.value 0) (Formula.x0.quorum_2.x1.quorum_2.x2.node 0) (Formula.x0.quorum_2.x1.quorum_2.x2.quorum_1 0) (Formula.x0.quorum_2.x1.quorum_2.x2.quorum_2 0) (Formula.x0.quorum_2.x1.quorum_2.x2.round 0) (Formula.x0.quorum_2.x1.quorum_2.x2.value 0) (Formula.x0.quorum_2.x1.round.x2.node 0) (Formula.x0.quorum_2.x1.round.x2.quorum_1 0) (Formula.x0.quorum_2.x1.round.x2.quorum_2 0) (Formula.x0.quorum_2.x1.round.x2.round 0) (Formula.x0.quorum_2.x1.round.x2.value 0) (Formula.x0.quorum_2.x1.value.x2.node 0) (Formula.x0.quorum_2.x1.value.x2.quorum_1 0) (Formula.x0.quorum_2.x1.value.x2.quorum_2 0) (Formula.x0.quorum_2.x1.value.x2.round 0) (Formula.x0.quorum_2.x1.value.x2.value 0) (Formula.x0.round.x1.node.x2.node 0) (Formula.x0.round.x1.node.x2.quorum_1 0) (Formula.x0.round.x1.node.x2.quorum_2 0) (Formula.x0.round.x1.node.x2.round 0) (Formula.x0.round.x1.node.x2.value 0) (Formula.x0.round.x1.quorum_1.x2.node 0) (Formula.x0.round.x1.quorum_1.x2.quorum_1 0) (Formula.x0.round.x1.quorum_1.x2.quorum_2 0) (Formula.x0.round.x1.quorum_1.x2.round 0) (Formula.x0.round.x1.quorum_1.x2.value 0) (Formula.x0.round.x1.quorum_2.x2.node 0) (Formula.x0.round.x1.quorum_2.x2.quorum_1 0) (Formula.x0.round.x1.quorum_2.x2.quorum_2 0) (Formula.x0.round.x1.quorum_2.x2.round 0) (Formula.x0.round.x1.quorum_2.x2.value 0) (Formula.x0.round.x1.round.x2.node 0) (Formula.x0.round.x1.round.x2.quorum_1 0) (Formula.x0.round.x1.round.x2.quorum_2 0) (Formula.x0.round.x1.round.x2.round 0) (Formula.x0.round.x1.round.x2.value 0) (Formula.x0.round.x1.value.x2.node 0) (Formula.x0.round.x1.value.x2.quorum_1 0) (Formula.x0.round.x1.value.x2.quorum_2 0) (Formula.x0.round.x1.value.x2.round 0) (Formula.x0.round.x1.value.x2.value 0) (Formula.x0.value.x1.node.x2.node 0) (Formula.x0.value.x1.node.x2.quorum_1 0) (Formula.x0.value.x1.node.x2.quorum_2 0) (Formula.x0.value.x1.node.x2.round 0) (Formula.x0.value.x1.node.x2.value 0) (Formula.x0.value.x1.quorum_1.x2.node 0) (Formula.x0.value.x1.quorum_1.x2.quorum_1 0) (Formula.x0.value.x1.quorum_1.x2.quorum_2 0) (Formula.x0.value.x1.quorum_1.x2.round 0) (Formula.x0.value.x1.quorum_1.x2.value 0) (Formula.x0.value.x1.quorum_2.x2.node 0) (Formula.x0.value.x1.quorum_2.x2.quorum_1 0) (Formula.x0.value.x1.quorum_2.x2.quorum_2 0) (Formula.x0.value.x1.quorum_2.x2.round 0) (Formula.x0.value.x1.quorum_2.x2.value 0) (Formula.x0.value.x1.round.x2.node 0) (Formula.x0.value.x1.round.x2.quorum_1 0) (Formula.x0.value.x1.round.x2.quorum_2 0) (Formula.x0.value.x1.round.x2.round 0) (Formula.x0.value.x1.round.x2.value 0) (Formula.x0.value.x1.value.x2.node 0) (Formula.x0.value.x1.value.x2.quorum_1 0) (Formula.x0.value.x1.value.x2.quorum_2 0) (Formula.x0.value.x1.value.x2.round 0) (Formula.x0.value.x1.value.x2.value 0) (Term.0.round 0) (Term.x0.node.node 0) (Term.x0.node.round 0) (Term.x0.quorum_1.quorum_1 0) (Term.x0.quorum_1.round 0) (Term.x0.quorum_2.quorum_2 0) (Term.x0.quorum_2.round 0) (Term.x0.round.round 0) (Term.x0.value.round 0) (Term.x0.value.value 0) (Term.x1.node.node 0) (Term.x1.node.round 0) (Term.x1.quorum_1.quorum_1 0) (Term.x1.quorum_1.round 0) (Term.x1.quorum_2.quorum_2 0) (Term.x1.quorum_2.round 0) (Term.x1.round.round 0) (Term.x1.value.round 0) (Term.x1.value.value 0) (Term.x2.node.node 0) (Term.x2.node.round 0) (Term.x2.quorum_1.quorum_1 0) (Term.x2.quorum_1.round 0) (Term.x2.quorum_2.quorum_2 0) (Term.x2.quorum_2.round 0) (Term.x2.round.round 0) (Term.x2.value.round 0) (Term.x2.value.value 0) (Term.x0.node.x1.node.node 0) (Term.x0.node.x1.node.round 0) (Term.x0.node.x1.quorum_1.node 0) (Term.x0.node.x1.quorum_1.quorum_1 0) (Term.x0.node.x1.quorum_1.round 0) (Term.x0.node.x1.quorum_2.node 0) (Term.x0.node.x1.quorum_2.quorum_2 0) (Term.x0.node.x1.quorum_2.round 0) (Term.x0.node.x1.round.node 0) (Term.x0.node.x1.round.round 0) (Term.x0.node.x1.value.node 0) (Term.x0.node.x1.value.round 0) (Term.x0.node.x1.value.value 0) (Term.x0.quorum_1.x1.node.node 0) (Term.x0.quorum_1.x1.node.quorum_1 0) (Term.x0.quorum_1.x1.node.round 0) (Term.x0.quorum_1.x1.quorum_1.quorum_1 0) (Term.x0.quorum_1.x1.quorum_1.round 0) (Term.x0.quorum_1.x1.quorum_2.quorum_1 0) (Term.x0.quorum_1.x1.quorum_2.quorum_2 0) (Term.x0.quorum_1.x1.quorum_2.round 0) (Term.x0.quorum_1.x1.round.quorum_1 0) (Term.x0.quorum_1.x1.round.round 0) (Term.x0.quorum_1.x1.value.quorum_1 0) (Term.x0.quorum_1.x1.value.round 0) (Term.x0.quorum_1.x1.value.value 0) (Term.x0.quorum_2.x1.node.node 0) (Term.x0.quorum_2.x1.node.quorum_2 0) (Term.x0.quorum_2.x1.node.round 0) (Term.x0.quorum_2.x1.quorum_1.quorum_1 0) (Term.x0.quorum_2.x1.quorum_1.quorum_2 0) (Term.x0.quorum_2.x1.quorum_1.round 0) (Term.x0.quorum_2.x1.quorum_2.quorum_2 0) (Term.x0.quorum_2.x1.quorum_2.round 0) (Term.x0.quorum_2.x1.round.quorum_2 0) (Term.x0.quorum_2.x1.round.round 0) (Term.x0.quorum_2.x1.value.quorum_2 0) (Term.x0.quorum_2.x1.value.round 0) (Term.x0.quorum_2.x1.value.value 0) (Term.x0.round.x1.node.node 0) (Term.x0.round.x1.node.round 0) (Term.x0.round.x1.quorum_1.quorum_1 0) (Term.x0.round.x1.quorum_1.round 0) (Term.x0.round.x1.quorum_2.quorum_2 0) (Term.x0.round.x1.quorum_2.round 0) (Term.x0.round.x1.round.round 0) (Term.x0.round.x1.value.round 0) (Term.x0.round.x1.value.value 0) (Term.x0.value.x1.node.node 0) (Term.x0.value.x1.node.round 0) (Term.x0.value.x1.node.value 0) (Term.x0.value.x1.quorum_1.quorum_1 0) (Term.x0.value.x1.quorum_1.round 0) (Term.x0.value.x1.quorum_1.value 0) (Term.x0.value.x1.quorum_2.quorum_2 0) (Term.x0.value.x1.quorum_2.round 0) (Term.x0.value.x1.quorum_2.value 0) (Term.x0.value.x1.round.round 0) (Term.x0.value.x1.round.value 0) (Term.x0.value.x1.value.round 0) (Term.x0.value.x1.value.value 0) (Term.x0.node.x2.node.node 0) (Term.x0.node.x2.node.round 0) (Term.x0.node.x2.quorum_1.node 0) (Term.x0.node.x2.quorum_1.quorum_1 0) (Term.x0.node.x2.quorum_1.round 0) (Term.x0.node.x2.quorum_2.node 0) (Term.x0.node.x2.quorum_2.quorum_2 0) (Term.x0.node.x2.quorum_2.round 0) (Term.x0.node.x2.round.node 0) (Term.x0.node.x2.round.round 0) (Term.x0.node.x2.value.node 0) (Term.x0.node.x2.value.round 0) (Term.x0.node.x2.value.value 0) (Term.x0.quorum_1.x2.node.node 0) (Term.x0.quorum_1.x2.node.quorum_1 0) (Term.x0.quorum_1.x2.node.round 0) (Term.x0.quorum_1.x2.quorum_1.quorum_1 0) (Term.x0.quorum_1.x2.quorum_1.round 0) (Term.x0.quorum_1.x2.quorum_2.quorum_1 0) (Term.x0.quorum_1.x2.quorum_2.quorum_2 0) (Term.x0.quorum_1.x2.quorum_2.round 0) (Term.x0.quorum_1.x2.round.quorum_1 0) (Term.x0.quorum_1.x2.round.round 0) (Term.x0.quorum_1.x2.value.quorum_1 0) (Term.x0.quorum_1.x2.value.round 0) (Term.x0.quorum_1.x2.value.value 0) (Term.x0.quorum_2.x2.node.node 0) (Term.x0.quorum_2.x2.node.quorum_2 0) (Term.x0.quorum_2.x2.node.round 0) (Term.x0.quorum_2.x2.quorum_1.quorum_1 0) (Term.x0.quorum_2.x2.quorum_1.quorum_2 0) (Term.x0.quorum_2.x2.quorum_1.round 0) (Term.x0.quorum_2.x2.quorum_2.quorum_2 0) (Term.x0.quorum_2.x2.quorum_2.round 0) (Term.x0.quorum_2.x2.round.quorum_2 0) (Term.x0.quorum_2.x2.round.round 0) (Term.x0.quorum_2.x2.value.quorum_2 0) (Term.x0.quorum_2.x2.value.round 0) (Term.x0.quorum_2.x2.value.value 0) (Term.x0.round.x2.node.node 0) (Term.x0.round.x2.node.round 0) (Term.x0.round.x2.quorum_1.quorum_1 0) (Term.x0.round.x2.quorum_1.round 0) (Term.x0.round.x2.quorum_2.quorum_2 0) (Term.x0.round.x2.quorum_2.round 0) (Term.x0.round.x2.round.round 0) (Term.x0.round.x2.value.round 0) (Term.x0.round.x2.value.value 0) (Term.x0.value.x2.node.node 0) (Term.x0.value.x2.node.round 0) (Term.x0.value.x2.node.value 0) (Term.x0.value.x2.quorum_1.quorum_1 0) (Term.x0.value.x2.quorum_1.round 0) (Term.x0.value.x2.quorum_1.value 0) (Term.x0.value.x2.quorum_2.quorum_2 0) (Term.x0.value.x2.quorum_2.round 0) (Term.x0.value.x2.quorum_2.value 0) (Term.x0.value.x2.round.round 0) (Term.x0.value.x2.round.value 0) (Term.x0.value.x2.value.round 0) (Term.x0.value.x2.value.value 0) (Term.x1.node.x2.node.node 0) (Term.x1.node.x2.node.round 0) (Term.x1.node.x2.quorum_1.node 0) (Term.x1.node.x2.quorum_1.quorum_1 0) (Term.x1.node.x2.quorum_1.round 0) (Term.x1.node.x2.quorum_2.node 0) (Term.x1.node.x2.quorum_2.quorum_2 0) (Term.x1.node.x2.quorum_2.round 0) (Term.x1.node.x2.round.node 0) (Term.x1.node.x2.round.round 0) (Term.x1.node.x2.value.node 0) (Term.x1.node.x2.value.round 0) (Term.x1.node.x2.value.value 0) (Term.x1.quorum_1.x2.node.node 0) (Term.x1.quorum_1.x2.node.quorum_1 0) (Term.x1.quorum_1.x2.node.round 0) (Term.x1.quorum_1.x2.quorum_1.quorum_1 0) (Term.x1.quorum_1.x2.quorum_1.round 0) (Term.x1.quorum_1.x2.quorum_2.quorum_1 0) (Term.x1.quorum_1.x2.quorum_2.quorum_2 0) (Term.x1.quorum_1.x2.quorum_2.round 0) (Term.x1.quorum_1.x2.round.quorum_1 0) (Term.x1.quorum_1.x2.round.round 0) (Term.x1.quorum_1.x2.value.quorum_1 0) (Term.x1.quorum_1.x2.value.round 0) (Term.x1.quorum_1.x2.value.value 0) (Term.x1.quorum_2.x2.node.node 0) (Term.x1.quorum_2.x2.node.quorum_2 0) (Term.x1.quorum_2.x2.node.round 0) (Term.x1.quorum_2.x2.quorum_1.quorum_1 0) (Term.x1.quorum_2.x2.quorum_1.quorum_2 0) (Term.x1.quorum_2.x2.quorum_1.round 0) (Term.x1.quorum_2.x2.quorum_2.quorum_2 0) (Term.x1.quorum_2.x2.quorum_2.round 0) (Term.x1.quorum_2.x2.round.quorum_2 0) (Term.x1.quorum_2.x2.round.round 0) (Term.x1.quorum_2.x2.value.quorum_2 0) (Term.x1.quorum_2.x2.value.round 0) (Term.x1.quorum_2.x2.value.value 0) (Term.x1.round.x2.node.node 0) (Term.x1.round.x2.node.round 0) (Term.x1.round.x2.quorum_1.quorum_1 0) (Term.x1.round.x2.quorum_1.round 0) (Term.x1.round.x2.quorum_2.quorum_2 0) (Term.x1.round.x2.quorum_2.round 0) (Term.x1.round.x2.round.round 0) (Term.x1.round.x2.value.round 0) (Term.x1.round.x2.value.value 0) (Term.x1.value.x2.node.node 0) (Term.x1.value.x2.node.round 0) (Term.x1.value.x2.node.value 0) (Term.x1.value.x2.quorum_1.quorum_1 0) (Term.x1.value.x2.quorum_1.round 0) (Term.x1.value.x2.quorum_1.value 0) (Term.x1.value.x2.quorum_2.quorum_2 0) (Term.x1.value.x2.quorum_2.round 0) (Term.x1.value.x2.quorum_2.value 0) (Term.x1.value.x2.round.round 0) (Term.x1.value.x2.round.value 0) (Term.x1.value.x2.value.round 0) (Term.x1.value.x2.value.value 0) (Term.x0.node.x1.node.x2.node.node 0) (Term.x0.node.x1.node.x2.node.round 0) (Term.x0.node.x1.node.x2.quorum_1.node 0) (Term.x0.node.x1.node.x2.quorum_1.quorum_1 0) (Term.x0.node.x1.node.x2.quorum_1.round 0) (Term.x0.node.x1.node.x2.quorum_2.node 0) (Term.x0.node.x1.node.x2.quorum_2.quorum_2 0) (Term.x0.node.x1.node.x2.quorum_2.round 0) (Term.x0.node.x1.node.x2.round.node 0) (Term.x0.node.x1.node.x2.round.round 0) (Term.x0.node.x1.node.x2.value.node 0) (Term.x0.node.x1.node.x2.value.round 0) (Term.x0.node.x1.node.x2.value.value 0) (Term.x0.node.x1.quorum_1.x2.node.node 0) (Term.x0.node.x1.quorum_1.x2.node.quorum_1 0) (Term.x0.node.x1.quorum_1.x2.node.round 0) (Term.x0.node.x1.quorum_1.x2.quorum_1.node 0) (Term.x0.node.x1.quorum_1.x2.quorum_1.quorum_1 0) (Term.x0.node.x1.quorum_1.x2.quorum_1.round 0) (Term.x0.node.x1.quorum_1.x2.quorum_2.node 0) (Term.x0.node.x1.quorum_1.x2.quorum_2.quorum_1 0) (Term.x0.node.x1.quorum_1.x2.quorum_2.quorum_2 0) (Term.x0.node.x1.quorum_1.x2.quorum_2.round 0) (Term.x0.node.x1.quorum_1.x2.round.node 0) (Term.x0.node.x1.quorum_1.x2.round.quorum_1 0) (Term.x0.node.x1.quorum_1.x2.round.round 0) (Term.x0.node.x1.quorum_1.x2.value.node 0) (Term.x0.node.x1.quorum_1.x2.value.quorum_1 0) (Term.x0.node.x1.quorum_1.x2.value.round 0) (Term.x0.node.x1.quorum_1.x2.value.value 0) (Term.x0.node.x1.quorum_2.x2.node.node 0) (Term.x0.node.x1.quorum_2.x2.node.quorum_2 0) (Term.x0.node.x1.quorum_2.x2.node.round 0) (Term.x0.node.x1.quorum_2.x2.quorum_1.node 0) (Term.x0.node.x1.quorum_2.x2.quorum_1.quorum_1 0) (Term.x0.node.x1.quorum_2.x2.quorum_1.quorum_2 0) (Term.x0.node.x1.quorum_2.x2.quorum_1.round 0) (Term.x0.node.x1.quorum_2.x2.quorum_2.node 0) (Term.x0.node.x1.quorum_2.x2.quorum_2.quorum_2 0) (Term.x0.node.x1.quorum_2.x2.quorum_2.round 0) (Term.x0.node.x1.quorum_2.x2.round.node 0) (Term.x0.node.x1.quorum_2.x2.round.quorum_2 0) (Term.x0.node.x1.quorum_2.x2.round.round 0) (Term.x0.node.x1.quorum_2.x2.value.node 0) (Term.x0.node.x1.quorum_2.x2.value.quorum_2 0) (Term.x0.node.x1.quorum_2.x2.value.round 0) (Term.x0.node.x1.quorum_2.x2.value.value 0) (Term.x0.node.x1.round.x2.node.node 0) (Term.x0.node.x1.round.x2.node.round 0) (Term.x0.node.x1.round.x2.quorum_1.node 0) (Term.x0.node.x1.round.x2.quorum_1.quorum_1 0) (Term.x0.node.x1.round.x2.quorum_1.round 0) (Term.x0.node.x1.round.x2.quorum_2.node 0) (Term.x0.node.x1.round.x2.quorum_2.quorum_2 0) (Term.x0.node.x1.round.x2.quorum_2.round 0) (Term.x0.node.x1.round.x2.round.node 0) (Term.x0.node.x1.round.x2.round.round 0) (Term.x0.node.x1.round.x2.value.node 0) (Term.x0.node.x1.round.x2.value.round 0) (Term.x0.node.x1.round.x2.value.value 0) (Term.x0.node.x1.value.x2.node.node 0) (Term.x0.node.x1.value.x2.node.round 0) (Term.x0.node.x1.value.x2.node.value 0) (Term.x0.node.x1.value.x2.quorum_1.node 0) (Term.x0.node.x1.value.x2.quorum_1.quorum_1 0) (Term.x0.node.x1.value.x2.quorum_1.round 0) (Term.x0.node.x1.value.x2.quorum_1.value 0) (Term.x0.node.x1.value.x2.quorum_2.node 0) (Term.x0.node.x1.value.x2.quorum_2.quorum_2 0) (Term.x0.node.x1.value.x2.quorum_2.round 0) (Term.x0.node.x1.value.x2.quorum_2.value 0) (Term.x0.node.x1.value.x2.round.node 0) (Term.x0.node.x1.value.x2.round.round 0) (Term.x0.node.x1.value.x2.round.value 0) (Term.x0.node.x1.value.x2.value.node 0) (Term.x0.node.x1.value.x2.value.round 0) (Term.x0.node.x1.value.x2.value.value 0) (Term.x0.quorum_1.x1.node.x2.node.node 0) (Term.x0.quorum_1.x1.node.x2.node.quorum_1 0) (Term.x0.quorum_1.x1.node.x2.node.round 0) (Term.x0.quorum_1.x1.node.x2.quorum_1.node 0) (Term.x0.quorum_1.x1.node.x2.quorum_1.quorum_1 0) (Term.x0.quorum_1.x1.node.x2.quorum_1.round 0) (Term.x0.quorum_1.x1.node.x2.quorum_2.node 0) (Term.x0.quorum_1.x1.node.x2.quorum_2.quorum_1 0) (Term.x0.quorum_1.x1.node.x2.quorum_2.quorum_2 0) (Term.x0.quorum_1.x1.node.x2.quorum_2.round 0) (Term.x0.quorum_1.x1.node.x2.round.node 0) (Term.x0.quorum_1.x1.node.x2.round.quorum_1 0) (Term.x0.quorum_1.x1.node.x2.round.round 0) (Term.x0.quorum_1.x1.node.x2.value.node 0) (Term.x0.quorum_1.x1.node.x2.value.quorum_1 0) (Term.x0.quorum_1.x1.node.x2.value.round 0) (Term.x0.quorum_1.x1.node.x2.value.value 0) (Term.x0.quorum_1.x1.quorum_1.x2.node.node 0) (Term.x0.quorum_1.x1.quorum_1.x2.node.quorum_1 0) (Term.x0.quorum_1.x1.quorum_1.x2.node.round 0) (Term.x0.quorum_1.x1.quorum_1.x2.quorum_1.quorum_1 0) (Term.x0.quorum_1.x1.quorum_1.x2.quorum_1.round 0) (Term.x0.quorum_1.x1.quorum_1.x2.quorum_2.quorum_1 0) (Term.x0.quorum_1.x1.quorum_1.x2.quorum_2.quorum_2 0) (Term.x0.quorum_1.x1.quorum_1.x2.quorum_2.round 0) (Term.x0.quorum_1.x1.quorum_1.x2.round.quorum_1 0) (Term.x0.quorum_1.x1.quorum_1.x2.round.round 0) (Term.x0.quorum_1.x1.quorum_1.x2.value.quorum_1 0) (Term.x0.quorum_1.x1.quorum_1.x2.value.round 0) (Term.x0.quorum_1.x1.quorum_1.x2.value.value 0) (Term.x0.quorum_1.x1.quorum_2.x2.node.node 0) (Term.x0.quorum_1.x1.quorum_2.x2.node.quorum_1 0) (Term.x0.quorum_1.x1.quorum_2.x2.node.quorum_2 0) (Term.x0.quorum_1.x1.quorum_2.x2.node.round 0) (Term.x0.quorum_1.x1.quorum_2.x2.quorum_1.quorum_1 0) (Term.x0.quorum_1.x1.quorum_2.x2.quorum_1.quorum_2 0) (Term.x0.quorum_1.x1.quorum_2.x2.quorum_1.round 0) (Term.x0.quorum_1.x1.quorum_2.x2.quorum_2.quorum_1 0) (Term.x0.quorum_1.x1.quorum_2.x2.quorum_2.quorum_2 0) (Term.x0.quorum_1.x1.quorum_2.x2.quorum_2.round 0) (Term.x0.quorum_1.x1.quorum_2.x2.round.quorum_1 0) (Term.x0.quorum_1.x1.quorum_2.x2.round.quorum_2 0) (Term.x0.quorum_1.x1.quorum_2.x2.round.round 0) (Term.x0.quorum_1.x1.quorum_2.x2.value.quorum_1 0) (Term.x0.quorum_1.x1.quorum_2.x2.value.quorum_2 0) (Term.x0.quorum_1.x1.quorum_2.x2.value.round 0) (Term.x0.quorum_1.x1.quorum_2.x2.value.value 0) (Term.x0.quorum_1.x1.round.x2.node.node 0) (Term.x0.quorum_1.x1.round.x2.node.quorum_1 0) (Term.x0.quorum_1.x1.round.x2.node.round 0) (Term.x0.quorum_1.x1.round.x2.quorum_1.quorum_1 0) (Term.x0.quorum_1.x1.round.x2.quorum_1.round 0) (Term.x0.quorum_1.x1.round.x2.quorum_2.quorum_1 0) (Term.x0.quorum_1.x1.round.x2.quorum_2.quorum_2 0) (Term.x0.quorum_1.x1.round.x2.quorum_2.round 0) (Term.x0.quorum_1.x1.round.x2.round.quorum_1 0) (Term.x0.quorum_1.x1.round.x2.round.round 0) (Term.x0.quorum_1.x1.round.x2.value.quorum_1 0) (Term.x0.quorum_1.x1.round.x2.value.round 0) (Term.x0.quorum_1.x1.round.x2.value.value 0) (Term.x0.quorum_1.x1.value.x2.node.node 0) (Term.x0.quorum_1.x1.value.x2.node.quorum_1 0) (Term.x0.quorum_1.x1.value.x2.node.round 0) (Term.x0.quorum_1.x1.value.x2.node.value 0) (Term.x0.quorum_1.x1.value.x2.quorum_1.quorum_1 0) (Term.x0.quorum_1.x1.value.x2.quorum_1.round 0) (Term.x0.quorum_1.x1.value.x2.quorum_1.value 0) (Term.x0.quorum_1.x1.value.x2.quorum_2.quorum_1 0) (Term.x0.quorum_1.x1.value.x2.quorum_2.quorum_2 0) (Term.x0.quorum_1.x1.value.x2.quorum_2.round 0) (Term.x0.quorum_1.x1.value.x2.quorum_2.value 0) (Term.x0.quorum_1.x1.value.x2.round.quorum_1 0) (Term.x0.quorum_1.x1.value.x2.round.round 0) (Term.x0.quorum_1.x1.value.x2.round.value 0) (Term.x0.quorum_1.x1.value.x2.value.quorum_1 0) (Term.x0.quorum_1.x1.value.x2.value.round 0) (Term.x0.quorum_1.x1.value.x2.value.value 0) (Term.x0.quorum_2.x1.node.x2.node.node 0) (Term.x0.quorum_2.x1.node.x2.node.quorum_2 0) (Term.x0.quorum_2.x1.node.x2.node.round 0) (Term.x0.quorum_2.x1.node.x2.quorum_1.node 0) (Term.x0.quorum_2.x1.node.x2.quorum_1.quorum_1 0) (Term.x0.quorum_2.x1.node.x2.quorum_1.quorum_2 0) (Term.x0.quorum_2.x1.node.x2.quorum_1.round 0) (Term.x0.quorum_2.x1.node.x2.quorum_2.node 0) (Term.x0.quorum_2.x1.node.x2.quorum_2.quorum_2 0) (Term.x0.quorum_2.x1.node.x2.quorum_2.round 0) (Term.x0.quorum_2.x1.node.x2.round.node 0) (Term.x0.quorum_2.x1.node.x2.round.quorum_2 0) (Term.x0.quorum_2.x1.node.x2.round.round 0) (Term.x0.quorum_2.x1.node.x2.value.node 0) (Term.x0.quorum_2.x1.node.x2.value.quorum_2 0) (Term.x0.quorum_2.x1.node.x2.value.round 0) (Term.x0.quorum_2.x1.node.x2.value.value 0) (Term.x0.quorum_2.x1.quorum_1.x2.node.node 0) (Term.x0.quorum_2.x1.quorum_1.x2.node.quorum_1 0) (Term.x0.quorum_2.x1.quorum_1.x2.node.quorum_2 0) (Term.x0.quorum_2.x1.quorum_1.x2.node.round 0) (Term.x0.quorum_2.x1.quorum_1.x2.quorum_1.quorum_1 0) (Term.x0.quorum_2.x1.quorum_1.x2.quorum_1.quorum_2 0) (Term.x0.quorum_2.x1.quorum_1.x2.quorum_1.round 0) (Term.x0.quorum_2.x1.quorum_1.x2.quorum_2.quorum_1 0) (Term.x0.quorum_2.x1.quorum_1.x2.quorum_2.quorum_2 0) (Term.x0.quorum_2.x1.quorum_1.x2.quorum_2.round 0) (Term.x0.quorum_2.x1.quorum_1.x2.round.quorum_1 0) (Term.x0.quorum_2.x1.quorum_1.x2.round.quorum_2 0) (Term.x0.quorum_2.x1.quorum_1.x2.round.round 0) (Term.x0.quorum_2.x1.quorum_1.x2.value.quorum_1 0) (Term.x0.quorum_2.x1.quorum_1.x2.value.quorum_2 0) (Term.x0.quorum_2.x1.quorum_1.x2.value.round 0) (Term.x0.quorum_2.x1.quorum_1.x2.value.value 0) (Term.x0.quorum_2.x1.quorum_2.x2.node.node 0) (Term.x0.quorum_2.x1.quorum_2.x2.node.quorum_2 0) (Term.x0.quorum_2.x1.quorum_2.x2.node.round 0) (Term.x0.quorum_2.x1.quorum_2.x2.quorum_1.quorum_1 0) (Term.x0.quorum_2.x1.quorum_2.x2.quorum_1.quorum_2 0) (Term.x0.quorum_2.x1.quorum_2.x2.quorum_1.round 0) (Term.x0.quorum_2.x1.quorum_2.x2.quorum_2.quorum_2 0) (Term.x0.quorum_2.x1.quorum_2.x2.quorum_2.round 0) (Term.x0.quorum_2.x1.quorum_2.x2.round.quorum_2 0) (Term.x0.quorum_2.x1.quorum_2.x2.round.round 0) (Term.x0.quorum_2.x1.quorum_2.x2.value.quorum_2 0) (Term.x0.quorum_2.x1.quorum_2.x2.value.round 0) (Term.x0.quorum_2.x1.quorum_2.x2.value.value 0) (Term.x0.quorum_2.x1.round.x2.node.node 0) (Term.x0.quorum_2.x1.round.x2.node.quorum_2 0) (Term.x0.quorum_2.x1.round.x2.node.round 0) (Term.x0.quorum_2.x1.round.x2.quorum_1.quorum_1 0) (Term.x0.quorum_2.x1.round.x2.quorum_1.quorum_2 0) (Term.x0.quorum_2.x1.round.x2.quorum_1.round 0) (Term.x0.quorum_2.x1.round.x2.quorum_2.quorum_2 0) (Term.x0.quorum_2.x1.round.x2.quorum_2.round 0) (Term.x0.quorum_2.x1.round.x2.round.quorum_2 0) (Term.x0.quorum_2.x1.round.x2.round.round 0) (Term.x0.quorum_2.x1.round.x2.value.quorum_2 0) (Term.x0.quorum_2.x1.round.x2.value.round 0) (Term.x0.quorum_2.x1.round.x2.value.value 0) (Term.x0.quorum_2.x1.value.x2.node.node 0) (Term.x0.quorum_2.x1.value.x2.node.quorum_2 0) (Term.x0.quorum_2.x1.value.x2.node.round 0) (Term.x0.quorum_2.x1.value.x2.node.value 0) (Term.x0.quorum_2.x1.value.x2.quorum_1.quorum_1 0) (Term.x0.quorum_2.x1.value.x2.quorum_1.quorum_2 0) (Term.x0.quorum_2.x1.value.x2.quorum_1.round 0) (Term.x0.quorum_2.x1.value.x2.quorum_1.value 0) (Term.x0.quorum_2.x1.value.x2.quorum_2.quorum_2 0) (Term.x0.quorum_2.x1.value.x2.quorum_2.round 0) (Term.x0.quorum_2.x1.value.x2.quorum_2.value 0) (Term.x0.quorum_2.x1.value.x2.round.quorum_2 0) (Term.x0.quorum_2.x1.value.x2.round.round 0) (Term.x0.quorum_2.x1.value.x2.round.value 0) (Term.x0.quorum_2.x1.value.x2.value.quorum_2 0) (Term.x0.quorum_2.x1.value.x2.value.round 0) (Term.x0.quorum_2.x1.value.x2.value.value 0) (Term.x0.round.x1.node.x2.node.node 0) (Term.x0.round.x1.node.x2.node.round 0) (Term.x0.round.x1.node.x2.quorum_1.node 0) (Term.x0.round.x1.node.x2.quorum_1.quorum_1 0) (Term.x0.round.x1.node.x2.quorum_1.round 0) (Term.x0.round.x1.node.x2.quorum_2.node 0) (Term.x0.round.x1.node.x2.quorum_2.quorum_2 0) (Term.x0.round.x1.node.x2.quorum_2.round 0) (Term.x0.round.x1.node.x2.round.node 0) (Term.x0.round.x1.node.x2.round.round 0) (Term.x0.round.x1.node.x2.value.node 0) (Term.x0.round.x1.node.x2.value.round 0) (Term.x0.round.x1.node.x2.value.value 0) (Term.x0.round.x1.quorum_1.x2.node.node 0) (Term.x0.round.x1.quorum_1.x2.node.quorum_1 0) (Term.x0.round.x1.quorum_1.x2.node.round 0) (Term.x0.round.x1.quorum_1.x2.quorum_1.quorum_1 0) (Term.x0.round.x1.quorum_1.x2.quorum_1.round 0) (Term.x0.round.x1.quorum_1.x2.quorum_2.quorum_1 0) (Term.x0.round.x1.quorum_1.x2.quorum_2.quorum_2 0) (Term.x0.round.x1.quorum_1.x2.quorum_2.round 0) (Term.x0.round.x1.quorum_1.x2.round.quorum_1 0) (Term.x0.round.x1.quorum_1.x2.round.round 0) (Term.x0.round.x1.quorum_1.x2.value.quorum_1 0) (Term.x0.round.x1.quorum_1.x2.value.round 0) (Term.x0.round.x1.quorum_1.x2.value.value 0) (Term.x0.round.x1.quorum_2.x2.node.node 0) (Term.x0.round.x1.quorum_2.x2.node.quorum_2 0) (Term.x0.round.x1.quorum_2.x2.node.round 0) (Term.x0.round.x1.quorum_2.x2.quorum_1.quorum_1 0) (Term.x0.round.x1.quorum_2.x2.quorum_1.quorum_2 0) (Term.x0.round.x1.quorum_2.x2.quorum_1.round 0) (Term.x0.round.x1.quorum_2.x2.quorum_2.quorum_2 0) (Term.x0.round.x1.quorum_2.x2.quorum_2.round 0) (Term.x0.round.x1.quorum_2.x2.round.quorum_2 0) (Term.x0.round.x1.quorum_2.x2.round.round 0) (Term.x0.round.x1.quorum_2.x2.value.quorum_2 0) (Term.x0.round.x1.quorum_2.x2.value.round 0) (Term.x0.round.x1.quorum_2.x2.value.value 0) (Term.x0.round.x1.round.x2.node.node 0) (Term.x0.round.x1.round.x2.node.round 0) (Term.x0.round.x1.round.x2.quorum_1.quorum_1 0) (Term.x0.round.x1.round.x2.quorum_1.round 0) (Term.x0.round.x1.round.x2.quorum_2.quorum_2 0) (Term.x0.round.x1.round.x2.quorum_2.round 0) (Term.x0.round.x1.round.x2.round.round 0) (Term.x0.round.x1.round.x2.value.round 0) (Term.x0.round.x1.round.x2.value.value 0) (Term.x0.round.x1.value.x2.node.node 0) (Term.x0.round.x1.value.x2.node.round 0) (Term.x0.round.x1.value.x2.node.value 0) (Term.x0.round.x1.value.x2.quorum_1.quorum_1 0) (Term.x0.round.x1.value.x2.quorum_1.round 0) (Term.x0.round.x1.value.x2.quorum_1.value 0) (Term.x0.round.x1.value.x2.quorum_2.quorum_2 0) (Term.x0.round.x1.value.x2.quorum_2.round 0) (Term.x0.round.x1.value.x2.quorum_2.value 0) (Term.x0.round.x1.value.x2.round.round 0) (Term.x0.round.x1.value.x2.round.value 0) (Term.x0.round.x1.value.x2.value.round 0) (Term.x0.round.x1.value.x2.value.value 0) (Term.x0.value.x1.node.x2.node.node 0) (Term.x0.value.x1.node.x2.node.round 0) (Term.x0.value.x1.node.x2.node.value 0) (Term.x0.value.x1.node.x2.quorum_1.node 0) (Term.x0.value.x1.node.x2.quorum_1.quorum_1 0) (Term.x0.value.x1.node.x2.quorum_1.round 0) (Term.x0.value.x1.node.x2.quorum_1.value 0) (Term.x0.value.x1.node.x2.quorum_2.node 0) (Term.x0.value.x1.node.x2.quorum_2.quorum_2 0) (Term.x0.value.x1.node.x2.quorum_2.round 0) (Term.x0.value.x1.node.x2.quorum_2.value 0) (Term.x0.value.x1.node.x2.round.node 0) (Term.x0.value.x1.node.x2.round.round 0) (Term.x0.value.x1.node.x2.round.value 0) (Term.x0.value.x1.node.x2.value.node 0) (Term.x0.value.x1.node.x2.value.round 0) (Term.x0.value.x1.node.x2.value.value 0) (Term.x0.value.x1.quorum_1.x2.node.node 0) (Term.x0.value.x1.quorum_1.x2.node.quorum_1 0) (Term.x0.value.x1.quorum_1.x2.node.round 0) (Term.x0.value.x1.quorum_1.x2.node.value 0) (Term.x0.value.x1.quorum_1.x2.quorum_1.quorum_1 0) (Term.x0.value.x1.quorum_1.x2.quorum_1.round 0) (Term.x0.value.x1.quorum_1.x2.quorum_1.value 0) (Term.x0.value.x1.quorum_1.x2.quorum_2.quorum_1 0) (Term.x0.value.x1.quorum_1.x2.quorum_2.quorum_2 0) (Term.x0.value.x1.quorum_1.x2.quorum_2.round 0) (Term.x0.value.x1.quorum_1.x2.quorum_2.value 0) (Term.x0.value.x1.quorum_1.x2.round.quorum_1 0) (Term.x0.value.x1.quorum_1.x2.round.round 0) (Term.x0.value.x1.quorum_1.x2.round.value 0) (Term.x0.value.x1.quorum_1.x2.value.quorum_1 0) (Term.x0.value.x1.quorum_1.x2.value.round 0) (Term.x0.value.x1.quorum_1.x2.value.value 0) (Term.x0.value.x1.quorum_2.x2.node.node 0) (Term.x0.value.x1.quorum_2.x2.node.quorum_2 0) (Term.x0.value.x1.quorum_2.x2.node.round 0) (Term.x0.value.x1.quorum_2.x2.node.value 0) (Term.x0.value.x1.quorum_2.x2.quorum_1.quorum_1 0) (Term.x0.value.x1.quorum_2.x2.quorum_1.quorum_2 0) (Term.x0.value.x1.quorum_2.x2.quorum_1.round 0) (Term.x0.value.x1.quorum_2.x2.quorum_1.value 0) (Term.x0.value.x1.quorum_2.x2.quorum_2.quorum_2 0) (Term.x0.value.x1.quorum_2.x2.quorum_2.round 0) (Term.x0.value.x1.quorum_2.x2.quorum_2.value 0) (Term.x0.value.x1.quorum_2.x2.round.quorum_2 0) (Term.x0.value.x1.quorum_2.x2.round.round 0) (Term.x0.value.x1.quorum_2.x2.round.value 0) (Term.x0.value.x1.quorum_2.x2.value.quorum_2 0) (Term.x0.value.x1.quorum_2.x2.value.round 0) (Term.x0.value.x1.quorum_2.x2.value.value 0) (Term.x0.value.x1.round.x2.node.node 0) (Term.x0.value.x1.round.x2.node.round 0) (Term.x0.value.x1.round.x2.node.value 0) (Term.x0.value.x1.round.x2.quorum_1.quorum_1 0) (Term.x0.value.x1.round.x2.quorum_1.round 0) (Term.x0.value.x1.round.x2.quorum_1.value 0) (Term.x0.value.x1.round.x2.quorum_2.quorum_2 0) (Term.x0.value.x1.round.x2.quorum_2.round 0) (Term.x0.value.x1.round.x2.quorum_2.value 0) (Term.x0.value.x1.round.x2.round.round 0) (Term.x0.value.x1.round.x2.round.value 0) (Term.x0.value.x1.round.x2.value.round 0) (Term.x0.value.x1.round.x2.value.value 0) (Term.x0.value.x1.value.x2.node.node 0) (Term.x0.value.x1.value.x2.node.round 0) (Term.x0.value.x1.value.x2.node.value 0) (Term.x0.value.x1.value.x2.quorum_1.quorum_1 0) (Term.x0.value.x1.value.x2.quorum_1.round 0) (Term.x0.value.x1.value.x2.quorum_1.value 0) (Term.x0.value.x1.value.x2.quorum_2.quorum_2 0) (Term.x0.value.x1.value.x2.quorum_2.round 0) (Term.x0.value.x1.value.x2.quorum_2.value 0) (Term.x0.value.x1.value.x2.round.round 0) (Term.x0.value.x1.value.x2.round.value 0) (Term.x0.value.x1.value.x2.value.round 0) (Term.x0.value.x1.value.x2.value.value 0))
-  ((fol.0.true)
+ (((fol.0.true)
    (fol.0.false)
    (fol.0.not Formula0)
    (fol.0.and Formula0 Formula0)
@@ -8998,149 +8998,88 @@
    (fol.ctx-x0-value-x1-value-x2-value.atom.le Term.x0.value.x1.value.x2.value.round Term.x0.value.x1.value.x2.value.round)
    (fol.ctx-x0-value-x1-value-x2-value.atom.one_a Term.x0.value.x1.value.x2.value.round)
    (fol.ctx-x0-value-x1-value-x2-value.atom.proposal Term.x0.value.x1.value.x2.value.round Term.x0.value.x1.value.x2.value.value))
-  (
   ((fol.0.term.none))
-  (
   ((fol.ctx-x0-node.var.x0.node))
-  (
   ((fol.ctx-x0-node.term.none))
-  (
   ((fol.ctx-x0-quorum_1.var.x0.quorum_1))
-  (
   ((fol.ctx-x0-quorum_1.term.none))
-  (
   ((fol.ctx-x0-quorum_2.var.x0.quorum_2))
-  (
   ((fol.ctx-x0-quorum_2.term.none))
   ((fol.ctx-x0-round.var.x0.round)
    (fol.ctx-x0-round.term.none))
-  (
   ((fol.ctx-x0-value.term.none))
-  (
   ((fol.ctx-x0-value.var.x0.value))
-  (
   ((fol.ctx-x1-node.var.x1.node))
-  (
   ((fol.ctx-x1-node.term.none))
-  (
   ((fol.ctx-x1-quorum_1.var.x1.quorum_1))
-  (
   ((fol.ctx-x1-quorum_1.term.none))
-  (
   ((fol.ctx-x1-quorum_2.var.x1.quorum_2))
-  (
   ((fol.ctx-x1-quorum_2.term.none))
   ((fol.ctx-x1-round.var.x1.round)
    (fol.ctx-x1-round.term.none))
-  (
   ((fol.ctx-x1-value.term.none))
-  (
   ((fol.ctx-x1-value.var.x1.value))
-  (
   ((fol.ctx-x2-node.var.x2.node))
-  (
   ((fol.ctx-x2-node.term.none))
-  (
   ((fol.ctx-x2-quorum_1.var.x2.quorum_1))
-  (
   ((fol.ctx-x2-quorum_1.term.none))
-  (
   ((fol.ctx-x2-quorum_2.var.x2.quorum_2))
-  (
   ((fol.ctx-x2-quorum_2.term.none))
   ((fol.ctx-x2-round.var.x2.round)
    (fol.ctx-x2-round.term.none))
-  (
   ((fol.ctx-x2-value.term.none))
-  (
   ((fol.ctx-x2-value.var.x2.value))
   ((fol.ctx-x0-node-x1-node.var.x0.node)
    (fol.ctx-x0-node-x1-node.var.x1.node))
-  (
   ((fol.ctx-x0-node-x1-node.term.none))
-  (
   ((fol.ctx-x0-node-x1-quorum_1.var.x0.node))
-  (
   ((fol.ctx-x0-node-x1-quorum_1.var.x1.quorum_1))
-  (
   ((fol.ctx-x0-node-x1-quorum_1.term.none))
-  (
   ((fol.ctx-x0-node-x1-quorum_2.var.x0.node))
-  (
   ((fol.ctx-x0-node-x1-quorum_2.var.x1.quorum_2))
-  (
   ((fol.ctx-x0-node-x1-quorum_2.term.none))
-  (
   ((fol.ctx-x0-node-x1-round.var.x0.node))
   ((fol.ctx-x0-node-x1-round.var.x1.round)
    (fol.ctx-x0-node-x1-round.term.none))
-  (
   ((fol.ctx-x0-node-x1-value.var.x0.node))
-  (
   ((fol.ctx-x0-node-x1-value.term.none))
-  (
   ((fol.ctx-x0-node-x1-value.var.x1.value))
-  (
   ((fol.ctx-x0-quorum_1-x1-node.var.x1.node))
-  (
   ((fol.ctx-x0-quorum_1-x1-node.var.x0.quorum_1))
-  (
   ((fol.ctx-x0-quorum_1-x1-node.term.none))
   ((fol.ctx-x0-quorum_1-x1-quorum_1.var.x0.quorum_1)
    (fol.ctx-x0-quorum_1-x1-quorum_1.var.x1.quorum_1))
-  (
   ((fol.ctx-x0-quorum_1-x1-quorum_1.term.none))
-  (
   ((fol.ctx-x0-quorum_1-x1-quorum_2.var.x0.quorum_1))
-  (
   ((fol.ctx-x0-quorum_1-x1-quorum_2.var.x1.quorum_2))
-  (
   ((fol.ctx-x0-quorum_1-x1-quorum_2.term.none))
-  (
   ((fol.ctx-x0-quorum_1-x1-round.var.x0.quorum_1))
   ((fol.ctx-x0-quorum_1-x1-round.var.x1.round)
    (fol.ctx-x0-quorum_1-x1-round.term.none))
-  (
   ((fol.ctx-x0-quorum_1-x1-value.var.x0.quorum_1))
-  (
   ((fol.ctx-x0-quorum_1-x1-value.term.none))
-  (
   ((fol.ctx-x0-quorum_1-x1-value.var.x1.value))
-  (
   ((fol.ctx-x0-quorum_2-x1-node.var.x1.node))
-  (
   ((fol.ctx-x0-quorum_2-x1-node.var.x0.quorum_2))
-  (
   ((fol.ctx-x0-quorum_2-x1-node.term.none))
-  (
   ((fol.ctx-x0-quorum_2-x1-quorum_1.var.x1.quorum_1))
-  (
   ((fol.ctx-x0-quorum_2-x1-quorum_1.var.x0.quorum_2))
-  (
   ((fol.ctx-x0-quorum_2-x1-quorum_1.term.none))
   ((fol.ctx-x0-quorum_2-x1-quorum_2.var.x0.quorum_2)
    (fol.ctx-x0-quorum_2-x1-quorum_2.var.x1.quorum_2))
-  (
   ((fol.ctx-x0-quorum_2-x1-quorum_2.term.none))
-  (
   ((fol.ctx-x0-quorum_2-x1-round.var.x0.quorum_2))
   ((fol.ctx-x0-quorum_2-x1-round.var.x1.round)
    (fol.ctx-x0-quorum_2-x1-round.term.none))
-  (
   ((fol.ctx-x0-quorum_2-x1-value.var.x0.quorum_2))
-  (
   ((fol.ctx-x0-quorum_2-x1-value.term.none))
-  (
   ((fol.ctx-x0-quorum_2-x1-value.var.x1.value))
-  (
   ((fol.ctx-x0-round-x1-node.var.x1.node))
   ((fol.ctx-x0-round-x1-node.var.x0.round)
    (fol.ctx-x0-round-x1-node.term.none))
-  (
   ((fol.ctx-x0-round-x1-quorum_1.var.x1.quorum_1))
   ((fol.ctx-x0-round-x1-quorum_1.var.x0.round)
    (fol.ctx-x0-round-x1-quorum_1.term.none))
-  (
   ((fol.ctx-x0-round-x1-quorum_2.var.x1.quorum_2))
   ((fol.ctx-x0-round-x1-quorum_2.var.x0.round)
    (fol.ctx-x0-round-x1-quorum_2.term.none))
@@ -9148,121 +9087,73 @@
    (fol.ctx-x0-round-x1-round.term.none))
   ((fol.ctx-x0-round-x1-value.var.x0.round)
    (fol.ctx-x0-round-x1-value.term.none))
-  (
   ((fol.ctx-x0-round-x1-value.var.x1.value))
-  (
   ((fol.ctx-x0-value-x1-node.var.x1.node))
-  (
   ((fol.ctx-x0-value-x1-node.term.none))
-  (
   ((fol.ctx-x0-value-x1-node.var.x0.value))
-  (
   ((fol.ctx-x0-value-x1-quorum_1.var.x1.quorum_1))
-  (
   ((fol.ctx-x0-value-x1-quorum_1.term.none))
-  (
   ((fol.ctx-x0-value-x1-quorum_1.var.x0.value))
-  (
   ((fol.ctx-x0-value-x1-quorum_2.var.x1.quorum_2))
-  (
   ((fol.ctx-x0-value-x1-quorum_2.term.none))
-  (
   ((fol.ctx-x0-value-x1-quorum_2.var.x0.value))
   ((fol.ctx-x0-value-x1-round.var.x1.round)
    (fol.ctx-x0-value-x1-round.term.none))
-  (
   ((fol.ctx-x0-value-x1-round.var.x0.value))
-  (
   ((fol.ctx-x0-value-x1-value.term.none))
   ((fol.ctx-x0-value-x1-value.var.x0.value)
    (fol.ctx-x0-value-x1-value.var.x1.value))
   ((fol.ctx-x0-node-x2-node.var.x0.node)
    (fol.ctx-x0-node-x2-node.var.x2.node))
-  (
   ((fol.ctx-x0-node-x2-node.term.none))
-  (
   ((fol.ctx-x0-node-x2-quorum_1.var.x0.node))
-  (
   ((fol.ctx-x0-node-x2-quorum_1.var.x2.quorum_1))
-  (
   ((fol.ctx-x0-node-x2-quorum_1.term.none))
-  (
   ((fol.ctx-x0-node-x2-quorum_2.var.x0.node))
-  (
   ((fol.ctx-x0-node-x2-quorum_2.var.x2.quorum_2))
-  (
   ((fol.ctx-x0-node-x2-quorum_2.term.none))
-  (
   ((fol.ctx-x0-node-x2-round.var.x0.node))
   ((fol.ctx-x0-node-x2-round.var.x2.round)
    (fol.ctx-x0-node-x2-round.term.none))
-  (
   ((fol.ctx-x0-node-x2-value.var.x0.node))
-  (
   ((fol.ctx-x0-node-x2-value.term.none))
-  (
   ((fol.ctx-x0-node-x2-value.var.x2.value))
-  (
   ((fol.ctx-x0-quorum_1-x2-node.var.x2.node))
-  (
   ((fol.ctx-x0-quorum_1-x2-node.var.x0.quorum_1))
-  (
   ((fol.ctx-x0-quorum_1-x2-node.term.none))
   ((fol.ctx-x0-quorum_1-x2-quorum_1.var.x0.quorum_1)
    (fol.ctx-x0-quorum_1-x2-quorum_1.var.x2.quorum_1))
-  (
   ((fol.ctx-x0-quorum_1-x2-quorum_1.term.none))
-  (
   ((fol.ctx-x0-quorum_1-x2-quorum_2.var.x0.quorum_1))
-  (
   ((fol.ctx-x0-quorum_1-x2-quorum_2.var.x2.quorum_2))
-  (
   ((fol.ctx-x0-quorum_1-x2-quorum_2.term.none))
-  (
   ((fol.ctx-x0-quorum_1-x2-round.var.x0.quorum_1))
   ((fol.ctx-x0-quorum_1-x2-round.var.x2.round)
    (fol.ctx-x0-quorum_1-x2-round.term.none))
-  (
   ((fol.ctx-x0-quorum_1-x2-value.var.x0.quorum_1))
-  (
   ((fol.ctx-x0-quorum_1-x2-value.term.none))
-  (
   ((fol.ctx-x0-quorum_1-x2-value.var.x2.value))
-  (
   ((fol.ctx-x0-quorum_2-x2-node.var.x2.node))
-  (
   ((fol.ctx-x0-quorum_2-x2-node.var.x0.quorum_2))
-  (
   ((fol.ctx-x0-quorum_2-x2-node.term.none))
-  (
   ((fol.ctx-x0-quorum_2-x2-quorum_1.var.x2.quorum_1))
-  (
   ((fol.ctx-x0-quorum_2-x2-quorum_1.var.x0.quorum_2))
-  (
   ((fol.ctx-x0-quorum_2-x2-quorum_1.term.none))
   ((fol.ctx-x0-quorum_2-x2-quorum_2.var.x0.quorum_2)
    (fol.ctx-x0-quorum_2-x2-quorum_2.var.x2.quorum_2))
-  (
   ((fol.ctx-x0-quorum_2-x2-quorum_2.term.none))
-  (
   ((fol.ctx-x0-quorum_2-x2-round.var.x0.quorum_2))
   ((fol.ctx-x0-quorum_2-x2-round.var.x2.round)
    (fol.ctx-x0-quorum_2-x2-round.term.none))
-  (
   ((fol.ctx-x0-quorum_2-x2-value.var.x0.quorum_2))
-  (
   ((fol.ctx-x0-quorum_2-x2-value.term.none))
-  (
   ((fol.ctx-x0-quorum_2-x2-value.var.x2.value))
-  (
   ((fol.ctx-x0-round-x2-node.var.x2.node))
   ((fol.ctx-x0-round-x2-node.var.x0.round)
    (fol.ctx-x0-round-x2-node.term.none))
-  (
   ((fol.ctx-x0-round-x2-quorum_1.var.x2.quorum_1))
   ((fol.ctx-x0-round-x2-quorum_1.var.x0.round)
    (fol.ctx-x0-round-x2-quorum_1.term.none))
-  (
   ((fol.ctx-x0-round-x2-quorum_2.var.x2.quorum_2))
   ((fol.ctx-x0-round-x2-quorum_2.var.x0.round)
    (fol.ctx-x0-round-x2-quorum_2.term.none))
@@ -9270,121 +9161,73 @@
    (fol.ctx-x0-round-x2-round.term.none))
   ((fol.ctx-x0-round-x2-value.var.x0.round)
    (fol.ctx-x0-round-x2-value.term.none))
-  (
   ((fol.ctx-x0-round-x2-value.var.x2.value))
-  (
   ((fol.ctx-x0-value-x2-node.var.x2.node))
-  (
   ((fol.ctx-x0-value-x2-node.term.none))
-  (
   ((fol.ctx-x0-value-x2-node.var.x0.value))
-  (
   ((fol.ctx-x0-value-x2-quorum_1.var.x2.quorum_1))
-  (
   ((fol.ctx-x0-value-x2-quorum_1.term.none))
-  (
   ((fol.ctx-x0-value-x2-quorum_1.var.x0.value))
-  (
   ((fol.ctx-x0-value-x2-quorum_2.var.x2.quorum_2))
-  (
   ((fol.ctx-x0-value-x2-quorum_2.term.none))
-  (
   ((fol.ctx-x0-value-x2-quorum_2.var.x0.value))
   ((fol.ctx-x0-value-x2-round.var.x2.round)
    (fol.ctx-x0-value-x2-round.term.none))
-  (
   ((fol.ctx-x0-value-x2-round.var.x0.value))
-  (
   ((fol.ctx-x0-value-x2-value.term.none))
   ((fol.ctx-x0-value-x2-value.var.x0.value)
    (fol.ctx-x0-value-x2-value.var.x2.value))
   ((fol.ctx-x1-node-x2-node.var.x1.node)
    (fol.ctx-x1-node-x2-node.var.x2.node))
-  (
   ((fol.ctx-x1-node-x2-node.term.none))
-  (
   ((fol.ctx-x1-node-x2-quorum_1.var.x1.node))
-  (
   ((fol.ctx-x1-node-x2-quorum_1.var.x2.quorum_1))
-  (
   ((fol.ctx-x1-node-x2-quorum_1.term.none))
-  (
   ((fol.ctx-x1-node-x2-quorum_2.var.x1.node))
-  (
   ((fol.ctx-x1-node-x2-quorum_2.var.x2.quorum_2))
-  (
   ((fol.ctx-x1-node-x2-quorum_2.term.none))
-  (
   ((fol.ctx-x1-node-x2-round.var.x1.node))
   ((fol.ctx-x1-node-x2-round.var.x2.round)
    (fol.ctx-x1-node-x2-round.term.none))
-  (
   ((fol.ctx-x1-node-x2-value.var.x1.node))
-  (
   ((fol.ctx-x1-node-x2-value.term.none))
-  (
   ((fol.ctx-x1-node-x2-value.var.x2.value))
-  (
   ((fol.ctx-x1-quorum_1-x2-node.var.x2.node))
-  (
   ((fol.ctx-x1-quorum_1-x2-node.var.x1.quorum_1))
-  (
   ((fol.ctx-x1-quorum_1-x2-node.term.none))
   ((fol.ctx-x1-quorum_1-x2-quorum_1.var.x1.quorum_1)
    (fol.ctx-x1-quorum_1-x2-quorum_1.var.x2.quorum_1))
-  (
   ((fol.ctx-x1-quorum_1-x2-quorum_1.term.none))
-  (
   ((fol.ctx-x1-quorum_1-x2-quorum_2.var.x1.quorum_1))
-  (
   ((fol.ctx-x1-quorum_1-x2-quorum_2.var.x2.quorum_2))
-  (
   ((fol.ctx-x1-quorum_1-x2-quorum_2.term.none))
-  (
   ((fol.ctx-x1-quorum_1-x2-round.var.x1.quorum_1))
   ((fol.ctx-x1-quorum_1-x2-round.var.x2.round)
    (fol.ctx-x1-quorum_1-x2-round.term.none))
-  (
   ((fol.ctx-x1-quorum_1-x2-value.var.x1.quorum_1))
-  (
   ((fol.ctx-x1-quorum_1-x2-value.term.none))
-  (
   ((fol.ctx-x1-quorum_1-x2-value.var.x2.value))
-  (
   ((fol.ctx-x1-quorum_2-x2-node.var.x2.node))
-  (
   ((fol.ctx-x1-quorum_2-x2-node.var.x1.quorum_2))
-  (
   ((fol.ctx-x1-quorum_2-x2-node.term.none))
-  (
   ((fol.ctx-x1-quorum_2-x2-quorum_1.var.x2.quorum_1))
-  (
   ((fol.ctx-x1-quorum_2-x2-quorum_1.var.x1.quorum_2))
-  (
   ((fol.ctx-x1-quorum_2-x2-quorum_1.term.none))
   ((fol.ctx-x1-quorum_2-x2-quorum_2.var.x1.quorum_2)
    (fol.ctx-x1-quorum_2-x2-quorum_2.var.x2.quorum_2))
-  (
   ((fol.ctx-x1-quorum_2-x2-quorum_2.term.none))
-  (
   ((fol.ctx-x1-quorum_2-x2-round.var.x1.quorum_2))
   ((fol.ctx-x1-quorum_2-x2-round.var.x2.round)
    (fol.ctx-x1-quorum_2-x2-round.term.none))
-  (
   ((fol.ctx-x1-quorum_2-x2-value.var.x1.quorum_2))
-  (
   ((fol.ctx-x1-quorum_2-x2-value.term.none))
-  (
   ((fol.ctx-x1-quorum_2-x2-value.var.x2.value))
-  (
   ((fol.ctx-x1-round-x2-node.var.x2.node))
   ((fol.ctx-x1-round-x2-node.var.x1.round)
    (fol.ctx-x1-round-x2-node.term.none))
-  (
   ((fol.ctx-x1-round-x2-quorum_1.var.x2.quorum_1))
   ((fol.ctx-x1-round-x2-quorum_1.var.x1.round)
    (fol.ctx-x1-round-x2-quorum_1.term.none))
-  (
   ((fol.ctx-x1-round-x2-quorum_2.var.x2.quorum_2))
   ((fol.ctx-x1-round-x2-quorum_2.var.x1.round)
    (fol.ctx-x1-round-x2-quorum_2.term.none))
@@ -9392,49 +9235,32 @@
    (fol.ctx-x1-round-x2-round.term.none))
   ((fol.ctx-x1-round-x2-value.var.x1.round)
    (fol.ctx-x1-round-x2-value.term.none))
-  (
   ((fol.ctx-x1-round-x2-value.var.x2.value))
-  (
   ((fol.ctx-x1-value-x2-node.var.x2.node))
-  (
   ((fol.ctx-x1-value-x2-node.term.none))
-  (
   ((fol.ctx-x1-value-x2-node.var.x1.value))
-  (
   ((fol.ctx-x1-value-x2-quorum_1.var.x2.quorum_1))
-  (
   ((fol.ctx-x1-value-x2-quorum_1.term.none))
-  (
   ((fol.ctx-x1-value-x2-quorum_1.var.x1.value))
-  (
   ((fol.ctx-x1-value-x2-quorum_2.var.x2.quorum_2))
-  (
   ((fol.ctx-x1-value-x2-quorum_2.term.none))
-  (
   ((fol.ctx-x1-value-x2-quorum_2.var.x1.value))
   ((fol.ctx-x1-value-x2-round.var.x2.round)
    (fol.ctx-x1-value-x2-round.term.none))
-  (
   ((fol.ctx-x1-value-x2-round.var.x1.value))
-  (
   ((fol.ctx-x1-value-x2-value.term.none))
   ((fol.ctx-x1-value-x2-value.var.x1.value)
    (fol.ctx-x1-value-x2-value.var.x2.value))
   ((fol.ctx-x0-node-x1-node-x2-node.var.x0.node) (fol.ctx-x0-node-x1-node-x2-node.var.x1.node)
    (fol.ctx-x0-node-x1-node-x2-node.var.x2.node))
-  (
   ((fol.ctx-x0-node-x1-node-x2-node.term.none))
   ((fol.ctx-x0-node-x1-node-x2-quorum_1.var.x0.node)
    (fol.ctx-x0-node-x1-node-x2-quorum_1.var.x1.node))
-  (
   ((fol.ctx-x0-node-x1-node-x2-quorum_1.var.x2.quorum_1))
-  (
   ((fol.ctx-x0-node-x1-node-x2-quorum_1.term.none))
   ((fol.ctx-x0-node-x1-node-x2-quorum_2.var.x0.node)
    (fol.ctx-x0-node-x1-node-x2-quorum_2.var.x1.node))
-  (
   ((fol.ctx-x0-node-x1-node-x2-quorum_2.var.x2.quorum_2))
-  (
   ((fol.ctx-x0-node-x1-node-x2-quorum_2.term.none))
   ((fol.ctx-x0-node-x1-node-x2-round.var.x0.node)
    (fol.ctx-x0-node-x1-node-x2-round.var.x1.node))
@@ -9442,187 +9268,117 @@
    (fol.ctx-x0-node-x1-node-x2-round.term.none))
   ((fol.ctx-x0-node-x1-node-x2-value.var.x0.node)
    (fol.ctx-x0-node-x1-node-x2-value.var.x1.node))
-  (
   ((fol.ctx-x0-node-x1-node-x2-value.term.none))
-  (
   ((fol.ctx-x0-node-x1-node-x2-value.var.x2.value))
   ((fol.ctx-x0-node-x1-quorum_1-x2-node.var.x0.node)
    (fol.ctx-x0-node-x1-quorum_1-x2-node.var.x2.node))
-  (
   ((fol.ctx-x0-node-x1-quorum_1-x2-node.var.x1.quorum_1))
-  (
   ((fol.ctx-x0-node-x1-quorum_1-x2-node.term.none))
-  (
   ((fol.ctx-x0-node-x1-quorum_1-x2-quorum_1.var.x0.node))
   ((fol.ctx-x0-node-x1-quorum_1-x2-quorum_1.var.x1.quorum_1)
    (fol.ctx-x0-node-x1-quorum_1-x2-quorum_1.var.x2.quorum_1))
-  (
   ((fol.ctx-x0-node-x1-quorum_1-x2-quorum_1.term.none))
-  (
   ((fol.ctx-x0-node-x1-quorum_1-x2-quorum_2.var.x0.node))
-  (
   ((fol.ctx-x0-node-x1-quorum_1-x2-quorum_2.var.x1.quorum_1))
-  (
   ((fol.ctx-x0-node-x1-quorum_1-x2-quorum_2.var.x2.quorum_2))
-  (
   ((fol.ctx-x0-node-x1-quorum_1-x2-quorum_2.term.none))
-  (
   ((fol.ctx-x0-node-x1-quorum_1-x2-round.var.x0.node))
-  (
   ((fol.ctx-x0-node-x1-quorum_1-x2-round.var.x1.quorum_1))
   ((fol.ctx-x0-node-x1-quorum_1-x2-round.var.x2.round)
    (fol.ctx-x0-node-x1-quorum_1-x2-round.term.none))
-  (
   ((fol.ctx-x0-node-x1-quorum_1-x2-value.var.x0.node))
-  (
   ((fol.ctx-x0-node-x1-quorum_1-x2-value.var.x1.quorum_1))
-  (
   ((fol.ctx-x0-node-x1-quorum_1-x2-value.term.none))
-  (
   ((fol.ctx-x0-node-x1-quorum_1-x2-value.var.x2.value))
   ((fol.ctx-x0-node-x1-quorum_2-x2-node.var.x0.node)
    (fol.ctx-x0-node-x1-quorum_2-x2-node.var.x2.node))
-  (
   ((fol.ctx-x0-node-x1-quorum_2-x2-node.var.x1.quorum_2))
-  (
   ((fol.ctx-x0-node-x1-quorum_2-x2-node.term.none))
-  (
   ((fol.ctx-x0-node-x1-quorum_2-x2-quorum_1.var.x0.node))
-  (
   ((fol.ctx-x0-node-x1-quorum_2-x2-quorum_1.var.x2.quorum_1))
-  (
   ((fol.ctx-x0-node-x1-quorum_2-x2-quorum_1.var.x1.quorum_2))
-  (
   ((fol.ctx-x0-node-x1-quorum_2-x2-quorum_1.term.none))
-  (
   ((fol.ctx-x0-node-x1-quorum_2-x2-quorum_2.var.x0.node))
   ((fol.ctx-x0-node-x1-quorum_2-x2-quorum_2.var.x1.quorum_2)
    (fol.ctx-x0-node-x1-quorum_2-x2-quorum_2.var.x2.quorum_2))
-  (
   ((fol.ctx-x0-node-x1-quorum_2-x2-quorum_2.term.none))
-  (
   ((fol.ctx-x0-node-x1-quorum_2-x2-round.var.x0.node))
-  (
   ((fol.ctx-x0-node-x1-quorum_2-x2-round.var.x1.quorum_2))
   ((fol.ctx-x0-node-x1-quorum_2-x2-round.var.x2.round)
    (fol.ctx-x0-node-x1-quorum_2-x2-round.term.none))
-  (
   ((fol.ctx-x0-node-x1-quorum_2-x2-value.var.x0.node))
-  (
   ((fol.ctx-x0-node-x1-quorum_2-x2-value.var.x1.quorum_2))
-  (
   ((fol.ctx-x0-node-x1-quorum_2-x2-value.term.none))
-  (
   ((fol.ctx-x0-node-x1-quorum_2-x2-value.var.x2.value))
   ((fol.ctx-x0-node-x1-round-x2-node.var.x0.node)
    (fol.ctx-x0-node-x1-round-x2-node.var.x2.node))
   ((fol.ctx-x0-node-x1-round-x2-node.var.x1.round)
    (fol.ctx-x0-node-x1-round-x2-node.term.none))
-  (
   ((fol.ctx-x0-node-x1-round-x2-quorum_1.var.x0.node))
-  (
   ((fol.ctx-x0-node-x1-round-x2-quorum_1.var.x2.quorum_1))
   ((fol.ctx-x0-node-x1-round-x2-quorum_1.var.x1.round)
    (fol.ctx-x0-node-x1-round-x2-quorum_1.term.none))
-  (
   ((fol.ctx-x0-node-x1-round-x2-quorum_2.var.x0.node))
-  (
   ((fol.ctx-x0-node-x1-round-x2-quorum_2.var.x2.quorum_2))
   ((fol.ctx-x0-node-x1-round-x2-quorum_2.var.x1.round)
    (fol.ctx-x0-node-x1-round-x2-quorum_2.term.none))
-  (
   ((fol.ctx-x0-node-x1-round-x2-round.var.x0.node))
   ((fol.ctx-x0-node-x1-round-x2-round.var.x1.round) (fol.ctx-x0-node-x1-round-x2-round.var.x2.round)
    (fol.ctx-x0-node-x1-round-x2-round.term.none))
-  (
   ((fol.ctx-x0-node-x1-round-x2-value.var.x0.node))
   ((fol.ctx-x0-node-x1-round-x2-value.var.x1.round)
    (fol.ctx-x0-node-x1-round-x2-value.term.none))
-  (
   ((fol.ctx-x0-node-x1-round-x2-value.var.x2.value))
   ((fol.ctx-x0-node-x1-value-x2-node.var.x0.node)
    (fol.ctx-x0-node-x1-value-x2-node.var.x2.node))
-  (
   ((fol.ctx-x0-node-x1-value-x2-node.term.none))
-  (
   ((fol.ctx-x0-node-x1-value-x2-node.var.x1.value))
-  (
   ((fol.ctx-x0-node-x1-value-x2-quorum_1.var.x0.node))
-  (
   ((fol.ctx-x0-node-x1-value-x2-quorum_1.var.x2.quorum_1))
-  (
   ((fol.ctx-x0-node-x1-value-x2-quorum_1.term.none))
-  (
   ((fol.ctx-x0-node-x1-value-x2-quorum_1.var.x1.value))
-  (
   ((fol.ctx-x0-node-x1-value-x2-quorum_2.var.x0.node))
-  (
   ((fol.ctx-x0-node-x1-value-x2-quorum_2.var.x2.quorum_2))
-  (
   ((fol.ctx-x0-node-x1-value-x2-quorum_2.term.none))
-  (
   ((fol.ctx-x0-node-x1-value-x2-quorum_2.var.x1.value))
-  (
   ((fol.ctx-x0-node-x1-value-x2-round.var.x0.node))
   ((fol.ctx-x0-node-x1-value-x2-round.var.x2.round)
    (fol.ctx-x0-node-x1-value-x2-round.term.none))
-  (
   ((fol.ctx-x0-node-x1-value-x2-round.var.x1.value))
-  (
   ((fol.ctx-x0-node-x1-value-x2-value.var.x0.node))
-  (
   ((fol.ctx-x0-node-x1-value-x2-value.term.none))
   ((fol.ctx-x0-node-x1-value-x2-value.var.x1.value)
    (fol.ctx-x0-node-x1-value-x2-value.var.x2.value))
   ((fol.ctx-x0-quorum_1-x1-node-x2-node.var.x1.node)
    (fol.ctx-x0-quorum_1-x1-node-x2-node.var.x2.node))
-  (
   ((fol.ctx-x0-quorum_1-x1-node-x2-node.var.x0.quorum_1))
-  (
   ((fol.ctx-x0-quorum_1-x1-node-x2-node.term.none))
-  (
   ((fol.ctx-x0-quorum_1-x1-node-x2-quorum_1.var.x1.node))
   ((fol.ctx-x0-quorum_1-x1-node-x2-quorum_1.var.x0.quorum_1)
    (fol.ctx-x0-quorum_1-x1-node-x2-quorum_1.var.x2.quorum_1))
-  (
   ((fol.ctx-x0-quorum_1-x1-node-x2-quorum_1.term.none))
-  (
   ((fol.ctx-x0-quorum_1-x1-node-x2-quorum_2.var.x1.node))
-  (
   ((fol.ctx-x0-quorum_1-x1-node-x2-quorum_2.var.x0.quorum_1))
-  (
   ((fol.ctx-x0-quorum_1-x1-node-x2-quorum_2.var.x2.quorum_2))
-  (
   ((fol.ctx-x0-quorum_1-x1-node-x2-quorum_2.term.none))
-  (
   ((fol.ctx-x0-quorum_1-x1-node-x2-round.var.x1.node))
-  (
   ((fol.ctx-x0-quorum_1-x1-node-x2-round.var.x0.quorum_1))
   ((fol.ctx-x0-quorum_1-x1-node-x2-round.var.x2.round)
    (fol.ctx-x0-quorum_1-x1-node-x2-round.term.none))
-  (
   ((fol.ctx-x0-quorum_1-x1-node-x2-value.var.x1.node))
-  (
   ((fol.ctx-x0-quorum_1-x1-node-x2-value.var.x0.quorum_1))
-  (
   ((fol.ctx-x0-quorum_1-x1-node-x2-value.term.none))
-  (
   ((fol.ctx-x0-quorum_1-x1-node-x2-value.var.x2.value))
-  (
   ((fol.ctx-x0-quorum_1-x1-quorum_1-x2-node.var.x2.node))
   ((fol.ctx-x0-quorum_1-x1-quorum_1-x2-node.var.x0.quorum_1)
    (fol.ctx-x0-quorum_1-x1-quorum_1-x2-node.var.x1.quorum_1))
-  (
   ((fol.ctx-x0-quorum_1-x1-quorum_1-x2-node.term.none))
   ((fol.ctx-x0-quorum_1-x1-quorum_1-x2-quorum_1.var.x0.quorum_1) (fol.ctx-x0-quorum_1-x1-quorum_1-x2-quorum_1.var.x1.quorum_1)
    (fol.ctx-x0-quorum_1-x1-quorum_1-x2-quorum_1.var.x2.quorum_1))
-  (
   ((fol.ctx-x0-quorum_1-x1-quorum_1-x2-quorum_1.term.none))
   ((fol.ctx-x0-quorum_1-x1-quorum_1-x2-quorum_2.var.x0.quorum_1)
    (fol.ctx-x0-quorum_1-x1-quorum_1-x2-quorum_2.var.x1.quorum_1))
-  (
   ((fol.ctx-x0-quorum_1-x1-quorum_1-x2-quorum_2.var.x2.quorum_2))
-  (
   ((fol.ctx-x0-quorum_1-x1-quorum_1-x2-quorum_2.term.none))
   ((fol.ctx-x0-quorum_1-x1-quorum_1-x2-round.var.x0.quorum_1)
    (fol.ctx-x0-quorum_1-x1-quorum_1-x2-round.var.x1.quorum_1))
@@ -9630,47 +9386,29 @@
    (fol.ctx-x0-quorum_1-x1-quorum_1-x2-round.term.none))
   ((fol.ctx-x0-quorum_1-x1-quorum_1-x2-value.var.x0.quorum_1)
    (fol.ctx-x0-quorum_1-x1-quorum_1-x2-value.var.x1.quorum_1))
-  (
   ((fol.ctx-x0-quorum_1-x1-quorum_1-x2-value.term.none))
-  (
   ((fol.ctx-x0-quorum_1-x1-quorum_1-x2-value.var.x2.value))
-  (
   ((fol.ctx-x0-quorum_1-x1-quorum_2-x2-node.var.x2.node))
-  (
   ((fol.ctx-x0-quorum_1-x1-quorum_2-x2-node.var.x0.quorum_1))
-  (
   ((fol.ctx-x0-quorum_1-x1-quorum_2-x2-node.var.x1.quorum_2))
-  (
   ((fol.ctx-x0-quorum_1-x1-quorum_2-x2-node.term.none))
   ((fol.ctx-x0-quorum_1-x1-quorum_2-x2-quorum_1.var.x0.quorum_1)
    (fol.ctx-x0-quorum_1-x1-quorum_2-x2-quorum_1.var.x2.quorum_1))
-  (
   ((fol.ctx-x0-quorum_1-x1-quorum_2-x2-quorum_1.var.x1.quorum_2))
-  (
   ((fol.ctx-x0-quorum_1-x1-quorum_2-x2-quorum_1.term.none))
-  (
   ((fol.ctx-x0-quorum_1-x1-quorum_2-x2-quorum_2.var.x0.quorum_1))
   ((fol.ctx-x0-quorum_1-x1-quorum_2-x2-quorum_2.var.x1.quorum_2)
    (fol.ctx-x0-quorum_1-x1-quorum_2-x2-quorum_2.var.x2.quorum_2))
-  (
   ((fol.ctx-x0-quorum_1-x1-quorum_2-x2-quorum_2.term.none))
-  (
   ((fol.ctx-x0-quorum_1-x1-quorum_2-x2-round.var.x0.quorum_1))
-  (
   ((fol.ctx-x0-quorum_1-x1-quorum_2-x2-round.var.x1.quorum_2))
   ((fol.ctx-x0-quorum_1-x1-quorum_2-x2-round.var.x2.round)
    (fol.ctx-x0-quorum_1-x1-quorum_2-x2-round.term.none))
-  (
   ((fol.ctx-x0-quorum_1-x1-quorum_2-x2-value.var.x0.quorum_1))
-  (
   ((fol.ctx-x0-quorum_1-x1-quorum_2-x2-value.var.x1.quorum_2))
-  (
   ((fol.ctx-x0-quorum_1-x1-quorum_2-x2-value.term.none))
-  (
   ((fol.ctx-x0-quorum_1-x1-quorum_2-x2-value.var.x2.value))
-  (
   ((fol.ctx-x0-quorum_1-x1-round-x2-node.var.x2.node))
-  (
   ((fol.ctx-x0-quorum_1-x1-round-x2-node.var.x0.quorum_1))
   ((fol.ctx-x0-quorum_1-x1-round-x2-node.var.x1.round)
    (fol.ctx-x0-quorum_1-x1-round-x2-node.term.none))
@@ -9678,139 +9416,87 @@
    (fol.ctx-x0-quorum_1-x1-round-x2-quorum_1.var.x2.quorum_1))
   ((fol.ctx-x0-quorum_1-x1-round-x2-quorum_1.var.x1.round)
    (fol.ctx-x0-quorum_1-x1-round-x2-quorum_1.term.none))
-  (
   ((fol.ctx-x0-quorum_1-x1-round-x2-quorum_2.var.x0.quorum_1))
-  (
   ((fol.ctx-x0-quorum_1-x1-round-x2-quorum_2.var.x2.quorum_2))
   ((fol.ctx-x0-quorum_1-x1-round-x2-quorum_2.var.x1.round)
    (fol.ctx-x0-quorum_1-x1-round-x2-quorum_2.term.none))
-  (
   ((fol.ctx-x0-quorum_1-x1-round-x2-round.var.x0.quorum_1))
   ((fol.ctx-x0-quorum_1-x1-round-x2-round.var.x1.round) (fol.ctx-x0-quorum_1-x1-round-x2-round.var.x2.round)
    (fol.ctx-x0-quorum_1-x1-round-x2-round.term.none))
-  (
   ((fol.ctx-x0-quorum_1-x1-round-x2-value.var.x0.quorum_1))
   ((fol.ctx-x0-quorum_1-x1-round-x2-value.var.x1.round)
    (fol.ctx-x0-quorum_1-x1-round-x2-value.term.none))
-  (
   ((fol.ctx-x0-quorum_1-x1-round-x2-value.var.x2.value))
-  (
   ((fol.ctx-x0-quorum_1-x1-value-x2-node.var.x2.node))
-  (
   ((fol.ctx-x0-quorum_1-x1-value-x2-node.var.x0.quorum_1))
-  (
   ((fol.ctx-x0-quorum_1-x1-value-x2-node.term.none))
-  (
   ((fol.ctx-x0-quorum_1-x1-value-x2-node.var.x1.value))
   ((fol.ctx-x0-quorum_1-x1-value-x2-quorum_1.var.x0.quorum_1)
    (fol.ctx-x0-quorum_1-x1-value-x2-quorum_1.var.x2.quorum_1))
-  (
   ((fol.ctx-x0-quorum_1-x1-value-x2-quorum_1.term.none))
-  (
   ((fol.ctx-x0-quorum_1-x1-value-x2-quorum_1.var.x1.value))
-  (
   ((fol.ctx-x0-quorum_1-x1-value-x2-quorum_2.var.x0.quorum_1))
-  (
   ((fol.ctx-x0-quorum_1-x1-value-x2-quorum_2.var.x2.quorum_2))
-  (
   ((fol.ctx-x0-quorum_1-x1-value-x2-quorum_2.term.none))
-  (
   ((fol.ctx-x0-quorum_1-x1-value-x2-quorum_2.var.x1.value))
-  (
   ((fol.ctx-x0-quorum_1-x1-value-x2-round.var.x0.quorum_1))
   ((fol.ctx-x0-quorum_1-x1-value-x2-round.var.x2.round)
    (fol.ctx-x0-quorum_1-x1-value-x2-round.term.none))
-  (
   ((fol.ctx-x0-quorum_1-x1-value-x2-round.var.x1.value))
-  (
   ((fol.ctx-x0-quorum_1-x1-value-x2-value.var.x0.quorum_1))
-  (
   ((fol.ctx-x0-quorum_1-x1-value-x2-value.term.none))
   ((fol.ctx-x0-quorum_1-x1-value-x2-value.var.x1.value)
    (fol.ctx-x0-quorum_1-x1-value-x2-value.var.x2.value))
   ((fol.ctx-x0-quorum_2-x1-node-x2-node.var.x1.node)
    (fol.ctx-x0-quorum_2-x1-node-x2-node.var.x2.node))
-  (
   ((fol.ctx-x0-quorum_2-x1-node-x2-node.var.x0.quorum_2))
-  (
   ((fol.ctx-x0-quorum_2-x1-node-x2-node.term.none))
-  (
   ((fol.ctx-x0-quorum_2-x1-node-x2-quorum_1.var.x1.node))
-  (
   ((fol.ctx-x0-quorum_2-x1-node-x2-quorum_1.var.x2.quorum_1))
-  (
   ((fol.ctx-x0-quorum_2-x1-node-x2-quorum_1.var.x0.quorum_2))
-  (
   ((fol.ctx-x0-quorum_2-x1-node-x2-quorum_1.term.none))
-  (
   ((fol.ctx-x0-quorum_2-x1-node-x2-quorum_2.var.x1.node))
   ((fol.ctx-x0-quorum_2-x1-node-x2-quorum_2.var.x0.quorum_2)
    (fol.ctx-x0-quorum_2-x1-node-x2-quorum_2.var.x2.quorum_2))
-  (
   ((fol.ctx-x0-quorum_2-x1-node-x2-quorum_2.term.none))
-  (
   ((fol.ctx-x0-quorum_2-x1-node-x2-round.var.x1.node))
-  (
   ((fol.ctx-x0-quorum_2-x1-node-x2-round.var.x0.quorum_2))
   ((fol.ctx-x0-quorum_2-x1-node-x2-round.var.x2.round)
    (fol.ctx-x0-quorum_2-x1-node-x2-round.term.none))
-  (
   ((fol.ctx-x0-quorum_2-x1-node-x2-value.var.x1.node))
-  (
   ((fol.ctx-x0-quorum_2-x1-node-x2-value.var.x0.quorum_2))
-  (
   ((fol.ctx-x0-quorum_2-x1-node-x2-value.term.none))
-  (
   ((fol.ctx-x0-quorum_2-x1-node-x2-value.var.x2.value))
-  (
   ((fol.ctx-x0-quorum_2-x1-quorum_1-x2-node.var.x2.node))
-  (
   ((fol.ctx-x0-quorum_2-x1-quorum_1-x2-node.var.x1.quorum_1))
-  (
   ((fol.ctx-x0-quorum_2-x1-quorum_1-x2-node.var.x0.quorum_2))
-  (
   ((fol.ctx-x0-quorum_2-x1-quorum_1-x2-node.term.none))
   ((fol.ctx-x0-quorum_2-x1-quorum_1-x2-quorum_1.var.x1.quorum_1)
    (fol.ctx-x0-quorum_2-x1-quorum_1-x2-quorum_1.var.x2.quorum_1))
-  (
   ((fol.ctx-x0-quorum_2-x1-quorum_1-x2-quorum_1.var.x0.quorum_2))
-  (
   ((fol.ctx-x0-quorum_2-x1-quorum_1-x2-quorum_1.term.none))
-  (
   ((fol.ctx-x0-quorum_2-x1-quorum_1-x2-quorum_2.var.x1.quorum_1))
   ((fol.ctx-x0-quorum_2-x1-quorum_1-x2-quorum_2.var.x0.quorum_2)
    (fol.ctx-x0-quorum_2-x1-quorum_1-x2-quorum_2.var.x2.quorum_2))
-  (
   ((fol.ctx-x0-quorum_2-x1-quorum_1-x2-quorum_2.term.none))
-  (
   ((fol.ctx-x0-quorum_2-x1-quorum_1-x2-round.var.x1.quorum_1))
-  (
   ((fol.ctx-x0-quorum_2-x1-quorum_1-x2-round.var.x0.quorum_2))
   ((fol.ctx-x0-quorum_2-x1-quorum_1-x2-round.var.x2.round)
    (fol.ctx-x0-quorum_2-x1-quorum_1-x2-round.term.none))
-  (
   ((fol.ctx-x0-quorum_2-x1-quorum_1-x2-value.var.x1.quorum_1))
-  (
   ((fol.ctx-x0-quorum_2-x1-quorum_1-x2-value.var.x0.quorum_2))
-  (
   ((fol.ctx-x0-quorum_2-x1-quorum_1-x2-value.term.none))
-  (
   ((fol.ctx-x0-quorum_2-x1-quorum_1-x2-value.var.x2.value))
-  (
   ((fol.ctx-x0-quorum_2-x1-quorum_2-x2-node.var.x2.node))
   ((fol.ctx-x0-quorum_2-x1-quorum_2-x2-node.var.x0.quorum_2)
    (fol.ctx-x0-quorum_2-x1-quorum_2-x2-node.var.x1.quorum_2))
-  (
   ((fol.ctx-x0-quorum_2-x1-quorum_2-x2-node.term.none))
-  (
   ((fol.ctx-x0-quorum_2-x1-quorum_2-x2-quorum_1.var.x2.quorum_1))
   ((fol.ctx-x0-quorum_2-x1-quorum_2-x2-quorum_1.var.x0.quorum_2)
    (fol.ctx-x0-quorum_2-x1-quorum_2-x2-quorum_1.var.x1.quorum_2))
-  (
   ((fol.ctx-x0-quorum_2-x1-quorum_2-x2-quorum_1.term.none))
   ((fol.ctx-x0-quorum_2-x1-quorum_2-x2-quorum_2.var.x0.quorum_2) (fol.ctx-x0-quorum_2-x1-quorum_2-x2-quorum_2.var.x1.quorum_2)
    (fol.ctx-x0-quorum_2-x1-quorum_2-x2-quorum_2.var.x2.quorum_2))
-  (
   ((fol.ctx-x0-quorum_2-x1-quorum_2-x2-quorum_2.term.none))
   ((fol.ctx-x0-quorum_2-x1-quorum_2-x2-round.var.x0.quorum_2)
    (fol.ctx-x0-quorum_2-x1-quorum_2-x2-round.var.x1.quorum_2))
@@ -9818,19 +9504,13 @@
    (fol.ctx-x0-quorum_2-x1-quorum_2-x2-round.term.none))
   ((fol.ctx-x0-quorum_2-x1-quorum_2-x2-value.var.x0.quorum_2)
    (fol.ctx-x0-quorum_2-x1-quorum_2-x2-value.var.x1.quorum_2))
-  (
   ((fol.ctx-x0-quorum_2-x1-quorum_2-x2-value.term.none))
-  (
   ((fol.ctx-x0-quorum_2-x1-quorum_2-x2-value.var.x2.value))
-  (
   ((fol.ctx-x0-quorum_2-x1-round-x2-node.var.x2.node))
-  (
   ((fol.ctx-x0-quorum_2-x1-round-x2-node.var.x0.quorum_2))
   ((fol.ctx-x0-quorum_2-x1-round-x2-node.var.x1.round)
    (fol.ctx-x0-quorum_2-x1-round-x2-node.term.none))
-  (
   ((fol.ctx-x0-quorum_2-x1-round-x2-quorum_1.var.x2.quorum_1))
-  (
   ((fol.ctx-x0-quorum_2-x1-round-x2-quorum_1.var.x0.quorum_2))
   ((fol.ctx-x0-quorum_2-x1-round-x2-quorum_1.var.x1.round)
    (fol.ctx-x0-quorum_2-x1-round-x2-quorum_1.term.none))
@@ -9838,47 +9518,30 @@
    (fol.ctx-x0-quorum_2-x1-round-x2-quorum_2.var.x2.quorum_2))
   ((fol.ctx-x0-quorum_2-x1-round-x2-quorum_2.var.x1.round)
    (fol.ctx-x0-quorum_2-x1-round-x2-quorum_2.term.none))
-  (
   ((fol.ctx-x0-quorum_2-x1-round-x2-round.var.x0.quorum_2))
   ((fol.ctx-x0-quorum_2-x1-round-x2-round.var.x1.round) (fol.ctx-x0-quorum_2-x1-round-x2-round.var.x2.round)
    (fol.ctx-x0-quorum_2-x1-round-x2-round.term.none))
-  (
   ((fol.ctx-x0-quorum_2-x1-round-x2-value.var.x0.quorum_2))
   ((fol.ctx-x0-quorum_2-x1-round-x2-value.var.x1.round)
    (fol.ctx-x0-quorum_2-x1-round-x2-value.term.none))
-  (
   ((fol.ctx-x0-quorum_2-x1-round-x2-value.var.x2.value))
-  (
   ((fol.ctx-x0-quorum_2-x1-value-x2-node.var.x2.node))
-  (
   ((fol.ctx-x0-quorum_2-x1-value-x2-node.var.x0.quorum_2))
-  (
   ((fol.ctx-x0-quorum_2-x1-value-x2-node.term.none))
-  (
   ((fol.ctx-x0-quorum_2-x1-value-x2-node.var.x1.value))
-  (
   ((fol.ctx-x0-quorum_2-x1-value-x2-quorum_1.var.x2.quorum_1))
-  (
   ((fol.ctx-x0-quorum_2-x1-value-x2-quorum_1.var.x0.quorum_2))
-  (
   ((fol.ctx-x0-quorum_2-x1-value-x2-quorum_1.term.none))
-  (
   ((fol.ctx-x0-quorum_2-x1-value-x2-quorum_1.var.x1.value))
   ((fol.ctx-x0-quorum_2-x1-value-x2-quorum_2.var.x0.quorum_2)
    (fol.ctx-x0-quorum_2-x1-value-x2-quorum_2.var.x2.quorum_2))
-  (
   ((fol.ctx-x0-quorum_2-x1-value-x2-quorum_2.term.none))
-  (
   ((fol.ctx-x0-quorum_2-x1-value-x2-quorum_2.var.x1.value))
-  (
   ((fol.ctx-x0-quorum_2-x1-value-x2-round.var.x0.quorum_2))
   ((fol.ctx-x0-quorum_2-x1-value-x2-round.var.x2.round)
    (fol.ctx-x0-quorum_2-x1-value-x2-round.term.none))
-  (
   ((fol.ctx-x0-quorum_2-x1-value-x2-round.var.x1.value))
-  (
   ((fol.ctx-x0-quorum_2-x1-value-x2-value.var.x0.quorum_2))
-  (
   ((fol.ctx-x0-quorum_2-x1-value-x2-value.term.none))
   ((fol.ctx-x0-quorum_2-x1-value-x2-value.var.x1.value)
    (fol.ctx-x0-quorum_2-x1-value-x2-value.var.x2.value))
@@ -9886,31 +9549,22 @@
    (fol.ctx-x0-round-x1-node-x2-node.var.x2.node))
   ((fol.ctx-x0-round-x1-node-x2-node.var.x0.round)
    (fol.ctx-x0-round-x1-node-x2-node.term.none))
-  (
   ((fol.ctx-x0-round-x1-node-x2-quorum_1.var.x1.node))
-  (
   ((fol.ctx-x0-round-x1-node-x2-quorum_1.var.x2.quorum_1))
   ((fol.ctx-x0-round-x1-node-x2-quorum_1.var.x0.round)
    (fol.ctx-x0-round-x1-node-x2-quorum_1.term.none))
-  (
   ((fol.ctx-x0-round-x1-node-x2-quorum_2.var.x1.node))
-  (
   ((fol.ctx-x0-round-x1-node-x2-quorum_2.var.x2.quorum_2))
   ((fol.ctx-x0-round-x1-node-x2-quorum_2.var.x0.round)
    (fol.ctx-x0-round-x1-node-x2-quorum_2.term.none))
-  (
   ((fol.ctx-x0-round-x1-node-x2-round.var.x1.node))
   ((fol.ctx-x0-round-x1-node-x2-round.var.x0.round) (fol.ctx-x0-round-x1-node-x2-round.var.x2.round)
    (fol.ctx-x0-round-x1-node-x2-round.term.none))
-  (
   ((fol.ctx-x0-round-x1-node-x2-value.var.x1.node))
   ((fol.ctx-x0-round-x1-node-x2-value.var.x0.round)
    (fol.ctx-x0-round-x1-node-x2-value.term.none))
-  (
   ((fol.ctx-x0-round-x1-node-x2-value.var.x2.value))
-  (
   ((fol.ctx-x0-round-x1-quorum_1-x2-node.var.x2.node))
-  (
   ((fol.ctx-x0-round-x1-quorum_1-x2-node.var.x1.quorum_1))
   ((fol.ctx-x0-round-x1-quorum_1-x2-node.var.x0.round)
    (fol.ctx-x0-round-x1-quorum_1-x2-node.term.none))
@@ -9918,31 +9572,22 @@
    (fol.ctx-x0-round-x1-quorum_1-x2-quorum_1.var.x2.quorum_1))
   ((fol.ctx-x0-round-x1-quorum_1-x2-quorum_1.var.x0.round)
    (fol.ctx-x0-round-x1-quorum_1-x2-quorum_1.term.none))
-  (
   ((fol.ctx-x0-round-x1-quorum_1-x2-quorum_2.var.x1.quorum_1))
-  (
   ((fol.ctx-x0-round-x1-quorum_1-x2-quorum_2.var.x2.quorum_2))
   ((fol.ctx-x0-round-x1-quorum_1-x2-quorum_2.var.x0.round)
    (fol.ctx-x0-round-x1-quorum_1-x2-quorum_2.term.none))
-  (
   ((fol.ctx-x0-round-x1-quorum_1-x2-round.var.x1.quorum_1))
   ((fol.ctx-x0-round-x1-quorum_1-x2-round.var.x0.round) (fol.ctx-x0-round-x1-quorum_1-x2-round.var.x2.round)
    (fol.ctx-x0-round-x1-quorum_1-x2-round.term.none))
-  (
   ((fol.ctx-x0-round-x1-quorum_1-x2-value.var.x1.quorum_1))
   ((fol.ctx-x0-round-x1-quorum_1-x2-value.var.x0.round)
    (fol.ctx-x0-round-x1-quorum_1-x2-value.term.none))
-  (
   ((fol.ctx-x0-round-x1-quorum_1-x2-value.var.x2.value))
-  (
   ((fol.ctx-x0-round-x1-quorum_2-x2-node.var.x2.node))
-  (
   ((fol.ctx-x0-round-x1-quorum_2-x2-node.var.x1.quorum_2))
   ((fol.ctx-x0-round-x1-quorum_2-x2-node.var.x0.round)
    (fol.ctx-x0-round-x1-quorum_2-x2-node.term.none))
-  (
   ((fol.ctx-x0-round-x1-quorum_2-x2-quorum_1.var.x2.quorum_1))
-  (
   ((fol.ctx-x0-round-x1-quorum_2-x2-quorum_1.var.x1.quorum_2))
   ((fol.ctx-x0-round-x1-quorum_2-x2-quorum_1.var.x0.round)
    (fol.ctx-x0-round-x1-quorum_2-x2-quorum_1.term.none))
@@ -9950,25 +9595,19 @@
    (fol.ctx-x0-round-x1-quorum_2-x2-quorum_2.var.x2.quorum_2))
   ((fol.ctx-x0-round-x1-quorum_2-x2-quorum_2.var.x0.round)
    (fol.ctx-x0-round-x1-quorum_2-x2-quorum_2.term.none))
-  (
   ((fol.ctx-x0-round-x1-quorum_2-x2-round.var.x1.quorum_2))
   ((fol.ctx-x0-round-x1-quorum_2-x2-round.var.x0.round) (fol.ctx-x0-round-x1-quorum_2-x2-round.var.x2.round)
    (fol.ctx-x0-round-x1-quorum_2-x2-round.term.none))
-  (
   ((fol.ctx-x0-round-x1-quorum_2-x2-value.var.x1.quorum_2))
   ((fol.ctx-x0-round-x1-quorum_2-x2-value.var.x0.round)
    (fol.ctx-x0-round-x1-quorum_2-x2-value.term.none))
-  (
   ((fol.ctx-x0-round-x1-quorum_2-x2-value.var.x2.value))
-  (
   ((fol.ctx-x0-round-x1-round-x2-node.var.x2.node))
   ((fol.ctx-x0-round-x1-round-x2-node.var.x0.round) (fol.ctx-x0-round-x1-round-x2-node.var.x1.round)
    (fol.ctx-x0-round-x1-round-x2-node.term.none))
-  (
   ((fol.ctx-x0-round-x1-round-x2-quorum_1.var.x2.quorum_1))
   ((fol.ctx-x0-round-x1-round-x2-quorum_1.var.x0.round) (fol.ctx-x0-round-x1-round-x2-quorum_1.var.x1.round)
    (fol.ctx-x0-round-x1-round-x2-quorum_1.term.none))
-  (
   ((fol.ctx-x0-round-x1-round-x2-quorum_2.var.x2.quorum_2))
   ((fol.ctx-x0-round-x1-round-x2-quorum_2.var.x0.round) (fol.ctx-x0-round-x1-round-x2-quorum_2.var.x1.round)
    (fol.ctx-x0-round-x1-round-x2-quorum_2.term.none))
@@ -9976,29 +9615,21 @@
    (fol.ctx-x0-round-x1-round-x2-round.term.none))
   ((fol.ctx-x0-round-x1-round-x2-value.var.x0.round) (fol.ctx-x0-round-x1-round-x2-value.var.x1.round)
    (fol.ctx-x0-round-x1-round-x2-value.term.none))
-  (
   ((fol.ctx-x0-round-x1-round-x2-value.var.x2.value))
-  (
   ((fol.ctx-x0-round-x1-value-x2-node.var.x2.node))
   ((fol.ctx-x0-round-x1-value-x2-node.var.x0.round)
    (fol.ctx-x0-round-x1-value-x2-node.term.none))
-  (
   ((fol.ctx-x0-round-x1-value-x2-node.var.x1.value))
-  (
   ((fol.ctx-x0-round-x1-value-x2-quorum_1.var.x2.quorum_1))
   ((fol.ctx-x0-round-x1-value-x2-quorum_1.var.x0.round)
    (fol.ctx-x0-round-x1-value-x2-quorum_1.term.none))
-  (
   ((fol.ctx-x0-round-x1-value-x2-quorum_1.var.x1.value))
-  (
   ((fol.ctx-x0-round-x1-value-x2-quorum_2.var.x2.quorum_2))
   ((fol.ctx-x0-round-x1-value-x2-quorum_2.var.x0.round)
    (fol.ctx-x0-round-x1-value-x2-quorum_2.term.none))
-  (
   ((fol.ctx-x0-round-x1-value-x2-quorum_2.var.x1.value))
   ((fol.ctx-x0-round-x1-value-x2-round.var.x0.round) (fol.ctx-x0-round-x1-value-x2-round.var.x2.round)
    (fol.ctx-x0-round-x1-value-x2-round.term.none))
-  (
   ((fol.ctx-x0-round-x1-value-x2-round.var.x1.value))
   ((fol.ctx-x0-round-x1-value-x2-value.var.x0.round)
    (fol.ctx-x0-round-x1-value-x2-value.term.none))
@@ -10006,147 +9637,92 @@
    (fol.ctx-x0-round-x1-value-x2-value.var.x2.value))
   ((fol.ctx-x0-value-x1-node-x2-node.var.x1.node)
    (fol.ctx-x0-value-x1-node-x2-node.var.x2.node))
-  (
   ((fol.ctx-x0-value-x1-node-x2-node.term.none))
-  (
   ((fol.ctx-x0-value-x1-node-x2-node.var.x0.value))
-  (
   ((fol.ctx-x0-value-x1-node-x2-quorum_1.var.x1.node))
-  (
   ((fol.ctx-x0-value-x1-node-x2-quorum_1.var.x2.quorum_1))
-  (
   ((fol.ctx-x0-value-x1-node-x2-quorum_1.term.none))
-  (
   ((fol.ctx-x0-value-x1-node-x2-quorum_1.var.x0.value))
-  (
   ((fol.ctx-x0-value-x1-node-x2-quorum_2.var.x1.node))
-  (
   ((fol.ctx-x0-value-x1-node-x2-quorum_2.var.x2.quorum_2))
-  (
   ((fol.ctx-x0-value-x1-node-x2-quorum_2.term.none))
-  (
   ((fol.ctx-x0-value-x1-node-x2-quorum_2.var.x0.value))
-  (
   ((fol.ctx-x0-value-x1-node-x2-round.var.x1.node))
   ((fol.ctx-x0-value-x1-node-x2-round.var.x2.round)
    (fol.ctx-x0-value-x1-node-x2-round.term.none))
-  (
   ((fol.ctx-x0-value-x1-node-x2-round.var.x0.value))
-  (
   ((fol.ctx-x0-value-x1-node-x2-value.var.x1.node))
-  (
   ((fol.ctx-x0-value-x1-node-x2-value.term.none))
   ((fol.ctx-x0-value-x1-node-x2-value.var.x0.value)
    (fol.ctx-x0-value-x1-node-x2-value.var.x2.value))
-  (
   ((fol.ctx-x0-value-x1-quorum_1-x2-node.var.x2.node))
-  (
   ((fol.ctx-x0-value-x1-quorum_1-x2-node.var.x1.quorum_1))
-  (
   ((fol.ctx-x0-value-x1-quorum_1-x2-node.term.none))
-  (
   ((fol.ctx-x0-value-x1-quorum_1-x2-node.var.x0.value))
   ((fol.ctx-x0-value-x1-quorum_1-x2-quorum_1.var.x1.quorum_1)
    (fol.ctx-x0-value-x1-quorum_1-x2-quorum_1.var.x2.quorum_1))
-  (
   ((fol.ctx-x0-value-x1-quorum_1-x2-quorum_1.term.none))
-  (
   ((fol.ctx-x0-value-x1-quorum_1-x2-quorum_1.var.x0.value))
-  (
   ((fol.ctx-x0-value-x1-quorum_1-x2-quorum_2.var.x1.quorum_1))
-  (
   ((fol.ctx-x0-value-x1-quorum_1-x2-quorum_2.var.x2.quorum_2))
-  (
   ((fol.ctx-x0-value-x1-quorum_1-x2-quorum_2.term.none))
-  (
   ((fol.ctx-x0-value-x1-quorum_1-x2-quorum_2.var.x0.value))
-  (
   ((fol.ctx-x0-value-x1-quorum_1-x2-round.var.x1.quorum_1))
   ((fol.ctx-x0-value-x1-quorum_1-x2-round.var.x2.round)
    (fol.ctx-x0-value-x1-quorum_1-x2-round.term.none))
-  (
   ((fol.ctx-x0-value-x1-quorum_1-x2-round.var.x0.value))
-  (
   ((fol.ctx-x0-value-x1-quorum_1-x2-value.var.x1.quorum_1))
-  (
   ((fol.ctx-x0-value-x1-quorum_1-x2-value.term.none))
   ((fol.ctx-x0-value-x1-quorum_1-x2-value.var.x0.value)
    (fol.ctx-x0-value-x1-quorum_1-x2-value.var.x2.value))
-  (
   ((fol.ctx-x0-value-x1-quorum_2-x2-node.var.x2.node))
-  (
   ((fol.ctx-x0-value-x1-quorum_2-x2-node.var.x1.quorum_2))
-  (
   ((fol.ctx-x0-value-x1-quorum_2-x2-node.term.none))
-  (
   ((fol.ctx-x0-value-x1-quorum_2-x2-node.var.x0.value))
-  (
   ((fol.ctx-x0-value-x1-quorum_2-x2-quorum_1.var.x2.quorum_1))
-  (
   ((fol.ctx-x0-value-x1-quorum_2-x2-quorum_1.var.x1.quorum_2))
-  (
   ((fol.ctx-x0-value-x1-quorum_2-x2-quorum_1.term.none))
-  (
   ((fol.ctx-x0-value-x1-quorum_2-x2-quorum_1.var.x0.value))
   ((fol.ctx-x0-value-x1-quorum_2-x2-quorum_2.var.x1.quorum_2)
    (fol.ctx-x0-value-x1-quorum_2-x2-quorum_2.var.x2.quorum_2))
-  (
   ((fol.ctx-x0-value-x1-quorum_2-x2-quorum_2.term.none))
-  (
   ((fol.ctx-x0-value-x1-quorum_2-x2-quorum_2.var.x0.value))
-  (
   ((fol.ctx-x0-value-x1-quorum_2-x2-round.var.x1.quorum_2))
   ((fol.ctx-x0-value-x1-quorum_2-x2-round.var.x2.round)
    (fol.ctx-x0-value-x1-quorum_2-x2-round.term.none))
-  (
   ((fol.ctx-x0-value-x1-quorum_2-x2-round.var.x0.value))
-  (
   ((fol.ctx-x0-value-x1-quorum_2-x2-value.var.x1.quorum_2))
-  (
   ((fol.ctx-x0-value-x1-quorum_2-x2-value.term.none))
   ((fol.ctx-x0-value-x1-quorum_2-x2-value.var.x0.value)
    (fol.ctx-x0-value-x1-quorum_2-x2-value.var.x2.value))
-  (
   ((fol.ctx-x0-value-x1-round-x2-node.var.x2.node))
   ((fol.ctx-x0-value-x1-round-x2-node.var.x1.round)
    (fol.ctx-x0-value-x1-round-x2-node.term.none))
-  (
   ((fol.ctx-x0-value-x1-round-x2-node.var.x0.value))
-  (
   ((fol.ctx-x0-value-x1-round-x2-quorum_1.var.x2.quorum_1))
   ((fol.ctx-x0-value-x1-round-x2-quorum_1.var.x1.round)
    (fol.ctx-x0-value-x1-round-x2-quorum_1.term.none))
-  (
   ((fol.ctx-x0-value-x1-round-x2-quorum_1.var.x0.value))
-  (
   ((fol.ctx-x0-value-x1-round-x2-quorum_2.var.x2.quorum_2))
   ((fol.ctx-x0-value-x1-round-x2-quorum_2.var.x1.round)
    (fol.ctx-x0-value-x1-round-x2-quorum_2.term.none))
-  (
   ((fol.ctx-x0-value-x1-round-x2-quorum_2.var.x0.value))
   ((fol.ctx-x0-value-x1-round-x2-round.var.x1.round) (fol.ctx-x0-value-x1-round-x2-round.var.x2.round)
    (fol.ctx-x0-value-x1-round-x2-round.term.none))
-  (
   ((fol.ctx-x0-value-x1-round-x2-round.var.x0.value))
   ((fol.ctx-x0-value-x1-round-x2-value.var.x1.round)
    (fol.ctx-x0-value-x1-round-x2-value.term.none))
   ((fol.ctx-x0-value-x1-round-x2-value.var.x0.value)
    (fol.ctx-x0-value-x1-round-x2-value.var.x2.value))
-  (
   ((fol.ctx-x0-value-x1-value-x2-node.var.x2.node))
-  (
   ((fol.ctx-x0-value-x1-value-x2-node.term.none))
   ((fol.ctx-x0-value-x1-value-x2-node.var.x0.value)
    (fol.ctx-x0-value-x1-value-x2-node.var.x1.value))
-  (
   ((fol.ctx-x0-value-x1-value-x2-quorum_1.var.x2.quorum_1))
-  (
   ((fol.ctx-x0-value-x1-value-x2-quorum_1.term.none))
   ((fol.ctx-x0-value-x1-value-x2-quorum_1.var.x0.value)
    (fol.ctx-x0-value-x1-value-x2-quorum_1.var.x1.value))
-  (
   ((fol.ctx-x0-value-x1-value-x2-quorum_2.var.x2.quorum_2))
-  (
   ((fol.ctx-x0-value-x1-value-x2-quorum_2.term.none))
   ((fol.ctx-x0-value-x1-value-x2-quorum_2.var.x0.value)
    (fol.ctx-x0-value-x1-value-x2-quorum_2.var.x1.value))
@@ -10154,10 +9730,9 @@
    (fol.ctx-x0-value-x1-value-x2-round.term.none))
   ((fol.ctx-x0-value-x1-value-x2-round.var.x0.value)
    (fol.ctx-x0-value-x1-value-x2-round.var.x1.value))
-  (
   ((fol.ctx-x0-value-x1-value-x2-value.term.none))
   ((fol.ctx-x0-value-x1-value-x2-value.var.x0.value) (fol.ctx-x0-value-x1-value-x2-value.var.x1.value)
-   (fol.ctx-x0-value-x1-value-x2-value.var.x2.value))
+   (fol.ctx-x0-value-x1-value-x2-value.var.x2.value)))
 )
 
 (define-finite FoAsp0 (record (model Model)))

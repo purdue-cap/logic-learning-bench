@@ -1,54 +1,57 @@
 (set-logic SLIA)
 
 ; Converted from benchmark/re/alpharegex semantic-format benchmarks.
-; Source "_" positions are emitted as the string character "_";
-; the grammar omits a literal "_" terminal, so only re.allchar can match them.
-; Source "?" positions are expanded over both "0" and "1" concrete strings.
+; Source wildcard positions are encoded as regular-language masks over the binary alphabet.
+; Each masked positive example means every matching binary string must be accepted.
+; Each masked negative example means every matching binary string must be rejected.
 
-(define-fun w1 () String
-    "_"
+(define-fun bin () RegLan
+    (re.range "0" "1")
 )
-(define-fun w2 () String
-    "_0"
+(define-fun w1 () RegLan
+    bin
 )
-(define-fun w3 () String
-    "11"
+(define-fun w2 () RegLan
+    (re.++ bin (str.to_re "0"))
 )
-(define-fun w4 () String
-    "__0"
+(define-fun w3 () RegLan
+    (re.++ (str.to_re "1") (str.to_re "1"))
 )
-(define-fun w5 () String
-    "_11"
+(define-fun w4 () RegLan
+    (re.++ bin bin (str.to_re "0"))
 )
-(define-fun w6 () String
-    "___0"
+(define-fun w5 () RegLan
+    (re.++ bin (str.to_re "1") (str.to_re "1"))
 )
-(define-fun w7 () String
-    "__11"
+(define-fun w6 () RegLan
+    (re.++ bin bin bin (str.to_re "0"))
 )
-(define-fun w8 () String
-    "___11"
+(define-fun w7 () RegLan
+    (re.++ bin bin (str.to_re "1") (str.to_re "1"))
 )
-(define-fun w9 () String
-    "01"
+(define-fun w8 () RegLan
+    (re.++ bin bin bin (str.to_re "1") (str.to_re "1"))
 )
-(define-fun w10 () String
-    "001"
+(define-fun w9 () RegLan
+    (re.++ (str.to_re "0") (str.to_re "1"))
 )
-(define-fun w11 () String
-    "101"
+(define-fun w10 () RegLan
+    (re.++ (str.to_re "0") (str.to_re "0") (str.to_re "1"))
 )
-(define-fun w12 () String
-    "0001"
+(define-fun w11 () RegLan
+    (re.++ (str.to_re "1") (str.to_re "0") (str.to_re "1"))
 )
-(define-fun w13 () String
-    "0101"
+(define-fun w12 () RegLan
+    (re.++ (str.to_re "0") (str.to_re "0") (str.to_re "0") (str.to_re "1"))
 )
-(define-fun w14 () String
-    "1001"
+(define-fun w13 () RegLan
+    (re.++ (str.to_re "0") (str.to_re "1") (str.to_re "0") (str.to_re "1"))
 )
-(define-fun w15 () String
-    "1101"
+(define-fun w14 () RegLan
+    (re.++ (str.to_re "1") (str.to_re "0") (str.to_re "0") (str.to_re "1"))
+)
+(define-fun w15 () RegLan
+    (re.++ (str.to_re "1") (str.to_re "1") (str.to_re "0") (str.to_re "1"))
 )
 
 (synth-fun regex () RegLan
@@ -68,20 +71,22 @@
     )
 )
 
-(constraint (str.in_re w1 regex))
-(constraint (str.in_re w2 regex))
-(constraint (str.in_re w3 regex))
-(constraint (str.in_re w4 regex))
-(constraint (str.in_re w5 regex))
-(constraint (str.in_re w6 regex))
-(constraint (str.in_re w7 regex))
-(constraint (str.in_re w8 regex))
-(constraint (not (str.in_re w9 regex)))
-(constraint (not (str.in_re w10 regex)))
-(constraint (not (str.in_re w11 regex)))
-(constraint (not (str.in_re w12 regex)))
-(constraint (not (str.in_re w13 regex)))
-(constraint (not (str.in_re w14 regex)))
-(constraint (not (str.in_re w15 regex)))
+(declare-var s String)
+
+(constraint (=> (str.in_re s w1) (str.in_re s regex)))
+(constraint (=> (str.in_re s w2) (str.in_re s regex)))
+(constraint (=> (str.in_re s w3) (str.in_re s regex)))
+(constraint (=> (str.in_re s w4) (str.in_re s regex)))
+(constraint (=> (str.in_re s w5) (str.in_re s regex)))
+(constraint (=> (str.in_re s w6) (str.in_re s regex)))
+(constraint (=> (str.in_re s w7) (str.in_re s regex)))
+(constraint (=> (str.in_re s w8) (str.in_re s regex)))
+(constraint (=> (str.in_re s w9) (not (str.in_re s regex))))
+(constraint (=> (str.in_re s w10) (not (str.in_re s regex))))
+(constraint (=> (str.in_re s w11) (not (str.in_re s regex))))
+(constraint (=> (str.in_re s w12) (not (str.in_re s regex))))
+(constraint (=> (str.in_re s w13) (not (str.in_re s regex))))
+(constraint (=> (str.in_re s w14) (not (str.in_re s regex))))
+(constraint (=> (str.in_re s w15) (not (str.in_re s regex))))
 
 (check-synth)

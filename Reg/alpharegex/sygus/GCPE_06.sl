@@ -1,24 +1,27 @@
 (set-logic SLIA)
 
 ; Converted from benchmark/re/alpharegex semantic-format benchmarks.
-; Source "_" positions are emitted as the string character "_";
-; the grammar omits a literal "_" terminal, so only re.allchar can match them.
-; Source "?" positions are expanded over both "0" and "1" concrete strings.
+; Source wildcard positions are encoded as regular-language masks over the binary alphabet.
+; Each masked positive example means every matching binary string must be accepted.
+; Each masked negative example means every matching binary string must be rejected.
 
-(define-fun w1 () String
-    "___"
+(define-fun bin () RegLan
+    (re.range "0" "1")
 )
-(define-fun w2 () String
-    "______"
+(define-fun w1 () RegLan
+    (re.++ bin bin bin)
 )
-(define-fun w3 () String
-    "_"
+(define-fun w2 () RegLan
+    (re.++ bin bin bin bin bin bin)
 )
-(define-fun w4 () String
-    "__"
+(define-fun w3 () RegLan
+    bin
 )
-(define-fun w5 () String
-    "____"
+(define-fun w4 () RegLan
+    (re.++ bin bin)
+)
+(define-fun w5 () RegLan
+    (re.++ bin bin bin bin)
 )
 
 (synth-fun regex () RegLan
@@ -38,10 +41,12 @@
     )
 )
 
-(constraint (str.in_re w1 regex))
-(constraint (str.in_re w2 regex))
-(constraint (not (str.in_re w3 regex)))
-(constraint (not (str.in_re w4 regex)))
-(constraint (not (str.in_re w5 regex)))
+(declare-var s String)
+
+(constraint (=> (str.in_re s w1) (str.in_re s regex)))
+(constraint (=> (str.in_re s w2) (str.in_re s regex)))
+(constraint (=> (str.in_re s w3) (not (str.in_re s regex))))
+(constraint (=> (str.in_re s w4) (not (str.in_re s regex))))
+(constraint (=> (str.in_re s w5) (not (str.in_re s regex))))
 
 (check-synth)
