@@ -27,7 +27,7 @@
     "1234567891234567891.0"
 )
 
-(synth-fun regex () RegLan
+(synth-fun r () RegLan
     ((Start RegLan))
     (
         (Start RegLan

@@ -24,7 +24,7 @@
     (re.++ bin bin bin bin)
 )
 
-(synth-fun regex () RegLan
+(synth-fun r () RegLan
     ((Start RegLan))
     (
         (Start RegLan

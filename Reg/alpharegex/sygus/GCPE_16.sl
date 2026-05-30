@@ -54,7 +54,7 @@
     (re.++ (str.to_re "1") (str.to_re "1") (str.to_re "0") (str.to_re "1"))
 )
 
-(synth-fun regex () RegLan
+(synth-fun r () RegLan
     ((Start RegLan))
     (
         (Start RegLan

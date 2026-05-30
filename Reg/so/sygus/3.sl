@@ -21,7 +21,7 @@
     "(0.4545 && 0.567) || 456 && (me)"
 )
 
-(synth-fun regex () RegLan
+(synth-fun r () RegLan
     ((Start RegLan))
     (
         (Start RegLan

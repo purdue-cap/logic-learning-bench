@@ -12,7 +12,7 @@
     "A111B2_3_0.exe"
 )
 
-(synth-fun regex () RegLan
+(synth-fun r () RegLan
     ((Start RegLan))
     (
         (Start RegLan

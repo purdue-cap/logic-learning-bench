@@ -24,7 +24,7 @@
     "a_b__Cd"
 )
 
-(synth-fun regex () RegLan
+(synth-fun r () RegLan
     ((Start RegLan))
     (
         (Start RegLan

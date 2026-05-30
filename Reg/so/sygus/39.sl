@@ -51,7 +51,7 @@
     "12345678901234.56"
 )
 
-(synth-fun regex () RegLan
+(synth-fun r () RegLan
     ((Start RegLan))
     (
         (Start RegLan

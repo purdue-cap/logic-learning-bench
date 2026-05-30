@@ -18,7 +18,7 @@
     "00000003610014112192013 2 47"
 )
 
-(synth-fun regex () RegLan
+(synth-fun r () RegLan
     ((Start RegLan))
     (
         (Start RegLan

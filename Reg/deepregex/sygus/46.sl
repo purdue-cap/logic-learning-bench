@@ -48,7 +48,7 @@
     "!@#$%1234Moo"
 )
 
-(synth-fun regex () RegLan
+(synth-fun r () RegLan
     ((Start RegLan))
     (
         (Start RegLan

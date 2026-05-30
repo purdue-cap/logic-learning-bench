@@ -48,7 +48,7 @@
     "Q234!f3r"
 )
 
-(synth-fun regex () RegLan
+(synth-fun r () RegLan
     ((Start RegLan))
     (
         (Start RegLan

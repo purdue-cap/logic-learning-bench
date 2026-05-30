@@ -24,7 +24,7 @@
     "D%d4%.T%t7%.te%st.%t7%file.%d4%.txt"
 )
 
-(synth-fun regex () RegLan
+(synth-fun r () RegLan
     ((Start RegLan))
     (
         (Start RegLan

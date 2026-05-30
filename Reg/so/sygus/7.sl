@@ -18,7 +18,7 @@
     "MAC =Address=192.167.235.19;zproduct_id=XYZ"
 )
 
-(synth-fun regex () RegLan
+(synth-fun r () RegLan
     ((Start RegLan))
     (
         (Start RegLan
