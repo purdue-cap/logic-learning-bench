@@ -1,7 +1,7 @@
 (require "./theories/main.sl")
 (require "models/no19.sl")
 
-(synth-fun regex () RegLan)
+(synth-fun r () RegLan)
 
 (constraint (RegLan.Sem r (ReAsp p_ 0 (size (Pos p_)))))
 (constraint (RegLan.Sem r (ReAsp p__ 0 (size (Pos p__)))))

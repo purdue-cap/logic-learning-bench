@@ -1,7 +1,7 @@
 (require "theories/147.sl")
 (require "models/147.sl")
 
-(synth-fun regex () RegLan)
+(synth-fun r () RegLan)
 
 (constraint (RegLan.Sem r (ReAsp deepregex_147_P1 0 (size (Pos deepregex_147_P1)))))
 (constraint (RegLan.Sem r (ReAsp deepregex_147_P2 0 (size (Pos deepregex_147_P2)))))

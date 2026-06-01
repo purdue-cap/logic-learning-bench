@@ -12,7 +12,7 @@
     "em1,erg,123,ency"
 )
 
-(synth-fun regex () RegLan
+(synth-fun r () RegLan
     ((Start RegLan))
     (
         (Start RegLan

@@ -18,7 +18,7 @@
     "123.1234567890;123.1234567890;123.1234567890;"
 )
 
-(synth-fun regex () RegLan
+(synth-fun r () RegLan
     ((Start RegLan))
     (
         (Start RegLan

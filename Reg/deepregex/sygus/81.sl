@@ -48,7 +48,7 @@
     "numeral counts a number with more than one character"
 )
 
-(synth-fun regex () RegLan
+(synth-fun r () RegLan
     ((Start RegLan))
     (
         (Start RegLan

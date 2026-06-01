@@ -48,7 +48,7 @@
     "!12SD"
 )
 
-(synth-fun regex () RegLan
+(synth-fun r () RegLan
     ((Start RegLan))
     (
         (Start RegLan
