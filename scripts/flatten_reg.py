@@ -38,6 +38,47 @@ SUITES = [
     ("tomita", 50),
 ]
 
+def _model_arms(vals: list[bool]) -> str:
+    if len(set(vals)) == 1:
+        return f"((_) {'true' if vals[0] else 'false'})"
+    tc = sum(vals)
+    if tc <= len(vals) - tc:
+        parts = [f"((${ i}) true)" for i, v in enumerate(vals) if v]
+        parts.append("((_) false)")
+    else:
+        parts = [f"((${ i}) false)" for i, v in enumerate(vals) if not v]
+        parts.append("((_) true)")
+    return " ".join(parts)
+
+
+def _generate_model(name: str) -> str:
+    word = name[1:]
+    n = len(word)
+    univ = " ".join(f"${i}" for i in range(n))
+    z, o = [], []
+    for ch in word:
+        z.append(ch in "0?")
+        o.append(ch in "1?")
+    return (
+        f"(define-model {name}\n"
+        f"  (define-univ Pos ({univ}))\n"
+        f"  (interp-fun zero (match ({_model_arms(z)})))\n"
+        f"  (interp-fun one (match ({_model_arms(o)}))))"
+    )
+
+
+def write_merged_models(all_model_names: set[str]):
+    out_dir = REG / "global"
+    sorted_names = sorted(all_model_names, key=lambda n: (len(n) - 1, n))
+    provide = " ".join(sorted_names)
+    out = [f'(require "./signatures.sl")', f"(provide {provide})", ""]
+    for name in sorted_names:
+        out.append(_generate_model(name))
+        out.append("")
+    (out_dir / "models.sl").write_text("\n".join(out))
+    print(f"  models.sl: {len(sorted_names)} models (merged, simplified arms)")
+
+
 CONSTRAINT_RE = re.compile(
     r"\(constraint\s+(?P<neg>\(not\s+)?"
     r"\(RegLan\.Sem\s+r\s+\(RegLan\.Asp\s+(?P<w>w[\w?]+)\b"
@@ -50,9 +91,9 @@ def instance_files(suite: str):
 
 
 def rewrite_requires(text: str, suite: str) -> str:
-    # ./global/theories.sl -> ./global/theories.<suite>.sl, same for models/signatures
     for base in ("theories", "models", "signatures"):
-        text = text.replace(f'"./global/{base}.sl"', f'"./global/{base}.{suite}.sl"')
+        text = text.replace(f'"./global/{base}.{suite}.sl"', f'"./global/{base}.sl"')
+        text = text.replace(f'"./global/{base}.sl"', f'"./global/{base}.sl"')
     return text
 
 
@@ -70,21 +111,19 @@ def move_instances(suite: str, offset: int) -> list[tuple[int, Path]]:
 
 
 def move_globals(suite: str):
+    """Copy global files from the first suite encountered; skip for later suites
+    (signatures and theories are identical; models are merged separately)."""
     g = REG / suite / "global"
     out = REG / "global"
     out.mkdir(exist_ok=True)
-    for base in ("signatures", "theories", "models"):
-        src = g / f"{base}.sl"
-        if not src.exists():
-            continue
-        text = src.read_text()
-        # theories.sl references signatures.sl via (require "./signatures.sl") — re-point.
-        # models.sl references signatures.sl the same way.
-        text = text.replace(
-            f'"./signatures.sl"', f'"./signatures.{suite}.sl"'
-        )
-        (out / f"{base}.{suite}.sl").write_text(text)
-    print(f"  {suite}: moved 3 global files (suffixed .{suite})")
+    if not (out / "signatures.sl").exists():
+        shutil.copy2(g / "signatures.sl", out / "signatures.sl")
+    if not (out / "theories.sl").exists():
+        text = (g / "theories.sl").read_text()
+        # Use alpharegex theories (active axioms) — but the first suite processed
+        # is alpharegex, so this is fine as-is.
+        (out / "theories.sl").write_text(text)
+    print(f"  {suite}: global files ready")
 
 
 def move_sygus(suite: str, offset: int):
@@ -167,12 +206,19 @@ def main():
             # only remove if it's a top-level output dir (not a suite subdir)
             shutil.rmtree(d)
 
+    all_model_names: set[str] = set()
     for suite, offset in SUITES:
         print(f"\n=== {suite} (offset {offset}) ===")
         moved = move_instances(suite, offset)
         move_globals(suite)
         move_sygus(suite, offset)
         gen_txt(suite, moved)
+        for _idx, src in moved:
+            for cm in CONSTRAINT_RE.finditer(src.read_text()):
+                all_model_names.add(cm.group("w"))
+
+    print(f"\n=== merged globals ===")
+    write_merged_models(all_model_names)
 
     # cleanup old suite dirs
     removed = []
