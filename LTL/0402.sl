@@ -1,3 +1,415 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cacd07feef79596a0139d36cb2c8a9118dc81bc337580a6e9e8a5117af8da5b4
-size 7532
+(require "theories/ltl-lasso-3.sl")
+(set-info :author "Chentian Wu")
+(set-info :source "samples2LTL — freshTests/0099")
+;; operators: G,F,!,U,&,|,->,X,prop
+;; depth: 4
+;; expected: |(G(!(x0)),F(&(x0,F(x1))))
+
+(define-model P0
+  (define-univ Pos ($0 $1 $2))
+  (interp-fun p0 (match (
+    ((_) true)
+  )))
+  (interp-fun p1 (match (
+    (($0) true)
+    ((_) false)
+  )))
+  (interp-fun p2 (match (
+    ((_) false)
+  )))
+  (interp-fun next (match (
+    (($0) $1)
+    (($1) $2)
+    (($2) $1)
+  )))
+  (interp-fun future (match (
+    (($0 $0) true)
+    (($0 $1) true)
+    (($0 $2) true)
+    (($1 $1) true)
+    (($1 $2) true)
+    (($2 $1) true)
+    (($2 $2) true)
+    ((_ _) false)
+  )))
+  (interp-fun prefix (match (
+    (($0 $1 $0) true)
+    (($0 $2 $0) true)
+    (($0 $2 $1) true)
+    (($1 $2 $1) true)
+    (($2 $1 $2) true)
+    ((_ _ _) false)
+  )))
+)
+
+(define-model P1
+  (define-univ Pos ($0 $1 $2))
+  (interp-fun p0 (match (
+    (($0) true)
+    (($1) true)
+    ((_) false)
+  )))
+  (interp-fun p1 (match (
+    (($0) true)
+    (($1) true)
+    ((_) false)
+  )))
+  (interp-fun p2 (match (
+    ((_) false)
+  )))
+  (interp-fun next (match (
+    (($0) $1)
+    (($1) $2)
+    (($2) $2)
+  )))
+  (interp-fun future (match (
+    (($0 $0) true)
+    (($0 $1) true)
+    (($0 $2) true)
+    (($1 $1) true)
+    (($1 $2) true)
+    (($2 $2) true)
+    ((_ _) false)
+  )))
+  (interp-fun prefix (match (
+    (($0 $1 $0) true)
+    (($0 $2 $0) true)
+    (($0 $2 $1) true)
+    (($1 $2 $1) true)
+    ((_ _ _) false)
+  )))
+)
+
+(define-model P2
+  (define-univ Pos ($0 $1 $2))
+  (interp-fun p0 (match (
+    ((_) true)
+  )))
+  (interp-fun p1 (match (
+    ((_) true)
+  )))
+  (interp-fun p2 (match (
+    ((_) false)
+  )))
+  (interp-fun next (match (
+    (($0) $1)
+    (($1) $2)
+    (($2) $1)
+  )))
+  (interp-fun future (match (
+    (($0 $0) true)
+    (($0 $1) true)
+    (($0 $2) true)
+    (($1 $1) true)
+    (($1 $2) true)
+    (($2 $1) true)
+    (($2 $2) true)
+    ((_ _) false)
+  )))
+  (interp-fun prefix (match (
+    (($0 $1 $0) true)
+    (($0 $2 $0) true)
+    (($0 $2 $1) true)
+    (($1 $2 $1) true)
+    (($2 $1 $2) true)
+    ((_ _ _) false)
+  )))
+)
+
+(define-model P3
+  (define-univ Pos ($0 $1 $2))
+  (interp-fun p0 (match (
+    (($1) true)
+    (($2) true)
+    ((_) false)
+  )))
+  (interp-fun p1 (match (
+    (($1) true)
+    (($2) true)
+    ((_) false)
+  )))
+  (interp-fun p2 (match (
+    (($0) true)
+    (($2) true)
+    ((_) false)
+  )))
+  (interp-fun next (match (
+    (($0) $1)
+    (($1) $2)
+    (($2) $0)
+  )))
+  (interp-fun future (match (
+    (($0 $0) true)
+    (($0 $1) true)
+    (($0 $2) true)
+    (($1 $0) true)
+    (($1 $1) true)
+    (($1 $2) true)
+    (($2 $0) true)
+    (($2 $1) true)
+    (($2 $2) true)
+    ((_ _) false)
+  )))
+  (interp-fun prefix (match (
+    (($0 $1 $0) true)
+    (($0 $2 $0) true)
+    (($0 $2 $1) true)
+    (($1 $0 $1) true)
+    (($1 $0 $2) true)
+    (($1 $2 $1) true)
+    (($2 $0 $2) true)
+    (($2 $1 $0) true)
+    (($2 $1 $2) true)
+    ((_ _ _) false)
+  )))
+)
+
+(define-model P4
+  (define-univ Pos ($0 $1 $2))
+  (interp-fun p0 (match (
+    ((_) false)
+  )))
+  (interp-fun p1 (match (
+    (($0) true)
+    ((_) false)
+  )))
+  (interp-fun p2 (match (
+    ((_) false)
+  )))
+  (interp-fun next (match (
+    (($0) $1)
+    (($1) $2)
+    (($2) $0)
+  )))
+  (interp-fun future (match (
+    (($0 $0) true)
+    (($0 $1) true)
+    (($0 $2) true)
+    (($1 $0) true)
+    (($1 $1) true)
+    (($1 $2) true)
+    (($2 $0) true)
+    (($2 $1) true)
+    (($2 $2) true)
+    ((_ _) false)
+  )))
+  (interp-fun prefix (match (
+    (($0 $1 $0) true)
+    (($0 $2 $0) true)
+    (($0 $2 $1) true)
+    (($1 $0 $1) true)
+    (($1 $0 $2) true)
+    (($1 $2 $1) true)
+    (($2 $0 $2) true)
+    (($2 $1 $0) true)
+    (($2 $1 $2) true)
+    ((_ _ _) false)
+  )))
+)
+
+(define-model N0
+  (define-univ Pos ($0 $1 $2))
+  (interp-fun p0 (match (
+    (($1) true)
+    (($2) true)
+    ((_) false)
+  )))
+  (interp-fun p1 (match (
+    (($0) true)
+    ((_) false)
+  )))
+  (interp-fun p2 (match (
+    (($1) true)
+    ((_) false)
+  )))
+  (interp-fun next (match (
+    (($0) $1)
+    (($1) $2)
+    (($2) $1)
+  )))
+  (interp-fun future (match (
+    (($0 $0) true)
+    (($0 $1) true)
+    (($0 $2) true)
+    (($1 $1) true)
+    (($1 $2) true)
+    (($2 $1) true)
+    (($2 $2) true)
+    ((_ _) false)
+  )))
+  (interp-fun prefix (match (
+    (($0 $1 $0) true)
+    (($0 $2 $0) true)
+    (($0 $2 $1) true)
+    (($1 $2 $1) true)
+    (($2 $1 $2) true)
+    ((_ _ _) false)
+  )))
+)
+
+(define-model N1
+  (define-univ Pos ($0 $1 $2))
+  (interp-fun p0 (match (
+    (($2) true)
+    ((_) false)
+  )))
+  (interp-fun p1 (match (
+    (($0) true)
+    ((_) false)
+  )))
+  (interp-fun p2 (match (
+    (($0) true)
+    ((_) false)
+  )))
+  (interp-fun next (match (
+    (($0) $1)
+    (($1) $2)
+    (($2) $1)
+  )))
+  (interp-fun future (match (
+    (($0 $0) true)
+    (($0 $1) true)
+    (($0 $2) true)
+    (($1 $1) true)
+    (($1 $2) true)
+    (($2 $1) true)
+    (($2 $2) true)
+    ((_ _) false)
+  )))
+  (interp-fun prefix (match (
+    (($0 $1 $0) true)
+    (($0 $2 $0) true)
+    (($0 $2 $1) true)
+    (($1 $2 $1) true)
+    (($2 $1 $2) true)
+    ((_ _ _) false)
+  )))
+)
+
+(define-model N2
+  (define-univ Pos ($0 $1 $2))
+  (interp-fun p0 (match (
+    (($1) true)
+    ((_) false)
+  )))
+  (interp-fun p1 (match (
+    ((_) false)
+  )))
+  (interp-fun p2 (match (
+    ((_) true)
+  )))
+  (interp-fun next (match (
+    (($0) $1)
+    (($1) $2)
+    (($2) $1)
+  )))
+  (interp-fun future (match (
+    (($0 $0) true)
+    (($0 $1) true)
+    (($0 $2) true)
+    (($1 $1) true)
+    (($1 $2) true)
+    (($2 $1) true)
+    (($2 $2) true)
+    ((_ _) false)
+  )))
+  (interp-fun prefix (match (
+    (($0 $1 $0) true)
+    (($0 $2 $0) true)
+    (($0 $2 $1) true)
+    (($1 $2 $1) true)
+    (($2 $1 $2) true)
+    ((_ _ _) false)
+  )))
+)
+
+(define-model N3
+  (define-univ Pos ($0 $1 $2))
+  (interp-fun p0 (match (
+    (($2) true)
+    ((_) false)
+  )))
+  (interp-fun p1 (match (
+    ((_) false)
+  )))
+  (interp-fun p2 (match (
+    (($1) true)
+    (($2) true)
+    ((_) false)
+  )))
+  (interp-fun next (match (
+    (($0) $1)
+    (($1) $2)
+    (($2) $2)
+  )))
+  (interp-fun future (match (
+    (($0 $0) true)
+    (($0 $1) true)
+    (($0 $2) true)
+    (($1 $1) true)
+    (($1 $2) true)
+    (($2 $2) true)
+    ((_ _) false)
+  )))
+  (interp-fun prefix (match (
+    (($0 $1 $0) true)
+    (($0 $2 $0) true)
+    (($0 $2 $1) true)
+    (($1 $2 $1) true)
+    ((_ _ _) false)
+  )))
+)
+
+(define-model N4
+  (define-univ Pos ($0 $1 $2))
+  (interp-fun p0 (match (
+    (($1) true)
+    ((_) false)
+  )))
+  (interp-fun p1 (match (
+    (($0) true)
+    ((_) false)
+  )))
+  (interp-fun p2 (match (
+    (($0) true)
+    ((_) false)
+  )))
+  (interp-fun next (match (
+    (($0) $1)
+    (($1) $2)
+    (($2) $1)
+  )))
+  (interp-fun future (match (
+    (($0 $0) true)
+    (($0 $1) true)
+    (($0 $2) true)
+    (($1 $1) true)
+    (($1 $2) true)
+    (($2 $1) true)
+    (($2 $2) true)
+    ((_ _) false)
+  )))
+  (interp-fun prefix (match (
+    (($0 $1 $0) true)
+    (($0 $2 $0) true)
+    (($0 $2 $1) true)
+    (($1 $2 $1) true)
+    (($2 $1 $2) true)
+    ((_ _ _) false)
+  )))
+)
+
+(synth-fun phi () LTL)
+
+(constraint (LTL.Sem phi (LTL.Asp P0 $0)))
+(constraint (LTL.Sem phi (LTL.Asp P1 $0)))
+(constraint (LTL.Sem phi (LTL.Asp P2 $0)))
+(constraint (LTL.Sem phi (LTL.Asp P3 $0)))
+(constraint (LTL.Sem phi (LTL.Asp P4 $0)))
+(constraint (not (LTL.Sem phi (LTL.Asp N0 $0))))
+(constraint (not (LTL.Sem phi (LTL.Asp N1 $0))))
+(constraint (not (LTL.Sem phi (LTL.Asp N2 $0))))
+(constraint (not (LTL.Sem phi (LTL.Asp N3 $0))))
+(constraint (not (LTL.Sem phi (LTL.Asp N4 $0))))
+
+(check-synth)
