@@ -2,8 +2,8 @@
 (set-info :source "Tomita (1982) T6")
 (set-info :description "(#0 - #1) is congruent to 0 (mod 3)")
 
-(require "./global/theories.tomita.sl")
-(require "./global/models.tomita.sl")
+(require "./global/theories.sl")
+(require "./global/models.sl")
 
 (synth-fun r () RegLan)
 

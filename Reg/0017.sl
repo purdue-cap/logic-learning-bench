@@ -2,8 +2,8 @@
 (set-info :source "AlphaRegex (Lee, So, Oh, GPCE 2016) — no17_atleastone0_atmostone1")
 (set-info :description "w contains at least one 0 and at most one 1")
 
-(require "./global/theories.alpharegex.sl")
-(require "./global/models.alpharegex.sl")
+(require "./global/theories.sl")
+(require "./global/models.sl")
 
 (synth-fun r () RegLan)
 

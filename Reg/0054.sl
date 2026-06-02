@@ -2,8 +2,8 @@
 (set-info :source "Tomita (1982) T4")
 (set-info :description "no '000' substring")
 
-(require "./global/theories.tomita.sl")
-(require "./global/models.tomita.sl")
+(require "./global/theories.sl")
+(require "./global/models.sl")
 
 (synth-fun r () RegLan)
 

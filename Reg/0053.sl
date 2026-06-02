@@ -2,8 +2,8 @@
 (set-info :source "Tomita (1982) T3")
 (set-info :description "no odd-length 0-run is immediately followed by an odd-length 1-run")
 
-(require "./global/theories.tomita.sl")
-(require "./global/models.tomita.sl")
+(require "./global/theories.sl")
+(require "./global/models.sl")
 
 (synth-fun r () RegLan)
 

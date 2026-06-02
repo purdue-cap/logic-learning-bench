@@ -2,8 +2,8 @@
 (set-info :source "Tomita (1982) T5")
 (set-info :description "even number of 0s AND even number of 1s")
 
-(require "./global/theories.tomita.sl")
-(require "./global/models.tomita.sl")
+(require "./global/theories.sl")
+(require "./global/models.sl")
 
 (synth-fun r () RegLan)
 

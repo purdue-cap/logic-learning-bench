@@ -2,8 +2,8 @@
 (set-info :source "AlphaRegex (Lee, So, Oh, GPCE 2016) — no20_odd_pos_is_1")
 (set-info :description "every odd position of w is 1.")
 
-(require "./global/theories.alpharegex.sl")
-(require "./global/models.alpharegex.sl")
+(require "./global/theories.sl")
+(require "./global/models.sl")
 
 (synth-fun r () RegLan)
 

@@ -2,8 +2,8 @@
 (set-info :source "Sipser, Introduction to the Theory of Computation (3e), 00Σ*")
 (set-info :description "starts with 00")
 
-(require "./global/theories.sipser.sl")
-(require "./global/models.sipser.sl")
+(require "./global/theories.sl")
+(require "./global/models.sl")
 
 (synth-fun r () RegLan)
 

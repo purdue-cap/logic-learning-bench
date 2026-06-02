@@ -2,8 +2,8 @@
 (set-info :source "AlphaRegex (Lee, So, Oh, GPCE 2016) — no22_atleast2_and_not_end_with_10")
 (set-info :description "w has length at least 2 and does not end with 10")
 
-(require "./global/theories.alpharegex.sl")
-(require "./global/models.alpharegex.sl")
+(require "./global/theories.sl")
+(require "./global/models.sl")
 
 (synth-fun r () RegLan)
 

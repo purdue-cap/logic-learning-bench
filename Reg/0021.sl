@@ -2,8 +2,8 @@
 (set-info :source "AlphaRegex (Lee, So, Oh, GPCE 2016) — no21_exactly_00_once")
 (set-info :description "w has exactly one pair of consecutive 0s.")
 
-(require "./global/theories.alpharegex.sl")
-(require "./global/models.alpharegex.sl")
+(require "./global/theories.sl")
+(require "./global/models.sl")
 
 (synth-fun r () RegLan)
 

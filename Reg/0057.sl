@@ -2,8 +2,8 @@
 (set-info :source "Tomita (1982) T7: 0*1*0*1*")
 (set-info :description "matches 0*1*0*1*")
 
-(require "./global/theories.tomita.sl")
-(require "./global/models.tomita.sl")
+(require "./global/theories.sl")
+(require "./global/models.sl")
 
 (synth-fun r () RegLan)
 

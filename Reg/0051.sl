@@ -2,8 +2,8 @@
 (set-info :source "Tomita (1982) T1: 1*")
 (set-info :description "all strings of 1s only")
 
-(require "./global/theories.tomita.sl")
-(require "./global/models.tomita.sl")
+(require "./global/theories.sl")
+(require "./global/models.sl")
 
 (synth-fun r () RegLan)
 

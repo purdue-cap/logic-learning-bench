@@ -2,8 +2,8 @@
 (set-info :source "AlphaRegex (Lee, So, Oh, GPCE 2016) — no23_even_0s_and_followed_by_atleast_one_1")
 (set-info :description "w has an even number of 0's and each 0 is followed by at least one 1.")
 
-(require "./global/theories.alpharegex.sl")
-(require "./global/models.alpharegex.sl")
+(require "./global/theories.sl")
+(require "./global/models.sl")
 
 (synth-fun r () RegLan)
 

@@ -2,8 +2,8 @@
 (set-info :source "Sipser, Introduction to the Theory of Computation (3e), Σ*1")
 (set-info :description "ends with 1")
 
-(require "./global/theories.sipser.sl")
-(require "./global/models.sipser.sl")
+(require "./global/theories.sl")
+(require "./global/models.sl")
 
 (synth-fun r () RegLan)
 

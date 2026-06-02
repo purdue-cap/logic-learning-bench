@@ -2,8 +2,8 @@
 (set-info :source "Sipser, Introduction to the Theory of Computation (3e), Ex 1.53#3")
 (set-info :description "contains 001 substring")
 
-(require "./global/theories.sipser.sl")
-(require "./global/models.sipser.sl")
+(require "./global/theories.sl")
+(require "./global/models.sl")
 
 (synth-fun r () RegLan)
 

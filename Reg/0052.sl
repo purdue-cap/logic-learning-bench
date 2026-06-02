@@ -2,8 +2,8 @@
 (set-info :source "Tomita (1982) T2: (10)*")
 (set-info :description "repetitions of '10'")
 
-(require "./global/theories.tomita.sl")
-(require "./global/models.tomita.sl")
+(require "./global/theories.sl")
+(require "./global/models.sl")
 
 (synth-fun r () RegLan)
 

@@ -1,5 +1,5 @@
 (provide RegLan RegLan.Asp RegLan.Sem)
-(require "./signatures.alpharegex.sl")
+(require "./signatures.sl")
 
 (declare-term-types
  ((RegLan 0))

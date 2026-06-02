@@ -2,8 +2,8 @@
 (set-info :source "Sipser, Introduction to the Theory of Computation (3e), Ex 1.6l")
 (set-info :description "even #0s OR exactly two 1s")
 
-(require "./global/theories.sipser.sl")
-(require "./global/models.sipser.sl")
+(require "./global/theories.sl")
+(require "./global/models.sl")
 
 (synth-fun r () RegLan)
 
