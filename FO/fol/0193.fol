@@ -1,0 +1,35 @@
+; File: good-ivy-examples/toy/lockserv.ivy
+
+; Sig
+(sort node)
+(relation grant_msg node)
+(relation holds_lock node)
+(relation lock_msg node)
+(relation server_holds_lock )
+(relation unlock_msg node)
+; End sig
+
+
+
+; Conjecture conj7
+(conjecture (forall N node (not (and (grant_msg N) (server_holds_lock)))))
+
+(model P0
+  ((@node_0 node))
+
+)
+(model P1
+  ((@node_0 node))
+  (server_holds_lock)
+)
+(model N2
+  ((@node_0 node) (@node_1 node))
+  (grant_msg @node_1)
+  (server_holds_lock)
+)
+(model P3
+  ((@node_0 node))
+  (grant_msg @node_0)
+)
+
+(constraint P0 P1 (not N2) P3)

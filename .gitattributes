@@ -1,1 +1,4 @@
 *.sl linguist-language=SyGuS
+LTL/[0-9]*.sl filter=lfs diff=lfs merge=lfs -text
+FO/FO2/theories/*.sl filter=lfs diff=lfs merge=lfs -text
+FO/FO3/theories/*.sl filter=lfs diff=lfs merge=lfs -text

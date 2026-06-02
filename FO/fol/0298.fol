@@ -1,0 +1,71 @@
+; File: good-ivy-examples/toy/toy_lock_inv.ivy
+
+; Sig
+(sort epoch)
+(sort node)
+(function ep node epoch)
+(relation held node)
+(relation le epoch epoch)
+(relation locked epoch node)
+(relation transfer epoch node)
+(constant zero epoch)
+; End sig
+
+; Axiom axiom1
+(axiom (forall X epoch (le X X)))
+; Axiom axiom2
+(axiom (forall Y epoch (forall Z epoch (forall X epoch (or (not (and (le X Y) (le Y Z))) (le X Z))))))
+; Axiom axiom3
+(axiom (forall Y epoch (forall X epoch (or (not (and (le X Y) (le Y X))) (= X Y)))))
+; Axiom axiom4
+(axiom (forall Y epoch (forall X epoch (or (le X Y) (le Y X)))))
+; Axiom axiom5
+(axiom (forall X epoch (le zero X)))
+
+
+; Conjecture conj10
+(conjecture (forall N node (forall M node (or (not (and (held N) (not (= N M)))) (not (le (ep N) (ep M)))))))
+
+(model P0
+  ((@epoch_0 epoch) (@node_0 node))
+  (held @node_0)
+  (le @epoch_0 @epoch_0)
+  (= zero @epoch_0)
+  (= (ep @node_0) @epoch_0)
+)
+(model N1
+  ((@epoch_0 epoch) (@node_0 node) (@node_1 node))
+  (held @node_0)
+  (held @node_1)
+  (le @epoch_0 @epoch_0)
+  (= zero @epoch_0)
+  (= (ep @node_0) @epoch_0)
+  (= (ep @node_1) @epoch_0)
+)
+(model P2
+  ((@epoch_0 epoch) (@node_0 node) (@node_1 node))
+  (le @epoch_0 @epoch_0)
+  (= zero @epoch_0)
+  (= (ep @node_0) @epoch_0)
+  (= (ep @node_1) @epoch_0)
+)
+(model N3
+  ((@epoch_0 epoch) (@node_0 node) (@node_1 node))
+  (held @node_1)
+  (le @epoch_0 @epoch_0)
+  (= zero @epoch_0)
+  (= (ep @node_0) @epoch_0)
+  (= (ep @node_1) @epoch_0)
+)
+(model P4
+  ((@epoch_0 epoch) (@epoch_1 epoch) (@node_0 node) (@node_1 node))
+  (held @node_0)
+  (le @epoch_0 @epoch_0)
+  (le @epoch_0 @epoch_1)
+  (le @epoch_1 @epoch_1)
+  (= zero @epoch_0)
+  (= (ep @node_0) @epoch_1)
+  (= (ep @node_1) @epoch_0)
+)
+
+(constraint P0 (not N1) P2 (not N3) P4)
