@@ -1,0 +1,25 @@
+(set-info :author "Chentian Wu")
+(set-info :source "AlphaRegex (Lee, So, Oh, GPCE 2016) — no8_even_zeros")
+(set-info :description "even number of zeros")
+
+(require "./global/theories.alpharegex.sl")
+(require "./global/models.alpharegex.sl")
+
+(synth-fun r () RegLan)
+
+(constraint (RegLan.Sem r (RegLan.Asp w0 0 (size (Pos w0)))))
+(constraint (RegLan.Sem r (RegLan.Asp w11 0 (size (Pos w11)))))
+(constraint (RegLan.Sem r (RegLan.Asp w01010 0 (size (Pos w01010)))))
+(constraint (RegLan.Sem r (RegLan.Asp w00100100 0 (size (Pos w00100100)))))
+(constraint (RegLan.Sem r (RegLan.Asp w1111 0 (size (Pos w1111)))))
+(constraint (RegLan.Sem r (RegLan.Asp w010101010 0 (size (Pos w010101010)))))
+(constraint (RegLan.Sem r (RegLan.Asp w00100100100100 0 (size (Pos w00100100100100)))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w1 0 (size (Pos w1))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w01 0 (size (Pos w01))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w10 0 (size (Pos w10))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w100 0 (size (Pos w100))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w111 0 (size (Pos w111))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w0101010 0 (size (Pos w0101010))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w11111 0 (size (Pos w11111))))))
+
+(check-synth)
