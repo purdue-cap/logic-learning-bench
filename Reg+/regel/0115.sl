@@ -1,0 +1,25 @@
+(set-info :author "Chentian Wu")
+(set-info :source "REGEL (deepregex/120) — gt=concat(or(or(<m0>,<m1>),<cap>),contain(<m2>))")
+(set-info :description "lines with either the string '!' , the string '@' , or a capital letter followed by the string '#'")
+
+(require "./global/theories.deepregex.sl")
+(require "./global/models.deepregex.sl")
+
+(synth-fun r () RegLan)
+
+(constraint      (RegLan.Sem r (RegLan.Asp w00066 0 (size (Pos w00066)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00150 0 (size (Pos w00150)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00163 0 (size (Pos w00163)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00066 0 (size (Pos w00066)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00177 0 (size (Pos w00177)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00189 0 (size (Pos w00189)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00193 0 (size (Pos w00193)))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00003 0 (size (Pos w00003))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00004 0 (size (Pos w00004))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00250 0 (size (Pos w00250))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00019 0 (size (Pos w00019))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00116 0 (size (Pos w00116))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00129 0 (size (Pos w00129))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00111 0 (size (Pos w00111))))))
+
+(check-synth)

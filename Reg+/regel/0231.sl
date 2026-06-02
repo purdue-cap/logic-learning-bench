@@ -1,0 +1,26 @@
+(set-info :author "Chentian Wu")
+(set-info :source "REGEL (stackoverflow/32) — gt=concat(repeatatleast(<num>,1),concat(<.>,repeatrange(<num>,1,4)))")
+(set-info :description "I'm trying to devise a regular expression which will accept decimal number up to 4 digits.")
+
+(require "./global/theories.stackoverflow.sl")
+(require "./global/models.stackoverflow.sl")
+
+(synth-fun r () RegLan)
+
+(constraint      (RegLan.Sem r (RegLan.Asp w00123 0 (size (Pos w00123)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00359 0 (size (Pos w00359)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00436 0 (size (Pos w00436)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00573 0 (size (Pos w00573)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00097 0 (size (Pos w00097)))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00005 0 (size (Pos w00005))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00202 0 (size (Pos w00202))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00164 0 (size (Pos w00164))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00435 0 (size (Pos w00435))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00434 0 (size (Pos w00434))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00352 0 (size (Pos w00352))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00300 0 (size (Pos w00300))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00433 0 (size (Pos w00433))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00505 0 (size (Pos w00505))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00466 0 (size (Pos w00466))))))
+
+(check-synth)

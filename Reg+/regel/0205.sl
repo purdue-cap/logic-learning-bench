@@ -1,0 +1,26 @@
+(set-info :author "Chentian Wu")
+(set-info :source "REGEL (stackoverflow/5) — gt=or(concat(<0>,<num1-9>),concat(<1>,or(<0>,or(<1>,<2>))))")
+(set-info :description "What is the regular expression for validating a month with the leading zero?")
+
+(require "./global/theories.stackoverflow.sl")
+(require "./global/models.stackoverflow.sl")
+
+(synth-fun r () RegLan)
+
+(constraint      (RegLan.Sem r (RegLan.Asp w00034 0 (size (Pos w00034)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00035 0 (size (Pos w00035)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00036 0 (size (Pos w00036)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00037 0 (size (Pos w00037)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00038 0 (size (Pos w00038)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00039 0 (size (Pos w00039)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00040 0 (size (Pos w00040)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00041 0 (size (Pos w00041)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00042 0 (size (Pos w00042)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00044 0 (size (Pos w00044)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00045 0 (size (Pos w00045)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00046 0 (size (Pos w00046)))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00007 0 (size (Pos w00007))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00033 0 (size (Pos w00033))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00047 0 (size (Pos w00047))))))
+
+(check-synth)

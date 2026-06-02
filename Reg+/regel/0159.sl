@@ -1,0 +1,24 @@
+(set-info :author "Chentian Wu")
+(set-info :source "REGEL (deepregex/166) — gt=not(concat(<any>,contain(<m0>)))")
+(set-info :description "lines without only a character before string '!'")
+
+(require "./global/theories.deepregex.sl")
+(require "./global/models.deepregex.sl")
+
+(synth-fun r () RegLan)
+
+(constraint      (RegLan.Sem r (RegLan.Asp w00002 0 (size (Pos w00002)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00038 0 (size (Pos w00038)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00011 0 (size (Pos w00011)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00039 0 (size (Pos w00039)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00020 0 (size (Pos w00020)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00003 0 (size (Pos w00003)))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00215 0 (size (Pos w00215))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00238 0 (size (Pos w00238))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00162 0 (size (Pos w00162))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00110 0 (size (Pos w00110))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00498 0 (size (Pos w00498))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00490 0 (size (Pos w00490))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00488 0 (size (Pos w00488))))))
+
+(check-synth)

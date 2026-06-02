@@ -1,0 +1,25 @@
+(set-info :author "Chentian Wu")
+(set-info :source "REGEL (deepregex/32) — gt=concat(<m0>,contain(concat(<num>,contain(<any>))))")
+(set-info :description "lines with the string '!' before a number with a character after")
+
+(require "./global/theories.deepregex.sl")
+(require "./global/models.deepregex.sl")
+
+(synth-fun r () RegLan)
+
+(constraint      (RegLan.Sem r (RegLan.Asp w00325 0 (size (Pos w00325)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00837 0 (size (Pos w00837)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00989 0 (size (Pos w00989)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00330 0 (size (Pos w00330)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00331 0 (size (Pos w00331)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00614 0 (size (Pos w00614)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00829 0 (size (Pos w00829)))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00068 0 (size (Pos w00068))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00079 0 (size (Pos w00079))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00215 0 (size (Pos w00215))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00217 0 (size (Pos w00217))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00010 0 (size (Pos w00010))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00038 0 (size (Pos w00038))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00348 0 (size (Pos w00348))))))
+
+(check-synth)

@@ -1,0 +1,15 @@
+(set-info :author "Chentian Wu")
+(set-info :source "REGEL (stackoverflow/66) — gt=concat(concat(<cap>,repeatatleast(<low>,1)),concat(< >,concat(<cap>,repeatatleast(<low>,1))))")
+(set-info :description "First Name and Last Name Only with only 2 words with only 1 Space.")
+
+(require "./global/theories.stackoverflow.sl")
+(require "./global/models.stackoverflow.sl")
+
+(synth-fun r () RegLan)
+
+(constraint      (RegLan.Sem r (RegLan.Asp w00584 0 (size (Pos w00584)))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00665 0 (size (Pos w00665))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00583 0 (size (Pos w00583))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00616 0 (size (Pos w00616))))))
+
+(check-synth)

@@ -1,0 +1,25 @@
+(set-info :author "Chentian Wu")
+(set-info :source "REGEL (deepregex/167) — gt=star(endwith(<let>))")
+(set-info :description "lines with words ending in zero or more letters")
+
+(require "./global/theories.deepregex.sl")
+(require "./global/models.deepregex.sl")
+
+(synth-fun r () RegLan)
+
+(constraint      (RegLan.Sem r (RegLan.Asp w00038 0 (size (Pos w00038)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00039 0 (size (Pos w00039)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00230 0 (size (Pos w00230)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00119 0 (size (Pos w00119)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00405 0 (size (Pos w00405)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00353 0 (size (Pos w00353)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00080 0 (size (Pos w00080)))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00002 0 (size (Pos w00002))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00115 0 (size (Pos w00115))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00865 0 (size (Pos w00865))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00935 0 (size (Pos w00935))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00747 0 (size (Pos w00747))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00323 0 (size (Pos w00323))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00743 0 (size (Pos w00743))))))
+
+(check-synth)

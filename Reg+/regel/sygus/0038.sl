@@ -1,0 +1,65 @@
+(set-logic SLIA)
+
+; Converted from upstream Regel benchmark deepregex/38.
+; Grammar mirrors delis RegLan theory: char literals actually used + re.allchar + standard ops.
+
+(define-fun w1 () String "aa")
+(define-fun w2 () String "bb")
+(define-fun w3 () String "cc")
+(define-fun w4 () String "de")
+(define-fun w5 () String "ef")
+(define-fun w6 () String "ge")
+(define-fun w7 () String "ze")
+(define-fun w8 () String "Aa")
+(define-fun w9 () String "AA")
+(define-fun w10 () String "CC")
+(define-fun w11 () String "DD")
+(define-fun w12 () String "E;")
+(define-fun w13 () String "!;")
+
+(synth-fun r () RegLan
+    ((Start RegLan))
+    (
+        (Start RegLan
+            (
+                (str.to_re "!")
+                (str.to_re ";")
+                (str.to_re "A")
+                (str.to_re "C")
+                (str.to_re "D")
+                (str.to_re "E")
+                (str.to_re "a")
+                (str.to_re "b")
+                (str.to_re "c")
+                (str.to_re "d")
+                (str.to_re "e")
+                (str.to_re "f")
+                (str.to_re "g")
+                (str.to_re "z")
+                re.allchar
+                (re.opt Start)
+                (re.++ Start Start)
+                (re.union Start Start)
+                (re.inter Start Start)
+                (re.* Start)
+                (re.+ Start)
+            )
+        )
+    )
+)
+
+(constraint (str.in_re w1 r))
+(constraint (str.in_re w2 r))
+(constraint (str.in_re w3 r))
+(constraint (str.in_re w4 r))
+(constraint (str.in_re w5 r))
+(constraint (str.in_re w6 r))
+(constraint (str.in_re w7 r))
+(constraint (not (str.in_re w8 r)))
+(constraint (not (str.in_re w9 r)))
+(constraint (not (str.in_re w10 r)))
+(constraint (not (str.in_re w11 r)))
+(constraint (not (str.in_re w12 r)))
+(constraint (not (str.in_re w13 r)))
+
+(check-synth)

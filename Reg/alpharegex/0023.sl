@@ -1,0 +1,26 @@
+(set-info :author "Chentian Wu")
+(set-info :source "AlphaRegex (Lee, So, Oh, GPCE 2016) — no23_even_0s_and_followed_by_atleast_one_1")
+(set-info :description "w has an even number of 0's and each 0 is followed by at least one 1.")
+
+(require "./global/theories.sl")
+(require "./global/models.sl")
+
+(synth-fun r () RegLan)
+
+(constraint (RegLan.Sem r (RegLan.Asp w0 0 (size (Pos w0)))))
+(constraint (RegLan.Sem r (RegLan.Asp w000 0 (size (Pos w000)))))
+(constraint (RegLan.Sem r (RegLan.Asp w1010 0 (size (Pos w1010)))))
+(constraint (RegLan.Sem r (RegLan.Asp w01010 0 (size (Pos w01010)))))
+(constraint (RegLan.Sem r (RegLan.Asp w1000100 0 (size (Pos w1000100)))))
+(constraint (RegLan.Sem r (RegLan.Asp w10010010001000 0 (size (Pos w10010010001000)))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w1 0 (size (Pos w1))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w1111 0 (size (Pos w1111))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w101 0 (size (Pos w101))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w0101 0 (size (Pos w0101))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w001 0 (size (Pos w001))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w01110 0 (size (Pos w01110))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w10 0 (size (Pos w10))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w110 0 (size (Pos w110))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w100 0 (size (Pos w100))))))
+
+(check-synth)

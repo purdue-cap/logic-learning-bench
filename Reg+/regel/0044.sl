@@ -1,0 +1,25 @@
+(set-info :author "Chentian Wu")
+(set-info :source "REGEL (deepregex/44) — gt=concat(<any>,contain(repeatatleast(<m0>,5)))")
+(set-info :description "lines with a character occuring before the string '!' , 5 or more times")
+
+(require "./global/theories.deepregex.sl")
+(require "./global/models.deepregex.sl")
+
+(synth-fun r () RegLan)
+
+(constraint      (RegLan.Sem r (RegLan.Asp w01065 0 (size (Pos w01065)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w01303 0 (size (Pos w01303)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w01378 0 (size (Pos w01378)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w01353 0 (size (Pos w01353)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w01499 0 (size (Pos w01499)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w01501 0 (size (Pos w01501)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00984 0 (size (Pos w00984)))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00825 0 (size (Pos w00825))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00750 0 (size (Pos w00750))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00652 0 (size (Pos w00652))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00928 0 (size (Pos w00928))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00757 0 (size (Pos w00757))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00427 0 (size (Pos w00427))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00215 0 (size (Pos w00215))))))
+
+(check-synth)

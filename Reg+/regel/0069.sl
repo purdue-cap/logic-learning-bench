@@ -1,0 +1,24 @@
+(set-info :author "Chentian Wu")
+(set-info :source "REGEL (deepregex/69) — gt=not(startwith(or(<cap>,<vow>)))")
+(set-info :description "lines that don't begin with a capital letter or vowel")
+
+(require "./global/theories.deepregex.sl")
+(require "./global/models.deepregex.sl")
+
+(synth-fun r () RegLan)
+
+(constraint      (RegLan.Sem r (RegLan.Asp w00952 0 (size (Pos w00952)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00696 0 (size (Pos w00696)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w01021 0 (size (Pos w01021)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00876 0 (size (Pos w00876)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00990 0 (size (Pos w00990)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w01170 0 (size (Pos w01170)))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w01348 0 (size (Pos w01348))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w01219 0 (size (Pos w01219))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00713 0 (size (Pos w00713))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00048 0 (size (Pos w00048))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00721 0 (size (Pos w00721))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00464 0 (size (Pos w00464))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w01130 0 (size (Pos w01130))))))
+
+(check-synth)

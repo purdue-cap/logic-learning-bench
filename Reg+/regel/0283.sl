@@ -1,0 +1,25 @@
+(set-info :author "Chentian Wu")
+(set-info :source "REGEL (stackoverflow/87) — gt=and(not(contain(concat(<0>,concat(<,>,star(<0>))))),concat(repeatatleast(<num>,1),optional(concat(<,>,repeatrange(<num>,1,3)))))")
+(set-info :description "Decimal numbers up to 3 decimal places which are greater than zero")
+
+(require "./global/theories.stackoverflow.sl")
+(require "./global/models.stackoverflow.sl")
+
+(synth-fun r () RegLan)
+
+(constraint      (RegLan.Sem r (RegLan.Asp w00259 0 (size (Pos w00259)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00167 0 (size (Pos w00167)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00092 0 (size (Pos w00092)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00258 0 (size (Pos w00258)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00269 0 (size (Pos w00269)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00180 0 (size (Pos w00180)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00007 0 (size (Pos w00007)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00364 0 (size (Pos w00364)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00363 0 (size (Pos w00363)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00365 0 (size (Pos w00365)))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00006 0 (size (Pos w00006))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00090 0 (size (Pos w00090))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00165 0 (size (Pos w00165))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00257 0 (size (Pos w00257))))))
+
+(check-synth)

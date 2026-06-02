@@ -1,0 +1,25 @@
+(set-info :author "Chentian Wu")
+(set-info :source "REGEL (deepregex/140) — gt=repeatatleast(concat(<num>,contain(<low>)),5)")
+(set-info :description "lines with number followed by lower-case letter , 5 or more times")
+
+(require "./global/theories.deepregex.sl")
+(require "./global/models.deepregex.sl")
+
+(synth-fun r () RegLan)
+
+(constraint      (RegLan.Sem r (RegLan.Asp w01387 0 (size (Pos w01387)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w01449 0 (size (Pos w01449)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w01478 0 (size (Pos w01478)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w01495 0 (size (Pos w01495)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w01450 0 (size (Pos w01450)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w01498 0 (size (Pos w01498)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w01512 0 (size (Pos w01512)))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w01265 0 (size (Pos w01265))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w01389 0 (size (Pos w01389))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w01386 0 (size (Pos w01386))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w01007 0 (size (Pos w01007))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w01085 0 (size (Pos w01085))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w01402 0 (size (Pos w01402))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w01469 0 (size (Pos w01469))))))
+
+(check-synth)

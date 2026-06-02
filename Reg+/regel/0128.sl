@@ -1,0 +1,24 @@
+(set-info :author "Chentian Wu")
+(set-info :source "REGEL (deepregex/134) — gt=star(concat(<num>,contain(<cap>)))")
+(set-info :description "lines with a number followed by a capital letter , zero or more times in it")
+
+(require "./global/theories.deepregex.sl")
+(require "./global/models.deepregex.sl")
+
+(synth-fun r () RegLan)
+
+(constraint      (RegLan.Sem r (RegLan.Asp w00117 0 (size (Pos w00117)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00685 0 (size (Pos w00685)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w01016 0 (size (Pos w01016)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w01496 0 (size (Pos w01496)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w01448 0 (size (Pos w01448)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00882 0 (size (Pos w00882)))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00020 0 (size (Pos w00020))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00011 0 (size (Pos w00011))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00043 0 (size (Pos w00043))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00689 0 (size (Pos w00689))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w01344 0 (size (Pos w01344))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00900 0 (size (Pos w00900))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w01185 0 (size (Pos w01185))))))
+
+(check-synth)

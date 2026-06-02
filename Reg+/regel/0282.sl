@@ -1,0 +1,25 @@
+(set-info :author "Chentian Wu")
+(set-info :source "REGEL (stackoverflow/86) — gt=and(and(repeatatleast(or(or(<let>,<num>),<->),1),not(startwith(<->))),not(endwith(<->)))")
+(set-info :description "a regular expression for validating a string with alphanumeric characters and dashes, while also not allowing leading or trailing dashes")
+
+(require "./global/theories.stackoverflow.sl")
+(require "./global/models.stackoverflow.sl")
+
+(synth-fun r () RegLan)
+
+(constraint      (RegLan.Sem r (RegLan.Asp w00484 0 (size (Pos w00484)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00111 0 (size (Pos w00111)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00703 0 (size (Pos w00703)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00694 0 (size (Pos w00694)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00145 0 (size (Pos w00145)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00381 0 (size (Pos w00381)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00445 0 (size (Pos w00445)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00443 0 (size (Pos w00443)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00656 0 (size (Pos w00656)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00316 0 (size (Pos w00316)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00272 0 (size (Pos w00272)))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00182 0 (size (Pos w00182))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00669 0 (size (Pos w00669))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00524 0 (size (Pos w00524))))))
+
+(check-synth)

@@ -1,0 +1,25 @@
+(set-info :author "Chentian Wu")
+(set-info :source "REGEL (deepregex/137) — gt=or(<num>,<any>)")
+(set-info :description "words in lines that include a number or character")
+
+(require "./global/theories.deepregex.sl")
+(require "./global/models.deepregex.sl")
+
+(synth-fun r () RegLan)
+
+(constraint      (RegLan.Sem r (RegLan.Asp w00038 0 (size (Pos w00038)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00011 0 (size (Pos w00011)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00012 0 (size (Pos w00012)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00042 0 (size (Pos w00042)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00034 0 (size (Pos w00034)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00005 0 (size (Pos w00005)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00035 0 (size (Pos w00035)))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00115 0 (size (Pos w00115))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00230 0 (size (Pos w00230))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00119 0 (size (Pos w00119))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00241 0 (size (Pos w00241))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00090 0 (size (Pos w00090))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00590 0 (size (Pos w00590))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00871 0 (size (Pos w00871))))))
+
+(check-synth)

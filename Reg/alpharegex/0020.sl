@@ -1,0 +1,26 @@
+(set-info :author "Chentian Wu")
+(set-info :source "AlphaRegex (Lee, So, Oh, GPCE 2016) — no20_odd_pos_is_1")
+(set-info :description "every odd position of w is 1.")
+
+(require "./global/theories.sl")
+(require "./global/models.sl")
+
+(synth-fun r () RegLan)
+
+(constraint (RegLan.Sem r (RegLan.Asp w0 0 (size (Pos w0)))))
+(constraint (RegLan.Sem r (RegLan.Asp w0_ 0 (size (Pos w0_)))))
+(constraint (RegLan.Sem r (RegLan.Asp w0_0 0 (size (Pos w0_0)))))
+(constraint (RegLan.Sem r (RegLan.Asp w0_0_ 0 (size (Pos w0_0_)))))
+(constraint (RegLan.Sem r (RegLan.Asp w0_0_0 0 (size (Pos w0_0_0)))))
+(constraint (RegLan.Sem r (RegLan.Asp w0_0_0_ 0 (size (Pos w0_0_0_)))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w1 0 (size (Pos w1))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w1? 0 (size (Pos w1?))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w??1 0 (size (Pos w??1))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w1??? 0 (size (Pos w1???))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w??1? 0 (size (Pos w??1?))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w1???? 0 (size (Pos w1????))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w??1?? 0 (size (Pos w??1??))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w????1 0 (size (Pos w????1))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w????1? 0 (size (Pos w????1?))))))
+
+(check-synth)

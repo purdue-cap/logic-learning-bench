@@ -1,0 +1,25 @@
+(set-info :author "Chentian Wu")
+(set-info :source "REGEL (deepregex/92) — gt=repeatatleast(contain(<any>),7)")
+(set-info :description "lines with only 7 or more characters")
+
+(require "./global/theories.deepregex.sl")
+(require "./global/models.deepregex.sl")
+
+(synth-fun r () RegLan)
+
+(constraint      (RegLan.Sem r (RegLan.Asp w01359 0 (size (Pos w01359)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w01164 0 (size (Pos w01164)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w01261 0 (size (Pos w01261)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w01384 0 (size (Pos w01384)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w01502 0 (size (Pos w01502)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w01526 0 (size (Pos w01526)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w01539 0 (size (Pos w01539)))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00038 0 (size (Pos w00038))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00229 0 (size (Pos w00229))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00524 0 (size (Pos w00524))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00741 0 (size (Pos w00741))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00934 0 (size (Pos w00934))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w01074 0 (size (Pos w01074))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00875 0 (size (Pos w00875))))))
+
+(check-synth)

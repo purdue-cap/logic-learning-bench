@@ -1,0 +1,26 @@
+(set-info :author "Chentian Wu")
+(set-info :source "REGEL (stackoverflow/39) — gt=and(concat(repeatrange(<num>,1,13),optional(concat(<.>,repeatrange(<num>,1,2)))),not(contain(concat(<.>,<0>))))")
+(set-info :description "I am trying to use a regular expression to validate decimal values. Rules : It should allow positive numbers. It should allow max 13 numbers before decimal point. It should allow max two number after decimal. It should allow .(dot) with number like a ''.5''. It should not allow the ''.0''")
+
+(require "./global/theories.stackoverflow.sl")
+(require "./global/models.stackoverflow.sl")
+
+(synth-fun r () RegLan)
+
+(constraint      (RegLan.Sem r (RegLan.Asp w00030 0 (size (Pos w00030)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00031 0 (size (Pos w00031)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00028 0 (size (Pos w00028)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00006 0 (size (Pos w00006)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00099 0 (size (Pos w00099)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00188 0 (size (Pos w00188)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00626 0 (size (Pos w00626)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00660 0 (size (Pos w00660)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00671 0 (size (Pos w00671)))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00005 0 (size (Pos w00005))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00027 0 (size (Pos w00027))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00274 0 (size (Pos w00274))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00053 0 (size (Pos w00053))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00647 0 (size (Pos w00647))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00676 0 (size (Pos w00676))))))
+
+(check-synth)

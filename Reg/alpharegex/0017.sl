@@ -1,0 +1,26 @@
+(set-info :author "Chentian Wu")
+(set-info :source "AlphaRegex (Lee, So, Oh, GPCE 2016) — no17_atleastone0_atmostone1")
+(set-info :description "w contains at least one 0 and at most one 1")
+
+(require "./global/theories.sl")
+(require "./global/models.sl")
+
+(synth-fun r () RegLan)
+
+(constraint (RegLan.Sem r (RegLan.Asp w0 0 (size (Pos w0)))))
+(constraint (RegLan.Sem r (RegLan.Asp w001 0 (size (Pos w001)))))
+(constraint (RegLan.Sem r (RegLan.Asp w0001 0 (size (Pos w0001)))))
+(constraint (RegLan.Sem r (RegLan.Asp w0010 0 (size (Pos w0010)))))
+(constraint (RegLan.Sem r (RegLan.Asp w01000 0 (size (Pos w01000)))))
+(constraint (RegLan.Sem r (RegLan.Asp w100000 0 (size (Pos w100000)))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w1 0 (size (Pos w1))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w101 0 (size (Pos w101))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w0110 0 (size (Pos w0110))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w1010 0 (size (Pos w1010))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w1001 0 (size (Pos w1001))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w10001 0 (size (Pos w10001))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w111000 0 (size (Pos w111000))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w010000100 0 (size (Pos w010000100))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w000101001 0 (size (Pos w000101001))))))
+
+(check-synth)

@@ -1,0 +1,67 @@
+(set-logic SLIA)
+
+; Converted from upstream Regel benchmark deepregex/82.
+; Grammar mirrors delis RegLan theory: char literals actually used + re.allchar + standard ops.
+
+(define-fun w1 () String "!a")
+(define-fun w2 () String "a!")
+(define-fun w3 () String "a")
+(define-fun w4 () String "!!a")
+(define-fun w5 () String "!!!!a")
+(define-fun w6 () String "!a!a")
+(define-fun w7 () String "!a!b")
+(define-fun w8 () String "!A")
+(define-fun w9 () String "Anything with caps")
+(define-fun w10 () String "A!")
+(define-fun w11 () String "1!")
+(define-fun w12 () String "!1")
+(define-fun w13 () String "a!A")
+
+(synth-fun r () RegLan
+    ((Start RegLan))
+    (
+        (Start RegLan
+            (
+                (str.to_re " ")
+                (str.to_re "!")
+                (str.to_re "1")
+                (str.to_re "A")
+                (str.to_re "a")
+                (str.to_re "b")
+                (str.to_re "c")
+                (str.to_re "g")
+                (str.to_re "h")
+                (str.to_re "i")
+                (str.to_re "n")
+                (str.to_re "p")
+                (str.to_re "s")
+                (str.to_re "t")
+                (str.to_re "w")
+                (str.to_re "y")
+                re.allchar
+                (re.opt Start)
+                (re.++ Start Start)
+                (re.union Start Start)
+                (re.inter Start Start)
+                (re.* Start)
+                (re.+ Start)
+            )
+        )
+    )
+)
+
+(constraint (str.in_re w1 r))
+(constraint (str.in_re w2 r))
+(constraint (str.in_re w3 r))
+(constraint (str.in_re w4 r))
+(constraint (str.in_re w5 r))
+(constraint (str.in_re w6 r))
+(constraint (str.in_re w7 r))
+(constraint (not (str.in_re w8 r)))
+(constraint (not (str.in_re w9 r)))
+(constraint (not (str.in_re w10 r)))
+(constraint (not (str.in_re w11 r)))
+(constraint (not (str.in_re w12 r)))
+(constraint (not (str.in_re w13 r)))
+
+(check-synth)

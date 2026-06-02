@@ -1,0 +1,25 @@
+(set-info :author "Chentian Wu")
+(set-info :source "REGEL (deepregex/25) — gt=star(concat(<low>,contain(<let>)))")
+(set-info :description "lines containing a lower-case letter preceding a letter , zero or more times")
+
+(require "./global/theories.deepregex.sl")
+(require "./global/models.deepregex.sl")
+
+(synth-fun r () RegLan)
+
+(constraint      (RegLan.Sem r (RegLan.Asp w00229 0 (size (Pos w00229)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00524 0 (size (Pos w00524)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00741 0 (size (Pos w00741)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00934 0 (size (Pos w00934)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w01074 0 (size (Pos w01074)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w01199 0 (size (Pos w01199)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w01302 0 (size (Pos w01302)))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00154 0 (size (Pos w00154))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00155 0 (size (Pos w00155))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00079 0 (size (Pos w00079))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00172 0 (size (Pos w00172))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00108 0 (size (Pos w00108))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00119 0 (size (Pos w00119))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00020 0 (size (Pos w00020))))))
+
+(check-synth)

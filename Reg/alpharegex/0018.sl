@@ -1,0 +1,25 @@
+(set-info :author "Chentian Wu")
+(set-info :source "AlphaRegex (Lee, So, Oh, GPCE 2016) — no18_0110")
+(set-info :description "There are at least two occurences of 1 between any two occurrences of 0.")
+
+(require "./global/theories.sl")
+(require "./global/models.sl")
+
+(synth-fun r () RegLan)
+
+(constraint (RegLan.Sem r (RegLan.Asp w0 0 (size (Pos w0)))))
+(constraint (RegLan.Sem r (RegLan.Asp w0110 0 (size (Pos w0110)))))
+(constraint (RegLan.Sem r (RegLan.Asp w01110 0 (size (Pos w01110)))))
+(constraint (RegLan.Sem r (RegLan.Asp w011110 0 (size (Pos w011110)))))
+(constraint (RegLan.Sem r (RegLan.Asp w111 0 (size (Pos w111)))))
+(constraint (RegLan.Sem r (RegLan.Asp w01111 0 (size (Pos w01111)))))
+(constraint (RegLan.Sem r (RegLan.Asp w1111110 0 (size (Pos w1111110)))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00 0 (size (Pos w00))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w010 0 (size (Pos w010))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w10101 0 (size (Pos w10101))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w010111 0 (size (Pos w010111))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w111010 0 (size (Pos w111010))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w0011111 0 (size (Pos w0011111))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w1111100 0 (size (Pos w1111100))))))
+
+(check-synth)

@@ -1,0 +1,25 @@
+(set-info :author "Chentian Wu")
+(set-info :source "REGEL (deepregex/146) — gt=concat(and(<vow>,<cap>),contain(<m0>))")
+(set-info :description "items with an upper class and vowel preceding '!' .")
+
+(require "./global/theories.deepregex.sl")
+(require "./global/models.deepregex.sl")
+
+(synth-fun r () RegLan)
+
+(constraint      (RegLan.Sem r (RegLan.Asp w00162 0 (size (Pos w00162)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00197 0 (size (Pos w00197)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00470 0 (size (Pos w00470)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00476 0 (size (Pos w00476)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00703 0 (size (Pos w00703)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00898 0 (size (Pos w00898)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00720 0 (size (Pos w00720)))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00311 0 (size (Pos w00311))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00003 0 (size (Pos w00003))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00022 0 (size (Pos w00022))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00462 0 (size (Pos w00462))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00191 0 (size (Pos w00191))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00467 0 (size (Pos w00467))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00215 0 (size (Pos w00215))))))
+
+(check-synth)
