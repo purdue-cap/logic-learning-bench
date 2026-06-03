@@ -1,0 +1,18 @@
+KS:
+Predicates: a; b; c; d
+States: i{a}; q1{b}; q2{a; b}; q3{a; d}; q4{c}; q5{b}; q6{a; c; d}; state_7{b}; state_8{a; c; d}
+Initial: i
+i -> q1
+i -> q4
+q1 -> q2
+q2 -> q3
+q2 -> q6
+q3 -> state_7
+q4 -> q6
+q4 -> state_8
+q5 -> q4
+q6 -> q6
+state_7 -> q1
+state_8 -> q5
+:End
+

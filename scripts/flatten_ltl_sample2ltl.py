@@ -132,6 +132,7 @@ def model_to_sl(name: str, timesteps: list[list[int]], loop: int, nvars: int) ->
     elems = " ".join(f"${i}" for i in range(n))
     lines.append(f"(define-model {name}")
     lines.append(f"  (define-univ Pos ({elems}))")
+    lines.append("  (interp-fun start ($0))")
 
     for v in range(nvars):
         true_pos = [i for i in range(n) if timesteps[i][v] == 1]
@@ -208,9 +209,9 @@ def generate_sl(trace_data: dict, source_label: str) -> str:
     parts.append("")
 
     for i in range(len(pos_traces)):
-        parts.append(f"(constraint (LTL.Sem phi (LTL.Asp P{i} $0)))")
+        parts.append(f"(constraint (LTL.Sem phi (LTL.Asp P{i} start)))")
     for i in range(len(neg_traces)):
-        parts.append(f"(constraint (not (LTL.Sem phi (LTL.Asp N{i} $0))))")
+        parts.append(f"(constraint (not (LTL.Sem phi (LTL.Asp N{i} start))))")
     parts.append("")
     parts.append("(check-synth)")
 

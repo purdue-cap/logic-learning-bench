@@ -2,6 +2,7 @@
 next
 future
 prefix
+start
 p0
 p1
 ltl.p0
@@ -20,6 +21,7 @@ ltl.U)
 (declare-fun next (Pos) Pos)
 (declare-fun future (Pos Pos) Bool)
 (declare-fun prefix (Pos Pos Pos) Bool)
+(declare-fun start () Pos)
 (declare-fun p0 (Pos) Bool)
 (declare-fun p1 (Pos) Bool)
 

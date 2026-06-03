@@ -1,0 +1,51 @@
+KS:
+Predicates: a; b; c; d; e; f
+States: q0{a; b}; q1{a}; q2{c; d}; q3{e}; q4{b; f}; q5{a}; q6{b; c; d; e; f}; q7{c}; q8{d}; q9{a; b; c; d; e; f}; q10{a; c}; q11{b; d}; q12{c; e}; q13{f}; q14{a}; q15{b}; q16{a; c}; q17{c; d}; q18{e}; q19{c; f}; q20{a; b; c; d}; q21{b; c; e}; q22{c; d; e}; q23{e}; q24{c}; q25{f}; q26{c; d}; state_27{b; c; d}; state_28{a; b; d; f}; state_29{b; e; f}; state_30{a; b; c; d; e; f}
+Initial: q13; q0
+q0 -> q1
+q1 -> q1
+q1 -> q2
+q1 -> q4
+q2 -> q3
+q3 -> q1
+q4 -> q5
+q4 -> q8
+q5 -> q7
+q6 -> q4
+q6 -> q5
+q7 -> q6
+q7 -> q8
+q8 -> q6
+q8 -> q9
+q9 -> q10
+q10 -> q11
+q11 -> q12
+q11 -> q7
+q12 -> q21
+q13 -> q14
+q13 -> q15
+q14 -> q15
+q14 -> state_29
+q15 -> q14
+q15 -> q17
+q16 -> q18
+q17 -> state_28
+q18 -> q19
+q19 -> q20
+q19 -> q21
+q20 -> q19
+q21 -> q22
+q21 -> state_27
+q22 -> q21
+q22 -> q23
+q23 -> q24
+q24 -> state_30
+q25 -> q23
+q25 -> q26
+q26 -> q25
+state_27 -> q12
+state_28 -> q18
+state_29 -> q16
+state_30 -> q25
+:End
+
