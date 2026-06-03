@@ -191,27 +191,39 @@ def emit(n_args, constants, constraints, tape, positions, max_int):
     if n_args > 0:
         out.append("")
 
-    # --- Aspect ---
-    # lo, hi are Int (0..tape_len) — compiler auto-converts to Pos for function calls.
-    # exp_int is SymInt (Univ) because it can hold bot and $neg1.
-    # Arg positions are NOT in the aspect — they live in per-model 0-ary interp-fun.
+    # --- Three separate aspects for Str, Int, Bool ---
+    # Splitting avoids the exp_int × position cross-product in bisim.
     out.append("(define-finite Str.Asp")
-    out.append(f"  (record (model Model) (lo Int) (hi Int) (exp_int SymInt))")
+    out.append(f"  (record (model Model) (lo Int) (hi Int))")
     out.append(f"  :where (and (<= 0 lo) (<= lo hi) (<= hi {tape_len})))")
     out.append("")
+    out.append("(define-finite Int.Asp")
+    out.append(f"  (record (model Model) (exp_int SymInt)))")
+    out.append("")
+    out.append("(define-finite Bool.Asp")
+    out.append(f"  (record (model Model)))")
+    out.append("")
 
-    # --- Aspect builder helper ---
-    def asp(**ov):
-        fields = ["(model asp)"]
+    # --- Aspect builder helpers ---
+    def str_asp(**ov):
+        fields = ["(model asp)" if "model" not in ov else ov["model"]]
         fields.append(ov.get("lo", "(lo asp)"))
         fields.append(ov.get("hi", "(hi asp)"))
-        fields.append(ov.get("exp_int", "(exp_int asp)"))
         return f"(Str.Asp {' '.join(fields)})"
 
+    def int_asp(**ov):
+        model = ov.get("model", "(model asp)")
+        exp = ov.get("exp_int", "(exp_int asp)")
+        return f"(Int.Asp {model} {exp})"
+
+    def bool_asp(**ov):
+        model = ov.get("model", "(model asp)")
+        return f"(Bool.Asp {model})"
+
     # ===================================================================
-    # Str.Sem
+    # Str.Sem — aspect is Str.Asp (model, lo, hi)
     # ===================================================================
-    sc = []  # str cases
+    sc = []
 
     # Constants
     for i, c in enumerate(constants):
@@ -230,18 +242,18 @@ def emit(n_args, constants, constraints, tape, positions, max_int):
     sc.append(
         f"     ((str.++ x y)\n"
         f"      (exists ((mid (int-range (lo asp) (hi asp))))\n"
-        f"        (and (Str.Sem x {asp(hi='mid')})\n"
-        f"             (Str.Sem y {asp(lo='mid')}))))")
+        f"        (and (Str.Sem x {str_asp(hi='mid')})\n"
+        f"             (Str.Sem y {str_asp(lo='mid')}))))")
 
-    # str.at  — single character extraction
+    # str.at — single character extraction
     sc.append(
         f"     ((str.at x i)\n"
         f"      (and (= (hi asp) (+ (lo asp) 1))\n"
         f"           (exists ((slo (int-range 0 {tape_len})))\n"
         f"             (exists ((shi (int-range slo {tape_len})))\n"
         f"               (exists ((k (univ (SymInt (model asp)))))\n"
-        f"                 (and (Str.Sem x {asp(lo='slo', hi='shi')})\n"
-        f"                      (Int.Sem i {asp(lo='slo', hi='shi', exp_int='k')})\n"
+        f"                 (and (Str.Sem x {str_asp(lo='slo', hi='shi')})\n"
+        f"                      (Int.Sem i {int_asp(exp_int='k')})\n"
         f"                      (not (= k bot))\n"
         f"                      (char_eq (pos_offset slo k) (lo asp))))))))")
 
@@ -251,26 +263,13 @@ def emit(n_args, constants, constraints, tape, positions, max_int):
         f"      (exists ((slo (int-range 0 {tape_len})))\n"
         f"        (exists ((shi (int-range slo {tape_len})))\n"
         f"          (exists ((k (univ (SymInt (model asp)))))\n"
-        f"            (and (Str.Sem x {asp(lo='slo', hi='shi')})\n"
-        f"                 (Int.Sem i {asp(lo='slo', hi='shi', exp_int='k')})\n"
+        f"            (and (Str.Sem x {str_asp(lo='slo', hi='shi')})\n"
+        f"                 (Int.Sem i {int_asp(exp_int='k')})\n"
         f"                 (not (= k bot))\n"
-        f"                 (Int.Sem len {asp(lo='slo', hi='shi', exp_int='(pos_diff (hi asp) (lo asp))')})\n"
+        f"                 (Int.Sem len {int_asp(exp_int='(pos_diff (hi asp) (lo asp))')})\n"
         f"                 (substr_match (pos_offset slo k) (lo asp) (pos_diff (hi asp) (lo asp))))))))")
 
-    # str.replace — first-occurrence replacement
-    # replace(x, y, z) matching [lo, hi):
-    #   exists (xlo, xhi, ylo, yhi, zlo, zhi, k):
-    #     Str.Sem(x, xlo, xhi) AND Str.Sem(y, ylo, yhi) AND
-    #     k >= 0 AND k + len(y) <= len(x) AND
-    #     substr_match(ylo, pos_offset(xlo, k), len(y))   -- y appears at position k in x
-    #     -- no earlier occurrence: forall j in [0, k-1]: not substr_match(...)
-    #     -- output = x[0..k] ++ z ++ x[k+len(y)..]
-    #     -- which must equal tape[lo..hi]
-    #     -- i.e., exists (mid1, mid2):
-    #       substr_match(xlo, lo, k) AND Str.Sem(z, mid1, mid2) AND
-    #       substr_match(pos_offset(xlo, int_plus(k, pos_diff(yhi, ylo))), mid2,
-    #                    int_minus(pos_diff(xhi, xlo), int_plus(k, pos_diff(yhi, ylo))))
-    # This is complex. Let me write it as a single nested expression.
+    # str.replace
     sc.append(
         f"     ((str.replace x y z)\n"
         f"      (exists ((xlo (int-range 0 {tape_len})))\n"
@@ -278,8 +277,8 @@ def emit(n_args, constants, constraints, tape, positions, max_int):
         f"          (exists ((ylo (int-range 0 {tape_len})))\n"
         f"            (exists ((yhi (int-range ylo {tape_len})))\n"
         f"              (exists ((k (univ (SymInt (model asp)))))\n"
-        f"                (and (Str.Sem x {asp(lo='xlo', hi='xhi')})\n"
-        f"                     (Str.Sem y {asp(lo='ylo', hi='yhi')})\n"
+        f"                (and (Str.Sem x {str_asp(lo='xlo', hi='xhi')})\n"
+        f"                     (Str.Sem y {str_asp(lo='ylo', hi='yhi')})\n"
         f"                     (not (= k bot))\n"
         f"                     (substr_match ylo (pos_offset xlo k) (pos_diff yhi ylo))\n"
         f"                     (forall ((j (univ (SymInt (model asp)))))\n"
@@ -290,7 +289,7 @@ def emit(n_args, constants, constraints, tape, positions, max_int):
         f"                     (exists ((mid (int-range (lo asp) (hi asp))))\n"
         f"                       (exists ((mid2 (int-range mid (hi asp))))\n"
         f"                         (and (substr_match xlo (lo asp) k)\n"
-        f"                              (Str.Sem z {asp(lo='mid', hi='mid2')})\n"
+        f"                              (Str.Sem z {str_asp(lo='mid', hi='mid2')})\n"
         f"                              (substr_match (pos_offset xlo (int_plus k (pos_diff yhi ylo))) mid2\n"
         f"                                            (int_minus (pos_diff xhi xlo) (int_plus k (pos_diff yhi ylo))))\n"
         f"                              (= (pos_diff mid (lo asp)) k)\n"
@@ -300,17 +299,17 @@ def emit(n_args, constants, constraints, tape, positions, max_int):
     # str.ite
     sc.append(
         f"     ((str.ite b x y)\n"
-        f"      (or (and (Bool.Sem b asp) (Str.Sem x asp))\n"
-        f"          (and (not (Bool.Sem b asp)) (Str.Sem y asp))))")
+        f"      (or (and (Bool.Sem b {bool_asp()}) (Str.Sem x asp))\n"
+        f"          (and (not (Bool.Sem b {bool_asp()})) (Str.Sem y asp))))")
 
-    # str.int2str — convert int to its digit string
+    # str.int2str
     int2str_cases = []
     for v in range(0, min(max_int + 1, 100)):
         ds = str(v)
         if ds in positions:
             dlo, dhi = positions[ds]
             int2str_cases.append(
-                f"(and (Int.Sem i {asp(exp_int=f'${v}')}) (= (lo asp) {dlo}) (= (hi asp) {dhi}))")
+                f"(and (Int.Sem i {int_asp(exp_int=f'${v}')}) (= (lo asp) {dlo}) (= (hi asp) {dhi}))")
     if int2str_cases:
         sc.append(
             f"     ((str.int2str i)\n"
@@ -326,7 +325,7 @@ def emit(n_args, constants, constraints, tape, positions, max_int):
     out.append("")
 
     # ===================================================================
-    # Int.Sem
+    # Int.Sem — aspect is Int.Asp (model, exp_int)
     # ===================================================================
     ic = []
 
@@ -339,8 +338,8 @@ def emit(n_args, constants, constraints, tape, positions, max_int):
         f"     ((int.+ x y)\n"
         f"      (exists ((a (univ (SymInt (model asp)))))\n"
         f"        (exists ((b (univ (SymInt (model asp)))))\n"
-        f"          (and (Int.Sem x {asp(exp_int='a')})\n"
-        f"               (Int.Sem y {asp(exp_int='b')})\n"
+        f"          (and (Int.Sem x {int_asp(exp_int='a')})\n"
+        f"               (Int.Sem y {int_asp(exp_int='b')})\n"
         f"               (= (exp_int asp) (int_plus a b))))))")
 
     # int.-
@@ -348,8 +347,8 @@ def emit(n_args, constants, constraints, tape, positions, max_int):
         f"     ((int.- x y)\n"
         f"      (exists ((a (univ (SymInt (model asp)))))\n"
         f"        (exists ((b (univ (SymInt (model asp)))))\n"
-        f"          (and (Int.Sem x {asp(exp_int='a')})\n"
-        f"               (Int.Sem y {asp(exp_int='b')})\n"
+        f"          (and (Int.Sem x {int_asp(exp_int='a')})\n"
+        f"               (Int.Sem y {int_asp(exp_int='b')})\n"
         f"               (= (exp_int asp) (int_minus a b))))))")
 
     # int.len
@@ -357,17 +356,17 @@ def emit(n_args, constants, constraints, tape, positions, max_int):
         f"     ((int.len x)\n"
         f"      (exists ((slo (int-range 0 {tape_len})))\n"
         f"        (exists ((shi (int-range slo {tape_len})))\n"
-        f"          (and (Str.Sem x {asp(lo='slo', hi='shi')})\n"
+        f"          (and (Str.Sem x {str_asp(model='(model asp)', lo='slo', hi='shi')})\n"
         f"               (= (exp_int asp) (pos_diff shi slo))))))")
 
-    # int.to_int — precomputed for small digit strings
+    # int.to_int
     to_int_cases = []
     for v in range(0, min(max_int + 1, 100)):
         ds = str(v)
         if ds in positions:
             dlo, dhi = positions[ds]
             to_int_cases.append(
-                f"(and (Str.Sem x {asp(lo=str(dlo), hi=str(dhi))}) (= (exp_int asp) ${v}))")
+                f"(and (Str.Sem x {str_asp(model='(model asp)', lo=str(dlo), hi=str(dhi))}) (= (exp_int asp) ${v}))")
     if to_int_cases:
         ic.append(
             f"     ((int.to_int x)\n"
@@ -378,11 +377,10 @@ def emit(n_args, constants, constraints, tape, positions, max_int):
     # int.ite
     ic.append(
         f"     ((int.ite b x y)\n"
-        f"      (or (and (Bool.Sem b asp) (Int.Sem x asp))\n"
-        f"          (and (not (Bool.Sem b asp)) (Int.Sem y asp))))")
+        f"      (or (and (Bool.Sem b {bool_asp()}) (Int.Sem x asp))\n"
+        f"          (and (not (Bool.Sem b {bool_asp()})) (Int.Sem y asp))))")
 
-    # int.indexof — find first occurrence of y in x starting at position k
-    # Result = exp_int. Express "first match" using forall.
+    # int.indexof
     ic.append(
         f"     ((int.indexof x y k)\n"
         f"      (exists ((xlo (int-range 0 {tape_len})))\n"
@@ -390,9 +388,9 @@ def emit(n_args, constants, constraints, tape, positions, max_int):
         f"          (exists ((ylo (int-range 0 {tape_len})))\n"
         f"            (exists ((yhi (int-range ylo {tape_len})))\n"
         f"              (exists ((kv (univ (SymInt (model asp)))))\n"
-        f"                (and (Str.Sem x {asp(lo='xlo', hi='xhi')})\n"
-        f"                     (Str.Sem y {asp(lo='ylo', hi='yhi')})\n"
-        f"                     (Int.Sem k {asp(exp_int='kv')})\n"
+        f"                (and (Str.Sem x {str_asp(model='(model asp)', lo='xlo', hi='xhi')})\n"
+        f"                     (Str.Sem y {str_asp(model='(model asp)', lo='ylo', hi='yhi')})\n"
+        f"                     (Int.Sem k {int_asp(exp_int='kv')})\n"
         f"                     (not (= kv bot))\n"
         f"                     (or\n"
         f"                       (and (not (= (exp_int asp) $neg1))\n"
@@ -412,14 +410,14 @@ def emit(n_args, constants, constraints, tape, positions, max_int):
         f"                                  (not (substr_match ylo (pos_offset xlo j) (pos_diff yhi ylo))))))))))))))")
 
     out.append("(define-semantics")
-    out.append("  ((Int.Sem (e SInt) (asp Str.Asp)))")
+    out.append("  ((Int.Sem (e SInt) (asp Int.Asp)))")
     out.append("  ((match e")
     out.append("\n".join(ic))
     out.append("  )))")
     out.append("")
 
     # ===================================================================
-    # Bool.Sem
+    # Bool.Sem — aspect is Bool.Asp (model)
     # ===================================================================
     bc = []
 
@@ -430,45 +428,42 @@ def emit(n_args, constants, constraints, tape, positions, max_int):
     bc.append(
         f"     ((bool.= x y)\n"
         f"      (exists ((v (univ (SymInt (model asp)))))\n"
-        f"        (and (Int.Sem x {asp(exp_int='v')})\n"
-        f"             (Int.Sem y {asp(exp_int='v')}))))")
+        f"        (and (Int.Sem x {int_asp(exp_int='v')})\n"
+        f"             (Int.Sem y {int_asp(exp_int='v')}))))")
 
-    # bool.prefixof — tape[xlo..xhi] is prefix of tape[ylo..yhi]
-    # = substr_match(xlo, ylo, xhi-xlo) AND len(x) <= len(y)
+    # bool.prefixof
     bc.append(
         f"     ((bool.prefixof x y)\n"
         f"      (exists ((xlo (int-range 0 {tape_len})))\n"
         f"        (exists ((xhi (int-range xlo {tape_len})))\n"
         f"          (exists ((ylo (int-range 0 {tape_len})))\n"
         f"            (exists ((yhi (int-range ylo {tape_len})))\n"
-        f"              (and (Str.Sem x {asp(lo='xlo', hi='xhi')})\n"
-        f"                   (Str.Sem y {asp(lo='ylo', hi='yhi')})\n"
+        f"              (and (Str.Sem x {str_asp(lo='xlo', hi='xhi')})\n"
+        f"                   (Str.Sem y {str_asp(lo='ylo', hi='yhi')})\n"
         f"                   (not (= (int_minus (pos_diff yhi ylo) (pos_diff xhi xlo)) bot))\n"
         f"                   (substr_match xlo ylo (pos_diff xhi xlo))))))))")
 
-    # bool.suffixof — tape[xlo..xhi] is suffix of tape[ylo..yhi]
-    # = substr_match(xlo, yhi-(xhi-xlo), xhi-xlo) AND len(x) <= len(y)
+    # bool.suffixof
     bc.append(
         f"     ((bool.suffixof x y)\n"
         f"      (exists ((xlo (int-range 0 {tape_len})))\n"
         f"        (exists ((xhi (int-range xlo {tape_len})))\n"
         f"          (exists ((ylo (int-range 0 {tape_len})))\n"
         f"            (exists ((yhi (int-range ylo {tape_len})))\n"
-        f"              (and (Str.Sem x {asp(lo='xlo', hi='xhi')})\n"
-        f"                   (Str.Sem y {asp(lo='ylo', hi='yhi')})\n"
+        f"              (and (Str.Sem x {str_asp(lo='xlo', hi='xhi')})\n"
+        f"                   (Str.Sem y {str_asp(lo='ylo', hi='yhi')})\n"
         f"                   (not (= (int_minus (pos_diff yhi ylo) (pos_diff xhi xlo)) bot))\n"
         f"                   (substr_match xlo (pos_offset ylo (int_minus (pos_diff yhi ylo) (pos_diff xhi xlo))) (pos_diff xhi xlo))))))))")
 
-    # bool.contains — str.contains(x, y) = y is a substring of x
-    # = exists k: substr_match(ylo, pos_offset(xlo, k), yhi-ylo) AND 0<=k AND k+len(y)<=len(x)
+    # bool.contains
     bc.append(
         f"     ((bool.contains x y)\n"
         f"      (exists ((xlo (int-range 0 {tape_len})))\n"
         f"        (exists ((xhi (int-range xlo {tape_len})))\n"
         f"          (exists ((ylo (int-range 0 {tape_len})))\n"
         f"            (exists ((yhi (int-range ylo {tape_len})))\n"
-        f"              (and (Str.Sem x {asp(lo='xlo', hi='xhi')})\n"
-        f"                   (Str.Sem y {asp(lo='ylo', hi='yhi')})\n"
+        f"              (and (Str.Sem x {str_asp(lo='xlo', hi='xhi')})\n"
+        f"                   (Str.Sem y {str_asp(lo='ylo', hi='yhi')})\n"
         f"                   (exists ((k (univ (SymInt (model asp)))))\n"
         f"                     (and (not (= k bot))\n"
         f"                          (not (= (int_minus k $0) bot))\n"
@@ -476,7 +471,7 @@ def emit(n_args, constants, constraints, tape, positions, max_int):
         f"                          (substr_match ylo (pos_offset xlo k) (pos_diff yhi ylo))))))))))")
 
     out.append("(define-semantics")
-    out.append("  ((Bool.Sem (e SBool) (asp Str.Asp)))")
+    out.append("  ((Bool.Sem (e SBool) (asp Bool.Asp)))")
     out.append("  ((match e")
     out.append("\n".join(bc))
     out.append("  )))")
@@ -579,11 +574,11 @@ def emit(n_args, constants, constraints, tape, positions, max_int):
     out.append("(synth-fun phi () Str)")
     out.append("")
 
-    # --- Constraints --- one per model
+    # --- Constraints --- one per model, no universe elements needed
     for ci, (inputs, output) in enumerate(constraints):
         out_lo, out_hi = positions[output]
         out.append(
-            f"(constraint (Str.Sem phi (Str.Asp m{ci} {out_lo} {out_hi} $0)))")
+            f"(constraint (Str.Sem phi (Str.Asp m{ci} {out_lo} {out_hi})))")
 
     out.append("")
     out.append("(check-synth)")
