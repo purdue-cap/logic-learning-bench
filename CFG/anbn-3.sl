@@ -5,7 +5,7 @@
 ; the BV encoding of `cfg.rhs.S` is too restrictive (cfg.rhs.S constant
 ; bit-vector loses too much context after saturation).
 
-(set-logic ALL)
+
 
 (declare-term-types
  ((CFG 0) (Rhs 0) (Rules 0))

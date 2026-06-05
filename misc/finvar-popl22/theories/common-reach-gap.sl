@@ -1,6 +1,6 @@
 (provide U s t E P N)
 
-(set-logic ALL)
+
 (declare-sort U 0)
 (declare-fun s () U)
 (declare-fun t () U)

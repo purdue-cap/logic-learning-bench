@@ -2,6 +2,8 @@
 (define-model small_m3
   (define-univ U (st_i st_q1 st_q2 st_q3 st_q4 st_q5 st_q6 st_state_7 st_state_8))
   (define-univ Ctr ($0 $1 $2 $3 $4 $5 $6 $7 $8 bot))
+  (interp-fun czero ($0))
+  (interp-fun cbot (bot))
   (interp-fun initial (st_i))
   (interp-fun a (match (
     ((st_i) true)

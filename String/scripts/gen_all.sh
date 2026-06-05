@@ -8,7 +8,7 @@ set -u
 cd "$(dirname "$0")/../../.."   # repo root
 SRC=benchmark/String/sygus
 DST=benchmark/String
-GEN=benchmark/String/scripts/gen.py
+GEN=benchmark/String/scripts/gen_lenchar.py
 
 # Wipe any stale numbered outputs from a previous run, but keep sygus/,
 # scripts/, README.md, etc.

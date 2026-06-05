@@ -2,7 +2,7 @@
 ; K=3 nonterminals (S0..S2); S0 is the start symbol
 ; 107 positives + 100 negatives = 207 constraints
 
-(set-logic ALL)
+
 
 (declare-term-types
  ((CFG 0) (Rhs 0) (Rules 0))

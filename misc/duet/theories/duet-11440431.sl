@@ -5,7 +5,7 @@
   str.++.p str.replace.p str.at.p int.to.str.p ite.str str.substr.p
   idx.0 idx.1 idx.bot plus minus str.len.p str.to.int.p ite.idx str.indexof.p
   bool.true bool.false eq.idx str.prefixof.p str.suffixof.p str.contains.p)
-(set-logic ALL)
+
 
 (declare-sort Str 0)
 (declare-sort Idx 0)

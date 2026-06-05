@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Sipser-derived CFG benchmark generator for delis.
 
-Emits 25 .sl problem files per k-tier in ../k{1,2,3}/.
-The k-tier reflects the *intended* number of nonterminals in the general-RHS
-Delis encoding (S0..S{k-1}); k is approximate, not a proven minimum.
+Emits flat, sequentially numbered .sl problem files (0001.sl, 0002.sl, ...)
+directly in ../ (the sipser dir), in order of the K1, K2, K3 language lists.
+Each file's header records its intended number of nonterminals in the
+general-RHS Delis encoding (S0..S{k-1}); k is approximate, not a proven
+minimum, and the source language name is preserved in the header comment.
 
 Sampling is by language-membership predicate only — positives/negatives are
 drawn from exhaustive enumeration up to a fixed length cap; no target grammar
@@ -383,8 +385,6 @@ K3 = [
     ("equal_ab_starts_a_ends_b","ab",  p_equal_ab_starts_a_ends_b),
     ("equal_ab_starts_b_ends_a","ab",  p_equal_ab_starts_b_ends_a),
     ("not_ww",                  "ab",  p_not_ww),
-    ("anbn_or_a_eq_b_plus_1",   "ab",  p_anbn_or_a_eq_b_plus_1),
-    ("anbn_or_b_eq_a_plus_1",   "ab",  p_anbn_or_b_eq_a_plus_1),
     ("abcn_i_eq_j_or_j_eq_k",   "abc", p_abcn_i_eq_j_or_j_eq_k),
     ("abcn_i_eq_j_or_i_eq_k",   "abc", p_abcn_i_eq_j_or_i_eq_k),
     ("abcn_j_eq_k_or_i_eq_k",   "abc", p_abcn_j_eq_k_or_i_eq_k),
@@ -399,6 +399,98 @@ K3 = [
 POS_CAP = 8
 NEG_CAP = 12
 
+AUTHOR = "Chentian Wu"
+
+# Honest provenance. Citations reference Sipser, Introduction to the Theory of
+# Computation (3rd ed.). An exact Exercise/Example/Problem number is given only
+# where the language genuinely matches that item; otherwise we use a generic
+# "Formal language theory; Sipser-style CFG separation" source rather than
+# fabricate a number. Alphabets are adapted to {a,b}/{a,b,c} as noted.
+_SRC_GENERIC = "Formal language theory; Sipser-style CFG separation"
+
+METADATA = {
+    # ---- K1 ----
+    "anbn":              ("Sipser (3e) Sec. 2.1, the canonical CFL {a^n b^n} (cf. {0^n 1^n}, grammar S -> aSb | eps)", "{ a^n b^n | n >= 1 }"),
+    "anb2n":             ("Sipser (3e) Example 2.45 / Problem 2.55 (T-component T -> aTbb | abb)", "{ a^n b^(2n) | n >= 1 }"),
+    "a2nbn":             ("Variant of Sipser (3e) Example 2.45 (mirror of the {a^n b^(2n)} component)", "{ a^(2n) b^n | n >= 1 }"),
+    "anb3n":             (_SRC_GENERIC, "{ a^n b^(3n) | n >= 1 }"),
+    "a3nbn":             (_SRC_GENERIC, "{ a^(3n) b^n | n >= 1 }"),
+    "anbn1":             (_SRC_GENERIC, "{ a^n b^(n+1) | n >= 0 } over a* b*"),
+    "an1bn":             (_SRC_GENERIC, "{ a^(n+1) b^n | n >= 0 } over a* b*"),
+    "anbn2":             (_SRC_GENERIC, "{ a^n b^(n+2) | n >= 0 } over a* b*"),
+    "an2bn":             (_SRC_GENERIC, "{ a^(n+2) b^n | n >= 0 } over a* b*"),
+    "dyck1":             ("Sipser (3e) Example 2.3 (grammar G3: S -> aSb | SS | eps; balanced parentheses)", "Dyck language: balanced parentheses (a='(' , b=')')"),
+    "equal_ab":          ("Sipser (3e) Problem 2.28(b): equal numbers of a's and b's", "{ w | #a(w) = #b(w) }"),
+    "a_ge_b":            ("Sipser (3e) Problem 2.28(c): number of a's is at least the number of b's", "{ w | #a(w) >= #b(w) }"),
+    "b_ge_a":            ("Mirror of Sipser (3e) Problem 2.28(c)", "{ w | #b(w) >= #a(w) }"),
+    "a_twice_b":         ("Sipser (3e) Problem 2.21: twice as many a's as b's", "{ w | #a(w) = 2*#b(w) }"),
+    "b_twice_a":         ("Mirror of Sipser (3e) Problem 2.21", "{ w | #b(w) = 2*#a(w) }"),
+    "a_eq_b_plus_1":     (_SRC_GENERIC, "{ w | #a(w) = #b(w) + 1 }"),
+    "a_eq_b_plus_2":     (_SRC_GENERIC, "{ w | #a(w) = #b(w) + 2 }"),
+    "b_eq_a_plus_1":     (_SRC_GENERIC, "{ w | #b(w) = #a(w) + 1 }"),
+    "prefix_a_ge_b":     ("Sipser (3e) Problem 2.28(a): in every prefix, #a >= #b", "{ w | every prefix has #a >= #b }"),
+    "prefix_b_ge_a":     ("Mirror of Sipser (3e) Problem 2.28(a)", "{ w | every prefix has #b >= #a }"),
+    "palindrome_ab":     ("Sipser (3e) Exercise 2.4(e): palindromes w = w^R (adapted to {a,b})", "{ w | w = w^R }"),
+    "wwR_even_ab":       ("Sipser (3e) Problem 2.58: { w w^R } (even-length palindromes)", "{ w w^R | w in {a,b}* }"),
+    "palindrome_odd_ab": ("Variant of Sipser (3e) Exercise 2.4(d,e): odd-length palindromes", "{ w | w = w^R and |w| is odd }"),
+    "wcwR":              ("Center-marked palindrome (deterministic CFL); cf. Sipser (3e) Sec. 2.1", "{ u c u^R | u in {a,b}* }"),
+    "ancbn":             ("Center-marked {a^n c b^n}; cf. Sipser (3e) Sec. 2.1", "{ a^n c b^n | n >= 0 }"),
+    # ---- K2 ----
+    "three_as":          ("Sipser (3e) Exercise 2.4(a): at least three 1s (adapted: 1 -> a)", "{ w | #a(w) >= 3 }"),
+    "three_bs":          ("Mirror of Sipser (3e) Exercise 2.4(a)", "{ w | #b(w) >= 3 }"),
+    "four_as":           ("Variant of Sipser (3e) Exercise 2.4(a)", "{ w | #a(w) >= 4 }"),
+    "start_end_same":    ("Sipser (3e) Exercise 2.4(b): starts and ends with the same symbol", "{ w | w[0] = w[-1] }"),
+    "start_end_diff":    ("Complement variant of Sipser (3e) Exercise 2.4(b)", "{ w | |w| >= 2 and w[0] != w[-1] }"),
+    "starts_a":          (_SRC_GENERIC, "{ w | w starts with a }"),
+    "starts_b":          (_SRC_GENERIC, "{ w | w starts with b }"),
+    "ends_a":            (_SRC_GENERIC, "{ w | w ends with a }"),
+    "ends_b":            (_SRC_GENERIC, "{ w | w ends with b }"),
+    "odd_length":        ("Sipser (3e) Exercise 2.4(c): the length of w is odd", "{ w | |w| is odd }"),
+    "even_length":       ("Complement of Sipser (3e) Exercise 2.4(c)", "{ w | |w| is even, |w| >= 2 }"),
+    "odd_mid_a":         ("Sipser (3e) Exercise 2.4(d): odd length and middle symbol is 0 (adapted: 0 -> a)", "{ w | |w| odd and middle symbol = a }"),
+    "odd_mid_b":         ("Variant of Sipser (3e) Exercise 2.4(d) (middle symbol = b)", "{ w | |w| odd and middle symbol = b }"),
+    "contains_aa":       (_SRC_GENERIC, "{ w | w contains substring aa }"),
+    "contains_ab":       (_SRC_GENERIC, "{ w | w contains substring ab }"),
+    "contains_bb":       (_SRC_GENERIC, "{ w | w contains substring bb }"),
+    "contains_ba":       (_SRC_GENERIC, "{ w | w contains substring ba }"),
+    "wa_equal_ab":       ("Sipser (3e) Problem 2.54: { w a | w has equal numbers of a's and b's }", "{ w a | #a(w) = #b(w) }"),
+    "wb_equal_ab":       ("Mirror of Sipser (3e) Problem 2.54", "{ w b | #a(w) = #b(w) }"),
+    "anbn_plus":         (_SRC_GENERIC, "{ (a^n b^n)+ | one or more blocks, n >= 1 per block }"),
+    "an_gt_bm":          (_SRC_GENERIC, "{ a^i b^j | i > j } over a* b*"),
+    "an_lt_bm":          (_SRC_GENERIC, "{ a^i b^j | i < j } over a* b*"),
+    "an_ge_bm":          (_SRC_GENERIC, "{ a^i b^j | i >= j } over a* b*"),
+    "an_le_bm":          (_SRC_GENERIC, "{ a^i b^j | i <= j } over a* b*"),
+    "aplus_bplus":       (_SRC_GENERIC, "{ a^i b^j | i >= 1, j >= 1 }"),
+    # ---- K3 ----
+    "anbn_or_bnan":      ("Sipser (3e) Sec. 2.1 (Designing CFGs): the union {a^n b^n} U {b^n a^n} (cf. {0^n 1^n} U {1^n 0^n})", "{ a^n b^n } U { b^n a^n }"),
+    "anbn_or_anb2n":     ("Sipser (3e) Example 2.45 / Problem 2.55 (grammar R -> S | T, S -> aSb | ab, T -> aTbb | abb)", "{ a^n b^n } U { a^n b^(2n) }"),
+    "anbn_or_a2nbn":     ("Variant of Sipser (3e) Example 2.45", "{ a^n b^n } U { a^(2n) b^n }"),
+    "anbn_or_anb3n":     (_SRC_GENERIC, "{ a^n b^n } U { a^n b^(3n) }"),
+    "anbn_or_a3nbn":     (_SRC_GENERIC, "{ a^n b^n } U { a^(3n) b^n }"),
+    "anb2n_or_a2nbn":    (_SRC_GENERIC, "{ a^n b^(2n) } U { a^(2n) b^n }"),
+    "anbn_or_anbn1":     (_SRC_GENERIC, "{ a^n b^n } U { a^n b^(n+1) }"),
+    "anbn_or_an1bn":     (_SRC_GENERIC, "{ a^n b^n } U { a^(n+1) b^n }"),
+    "anbn1_or_an1bn":    (_SRC_GENERIC, "{ a^i b^j | |i - j| = 1 } over a* b*"),
+    "anbn_or_anbn2":     (_SRC_GENERIC, "{ a^n b^n } U { a^n b^(n+2) }"),
+    "equal_or_twice_a":  ("Union of Sipser (3e) Problem 2.28(b) and Problem 2.21", "{ w | #a = #b } U { w | #a = 2*#b }"),
+    "equal_or_twice_b":  ("Union of Sipser (3e) Problem 2.28(b) and (mirror of) Problem 2.21", "{ w | #a = #b } U { w | #b = 2*#a }"),
+    "palindrome_or_equal_ab": ("Union of Sipser (3e) Exercise 2.4(e) and Problem 2.28(b)", "{ w | w = w^R } U { w | #a = #b }"),
+    "palindrome_or_anbn":     ("Union of Sipser (3e) Exercise 2.4(e) and the canonical {a^n b^n}", "{ w | w = w^R } U { a^n b^n }"),
+    "equal_ab_starts_a":      ("Sipser (3e) Problem 2.28(b) with a prefix constraint", "{ w | #a = #b and w starts with a }"),
+    "equal_ab_ends_a":        ("Sipser (3e) Problem 2.28(b) with a suffix constraint", "{ w | #a = #b and w ends with a }"),
+    "equal_ab_starts_a_ends_b": ("Sipser (3e) Problem 2.28(b) with boundary constraints", "{ w | #a = #b, starts with a, ends with b }"),
+    "equal_ab_starts_b_ends_a": ("Sipser (3e) Problem 2.28(b) with boundary constraints", "{ w | #a = #b, starts with b, ends with a }"),
+    "not_ww":            ("Complement of { w w } (a classic context-free language); cf. Sipser (3e) Ch. 2", "{ w | w is not of the form xx for any x }"),
+    "abcn_i_eq_j_or_j_eq_k": ("Sipser (3e) Exercise 2.9: A = { a^i b^j c^k | i = j or j = k }", "{ a^i b^j c^k | i = j or j = k }"),
+    "abcn_i_eq_j_or_i_eq_k": ("Sipser (3e) Problem 2.57: B = { a^i b^j c^k | i = j or i = k }", "{ a^i b^j c^k | i = j or i = k }"),
+    "abcn_j_eq_k_or_i_eq_k": ("Variant of Sipser (3e) Exercise 2.9 / Problem 2.57", "{ a^i b^j c^k | j = k or i = k }"),
+    "abcn_any_pair":     ("Variant of Sipser (3e) Exercise 2.9 / Problem 2.57 (any pair equal)", "{ a^i b^j c^k | i = j or j = k or i = k }"),
+}
+
+
+def meta_for(name):
+    return METADATA.get(name, (_SRC_GENERIC, name))
+
 def enumerate_up_to(alphabet, n):
     out = []
     for L in range(1, n + 1):
@@ -407,7 +499,7 @@ def enumerate_up_to(alphabet, n):
     return out
 
 
-def gen_one(k, name, alphabet, pred, out_dir):
+def gen_one(k, name, alphabet, pred, out_path):
     # length budgets
     if len(set(alphabet)) == 2:
         max_total = 7   # 2 + 4 + ... + 128 ≈ 254 strings
@@ -428,28 +520,36 @@ def gen_one(k, name, alphabet, pred, out_dir):
         raise ValueError(f"{name}: no negatives found")
 
     alph = sorted(set(alphabet))
-    text = emit(k, pos, neg, alph, source=f"sipser-derived: {name}")
-    out_path = out_dir / f"{name}.sl"
+    info_source, description = meta_for(name)
+    text = emit(
+        k, pos, neg, alph,
+        source=f"sipser-derived: {name}",
+        author=AUTHOR,
+        info_source=info_source,
+        description=description,
+    )
     out_path.write_text(text)
     return len(pos), len(neg)
 
 
 def main():
+    out_dir = SIPSER_DIR
+    out_dir.mkdir(parents=True, exist_ok=True)
     summary = []
+    idx = 0
     for k, langs in [(1, K1), (2, K2), (3, K3)]:
-        out_dir = SIPSER_DIR / f"k{k}"
-        out_dir.mkdir(parents=True, exist_ok=True)
         for name, alpha, pred in langs:
+            idx += 1
+            out_path = out_dir / f"{idx:04d}.sl"
             try:
-                np_, nn = gen_one(k, name, alpha, pred, out_dir)
-                summary.append((k, name, np_, nn, len(set(alpha))))
+                np_, nn = gen_one(k, name, alpha, pred, out_path)
+                summary.append((out_path.name, k, name, np_, nn, len(set(alpha))))
             except Exception as e:
-                print(f"FAIL k{k}/{name}: {e}", file=sys.stderr)
+                print(f"FAIL {out_path.name} (k{k}/{name}): {e}", file=sys.stderr)
                 raise
-        assert len(langs) == 25, f"k{k} has {len(langs)} languages, expected 25"
 
-    for k, name, np_, nn, asize in summary:
-        print(f"k{k}/{name}.sl  pos={np_:>2}  neg={nn:>2}  |Σ|={asize}")
+    for fname, k, name, np_, nn, asize in summary:
+        print(f"{fname}  k={k}  {name:<28} pos={np_:>2}  neg={nn:>2}  |Σ|={asize}")
     print(f"\ntotal: {len(summary)} files")
 
 

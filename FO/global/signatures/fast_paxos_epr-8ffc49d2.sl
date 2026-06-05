@@ -1,5 +1,5 @@
 (provide c_quorum f_quorum node round value none any_msg c_member decision f_member fast le left_rnd one_a one_b one_b_max_vote proposal vote)
-(set-logic ALL)
+
 (declare-sort c_quorum 0)
 (declare-sort f_quorum 0)
 (declare-sort node 0)

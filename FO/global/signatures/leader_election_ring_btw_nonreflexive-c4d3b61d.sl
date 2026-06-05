@@ -1,5 +1,5 @@
 (provide id node idn le leader pending ring.btw)
-(set-logic ALL)
+
 (declare-sort id 0)
 (declare-sort node 0)
 (declare-fun idn (node) id)

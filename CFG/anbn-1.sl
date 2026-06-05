@@ -4,7 +4,7 @@
 ; Meta-grammar: one nonterminal S, terminals {a, b}, concatenation via cfg.++.
 ; Stripped down from facet-oopsla23/cfg/no1.sl (which carries S and T).
 
-(set-logic ALL)
+
 
 (declare-term-types
  ((CFG 0) (Rhs 0) (Rules 0))

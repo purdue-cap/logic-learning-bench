@@ -1,5 +1,5 @@
-(provide U Ctr CTL CTL.Asp CTL.Sem initial R bound next.depth c m t dead ap.c ap.m ap.t ap.dead nap.c nap.m nap.t nap.dead ctl.top ctl.EX ctl.EG ctl.or ctl.EU)
-(set-logic ALL)
+(provide U Ctr CTL CTL.Asp CTL.Sem initial R bound next.depth c m t dead ap.c ap.m ap.t ap.dead nap.c nap.m nap.t nap.dead ctl.top ctl.EX ctl.EG ctl.or ctl.EU czero cbot)
+
 
 (declare-sort U 0)
 (declare-sort Ctr 0)
@@ -11,6 +11,8 @@
 (declare-fun bound (U) Ctr)
 (declare-fun next.depth (U Ctr) Ctr)
 (declare-fun initial () U)
+(declare-fun czero () Ctr)
+(declare-fun cbot () Ctr)
 
 (declare-term-types
  ((CTL 0))
@@ -51,15 +53,15 @@
              (CTL.Sem x (CTL.Asp (model asp) next (depth asp))))))
      ((ctl.EG x)
       (and (CTL.Sem x asp)
-           (or (= (depth asp) $0)
-               (= (depth asp) bot)
+           (or (= (depth asp) czero)
+               (= (depth asp) cbot)
                (exists ((next (univ (U (model asp)))))
                  (and (R (state asp) next)
                       (CTL.Sem phi (CTL.Asp (model asp) next (next.depth next (depth asp)))))))))
      ((ctl.EU x y)
       (or (CTL.Sem y asp)
-          (and (not (= (depth asp) $0))
-               (not (= (depth asp) bot))
+          (and (not (= (depth asp) czero))
+               (not (= (depth asp) cbot))
                (CTL.Sem x asp)
                (exists ((next (univ (U (model asp)))))
                  (and (R (state asp) next)

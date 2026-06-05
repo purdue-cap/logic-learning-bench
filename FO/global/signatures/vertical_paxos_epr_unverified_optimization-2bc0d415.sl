@@ -1,5 +1,5 @@
 (provide config node quorum round value master_minrel none quorum_of_round configure_round_msg decision irrelevant_msg joined_round le left_rnd member minrelof one_a one_b_max_vote proposal quorumin vote)
-(set-logic ALL)
+
 (declare-sort config 0)
 (declare-sort node 0)
 (declare-sort quorum 0)

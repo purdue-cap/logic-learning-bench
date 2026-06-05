@@ -2,6 +2,8 @@
 (define-model peterson_m5
   (define-univ U (st_q0 st_q1 st_q2 st_q3 st_q4 st_q5 st_q6 st_q7 st_q8 st_q9 st_q10 st_q11 st_q12 st_q13 st_q14 st_q15 st_q16 st_q17 st_q18 st_q19 st_q20 st_q21 st_q22 st_q23 st_q24 st_q25 st_q26 st_q27 st_q28 st_q29 st_q30 st_q31 st_q32 st_q33 st_q34 st_q35 st_q36 st_q37 st_q38 st_q39 st_q40 st_q41 st_q42 st_q43 st_q44 st_q45 st_q46 st_q47 st_q48 st_q49 st_q50 st_q51))
   (define-univ Ctr ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28 $29 $30 $31 $32 $33 $34 $35 $36 $37 $38 $39 $40 $41 $42 $43 $44 $45 $46 $47 $48 $49 $50 $51 bot))
+  (interp-fun czero ($0))
+  (interp-fun cbot (bot))
   (interp-fun initial (st_q0))
   (interp-fun c (match (
     ((st_q5) true)

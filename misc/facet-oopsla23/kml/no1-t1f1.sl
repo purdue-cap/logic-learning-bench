@@ -1,5 +1,5 @@
 (require "../theories/main.sl")
-(set-logic ALL) ;; propositional modal logic
+ ;; propositional modal logic
 
 
 ;; in PML, define-model requires users to define

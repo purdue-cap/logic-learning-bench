@@ -27,7 +27,7 @@ ltl.and
 ltl.or
 ltl.=>
 ltl.U)
-(set-logic ALL)
+
 
 (declare-sort Pos 0)
 (declare-fun next (Pos) Pos)

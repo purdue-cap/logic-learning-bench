@@ -46,7 +46,8 @@ def model_block(name, word, alphabet):
     return "\n".join(lines)
 
 
-def emit(k: int, pos, neg, alphabet, source: str) -> str:
+def emit(k: int, pos, neg, alphabet, source: str,
+         author: str = None, info_source: str = None, description: str = None) -> str:
     rhs_terms = " ".join(f"({a})" for a in alphabet) + " (cfg.++ Rhs Rhs) " + " ".join(
         f"(cfg.rhs.S{i})" for i in range(k)
     )
@@ -61,8 +62,18 @@ def emit(k: int, pos, neg, alphabet, source: str) -> str:
     out.append(f"; Generated from {source}")
     out.append(f"; K={k} nonterminals (S0..S{k-1}); S0 is the start symbol")
     out.append(f"; {len(pos)} positives + {len(neg)} negatives = {len(pos)+len(neg)} constraints")
+
+    def _esc(s):
+        return s.replace("\\", "\\\\").replace('"', '\\"')
+
+    if author is not None:
+        out.append(f'(set-info :author "{_esc(author)}")')
+    if info_source is not None:
+        out.append(f'(set-info :source "{_esc(info_source)}")')
+    if description is not None:
+        out.append(f'(set-info :description "{_esc(description)}")')
     out.append("")
-    out.append("(set-logic ALL)")
+    out.append("")
     out.append("")
     out.append("(declare-term-types")
     out.append(" ((CFG 0) (Rhs 0) (Rules 0))")
@@ -148,7 +159,14 @@ def emit(k: int, pos, neg, alphabet, source: str) -> str:
 
     # Rules.Sem: per-Si dispatch.
     # For each (cfg.lhs.Si x y) node we must handle:
-    #   - mode = reset.Si:  propagate up via CFG.Sem(parent, asp)
+    #   - mode = reset.Sj (ANY j): propagate up via CFG.Sem(parent, asp).
+    #       This is the paper's reset(z) `_` rule (Krogmeier & Madhusudan 2023,
+    #       Fig 7): at any non-top node, for any z, climb up in reset(z)
+    #       regardless of the node's nonterminal label. Using only reset.Si
+    #       here kills any reset.Sj (j != i) walk the moment it crosses a
+    #       cfg.lhs.Si node with a different label, so the rules spine cannot
+    #       mix nonterminals and every multi-NT solution is wrongly rejected.
+    #       Rhs.Sem already does this correctly via all_reset_or.
     #   - mode = find.Si:   try x as a base-mode Rhs, OR recurse on tail in find.Si
     #   - mode = find.Sj (j != i): SKIP this production, recurse on tail in find.Sj
     # The skip clauses are required when K >= 2: the synthesized rules list
@@ -160,7 +178,7 @@ def emit(k: int, pos, neg, alphabet, source: str) -> str:
     for i in range(k):
         out.append(f"     ((cfg.lhs.S{i} x y)")
         out.append("      (or")
-        out.append(f"          (and (= (mode asp) reset.S{i})")
+        out.append(f"          (and {all_reset_or}")
         out.append("               (CFG.Sem (parent n) asp))")
         out.append(f"          (and (= (mode asp) find.S{i})")
         out.append("               (or (Rhs.Sem x (CFG.Asp (model asp) (i asp) (j asp) base))")

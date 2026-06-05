@@ -1,5 +1,5 @@
 (provide abp.ack_msg_t abp.data_msg_t abp.index_t abp.value abp.bot abp.index.zero abp.receiver_i abp.sender_gen_i abp.sender_i abp.tp1.sk0 abp.d abp.receiver_array abp.sender_array abp.abit abp.ack_msg.le abp.ack_received abp.ack_sent abp.data_msg.le abp.data_received abp.data_sent abp.dbit abp.index.le abp.receiver_bit abp.receiver_scheduled abp.sender_bit abp.sender_scheduled)
-(set-logic ALL)
+
 (declare-sort abp.ack_msg_t 0)
 (declare-sort abp.data_msg_t 0)
 (declare-sort abp.index_t 0)

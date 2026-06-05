@@ -153,7 +153,7 @@ def emit(n_args, constants, constraints, source_tag=None):
     out.append(f"; {n_args} args, {len(constants)} consts, {len(constraints)} constraints")
     if source_tag is not None:
         out.append(f'(set-info :source "{source_tag}")')
-    out.append("(set-logic ALL)")
+    out.append("")
     out.append("")
 
     # ---- term types --------------------------------------------------------

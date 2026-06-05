@@ -110,6 +110,11 @@ def flatten_instances():
 def main():
     copy_kst()
     move_shared()
+    # Route Ctr sentinels ($0/bot) through declared constants (czero/cbot) so
+    # semantic bodies never name finite-model elements directly.
+    from migrate_ctl_sentinels import main as migrate_sentinels
+
+    migrate_sentinels()
     flatten_instances()
 
 

@@ -1,4 +1,4 @@
-(set-logic ALL)
+
 
 (declare-term-types  
  ((CFG 0) (Rhs 0) (Rules 0))

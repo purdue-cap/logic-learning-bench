@@ -1,5 +1,5 @@
 (provide node grant_msg holds_lock lock_msg server_holds_lock unlock_msg)
-(set-logic ALL)
+
 (declare-sort node 0)
 (declare-fun grant_msg (node) Bool)
 (declare-fun holds_lock (node) Bool)

@@ -1,5 +1,5 @@
 (provide node quorum_1 quorum_2 round value none decision le left_rnd member_1 member_2 one_a one_b one_b_max_vote proposal vote)
-(set-logic ALL)
+
 (declare-sort node 0)
 (declare-sort quorum_1 0)
 (declare-sort quorum_2 0)

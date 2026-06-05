@@ -5,7 +5,7 @@
 ; The first benchmark anbn-1 admits the trivial S -> ab.  This one adds aabb
 ; positive, which the trivial answer cannot generate, forcing recursion.
 
-(set-logic ALL)
+
 
 (declare-term-types
  ((CFG 0) (Rhs 0) (Rules 0))

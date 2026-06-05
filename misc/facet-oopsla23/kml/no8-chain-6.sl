@@ -1,7 +1,7 @@
 ;; ========== BENCHMARK 1: Chain Structures (6 models) ==========
 ;; Testing linear chain structures with different lengths and properties
 (require "../theories/main.sl")
-(set-logic ALL)
+
 
 
 ;; Chain1: a->v->c->a->v (length 5)

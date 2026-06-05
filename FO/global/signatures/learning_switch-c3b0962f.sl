@@ -1,5 +1,5 @@
 (provide node packet dst src link pending route.dom route.tc)
-(set-logic ALL)
+
 (declare-sort node 0)
 (declare-sort packet 0)
 (declare-fun dst (packet) node)

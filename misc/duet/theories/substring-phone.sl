@@ -1,6 +1,6 @@
 (provide Pos Chr StrProg ExAsp CharAsp StrProg.Len StrProg.Char StrProg.OutEq in.chr out.chr
 slice.0.2 slice.0.3 slice.0.4 slice.1.3)
-(set-logic ALL)
+
 
 (declare-sort Pos 0)
 (declare-sort Chr 0)

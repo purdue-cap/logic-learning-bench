@@ -11,7 +11,7 @@
 ; immediate parent being cfg.top.S).  The disjunction means whichever sort the
 ; parent actually has, the appropriate rule fires.
 
-(set-logic ALL)
+
 
 (declare-term-types
  ((CFG 0) (Rhs 0) (Rules 0))

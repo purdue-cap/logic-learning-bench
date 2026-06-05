@@ -1,5 +1,5 @@
 (provide inst node quorum round value votemap none stop maxr maxv active decision inst_le joined_round le left_round member one_a one_b_msg proposal vote)
-(set-logic ALL)
+
 (declare-sort inst 0)
 (declare-sort node 0)
 (declare-sort quorum 0)

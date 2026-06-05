@@ -1,5 +1,5 @@
 (provide node quorum_a quorum_b rb.tp_correctness.n0 rb.tp_relay.n1 rb.tp_relay.n2 member_a member_b member_fa member_fc member_fi member_fs rb.accept rb.correct rb.d rb.obedient rb.rcv_init rb.rcv_msg rb.sent_msg rb.sent_msg_proj rb.symmetric)
-(set-logic ALL)
+
 (declare-sort node 0)
 (declare-sort quorum_a 0)
 (declare-sort quorum_b 0)

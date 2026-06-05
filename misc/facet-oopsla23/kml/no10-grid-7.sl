@@ -1,7 +1,7 @@
 ;; ========== BENCHMARK 3: Grid Structures (10 models) ==========
 ;; Testing 2D grid-like structures with different connectivity patterns
 (require "../theories/main.sl")
-(set-logic ALL)
+
 
 
 ;; Grid1: 3x3 grid with 4-connectivity

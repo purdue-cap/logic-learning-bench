@@ -1,5 +1,5 @@
 (provide node quorum_a quorum_b quorum_c value dec done input member_a member_b member_c member_f rcv_msg rcv_msg_proj sent_msg sent_msg_proj und_cons und_cons_dec)
-(set-logic ALL)
+
 (declare-sort node 0)
 (declare-sort quorum_a 0)
 (declare-sort quorum_b 0)

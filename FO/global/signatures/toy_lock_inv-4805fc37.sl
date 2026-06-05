@@ -1,5 +1,5 @@
 (provide epoch node zero ep held le locked transfer)
-(set-logic ALL)
+
 (declare-sort epoch 0)
 (declare-sort node 0)
 (declare-fun zero () epoch)

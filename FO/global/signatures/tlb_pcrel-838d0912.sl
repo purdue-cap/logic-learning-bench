@@ -1,5 +1,5 @@
 (provide tlb.pageentry tlb.pmap tlb.processor tlb.tp1.sk0 tlb.tp1.sk1 tlb.tp1.sk2 tlb.pentry tlb.tlb tlb.userpmap tlb.writepmap tlb.actionlock tlb.actionneeded tlb.active tlb.currentcpu tlb.error tlb.interrupt tlb.pc_b1 tlb.pc_i1 tlb.pc_i11 tlb.pc_i12 tlb.pc_i14 tlb.pc_i15 tlb.pc_i2 tlb.pc_i3 tlb.pc_i4 tlb.pc_i5 tlb.pc_i6 tlb.pc_i7 tlb.pc_i8 tlb.pc_i9 tlb.pc_m2 tlb.pc_m3 tlb.pc_m5 tlb.pc_r1 tlb.pc_r2 tlb.pc_r3 tlb.pc_r5 tlb.pc_r6 tlb.pc_r7 tlb.pc_r8 tlb.plock tlb.scheduled tlb.todo)
-(set-logic ALL)
+
 (declare-sort tlb.pageentry 0)
 (declare-sort tlb.pmap 0)
 (declare-sort tlb.processor 0)

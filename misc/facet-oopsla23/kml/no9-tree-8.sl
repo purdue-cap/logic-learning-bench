@@ -1,7 +1,7 @@
 ;; ========== BENCHMARK 2: Tree Structures (8 models) ==========
 ;; Testing binary tree and more complex tree structures
 (require "../theories/main.sl")
-(set-logic ALL)
+
 
 ;; Tree1: Complete binary tree depth 3
 (define-model Tree1

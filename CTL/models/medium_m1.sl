@@ -2,6 +2,8 @@
 (define-model medium_m1
   (define-univ U (st_q0 st_q1 st_q2 st_q3 st_q4 st_q5 st_q6 st_q7 st_q8 st_q9 st_q10 st_q11 st_q12 st_q13 st_q14 st_q15 st_q16 st_q17 st_q18 st_q19 st_q20 st_q21 st_q22 st_q23 st_q24 st_q25 st_q26 st_state_27 st_state_28 st_state_29 st_state_30 st_state_31 st_state_32))
   (define-univ Ctr ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28 $29 $30 $31 $32 bot))
+  (interp-fun czero ($0))
+  (interp-fun cbot (bot))
   (interp-fun initial (st_q0))
   (interp-fun a (match (
     ((st_q0) true)
