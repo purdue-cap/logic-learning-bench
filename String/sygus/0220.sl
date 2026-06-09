@@ -1,13 +1,14 @@
 
     (set-logic SLIA)
     (synth-fun f ((arg0 String)) String 
+        ((Start String) (ntString String) (ntInt Int) (ntBool Bool))
         (
             (Start String (ntString)) 
             (ntString String ("0." "0.0" "0.06" "0.07" "0.01" "0.02" "-0." "-0.0" "-0.01" "0.04" "0.05" "-0.05" "0.00" "0.09" "-0.09" "0.03" "0.08" arg0
                 (str.++ ntString ntString) 
                 (str.replace ntString ntString ntString) 
                 (str.at ntString ntInt)
-                (int.to.str ntInt)
+                (str.from_int ntInt)
                 (ite ntBool ntString ntString)
                 (str.substr ntString ntInt ntInt)
             )) 
@@ -16,7 +17,7 @@
                 (+ ntInt ntInt)
                 (- ntInt ntInt)
                 (str.len ntString)
-                (str.to.int ntString)
+                (str.to_int ntString)
                 (ite ntBool ntInt ntInt)
                 (str.indexof ntString ntString ntInt)
             )) 

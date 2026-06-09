@@ -1,13 +1,14 @@
 
     (set-logic SLIA)
     (synth-fun f ((arg0 String) (arg1 String) (arg2 String) (arg3 String) (arg4 String)) String 
+        ((Start String) (ntString String) (ntInt Int) (ntBool Bool))
         (
             (Start String (ntString)) 
             (ntString String ("." "22ABDDK_3388.XY" "/" ":" "9/12/2002" "8.111111" "chicago" "-" "2002-09-12" "2002-09-12 0" arg0 arg1 arg2 arg3 arg4
                 (str.++ ntString ntString) 
                 (str.replace ntString ntString ntString) 
                 (str.at ntString ntInt)
-                (int.to.str ntInt)
+                (str.from_int ntInt)
                 (ite ntBool ntString ntString)
                 (str.substr ntString ntInt ntInt)
             )) 
@@ -16,7 +17,7 @@
                 (+ ntInt ntInt)
                 (- ntInt ntInt)
                 (str.len ntString)
-                (str.to.int ntString)
+                (str.to_int ntString)
                 (ite ntBool ntInt ntInt)
                 (str.indexof ntString ntString ntInt)
             )) 
