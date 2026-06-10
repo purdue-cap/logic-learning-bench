@@ -1,114 +1,35 @@
-; File: examples/fol/paxos_epr.pyv
+; File: examples/fol/lockserv.pyv
 
 ; Sig
 (sort node)
-(sort quorum)
-(sort round)
-(sort value)
-(constant none round)
-(relation decision round value)
-(relation le round round)
-(relation left_round node round)
-(relation member node quorum)
-(relation one_a round)
-(relation one_b node round)
-(relation proposal round value)
-(relation vote node round value)
+(relation grant_msg node)
+(relation holds_lock node)
+(relation lock_msg node)
+(relation server_holds_lock )
+(relation unlock_msg node)
 ; End sig
 
 ; Axioms
-(axiom (forall X round (le X X)))
-(axiom (forall X round (forall Y round (forall Z round (or (not (and (le X Y) (le Y Z))) (le X Z))))))
-(axiom (forall X round (forall Y round (or (not (and (le X Y) (le Y X))) (= X Y)))))
-(axiom (forall X round (forall Y round (or (le X Y) (le Y X)))))
-(axiom (forall Q1 quorum (forall Q2 quorum (exists N node (and (member N Q1) (member N Q2))))))
 
-; Conjecture c5
-(conjecture (forall R1 round (forall R2 round (forall V1 value (forall V2 value (forall Q quorum (or (not (and (not (le R2 R1)) (proposal R2 V2) (not (= V1 V2)))) (exists N node (and (member N Q) (left_round N R1) (not (vote N R1 V1)))))))))))
+; Conjecture mutex
+(conjecture (forall N1 node (forall N2 node (or (not (and (holds_lock N1) (holds_lock N2))) (= N1 N2)))))
+
+
 
 (model P0
-  ((@node_0 node) (@quorum_0 quorum) (@round_0 round) (@uc_value_0 value))
-  (le @round_0 @round_0)
-  (left_rnd @node_0 @round_0)
-  (member @node_0 @quorum_0)
-  (one_b @node_0 @round_0)
-  (= none @round_0)
-)
-(model N1
-  ((@node_0 node) (@quorum_0 quorum) (@round_0 round) (@round_1 round) (@uc_value_0 value))
-  (le @round_0 @round_0)
-  (le @round_1 @round_0)
-  (le @round_1 @round_1)
-  (member @node_0 @quorum_0)
-  (one_b @node_0 @round_0)
-  (one_b @node_0 @round_1)
-  (= none @round_0)
-)
-(model N2
-  ((@node_0 node) (@quorum_0 quorum) (@round_0 round) (@round_1 round) (@uc_value_0 value))
-  (le @round_0 @round_0)
-  (le @round_1 @round_0)
-  (le @round_1 @round_1)
-  (left_rnd @node_0 @round_0)
-  (member @node_0 @quorum_0)
-  (one_b @node_0 @round_0)
-  (one_b @node_0 @round_1)
-  (= none @round_0)
-)
-(model P3
-  ((@node_0 node) (@quorum_0 quorum) (@round_0 round) (@round_1 round) (@uc_value_0 value))
-  (le @round_0 @round_0)
-  (le @round_0 @round_1)
-  (le @round_1 @round_1)
-  (left_rnd @node_0 @round_0)
-  (left_rnd @node_0 @round_1)
-  (member @node_0 @quorum_0)
-  (one_b @node_0 @round_0)
-  (one_b @node_0 @round_1)
-  (= none @round_1)
-)
-(model N4
-  ((@node_0 node) (@node_1 node) (@quorum_0 quorum) (@round_0 round) (@round_1 round) (@uc_value_0 value))
-  (le @round_0 @round_0)
-  (le @round_1 @round_0)
-  (le @round_1 @round_1)
-  (left_rnd @node_0 @round_0)
-  (left_rnd @node_1 @round_0)
-  (left_rnd @node_1 @round_1)
-  (member @node_0 @quorum_0)
-  (member @node_1 @quorum_0)
-  (one_b @node_0 @round_0)
-  (one_b @node_0 @round_1)
-  (one_b @node_1 @round_0)
-  (one_b @node_1 @round_1)
-  (= none @round_0)
-)
-(model P5
-  ((@node_0 node) (@quorum_0 quorum) (@round_0 round) (@uc_value_0 value))
-  (le @round_0 @round_0)
-  (member @node_0 @quorum_0)
-  (one_b @node_0 @round_0)
-  (= none @round_0)
-)
-(model N6
-  ((@node_0 node) (@quorum_0 quorum) (@round_0 round) (@round_1 round) (@uc_value_0 value))
-  (le @round_0 @round_0)
-  (le @round_1 @round_0)
-  (le @round_1 @round_1)
-  (left_rnd @node_0 @round_0)
-  (member @node_0 @quorum_0)
-  (one_b @node_0 @round_0)
-  (one_b @node_0 @round_1)
-  (= none @round_1)
-)
-(model P7
-  ((@node_0 node) (@quorum_0 quorum) (@round_0 round) (@round_1 round) (@uc_value_0 value))
-  (le @round_0 @round_0)
-  (le @round_0 @round_1)
-  (le @round_1 @round_1)
-  (member @node_0 @quorum_0)
-  (one_b @node_0 @round_0)
-  (= none @round_0)
+  ((@uc_node_0 node))
+  (holds_lock @uc_node_0)
 )
 
-(constraint P0 (not N1) (not N2) P3 (not N4) P5 (not N6) P7)
+(model N0
+  ((@uc_node_0 node) (@uc_node_1 node))
+  (holds_lock @uc_node_0)
+  (holds_lock @uc_node_1)
+)
+
+(model P1
+  ((@uc_node_0 node) (@uc_node_1 node))
+
+)
+
+(constraint P0 P1 (not N0))

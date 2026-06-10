@@ -1,94 +1,94 @@
-; File: good-ivy-examples/fol-thresholds/bosco_oded_7t_onestep.ivy
+; File: good-ivy-examples/oopsla17-paxos/fast_paxos_epr.ivy
 
 ; Sig
+(sort c_quorum)
+(sort f_quorum)
 (sort node)
-(sort quorum_a)
-(sort quorum_b)
-(sort quorum_c)
+(sort round)
 (sort value)
-(relation dec node value)
-(relation done node)
-(relation input node value)
-(relation member_a node quorum_a)
-(relation member_b node quorum_b)
-(relation member_c node quorum_c)
-(relation member_f node)
-(relation rcv_msg node node value)
-(relation rcv_msg_proj node node)
-(relation sent_msg node node value)
-(relation sent_msg_proj node node)
-(relation und_cons node value)
-(relation und_cons_dec value)
+(relation any_msg round)
+(relation c_member node c_quorum)
+(relation decision node round value)
+(relation f_member node f_quorum)
+(relation fast round)
+(relation le round round)
+(relation left_rnd node round)
+(constant none round)
+(relation one_a round)
+(relation one_b node round)
+(relation one_b_max_vote node round round value)
+(relation proposal round value)
+(relation vote node round value)
 ; End sig
 
 ; Axiom a
-(axiom (forall B quorum_b (forall A quorum_a (exists C quorum_c (forall N node (or (not (member_c N C)) (and (and (member_a N A) (member_b N B)) (not (member_f N)))))))))
+(axiom (forall X round (le X X)))
 ; Axiom a0
-(axiom (forall C quorum_c (forall B quorum_b (exists N node (and (and (member_b N B) (member_c N C)) (not (member_f N)))))))
+(axiom (forall X round (forall Z round (forall Y round (or (not (and (le X Y) (le Y Z))) (le X Z))))))
 ; Axiom a1
-(axiom (forall A quorum_a (exists B quorum_b (forall N node (or (not (member_b N B)) (and (member_a N A) (not (member_f N))))))))
+(axiom (forall X round (forall Y round (or (not (and (le X Y) (le Y X))) (= X Y)))))
 ; Axiom a2
-(axiom (forall N node (forall V1 value (forall V2 value (or (not (and (and (not (member_f N)) (input N V1)) (input N V2))) (= V1 V2))))))
+(axiom (forall X round (forall Y round (or (le X Y) (le Y X)))))
+; Axiom a3
+(axiom (forall Q1 c_quorum (forall Q2 c_quorum (exists N node (and (c_member N Q1) (c_member N Q2))))))
+; Axiom a4
+(axiom (forall Q1 c_quorum (forall Q3 f_quorum (forall Q2 f_quorum (exists N node (and (and (c_member N Q1) (f_member N Q2)) (f_member N Q3)))))))
 
 
-; Conjecture c3
-(conjecture (forall V value (forall N1 node (forall N2 node (or (not (not (member_f N1))) (or (and (sent_msg N1 N2 V) (input N1 V)) (and (not (sent_msg N1 N2 V)) (not (input N1 V)))))))))
+; Conjecture c6
+(conjecture (forall R round (forall V value (not (and (any_msg R) (proposal R V))))))
+
+
 
 (model P0
-  ((@node_0 node) (@quorum_a_0 quorum_a) (@quorum_b_0 quorum_b) (@quorum_c_0 quorum_c) (@value_0 value))
-  (input @node_0 @value_0)
-  (member_a @node_0 @quorum_a_0)
-  (member_b @node_0 @quorum_b_0)
-  (member_c @node_0 @quorum_c_0)
-  (sent_msg @node_0 @node_0 @value_0)
-)
-(model N1
-  ((@node_0 node) (@quorum_a_0 quorum_a) (@quorum_b_0 quorum_b) (@quorum_c_0 quorum_c) (@value_0 value))
-  (input @node_0 @value_0)
-  (member_a @node_0 @quorum_a_0)
-  (member_b @node_0 @quorum_b_0)
-  (member_c @node_0 @quorum_c_0)
-)
-(model N2
-  ((@node_0 node) (@quorum_a_0 quorum_a) (@quorum_b_0 quorum_b) (@quorum_c_0 quorum_c) (@value_0 value))
-  (member_a @node_0 @quorum_a_0)
-  (member_b @node_0 @quorum_b_0)
-  (member_c @node_0 @quorum_c_0)
-  (sent_msg @node_0 @node_0 @value_0)
-)
-(model N3
-  ((@node_0 node) (@node_1 node) (@quorum_a_0 quorum_a) (@quorum_b_0 quorum_b) (@quorum_c_0 quorum_c) (@value_0 value))
-  (input @node_0 @value_0)
-  (input @node_1 @value_0)
-  (member_a @node_0 @quorum_a_0)
-  (member_a @node_1 @quorum_a_0)
-  (member_b @node_0 @quorum_b_0)
-  (member_b @node_1 @quorum_b_0)
-  (member_c @node_0 @quorum_c_0)
-  (member_c @node_1 @quorum_c_0)
-  (sent_msg @node_0 @node_0 @value_0)
-)
-(model N4
-  ((@node_0 node) (@quorum_a_0 quorum_a) (@quorum_b_0 quorum_b) (@quorum_c_0 quorum_c) (@value_0 value) (@value_1 value))
-  (input @node_0 @value_1)
-  (member_a @node_0 @quorum_a_0)
-  (member_b @node_0 @quorum_b_0)
-  (member_c @node_0 @quorum_c_0)
-  (sent_msg @node_0 @node_0 @value_0)
-  (sent_msg @node_0 @node_0 @value_1)
-)
-(model N5
-  ((@node_0 node) (@node_1 node) (@quorum_a_0 quorum_a) (@quorum_b_0 quorum_b) (@quorum_c_0 quorum_c) (@value_0 value))
-  (input @node_0 @value_0)
-  (input @node_1 @value_0)
-  (member_a @node_0 @quorum_a_0)
-  (member_a @node_1 @quorum_a_0)
-  (member_b @node_0 @quorum_b_0)
-  (member_b @node_1 @quorum_b_0)
-  (member_c @node_0 @quorum_c_0)
-  (member_c @node_1 @quorum_c_0)
-  (sent_msg @node_0 @node_0 @value_0)
-  (sent_msg @node_1 @node_1 @value_0)
+  ((@uc_c_quorum_0 c_quorum) (@uc_value_0 value) (@uc_node_0 node) (@uc_round_0 round) (@uc_f_quorum_0 f_quorum))
+  (= none @uc_round_0)
+  (c_member @uc_node_0 @uc_c_quorum_0)
+  (f_member @uc_node_0 @uc_f_quorum_0)
+  (le @uc_round_0 @uc_round_0)
+  (proposal @uc_round_0 @uc_value_0)
 )
 
-(constraint P0 (not N1) (not N2) (not N3) (not N4) (not N5))
+(model N0
+  ((@uc_c_quorum_0 c_quorum) (@uc_value_0 value) (@uc_node_0 node) (@uc_round_0 round) (@uc_round_1 round) (@uc_f_quorum_0 f_quorum))
+  (= none @uc_round_0)
+  (any_msg @uc_round_1)
+  (c_member @uc_node_0 @uc_c_quorum_0)
+  (f_member @uc_node_0 @uc_f_quorum_0)
+  (le @uc_round_0 @uc_round_0)
+  (le @uc_round_1 @uc_round_0)
+  (le @uc_round_1 @uc_round_1)
+  (proposal @uc_round_0 @uc_value_0)
+  (proposal @uc_round_1 @uc_value_0)
+)
+
+(model P1
+  ((@uc_c_quorum_0 c_quorum) (@uc_value_0 value) (@uc_node_0 node) (@uc_round_0 round) (@uc_f_quorum_0 f_quorum))
+  (= none @uc_round_0)
+  (any_msg @uc_round_0)
+  (c_member @uc_node_0 @uc_c_quorum_0)
+  (f_member @uc_node_0 @uc_f_quorum_0)
+  (le @uc_round_0 @uc_round_0)
+)
+
+(model N1
+  ((@uc_c_quorum_0 c_quorum) (@uc_value_0 value) (@uc_node_0 node) (@uc_round_0 round) (@uc_f_quorum_0 f_quorum))
+  (= none @uc_round_0)
+  (any_msg @uc_round_0)
+  (c_member @uc_node_0 @uc_c_quorum_0)
+  (f_member @uc_node_0 @uc_f_quorum_0)
+  (le @uc_round_0 @uc_round_0)
+  (proposal @uc_round_0 @uc_value_0)
+)
+
+(model N2
+  ((@uc_c_quorum_0 c_quorum) (@uc_value_0 value) (@uc_value_1 value) (@uc_node_0 node) (@uc_round_0 round) (@uc_f_quorum_0 f_quorum))
+  (= none @uc_round_0)
+  (any_msg @uc_round_0)
+  (c_member @uc_node_0 @uc_c_quorum_0)
+  (f_member @uc_node_0 @uc_f_quorum_0)
+  (le @uc_round_0 @uc_round_0)
+  (proposal @uc_round_0 @uc_value_0)
+)
+
+(constraint P0 P1 (not N0) (not N1) (not N2))

@@ -1,79 +1,60 @@
-; File: examples/fol/paxos_epr.pyv
+; File: examples/fol/lockserv.pyv
 
 ; Sig
 (sort node)
-(sort quorum)
-(sort round)
-(sort value)
-(constant none round)
-(relation decision round value)
-(relation le round round)
-(relation left_round node round)
-(relation member node quorum)
-(relation one_a round)
-(relation one_b node round)
-(relation proposal round value)
-(relation vote node round value)
+(relation grant_msg node)
+(relation holds_lock node)
+(relation lock_msg node)
+(relation server_holds_lock )
+(relation unlock_msg node)
 ; End sig
 
 ; Axioms
-(axiom (forall X round (le X X)))
-(axiom (forall X round (forall Y round (forall Z round (or (not (and (le X Y) (le Y Z))) (le X Z))))))
-(axiom (forall X round (forall Y round (or (not (and (le X Y) (le Y X))) (= X Y)))))
-(axiom (forall X round (forall Y round (or (le X Y) (le Y X)))))
-(axiom (forall Q1 quorum (forall Q2 quorum (exists N node (and (member N Q1) (member N Q2))))))
 
-; Conjecture c0
-(conjecture (forall R1 round (forall V1 value (forall R2 round (forall V2 value (or (not (and (decision R1 V1) (decision R2 V2))) (= V1 V2)))))))
+; Conjecture c3
+(conjecture (forall N1 node (forall N2 node (not (and (holds_lock N1) (unlock_msg N2))))))
+
+
 
 (model P0
-  ((@node_0 node) (@quorum_0 quorum) (@round_0 round) (@value_0 value))
-  (le @round_0 @round_0)
-  (member @node_0 @quorum_0)
-  (proposal @round_0 @value_0)
-  (= none @round_0)
-)
-(model N1
-  ((@node_0 node) (@quorum_0 quorum) (@round_0 round) (@value_0 value) (@value_1 value))
-  (le @round_0 @round_0)
-  (member @node_0 @quorum_0)
-  (proposal @round_0 @value_0)
-  (proposal @round_0 @value_1)
-  (= none @round_0)
-)
-(model P2
-  ((@node_0 node) (@quorum_0 quorum) (@round_0 round) (@value_0 value) (@value_1 value))
-  (le @round_0 @round_0)
-  (member @node_0 @quorum_0)
-  (= none @round_0)
-)
-(model N3
-  ((@node_0 node) (@quorum_0 quorum) (@round_0 round) (@round_1 round) (@value_0 value) (@value_1 value))
-  (le @round_0 @round_0)
-  (le @round_0 @round_1)
-  (le @round_1 @round_1)
-  (member @node_0 @quorum_0)
-  (proposal @round_0 @value_0)
-  (proposal @round_0 @value_1)
-  (= none @round_1)
-)
-(model N4
-  ((@node_0 node) (@quorum_0 quorum) (@round_0 round) (@value_0 value) (@value_1 value) (@value_2 value))
-  (le @round_0 @round_0)
-  (member @node_0 @quorum_0)
-  (proposal @round_0 @value_0)
-  (proposal @round_0 @value_1)
-  (= none @round_0)
-)
-(model P5
-  ((@node_0 node) (@quorum_0 quorum) (@round_0 round) (@round_1 round) (@value_0 value) (@value_1 value))
-  (le @round_0 @round_0)
-  (le @round_1 @round_0)
-  (le @round_1 @round_1)
-  (member @node_0 @quorum_0)
-  (proposal @round_0 @value_0)
-  (proposal @round_1 @value_1)
-  (= none @round_0)
+  ((@uc_node_0 node))
+
 )
 
-(constraint P0 (not N1) P2 (not N3) (not N4) P5)
+(model N0
+  ((@uc_node_0 node))
+  (holds_lock @uc_node_0)
+  (unlock_msg @uc_node_0)
+)
+
+(model N1
+  ((@uc_node_0 node) (@uc_node_1 node))
+  (holds_lock @uc_node_0)
+  (unlock_msg @uc_node_0)
+  (unlock_msg @uc_node_1)
+)
+
+(model N2
+  ((@uc_node_0 node) (@uc_node_1 node))
+  (holds_lock @uc_node_0)
+  (holds_lock @uc_node_1)
+  (unlock_msg @uc_node_1)
+)
+
+(model P1
+  ((@uc_node_0 node))
+  (holds_lock @uc_node_0)
+)
+
+(model P2
+  ((@uc_node_0 node))
+  (unlock_msg @uc_node_0)
+)
+
+(model N3
+  ((@uc_node_0 node) (@uc_node_1 node))
+  (holds_lock @uc_node_0)
+  (unlock_msg @uc_node_1)
+)
+
+(constraint P0 P1 P2 (not N0) (not N1) (not N2) (not N3))

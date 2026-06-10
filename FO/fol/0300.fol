@@ -1,122 +1,54 @@
-; File: good-ivy-examples/toy/toy_lock_inv.ivy
+; File: examples/fol/toy_consensus_epr.pyv
 
 ; Sig
-(sort epoch)
 (sort node)
-(function ep node epoch)
-(relation held node)
-(relation le epoch epoch)
-(relation locked epoch node)
-(relation transfer epoch node)
-(constant zero epoch)
+(sort quorum)
+(sort value)
+(relation decided value)
+(relation member node quorum)
+(relation vote node value)
+(relation voted node)
 ; End sig
 
-; Axiom axiom1
-(axiom (forall X epoch (le X X)))
-; Axiom axiom2
-(axiom (forall Y epoch (forall Z epoch (forall X epoch (or (not (and (le X Y) (le Y Z))) (le X Z))))))
-; Axiom axiom3
-(axiom (forall Y epoch (forall X epoch (or (not (and (le X Y) (le Y X))) (= X Y)))))
-; Axiom axiom4
-(axiom (forall Y epoch (forall X epoch (or (le X Y) (le Y X)))))
-; Axiom axiom5
-(axiom (forall X epoch (le zero X)))
+; Axioms
+(axiom (forall Q1 quorum (forall Q2 quorum (exists N node (and (member N Q1) (member N Q2))))))
+
+; Conjecture c1
+(conjecture (forall N node (forall V value (or (not (vote N V)) (voted N)))))
 
 
-; Conjecture conj12
-(conjecture (forall N node (forall E epoch (forall M node (or (not (and (transfer E N) (not (le E (ep N))))) (not (le E (ep M))))))))
 
 (model P0
-  ((@epoch_0 epoch) (@node_0 node))
-  (le @epoch_0 @epoch_0)
-  (transfer @epoch_0 @node_0)
-  (= zero @epoch_0)
-  (= (ep @node_0) @epoch_0)
-)
-(model N1
-  ((@epoch_0 epoch) (@epoch_1 epoch) (@node_0 node) (@node_1 node))
-  (le @epoch_0 @epoch_0)
-  (le @epoch_0 @epoch_1)
-  (le @epoch_1 @epoch_1)
-  (transfer @epoch_0 @node_0)
-  (transfer @epoch_0 @node_1)
-  (transfer @epoch_1 @node_0)
-  (transfer @epoch_1 @node_1)
-  (= zero @epoch_0)
-  (= (ep @node_0) @epoch_0)
-  (= (ep @node_1) @epoch_1)
-)
-(model P2
-  ((@epoch_0 epoch) (@epoch_1 epoch) (@node_0 node))
-  (le @epoch_0 @epoch_0)
-  (le @epoch_0 @epoch_1)
-  (le @epoch_1 @epoch_1)
-  (transfer @epoch_0 @node_0)
-  (transfer @epoch_1 @node_0)
-  (= zero @epoch_0)
-  (= (ep @node_0) @epoch_1)
-)
-(model P3
-  ((@epoch_0 epoch) (@epoch_1 epoch) (@node_0 node) (@node_1 node))
-  (le @epoch_0 @epoch_0)
-  (le @epoch_0 @epoch_1)
-  (le @epoch_1 @epoch_1)
-  (transfer @epoch_0 @node_0)
-  (transfer @epoch_0 @node_1)
-  (transfer @epoch_1 @node_0)
-  (= zero @epoch_0)
-  (= (ep @node_0) @epoch_1)
-  (= (ep @node_1) @epoch_0)
-)
-(model N4
-  ((@epoch_0 epoch) (@epoch_1 epoch) (@node_0 node) (@node_1 node))
-  (le @epoch_0 @epoch_0)
-  (le @epoch_1 @epoch_0)
-  (le @epoch_1 @epoch_1)
-  (transfer @epoch_0 @node_0)
-  (= zero @epoch_1)
-  (= (ep @node_0) @epoch_1)
-  (= (ep @node_1) @epoch_0)
-)
-(model N5
-  ((@epoch_0 epoch) (@epoch_1 epoch) (@epoch_2 epoch) (@node_0 node) (@node_1 node))
-  (le @epoch_0 @epoch_0)
-  (le @epoch_0 @epoch_1)
-  (le @epoch_1 @epoch_1)
-  (le @epoch_2 @epoch_0)
-  (le @epoch_2 @epoch_1)
-  (le @epoch_2 @epoch_2)
-  (transfer @epoch_0 @node_0)
-  (= zero @epoch_2)
-  (= (ep @node_0) @epoch_2)
-  (= (ep @node_1) @epoch_1)
-)
-(model P6
-  ((@epoch_0 epoch) (@epoch_1 epoch) (@node_0 node))
-  (le @epoch_0 @epoch_0)
-  (le @epoch_1 @epoch_0)
-  (le @epoch_1 @epoch_1)
-  (transfer @epoch_0 @node_0)
-  (transfer @epoch_1 @node_0)
-  (= zero @epoch_1)
-  (= (ep @node_0) @epoch_1)
-)
-(model P7
-  ((@epoch_0 epoch) (@epoch_1 epoch) (@epoch_2 epoch) (@node_0 node) (@node_1 node))
-  (le @epoch_0 @epoch_0)
-  (le @epoch_0 @epoch_1)
-  (le @epoch_0 @epoch_2)
-  (le @epoch_1 @epoch_1)
-  (le @epoch_2 @epoch_1)
-  (le @epoch_2 @epoch_2)
-  (transfer @epoch_0 @node_0)
-  (transfer @epoch_0 @node_1)
-  (transfer @epoch_1 @node_0)
-  (transfer @epoch_1 @node_1)
-  (transfer @epoch_2 @node_1)
-  (= zero @epoch_0)
-  (= (ep @node_0) @epoch_0)
-  (= (ep @node_1) @epoch_2)
+  ((@uc_node_0 node) (@uc_quorum_0 quorum) (@uc_value_0 value))
+  (member @uc_node_0 @uc_quorum_0)
+  (vote @uc_node_0 @uc_value_0)
+  (voted @uc_node_0)
 )
 
-(constraint P0 (not N1) P2 P3 (not N4) (not N5) P6 P7)
+(model N0
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_quorum_0 quorum) (@uc_value_0 value))
+  (member @uc_node_0 @uc_quorum_0)
+  (member @uc_node_1 @uc_quorum_0)
+  (vote @uc_node_0 @uc_value_0)
+  (vote @uc_node_1 @uc_value_0)
+  (voted @uc_node_1)
+)
+
+(model P1
+  ((@uc_node_0 node) (@uc_quorum_0 quorum) (@uc_value_0 value))
+  (member @uc_node_0 @uc_quorum_0)
+)
+
+(model N1
+  ((@uc_node_0 node) (@uc_quorum_0 quorum) (@uc_value_0 value))
+  (member @uc_node_0 @uc_quorum_0)
+  (vote @uc_node_0 @uc_value_0)
+)
+
+(model N2
+  ((@uc_node_0 node) (@uc_quorum_0 quorum) (@uc_value_0 value) (@uc_value_1 value))
+  (member @uc_node_0 @uc_quorum_0)
+  (vote @uc_node_0 @uc_value_1)
+)
+
+(constraint P0 P1 (not N0) (not N1) (not N2))

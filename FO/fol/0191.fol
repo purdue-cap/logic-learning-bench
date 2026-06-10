@@ -1,52 +1,137 @@
-; File: good-ivy-examples/toy/lockserv.ivy
+; File: examples/fol/firewall.pyv
 
 ; Sig
 (sort node)
-(relation grant_msg node)
-(relation holds_lock node)
-(relation lock_msg node)
-(relation server_holds_lock )
-(relation unlock_msg node)
+(relation allowed_in node)
+(relation internal node)
+(relation sent node node)
 ; End sig
 
+; Axioms
+
+; Conjecture c0
+(conjecture (forall S node (forall D node (or (not (and (sent S D) (internal D))) (exists I node (and (internal I) (sent I S)))))))
 
 
-; Conjecture conj5
-(conjecture (forall N1 node (forall N2 node (not (and (holds_lock N1) (unlock_msg N2))))))
 
 (model P0
-  ((@node_0 node))
-
+  ((@uc_node_0 node))
+  (internal @uc_node_0)
 )
+
+(model N0
+  ((@uc_node_0 node) (@uc_node_1 node))
+  (internal @uc_node_1)
+  (sent @uc_node_0 @uc_node_0)
+  (sent @uc_node_0 @uc_node_1)
+  (sent @uc_node_1 @uc_node_1)
+)
+
 (model N1
-  ((@node_0 node))
-  (holds_lock @node_0)
-  (unlock_msg @node_0)
-)
-(model N2
-  ((@node_0 node) (@node_1 node))
-  (holds_lock @node_1)
-  (unlock_msg @node_0)
-  (unlock_msg @node_1)
-)
-(model N3
-  ((@node_0 node) (@node_1 node))
-  (holds_lock @node_0)
-  (holds_lock @node_1)
-  (unlock_msg @node_1)
-)
-(model P4
-  ((@node_0 node))
-  (unlock_msg @node_0)
-)
-(model P5
-  ((@node_0 node))
-  (holds_lock @node_0)
-)
-(model N6
-  ((@node_0 node) (@node_1 node))
-  (holds_lock @node_0)
-  (unlock_msg @node_1)
+  ((@uc_node_0 node) (@uc_node_1 node))
+  (internal @uc_node_0)
+  (internal @uc_node_1)
+  (sent @uc_node_0 @uc_node_1)
 )
 
-(constraint P0 (not N1) (not N2) (not N3) P4 P5 (not N6))
+(model P1
+  ((@uc_node_0 node) (@uc_node_1 node))
+  (internal @uc_node_0)
+  (internal @uc_node_1)
+)
+
+(model P2
+  ((@uc_node_0 node))
+  (sent @uc_node_0 @uc_node_0)
+)
+
+(model P3
+  ((@uc_node_0 node))
+  (internal @uc_node_0)
+  (sent @uc_node_0 @uc_node_0)
+)
+
+(model P4
+  ((@uc_node_0 node) (@uc_node_1 node))
+  (sent @uc_node_1 @uc_node_0)
+)
+
+(model P5
+  ((@uc_node_0 node) (@uc_node_1 node))
+  (internal @uc_node_0)
+  (internal @uc_node_1)
+  (sent @uc_node_1 @uc_node_0)
+  (sent @uc_node_1 @uc_node_1)
+)
+
+(model N2
+  ((@uc_node_0 node) (@uc_node_1 node))
+  (internal @uc_node_1)
+  (sent @uc_node_0 @uc_node_0)
+  (sent @uc_node_0 @uc_node_1)
+)
+
+(model P6
+  ((@uc_node_0 node) (@uc_node_1 node))
+  (internal @uc_node_1)
+  (sent @uc_node_0 @uc_node_1)
+  (sent @uc_node_1 @uc_node_0)
+)
+
+(model P7
+  ((@uc_node_0 node) (@uc_node_1 node))
+  (internal @uc_node_0)
+  (internal @uc_node_1)
+  (sent @uc_node_0 @uc_node_1)
+  (sent @uc_node_1 @uc_node_0)
+  (sent @uc_node_1 @uc_node_1)
+)
+
+(model P8
+  ((@uc_node_0 node) (@uc_node_1 node))
+  (sent @uc_node_0 @uc_node_0)
+  (sent @uc_node_0 @uc_node_1)
+  (sent @uc_node_1 @uc_node_0)
+  (sent @uc_node_1 @uc_node_1)
+)
+
+(model N3
+  ((@uc_node_0 node) (@uc_node_1 node))
+  (internal @uc_node_1)
+  (sent @uc_node_0 @uc_node_1)
+  (sent @uc_node_1 @uc_node_1)
+)
+
+(model P9
+  ((@uc_node_0 node) (@uc_node_1 node))
+  (internal @uc_node_1)
+  (sent @uc_node_0 @uc_node_0)
+)
+
+(model P10
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_node_2 node))
+  (internal @uc_node_0)
+  (internal @uc_node_2)
+  (sent @uc_node_1 @uc_node_0)
+  (sent @uc_node_1 @uc_node_1)
+  (sent @uc_node_2 @uc_node_1)
+)
+
+(model N4
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_node_2 node))
+  (internal @uc_node_0)
+  (internal @uc_node_1)
+  (internal @uc_node_2)
+  (sent @uc_node_0 @uc_node_1)
+  (sent @uc_node_2 @uc_node_2)
+)
+
+(model N5
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_node_2 node))
+  (internal @uc_node_0)
+  (internal @uc_node_1)
+  (internal @uc_node_2)
+  (sent @uc_node_0 @uc_node_1)
+)
+
+(constraint P0 P1 P2 P3 P4 P5 P6 P7 P8 P9 P10 (not N0) (not N1) (not N2) (not N3) (not N4) (not N5))

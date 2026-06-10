@@ -1,31 +1,75 @@
-; File: good-ivy-examples/toy/lockserv.ivy
+; File: examples/fol/consensus_wo_decide.pyv
 
 ; Sig
 (sort node)
-(relation grant_msg node)
-(relation holds_lock node)
-(relation lock_msg node)
-(relation server_holds_lock )
-(relation unlock_msg node)
+(sort quorum)
+(constant voting_quorum quorum)
+(relation leader node)
+(relation member node quorum)
+(relation vote_msg node node)
+(relation vote_request_msg node node)
+(relation voted node)
+(relation votes node node)
 ; End sig
 
+; Axioms
+(axiom (forall Q1 quorum (forall Q2 quorum (exists N node (and (member N Q1) (member N Q2))))))
+
+; Conjecture c2
+(conjecture (forall N node (forall N1 node (forall N2 node (or (not (and (vote_msg N N1) (vote_msg N N2))) (= N1 N2))))))
 
 
-; Conjecture conj2
-(conjecture (forall N1 node (forall N2 node (or (not (and (grant_msg N1) (grant_msg N2))) (= N1 N2)))))
 
 (model P0
-  ((@node_0 node))
-  (grant_msg @node_0)
+  ((@uc_node_0 node) (@uc_quorum_0 quorum))
+  (= voting_quorum @uc_quorum_0)
+  (member @uc_node_0 @uc_quorum_0)
+  (vote_msg @uc_node_0 @uc_node_0)
 )
+
+(model N0
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_quorum_0 quorum))
+  (= voting_quorum @uc_quorum_0)
+  (member @uc_node_0 @uc_quorum_0)
+  (member @uc_node_1 @uc_quorum_0)
+  (vote_msg @uc_node_0 @uc_node_0)
+  (vote_msg @uc_node_0 @uc_node_1)
+  (vote_msg @uc_node_1 @uc_node_0)
+  (vote_msg @uc_node_1 @uc_node_1)
+)
+
+(model P1
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_quorum_0 quorum))
+  (= voting_quorum @uc_quorum_0)
+  (member @uc_node_0 @uc_quorum_0)
+  (member @uc_node_1 @uc_quorum_0)
+)
+
 (model N1
-  ((@node_0 node) (@node_1 node))
-  (grant_msg @node_0)
-  (grant_msg @node_1)
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_quorum_0 quorum))
+  (= voting_quorum @uc_quorum_0)
+  (member @uc_node_0 @uc_quorum_0)
+  (member @uc_node_1 @uc_quorum_0)
+  (vote_msg @uc_node_1 @uc_node_0)
+  (vote_msg @uc_node_1 @uc_node_1)
 )
+
 (model P2
-  ((@node_0 node) (@node_1 node))
-
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_quorum_0 quorum))
+  (= voting_quorum @uc_quorum_0)
+  (member @uc_node_0 @uc_quorum_0)
+  (member @uc_node_1 @uc_quorum_0)
+  (vote_msg @uc_node_1 @uc_node_0)
 )
 
-(constraint P0 (not N1) P2)
+(model N2
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_node_2 node) (@uc_quorum_0 quorum))
+  (= voting_quorum @uc_quorum_0)
+  (member @uc_node_0 @uc_quorum_0)
+  (member @uc_node_1 @uc_quorum_0)
+  (member @uc_node_2 @uc_quorum_0)
+  (vote_msg @uc_node_2 @uc_node_0)
+  (vote_msg @uc_node_2 @uc_node_1)
+)
+
+(constraint P0 P1 P2 (not N0) (not N1) (not N2))

@@ -1,84 +1,63 @@
-; File: good-ivy-examples/pldi16/leader_election_ring_btw_nonreflexive.ivy
+; File: examples/fol/consensus_epr.pyv
 
 ; Sig
-(sort id)
 (sort node)
-(function idn node id)
-(relation le id id)
+(sort quorum)
+(sort value)
+(relation decided node value)
 (relation leader node)
-(relation pending id node)
-(relation ring.btw node node node)
+(relation member node quorum)
+(relation vote_msg node node)
+(relation vote_request_msg node node)
+(relation voted node)
+(relation votes node node)
 ; End sig
 
-; Axiom ring
-(axiom (forall W node (forall Y node (forall X node (forall Z node (or (not (and (ring.btw W X Y) (ring.btw W Y Z))) (ring.btw W X Z)))))))
-; Axiom ring0
-(axiom (forall W node (forall Y node (forall X node (or (not (ring.btw W X Y)) (not (ring.btw W Y X)))))))
-; Axiom ring1
-(axiom (forall W node (forall Y node (forall X node (or (or (or (or (ring.btw W X Y) (ring.btw W Y X)) (= W X)) (= W Y)) (= X Y))))))
-; Axiom ring2
-(axiom (forall Y node (forall X node (forall Z node (or (not (ring.btw X Y Z)) (ring.btw Y Z X))))))
-; Axiom a
-(axiom (forall X id (le X X)))
-; Axiom a0
-(axiom (forall X id (forall Z id (forall Y id (or (not (and (le X Y) (le Y Z))) (le X Z))))))
-; Axiom a1
-(axiom (forall X id (forall Y id (or (not (and (le X Y) (le Y X))) (= X Y)))))
-; Axiom a2
-(axiom (forall X id (forall Y id (or (le X Y) (le Y X)))))
-; Axiom a3
-(axiom (forall Y node (forall X node (or (not (= (idn X) (idn Y))) (= X Y)))))
+; Axioms
+(axiom (forall Q1 quorum (forall Q2 quorum (exists N node (and (member N Q1) (member N Q2))))))
+
+; Conjecture c4
+(conjecture (forall N node (forall N1 node (or (not (vote_msg N N1)) (voted N)))))
 
 
-; Conjecture c0
-(conjecture (forall N0 node (forall N1 node (not (and (and (le (idn N1) (idn N0)) (pending (idn N1) N1)) (not (= (idn N1) (idn N0))))))))
 
 (model P0
-  ((@id_0 id) (@node_0 node))
-  (le @id_0 @id_0)
-  (pending @id_0 @node_0)
-  (= (idn @node_0) @id_0)
-)
-(model N1
-  ((@id_0 id) (@id_1 id) (@node_0 node) (@node_1 node))
-  (le @id_0 @id_0)
-  (le @id_1 @id_0)
-  (le @id_1 @id_1)
-  (pending @id_0 @node_0)
-  (pending @id_0 @node_1)
-  (pending @id_1 @node_0)
-  (pending @id_1 @node_1)
-  (= (idn @node_0) @id_0)
-  (= (idn @node_1) @id_1)
-)
-(model P2
-  ((@id_0 id) (@id_1 id) (@node_0 node) (@node_1 node))
-  (le @id_0 @id_0)
-  (le @id_0 @id_1)
-  (le @id_1 @id_1)
-  (pending @id_0 @node_1)
-  (pending @id_1 @node_0)
-  (pending @id_1 @node_1)
-  (= (idn @node_0) @id_0)
-  (= (idn @node_1) @id_1)
-)
-(model N3
-  ((@id_0 id) (@id_1 id) (@node_0 node) (@node_1 node))
-  (le @id_0 @id_0)
-  (le @id_0 @id_1)
-  (le @id_1 @id_1)
-  (pending @id_0 @node_1)
-  (= (idn @node_0) @id_1)
-  (= (idn @node_1) @id_0)
-)
-(model P4
-  ((@id_0 id) (@id_1 id) (@node_0 node))
-  (le @id_0 @id_0)
-  (le @id_0 @id_1)
-  (le @id_1 @id_1)
-  (pending @id_0 @node_0)
-  (pending @id_1 @node_0)
-  (= (idn @node_0) @id_0)
+  ((@uc_quorum_0 quorum) (@uc_node_0 node) (@uc_value_0 value))
+  (member @uc_node_0 @uc_quorum_0)
+  (vote_msg @uc_node_0 @uc_node_0)
+  (voted @uc_node_0)
 )
 
-(constraint P0 (not N1) P2 (not N3) P4)
+(model N0
+  ((@uc_quorum_0 quorum) (@uc_node_0 node) (@uc_value_0 value))
+  (member @uc_node_0 @uc_quorum_0)
+  (vote_msg @uc_node_0 @uc_node_0)
+)
+
+(model N1
+  ((@uc_quorum_0 quorum) (@uc_node_0 node) (@uc_node_1 node) (@uc_value_0 value))
+  (member @uc_node_0 @uc_quorum_0)
+  (member @uc_node_1 @uc_quorum_0)
+  (vote_msg @uc_node_0 @uc_node_0)
+  (vote_msg @uc_node_0 @uc_node_1)
+  (vote_msg @uc_node_1 @uc_node_0)
+  (vote_msg @uc_node_1 @uc_node_1)
+  (voted @uc_node_1)
+)
+
+(model P1
+  ((@uc_quorum_0 quorum) (@uc_node_0 node) (@uc_value_0 value))
+  (member @uc_node_0 @uc_quorum_0)
+)
+
+(model N2
+  ((@uc_quorum_0 quorum) (@uc_node_0 node) (@uc_node_1 node) (@uc_value_0 value))
+  (member @uc_node_0 @uc_quorum_0)
+  (member @uc_node_1 @uc_quorum_0)
+  (vote_msg @uc_node_0 @uc_node_0)
+  (vote_msg @uc_node_0 @uc_node_1)
+  (vote_msg @uc_node_1 @uc_node_0)
+  (voted @uc_node_0)
+)
+
+(constraint P0 P1 (not N0) (not N1) (not N2))

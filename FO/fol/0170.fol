@@ -1,90 +1,63 @@
-; File: good-ivy-examples/fol-thresholds/hybrid_reliable_broadcast_cisa.ivy
+; File: examples/fol/client_server_db_ae.pyv
 
 ; Sig
+(sort db_request_id)
 (sort node)
-(sort quorum_a)
-(sort quorum_b)
-(relation member_a node quorum_a)
-(relation member_b node quorum_b)
-(relation member_fa node)
-(relation member_fc node)
-(relation member_fi node)
-(relation member_fs node)
-(relation rb.accept node)
-(relation rb.correct node)
-(relation rb.d node)
-(relation rb.obedient node)
-(relation rb.rcv_init node)
-(relation rb.rcv_msg node node)
-(relation rb.sent_msg node node)
-(relation rb.sent_msg_proj node)
-(relation rb.symmetric node)
-(constant rb.tp_correctness.n0 node)
-(constant rb.tp_relay.n1 node)
-(constant rb.tp_relay.n2 node)
+(sort request)
+(sort response)
+(relation db_request_sent db_request_id request)
+(relation db_response_sent db_request_id response)
+(relation match request response)
+(relation request_sent node request)
+(relation response_received node response)
+(relation response_sent node response)
+(relation t db_request_id node)
 ; End sig
 
-; Axiom a
-(axiom (exists B quorum_b (forall N node (or (not (member_b N B)) (and (and (and (not (member_fa N)) (not (member_fc N))) (not (member_fs N))) (not (member_fi N)))))))
-; Axiom a0
-(axiom (forall A_BP quorum_a (exists N node (and (and (member_a N A_BP) (not (member_fa N))) (not (member_fs N))))))
-; Axiom a1
-(axiom (forall B_CF quorum_b (exists A quorum_a (forall N node (or (not (member_a N A)) (and (and (member_b N B_CF) (not (member_fa N))) (not (member_fi N))))))))
-; Axiom rb
-(axiom (forall N node (not (and (member_fc N) (member_fi N)))))
-; Axiom rb0
-(axiom (forall N node (not (and (member_fc N) (member_fs N)))))
-; Axiom rb1
-(axiom (forall N node (not (and (member_fc N) (member_fa N)))))
-; Axiom rb2
-(axiom (forall N node (not (and (member_fi N) (member_fs N)))))
-; Axiom rb3
-(axiom (forall N node (not (and (member_fi N) (member_fa N)))))
-; Axiom rb4
-(axiom (forall N node (not (and (member_fs N) (member_fa N)))))
+; Axioms
+
+; Conjecture c3
+(conjecture (forall I db_request_id (forall P response (or (not (db_response_sent I P)) (exists R request (and (db_request_sent I R) (match R P)))))))
 
 
-; Conjecture rb_tp_correctness_impl
-(conjecture (forall N1 node (or (not (rb.obedient N1)) (rb.rcv_init N1))))
 
 (model P0
-  ((@node_0 node) (@quorum_a_0 quorum_a) (@quorum_b_0 quorum_b))
-  (member_a @node_0 @quorum_a_0)
-  (member_b @node_0 @quorum_b_0)
-  (rb.obedient @node_0)
-  (rb.rcv_init @node_0)
-  (= rb.tp_correctness.n0 @node_0)
-  (= rb.tp_relay.n1 @node_0)
-  (= rb.tp_relay.n2 @node_0)
-)
-(model N1
-  ((@node_0 node) (@quorum_a_0 quorum_a) (@quorum_b_0 quorum_b))
-  (member_a @node_0 @quorum_a_0)
-  (member_b @node_0 @quorum_b_0)
-  (rb.obedient @node_0)
-  (= rb.tp_correctness.n0 @node_0)
-  (= rb.tp_relay.n1 @node_0)
-  (= rb.tp_relay.n2 @node_0)
-)
-(model N2
-  ((@node_0 node) (@node_1 node) (@quorum_a_0 quorum_a) (@quorum_b_0 quorum_b))
-  (member_a @node_1 @quorum_a_0)
-  (member_b @node_1 @quorum_b_0)
-  (member_fa @node_0)
-  (rb.obedient @node_0)
-  (rb.obedient @node_1)
-  (rb.rcv_init @node_0)
-  (= rb.tp_correctness.n0 @node_0)
-  (= rb.tp_relay.n1 @node_0)
-  (= rb.tp_relay.n2 @node_0)
-)
-(model P3
-  ((@node_0 node) (@quorum_a_0 quorum_a) (@quorum_b_0 quorum_b))
-  (member_a @node_0 @quorum_a_0)
-  (member_b @node_0 @quorum_b_0)
-  (= rb.tp_correctness.n0 @node_0)
-  (= rb.tp_relay.n1 @node_0)
-  (= rb.tp_relay.n2 @node_0)
+  ((@uc_response_0 response) (@uc_request_0 request) (@uc_db_request_id_0 db_request_id) (@uc_node_0 node))
+  (db_request_sent @uc_db_request_id_0 @uc_request_0)
+  (match @uc_request_0 @uc_response_0)
 )
 
-(constraint P0 (not N1) (not N2) P3)
+(model N0
+  ((@uc_response_0 response) (@uc_request_0 request) (@uc_db_request_id_0 db_request_id) (@uc_node_0 node))
+  (db_response_sent @uc_db_request_id_0 @uc_response_0)
+  (match @uc_request_0 @uc_response_0)
+)
+
+(model N1
+  ((@uc_request_0 request) (@uc_response_0 response) (@uc_db_request_id_0 db_request_id) (@uc_node_0 node))
+  (db_request_sent @uc_db_request_id_0 @uc_request_0)
+  (db_response_sent @uc_db_request_id_0 @uc_response_0)
+)
+
+(model N2
+  ((@uc_response_0 response) (@uc_request_0 request) (@uc_db_request_id_0 db_request_id) (@uc_db_request_id_1 db_request_id) (@uc_node_0 node))
+  (db_request_sent @uc_db_request_id_0 @uc_request_0)
+  (db_response_sent @uc_db_request_id_1 @uc_response_0)
+  (match @uc_request_0 @uc_response_0)
+)
+
+(model N3
+  ((@uc_response_0 response) (@uc_response_1 response) (@uc_request_0 request) (@uc_db_request_id_0 db_request_id) (@uc_node_0 node))
+  (db_response_sent @uc_db_request_id_0 @uc_response_0)
+  (match @uc_request_0 @uc_response_0)
+  (match @uc_request_0 @uc_response_1)
+)
+
+(model P1
+  ((@uc_response_0 response) (@uc_request_0 request) (@uc_db_request_id_0 db_request_id) (@uc_node_0 node))
+  (db_request_sent @uc_db_request_id_0 @uc_request_0)
+  (db_response_sent @uc_db_request_id_0 @uc_response_0)
+  (match @uc_request_0 @uc_response_0)
+)
+
+(constraint P0 P1 (not N0) (not N1) (not N2) (not N3))

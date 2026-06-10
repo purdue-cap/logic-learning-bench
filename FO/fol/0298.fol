@@ -1,71 +1,55 @@
-; File: good-ivy-examples/toy/toy_lock_inv.ivy
+; File: examples/fol/ticket.pyv
 
 ; Sig
-(sort epoch)
-(sort node)
-(function ep node epoch)
-(relation held node)
-(relation le epoch epoch)
-(relation locked epoch node)
-(relation transfer epoch node)
-(constant zero epoch)
+(sort thread)
+(sort ticket)
+(constant next_ticket ticket)
+(constant service ticket)
+(constant zero ticket)
+(relation le ticket ticket)
+(relation m thread ticket)
+(relation pc1 thread)
+(relation pc2 thread)
+(relation pc3 thread)
 ; End sig
 
-; Axiom axiom1
-(axiom (forall X epoch (le X X)))
-; Axiom axiom2
-(axiom (forall Y epoch (forall Z epoch (forall X epoch (or (not (and (le X Y) (le Y Z))) (le X Z))))))
-; Axiom axiom3
-(axiom (forall Y epoch (forall X epoch (or (not (and (le X Y) (le Y X))) (= X Y)))))
-; Axiom axiom4
-(axiom (forall Y epoch (forall X epoch (or (le X Y) (le Y X)))))
-; Axiom axiom5
-(axiom (forall X epoch (le zero X)))
+; Axioms
+(axiom (forall X ticket (le X X)))
+(axiom (forall X ticket (forall Y ticket (forall Z ticket (or (not (and (le X Y) (le Y Z))) (le X Z))))))
+(axiom (forall X ticket (forall Y ticket (or (not (and (le X Y) (le Y X))) (= X Y)))))
+(axiom (forall X ticket (forall Y ticket (or (le X Y) (le Y X)))))
+(axiom (forall X ticket (le zero X)))
+
+; Conjecture mutex
+(conjecture (forall T1 thread (forall T2 thread (or (not (and (pc3 T1) (pc3 T2))) (= T1 T2)))))
 
 
-; Conjecture conj10
-(conjecture (forall N node (forall M node (or (not (and (held N) (not (= N M)))) (not (le (ep N) (ep M)))))))
 
 (model P0
-  ((@epoch_0 epoch) (@node_0 node))
-  (held @node_0)
-  (le @epoch_0 @epoch_0)
-  (= zero @epoch_0)
-  (= (ep @node_0) @epoch_0)
-)
-(model N1
-  ((@epoch_0 epoch) (@node_0 node) (@node_1 node))
-  (held @node_0)
-  (held @node_1)
-  (le @epoch_0 @epoch_0)
-  (= zero @epoch_0)
-  (= (ep @node_0) @epoch_0)
-  (= (ep @node_1) @epoch_0)
-)
-(model P2
-  ((@epoch_0 epoch) (@node_0 node) (@node_1 node))
-  (le @epoch_0 @epoch_0)
-  (= zero @epoch_0)
-  (= (ep @node_0) @epoch_0)
-  (= (ep @node_1) @epoch_0)
-)
-(model N3
-  ((@epoch_0 epoch) (@node_0 node) (@node_1 node))
-  (held @node_1)
-  (le @epoch_0 @epoch_0)
-  (= zero @epoch_0)
-  (= (ep @node_0) @epoch_0)
-  (= (ep @node_1) @epoch_0)
-)
-(model P4
-  ((@epoch_0 epoch) (@epoch_1 epoch) (@node_0 node) (@node_1 node))
-  (held @node_0)
-  (le @epoch_0 @epoch_0)
-  (le @epoch_0 @epoch_1)
-  (le @epoch_1 @epoch_1)
-  (= zero @epoch_0)
-  (= (ep @node_0) @epoch_1)
-  (= (ep @node_1) @epoch_0)
+  ((@uc_ticket_0 ticket) (@uc_thread_0 thread))
+  (= next_ticket @uc_ticket_0)
+  (= service @uc_ticket_0)
+  (= zero @uc_ticket_0)
+  (le @uc_ticket_0 @uc_ticket_0)
+  (pc3 @uc_thread_0)
 )
 
-(constraint P0 (not N1) P2 (not N3) P4)
+(model N0
+  ((@uc_ticket_0 ticket) (@uc_thread_0 thread) (@uc_thread_1 thread))
+  (= next_ticket @uc_ticket_0)
+  (= service @uc_ticket_0)
+  (= zero @uc_ticket_0)
+  (le @uc_ticket_0 @uc_ticket_0)
+  (pc3 @uc_thread_0)
+  (pc3 @uc_thread_1)
+)
+
+(model P1
+  ((@uc_ticket_0 ticket) (@uc_thread_0 thread) (@uc_thread_1 thread))
+  (= next_ticket @uc_ticket_0)
+  (= service @uc_ticket_0)
+  (= zero @uc_ticket_0)
+  (le @uc_ticket_0 @uc_ticket_0)
+)
+
+(constraint P0 P1 (not N0))

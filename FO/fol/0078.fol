@@ -1,77 +1,86 @@
-; File: good-ivy-examples/fol-thresholds/byz_paxos.ivy
+; File: good-ivy-examples/oopsla17-paxos/multi_paxos_epr.ivy
 
 ; Sig
+(sort inst)
 (sort node)
-(sort quorum_c)
-(sort quorum_w)
+(sort quorum)
 (sort round)
 (sort value)
-(relation decision node round value)
+(sort votemap)
+(relation active round)
+(relation decision node inst round value)
+(relation joined_round node round)
 (relation le round round)
-(relation left_rnd node round)
-(relation member_b node)
-(relation member_c node quorum_c)
-(relation member_w node quorum_w)
+(relation left_round node round)
+(function maxr votemap inst round)
+(function maxv votemap inst value)
+(relation member node quorum)
 (constant none round)
 (relation one_a round)
-(relation one_b node round)
-(relation prepare node round value)
-(relation proposal round value)
-(relation rcved_one_b node round node)
-(relation vote node round value)
+(relation one_b_msg node round votemap)
+(relation proposal inst round value)
+(relation vote node inst round value)
 ; End sig
 
-; Axiom axiom1
+; Axiom a
 (axiom (forall X round (le X X)))
-; Axiom axiom2
+; Axiom a0
 (axiom (forall X round (forall Z round (forall Y round (or (not (and (le X Y) (le Y Z))) (le X Z))))))
-; Axiom axiom3
+; Axiom a1
 (axiom (forall X round (forall Y round (or (not (and (le X Y) (le Y X))) (= X Y)))))
-; Axiom axiom4
+; Axiom a2
 (axiom (forall X round (forall Y round (or (le X Y) (le Y X)))))
-; Axiom axiom5
-(axiom (forall Q1 quorum_c (forall Q2 quorum_c (exists N node (and (not (member_b N)) (member_c N Q1) (member_c N Q2))))))
-; Axiom axiom6
-(axiom (forall W quorum_w (exists N node (and (not (member_b N)) (member_w N W)))))
+; Axiom a3
+(axiom (forall Q2 quorum (forall Q1 quorum (exists N node (and (member N Q1) (member N Q2))))))
 
 
-; Conjecture conj8
-(conjecture (forall R1 round (forall V1 value (forall V2 value (forall R2 round (forall N1 node (forall N2 node (or (not (and (not (member_b N1)) (not (member_b N2)) (decision N1 R1 V1) (decision N2 R2 V2))) (= V1 V2)))))))))
+; Conjecture c0
+(conjecture (forall R round (forall V value (forall I inst (or (not (proposal I R V)) (active R))))))
+
+
 
 (model P0
-  ((@node_0 node) (@quorum_c_0 quorum_c) (@quorum_w_0 quorum_w) (@round_0 round) (@value_0 value))
-  (decision @node_0 @round_0 @value_0)
-  (le @round_0 @round_0)
-  (member_c @node_0 @quorum_c_0)
-  (member_w @node_0 @quorum_w_0)
-  (= none @round_0)
-)
-(model N1
-  ((@node_0 node) (@quorum_c_0 quorum_c) (@quorum_w_0 quorum_w) (@round_0 round) (@value_0 value) (@value_1 value))
-  (decision @node_0 @round_0 @value_0)
-  (decision @node_0 @round_0 @value_1)
-  (le @round_0 @round_0)
-  (member_c @node_0 @quorum_c_0)
-  (member_w @node_0 @quorum_w_0)
-  (= none @round_0)
-)
-(model P2
-  ((@node_0 node) (@quorum_c_0 quorum_c) (@quorum_w_0 quorum_w) (@round_0 round) (@value_0 value) (@value_1 value))
-  (le @round_0 @round_0)
-  (member_c @node_0 @quorum_c_0)
-  (member_w @node_0 @quorum_w_0)
-  (= none @round_0)
-)
-(model N3
-  ((@node_0 node) (@quorum_c_0 quorum_c) (@quorum_w_0 quorum_w) (@round_0 round) (@round_1 round) (@value_0 value) (@value_1 value))
-  (decision @node_0 @round_0 @value_0)
-  (decision @node_0 @round_0 @value_1)
-  (le @round_0 @round_0)
-  (le @round_0 @round_1)
-  (le @round_1 @round_1)
-  (member_c @node_0 @quorum_c_0)
-  (member_w @node_0 @quorum_w_0)
-  (= none @round_1)
+  ((@uc_value_0 value) (@uc_round_0 round) (@uc_quorum_0 quorum) (@uc_node_0 node) (@uc_inst_0 inst) (@uc_votemap_0 votemap))
+  (= none @uc_round_0)
+  (active @uc_round_0)
+  (le @uc_round_0 @uc_round_0)
+  (member @uc_node_0 @uc_quorum_0)
+  (proposal @uc_inst_0 @uc_round_0 @uc_value_0)
+  (= (maxr @uc_votemap_0 @uc_inst_0) @uc_round_0)
+  (= (maxv @uc_votemap_0 @uc_inst_0) @uc_value_0)
 )
 
-(constraint P0 (not N1) P2 (not N3))
+(model N0
+  ((@uc_value_0 value) (@uc_round_0 round) (@uc_round_1 round) (@uc_quorum_0 quorum) (@uc_node_0 node) (@uc_inst_0 inst) (@uc_votemap_0 votemap))
+  (= none @uc_round_0)
+  (active @uc_round_0)
+  (le @uc_round_0 @uc_round_0)
+  (le @uc_round_1 @uc_round_0)
+  (le @uc_round_1 @uc_round_1)
+  (member @uc_node_0 @uc_quorum_0)
+  (proposal @uc_inst_0 @uc_round_0 @uc_value_0)
+  (proposal @uc_inst_0 @uc_round_1 @uc_value_0)
+  (= (maxr @uc_votemap_0 @uc_inst_0) @uc_round_0)
+  (= (maxv @uc_votemap_0 @uc_inst_0) @uc_value_0)
+)
+
+(model N1
+  ((@uc_value_0 value) (@uc_round_0 round) (@uc_quorum_0 quorum) (@uc_node_0 node) (@uc_inst_0 inst) (@uc_votemap_0 votemap))
+  (= none @uc_round_0)
+  (le @uc_round_0 @uc_round_0)
+  (member @uc_node_0 @uc_quorum_0)
+  (proposal @uc_inst_0 @uc_round_0 @uc_value_0)
+  (= (maxr @uc_votemap_0 @uc_inst_0) @uc_round_0)
+  (= (maxv @uc_votemap_0 @uc_inst_0) @uc_value_0)
+)
+
+(model P1
+  ((@uc_value_0 value) (@uc_round_0 round) (@uc_quorum_0 quorum) (@uc_node_0 node) (@uc_inst_0 inst) (@uc_votemap_0 votemap))
+  (= none @uc_round_0)
+  (le @uc_round_0 @uc_round_0)
+  (member @uc_node_0 @uc_quorum_0)
+  (= (maxr @uc_votemap_0 @uc_inst_0) @uc_round_0)
+  (= (maxv @uc_votemap_0 @uc_inst_0) @uc_value_0)
+)
+
+(constraint P0 P1 (not N0) (not N1))

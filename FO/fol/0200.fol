@@ -1,93 +1,175 @@
-; File: good-ivy-examples/oopsla17-paxos/multi_paxos_epr.ivy
+; File: examples/fol/hybrid_reliable_broadcast_cisa.pyv
 
 ; Sig
-(sort inst)
 (sort node)
-(sort quorum)
-(sort round)
-(sort value)
-(sort votemap)
-(relation active round)
-(relation decision node inst round value)
-(relation joined_round node round)
-(relation le round round)
-(relation left_round node round)
-(function maxr votemap inst round)
-(function maxv votemap inst value)
-(relation member node quorum)
-(constant none round)
-(relation one_a round)
-(relation one_b_msg node round votemap)
-(relation proposal inst round value)
-(relation vote node inst round value)
+(sort quorum_a)
+(sort quorum_b)
+(relation accept node)
+(relation member_a node quorum_a)
+(relation member_b node quorum_b)
+(relation member_fa node)
+(relation member_fc node)
+(relation member_fi node)
+(relation member_fs node)
+(relation rcv_init node)
+(relation rcv_msg node node)
+(relation sent_msg node node)
+(relation sent_msg_proj node)
 ; End sig
 
-; Axiom a
-(axiom (forall X round (le X X)))
-; Axiom a0
-(axiom (forall X round (forall Z round (forall Y round (or (not (and (le X Y) (le Y Z))) (le X Z))))))
-; Axiom a1
-(axiom (forall X round (forall Y round (or (not (and (le X Y) (le Y X))) (= X Y)))))
-; Axiom a2
-(axiom (forall X round (forall Y round (or (le X Y) (le Y X)))))
-; Axiom a3
-(axiom (forall Q2 quorum (forall Q1 quorum (exists N node (and (member N Q1) (member N Q2))))))
+; Axioms
+(axiom (exists B quorum_b (forall N node (or (not (member_b N B)) (and (not (member_fa N)) (not (member_fc N)) (not (member_fs N)) (not (member_fi N)))))))
+(axiom (forall A_BP quorum_a (exists N node (and (member_a N A_BP) (not (member_fa N)) (not (member_fs N))))))
+(axiom (forall B_CF quorum_b (exists A quorum_a (forall N node (or (not (member_a N A)) (and (member_b N B_CF) (not (member_fa N)) (not (member_fi N))))))))
+(axiom (forall N node (not (and (member_fc N) (member_fi N)))))
+(axiom (forall N node (not (and (member_fc N) (member_fs N)))))
+(axiom (forall N node (not (and (member_fc N) (member_fa N)))))
+(axiom (forall N node (not (and (member_fi N) (member_fs N)))))
+(axiom (forall N node (not (and (member_fi N) (member_fa N)))))
+(axiom (forall N node (not (and (member_fs N) (member_fa N)))))
+
+; Conjecture unforgebility
+(conjecture (or (not (exists N node (and (not (member_fs N)) (not (member_fa N)) (accept N)))) (exists M node (and (not (member_fs M)) (not (member_fa M)) (rcv_init M)))))
 
 
-; Conjecture c10
-(conjecture (forall N node (forall R round (forall M votemap (or (not (one_b_msg N R M)) (joined_round N R))))))
 
 (model P0
-  ((@uc_inst_0 inst) (@node_0 node) (@quorum_0 quorum) (@round_0 round) (@uc_value_0 value) (@votemap_0 votemap))
-  (joined_round @node_0 @round_0)
-  (le @round_0 @round_0)
-  (member @node_0 @quorum_0)
-  (one_b_msg @node_0 @round_0 @votemap_0)
-  (= none @round_0)
-  (= (maxr @votemap_0 @uc_inst_0) @round_0)
-  (= (maxv @votemap_0 @uc_inst_0) @uc_value_0)
-)
-(model N1
-  ((@uc_inst_0 inst) (@node_0 node) (@quorum_0 quorum) (@round_0 round) (@uc_value_0 value) (@votemap_0 votemap))
-  (le @round_0 @round_0)
-  (member @node_0 @quorum_0)
-  (one_b_msg @node_0 @round_0 @votemap_0)
-  (= none @round_0)
-  (= (maxr @votemap_0 @uc_inst_0) @round_0)
-  (= (maxv @votemap_0 @uc_inst_0) @uc_value_0)
-)
-(model N2
-  ((@uc_inst_0 inst) (@node_0 node) (@node_1 node) (@quorum_0 quorum) (@round_0 round) (@uc_value_0 value) (@votemap_0 votemap))
-  (joined_round @node_0 @round_0)
-  (le @round_0 @round_0)
-  (member @node_0 @quorum_0)
-  (member @node_1 @quorum_0)
-  (one_b_msg @node_0 @round_0 @votemap_0)
-  (one_b_msg @node_1 @round_0 @votemap_0)
-  (= none @round_0)
-  (= (maxr @votemap_0 @uc_inst_0) @round_0)
-  (= (maxv @votemap_0 @uc_inst_0) @uc_value_0)
-)
-(model N3
-  ((@uc_inst_0 inst) (@node_0 node) (@quorum_0 quorum) (@round_0 round) (@round_1 round) (@uc_value_0 value) (@votemap_0 votemap))
-  (joined_round @node_0 @round_1)
-  (le @round_0 @round_0)
-  (le @round_0 @round_1)
-  (le @round_1 @round_1)
-  (member @node_0 @quorum_0)
-  (one_b_msg @node_0 @round_0 @votemap_0)
-  (one_b_msg @node_0 @round_1 @votemap_0)
-  (= none @round_1)
-  (= (maxr @votemap_0 @uc_inst_0) @round_0)
-  (= (maxv @votemap_0 @uc_inst_0) @uc_value_0)
-)
-(model P4
-  ((@uc_inst_0 inst) (@node_0 node) (@quorum_0 quorum) (@round_0 round) (@uc_value_0 value) (@votemap_0 votemap))
-  (le @round_0 @round_0)
-  (member @node_0 @quorum_0)
-  (= none @round_0)
-  (= (maxr @votemap_0 @uc_inst_0) @round_0)
-  (= (maxv @votemap_0 @uc_inst_0) @uc_value_0)
+  ((@uc_node_0 node) (@uc_quorum_b_0 quorum_b) (@uc_quorum_a_0 quorum_a))
+  (member_a @uc_node_0 @uc_quorum_a_0)
+  (member_b @uc_node_0 @uc_quorum_b_0)
 )
 
-(constraint P0 (not N1) (not N2) (not N3) P4)
+(model N0
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_quorum_b_0 quorum_b) (@uc_quorum_a_0 quorum_a))
+  (accept @uc_node_1)
+  (member_a @uc_node_1 @uc_quorum_a_0)
+  (member_b @uc_node_1 @uc_quorum_b_0)
+  (member_fa @uc_node_0)
+  (rcv_init @uc_node_0)
+)
+
+(model P1
+  ((@uc_node_0 node) (@uc_quorum_b_0 quorum_b) (@uc_quorum_a_0 quorum_a))
+  (accept @uc_node_0)
+  (member_a @uc_node_0 @uc_quorum_a_0)
+  (member_b @uc_node_0 @uc_quorum_b_0)
+  (rcv_init @uc_node_0)
+)
+
+(model N1
+  ((@uc_node_0 node) (@uc_quorum_b_0 quorum_b) (@uc_quorum_a_0 quorum_a))
+  (accept @uc_node_0)
+  (member_a @uc_node_0 @uc_quorum_a_0)
+  (member_b @uc_node_0 @uc_quorum_b_0)
+)
+
+(model P2
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_quorum_b_0 quorum_b) (@uc_quorum_a_0 quorum_a))
+  (accept @uc_node_1)
+  (member_a @uc_node_0 @uc_quorum_a_0)
+  (member_b @uc_node_0 @uc_quorum_b_0)
+  (member_fa @uc_node_1)
+)
+
+(model P3
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_quorum_b_0 quorum_b) (@uc_quorum_a_0 quorum_a))
+  (accept @uc_node_1)
+  (member_a @uc_node_0 @uc_quorum_a_0)
+  (member_b @uc_node_0 @uc_quorum_b_0)
+  (member_fs @uc_node_1)
+)
+
+(model P4
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_quorum_b_0 quorum_b) (@uc_quorum_a_0 quorum_a))
+  (accept @uc_node_0)
+  (accept @uc_node_1)
+  (member_a @uc_node_1 @uc_quorum_a_0)
+  (member_b @uc_node_1 @uc_quorum_b_0)
+  (member_fi @uc_node_0)
+  (rcv_init @uc_node_1)
+)
+
+(model N2
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_quorum_b_0 quorum_b) (@uc_quorum_a_0 quorum_a))
+  (accept @uc_node_0)
+  (member_a @uc_node_1 @uc_quorum_a_0)
+  (member_b @uc_node_1 @uc_quorum_b_0)
+  (member_fi @uc_node_0)
+)
+
+(model P5
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_quorum_b_0 quorum_b) (@uc_quorum_a_0 quorum_a))
+  (accept @uc_node_0)
+  (accept @uc_node_1)
+  (member_a @uc_node_1 @uc_quorum_a_0)
+  (member_b @uc_node_1 @uc_quorum_b_0)
+  (member_fi @uc_node_0)
+  (rcv_init @uc_node_0)
+)
+
+(model N3
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_quorum_b_0 quorum_b) (@uc_quorum_a_0 quorum_a))
+  (accept @uc_node_0)
+  (accept @uc_node_1)
+  (member_a @uc_node_1 @uc_quorum_a_0)
+  (member_b @uc_node_1 @uc_quorum_b_0)
+  (member_fs @uc_node_0)
+  (rcv_init @uc_node_0)
+)
+
+(model N4
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_quorum_b_0 quorum_b) (@uc_quorum_a_0 quorum_a))
+  (accept @uc_node_0)
+  (accept @uc_node_1)
+  (member_a @uc_node_1 @uc_quorum_a_0)
+  (member_b @uc_node_1 @uc_quorum_b_0)
+  (member_fi @uc_node_0)
+)
+
+(model N5
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_node_2 node) (@uc_quorum_b_0 quorum_b) (@uc_quorum_a_0 quorum_a))
+  (accept @uc_node_2)
+  (member_a @uc_node_1 @uc_quorum_a_0)
+  (member_b @uc_node_1 @uc_quorum_b_0)
+  (member_fa @uc_node_0)
+  (member_fi @uc_node_2)
+)
+
+(model N6
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_quorum_b_0 quorum_b) (@uc_quorum_a_0 quorum_a))
+  (accept @uc_node_1)
+  (member_a @uc_node_1 @uc_quorum_a_0)
+  (member_b @uc_node_1 @uc_quorum_b_0)
+  (member_fi @uc_node_0)
+)
+
+(model N7
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_node_2 node) (@uc_quorum_b_0 quorum_b) (@uc_quorum_a_0 quorum_a))
+  (accept @uc_node_2)
+  (member_a @uc_node_1 @uc_quorum_a_0)
+  (member_b @uc_node_1 @uc_quorum_b_0)
+  (member_fi @uc_node_2)
+  (member_fs @uc_node_0)
+)
+
+(model N8
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_node_2 node) (@uc_quorum_b_0 quorum_b) (@uc_quorum_a_0 quorum_a))
+  (accept @uc_node_0)
+  (accept @uc_node_1)
+  (member_a @uc_node_2 @uc_quorum_a_0)
+  (member_b @uc_node_2 @uc_quorum_b_0)
+  (member_fa @uc_node_1)
+  (member_fi @uc_node_0)
+  (rcv_init @uc_node_1)
+)
+
+(model P6
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_quorum_b_0 quorum_b) (@uc_quorum_a_0 quorum_a))
+  (accept @uc_node_0)
+  (accept @uc_node_1)
+  (member_a @uc_node_0 @uc_quorum_a_0)
+  (member_b @uc_node_0 @uc_quorum_b_0)
+  (rcv_init @uc_node_1)
+)
+
+(constraint P0 P1 P2 P3 P4 P5 P6 (not N0) (not N1) (not N2) (not N3) (not N4) (not N5) (not N6) (not N7) (not N8))

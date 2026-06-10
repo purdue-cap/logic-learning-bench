@@ -1,31 +1,127 @@
-; File: examples/fol/lockserv.pyv
+; File: examples/fol/hybrid_reliable_broadcast_cisa.pyv
 
 ; Sig
 (sort node)
-(relation grant_msg node)
-(relation holds_lock node)
-(relation lock_msg node)
-(relation server_holds_lock )
-(relation unlock_msg node)
+(sort quorum_a)
+(sort quorum_b)
+(relation accept node)
+(relation member_a node quorum_a)
+(relation member_b node quorum_b)
+(relation member_fa node)
+(relation member_fc node)
+(relation member_fi node)
+(relation member_fs node)
+(relation rcv_init node)
+(relation rcv_msg node node)
+(relation sent_msg node node)
+(relation sent_msg_proj node)
 ; End sig
 
 ; Axioms
+(axiom (exists B quorum_b (forall N node (or (not (member_b N B)) (and (not (member_fa N)) (not (member_fc N)) (not (member_fs N)) (not (member_fi N)))))))
+(axiom (forall A_BP quorum_a (exists N node (and (member_a N A_BP) (not (member_fa N)) (not (member_fs N))))))
+(axiom (forall B_CF quorum_b (exists A quorum_a (forall N node (or (not (member_a N A)) (and (member_b N B_CF) (not (member_fa N)) (not (member_fi N))))))))
+(axiom (forall N node (not (and (member_fc N) (member_fi N)))))
+(axiom (forall N node (not (and (member_fc N) (member_fs N)))))
+(axiom (forall N node (not (and (member_fc N) (member_fa N)))))
+(axiom (forall N node (not (and (member_fi N) (member_fs N)))))
+(axiom (forall N node (not (and (member_fi N) (member_fa N)))))
+(axiom (forall N node (not (and (member_fs N) (member_fa N)))))
 
-; Conjecture mutex
-(conjecture (forall N1 node (forall N2 node (or (not (and (holds_lock N1) (holds_lock N2))) (= N1 N2)))))
+; Conjecture c3
+(conjecture (forall N1 node (forall N2 node (or (not (and (not (member_fi N1)) (not (member_fa N1)) (sent_msg_proj N1))) (sent_msg N1 N2)))))
+
+
 
 (model P0
-  ((@node_0 node))
-  (holds_lock @node_0)
+  ((@uc_node_0 node) (@uc_quorum_a_0 quorum_a) (@uc_quorum_b_0 quorum_b))
+  (member_a @uc_node_0 @uc_quorum_a_0)
+  (member_b @uc_node_0 @uc_quorum_b_0)
+  (sent_msg @uc_node_0 @uc_node_0)
+  (sent_msg_proj @uc_node_0)
 )
+
+(model N0
+  ((@uc_node_0 node) (@uc_quorum_a_0 quorum_a) (@uc_quorum_b_0 quorum_b))
+  (member_a @uc_node_0 @uc_quorum_a_0)
+  (member_b @uc_node_0 @uc_quorum_b_0)
+  (sent_msg_proj @uc_node_0)
+)
+
 (model N1
-  ((@node_0 node) (@node_1 node))
-  (holds_lock @node_0)
-  (holds_lock @node_1)
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_quorum_a_0 quorum_a) (@uc_quorum_b_0 quorum_b))
+  (member_a @uc_node_1 @uc_quorum_a_0)
+  (member_b @uc_node_1 @uc_quorum_b_0)
+  (member_fs @uc_node_0)
+  (sent_msg @uc_node_0 @uc_node_0)
+  (sent_msg_proj @uc_node_0)
+  (sent_msg_proj @uc_node_1)
 )
+
+(model N2
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_quorum_a_0 quorum_a) (@uc_quorum_b_0 quorum_b))
+  (member_a @uc_node_1 @uc_quorum_a_0)
+  (member_b @uc_node_1 @uc_quorum_b_0)
+  (member_fs @uc_node_0)
+  (sent_msg @uc_node_0 @uc_node_0)
+  (sent_msg @uc_node_1 @uc_node_1)
+  (sent_msg_proj @uc_node_0)
+  (sent_msg_proj @uc_node_1)
+)
+
+(model N3
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_quorum_a_0 quorum_a) (@uc_quorum_b_0 quorum_b))
+  (member_a @uc_node_1 @uc_quorum_a_0)
+  (member_b @uc_node_1 @uc_quorum_b_0)
+  (member_fs @uc_node_0)
+  (sent_msg @uc_node_1 @uc_node_0)
+  (sent_msg @uc_node_1 @uc_node_1)
+  (sent_msg_proj @uc_node_0)
+  (sent_msg_proj @uc_node_1)
+)
+
+(model N4
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_quorum_a_0 quorum_a) (@uc_quorum_b_0 quorum_b))
+  (member_a @uc_node_1 @uc_quorum_a_0)
+  (member_b @uc_node_1 @uc_quorum_b_0)
+  (member_fs @uc_node_0)
+  (sent_msg @uc_node_0 @uc_node_1)
+  (sent_msg @uc_node_1 @uc_node_1)
+  (sent_msg_proj @uc_node_0)
+  (sent_msg_proj @uc_node_1)
+)
+
+(model P1
+  ((@uc_node_0 node) (@uc_quorum_a_0 quorum_a) (@uc_quorum_b_0 quorum_b))
+  (member_a @uc_node_0 @uc_quorum_a_0)
+  (member_b @uc_node_0 @uc_quorum_b_0)
+)
+
 (model P2
-  ((@node_0 node) (@node_1 node))
-
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_quorum_a_0 quorum_a) (@uc_quorum_b_0 quorum_b))
+  (member_a @uc_node_1 @uc_quorum_a_0)
+  (member_b @uc_node_1 @uc_quorum_b_0)
+  (member_fa @uc_node_0)
+  (sent_msg_proj @uc_node_0)
 )
 
-(constraint P0 (not N1) P2)
+(model N5
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_quorum_a_0 quorum_a) (@uc_quorum_b_0 quorum_b))
+  (member_a @uc_node_1 @uc_quorum_a_0)
+  (member_b @uc_node_1 @uc_quorum_b_0)
+  (member_fs @uc_node_0)
+  (sent_msg @uc_node_0 @uc_node_0)
+  (sent_msg @uc_node_1 @uc_node_0)
+  (sent_msg @uc_node_1 @uc_node_1)
+  (sent_msg_proj @uc_node_0)
+)
+
+(model P3
+  ((@uc_node_0 node) (@uc_node_1 node) (@uc_quorum_a_0 quorum_a) (@uc_quorum_b_0 quorum_b))
+  (member_a @uc_node_1 @uc_quorum_a_0)
+  (member_b @uc_node_1 @uc_quorum_b_0)
+  (member_fi @uc_node_0)
+  (sent_msg_proj @uc_node_0)
+)
+
+(constraint P0 P1 P2 P3 (not N0) (not N1) (not N2) (not N3) (not N4) (not N5))
