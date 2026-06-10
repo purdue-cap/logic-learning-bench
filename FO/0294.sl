@@ -4,8 +4,8 @@
 (require "theories/ticket-edf46754.sl")
 
 (define-model P0
-  (define-univ thread (@uc_thread_0))
-  (define-univ ticket (@uc_ticket_0))
+  (interp-sort thread (@uc_thread_0))
+  (interp-sort ticket (@uc_ticket_0))
   (interp-fun next_ticket (@uc_ticket_0))
   (interp-fun service (@uc_ticket_0))
   (interp-fun zero (@uc_ticket_0))
@@ -28,8 +28,8 @@
 )
 
 (define-model N0
-  (define-univ thread (@uc_thread_0))
-  (define-univ ticket (@uc_ticket_0 @uc_ticket_1))
+  (interp-sort thread (@uc_thread_0))
+  (interp-sort ticket (@uc_ticket_0 @uc_ticket_1))
   (interp-fun next_ticket (@uc_ticket_1))
   (interp-fun service (@uc_ticket_0))
   (interp-fun zero (@uc_ticket_0))
@@ -56,8 +56,8 @@
 )
 
 (define-model P1
-  (define-univ thread (@uc_thread_0))
-  (define-univ ticket (@uc_ticket_0 @uc_ticket_1))
+  (interp-sort thread (@uc_thread_0))
+  (interp-sort ticket (@uc_ticket_0 @uc_ticket_1))
   (interp-fun next_ticket (@uc_ticket_1))
   (interp-fun service (@uc_ticket_0))
   (interp-fun zero (@uc_ticket_0))
@@ -82,8 +82,8 @@
 )
 
 (define-model N1
-  (define-univ thread (@uc_thread_0))
-  (define-univ ticket (@uc_ticket_0 @uc_ticket_1))
+  (interp-sort thread (@uc_thread_0))
+  (interp-sort ticket (@uc_ticket_0 @uc_ticket_1))
   (interp-fun next_ticket (@uc_ticket_1))
   (interp-fun service (@uc_ticket_0))
   (interp-fun zero (@uc_ticket_0))
@@ -109,8 +109,8 @@
 )
 
 (define-model N2
-  (define-univ thread (@uc_thread_0 @uc_thread_1))
-  (define-univ ticket (@uc_ticket_0 @uc_ticket_1))
+  (interp-sort thread (@uc_thread_0 @uc_thread_1))
+  (interp-sort ticket (@uc_ticket_0 @uc_ticket_1))
   (interp-fun next_ticket (@uc_ticket_1))
   (interp-fun service (@uc_ticket_0))
   (interp-fun zero (@uc_ticket_0))
@@ -136,8 +136,8 @@
 )
 
 (define-model N3
-  (define-univ thread (@uc_thread_0))
-  (define-univ ticket (@uc_ticket_0 @uc_ticket_1 @uc_ticket_2))
+  (interp-sort thread (@uc_thread_0))
+  (interp-sort ticket (@uc_ticket_0 @uc_ticket_1 @uc_ticket_2))
   (interp-fun next_ticket (@uc_ticket_1))
   (interp-fun service (@uc_ticket_0))
   (interp-fun zero (@uc_ticket_0))
@@ -166,8 +166,8 @@
 )
 
 (define-model P2
-  (define-univ thread (@uc_thread_0))
-  (define-univ ticket (@uc_ticket_0))
+  (interp-sort thread (@uc_thread_0))
+  (interp-sort ticket (@uc_ticket_0))
   (interp-fun next_ticket (@uc_ticket_0))
   (interp-fun service (@uc_ticket_0))
   (interp-fun zero (@uc_ticket_0))
@@ -191,8 +191,8 @@
 )
 
 (define-model P3
-  (define-univ thread (@uc_thread_0))
-  (define-univ ticket (@uc_ticket_0 @uc_ticket_1))
+  (interp-sort thread (@uc_thread_0))
+  (interp-sort ticket (@uc_ticket_0 @uc_ticket_1))
   (interp-fun next_ticket (@uc_ticket_0))
   (interp-fun service (@uc_ticket_0))
   (interp-fun zero (@uc_ticket_1))
@@ -218,8 +218,8 @@
 )
 
 (define-model N4
-  (define-univ thread (@uc_thread_0))
-  (define-univ ticket (@uc_ticket_0 @uc_ticket_1))
+  (interp-sort thread (@uc_thread_0))
+  (interp-sort ticket (@uc_ticket_0 @uc_ticket_1))
   (interp-fun next_ticket (@uc_ticket_1))
   (interp-fun service (@uc_ticket_1))
   (interp-fun zero (@uc_ticket_0))
@@ -246,8 +246,8 @@
 )
 
 (define-model P4
-  (define-univ thread (@uc_thread_0))
-  (define-univ ticket (@uc_ticket_0 @uc_ticket_1))
+  (interp-sort thread (@uc_thread_0))
+  (interp-sort ticket (@uc_ticket_0 @uc_ticket_1))
   (interp-fun next_ticket (@uc_ticket_0))
   (interp-fun service (@uc_ticket_0))
   (interp-fun zero (@uc_ticket_0))
@@ -274,8 +274,8 @@
 )
 
 (define-model P5
-  (define-univ thread (@uc_thread_0))
-  (define-univ ticket (@uc_ticket_0 @uc_ticket_1 @uc_ticket_2))
+  (interp-sort thread (@uc_thread_0))
+  (interp-sort ticket (@uc_ticket_0 @uc_ticket_1 @uc_ticket_2))
   (interp-fun next_ticket (@uc_ticket_1))
   (interp-fun service (@uc_ticket_0))
   (interp-fun zero (@uc_ticket_0))

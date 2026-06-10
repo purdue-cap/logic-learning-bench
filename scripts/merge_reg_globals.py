@@ -68,7 +68,7 @@ def generate_model(name: str, word: str) -> str:
     one_arms = arms(one_vals)
     lines = [
         f"(define-model {name}",
-        f"  (define-univ Pos ({univ}))",
+        f"  (interp-sort Pos ({univ}))",
         f"  (interp-fun zero (match ({zero_arms})))",
         f"  (interp-fun one (match ({one_arms}))))",
     ]

@@ -4,11 +4,11 @@
 (require "theories/vertical_paxos_epr_unverified_optimization-d27f8fa3.sl")
 
 (define-model P0
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_0))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -62,11 +62,11 @@
 )
 
 (define-model N0
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -125,11 +125,11 @@
 )
 
 (define-model N1
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_1))
   (interp-fun quorum_of_round (match (
@@ -183,11 +183,11 @@
 )
 
 (define-model N2
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_0))
   (interp-fun none (@uc_round_1))
   (interp-fun quorum_of_round (match (
@@ -242,11 +242,11 @@
 )
 
 (define-model P1
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_0))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -306,11 +306,11 @@
 )
 
 (define-model P2
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_0))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -363,11 +363,11 @@
 )
 
 (define-model P3
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -423,11 +423,11 @@
 )
 
 (define-model N3
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_1))
   (interp-fun quorum_of_round (match (
@@ -483,11 +483,11 @@
 )
 
 (define-model N4
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_1))
   (interp-fun quorum_of_round (match (
@@ -546,11 +546,11 @@
 )
 
 (define-model N5
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -608,11 +608,11 @@
 )
 
 (define-model N6
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -667,11 +667,11 @@
 )
 
 (define-model N7
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -728,11 +728,11 @@
 )
 
 (define-model N8
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -790,11 +790,11 @@
 )
 
 (define-model N9
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_1))
   (interp-fun quorum_of_round (match (
@@ -851,11 +851,11 @@
 )
 
 (define-model N10
-  (define-univ config (@uc_config_0 @uc_config_1))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0 @uc_config_1))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -915,11 +915,11 @@
 )
 
 (define-model N11
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1 @uc_round_2))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1 @uc_round_2))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_2))
   (interp-fun none (@uc_round_2))
   (interp-fun quorum_of_round (match (
@@ -984,11 +984,11 @@
 )
 
 (define-model N12
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_1))
   (interp-fun quorum_of_round (match (
@@ -1046,11 +1046,11 @@
 )
 
 (define-model N13
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -1106,11 +1106,11 @@
 )
 
 (define-model N14
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_1))
   (interp-fun quorum_of_round (match (
@@ -1169,11 +1169,11 @@
 )
 
 (define-model N15
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -1230,11 +1230,11 @@
 )
 
 (define-model N16
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1 @uc_round_2))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1 @uc_round_2))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_2))
   (interp-fun none (@uc_round_1))
   (interp-fun quorum_of_round (match (
@@ -1292,11 +1292,11 @@
 )
 
 (define-model P4
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_1))
   (interp-fun quorum_of_round (match (
@@ -1352,11 +1352,11 @@
 )
 
 (define-model N17
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_1))
   (interp-fun quorum_of_round (match (
@@ -1414,11 +1414,11 @@
 )
 
 (define-model P5
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_1))
   (interp-fun quorum_of_round (match (
@@ -1475,11 +1475,11 @@
 )
 
 (define-model N18
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_0))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -1537,11 +1537,11 @@
 )
 
 (define-model N19
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1 @uc_round_2))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1 @uc_round_2))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -1605,11 +1605,11 @@
 )
 
 (define-model P6
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -1668,11 +1668,11 @@
 )
 
 (define-model P7
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -1731,11 +1731,11 @@
 )
 
 (define-model N20
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_0))
   (interp-fun none (@uc_round_1))
   (interp-fun quorum_of_round (match (
@@ -1794,11 +1794,11 @@
 )
 
 (define-model N21
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_1))
   (interp-fun quorum_of_round (match (
@@ -1855,11 +1855,11 @@
 )
 
 (define-model N22
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1 @uc_round_2))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1 @uc_round_2))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -1922,11 +1922,11 @@
 )
 
 (define-model N23
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1 @uc_round_2))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1 @uc_round_2))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_2))
   (interp-fun none (@uc_round_2))
   (interp-fun quorum_of_round (match (
@@ -1990,11 +1990,11 @@
 )
 
 (define-model N24
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_0))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -2051,11 +2051,11 @@
 )
 
 (define-model N25
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1 @uc_round_2))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1 @uc_round_2))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_2))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -2118,11 +2118,11 @@
 )
 
 (define-model N26
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -2179,11 +2179,11 @@
 )
 
 (define-model N27
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -2241,11 +2241,11 @@
 )
 
 (define-model N28
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1 @uc_round_2))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1 @uc_round_2))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_1))
   (interp-fun quorum_of_round (match (
@@ -2308,11 +2308,11 @@
 )
 
 (define-model N29
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1 @uc_round_2))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1 @uc_round_2))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_2))
   (interp-fun quorum_of_round (match (
@@ -2375,11 +2375,11 @@
 )
 
 (define-model P8
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_1))
   (interp-fun quorum_of_round (match (
@@ -2434,11 +2434,11 @@
 )
 
 (define-model N30
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_0))
   (interp-fun none (@uc_round_1))
   (interp-fun quorum_of_round (match (
@@ -2494,11 +2494,11 @@
 )
 
 (define-model N31
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_1))
   (interp-fun quorum_of_round (match (
@@ -2553,11 +2553,11 @@
 )
 
 (define-model N32
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1 @uc_round_2))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1 @uc_round_2))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_1))
   (interp-fun quorum_of_round (match (
@@ -2620,11 +2620,11 @@
 )
 
 (define-model N33
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1 @uc_round_2))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1 @uc_round_2))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_1))
   (interp-fun quorum_of_round (match (
@@ -2688,11 +2688,11 @@
 )
 
 (define-model N34
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1 @uc_round_2))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1 @uc_round_2))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -2757,11 +2757,11 @@
 )
 
 (define-model N35
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_0))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -2817,11 +2817,11 @@
 )
 
 (define-model N36
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1 @uc_round_2))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1 @uc_round_2))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -2885,11 +2885,11 @@
 )
 
 (define-model P9
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -2948,11 +2948,11 @@
 )
 
 (define-model N37
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1 @uc_round_2))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1 @uc_round_2))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_2))
   (interp-fun quorum_of_round (match (
@@ -3017,11 +3017,11 @@
 )
 
 (define-model P10
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -3078,11 +3078,11 @@
 )
 
 (define-model N38
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1 @uc_round_2))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1 @uc_round_2))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_0))
   (interp-fun none (@uc_round_1))
   (interp-fun quorum_of_round (match (
@@ -3147,11 +3147,11 @@
 )
 
 (define-model N39
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_0))
   (interp-fun none (@uc_round_1))
   (interp-fun quorum_of_round (match (
@@ -3209,11 +3209,11 @@
 )
 
 (define-model N40
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1 @uc_round_2))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1 @uc_round_2))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_2))
   (interp-fun quorum_of_round (match (
@@ -3276,11 +3276,11 @@
 )
 
 (define-model P11
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_1))
   (interp-fun quorum_of_round (match (
@@ -3335,11 +3335,11 @@
 )
 
 (define-model N41
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_1))
   (interp-fun quorum_of_round (match (
@@ -3395,11 +3395,11 @@
 )
 
 (define-model N42
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1 @uc_round_2))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1 @uc_round_2))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_1))
   (interp-fun quorum_of_round (match (
@@ -3462,11 +3462,11 @@
 )
 
 (define-model N43
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1 @uc_round_2))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1 @uc_round_2))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_0))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -3528,11 +3528,11 @@
 )
 
 (define-model N44
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1 @uc_round_2))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1 @uc_round_2))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_1))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -3593,11 +3593,11 @@
 )
 
 (define-model N45
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1 @uc_round_2))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1 @uc_round_2))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_0))
   (interp-fun none (@uc_round_2))
   (interp-fun quorum_of_round (match (
@@ -3661,11 +3661,11 @@
 )
 
 (define-model N46
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1 @uc_round_2))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1 @uc_round_2))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_0))
   (interp-fun none (@uc_round_2))
   (interp-fun quorum_of_round (match (
@@ -3728,11 +3728,11 @@
 )
 
 (define-model N47
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1 @uc_round_2))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1 @uc_round_2))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_0))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (
@@ -3795,11 +3795,11 @@
 )
 
 (define-model N48
-  (define-univ config (@uc_config_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1 @uc_round_2))
-  (define-univ value (@uc_value_0))
+  (interp-sort config (@uc_config_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1 @uc_round_2))
+  (interp-sort value (@uc_value_0))
   (interp-fun master_minrel (@uc_round_0))
   (interp-fun none (@uc_round_0))
   (interp-fun quorum_of_round (match (

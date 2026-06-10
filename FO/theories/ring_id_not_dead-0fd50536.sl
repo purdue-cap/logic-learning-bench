@@ -187,23 +187,23 @@
   ((fol.ctx-x0-node-x1-node.var.x0.node)
    (fol.ctx-x0-node-x1-node.var.x1.node))))
 
-(define-finite FO.Asp (record (model Model)))
+(define-aspects FO.Asp (record (model Model)))
 
-(define-finite FO.Asp.x0.id (record (model Model) (x0 id)))
+(define-aspects FO.Asp.x0.id (record (model Model) (x0 id)))
 
-(define-finite FO.Asp.x0.node (record (model Model) (x0 node)))
+(define-aspects FO.Asp.x0.node (record (model Model) (x0 node)))
 
-(define-finite FO.Asp.x1.id (record (model Model) (x1 id)))
+(define-aspects FO.Asp.x1.id (record (model Model) (x1 id)))
 
-(define-finite FO.Asp.x1.node (record (model Model) (x1 node)))
+(define-aspects FO.Asp.x1.node (record (model Model) (x1 node)))
 
-(define-finite FO.Asp.x0.id.x1.id (record (model Model) (x0 id) (x1 id)))
+(define-aspects FO.Asp.x0.id.x1.id (record (model Model) (x0 id) (x1 id)))
 
-(define-finite FO.Asp.x0.id.x1.node (record (model Model) (x0 id) (x1 node)))
+(define-aspects FO.Asp.x0.id.x1.node (record (model Model) (x0 id) (x1 node)))
 
-(define-finite FO.Asp.x0.node.x1.id (record (model Model) (x0 node) (x1 id)))
+(define-aspects FO.Asp.x0.node.x1.id (record (model Model) (x0 node) (x1 id)))
 
-(define-finite FO.Asp.x0.node.x1.node (record (model Model) (x0 node) (x1 node)))
+(define-aspects FO.Asp.x0.node.x1.node (record (model Model) (x0 node) (x1 node)))
 
 (define-semantics
   ((Term.x0.id.id.Sem (term Term.x0.id.id) (asp FO.Asp.x0.id)))

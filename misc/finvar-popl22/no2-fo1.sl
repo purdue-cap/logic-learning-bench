@@ -26,8 +26,8 @@
    (FO1.ctx-x0.term.s)
    (FO1.ctx-x0.term.t))))
 
-(define-finite FO1.Asp (record (model Model)))
-(define-finite FO1.Asp.x0 (record (model Model) (x0 U)))
+(define-aspects FO1.Asp (record (model Model)))
+(define-aspects FO1.Asp.x0 (record (model Model) (x0 U)))
 
 (define-semantics
   ((FO1.TermU.Sem (term FO1.TermU) (asp FO1.Asp)))

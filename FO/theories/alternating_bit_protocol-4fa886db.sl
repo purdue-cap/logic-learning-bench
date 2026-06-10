@@ -1133,55 +1133,55 @@
    (fol.ctx-x0-abp.value-x1-abp.value.term.abp.receiver_array Term.x0.abp.value.x1.abp.value.abp.index_t)
    (fol.ctx-x0-abp.value-x1-abp.value.term.abp.sender_array Term.x0.abp.value.x1.abp.value.abp.index_t))))
 
-(define-finite FO.Asp (record (model Model)))
+(define-aspects FO.Asp (record (model Model)))
 
-(define-finite FO.Asp.x0.abp.ack_msg_t (record (model Model) (x0 abp.ack_msg_t)))
+(define-aspects FO.Asp.x0.abp.ack_msg_t (record (model Model) (x0 abp.ack_msg_t)))
 
-(define-finite FO.Asp.x0.abp.data_msg_t (record (model Model) (x0 abp.data_msg_t)))
+(define-aspects FO.Asp.x0.abp.data_msg_t (record (model Model) (x0 abp.data_msg_t)))
 
-(define-finite FO.Asp.x0.abp.index_t (record (model Model) (x0 abp.index_t)))
+(define-aspects FO.Asp.x0.abp.index_t (record (model Model) (x0 abp.index_t)))
 
-(define-finite FO.Asp.x0.abp.value (record (model Model) (x0 abp.value)))
+(define-aspects FO.Asp.x0.abp.value (record (model Model) (x0 abp.value)))
 
-(define-finite FO.Asp.x1.abp.ack_msg_t (record (model Model) (x1 abp.ack_msg_t)))
+(define-aspects FO.Asp.x1.abp.ack_msg_t (record (model Model) (x1 abp.ack_msg_t)))
 
-(define-finite FO.Asp.x1.abp.data_msg_t (record (model Model) (x1 abp.data_msg_t)))
+(define-aspects FO.Asp.x1.abp.data_msg_t (record (model Model) (x1 abp.data_msg_t)))
 
-(define-finite FO.Asp.x1.abp.index_t (record (model Model) (x1 abp.index_t)))
+(define-aspects FO.Asp.x1.abp.index_t (record (model Model) (x1 abp.index_t)))
 
-(define-finite FO.Asp.x1.abp.value (record (model Model) (x1 abp.value)))
+(define-aspects FO.Asp.x1.abp.value (record (model Model) (x1 abp.value)))
 
-(define-finite FO.Asp.x0.abp.ack_msg_t.x1.abp.ack_msg_t (record (model Model) (x0 abp.ack_msg_t) (x1 abp.ack_msg_t)))
+(define-aspects FO.Asp.x0.abp.ack_msg_t.x1.abp.ack_msg_t (record (model Model) (x0 abp.ack_msg_t) (x1 abp.ack_msg_t)))
 
-(define-finite FO.Asp.x0.abp.ack_msg_t.x1.abp.data_msg_t (record (model Model) (x0 abp.ack_msg_t) (x1 abp.data_msg_t)))
+(define-aspects FO.Asp.x0.abp.ack_msg_t.x1.abp.data_msg_t (record (model Model) (x0 abp.ack_msg_t) (x1 abp.data_msg_t)))
 
-(define-finite FO.Asp.x0.abp.ack_msg_t.x1.abp.index_t (record (model Model) (x0 abp.ack_msg_t) (x1 abp.index_t)))
+(define-aspects FO.Asp.x0.abp.ack_msg_t.x1.abp.index_t (record (model Model) (x0 abp.ack_msg_t) (x1 abp.index_t)))
 
-(define-finite FO.Asp.x0.abp.ack_msg_t.x1.abp.value (record (model Model) (x0 abp.ack_msg_t) (x1 abp.value)))
+(define-aspects FO.Asp.x0.abp.ack_msg_t.x1.abp.value (record (model Model) (x0 abp.ack_msg_t) (x1 abp.value)))
 
-(define-finite FO.Asp.x0.abp.data_msg_t.x1.abp.ack_msg_t (record (model Model) (x0 abp.data_msg_t) (x1 abp.ack_msg_t)))
+(define-aspects FO.Asp.x0.abp.data_msg_t.x1.abp.ack_msg_t (record (model Model) (x0 abp.data_msg_t) (x1 abp.ack_msg_t)))
 
-(define-finite FO.Asp.x0.abp.data_msg_t.x1.abp.data_msg_t (record (model Model) (x0 abp.data_msg_t) (x1 abp.data_msg_t)))
+(define-aspects FO.Asp.x0.abp.data_msg_t.x1.abp.data_msg_t (record (model Model) (x0 abp.data_msg_t) (x1 abp.data_msg_t)))
 
-(define-finite FO.Asp.x0.abp.data_msg_t.x1.abp.index_t (record (model Model) (x0 abp.data_msg_t) (x1 abp.index_t)))
+(define-aspects FO.Asp.x0.abp.data_msg_t.x1.abp.index_t (record (model Model) (x0 abp.data_msg_t) (x1 abp.index_t)))
 
-(define-finite FO.Asp.x0.abp.data_msg_t.x1.abp.value (record (model Model) (x0 abp.data_msg_t) (x1 abp.value)))
+(define-aspects FO.Asp.x0.abp.data_msg_t.x1.abp.value (record (model Model) (x0 abp.data_msg_t) (x1 abp.value)))
 
-(define-finite FO.Asp.x0.abp.index_t.x1.abp.ack_msg_t (record (model Model) (x0 abp.index_t) (x1 abp.ack_msg_t)))
+(define-aspects FO.Asp.x0.abp.index_t.x1.abp.ack_msg_t (record (model Model) (x0 abp.index_t) (x1 abp.ack_msg_t)))
 
-(define-finite FO.Asp.x0.abp.index_t.x1.abp.data_msg_t (record (model Model) (x0 abp.index_t) (x1 abp.data_msg_t)))
+(define-aspects FO.Asp.x0.abp.index_t.x1.abp.data_msg_t (record (model Model) (x0 abp.index_t) (x1 abp.data_msg_t)))
 
-(define-finite FO.Asp.x0.abp.index_t.x1.abp.index_t (record (model Model) (x0 abp.index_t) (x1 abp.index_t)))
+(define-aspects FO.Asp.x0.abp.index_t.x1.abp.index_t (record (model Model) (x0 abp.index_t) (x1 abp.index_t)))
 
-(define-finite FO.Asp.x0.abp.index_t.x1.abp.value (record (model Model) (x0 abp.index_t) (x1 abp.value)))
+(define-aspects FO.Asp.x0.abp.index_t.x1.abp.value (record (model Model) (x0 abp.index_t) (x1 abp.value)))
 
-(define-finite FO.Asp.x0.abp.value.x1.abp.ack_msg_t (record (model Model) (x0 abp.value) (x1 abp.ack_msg_t)))
+(define-aspects FO.Asp.x0.abp.value.x1.abp.ack_msg_t (record (model Model) (x0 abp.value) (x1 abp.ack_msg_t)))
 
-(define-finite FO.Asp.x0.abp.value.x1.abp.data_msg_t (record (model Model) (x0 abp.value) (x1 abp.data_msg_t)))
+(define-aspects FO.Asp.x0.abp.value.x1.abp.data_msg_t (record (model Model) (x0 abp.value) (x1 abp.data_msg_t)))
 
-(define-finite FO.Asp.x0.abp.value.x1.abp.index_t (record (model Model) (x0 abp.value) (x1 abp.index_t)))
+(define-aspects FO.Asp.x0.abp.value.x1.abp.index_t (record (model Model) (x0 abp.value) (x1 abp.index_t)))
 
-(define-finite FO.Asp.x0.abp.value.x1.abp.value (record (model Model) (x0 abp.value) (x1 abp.value)))
+(define-aspects FO.Asp.x0.abp.value.x1.abp.value (record (model Model) (x0 abp.value) (x1 abp.value)))
 
 (define-semantics
   ((Term.0.abp.index_t.Sem (term Term.0.abp.index_t) (asp FO.Asp)))

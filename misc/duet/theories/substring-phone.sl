@@ -15,10 +15,10 @@ slice.0.2 slice.0.3 slice.0.4 slice.1.3)
    (slice.0.4)
    (slice.1.3))))
 
-(define-finite ExAsp
+(define-aspects ExAsp
   (record (model Model)))
 
-(define-finite CharAsp
+(define-aspects CharAsp
   (record (model Model) (k Pos)))
 
 (define-semantics

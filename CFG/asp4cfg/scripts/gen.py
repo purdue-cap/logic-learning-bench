@@ -37,7 +37,7 @@ def model_block(name, word, alphabet):
     n = len(word)
     univ = "(" + " ".join(f"${i}" for i in range(n)) + ")"
     lines = [f"(define-model {name}"]
-    lines.append(f"  (define-univ Pos {univ})")
+    lines.append(f"  (interp-sort Pos {univ})")
     for sym in alphabet:
         true_arms = " ".join(f"(($ {i}) true)".replace("$ ", "$") for i, c in enumerate(word) if c == sym)
         arms = (true_arms + " " if true_arms else "") + "((_) false)"
@@ -101,7 +101,7 @@ def emit(k: int, pos, neg, alphabet, source: str,
         out.append("")
 
     # Aspect
-    out.append("(define-finite CFG.Asp")
+    out.append("(define-aspects CFG.Asp")
     out.append("  (record")
     out.append("    (model Model)")
     out.append("    (i Int)")

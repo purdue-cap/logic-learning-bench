@@ -46,7 +46,7 @@ ltl.U)
    (ltl.=> LTL LTL)
    (ltl.U LTL LTL))))
 
-(define-finite LTL.Asp
+(define-aspects LTL.Asp
   (record (model Model) (t Pos)))
 
 (define-semantics

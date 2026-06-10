@@ -6,7 +6,7 @@
 
 ;; Chain1: a->v->c->a->v (length 5)
 (define-model Chain1
-    (define-univ U ($0 $1 $2 $3 $4))
+    (interp-sort U ($0 $1 $2 $3 $4))
     (interp-fun R (match (
         (($0 $1) true)
         (($1 $2) true)
@@ -34,7 +34,7 @@
 
 ;; Chain2: Similar structure but different labeling
 (define-model Chain2
-    (define-univ U ($0 $1 $2 $3 $4))
+    (interp-sort U ($0 $1 $2 $3 $4))
     (interp-fun R (match (
         (($0 $1) true)
         (($1 $2) true)
@@ -62,7 +62,7 @@
 
 ;; Chain3: Linear chain (no cycle)
 (define-model Chain3
-    (define-univ U ($0 $1 $2 $3 $4 $5))
+    (interp-sort U ($0 $1 $2 $3 $4 $5))
     (interp-fun R (match (
         (($0 $1) true)
         (($1 $2) true)
@@ -93,7 +93,7 @@
 
 ;; Chain4-6: Similar structures with variations
 (define-model Chain4
-    (define-univ U ($0 $1 $2 $3 $4 $5))
+    (interp-sort U ($0 $1 $2 $3 $4 $5))
     (interp-fun R (match (
         (($0 $1) true)
         (($1 $2) true)
@@ -122,7 +122,7 @@
 )
 
 (define-model Chain5
-    (define-univ U ($0 $1 $2 $3 $4 $5))
+    (interp-sort U ($0 $1 $2 $3 $4 $5))
     (interp-fun R (match (
         (($0 $1) true)
         (($1 $2) true)
@@ -151,7 +151,7 @@
 )
 
 (define-model Chain6
-    (define-univ U ($0 $1 $2 $3 $4 $5 $6))
+    (interp-sort U ($0 $1 $2 $3 $4 $5 $6))
     (interp-fun R (match (
         (($0 $1) true)
         (($1 $2) true)

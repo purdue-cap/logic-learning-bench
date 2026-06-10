@@ -131,7 +131,7 @@ def model_to_sl(name: str, timesteps: list[list[int]], loop: int, nvars: int) ->
     lines = []
     elems = " ".join(f"${i}" for i in range(n))
     lines.append(f"(define-model {name}")
-    lines.append(f"  (define-univ Pos ({elems}))")
+    lines.append(f"  (interp-sort Pos ({elems}))")
     lines.append("  (interp-fun start ($0))")
 
     for v in range(nvars):

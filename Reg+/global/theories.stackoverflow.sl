@@ -11,7 +11,7 @@
    (re.inter RegLan RegLan)
    (re.* RegLan))))
 
-(define-finite RegLan.Asp
+(define-aspects RegLan.Asp
   (record (model Model) (i Int) (j Int))
   :where (and (<= 0 i) (<= i j) (<= j (size (Pos model)))))
 

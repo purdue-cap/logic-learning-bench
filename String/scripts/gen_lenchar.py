@@ -419,8 +419,8 @@ def emit(n_args, constants, constraints, slack=0, source_tag=None):
     o.append("(declare-fun lt.idx    (Idx Idx) Bool)")
     o.append("")
 
-    o.append("(define-finite ExAsp   (record (model Model)))")
-    o.append("(define-finite CharAsp (record (model Model) (k Idx)))")
+    o.append("(define-aspects ExAsp   (record (model Model)))")
+    o.append("(define-aspects CharAsp (record (model Model) (k Idx)))")
     o.append("")
 
     # ---- IndexOfFirst helper relation (first match of y in x, value Idx) ---
@@ -584,8 +584,8 @@ def emit_model(m, n_args, constants, L):
     chr_elems = PAD + " " + " ".join(char_univ_name(c) for c in chars)
 
     lines.append(f"(define-model {name}")
-    lines.append(f"  (define-univ Idx ({idx_elems}))")
-    lines.append(f"  (define-univ Chr ({chr_elems}))")
+    lines.append(f"  (interp-sort Idx ({idx_elems}))")
+    lines.append(f"  (interp-sort Chr ({chr_elems}))")
     for k in range(L + 1):
         lines.append(f"  (interp-fun idx.{k} ({idx_e(k)}))")
     lines.append(f"  (interp-fun idx.neg1 ({BOT}))")

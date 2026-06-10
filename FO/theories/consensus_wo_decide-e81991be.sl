@@ -195,23 +195,23 @@
    (fol.ctx-x0-quorum-x1-quorum.var.x1.quorum)
    (fol.ctx-x0-quorum-x1-quorum.term.voting_quorum))))
 
-(define-finite FO.Asp (record (model Model)))
+(define-aspects FO.Asp (record (model Model)))
 
-(define-finite FO.Asp.x0.node (record (model Model) (x0 node)))
+(define-aspects FO.Asp.x0.node (record (model Model) (x0 node)))
 
-(define-finite FO.Asp.x0.quorum (record (model Model) (x0 quorum)))
+(define-aspects FO.Asp.x0.quorum (record (model Model) (x0 quorum)))
 
-(define-finite FO.Asp.x1.node (record (model Model) (x1 node)))
+(define-aspects FO.Asp.x1.node (record (model Model) (x1 node)))
 
-(define-finite FO.Asp.x1.quorum (record (model Model) (x1 quorum)))
+(define-aspects FO.Asp.x1.quorum (record (model Model) (x1 quorum)))
 
-(define-finite FO.Asp.x0.node.x1.node (record (model Model) (x0 node) (x1 node)))
+(define-aspects FO.Asp.x0.node.x1.node (record (model Model) (x0 node) (x1 node)))
 
-(define-finite FO.Asp.x0.node.x1.quorum (record (model Model) (x0 node) (x1 quorum)))
+(define-aspects FO.Asp.x0.node.x1.quorum (record (model Model) (x0 node) (x1 quorum)))
 
-(define-finite FO.Asp.x0.quorum.x1.node (record (model Model) (x0 quorum) (x1 node)))
+(define-aspects FO.Asp.x0.quorum.x1.node (record (model Model) (x0 quorum) (x1 node)))
 
-(define-finite FO.Asp.x0.quorum.x1.quorum (record (model Model) (x0 quorum) (x1 quorum)))
+(define-aspects FO.Asp.x0.quorum.x1.quorum (record (model Model) (x0 quorum) (x1 quorum)))
 
 (define-semantics
   ((Term.0.quorum.Sem (term Term.0.quorum) (asp FO.Asp)))

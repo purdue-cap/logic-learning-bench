@@ -21,102 +21,102 @@
 (declare-fun b (Pos) Bool)
 
 (define-model w_p_aab
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun a (match ((($0) true) (($1) true) ((_) false))))
   (interp-fun b (match ((($2) true) ((_) false))))
 )
 
 (define-model w_p_abb
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun a (match ((($0) true) ((_) false))))
   (interp-fun b (match ((($1) true) (($2) true) ((_) false))))
 )
 
 (define-model w_p_aaaabb
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun a (match ((($0) true) (($1) true) (($2) true) (($3) true) ((_) false))))
   (interp-fun b (match ((($4) true) (($5) true) ((_) false))))
 )
 
 (define-model w_p_aabbbb
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun a (match ((($0) true) (($1) true) ((_) false))))
   (interp-fun b (match ((($2) true) (($3) true) (($4) true) (($5) true) ((_) false))))
 )
 
 (define-model w_n_a
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun a (match ((($0) true) ((_) false))))
   (interp-fun b (match (((_) false))))
 )
 
 (define-model w_n_b
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun a (match (((_) false))))
   (interp-fun b (match ((($0) true) ((_) false))))
 )
 
 (define-model w_n_aa
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun a (match ((($0) true) (($1) true) ((_) false))))
   (interp-fun b (match (((_) false))))
 )
 
 (define-model w_n_ab
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun a (match ((($0) true) ((_) false))))
   (interp-fun b (match ((($1) true) ((_) false))))
 )
 
 (define-model w_n_ba
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun a (match ((($1) true) ((_) false))))
   (interp-fun b (match ((($0) true) ((_) false))))
 )
 
 (define-model w_n_bb
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun a (match (((_) false))))
   (interp-fun b (match ((($0) true) (($1) true) ((_) false))))
 )
 
 (define-model w_n_aaa
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun a (match ((($0) true) (($1) true) (($2) true) ((_) false))))
   (interp-fun b (match (((_) false))))
 )
 
 (define-model w_n_aba
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun a (match ((($0) true) (($2) true) ((_) false))))
   (interp-fun b (match ((($1) true) ((_) false))))
 )
 
 (define-model w_n_baa
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun a (match ((($1) true) (($2) true) ((_) false))))
   (interp-fun b (match ((($0) true) ((_) false))))
 )
 
 (define-model w_n_bab
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun a (match ((($1) true) ((_) false))))
   (interp-fun b (match ((($0) true) (($2) true) ((_) false))))
 )
 
 (define-model w_n_bba
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun a (match ((($2) true) ((_) false))))
   (interp-fun b (match ((($0) true) (($1) true) ((_) false))))
 )
 
 (define-model w_n_bbb
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun a (match (((_) false))))
   (interp-fun b (match ((($0) true) (($1) true) (($2) true) ((_) false))))
 )
 
-(define-finite CFG.Asp
+(define-aspects CFG.Asp
   (record
     (model Model)
     (i Int)

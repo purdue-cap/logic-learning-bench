@@ -5,7 +5,7 @@
 
 ;; Tree1: Complete binary tree depth 3
 (define-model Tree1
-    (define-univ U ($0 $1 $2 $3 $4 $5 $6))
+    (interp-sort U ($0 $1 $2 $3 $4 $5 $6))
     (interp-fun R (match (
         (($0 $1) true)  ;; root to left
         (($0 $2) true)  ;; root to right
@@ -36,7 +36,7 @@
 
 ;; Tree2-8: Similar tree structures with different labelings
 (define-model Tree2
-    (define-univ U ($0 $1 $2 $3 $4 $5 $6))
+    (interp-sort U ($0 $1 $2 $3 $4 $5 $6))
     (interp-fun R (match (
         (($0 $1) true)
         (($0 $2) true)
@@ -66,7 +66,7 @@
 )
 
 (define-model Tree3
-    (define-univ U ($0 $1 $2 $3 $4 $5 $6 $7))
+    (interp-sort U ($0 $1 $2 $3 $4 $5 $6 $7))
     (interp-fun R (match (
         (($0 $1) true)
         (($0 $2) true)
@@ -98,7 +98,7 @@
 )
 
 (define-model Tree4
-    (define-univ U ($0 $1 $2 $3 $4 $5 $6 $7))
+    (interp-sort U ($0 $1 $2 $3 $4 $5 $6 $7))
     (interp-fun R (match (
         (($0 $1) true)
         (($0 $2) true)
@@ -131,7 +131,7 @@
 
 ;; Models Tree5-Tree8 with different structures
 (define-model Tree5
-    (define-univ U ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+    (interp-sort U ($0 $1 $2 $3 $4 $5 $6 $7 $8))
     (interp-fun R (match (
         (($0 $1) true)
         (($0 $2) true)
@@ -165,7 +165,7 @@
 )
 
 (define-model Tree6
-    (define-univ U ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+    (interp-sort U ($0 $1 $2 $3 $4 $5 $6 $7 $8))
     (interp-fun R (match (
         (($0 $1) true)
         (($0 $2) true)
@@ -199,7 +199,7 @@
 )
 
 (define-model Tree7
-    (define-univ U ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+    (interp-sort U ($0 $1 $2 $3 $4 $5 $6 $7 $8))
     (interp-fun R (match (
         (($0 $1) true)
         (($0 $2) true)
@@ -233,7 +233,7 @@
 )
 
 (define-model Tree8
-    (define-univ U ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+    (interp-sort U ($0 $1 $2 $3 $4 $5 $6 $7 $8))
     (interp-fun R (match (
         (($0 $1) true)
         (($0 $2) true)

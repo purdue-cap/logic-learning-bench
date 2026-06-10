@@ -4,8 +4,8 @@
 (require "theories/consensus_wo_decide-e81991be.sl")
 
 (define-model P0
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
   (interp-fun voting_quorum (@uc_quorum_0))
   (interp-fun leader (match (
     ((@uc_node_0) true)
@@ -31,8 +31,8 @@
 )
 
 (define-model N0
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
   (interp-fun voting_quorum (@uc_quorum_0))
   (interp-fun leader (match (
     ((@uc_node_0) true)
@@ -57,8 +57,8 @@
 )
 
 (define-model N1
-  (define-univ node (@uc_node_0 @uc_node_1))
-  (define-univ quorum (@uc_quorum_0))
+  (interp-sort node (@uc_node_0 @uc_node_1))
+  (interp-sort quorum (@uc_quorum_0))
   (interp-fun voting_quorum (@uc_quorum_0))
   (interp-fun leader (match (
     ((@uc_node_0) true)
@@ -86,8 +86,8 @@
 )
 
 (define-model N2
-  (define-univ node (@uc_node_0 @uc_node_1))
-  (define-univ quorum (@uc_quorum_0))
+  (interp-sort node (@uc_node_0 @uc_node_1))
+  (interp-sort quorum (@uc_quorum_0))
   (interp-fun voting_quorum (@uc_quorum_0))
   (interp-fun leader (match (
     ((@uc_node_0) true)
@@ -116,8 +116,8 @@
 )
 
 (define-model N3
-  (define-univ node (@uc_node_0 @uc_node_1))
-  (define-univ quorum (@uc_quorum_0))
+  (interp-sort node (@uc_node_0 @uc_node_1))
+  (interp-sort quorum (@uc_quorum_0))
   (interp-fun voting_quorum (@uc_quorum_0))
   (interp-fun leader (match (
     ((@uc_node_0) true)
@@ -146,8 +146,8 @@
 )
 
 (define-model N4
-  (define-univ node (@uc_node_0 @uc_node_1))
-  (define-univ quorum (@uc_quorum_0))
+  (interp-sort node (@uc_node_0 @uc_node_1))
+  (interp-sort quorum (@uc_quorum_0))
   (interp-fun voting_quorum (@uc_quorum_0))
   (interp-fun leader (match (
     ((@uc_node_0) true)
@@ -176,8 +176,8 @@
 )
 
 (define-model P1
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
   (interp-fun voting_quorum (@uc_quorum_0))
   (interp-fun leader (match (
     ((_) false)
@@ -201,8 +201,8 @@
 )
 
 (define-model N5
-  (define-univ node (@uc_node_0 @uc_node_1))
-  (define-univ quorum (@uc_quorum_0))
+  (interp-sort node (@uc_node_0 @uc_node_1))
+  (interp-sort quorum (@uc_quorum_0))
   (interp-fun voting_quorum (@uc_quorum_0))
   (interp-fun leader (match (
     ((@uc_node_1) true)
@@ -230,8 +230,8 @@
 )
 
 (define-model P2
-  (define-univ node (@uc_node_0 @uc_node_1))
-  (define-univ quorum (@uc_quorum_0))
+  (interp-sort node (@uc_node_0 @uc_node_1))
+  (interp-sort quorum (@uc_quorum_0))
   (interp-fun voting_quorum (@uc_quorum_0))
   (interp-fun leader (match (
     ((@uc_node_0) true)

@@ -4,9 +4,9 @@
 (require "theories/tlb_pcrel-ea683e8e.sl")
 
 (define-model P0
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -138,9 +138,9 @@
 )
 
 (define-model N0
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -265,9 +265,9 @@
 )
 
 (define-model N1
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -394,9 +394,9 @@
 )
 
 (define-model N2
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -523,9 +523,9 @@
 )
 
 (define-model N3
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -651,9 +651,9 @@
 )
 
 (define-model N4
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -779,9 +779,9 @@
 )
 
 (define-model N5
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -908,9 +908,9 @@
 )
 
 (define-model N6
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -1036,9 +1036,9 @@
 )
 
 (define-model N7
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -1164,9 +1164,9 @@
 )
 
 (define-model N8
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -1292,9 +1292,9 @@
 )
 
 (define-model N9
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -1421,9 +1421,9 @@
 )
 
 (define-model N10
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -1549,9 +1549,9 @@
 )
 
 (define-model N11
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -1677,9 +1677,9 @@
 )
 
 (define-model N12
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -1805,9 +1805,9 @@
 )
 
 (define-model N13
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -1933,9 +1933,9 @@
 )
 
 (define-model N14
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -2061,9 +2061,9 @@
 )
 
 (define-model N15
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -2189,9 +2189,9 @@
 )
 
 (define-model N16
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -2317,9 +2317,9 @@
 )
 
 (define-model N17
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -2447,9 +2447,9 @@
 )
 
 (define-model P1
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -2580,9 +2580,9 @@
 )
 
 (define-model N18
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -2709,9 +2709,9 @@
 )
 
 (define-model N19
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -2839,9 +2839,9 @@
 )
 
 (define-model N20
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -2968,9 +2968,9 @@
 )
 
 (define-model N21
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -3097,9 +3097,9 @@
 )
 
 (define-model N22
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -3226,9 +3226,9 @@
 )
 
 (define-model P2
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -3359,9 +3359,9 @@
 )
 
 (define-model P3
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -3492,9 +3492,9 @@
 )
 
 (define-model P4
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -3625,9 +3625,9 @@
 )
 
 (define-model P5
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -3758,9 +3758,9 @@
 )
 
 (define-model P6
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -3911,9 +3911,9 @@
 )
 
 (define-model P7
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -4043,9 +4043,9 @@
 )
 
 (define-model P8
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -4175,9 +4175,9 @@
 )
 
 (define-model P9
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -4307,9 +4307,9 @@
 )
 
 (define-model P10
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -4439,9 +4439,9 @@
 )
 
 (define-model P11
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -4571,9 +4571,9 @@
 )
 
 (define-model P12
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -4703,9 +4703,9 @@
 )
 
 (define-model P13
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -4835,9 +4835,9 @@
 )
 
 (define-model P14
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -4967,9 +4967,9 @@
 )
 
 (define-model P15
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -5099,9 +5099,9 @@
 )
 
 (define-model P16
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -5231,9 +5231,9 @@
 )
 
 (define-model P17
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -5362,9 +5362,9 @@
 )
 
 (define-model P18
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -5493,9 +5493,9 @@
 )
 
 (define-model P19
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -5624,9 +5624,9 @@
 )
 
 (define-model P20
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -5755,9 +5755,9 @@
 )
 
 (define-model P21
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -5886,9 +5886,9 @@
 )
 
 (define-model P22
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -6017,9 +6017,9 @@
 )
 
 (define-model P23
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -6148,9 +6148,9 @@
 )
 
 (define-model P24
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -6279,9 +6279,9 @@
 )
 
 (define-model P25
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -6410,9 +6410,9 @@
 )
 
 (define-model P26
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -6541,9 +6541,9 @@
 )
 
 (define-model P27
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -6671,9 +6671,9 @@
 )
 
 (define-model P28
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -6801,9 +6801,9 @@
 )
 
 (define-model P29
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -6931,9 +6931,9 @@
 )
 
 (define-model P30
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -7061,9 +7061,9 @@
 )
 
 (define-model P31
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -7191,9 +7191,9 @@
 )
 
 (define-model P32
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -7320,9 +7320,9 @@
 )
 
 (define-model N23
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -7451,9 +7451,9 @@
 )
 
 (define-model N24
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -7580,9 +7580,9 @@
 )
 
 (define-model N25
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -7710,9 +7710,9 @@
 )
 
 (define-model N26
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -7840,9 +7840,9 @@
 )
 
 (define-model N27
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -7970,9 +7970,9 @@
 )
 
 (define-model N28
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -8100,9 +8100,9 @@
 )
 
 (define-model N29
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -8231,9 +8231,9 @@
 )
 
 (define-model N30
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -8362,9 +8362,9 @@
 )
 
 (define-model N31
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -8492,9 +8492,9 @@
 )
 
 (define-model N32
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -8623,9 +8623,9 @@
 )
 
 (define-model N33
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -8754,9 +8754,9 @@
 )
 
 (define-model N34
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -8884,9 +8884,9 @@
 )
 
 (define-model N35
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -9014,9 +9014,9 @@
 )
 
 (define-model N36
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -9144,9 +9144,9 @@
 )
 
 (define-model N37
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -9275,9 +9275,9 @@
 )
 
 (define-model P33
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -9408,9 +9408,9 @@
 )
 
 (define-model P34
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -9541,9 +9541,9 @@
 )
 
 (define-model N38
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -9674,9 +9674,9 @@
 )
 
 (define-model P35
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -9806,9 +9806,9 @@
 )
 
 (define-model N39
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -9937,9 +9937,9 @@
 )
 
 (define-model P36
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -10069,9 +10069,9 @@
 )
 
 (define-model P37
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -10201,9 +10201,9 @@
 )
 
 (define-model P38
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -10352,9 +10352,9 @@
 )
 
 (define-model P39
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -10503,9 +10503,9 @@
 )
 
 (define-model P40
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -10654,9 +10654,9 @@
 )
 
 (define-model P41
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -10805,9 +10805,9 @@
 )
 
 (define-model P42
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -10937,9 +10937,9 @@
 )
 
 (define-model P43
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -11088,9 +11088,9 @@
 )
 
 (define-model N40
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -11219,9 +11219,9 @@
 )
 
 (define-model P44
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -11351,9 +11351,9 @@
 )
 
 (define-model P45
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -11483,9 +11483,9 @@
 )
 
 (define-model N41
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -11613,9 +11613,9 @@
 )
 
 (define-model N42
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -11743,9 +11743,9 @@
 )
 
 (define-model N43
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -11873,9 +11873,9 @@
 )
 
 (define-model P46
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -12005,9 +12005,9 @@
 )
 
 (define-model P47
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -12137,9 +12137,9 @@
 )
 
 (define-model N44
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -12268,9 +12268,9 @@
 )
 
 (define-model N45
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -12399,9 +12399,9 @@
 )
 
 (define-model P48
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -12531,9 +12531,9 @@
 )
 
 (define-model P49
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -12663,9 +12663,9 @@
 )
 
 (define-model P50
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -12795,9 +12795,9 @@
 )
 
 (define-model P51
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -12947,9 +12947,9 @@
 )
 
 (define-model N46
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -13077,9 +13077,9 @@
 )
 
 (define-model P52
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -13229,9 +13229,9 @@
 )
 
 (define-model P53
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -13380,9 +13380,9 @@
 )
 
 (define-model N47
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -13512,9 +13512,9 @@
 )
 
 (define-model N48
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -13644,9 +13644,9 @@
 )
 
 (define-model P54
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -13775,9 +13775,9 @@
 )
 
 (define-model P55
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -13906,9 +13906,9 @@
 )
 
 (define-model P56
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -14037,9 +14037,9 @@
 )
 
 (define-model P57
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -14168,9 +14168,9 @@
 )
 
 (define-model P58
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -14299,9 +14299,9 @@
 )
 
 (define-model P59
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -14448,9 +14448,9 @@
 )
 
 (define-model P60
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -14597,9 +14597,9 @@
 )
 
 (define-model P61
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -14746,9 +14746,9 @@
 )
 
 (define-model P62
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -14895,9 +14895,9 @@
 )
 
 (define-model P63
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -15044,9 +15044,9 @@
 )
 
 (define-model P64
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -15193,9 +15193,9 @@
 )
 
 (define-model P65
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -15342,9 +15342,9 @@
 )
 
 (define-model N49
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -15471,9 +15471,9 @@
 )
 
 (define-model P66
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -15620,9 +15620,9 @@
 )
 
 (define-model P67
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -15769,9 +15769,9 @@
 )
 
 (define-model N50
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -15898,9 +15898,9 @@
 )
 
 (define-model P68
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -16047,9 +16047,9 @@
 )
 
 (define-model P69
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -16178,9 +16178,9 @@
 )
 
 (define-model P70
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -16309,9 +16309,9 @@
 )
 
 (define-model P71
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -16459,9 +16459,9 @@
 )
 
 (define-model P72
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -16590,9 +16590,9 @@
 )
 
 (define-model P73
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -16721,9 +16721,9 @@
 )
 
 (define-model P74
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -16852,9 +16852,9 @@
 )
 
 (define-model N51
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -16984,9 +16984,9 @@
 )
 
 (define-model P75
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -17115,9 +17115,9 @@
 )
 
 (define-model N52
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -17247,9 +17247,9 @@
 )
 
 (define-model P76
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -17378,9 +17378,9 @@
 )
 
 (define-model P77
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -17528,9 +17528,9 @@
 )
 
 (define-model P78
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -17678,9 +17678,9 @@
 )
 
 (define-model P79
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -17828,9 +17828,9 @@
 )
 
 (define-model P80
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -17978,9 +17978,9 @@
 )
 
 (define-model P81
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -18109,9 +18109,9 @@
 )
 
 (define-model P82
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -18240,9 +18240,9 @@
 )
 
 (define-model P83
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -18371,9 +18371,9 @@
 )
 
 (define-model P84
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -18502,9 +18502,9 @@
 )
 
 (define-model P85
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -18633,9 +18633,9 @@
 )
 
 (define-model P86
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -18764,9 +18764,9 @@
 )
 
 (define-model P87
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -18914,9 +18914,9 @@
 )
 
 (define-model P88
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -19045,9 +19045,9 @@
 )
 
 (define-model P89
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -19195,9 +19195,9 @@
 )
 
 (define-model P90
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -19345,9 +19345,9 @@
 )
 
 (define-model P91
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -19476,9 +19476,9 @@
 )
 
 (define-model P92
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -19626,9 +19626,9 @@
 )
 
 (define-model P93
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -19776,9 +19776,9 @@
 )
 
 (define-model P94
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -19907,9 +19907,9 @@
 )
 
 (define-model P95
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -20038,9 +20038,9 @@
 )
 
 (define-model P96
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -20169,9 +20169,9 @@
 )
 
 (define-model P97
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -20300,9 +20300,9 @@
 )
 
 (define-model P98
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -20431,9 +20431,9 @@
 )
 
 (define-model P99
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -20578,9 +20578,9 @@
 )
 
 (define-model P100
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -20708,9 +20708,9 @@
 )
 
 (define-model P101
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -20855,9 +20855,9 @@
 )
 
 (define-model P102
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -21002,9 +21002,9 @@
 )
 
 (define-model P103
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -21149,9 +21149,9 @@
 )
 
 (define-model P104
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -21296,9 +21296,9 @@
 )
 
 (define-model P105
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -21443,9 +21443,9 @@
 )
 
 (define-model P106
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -21590,9 +21590,9 @@
 )
 
 (define-model P107
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -21737,9 +21737,9 @@
 )
 
 (define-model P108
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -21884,9 +21884,9 @@
 )
 
 (define-model P109
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -22031,9 +22031,9 @@
 )
 
 (define-model P110
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -22179,9 +22179,9 @@
 )
 
 (define-model P111
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -22327,9 +22327,9 @@
 )
 
 (define-model P112
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -22475,9 +22475,9 @@
 )
 
 (define-model P113
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -22623,9 +22623,9 @@
 )
 
 (define-model P114
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -22753,9 +22753,9 @@
 )
 
 (define-model P115
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -22883,9 +22883,9 @@
 )
 
 (define-model P116
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -23031,9 +23031,9 @@
 )
 
 (define-model P117
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -23179,9 +23179,9 @@
 )
 
 (define-model P118
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -23309,9 +23309,9 @@
 )
 
 (define-model P119
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -23439,9 +23439,9 @@
 )
 
 (define-model P120
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -23587,9 +23587,9 @@
 )
 
 (define-model P121
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -23717,9 +23717,9 @@
 )
 
 (define-model P122
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -23847,9 +23847,9 @@
 )
 
 (define-model P123
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -23977,9 +23977,9 @@
 )
 
 (define-model P124
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -24125,9 +24125,9 @@
 )
 
 (define-model P125
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -24273,9 +24273,9 @@
 )
 
 (define-model P126
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -24403,9 +24403,9 @@
 )
 
 (define-model P127
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -24533,9 +24533,9 @@
 )
 
 (define-model P128
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -24681,9 +24681,9 @@
 )
 
 (define-model P129
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -24829,9 +24829,9 @@
 )
 
 (define-model P130
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -24978,9 +24978,9 @@
 )
 
 (define-model P131
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -25127,9 +25127,9 @@
 )
 
 (define-model P132
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -25276,9 +25276,9 @@
 )
 
 (define-model P133
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -25406,9 +25406,9 @@
 )
 
 (define-model P134
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -25536,9 +25536,9 @@
 )
 
 (define-model P135
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -25685,9 +25685,9 @@
 )
 
 (define-model P136
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -25815,9 +25815,9 @@
 )
 
 (define-model P137
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -25945,9 +25945,9 @@
 )
 
 (define-model P138
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -26075,9 +26075,9 @@
 )
 
 (define-model P139
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -26205,9 +26205,9 @@
 )
 
 (define-model P140
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -26335,9 +26335,9 @@
 )
 
 (define-model P141
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -26465,9 +26465,9 @@
 )
 
 (define-model P142
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -26614,9 +26614,9 @@
 )
 
 (define-model P143
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -26744,9 +26744,9 @@
 )
 
 (define-model P144
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -26874,9 +26874,9 @@
 )
 
 (define-model P145
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -27022,9 +27022,9 @@
 )
 
 (define-model P146
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -27170,9 +27170,9 @@
 )
 
 (define-model P147
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -27318,9 +27318,9 @@
 )
 
 (define-model P148
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -27448,9 +27448,9 @@
 )
 
 (define-model P149
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -27578,9 +27578,9 @@
 )
 
 (define-model P150
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -27726,9 +27726,9 @@
 )
 
 (define-model P151
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -27874,9 +27874,9 @@
 )
 
 (define-model P152
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -28004,9 +28004,9 @@
 )
 
 (define-model P153
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -28134,9 +28134,9 @@
 )
 
 (define-model P154
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -28282,9 +28282,9 @@
 )
 
 (define-model P155
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -28412,9 +28412,9 @@
 )
 
 (define-model P156
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -28542,9 +28542,9 @@
 )
 
 (define-model P157
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -28672,9 +28672,9 @@
 )
 
 (define-model P158
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -28820,9 +28820,9 @@
 )
 
 (define-model P159
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -28950,9 +28950,9 @@
 )
 
 (define-model P160
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -29098,9 +29098,9 @@
 )
 
 (define-model P161
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -29246,9 +29246,9 @@
 )
 
 (define-model P162
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -29376,9 +29376,9 @@
 )
 
 (define-model P163
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -29506,9 +29506,9 @@
 )
 
 (define-model P164
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -29652,9 +29652,9 @@
 )
 
 (define-model P165
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -29798,9 +29798,9 @@
 )
 
 (define-model P166
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -29944,9 +29944,9 @@
 )
 
 (define-model P167
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -30090,9 +30090,9 @@
 )
 
 (define-model P168
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -30237,9 +30237,9 @@
 )
 
 (define-model P169
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -30384,9 +30384,9 @@
 )
 
 (define-model P170
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -30530,9 +30530,9 @@
 )
 
 (define-model P171
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -30676,9 +30676,9 @@
 )
 
 (define-model P172
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -30822,9 +30822,9 @@
 )
 
 (define-model P173
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -30968,9 +30968,9 @@
 )
 
 (define-model P174
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -31097,9 +31097,9 @@
 )
 
 (define-model P175
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -31244,9 +31244,9 @@
 )
 
 (define-model P176
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -31390,9 +31390,9 @@
 )
 
 (define-model P177
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -31537,9 +31537,9 @@
 )
 
 (define-model P178
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -31666,9 +31666,9 @@
 )
 
 (define-model P179
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -31795,9 +31795,9 @@
 )
 
 (define-model P180
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -31924,9 +31924,9 @@
 )
 
 (define-model P181
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -32071,9 +32071,9 @@
 )
 
 (define-model P182
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -32218,9 +32218,9 @@
 )
 
 (define-model P183
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -32347,9 +32347,9 @@
 )
 
 (define-model P184
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -32476,9 +32476,9 @@
 )
 
 (define-model P185
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -32623,9 +32623,9 @@
 )
 
 (define-model P186
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -32752,9 +32752,9 @@
 )
 
 (define-model P187
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -32881,9 +32881,9 @@
 )
 
 (define-model P188
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -33010,9 +33010,9 @@
 )
 
 (define-model P189
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -33157,9 +33157,9 @@
 )
 
 (define-model P190
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -33304,9 +33304,9 @@
 )
 
 (define-model P191
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -33450,9 +33450,9 @@
 )
 
 (define-model P192
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -33579,9 +33579,9 @@
 )
 
 (define-model P193
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -33708,9 +33708,9 @@
 )
 
 (define-model P194
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -33837,9 +33837,9 @@
 )
 
 (define-model P195
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -33984,9 +33984,9 @@
 )
 
 (define-model P196
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -34113,9 +34113,9 @@
 )
 
 (define-model P197
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -34259,9 +34259,9 @@
 )
 
 (define-model P198
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -34388,9 +34388,9 @@
 )
 
 (define-model P199
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -34517,9 +34517,9 @@
 )
 
 (define-model P200
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -34663,9 +34663,9 @@
 )
 
 (define-model P201
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -34809,9 +34809,9 @@
 )
 
 (define-model P202
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -34954,9 +34954,9 @@
 )
 
 (define-model P203
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -35099,9 +35099,9 @@
 )
 
 (define-model P204
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -35244,9 +35244,9 @@
 )
 
 (define-model P205
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -35389,9 +35389,9 @@
 )
 
 (define-model P206
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -35534,9 +35534,9 @@
 )
 
 (define-model P207
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -35680,9 +35680,9 @@
 )
 
 (define-model P208
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -35826,9 +35826,9 @@
 )
 
 (define-model P209
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -35972,9 +35972,9 @@
 )
 
 (define-model P210
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -36101,9 +36101,9 @@
 )
 
 (define-model P211
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -36247,9 +36247,9 @@
 )
 
 (define-model P212
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -36393,9 +36393,9 @@
 )
 
 (define-model P213
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -36522,9 +36522,9 @@
 )
 
 (define-model P214
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -36651,9 +36651,9 @@
 )
 
 (define-model P215
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -36780,9 +36780,9 @@
 )
 
 (define-model P216
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -36926,9 +36926,9 @@
 )
 
 (define-model P217
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -37072,9 +37072,9 @@
 )
 
 (define-model P218
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -37201,9 +37201,9 @@
 )
 
 (define-model P219
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -37344,9 +37344,9 @@
 )
 
 (define-model P220
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -37488,9 +37488,9 @@
 )
 
 (define-model P221
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -37632,9 +37632,9 @@
 )
 
 (define-model P222
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -37777,9 +37777,9 @@
 )
 
 (define-model P223
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -37905,9 +37905,9 @@
 )
 
 (define-model P224
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -38049,9 +38049,9 @@
 )
 
 (define-model P225
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -38193,9 +38193,9 @@
 )
 
 (define-model P226
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -38337,9 +38337,9 @@
 )
 
 (define-model P227
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -38481,9 +38481,9 @@
 )
 
 (define-model P228
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -38625,9 +38625,9 @@
 )
 
 (define-model P229
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -38769,9 +38769,9 @@
 )
 
 (define-model P230
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -38914,9 +38914,9 @@
 )
 
 (define-model P231
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -39042,9 +39042,9 @@
 )
 
 (define-model P232
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -39186,9 +39186,9 @@
 )
 
 (define-model P233
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -39330,9 +39330,9 @@
 )
 
 (define-model P234
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -39458,9 +39458,9 @@
 )
 
 (define-model P235
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -39603,9 +39603,9 @@
 )
 
 (define-model P236
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -39748,9 +39748,9 @@
 )
 
 (define-model P237
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -39893,9 +39893,9 @@
 )
 
 (define-model P238
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -40021,9 +40021,9 @@
 )
 
 (define-model P239
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -40149,9 +40149,9 @@
 )
 
 (define-model P240
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -40294,9 +40294,9 @@
 )
 
 (define-model P241
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -40439,9 +40439,9 @@
 )
 
 (define-model P242
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -40567,9 +40567,9 @@
 )
 
 (define-model P243
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -40695,9 +40695,9 @@
 )
 
 (define-model P244
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -40840,9 +40840,9 @@
 )
 
 (define-model P245
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -40985,9 +40985,9 @@
 )
 
 (define-model P246
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -41130,9 +41130,9 @@
 )
 
 (define-model P247
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -41273,9 +41273,9 @@
 )
 
 (define-model P248
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -41415,9 +41415,9 @@
 )
 
 (define-model P249
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -41557,9 +41557,9 @@
 )
 
 (define-model P250
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -41700,9 +41700,9 @@
 )
 
 (define-model P251
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -41843,9 +41843,9 @@
 )
 
 (define-model P252
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -41970,9 +41970,9 @@
 )
 
 (define-model P253
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -42113,9 +42113,9 @@
 )
 
 (define-model P254
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -42256,9 +42256,9 @@
 )
 
 (define-model P255
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -42392,9 +42392,9 @@
 )
 
 (define-model N53
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -42530,9 +42530,9 @@
 )
 
 (define-model N54
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -42662,9 +42662,9 @@
 )
 
 (define-model N55
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -42794,9 +42794,9 @@
 )
 
 (define-model N56
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -42926,9 +42926,9 @@
 )
 
 (define-model N57
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -43058,9 +43058,9 @@
 )
 
 (define-model N58
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -43190,9 +43190,9 @@
 )
 
 (define-model N59
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -43322,9 +43322,9 @@
 )
 
 (define-model N60
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -43452,9 +43452,9 @@
 )
 
 (define-model N61
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -43582,9 +43582,9 @@
 )
 
 (define-model N62
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -43718,9 +43718,9 @@
 )
 
 (define-model N63
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -43848,9 +43848,9 @@
 )
 
 (define-model N64
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -43978,9 +43978,9 @@
 )
 
 (define-model N65
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -44113,9 +44113,9 @@
 )
 
 (define-model N66
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -44243,9 +44243,9 @@
 )
 
 (define-model N67
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -44373,9 +44373,9 @@
 )
 
 (define-model N68
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -44503,9 +44503,9 @@
 )
 
 (define-model N69
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -44633,9 +44633,9 @@
 )
 
 (define-model N70
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -44763,9 +44763,9 @@
 )
 
 (define-model N71
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -44893,9 +44893,9 @@
 )
 
 (define-model N72
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -45028,9 +45028,9 @@
 )
 
 (define-model N73
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -45164,9 +45164,9 @@
 )
 
 (define-model N74
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -45297,9 +45297,9 @@
 )
 
 (define-model N75
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -45430,9 +45430,9 @@
 )
 
 (define-model N76
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -45563,9 +45563,9 @@
 )
 
 (define-model N77
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -45696,9 +45696,9 @@
 )
 
 (define-model N78
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -45829,9 +45829,9 @@
 )
 
 (define-model N79
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -45959,9 +45959,9 @@
 )
 
 (define-model N80
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -46089,9 +46089,9 @@
 )
 
 (define-model N81
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -46219,9 +46219,9 @@
 )
 
 (define-model N82
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -46354,9 +46354,9 @@
 )
 
 (define-model N83
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -46488,9 +46488,9 @@
 )
 
 (define-model N84
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -46618,9 +46618,9 @@
 )
 
 (define-model N85
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -46756,9 +46756,9 @@
 )
 
 (define-model N86
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -46892,9 +46892,9 @@
 )
 
 (define-model N87
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -47028,9 +47028,9 @@
 )
 
 (define-model N88
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -47164,9 +47164,9 @@
 )
 
 (define-model N89
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -47294,9 +47294,9 @@
 )
 
 (define-model N90
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -47430,9 +47430,9 @@
 )
 
 (define-model N91
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -47560,9 +47560,9 @@
 )
 
 (define-model N92
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -47690,9 +47690,9 @@
 )
 
 (define-model N93
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -47826,9 +47826,9 @@
 )
 
 (define-model N94
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -47960,9 +47960,9 @@
 )
 
 (define-model N95
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -48096,9 +48096,9 @@
 )
 
 (define-model N96
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -48226,9 +48226,9 @@
 )
 
 (define-model N97
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -48362,9 +48362,9 @@
 )
 
 (define-model N98
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -48498,9 +48498,9 @@
 )
 
 (define-model N99
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -48632,9 +48632,9 @@
 )
 
 (define-model N100
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -48766,9 +48766,9 @@
 )
 
 (define-model N101
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -48904,9 +48904,9 @@
 )
 
 (define-model N102
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -49038,9 +49038,9 @@
 )
 
 (define-model N103
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -49172,9 +49172,9 @@
 )
 
 (define-model N104
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -49304,9 +49304,9 @@
 )
 
 (define-model N105
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -49436,9 +49436,9 @@
 )
 
 (define-model N106
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -49568,9 +49568,9 @@
 )
 
 (define-model N107
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -49700,9 +49700,9 @@
 )
 
 (define-model N108
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -49834,9 +49834,9 @@
 )
 
 (define-model N109
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -49968,9 +49968,9 @@
 )
 
 (define-model N110
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -50102,9 +50102,9 @@
 )
 
 (define-model N111
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -50236,9 +50236,9 @@
 )
 
 (define-model N112
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -50373,9 +50373,9 @@
 )
 
 (define-model N113
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -50505,9 +50505,9 @@
 )
 
 (define-model N114
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -50639,9 +50639,9 @@
 )
 
 (define-model N115
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -50771,9 +50771,9 @@
 )
 
 (define-model N116
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -50903,9 +50903,9 @@
 )
 
 (define-model N117
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -51035,9 +51035,9 @@
 )
 
 (define-model N118
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -51167,9 +51167,9 @@
 )
 
 (define-model N119
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -51299,9 +51299,9 @@
 )
 
 (define-model N120
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -51431,9 +51431,9 @@
 )
 
 (define-model N121
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -51563,9 +51563,9 @@
 )
 
 (define-model N122
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -51695,9 +51695,9 @@
 )
 
 (define-model N123
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -51827,9 +51827,9 @@
 )
 
 (define-model N124
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -51959,9 +51959,9 @@
 )
 
 (define-model N125
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -52092,9 +52092,9 @@
 )
 
 (define-model N126
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -52224,9 +52224,9 @@
 )
 
 (define-model N127
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -52358,9 +52358,9 @@
 )
 
 (define-model N128
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -52491,9 +52491,9 @@
 )
 
 (define-model N129
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))
@@ -52624,9 +52624,9 @@
 )
 
 (define-model N130
-  (define-univ tlb.pageentry (@uc_tlb.pageentry_0))
-  (define-univ tlb.pmap (@uc_tlb.pmap_0))
-  (define-univ tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
+  (interp-sort tlb.pageentry (@uc_tlb.pageentry_0))
+  (interp-sort tlb.pmap (@uc_tlb.pmap_0))
+  (interp-sort tlb.processor (@uc_tlb.processor_0 @uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk0 (@uc_tlb.processor_0))
   (interp-fun tlb.tp1.sk1 (@uc_tlb.processor_1))
   (interp-fun tlb.tp1.sk2 (@uc_tlb.pmap_0))

@@ -9,7 +9,7 @@
 
 
 (define-model K1 ;; Kripke Structure 1
-    (define-univ U ($0 $1 $2 $3))
+    (interp-sort U ($0 $1 $2 $3))
     (interp-fun R (match (; reachability relation.
         (($0 $2) true)
 		(($0 $3) true)
@@ -36,7 +36,7 @@
 )
 
 (define-model K2 ;; Kripke Structure 2
-    (define-univ U ($0 $1 $2 $3 $4 $5 $6))
+    (interp-sort U ($0 $1 $2 $3 $4 $5 $6))
     (interp-fun I ($0))
     (interp-fun R (match (; reachability relation.
 		(($0 $1) true)
@@ -63,7 +63,7 @@
 )
 
 (define-model K3 ;; Kripke Structure 3
-    (define-univ U ($0 $1))
+    (interp-sort U ($0 $1))
     (interp-fun I ($0))
     (interp-fun R  (match (; reachability relation.
 		(($0 $1) true)
@@ -83,7 +83,7 @@
 )
 
 (define-model K4 ;; Kripke Structure 4
-    (define-univ U ($0 $1 $2))
+    (interp-sort U ($0 $1 $2))
     (interp-fun I ($0))
     (interp-fun R (match (; reachability relation.
     	(($0 $2) true)
@@ -116,7 +116,7 @@
    (modal.dia Modal))))
 
 
-(define-finite ModalAsp
+(define-aspects ModalAsp
   (record (model Model) (node U))
   :where true)
 

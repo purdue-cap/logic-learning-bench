@@ -4,11 +4,11 @@
 (require "theories/byz_paxos-30198e33.sl")
 
 (define-model P0
-  (define-univ node (@uc_node_0))
-  (define-univ quorum_c (@uc_quorum_c_0))
-  (define-univ quorum_w (@uc_quorum_w_0))
-  (define-univ round (@uc_round_0))
-  (define-univ value (@uc_value_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum_c (@uc_quorum_c_0))
+  (interp-sort quorum_w (@uc_quorum_w_0))
+  (interp-sort round (@uc_round_0))
+  (interp-sort value (@uc_value_0))
   (interp-fun none (@uc_round_0))
   (interp-fun decision (match (
     ((_ _ _) false)
@@ -53,11 +53,11 @@
 )
 
 (define-model N0
-  (define-univ node (@uc_node_0))
-  (define-univ quorum_c (@uc_quorum_c_0))
-  (define-univ quorum_w (@uc_quorum_w_0))
-  (define-univ round (@uc_round_0))
-  (define-univ value (@uc_value_0 @uc_value_1))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum_c (@uc_quorum_c_0))
+  (interp-sort quorum_w (@uc_quorum_w_0))
+  (interp-sort round (@uc_round_0))
+  (interp-sort value (@uc_value_0 @uc_value_1))
   (interp-fun none (@uc_round_0))
   (interp-fun decision (match (
     ((_ _ _) false)
@@ -103,11 +103,11 @@
 )
 
 (define-model P1
-  (define-univ node (@uc_node_0))
-  (define-univ quorum_c (@uc_quorum_c_0))
-  (define-univ quorum_w (@uc_quorum_w_0))
-  (define-univ round (@uc_round_0))
-  (define-univ value (@uc_value_0 @uc_value_1))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum_c (@uc_quorum_c_0))
+  (interp-sort quorum_w (@uc_quorum_w_0))
+  (interp-sort round (@uc_round_0))
+  (interp-sort value (@uc_value_0 @uc_value_1))
   (interp-fun none (@uc_round_0))
   (interp-fun decision (match (
     ((_ _ _) false)

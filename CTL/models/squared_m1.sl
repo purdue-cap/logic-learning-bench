@@ -1,7 +1,7 @@
 (provide squared_m1)
 (define-model squared_m1
-  (define-univ U (st_q0 st_q1 st_q2))
-  (define-univ Ctr ($0 $1 $2 bot))
+  (interp-sort U (st_q0 st_q1 st_q2))
+  (interp-sort Ctr ($0 $1 $2 bot))
   (interp-fun czero ($0))
   (interp-fun cbot (bot))
   (interp-fun initial (st_q0))

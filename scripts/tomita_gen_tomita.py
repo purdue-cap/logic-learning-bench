@@ -91,7 +91,7 @@ def model_block(name, w):
     one_arms  = " ".join(f"(($ {i}) {str(c=='1').lower()})".replace("$ ", "$") for i, c in enumerate(w))
     return (
         f"(define-model {name}\n"
-        f"  (define-univ Pos {univ})\n"
+        f"  (interp-sort Pos {univ})\n"
         f"  (interp-fun zero (match ({zero_arms})))\n"
         f"  (interp-fun one (match ({one_arms}))))\n"
     )

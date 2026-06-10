@@ -7,7 +7,7 @@
 (declare-fun E (U U) Bool)
 
 (define-model G1
-	(define-univ U ($0 $1 $2 $3 $4 $5 $6 $7))
+	(interp-sort U ($0 $1 $2 $3 $4 $5 $6 $7))
 	(interp-fun s ($7))
 	(interp-fun t ($0))
 	(interp-fun E (match (
@@ -30,7 +30,7 @@
 )
 
 (define-model G2
-	(define-univ U ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+	(interp-sort U ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
 	(interp-fun s ($8))
 	(interp-fun t ($0))
 	(interp-fun E (match (
@@ -59,7 +59,7 @@
 )
 
 (define-model G3
-(define-univ U ($0 $1 $2 $3 $4 $5 $6 $7))
+(interp-sort U ($0 $1 $2 $3 $4 $5 $6 $7))
 	(interp-fun s ($7))
 	(interp-fun t ($0))
 	(interp-fun E (match (
@@ -84,7 +84,7 @@
 )
 
 (define-model G4
-(define-univ U ($0 $1 $2 $3 $4 $5 $6 $7))
+(interp-sort U ($0 $1 $2 $3 $4 $5 $6 $7))
 	(interp-fun s ($7))
 	(interp-fun t ($0))
 	(interp-fun E (match (

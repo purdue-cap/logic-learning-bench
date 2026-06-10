@@ -213,23 +213,23 @@
    (fol.ctx-x0-ticket-x1-ticket.term.service)
    (fol.ctx-x0-ticket-x1-ticket.term.zero))))
 
-(define-finite FO.Asp (record (model Model)))
+(define-aspects FO.Asp (record (model Model)))
 
-(define-finite FO.Asp.x0.thread (record (model Model) (x0 thread)))
+(define-aspects FO.Asp.x0.thread (record (model Model) (x0 thread)))
 
-(define-finite FO.Asp.x0.ticket (record (model Model) (x0 ticket)))
+(define-aspects FO.Asp.x0.ticket (record (model Model) (x0 ticket)))
 
-(define-finite FO.Asp.x1.thread (record (model Model) (x1 thread)))
+(define-aspects FO.Asp.x1.thread (record (model Model) (x1 thread)))
 
-(define-finite FO.Asp.x1.ticket (record (model Model) (x1 ticket)))
+(define-aspects FO.Asp.x1.ticket (record (model Model) (x1 ticket)))
 
-(define-finite FO.Asp.x0.thread.x1.thread (record (model Model) (x0 thread) (x1 thread)))
+(define-aspects FO.Asp.x0.thread.x1.thread (record (model Model) (x0 thread) (x1 thread)))
 
-(define-finite FO.Asp.x0.thread.x1.ticket (record (model Model) (x0 thread) (x1 ticket)))
+(define-aspects FO.Asp.x0.thread.x1.ticket (record (model Model) (x0 thread) (x1 ticket)))
 
-(define-finite FO.Asp.x0.ticket.x1.thread (record (model Model) (x0 ticket) (x1 thread)))
+(define-aspects FO.Asp.x0.ticket.x1.thread (record (model Model) (x0 ticket) (x1 thread)))
 
-(define-finite FO.Asp.x0.ticket.x1.ticket (record (model Model) (x0 ticket) (x1 ticket)))
+(define-aspects FO.Asp.x0.ticket.x1.ticket (record (model Model) (x0 ticket) (x1 ticket)))
 
 (define-semantics
   ((Term.0.ticket.Sem (term Term.0.ticket) (asp FO.Asp)))

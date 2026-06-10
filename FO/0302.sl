@@ -4,9 +4,9 @@
 (require "theories/toy_consensus_epr-dffefc91.sl")
 
 (define-model P0
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ value (@uc_value_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort value (@uc_value_0))
   (interp-fun decided (match (
     ((_) false)
   )))
@@ -24,9 +24,9 @@
 )
 
 (define-model N0
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ value (@uc_value_0 @uc_value_1))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort value (@uc_value_0 @uc_value_1))
   (interp-fun decided (match (
     ((@uc_value_1) true)
     ((_) false)
@@ -45,9 +45,9 @@
 )
 
 (define-model P1
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ value (@uc_value_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort value (@uc_value_0))
   (interp-fun decided (match (
     ((@uc_value_0) true)
     ((_) false)
@@ -66,9 +66,9 @@
 )
 
 (define-model N1
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ value (@uc_value_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort value (@uc_value_0))
   (interp-fun decided (match (
     ((@uc_value_0) true)
     ((_) false)
@@ -86,9 +86,9 @@
 )
 
 (define-model N2
-  (define-univ node (@uc_node_0 @uc_node_1))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ value (@uc_value_0))
+  (interp-sort node (@uc_node_0 @uc_node_1))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort value (@uc_value_0))
   (interp-fun decided (match (
     ((@uc_value_0) true)
     ((_) false)
@@ -108,9 +108,9 @@
 )
 
 (define-model P2
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ value (@uc_value_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort value (@uc_value_0))
   (interp-fun decided (match (
     ((_) false)
   )))
@@ -127,9 +127,9 @@
 )
 
 (define-model P3
-  (define-univ node (@uc_node_0 @uc_node_1))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ value (@uc_value_0))
+  (interp-sort node (@uc_node_0 @uc_node_1))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort value (@uc_value_0))
   (interp-fun decided (match (
     ((@uc_value_0) true)
     ((_) false)

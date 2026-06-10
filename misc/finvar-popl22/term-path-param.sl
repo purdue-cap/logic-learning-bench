@@ -10,7 +10,7 @@
    (tx.src)
    (tx.nxt TermU.x0))))
 
-(define-finite TermU.x0.Asp (record (model Model) (x0 U)))
+(define-aspects TermU.x0.Asp (record (model Model) (x0 U)))
 
 (define-semantics
   ((TermU.x0.Sem (term TermU.x0) (asp TermU.x0.Asp)))
@@ -21,14 +21,14 @@
      ((tx.nxt y) (nxt (TermU.x0.Sem y asp))))))
 
 (define-model G1
-  (define-univ U ($0 $1 $2 $3))
+  (interp-sort U ($0 $1 $2 $3))
   (interp-fun src ($0))
   (interp-fun arg ($1))
   (interp-fun out ($3))
   (interp-fun nxt (match ((($0) $1) (($1) $2) (($2) $3) (($3) $3) ((_) $0)))))
 
 (define-model G2
-  (define-univ U ($0 $1 $2 $3 $4))
+  (interp-sort U ($0 $1 $2 $3 $4))
   (interp-fun src ($4))
   (interp-fun arg ($0))
   (interp-fun out ($2))

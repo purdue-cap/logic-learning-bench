@@ -54,7 +54,7 @@ def migrate_model(path: Path) -> bool:
     for line in lines:
         out.append(line)
         # Interpret the constants against this model's own Ctr universe.
-        if re.match(r"\s*\(define-univ Ctr ", line):
+        if re.match(r"\s*\(interp-sort Ctr ", line):
             indent = line[: len(line) - len(line.lstrip())]
             out.append(f"{indent}(interp-fun czero ($0))")
             out.append(f"{indent}(interp-fun cbot (bot))")

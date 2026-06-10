@@ -50,10 +50,10 @@
    (str.suffixof.p StrProg StrProg)
    (str.contains.p StrProg StrProg))))
 
-(define-finite ExAsp
+(define-aspects ExAsp
   (record (model Model)))
 
-(define-finite CharAsp
+(define-aspects CharAsp
   (record (model Model) (k Idx)))
 
 (define-semantics

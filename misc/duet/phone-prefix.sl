@@ -1,8 +1,8 @@
 (require "theories/substring-phone.sl")
 
 (define-model ex0
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
-  (define-univ Chr (c0 c1 c2 c3 c4 c5 c8 c9 cDash))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
+  (interp-sort Chr (c0 c1 c2 c3 c4 c5 c8 c9 cDash))
   (interp-fun in.chr
     (match (
       (($0) c9) (($1) c3) (($2) c8) (($3) cDash)
@@ -18,8 +18,8 @@
 )
 
 (define-model ex1
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
-  (define-univ Chr (c0 c1 c3 c4 c5 c6 c8 c9 cDash))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
+  (interp-sort Chr (c0 c1 c3 c4 c5 c6 c8 c9 cDash))
   (interp-fun in.chr
     (match (
       (($0) c3) (($1) c0) (($2) c8) (($3) cDash)
@@ -35,8 +35,8 @@
 )
 
 (define-model ex2
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
-  (define-univ Chr (c0 c2 c3 c4 c5 c6 c7 c9 cDash))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
+  (interp-sort Chr (c0 c2 c3 c4 c5 c6 c7 c9 cDash))
   (interp-fun in.chr
     (match (
       (($0) c6) (($1) c2) (($2) c3) (($3) cDash)

@@ -61,7 +61,7 @@ def _generate_model(name: str) -> str:
         o.append(ch in "1?")
     return (
         f"(define-model {name}\n"
-        f"  (define-univ Pos ({univ}))\n"
+        f"  (interp-sort Pos ({univ}))\n"
         f"  (interp-fun zero (match ({_model_arms(z)})))\n"
         f"  (interp-fun one (match ({_model_arms(o)}))))"
     )

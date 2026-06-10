@@ -4,12 +4,12 @@
 (require "theories/stoppable_paxos_epr-92d6f026.sl")
 
 (define-model P0
-  (define-univ inst (@uc_inst_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0))
-  (define-univ value (@uc_value_0))
-  (define-univ votemap (@uc_votemap_0))
+  (interp-sort inst (@uc_inst_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0))
+  (interp-sort value (@uc_value_0))
+  (interp-sort votemap (@uc_votemap_0))
   (interp-fun none (@uc_round_0))
   (interp-fun stop (@uc_value_0))
   (interp-fun maxr (match (
@@ -59,12 +59,12 @@
 )
 
 (define-model N0
-  (define-univ inst (@uc_inst_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0))
-  (define-univ value (@uc_value_0))
-  (define-univ votemap (@uc_votemap_0))
+  (interp-sort inst (@uc_inst_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0))
+  (interp-sort value (@uc_value_0))
+  (interp-sort votemap (@uc_votemap_0))
   (interp-fun none (@uc_round_0))
   (interp-fun stop (@uc_value_0))
   (interp-fun maxr (match (
@@ -115,12 +115,12 @@
 )
 
 (define-model N1
-  (define-univ inst (@uc_inst_0))
-  (define-univ node (@uc_node_0 @uc_node_1))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0))
-  (define-univ value (@uc_value_0))
-  (define-univ votemap (@uc_votemap_0))
+  (interp-sort inst (@uc_inst_0))
+  (interp-sort node (@uc_node_0 @uc_node_1))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0))
+  (interp-sort value (@uc_value_0))
+  (interp-sort votemap (@uc_votemap_0))
   (interp-fun none (@uc_round_0))
   (interp-fun stop (@uc_value_0))
   (interp-fun maxr (match (
@@ -172,12 +172,12 @@
 )
 
 (define-model N2
-  (define-univ inst (@uc_inst_0 @uc_inst_1))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0))
-  (define-univ value (@uc_value_0))
-  (define-univ votemap (@uc_votemap_0))
+  (interp-sort inst (@uc_inst_0 @uc_inst_1))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0))
+  (interp-sort value (@uc_value_0))
+  (interp-sort votemap (@uc_votemap_0))
   (interp-fun none (@uc_round_0))
   (interp-fun stop (@uc_value_0))
   (interp-fun maxr (match (
@@ -232,12 +232,12 @@
 )
 
 (define-model N3
-  (define-univ inst (@uc_inst_0))
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0))
-  (define-univ value (@uc_value_0 @uc_value_1))
-  (define-univ votemap (@uc_votemap_0))
+  (interp-sort inst (@uc_inst_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0))
+  (interp-sort value (@uc_value_0 @uc_value_1))
+  (interp-sort votemap (@uc_votemap_0))
   (interp-fun none (@uc_round_0))
   (interp-fun stop (@uc_value_0))
   (interp-fun maxr (match (

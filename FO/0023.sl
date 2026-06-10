@@ -4,10 +4,10 @@
 (require "theories/alternating_bit_protocol-4fa886db.sl")
 
 (define-model P0
-  (define-univ abp.ack_msg_t (@uc_abp.ack_msg_t_0))
-  (define-univ abp.data_msg_t (@uc_abp.data_msg_t_0))
-  (define-univ abp.index_t (@uc_abp.index_t_0))
-  (define-univ abp.value (@uc_abp.value_0))
+  (interp-sort abp.ack_msg_t (@uc_abp.ack_msg_t_0))
+  (interp-sort abp.data_msg_t (@uc_abp.data_msg_t_0))
+  (interp-sort abp.index_t (@uc_abp.index_t_0))
+  (interp-sort abp.value (@uc_abp.value_0))
   (interp-fun abp.bot (@uc_abp.value_0))
   (interp-fun abp.index.zero (@uc_abp.index_t_0))
   (interp-fun abp.receiver_i (@uc_abp.index_t_0))
@@ -54,10 +54,10 @@
 )
 
 (define-model N0
-  (define-univ abp.ack_msg_t (@uc_abp.ack_msg_t_0 @uc_abp.ack_msg_t_1))
-  (define-univ abp.data_msg_t (@uc_abp.data_msg_t_0))
-  (define-univ abp.index_t (@uc_abp.index_t_0))
-  (define-univ abp.value (@uc_abp.value_0))
+  (interp-sort abp.ack_msg_t (@uc_abp.ack_msg_t_0 @uc_abp.ack_msg_t_1))
+  (interp-sort abp.data_msg_t (@uc_abp.data_msg_t_0))
+  (interp-sort abp.index_t (@uc_abp.index_t_0))
+  (interp-sort abp.value (@uc_abp.value_0))
   (interp-fun abp.bot (@uc_abp.value_0))
   (interp-fun abp.index.zero (@uc_abp.index_t_0))
   (interp-fun abp.receiver_i (@uc_abp.index_t_0))
@@ -104,10 +104,10 @@
 )
 
 (define-model N1
-  (define-univ abp.ack_msg_t (@uc_abp.ack_msg_t_0 @uc_abp.ack_msg_t_1))
-  (define-univ abp.data_msg_t (@uc_abp.data_msg_t_0))
-  (define-univ abp.index_t (@uc_abp.index_t_0))
-  (define-univ abp.value (@uc_abp.value_0))
+  (interp-sort abp.ack_msg_t (@uc_abp.ack_msg_t_0 @uc_abp.ack_msg_t_1))
+  (interp-sort abp.data_msg_t (@uc_abp.data_msg_t_0))
+  (interp-sort abp.index_t (@uc_abp.index_t_0))
+  (interp-sort abp.value (@uc_abp.value_0))
   (interp-fun abp.bot (@uc_abp.value_0))
   (interp-fun abp.index.zero (@uc_abp.index_t_0))
   (interp-fun abp.receiver_i (@uc_abp.index_t_0))
@@ -155,10 +155,10 @@
 )
 
 (define-model P1
-  (define-univ abp.ack_msg_t (@uc_abp.ack_msg_t_0))
-  (define-univ abp.data_msg_t (@uc_abp.data_msg_t_0))
-  (define-univ abp.index_t (@uc_abp.index_t_0))
-  (define-univ abp.value (@uc_abp.value_0))
+  (interp-sort abp.ack_msg_t (@uc_abp.ack_msg_t_0))
+  (interp-sort abp.data_msg_t (@uc_abp.data_msg_t_0))
+  (interp-sort abp.index_t (@uc_abp.index_t_0))
+  (interp-sort abp.value (@uc_abp.value_0))
   (interp-fun abp.bot (@uc_abp.value_0))
   (interp-fun abp.index.zero (@uc_abp.index_t_0))
   (interp-fun abp.receiver_i (@uc_abp.index_t_0))
@@ -204,10 +204,10 @@
 )
 
 (define-model P2
-  (define-univ abp.ack_msg_t (@uc_abp.ack_msg_t_0 @uc_abp.ack_msg_t_1))
-  (define-univ abp.data_msg_t (@uc_abp.data_msg_t_0))
-  (define-univ abp.index_t (@uc_abp.index_t_0))
-  (define-univ abp.value (@uc_abp.value_0))
+  (interp-sort abp.ack_msg_t (@uc_abp.ack_msg_t_0 @uc_abp.ack_msg_t_1))
+  (interp-sort abp.data_msg_t (@uc_abp.data_msg_t_0))
+  (interp-sort abp.index_t (@uc_abp.index_t_0))
+  (interp-sort abp.value (@uc_abp.value_0))
   (interp-fun abp.bot (@uc_abp.value_0))
   (interp-fun abp.index.zero (@uc_abp.index_t_0))
   (interp-fun abp.receiver_i (@uc_abp.index_t_0))
@@ -257,10 +257,10 @@
 )
 
 (define-model P3
-  (define-univ abp.ack_msg_t (@uc_abp.ack_msg_t_0 @uc_abp.ack_msg_t_1))
-  (define-univ abp.data_msg_t (@uc_abp.data_msg_t_0))
-  (define-univ abp.index_t (@uc_abp.index_t_0))
-  (define-univ abp.value (@uc_abp.value_0))
+  (interp-sort abp.ack_msg_t (@uc_abp.ack_msg_t_0 @uc_abp.ack_msg_t_1))
+  (interp-sort abp.data_msg_t (@uc_abp.data_msg_t_0))
+  (interp-sort abp.index_t (@uc_abp.index_t_0))
+  (interp-sort abp.value (@uc_abp.value_0))
   (interp-fun abp.bot (@uc_abp.value_0))
   (interp-fun abp.index.zero (@uc_abp.index_t_0))
   (interp-fun abp.receiver_i (@uc_abp.index_t_0))
@@ -306,10 +306,10 @@
 )
 
 (define-model N2
-  (define-univ abp.ack_msg_t (@uc_abp.ack_msg_t_0 @uc_abp.ack_msg_t_1))
-  (define-univ abp.data_msg_t (@uc_abp.data_msg_t_0))
-  (define-univ abp.index_t (@uc_abp.index_t_0))
-  (define-univ abp.value (@uc_abp.value_0))
+  (interp-sort abp.ack_msg_t (@uc_abp.ack_msg_t_0 @uc_abp.ack_msg_t_1))
+  (interp-sort abp.data_msg_t (@uc_abp.data_msg_t_0))
+  (interp-sort abp.index_t (@uc_abp.index_t_0))
+  (interp-sort abp.value (@uc_abp.value_0))
   (interp-fun abp.bot (@uc_abp.value_0))
   (interp-fun abp.index.zero (@uc_abp.index_t_0))
   (interp-fun abp.receiver_i (@uc_abp.index_t_0))
@@ -357,10 +357,10 @@
 )
 
 (define-model N3
-  (define-univ abp.ack_msg_t (@uc_abp.ack_msg_t_0 @uc_abp.ack_msg_t_1))
-  (define-univ abp.data_msg_t (@uc_abp.data_msg_t_0))
-  (define-univ abp.index_t (@uc_abp.index_t_0))
-  (define-univ abp.value (@uc_abp.value_0))
+  (interp-sort abp.ack_msg_t (@uc_abp.ack_msg_t_0 @uc_abp.ack_msg_t_1))
+  (interp-sort abp.data_msg_t (@uc_abp.data_msg_t_0))
+  (interp-sort abp.index_t (@uc_abp.index_t_0))
+  (interp-sort abp.value (@uc_abp.value_0))
   (interp-fun abp.bot (@uc_abp.value_0))
   (interp-fun abp.index.zero (@uc_abp.index_t_0))
   (interp-fun abp.receiver_i (@uc_abp.index_t_0))

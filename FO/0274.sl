@@ -4,8 +4,8 @@
 (require "theories/ring_id_not_dead-0fd50536.sl")
 
 (define-model P0
-  (define-univ id (@uc_id_0))
-  (define-univ node (@uc_node_0))
+  (interp-sort id (@uc_id_0))
+  (interp-sort node (@uc_node_0))
   (interp-fun idn (match (
     ((@uc_node_0) @uc_id_0)
     ((_) @uc_id_0)
@@ -30,8 +30,8 @@
 )
 
 (define-model N0
-  (define-univ id (@uc_id_0 @uc_id_1))
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort id (@uc_id_0 @uc_id_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun idn (match (
     ((@uc_node_0) @uc_id_1)
     ((@uc_node_1) @uc_id_0)
@@ -60,8 +60,8 @@
 )
 
 (define-model P1
-  (define-univ id (@uc_id_0 @uc_id_1))
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort id (@uc_id_0 @uc_id_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun idn (match (
     ((@uc_node_0) @uc_id_1)
     ((@uc_node_1) @uc_id_0)
@@ -88,8 +88,8 @@
 )
 
 (define-model N1
-  (define-univ id (@uc_id_0 @uc_id_1 @uc_id_2))
-  (define-univ node (@uc_node_0 @uc_node_1 @uc_node_2))
+  (interp-sort id (@uc_id_0 @uc_id_1 @uc_id_2))
+  (interp-sort node (@uc_node_0 @uc_node_1 @uc_node_2))
   (interp-fun idn (match (
     ((@uc_node_0) @uc_id_1)
     ((@uc_node_1) @uc_id_0)

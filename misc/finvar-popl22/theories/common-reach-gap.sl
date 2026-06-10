@@ -8,7 +8,7 @@
 
 ; Positive: there is a hidden path s -> u -> v -> t.
 (define-model P
-  (define-univ U ($0 $1 $2 $3))
+  (interp-sort U ($0 $1 $2 $3))
   (interp-fun s ($0))
   (interp-fun t ($1))
   (interp-fun E (match (
@@ -25,7 +25,7 @@
 ;   exists x. E(x,t)
 ; but cannot relate those witnesses through the hidden anonymous edge.
 (define-model N
-  (define-univ U ($0 $1 $2 $3))
+  (interp-sort U ($0 $1 $2 $3))
   (interp-fun s ($0))
   (interp-fun t ($1))
   (interp-fun E (match (

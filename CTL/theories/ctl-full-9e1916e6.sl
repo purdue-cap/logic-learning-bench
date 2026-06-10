@@ -34,7 +34,7 @@
    (ctl.EU CTL CTL)
   )))
 
-(define-finite CTL.Asp
+(define-aspects CTL.Asp
   (record (model Model) (state U) (depth Ctr)))
 
 (define-semantics

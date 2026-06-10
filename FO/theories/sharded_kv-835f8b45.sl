@@ -329,37 +329,37 @@
   ((fol.ctx-x0-value-x1-value.var.x0.value)
    (fol.ctx-x0-value-x1-value.var.x1.value))))
 
-(define-finite FO.Asp (record (model Model)))
+(define-aspects FO.Asp (record (model Model)))
 
-(define-finite FO.Asp.x0.key (record (model Model) (x0 key)))
+(define-aspects FO.Asp.x0.key (record (model Model) (x0 key)))
 
-(define-finite FO.Asp.x0.node (record (model Model) (x0 node)))
+(define-aspects FO.Asp.x0.node (record (model Model) (x0 node)))
 
-(define-finite FO.Asp.x0.value (record (model Model) (x0 value)))
+(define-aspects FO.Asp.x0.value (record (model Model) (x0 value)))
 
-(define-finite FO.Asp.x1.key (record (model Model) (x1 key)))
+(define-aspects FO.Asp.x1.key (record (model Model) (x1 key)))
 
-(define-finite FO.Asp.x1.node (record (model Model) (x1 node)))
+(define-aspects FO.Asp.x1.node (record (model Model) (x1 node)))
 
-(define-finite FO.Asp.x1.value (record (model Model) (x1 value)))
+(define-aspects FO.Asp.x1.value (record (model Model) (x1 value)))
 
-(define-finite FO.Asp.x0.key.x1.key (record (model Model) (x0 key) (x1 key)))
+(define-aspects FO.Asp.x0.key.x1.key (record (model Model) (x0 key) (x1 key)))
 
-(define-finite FO.Asp.x0.key.x1.node (record (model Model) (x0 key) (x1 node)))
+(define-aspects FO.Asp.x0.key.x1.node (record (model Model) (x0 key) (x1 node)))
 
-(define-finite FO.Asp.x0.key.x1.value (record (model Model) (x0 key) (x1 value)))
+(define-aspects FO.Asp.x0.key.x1.value (record (model Model) (x0 key) (x1 value)))
 
-(define-finite FO.Asp.x0.node.x1.key (record (model Model) (x0 node) (x1 key)))
+(define-aspects FO.Asp.x0.node.x1.key (record (model Model) (x0 node) (x1 key)))
 
-(define-finite FO.Asp.x0.node.x1.node (record (model Model) (x0 node) (x1 node)))
+(define-aspects FO.Asp.x0.node.x1.node (record (model Model) (x0 node) (x1 node)))
 
-(define-finite FO.Asp.x0.node.x1.value (record (model Model) (x0 node) (x1 value)))
+(define-aspects FO.Asp.x0.node.x1.value (record (model Model) (x0 node) (x1 value)))
 
-(define-finite FO.Asp.x0.value.x1.key (record (model Model) (x0 value) (x1 key)))
+(define-aspects FO.Asp.x0.value.x1.key (record (model Model) (x0 value) (x1 key)))
 
-(define-finite FO.Asp.x0.value.x1.node (record (model Model) (x0 value) (x1 node)))
+(define-aspects FO.Asp.x0.value.x1.node (record (model Model) (x0 value) (x1 node)))
 
-(define-finite FO.Asp.x0.value.x1.value (record (model Model) (x0 value) (x1 value)))
+(define-aspects FO.Asp.x0.value.x1.value (record (model Model) (x0 value) (x1 value)))
 
 (define-semantics
   ((Term.x0.key.key.Sem (term Term.x0.key.key) (asp FO.Asp.x0.key)))

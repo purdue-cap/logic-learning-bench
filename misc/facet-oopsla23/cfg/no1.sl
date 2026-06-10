@@ -30,7 +30,7 @@
 
 ; a
 (define-model w0
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun a (match (
       (($0) true)
       ((_) false)
@@ -42,7 +42,7 @@
 
 ; ab
 (define-model w1
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun a (match (
       (($0) true)
       ((_) false)
@@ -55,7 +55,7 @@
 
 ; abab
 (define-model w2
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun a (match (
       (($0) true)
       (($2) true)
@@ -70,7 +70,7 @@
 
 ; aab
 (define-model w5
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun a (match (
       (($0) true)
       (($1) true)
@@ -82,7 +82,7 @@
   )))
 )
 
-(define-finite CFG.Asp
+(define-aspects CFG.Asp
   (record
     (model Model)
     (i Int)

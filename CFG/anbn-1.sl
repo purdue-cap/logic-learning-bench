@@ -32,7 +32,7 @@
 
 ; word: ab
 (define-model w_ab
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun a (match (
       (($0) true)
       ((_)  false)
@@ -45,7 +45,7 @@
 
 ; word: aab
 (define-model w_aab
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun a (match (
       (($0) true)
       (($1) true)
@@ -57,7 +57,7 @@
   )))
 )
 
-(define-finite CFG.Asp
+(define-aspects CFG.Asp
   (record
     (model Model)
     (i Int)

@@ -12,7 +12,7 @@
   ((FO0.term.s)
    (FO0.term.t))))
 
-(define-finite FO0.Asp (record (model Model)))
+(define-aspects FO0.Asp (record (model Model)))
 
 (define-semantics
   ((FO0.TermU.Sem (term FO0.TermU) (asp FO0.Asp)))

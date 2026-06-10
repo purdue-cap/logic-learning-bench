@@ -6,7 +6,7 @@
 
 ;; Grid1: 3x3 grid with 4-connectivity
 (define-model Grid1
-    (define-univ U ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+    (interp-sort U ($0 $1 $2 $3 $4 $5 $6 $7 $8))
     (interp-fun R (match (
         ;; Row 1: $0-$1-$2
         (($0 $1) true) (($1 $0) true)
@@ -43,7 +43,7 @@
 
 ;; Grid2-10: Similar grid structures with different labelings and connectivity
 (define-model Grid2
-    (define-univ U ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+    (interp-sort U ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
     (interp-fun R (match (
         ;; 2x5 grid
         (($0 $1) true) (($1 $0) true)
@@ -78,7 +78,7 @@
 
 ;; Grid3-Grid10: More grid variations (abbreviated for space)
 (define-model Grid3
-    (define-univ U ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+    (interp-sort U ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
     (interp-fun R (match (
         ;; Complex connectivity pattern
         (($0 $1) true) (($1 $2) true) (($2 $3) true)
@@ -106,7 +106,7 @@
 
 ;; Grid4-Grid10 similar pattern (abbreviated)
 (define-model Grid4
-    (define-univ U ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+    (interp-sort U ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
     (interp-fun R (match (
         (($0 $1) true) (($1 $2) true) (($2 $3) true)
         (($3 $4) true) (($4 $5) true) (($5 $6) true)
@@ -133,7 +133,7 @@
 
 ;; Continue with Grid5-Grid10 following similar patterns but with different labelings
 (define-model Grid5
-    (define-univ U ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+    (interp-sort U ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
     (interp-fun R (match (
         (($0 $1) true) (($1 $2) true) (($2 $3) true)
         (($3 $4) true) (($4 $5) true) (($5 $6) true)
@@ -160,7 +160,7 @@
 
 ;; Grid6-Grid10 (similar structure, different labelings)
 (define-model Grid6
-    (define-univ U ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+    (interp-sort U ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
     (interp-fun R (match (
         (($0 $1) true) (($1 $2) true) (($2 $3) true)
         (($3 $4) true) (($4 $5) true) (($5 $6) true)
@@ -186,7 +186,7 @@
 )
 
 (define-model Grid7
-    (define-univ U ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+    (interp-sort U ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
     (interp-fun R (match (
         (($0 $1) true) (($1 $2) true) (($2 $3) true)
         (($3 $4) true) (($4 $5) true) (($5 $6) true)

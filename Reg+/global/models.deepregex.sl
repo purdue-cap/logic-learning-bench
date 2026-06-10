@@ -3,7 +3,7 @@
 
 ; ' '
 (define-model w00002
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -44,7 +44,7 @@
 
 ; '!'
 (define-model w00003
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -85,7 +85,7 @@
 
 ; '#'
 (define-model w00004
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -126,7 +126,7 @@
 
 ; '$'
 (define-model w00005
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -167,7 +167,7 @@
 
 ; '&'
 (define-model w00006
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -208,7 +208,7 @@
 
 ; "'"
 (define-model w00007
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -249,7 +249,7 @@
 
 ; '*'
 (define-model w00008
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -290,7 +290,7 @@
 
 ; ','
 (define-model w00009
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -331,7 +331,7 @@
 
 ; '0'
 (define-model w00010
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -372,7 +372,7 @@
 
 ; '1'
 (define-model w00011
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -413,7 +413,7 @@
 
 ; '2'
 (define-model w00012
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -454,7 +454,7 @@
 
 ; '3'
 (define-model w00013
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -495,7 +495,7 @@
 
 ; '4'
 (define-model w00014
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -536,7 +536,7 @@
 
 ; '5'
 (define-model w00015
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -577,7 +577,7 @@
 
 ; '9'
 (define-model w00016
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -618,7 +618,7 @@
 
 ; ';'
 (define-model w00017
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -659,7 +659,7 @@
 
 ; '?'
 (define-model w00018
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -700,7 +700,7 @@
 
 ; '@'
 (define-model w00019
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -741,7 +741,7 @@
 
 ; 'A'
 (define-model w00020
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -782,7 +782,7 @@
 
 ; 'B'
 (define-model w00021
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -823,7 +823,7 @@
 
 ; 'C'
 (define-model w00022
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -864,7 +864,7 @@
 
 ; 'E'
 (define-model w00023
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -905,7 +905,7 @@
 
 ; 'G'
 (define-model w00024
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -946,7 +946,7 @@
 
 ; 'H'
 (define-model w00025
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -987,7 +987,7 @@
 
 ; 'I'
 (define-model w00026
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -1028,7 +1028,7 @@
 
 ; 'J'
 (define-model w00027
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -1069,7 +1069,7 @@
 
 ; 'L'
 (define-model w00028
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -1110,7 +1110,7 @@
 
 ; 'M'
 (define-model w00029
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -1151,7 +1151,7 @@
 
 ; 'N'
 (define-model w00030
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -1192,7 +1192,7 @@
 
 ; 'O'
 (define-model w00031
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -1233,7 +1233,7 @@
 
 ; 'P'
 (define-model w00032
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -1274,7 +1274,7 @@
 
 ; 'Q'
 (define-model w00033
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -1315,7 +1315,7 @@
 
 ; 'S'
 (define-model w00034
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -1356,7 +1356,7 @@
 
 ; 'V'
 (define-model w00035
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -1397,7 +1397,7 @@
 
 ; 'W'
 (define-model w00036
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -1438,7 +1438,7 @@
 
 ; 'Z'
 (define-model w00037
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -1479,7 +1479,7 @@
 
 ; 'a'
 (define-model w00038
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -1520,7 +1520,7 @@
 
 ; 'b'
 (define-model w00039
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -1561,7 +1561,7 @@
 
 ; 'c'
 (define-model w00040
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -1602,7 +1602,7 @@
 
 ; 'e'
 (define-model w00041
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -1643,7 +1643,7 @@
 
 ; 'f'
 (define-model w00042
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -1684,7 +1684,7 @@
 
 ; 'h'
 (define-model w00043
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -1725,7 +1725,7 @@
 
 ; 'i'
 (define-model w00044
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -1766,7 +1766,7 @@
 
 ; 'k'
 (define-model w00045
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -1807,7 +1807,7 @@
 
 ; 'l'
 (define-model w00046
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -1848,7 +1848,7 @@
 
 ; 'm'
 (define-model w00047
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -1889,7 +1889,7 @@
 
 ; 'o'
 (define-model w00048
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -1930,7 +1930,7 @@
 
 ; 'p'
 (define-model w00049
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -1971,7 +1971,7 @@
 
 ; 'q'
 (define-model w00050
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -2012,7 +2012,7 @@
 
 ; 'r'
 (define-model w00051
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -2053,7 +2053,7 @@
 
 ; 's'
 (define-model w00052
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -2094,7 +2094,7 @@
 
 ; 't'
 (define-model w00053
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -2135,7 +2135,7 @@
 
 ; 'u'
 (define-model w00054
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -2176,7 +2176,7 @@
 
 ; 'w'
 (define-model w00055
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -2217,7 +2217,7 @@
 
 ; 'y'
 (define-model w00056
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -2258,7 +2258,7 @@
 
 ; 'z'
 (define-model w00057
-  (define-univ Pos ($0))
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -2299,7 +2299,7 @@
 
 ; '  '
 (define-model w00058
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -2340,7 +2340,7 @@
 
 ; ' !'
 (define-model w00059
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -2381,7 +2381,7 @@
 
 ; ' .'
 (define-model w00060
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -2422,7 +2422,7 @@
 
 ; ' 1'
 (define-model w00061
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -2463,7 +2463,7 @@
 
 ; ' b'
 (define-model w00062
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -2504,7 +2504,7 @@
 
 ; ' d'
 (define-model w00063
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -2545,7 +2545,7 @@
 
 ; '! '
 (define-model w00064
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -2586,7 +2586,7 @@
 
 ; '!!'
 (define-model w00065
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -2627,7 +2627,7 @@
 
 ; '!#'
 (define-model w00066
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -2668,7 +2668,7 @@
 
 ; '!,'
 (define-model w00067
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -2709,7 +2709,7 @@
 
 ; '!0'
 (define-model w00068
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -2750,7 +2750,7 @@
 
 ; '!1'
 (define-model w00069
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -2791,7 +2791,7 @@
 
 ; '!2'
 (define-model w00070
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -2832,7 +2832,7 @@
 
 ; '!5'
 (define-model w00071
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -2873,7 +2873,7 @@
 
 ; '!;'
 (define-model w00072
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -2914,7 +2914,7 @@
 
 ; '!@'
 (define-model w00073
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -2955,7 +2955,7 @@
 
 ; '!A'
 (define-model w00074
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -2996,7 +2996,7 @@
 
 ; '!B'
 (define-model w00075
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -3037,7 +3037,7 @@
 
 ; '!C'
 (define-model w00076
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -3078,7 +3078,7 @@
 
 ; '!P'
 (define-model w00077
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -3119,7 +3119,7 @@
 
 ; '!S'
 (define-model w00078
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -3160,7 +3160,7 @@
 
 ; '!a'
 (define-model w00079
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -3201,7 +3201,7 @@
 
 ; '!b'
 (define-model w00080
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -3242,7 +3242,7 @@
 
 ; '!e'
 (define-model w00081
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -3283,7 +3283,7 @@
 
 ; '!f'
 (define-model w00082
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -3324,7 +3324,7 @@
 
 ; '!h'
 (define-model w00083
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -3365,7 +3365,7 @@
 
 ; '!i'
 (define-model w00084
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -3406,7 +3406,7 @@
 
 ; '!o'
 (define-model w00085
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -3447,7 +3447,7 @@
 
 ; '!q'
 (define-model w00086
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -3488,7 +3488,7 @@
 
 ; '!s'
 (define-model w00087
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -3529,7 +3529,7 @@
 
 ; '!t'
 (define-model w00088
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -3570,7 +3570,7 @@
 
 ; '!u'
 (define-model w00089
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -3611,7 +3611,7 @@
 
 ; '##'
 (define-model w00090
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -3652,7 +3652,7 @@
 
 ; '%!'
 (define-model w00091
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -3693,7 +3693,7 @@
 
 ; '%S'
 (define-model w00092
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -3734,7 +3734,7 @@
 
 ; "'z"
 (define-model w00093
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -3775,7 +3775,7 @@
 
 ; '(L'
 (define-model w00094
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -3816,7 +3816,7 @@
 
 ; '(p'
 (define-model w00095
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -3857,7 +3857,7 @@
 
 ; '*6'
 (define-model w00096
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -3898,7 +3898,7 @@
 
 ; '*m'
 (define-model w00097
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -3939,7 +3939,7 @@
 
 ; ',,'
 (define-model w00098
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -3980,7 +3980,7 @@
 
 ; ',1'
 (define-model w00099
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -4021,7 +4021,7 @@
 
 ; ',2'
 (define-model w00100
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -4062,7 +4062,7 @@
 
 ; ',B'
 (define-model w00101
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -4103,7 +4103,7 @@
 
 ; ',a'
 (define-model w00102
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -4144,7 +4144,7 @@
 
 ; ',b'
 (define-model w00103
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -4185,7 +4185,7 @@
 
 ; '-2'
 (define-model w00104
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -4226,7 +4226,7 @@
 
 ; '0!'
 (define-model w00105
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -4267,7 +4267,7 @@
 
 ; '00'
 (define-model w00106
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -4308,7 +4308,7 @@
 
 ; '0@'
 (define-model w00107
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -4349,7 +4349,7 @@
 
 ; '0a'
 (define-model w00108
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -4390,7 +4390,7 @@
 
 ; '0z'
 (define-model w00109
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -4431,7 +4431,7 @@
 
 ; '1!'
 (define-model w00110
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -4472,7 +4472,7 @@
 
 ; '1#'
 (define-model w00111
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -4513,7 +4513,7 @@
 
 ; '1,'
 (define-model w00112
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -4554,7 +4554,7 @@
 
 ; '10'
 (define-model w00113
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -4595,7 +4595,7 @@
 
 ; '11'
 (define-model w00114
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -4636,7 +4636,7 @@
 
 ; '12'
 (define-model w00115
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -4677,7 +4677,7 @@
 
 ; '1@'
 (define-model w00116
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -4718,7 +4718,7 @@
 
 ; '1A'
 (define-model w00117
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -4759,7 +4759,7 @@
 
 ; '1B'
 (define-model w00118
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -4800,7 +4800,7 @@
 
 ; '1a'
 (define-model w00119
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -4841,7 +4841,7 @@
 
 ; '1b'
 (define-model w00120
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -4882,7 +4882,7 @@
 
 ; '1d'
 (define-model w00121
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -4923,7 +4923,7 @@
 
 ; '1i'
 (define-model w00122
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -4964,7 +4964,7 @@
 
 ; '1r'
 (define-model w00123
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -5005,7 +5005,7 @@
 
 ; '1t'
 (define-model w00124
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -5046,7 +5046,7 @@
 
 ; '2!'
 (define-model w00125
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -5087,7 +5087,7 @@
 
 ; '2,'
 (define-model w00126
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -5128,7 +5128,7 @@
 
 ; '21'
 (define-model w00127
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -5169,7 +5169,7 @@
 
 ; '23'
 (define-model w00128
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -5210,7 +5210,7 @@
 
 ; '2@'
 (define-model w00129
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -5251,7 +5251,7 @@
 
 ; '2D'
 (define-model w00130
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -5292,7 +5292,7 @@
 
 ; '2a'
 (define-model w00131
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -5333,7 +5333,7 @@
 
 ; '2b'
 (define-model w00132
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -5374,7 +5374,7 @@
 
 ; '2d'
 (define-model w00133
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -5415,7 +5415,7 @@
 
 ; '33'
 (define-model w00134
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -5456,7 +5456,7 @@
 
 ; '3a'
 (define-model w00135
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -5497,7 +5497,7 @@
 
 ; '3c'
 (define-model w00136
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -5538,7 +5538,7 @@
 
 ; "4'"
 (define-model w00137
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -5579,7 +5579,7 @@
 
 ; '42'
 (define-model w00138
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -5620,7 +5620,7 @@
 
 ; '4C'
 (define-model w00139
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -5661,7 +5661,7 @@
 
 ; '4D'
 (define-model w00140
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -5702,7 +5702,7 @@
 
 ; '4k'
 (define-model w00141
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -5743,7 +5743,7 @@
 
 ; '5!'
 (define-model w00142
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -5784,7 +5784,7 @@
 
 ; '64'
 (define-model w00143
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -5825,7 +5825,7 @@
 
 ; ';;'
 (define-model w00144
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -5866,7 +5866,7 @@
 
 ; ';A'
 (define-model w00145
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -5907,7 +5907,7 @@
 
 ; ';a'
 (define-model w00146
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -5948,7 +5948,7 @@
 
 ; '?4'
 (define-model w00147
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -5989,7 +5989,7 @@
 
 ; '??'
 (define-model w00148
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -6030,7 +6030,7 @@
 
 ; '@!'
 (define-model w00149
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -6071,7 +6071,7 @@
 
 ; '@#'
 (define-model w00150
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -6112,7 +6112,7 @@
 
 ; '@1'
 (define-model w00151
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -6153,7 +6153,7 @@
 
 ; '@@'
 (define-model w00152
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -6194,7 +6194,7 @@
 
 ; '@A'
 (define-model w00153
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -6235,7 +6235,7 @@
 
 ; '@a'
 (define-model w00154
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -6276,7 +6276,7 @@
 
 ; '@b'
 (define-model w00155
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -6317,7 +6317,7 @@
 
 ; '@c'
 (define-model w00156
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -6358,7 +6358,7 @@
 
 ; '@e'
 (define-model w00157
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -6399,7 +6399,7 @@
 
 ; '@k'
 (define-model w00158
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -6440,7 +6440,7 @@
 
 ; '@o'
 (define-model w00159
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -6481,7 +6481,7 @@
 
 ; '@s'
 (define-model w00160
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -6522,7 +6522,7 @@
 
 ; 'A '
 (define-model w00161
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -6563,7 +6563,7 @@
 
 ; 'A!'
 (define-model w00162
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -6604,7 +6604,7 @@
 
 ; 'A#'
 (define-model w00163
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -6645,7 +6645,7 @@
 
 ; 'A.'
 (define-model w00164
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -6686,7 +6686,7 @@
 
 ; 'A0'
 (define-model w00165
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -6727,7 +6727,7 @@
 
 ; 'A1'
 (define-model w00166
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -6768,7 +6768,7 @@
 
 ; 'A2'
 (define-model w00167
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -6809,7 +6809,7 @@
 
 ; 'A@'
 (define-model w00168
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -6850,7 +6850,7 @@
 
 ; 'AA'
 (define-model w00169
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -6891,7 +6891,7 @@
 
 ; 'AB'
 (define-model w00170
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -6932,7 +6932,7 @@
 
 ; 'AR'
 (define-model w00171
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -6973,7 +6973,7 @@
 
 ; 'Aa'
 (define-model w00172
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -7014,7 +7014,7 @@
 
 ; 'Ab'
 (define-model w00173
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -7055,7 +7055,7 @@
 
 ; 'Ad'
 (define-model w00174
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -7096,7 +7096,7 @@
 
 ; 'Ae'
 (define-model w00175
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -7137,7 +7137,7 @@
 
 ; 'B!'
 (define-model w00176
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -7178,7 +7178,7 @@
 
 ; 'B#'
 (define-model w00177
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -7219,7 +7219,7 @@
 
 ; 'B.'
 (define-model w00178
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -7260,7 +7260,7 @@
 
 ; 'B1'
 (define-model w00179
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -7301,7 +7301,7 @@
 
 ; 'B2'
 (define-model w00180
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -7342,7 +7342,7 @@
 
 ; 'B@'
 (define-model w00181
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -7383,7 +7383,7 @@
 
 ; 'BA'
 (define-model w00182
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -7424,7 +7424,7 @@
 
 ; 'BB'
 (define-model w00183
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -7465,7 +7465,7 @@
 
 ; 'BS'
 (define-model w00184
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -7506,7 +7506,7 @@
 
 ; 'Ba'
 (define-model w00185
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -7547,7 +7547,7 @@
 
 ; 'Bb'
 (define-model w00186
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -7588,7 +7588,7 @@
 
 ; 'Br'
 (define-model w00187
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -7629,7 +7629,7 @@
 
 ; 'C!'
 (define-model w00188
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -7670,7 +7670,7 @@
 
 ; 'C#'
 (define-model w00189
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -7711,7 +7711,7 @@
 
 ; 'C@'
 (define-model w00190
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -7752,7 +7752,7 @@
 
 ; 'CC'
 (define-model w00191
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -7793,7 +7793,7 @@
 
 ; 'CD'
 (define-model w00192
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -7834,7 +7834,7 @@
 
 ; 'D#'
 (define-model w00193
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -7875,7 +7875,7 @@
 
 ; 'DD'
 (define-model w00194
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -7916,7 +7916,7 @@
 
 ; 'DF'
 (define-model w00195
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -7957,7 +7957,7 @@
 
 ; 'Ds'
 (define-model w00196
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -7998,7 +7998,7 @@
 
 ; 'E!'
 (define-model w00197
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -8039,7 +8039,7 @@
 
 ; 'E%'
 (define-model w00198
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -8080,7 +8080,7 @@
 
 ; 'E;'
 (define-model w00199
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -8121,7 +8121,7 @@
 
 ; 'E@'
 (define-model w00200
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -8162,7 +8162,7 @@
 
 ; 'Eg'
 (define-model w00201
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -8203,7 +8203,7 @@
 
 ; 'G!'
 (define-model w00202
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -8244,7 +8244,7 @@
 
 ; 'K!'
 (define-model w00203
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -8285,7 +8285,7 @@
 
 ; 'M.'
 (define-model w00204
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -8326,7 +8326,7 @@
 
 ; 'NP'
 (define-model w00205
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -8367,7 +8367,7 @@
 
 ; 'No'
 (define-model w00206
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -8408,7 +8408,7 @@
 
 ; 'N~'
 (define-model w00207
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -8449,7 +8449,7 @@
 
 ; 'Oo'
 (define-model w00208
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -8490,7 +8490,7 @@
 
 ; 'P!'
 (define-model w00209
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -8531,7 +8531,7 @@
 
 ; 'S8'
 (define-model w00210
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -8572,7 +8572,7 @@
 
 ; 'U2'
 (define-model w00211
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -8613,7 +8613,7 @@
 
 ; 'UI'
 (define-model w00212
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -8654,7 +8654,7 @@
 
 ; 'X,'
 (define-model w00213
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -8695,7 +8695,7 @@
 
 ; '[m'
 (define-model w00214
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true))))
@@ -8736,7 +8736,7 @@
 
 ; 'a!'
 (define-model w00215
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -8777,7 +8777,7 @@
 
 ; 'a,'
 (define-model w00216
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -8818,7 +8818,7 @@
 
 ; 'a0'
 (define-model w00217
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -8859,7 +8859,7 @@
 
 ; 'a1'
 (define-model w00218
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -8900,7 +8900,7 @@
 
 ; 'a2'
 (define-model w00219
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -8941,7 +8941,7 @@
 
 ; 'a4'
 (define-model w00220
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -8982,7 +8982,7 @@
 
 ; 'a7'
 (define-model w00221
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -9023,7 +9023,7 @@
 
 ; 'a;'
 (define-model w00222
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -9064,7 +9064,7 @@
 
 ; 'a@'
 (define-model w00223
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -9105,7 +9105,7 @@
 
 ; 'aA'
 (define-model w00224
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -9146,7 +9146,7 @@
 
 ; 'aB'
 (define-model w00225
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -9187,7 +9187,7 @@
 
 ; 'aC'
 (define-model w00226
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -9228,7 +9228,7 @@
 
 ; 'aP'
 (define-model w00227
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -9269,7 +9269,7 @@
 
 ; 'aR'
 (define-model w00228
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -9310,7 +9310,7 @@
 
 ; 'aa'
 (define-model w00229
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -9351,7 +9351,7 @@
 
 ; 'ab'
 (define-model w00230
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -9392,7 +9392,7 @@
 
 ; 'ac'
 (define-model w00231
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -9433,7 +9433,7 @@
 
 ; 'ae'
 (define-model w00232
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -9474,7 +9474,7 @@
 
 ; 'al'
 (define-model w00233
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -9515,7 +9515,7 @@
 
 ; 'aq'
 (define-model w00234
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -9556,7 +9556,7 @@
 
 ; 'at'
 (define-model w00235
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -9597,7 +9597,7 @@
 
 ; 'a~'
 (define-model w00236
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -9638,7 +9638,7 @@
 
 ; 'b '
 (define-model w00237
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -9679,7 +9679,7 @@
 
 ; 'b!'
 (define-model w00238
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -9720,7 +9720,7 @@
 
 ; 'b,'
 (define-model w00239
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -9761,7 +9761,7 @@
 
 ; 'b2'
 (define-model w00240
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -9802,7 +9802,7 @@
 
 ; 'b3'
 (define-model w00241
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -9843,7 +9843,7 @@
 
 ; 'b@'
 (define-model w00242
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -9884,7 +9884,7 @@
 
 ; 'bA'
 (define-model w00243
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -9925,7 +9925,7 @@
 
 ; 'bB'
 (define-model w00244
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -9966,7 +9966,7 @@
 
 ; 'bR'
 (define-model w00245
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -10007,7 +10007,7 @@
 
 ; 'ba'
 (define-model w00246
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -10048,7 +10048,7 @@
 
 ; 'bb'
 (define-model w00247
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -10089,7 +10089,7 @@
 
 ; 'be'
 (define-model w00248
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -10130,7 +10130,7 @@
 
 ; 'bi'
 (define-model w00249
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -10171,7 +10171,7 @@
 
 ; 'c#'
 (define-model w00250
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -10212,7 +10212,7 @@
 
 ; 'c.'
 (define-model w00251
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -10253,7 +10253,7 @@
 
 ; 'cA'
 (define-model w00252
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -10294,7 +10294,7 @@
 
 ; 'ca'
 (define-model w00253
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -10335,7 +10335,7 @@
 
 ; 'cc'
 (define-model w00254
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -10376,7 +10376,7 @@
 
 ; 'ce'
 (define-model w00255
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -10417,7 +10417,7 @@
 
 ; 'd!'
 (define-model w00256
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -10458,7 +10458,7 @@
 
 ; 'dI'
 (define-model w00257
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -10499,7 +10499,7 @@
 
 ; 'dS'
 (define-model w00258
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -10540,7 +10540,7 @@
 
 ; 'de'
 (define-model w00259
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -10581,7 +10581,7 @@
 
 ; 'df'
 (define-model w00260
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -10622,7 +10622,7 @@
 
 ; 'ds'
 (define-model w00261
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -10663,7 +10663,7 @@
 
 ; 'e!'
 (define-model w00262
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -10704,7 +10704,7 @@
 
 ; "e'"
 (define-model w00263
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -10745,7 +10745,7 @@
 
 ; 'e,'
 (define-model w00264
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -10786,7 +10786,7 @@
 
 ; 'e@'
 (define-model w00265
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -10827,7 +10827,7 @@
 
 ; 'eb'
 (define-model w00266
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -10868,7 +10868,7 @@
 
 ; 'ee'
 (define-model w00267
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -10909,7 +10909,7 @@
 
 ; 'ef'
 (define-model w00268
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -10950,7 +10950,7 @@
 
 ; 'fa'
 (define-model w00269
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -10991,7 +10991,7 @@
 
 ; 'g0'
 (define-model w00270
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -11032,7 +11032,7 @@
 
 ; 'g6'
 (define-model w00271
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -11073,7 +11073,7 @@
 
 ; 'g;'
 (define-model w00272
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -11114,7 +11114,7 @@
 
 ; 'gG'
 (define-model w00273
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -11155,7 +11155,7 @@
 
 ; 'ge'
 (define-model w00274
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -11196,7 +11196,7 @@
 
 ; 'i1'
 (define-model w00275
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -11237,7 +11237,7 @@
 
 ; 'i5'
 (define-model w00276
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -11278,7 +11278,7 @@
 
 ; 'iZ'
 (define-model w00277
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -11319,7 +11319,7 @@
 
 ; 'kM'
 (define-model w00278
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -11360,7 +11360,7 @@
 
 ; 'm!'
 (define-model w00279
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -11401,7 +11401,7 @@
 
 ; 'm;'
 (define-model w00280
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -11442,7 +11442,7 @@
 
 ; 'mM'
 (define-model w00281
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -11483,7 +11483,7 @@
 
 ; 'n0'
 (define-model w00282
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -11524,7 +11524,7 @@
 
 ; 'no'
 (define-model w00283
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -11565,7 +11565,7 @@
 
 ; 'o '
 (define-model w00284
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -11606,7 +11606,7 @@
 
 ; 'o,'
 (define-model w00285
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -11647,7 +11647,7 @@
 
 ; 'o0'
 (define-model w00286
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -11688,7 +11688,7 @@
 
 ; 'o1'
 (define-model w00287
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -11729,7 +11729,7 @@
 
 ; 'o2'
 (define-model w00288
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -11770,7 +11770,7 @@
 
 ; 'o;'
 (define-model w00289
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -11811,7 +11811,7 @@
 
 ; 'o['
 (define-model w00290
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -11852,7 +11852,7 @@
 
 ; 'p0'
 (define-model w00291
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -11893,7 +11893,7 @@
 
 ; 'q!'
 (define-model w00292
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -11934,7 +11934,7 @@
 
 ; 'q3'
 (define-model w00293
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -11975,7 +11975,7 @@
 
 ; 'qw'
 (define-model w00294
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -12016,7 +12016,7 @@
 
 ; 'r3'
 (define-model w00295
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -12057,7 +12057,7 @@
 
 ; 'r@'
 (define-model w00296
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -12098,7 +12098,7 @@
 
 ; 'rV'
 (define-model w00297
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -12139,7 +12139,7 @@
 
 ; 'rg'
 (define-model w00298
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -12180,7 +12180,7 @@
 
 ; 's!'
 (define-model w00299
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -12221,7 +12221,7 @@
 
 ; 's1'
 (define-model w00300
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -12262,7 +12262,7 @@
 
 ; 'sd'
 (define-model w00301
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -12303,7 +12303,7 @@
 
 ; 'u!'
 (define-model w00302
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -12344,7 +12344,7 @@
 
 ; 'u5'
 (define-model w00303
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -12385,7 +12385,7 @@
 
 ; 'u^'
 (define-model w00304
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -12426,7 +12426,7 @@
 
 ; 'w2'
 (define-model w00305
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -12467,7 +12467,7 @@
 
 ; 'wW'
 (define-model w00306
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -12508,7 +12508,7 @@
 
 ; 'z!'
 (define-model w00307
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -12549,7 +12549,7 @@
 
 ; 'zZ'
 (define-model w00308
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false))))
@@ -12590,7 +12590,7 @@
 
 ; 'za'
 (define-model w00309
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -12631,7 +12631,7 @@
 
 ; 'ze'
 (define-model w00310
-  (define-univ Pos ($0 $1))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -12672,7 +12672,7 @@
 
 ; '\x1bAA'
 (define-model w00311
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -12713,7 +12713,7 @@
 
 ; '   '
 (define-model w00312
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -12754,7 +12754,7 @@
 
 ; ' Aw'
 (define-model w00313
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -12795,7 +12795,7 @@
 
 ; ' Wa'
 (define-model w00314
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -12836,7 +12836,7 @@
 
 ; ' o!'
 (define-model w00315
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -12877,7 +12877,7 @@
 
 ; '! i'
 (define-model w00316
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -12918,7 +12918,7 @@
 
 ; '!!!'
 (define-model w00317
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -12959,7 +12959,7 @@
 
 ; '!!@'
 (define-model w00318
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -13000,7 +13000,7 @@
 
 ; '!!a'
 (define-model w00319
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -13041,7 +13041,7 @@
 
 ; '!!e'
 (define-model w00320
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -13082,7 +13082,7 @@
 
 ; '!!o'
 (define-model w00321
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -13123,7 +13123,7 @@
 
 ; '!#a'
 (define-model w00322
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -13164,7 +13164,7 @@
 
 ; '!,,'
 (define-model w00323
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -13205,7 +13205,7 @@
 
 ; '!01'
 (define-model w00324
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -13246,7 +13246,7 @@
 
 ; '!0a'
 (define-model w00325
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -13287,7 +13287,7 @@
 
 ; '!11'
 (define-model w00326
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -13328,7 +13328,7 @@
 
 ; '!12'
 (define-model w00327
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -13369,7 +13369,7 @@
 
 ; '!2!'
 (define-model w00328
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -13410,7 +13410,7 @@
 
 ; '!2@'
 (define-model w00329
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -13451,7 +13451,7 @@
 
 ; '!2c'
 (define-model w00330
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -13492,7 +13492,7 @@
 
 ; '!3a'
 (define-model w00331
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -13533,7 +13533,7 @@
 
 ; '!4a'
 (define-model w00332
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -13574,7 +13574,7 @@
 
 ; '!5l'
 (define-model w00333
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -13615,7 +13615,7 @@
 
 ; "!;'"
 (define-model w00334
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -13656,7 +13656,7 @@
 
 ; '!@!'
 (define-model w00335
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -13697,7 +13697,7 @@
 
 ; '!@#'
 (define-model w00336
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -13738,7 +13738,7 @@
 
 ; '!@1'
 (define-model w00337
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -13779,7 +13779,7 @@
 
 ; '!@@'
 (define-model w00338
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -13820,7 +13820,7 @@
 
 ; '!@a'
 (define-model w00339
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -13861,7 +13861,7 @@
 
 ; '!@b'
 (define-model w00340
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -13902,7 +13902,7 @@
 
 ; '!@e'
 (define-model w00341
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -13943,7 +13943,7 @@
 
 ; '!Aa'
 (define-model w00342
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -13984,7 +13984,7 @@
 
 ; '!Ab'
 (define-model w00343
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -14025,7 +14025,7 @@
 
 ; '!JK'
 (define-model w00344
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -14066,7 +14066,7 @@
 
 ; '!Lm'
 (define-model w00345
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -14107,7 +14107,7 @@
 
 ; '!Zz'
 (define-model w00346
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -14148,7 +14148,7 @@
 
 ; '!a!'
 (define-model w00347
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -14189,7 +14189,7 @@
 
 ; '!a0'
 (define-model w00348
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -14230,7 +14230,7 @@
 
 ; '!a1'
 (define-model w00349
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -14271,7 +14271,7 @@
 
 ; '!a3'
 (define-model w00350
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -14312,7 +14312,7 @@
 
 ; '!aA'
 (define-model w00351
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -14353,7 +14353,7 @@
 
 ; '!aa'
 (define-model w00352
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true))))
@@ -14394,7 +14394,7 @@
 
 ; '!ab'
 (define-model w00353
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true))))
@@ -14435,7 +14435,7 @@
 
 ; '!as'
 (define-model w00354
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true))))
@@ -14476,7 +14476,7 @@
 
 ; '!b1'
 (define-model w00355
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -14517,7 +14517,7 @@
 
 ; '!b2'
 (define-model w00356
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -14558,7 +14558,7 @@
 
 ; '!bA'
 (define-model w00357
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -14599,7 +14599,7 @@
 
 ; '!bF'
 (define-model w00358
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -14640,7 +14640,7 @@
 
 ; '!ba'
 (define-model w00359
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true))))
@@ -14681,7 +14681,7 @@
 
 ; '!cF'
 (define-model w00360
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -14722,7 +14722,7 @@
 
 ; '!cc'
 (define-model w00361
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true))))
@@ -14763,7 +14763,7 @@
 
 ; '!d!'
 (define-model w00362
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -14804,7 +14804,7 @@
 
 ; '!d@'
 (define-model w00363
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -14845,7 +14845,7 @@
 
 ; '!fj'
 (define-model w00364
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true))))
@@ -14886,7 +14886,7 @@
 
 ; '!gJ'
 (define-model w00365
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -14927,7 +14927,7 @@
 
 ; '!i8'
 (define-model w00366
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -14968,7 +14968,7 @@
 
 ; '!kl'
 (define-model w00367
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true))))
@@ -15009,7 +15009,7 @@
 
 ; '!rH'
 (define-model w00368
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -15050,7 +15050,7 @@
 
 ; '!sd'
 (define-model w00369
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true))))
@@ -15091,7 +15091,7 @@
 
 ; '!tF'
 (define-model w00370
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -15132,7 +15132,7 @@
 
 ; '!vF'
 (define-model w00371
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -15173,7 +15173,7 @@
 
 ; '##!'
 (define-model w00372
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -15214,7 +15214,7 @@
 
 ; '###'
 (define-model w00373
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -15255,7 +15255,7 @@
 
 ; '##5'
 (define-model w00374
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -15296,7 +15296,7 @@
 
 ; '#?a'
 (define-model w00375
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -15337,7 +15337,7 @@
 
 ; '#@a'
 (define-model w00376
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -15378,7 +15378,7 @@
 
 ; '#i#'
 (define-model w00377
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -15419,7 +15419,7 @@
 
 ; '$%^'
 (define-model w00378
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -15460,7 +15460,7 @@
 
 ; '%td'
 (define-model w00379
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true))))
@@ -15501,7 +15501,7 @@
 
 ; '(!V'
 (define-model w00380
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -15542,7 +15542,7 @@
 
 ; '***'
 (define-model w00381
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -15583,7 +15583,7 @@
 
 ; ',,,'
 (define-model w00382
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -15624,7 +15624,7 @@
 
 ; ',be'
 (define-model w00383
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true))))
@@ -15665,7 +15665,7 @@
 
 ; ',e!'
 (define-model w00384
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -15706,7 +15706,7 @@
 
 ; '000'
 (define-model w00385
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -15747,7 +15747,7 @@
 
 ; '007'
 (define-model w00386
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -15788,7 +15788,7 @@
 
 ; '012'
 (define-model w00387
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -15829,7 +15829,7 @@
 
 ; '1!1'
 (define-model w00388
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -15870,7 +15870,7 @@
 
 ; '1!B'
 (define-model w00389
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -15911,7 +15911,7 @@
 
 ; '1!a'
 (define-model w00390
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -15952,7 +15952,7 @@
 
 ; '100'
 (define-model w00391
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -15993,7 +15993,7 @@
 
 ; '12!'
 (define-model w00392
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -16034,7 +16034,7 @@
 
 ; '12#'
 (define-model w00393
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -16075,7 +16075,7 @@
 
 ; '123'
 (define-model w00394
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -16116,7 +16116,7 @@
 
 ; '128'
 (define-model w00395
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -16157,7 +16157,7 @@
 
 ; '12A'
 (define-model w00396
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -16198,7 +16198,7 @@
 
 ; '12a'
 (define-model w00397
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -16239,7 +16239,7 @@
 
 ; '12n'
 (define-model w00398
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -16280,7 +16280,7 @@
 
 ; '1Aa'
 (define-model w00399
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -16321,7 +16321,7 @@
 
 ; '1Aw'
 (define-model w00400
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -16362,7 +16362,7 @@
 
 ; '1CD'
 (define-model w00401
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -16403,7 +16403,7 @@
 
 ; '1a!'
 (define-model w00402
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -16444,7 +16444,7 @@
 
 ; '1aA'
 (define-model w00403
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -16485,7 +16485,7 @@
 
 ; '1aa'
 (define-model w00404
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true))))
@@ -16526,7 +16526,7 @@
 
 ; '1ab'
 (define-model w00405
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true))))
@@ -16567,7 +16567,7 @@
 
 ; '1b1'
 (define-model w00406
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -16608,7 +16608,7 @@
 
 ; '1ba'
 (define-model w00407
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true))))
@@ -16649,7 +16649,7 @@
 
 ; '200'
 (define-model w00408
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -16690,7 +16690,7 @@
 
 ; '23!'
 (define-model w00409
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -16731,7 +16731,7 @@
 
 ; '234'
 (define-model w00410
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -16772,7 +16772,7 @@
 
 ; '2A3'
 (define-model w00411
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -16813,7 +16813,7 @@
 
 ; '2aa'
 (define-model w00412
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true))))
@@ -16854,7 +16854,7 @@
 
 ; '2ab'
 (define-model w00413
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true))))
@@ -16895,7 +16895,7 @@
 
 ; '2bB'
 (define-model w00414
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -16936,7 +16936,7 @@
 
 ; '3!h'
 (define-model w00415
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -16977,7 +16977,7 @@
 
 ; '31f'
 (define-model w00416
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -17018,7 +17018,7 @@
 
 ; '333'
 (define-model w00417
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -17059,7 +17059,7 @@
 
 ; '3bC'
 (define-model w00418
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -17100,7 +17100,7 @@
 
 ; '456'
 (define-model w00419
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -17141,7 +17141,7 @@
 
 ; '45@'
 (define-model w00420
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -17182,7 +17182,7 @@
 
 ; '56k'
 (define-model w00421
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -17223,7 +17223,7 @@
 
 ; '576'
 (define-model w00422
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -17264,7 +17264,7 @@
 
 ; '666'
 (define-model w00423
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -17305,7 +17305,7 @@
 
 ; '7as'
 (define-model w00424
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true))))
@@ -17346,7 +17346,7 @@
 
 ; '888'
 (define-model w00425
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -17387,7 +17387,7 @@
 
 ; ';!!'
 (define-model w00426
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -17428,7 +17428,7 @@
 
 ; '?!!'
 (define-model w00427
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -17469,7 +17469,7 @@
 
 ; '?%!'
 (define-model w00428
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -17510,7 +17510,7 @@
 
 ; '???'
 (define-model w00429
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -17551,7 +17551,7 @@
 
 ; '@!2'
 (define-model w00430
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -17592,7 +17592,7 @@
 
 ; '@!@'
 (define-model w00431
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -17633,7 +17633,7 @@
 
 ; '@!a'
 (define-model w00432
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -17674,7 +17674,7 @@
 
 ; '@!b'
 (define-model w00433
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -17715,7 +17715,7 @@
 
 ; '@1E'
 (define-model w00434
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -17756,7 +17756,7 @@
 
 ; '@@@'
 (define-model w00435
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -17797,7 +17797,7 @@
 
 ; 'A!a'
 (define-model w00436
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -17838,7 +17838,7 @@
 
 ; 'A!d'
 (define-model w00437
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -17879,7 +17879,7 @@
 
 ; 'A00'
 (define-model w00438
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -17920,7 +17920,7 @@
 
 ; 'A12'
 (define-model w00439
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -17961,7 +17961,7 @@
 
 ; 'AA1'
 (define-model w00440
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -18002,7 +18002,7 @@
 
 ; 'AAA'
 (define-model w00441
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -18043,7 +18043,7 @@
 
 ; 'AB!'
 (define-model w00442
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -18084,7 +18084,7 @@
 
 ; 'AB.'
 (define-model w00443
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -18125,7 +18125,7 @@
 
 ; 'AB2'
 (define-model w00444
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -18166,7 +18166,7 @@
 
 ; 'ABC'
 (define-model w00445
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -18207,7 +18207,7 @@
 
 ; 'AMC'
 (define-model w00446
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -18248,7 +18248,7 @@
 
 ; 'Aa1'
 (define-model w00447
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -18289,7 +18289,7 @@
 
 ; 'Ab2'
 (define-model w00448
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -18330,7 +18330,7 @@
 
 ; 'Ab@'
 (define-model w00449
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -18371,7 +18371,7 @@
 
 ; 'Aba'
 (define-model w00450
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true))))
@@ -18412,7 +18412,7 @@
 
 ; 'Abc'
 (define-model w00451
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true))))
@@ -18453,7 +18453,7 @@
 
 ; 'Aeb'
 (define-model w00452
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true))))
@@ -18494,7 +18494,7 @@
 
 ; 'Asq'
 (define-model w00453
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true))))
@@ -18535,7 +18535,7 @@
 
 ; 'B c'
 (define-model w00454
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -18576,7 +18576,7 @@
 
 ; 'B1!'
 (define-model w00455
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -18617,7 +18617,7 @@
 
 ; 'B61'
 (define-model w00456
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -18658,7 +18658,7 @@
 
 ; 'BBC'
 (define-model w00457
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -18699,7 +18699,7 @@
 
 ; 'Bus'
 (define-model w00458
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true))))
@@ -18740,7 +18740,7 @@
 
 ; 'C3F'
 (define-model w00459
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -18781,7 +18781,7 @@
 
 ; 'CD2'
 (define-model w00460
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -18822,7 +18822,7 @@
 
 ; 'CNN'
 (define-model w00461
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -18863,7 +18863,7 @@
 
 ; 'Ca!'
 (define-model w00462
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -18904,7 +18904,7 @@
 
 ; 'Cr2'
 (define-model w00463
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -18945,7 +18945,7 @@
 
 ; 'Eaf'
 (define-model w00464
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true))))
@@ -18986,7 +18986,7 @@
 
 ; 'Ebb'
 (define-model w00465
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true))))
@@ -19027,7 +19027,7 @@
 
 ; 'Eg2'
 (define-model w00466
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -19068,7 +19068,7 @@
 
 ; 'F2!'
 (define-model w00467
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -19109,7 +19109,7 @@
 
 ; 'Fh!'
 (define-model w00468
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -19150,7 +19150,7 @@
 
 ; 'Gg5'
 (define-model w00469
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -19191,7 +19191,7 @@
 
 ; 'Iq!'
 (define-model w00470
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -19232,7 +19232,7 @@
 
 ; 'Jon'
 (define-model w00471
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true))))
@@ -19273,7 +19273,7 @@
 
 ; 'K!W'
 (define-model w00472
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -19314,7 +19314,7 @@
 
 ; 'K89'
 (define-model w00473
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -19355,7 +19355,7 @@
 
 ; 'LLL'
 (define-model w00474
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -19396,7 +19396,7 @@
 
 ; 'Lkd'
 (define-model w00475
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true))))
@@ -19437,7 +19437,7 @@
 
 ; 'O3!'
 (define-model w00476
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -19478,7 +19478,7 @@
 
 ; 'QD!'
 (define-model w00477
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -19519,7 +19519,7 @@
 
 ; 'RTa'
 (define-model w00478
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -19560,7 +19560,7 @@
 
 ; 'S12'
 (define-model w00479
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -19601,7 +19601,7 @@
 
 ; 'X!!'
 (define-model w00480
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -19642,7 +19642,7 @@
 
 ; 'ZaC'
 (define-model w00481
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -19683,7 +19683,7 @@
 
 ; 'Zz!'
 (define-model w00482
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -19724,7 +19724,7 @@
 
 ; 'Zz<'
 (define-model w00483
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false))))
@@ -19765,7 +19765,7 @@
 
 ; '`kk'
 (define-model w00484
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true))))
@@ -19806,7 +19806,7 @@
 
 ; 'a !'
 (define-model w00485
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -19847,7 +19847,7 @@
 
 ; 'a C'
 (define-model w00486
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -19888,7 +19888,7 @@
 
 ; 'a c'
 (define-model w00487
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true))))
@@ -19929,7 +19929,7 @@
 
 ; 'a!!'
 (define-model w00488
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -19970,7 +19970,7 @@
 
 ; 'a!#'
 (define-model w00489
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -20011,7 +20011,7 @@
 
 ; 'a!1'
 (define-model w00490
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -20052,7 +20052,7 @@
 
 ; 'a!>'
 (define-model w00491
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -20093,7 +20093,7 @@
 
 ; 'a!@'
 (define-model w00492
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -20134,7 +20134,7 @@
 
 ; 'a!A'
 (define-model w00493
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -20175,7 +20175,7 @@
 
 ; 'a!B'
 (define-model w00494
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -20216,7 +20216,7 @@
 
 ; 'a!C'
 (define-model w00495
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -20257,7 +20257,7 @@
 
 ; 'a!L'
 (define-model w00496
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -20298,7 +20298,7 @@
 
 ; 'a!a'
 (define-model w00497
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true))))
@@ -20339,7 +20339,7 @@
 
 ; 'a!b'
 (define-model w00498
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true))))
@@ -20380,7 +20380,7 @@
 
 ; 'a!l'
 (define-model w00499
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true))))
@@ -20421,7 +20421,7 @@
 
 ; "a',"
 (define-model w00500
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -20462,7 +20462,7 @@
 
 ; 'a*C'
 (define-model w00501
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -20503,7 +20503,7 @@
 
 ; 'a,e'
 (define-model w00502
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true))))
@@ -20544,7 +20544,7 @@
 
 ; 'a00'
 (define-model w00503
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -20585,7 +20585,7 @@
 
 ; 'a0@'
 (define-model w00504
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -20626,7 +20626,7 @@
 
 ; 'a1!'
 (define-model w00505
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -20667,7 +20667,7 @@
 
 ; 'a12'
 (define-model w00506
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -20708,7 +20708,7 @@
 
 ; 'a2,'
 (define-model w00507
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -20749,7 +20749,7 @@
 
 ; 'a5c'
 (define-model w00508
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true))))
@@ -20790,7 +20790,7 @@
 
 ; 'a5e'
 (define-model w00509
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true))))
@@ -20831,7 +20831,7 @@
 
 ; 'a8b'
 (define-model w00510
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true))))
@@ -20872,7 +20872,7 @@
 
 ; 'a>?'
 (define-model w00511
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -20913,7 +20913,7 @@
 
 ; 'a@2'
 (define-model w00512
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -20954,7 +20954,7 @@
 
 ; 'aA!'
 (define-model w00513
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -20995,7 +20995,7 @@
 
 ; 'aAa'
 (define-model w00514
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true))))
@@ -21036,7 +21036,7 @@
 
 ; 'aBa'
 (define-model w00515
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true))))
@@ -21077,7 +21077,7 @@
 
 ; 'aC!'
 (define-model w00516
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -21118,7 +21118,7 @@
 
 ; 'aFe'
 (define-model w00517
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true))))
@@ -21159,7 +21159,7 @@
 
 ; 'aT!'
 (define-model w00518
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -21200,7 +21200,7 @@
 
 ; 'aZj'
 (define-model w00519
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true))))
@@ -21241,7 +21241,7 @@
 
 ; 'aa!'
 (define-model w00520
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false))))
@@ -21282,7 +21282,7 @@
 
 ; 'aa0'
 (define-model w00521
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false))))
@@ -21323,7 +21323,7 @@
 
 ; 'aa@'
 (define-model w00522
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false))))
@@ -21364,7 +21364,7 @@
 
 ; 'aaA'
 (define-model w00523
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false))))
@@ -21405,7 +21405,7 @@
 
 ; 'aaa'
 (define-model w00524
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -21446,7 +21446,7 @@
 
 ; 'ab!'
 (define-model w00525
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false))))
@@ -21487,7 +21487,7 @@
 
 ; 'ab0'
 (define-model w00526
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false))))
@@ -21528,7 +21528,7 @@
 
 ; 'ab1'
 (define-model w00527
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false))))
@@ -21569,7 +21569,7 @@
 
 ; 'ab@'
 (define-model w00528
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false))))
@@ -21610,7 +21610,7 @@
 
 ; 'abA'
 (define-model w00529
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false))))
@@ -21651,7 +21651,7 @@
 
 ; 'abc'
 (define-model w00530
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -21692,7 +21692,7 @@
 
 ; 'ae3'
 (define-model w00531
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false))))
@@ -21733,7 +21733,7 @@
 
 ; 'aei'
 (define-model w00532
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -21774,7 +21774,7 @@
 
 ; 'aj!'
 (define-model w00533
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false))))
@@ -21815,7 +21815,7 @@
 
 ; 'asS'
 (define-model w00534
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false))))
@@ -21856,7 +21856,7 @@
 
 ; 'asd'
 (define-model w00535
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -21897,7 +21897,7 @@
 
 ; 'b!#'
 (define-model w00536
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -21938,7 +21938,7 @@
 
 ; 'b!0'
 (define-model w00537
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -21979,7 +21979,7 @@
 
 ; 'b22'
 (define-model w00538
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -22020,7 +22020,7 @@
 
 ; 'b;8'
 (define-model w00539
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -22061,7 +22061,7 @@
 
 ; 'b;G'
 (define-model w00540
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -22102,7 +22102,7 @@
 
 ; 'bAA'
 (define-model w00541
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -22143,7 +22143,7 @@
 
 ; 'bAB'
 (define-model w00542
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -22184,7 +22184,7 @@
 
 ; 'bBA'
 (define-model w00543
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -22225,7 +22225,7 @@
 
 ; 'bBB'
 (define-model w00544
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -22266,7 +22266,7 @@
 
 ; 'ba2'
 (define-model w00545
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false))))
@@ -22307,7 +22307,7 @@
 
 ; 'ba@'
 (define-model w00546
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false))))
@@ -22348,7 +22348,7 @@
 
 ; 'bb@'
 (define-model w00547
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false))))
@@ -22389,7 +22389,7 @@
 
 ; 'bc1'
 (define-model w00548
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false))))
@@ -22430,7 +22430,7 @@
 
 ; 'bcd'
 (define-model w00549
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -22471,7 +22471,7 @@
 
 ; 'bec'
 (define-model w00550
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -22512,7 +22512,7 @@
 
 ; 'bi!'
 (define-model w00551
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false))))
@@ -22553,7 +22553,7 @@
 
 ; 'c 5'
 (define-model w00552
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -22594,7 +22594,7 @@
 
 ; 'c a'
 (define-model w00553
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true))))
@@ -22635,7 +22635,7 @@
 
 ; 'c!2'
 (define-model w00554
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -22676,7 +22676,7 @@
 
 ; 'c!A'
 (define-model w00555
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -22717,7 +22717,7 @@
 
 ; 'c`a'
 (define-model w00556
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true))))
@@ -22758,7 +22758,7 @@
 
 ; 'ccU'
 (define-model w00557
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false))))
@@ -22799,7 +22799,7 @@
 
 ; 'cuA'
 (define-model w00558
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false))))
@@ -22840,7 +22840,7 @@
 
 ; 'd1D'
 (define-model w00559
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -22881,7 +22881,7 @@
 
 ; 'df!'
 (define-model w00560
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false))))
@@ -22922,7 +22922,7 @@
 
 ; 'e!@'
 (define-model w00561
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -22963,7 +22963,7 @@
 
 ; 'e!a'
 (define-model w00562
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true))))
@@ -23004,7 +23004,7 @@
 
 ; 'e1!'
 (define-model w00563
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -23045,7 +23045,7 @@
 
 ; 'eAe'
 (define-model w00564
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true))))
@@ -23086,7 +23086,7 @@
 
 ; 'efg'
 (define-model w00565
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -23127,7 +23127,7 @@
 
 ; 'fQf'
 (define-model w00566
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true))))
@@ -23168,7 +23168,7 @@
 
 ; 'fd3'
 (define-model w00567
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false))))
@@ -23209,7 +23209,7 @@
 
 ; 'fds'
 (define-model w00568
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -23250,7 +23250,7 @@
 
 ; 'fff'
 (define-model w00569
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -23291,7 +23291,7 @@
 
 ; 'ghj'
 (define-model w00570
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -23332,7 +23332,7 @@
 
 ; 'goo'
 (define-model w00571
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -23373,7 +23373,7 @@
 
 ; 'h78'
 (define-model w00572
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -23414,7 +23414,7 @@
 
 ; 'ii1'
 (define-model w00573
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false))))
@@ -23455,7 +23455,7 @@
 
 ; 'it!'
 (define-model w00574
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false))))
@@ -23496,7 +23496,7 @@
 
 ; 'jWa'
 (define-model w00575
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true))))
@@ -23537,7 +23537,7 @@
 
 ; 'lol'
 (define-model w00576
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -23578,7 +23578,7 @@
 
 ; 'm;;'
 (define-model w00577
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -23619,7 +23619,7 @@
 
 ; 'nBv'
 (define-model w00578
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true))))
@@ -23660,7 +23660,7 @@
 
 ; 'no!'
 (define-model w00579
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false))))
@@ -23701,7 +23701,7 @@
 
 ; 'not'
 (define-model w00580
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -23742,7 +23742,7 @@
 
 ; 'ooo'
 (define-model w00581
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -23783,7 +23783,7 @@
 
 ; 'qwb'
 (define-model w00582
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -23824,7 +23824,7 @@
 
 ; 's!h'
 (define-model w00583
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true))))
@@ -23865,7 +23865,7 @@
 
 ; 's3a'
 (define-model w00584
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true))))
@@ -23906,7 +23906,7 @@
 
 ; 's3d'
 (define-model w00585
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true))))
@@ -23947,7 +23947,7 @@
 
 ; 's7!'
 (define-model w00586
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -23988,7 +23988,7 @@
 
 ; 'sat'
 (define-model w00587
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -24029,7 +24029,7 @@
 
 ; 'sd1'
 (define-model w00588
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false))))
@@ -24070,7 +24070,7 @@
 
 ; 'sd9'
 (define-model w00589
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false))))
@@ -24111,7 +24111,7 @@
 
 ; 'sdf'
 (define-model w00590
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -24152,7 +24152,7 @@
 
 ; 'stk'
 (define-model w00591
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -24193,7 +24193,7 @@
 
 ; 't3d'
 (define-model w00592
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true))))
@@ -24234,7 +24234,7 @@
 
 ; 'tik'
 (define-model w00593
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -24275,7 +24275,7 @@
 
 ; 'too'
 (define-model w00594
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -24316,7 +24316,7 @@
 
 ; 'u23'
 (define-model w00595
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -24357,7 +24357,7 @@
 
 ; 'uu6'
 (define-model w00596
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false))))
@@ -24398,7 +24398,7 @@
 
 ; 'x32'
 (define-model w00597
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -24439,7 +24439,7 @@
 
 ; 'xii'
 (define-model w00598
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -24480,7 +24480,7 @@
 
 ; 'yes'
 (define-model w00599
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -24521,7 +24521,7 @@
 
 ; "z!'"
 (define-model w00600
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -24562,7 +24562,7 @@
 
 ; 'z34'
 (define-model w00601
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -24603,7 +24603,7 @@
 
 ; 'zZz'
 (define-model w00602
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true))))
@@ -24644,7 +24644,7 @@
 
 ; 'zza'
 (define-model w00603
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -24685,7 +24685,7 @@
 
 ; '{!X'
 (define-model w00604
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -24726,7 +24726,7 @@
 
 ; '~!Z'
 (define-model w00605
-  (define-univ Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -24767,7 +24767,7 @@
 
 ; ' abc'
 (define-model w00606
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true))))
@@ -24808,7 +24808,7 @@
 
 ; '! N!'
 (define-model w00607
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -24849,7 +24849,7 @@
 
 ; '!! e'
 (define-model w00608
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true))))
@@ -24890,7 +24890,7 @@
 
 ; '!!!!'
 (define-model w00609
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -24931,7 +24931,7 @@
 
 ; '!!!1'
 (define-model w00610
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -24972,7 +24972,7 @@
 
 ; '!!!@'
 (define-model w00611
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -25013,7 +25013,7 @@
 
 ; '!!!E'
 (define-model w00612
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -25054,7 +25054,7 @@
 
 ; '!!!a'
 (define-model w00613
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true))))
@@ -25095,7 +25095,7 @@
 
 ; '!!4a'
 (define-model w00614
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true))))
@@ -25136,7 +25136,7 @@
 
 ; '!!@@'
 (define-model w00615
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -25177,7 +25177,7 @@
 
 ; '!!@c'
 (define-model w00616
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true))))
@@ -25218,7 +25218,7 @@
 
 ; '!!Ao'
 (define-model w00617
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true))))
@@ -25259,7 +25259,7 @@
 
 ; '!!ak'
 (define-model w00618
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true))))
@@ -25300,7 +25300,7 @@
 
 ; '!!f^'
 (define-model w00619
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) false))))
@@ -25341,7 +25341,7 @@
 
 ; '!###'
 (define-model w00620
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -25382,7 +25382,7 @@
 
 ; '!123'
 (define-model w00621
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -25423,7 +25423,7 @@
 
 ; '!234'
 (define-model w00622
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -25464,7 +25464,7 @@
 
 ; '!235'
 (define-model w00623
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -25505,7 +25505,7 @@
 
 ; '!23a'
 (define-model w00624
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true))))
@@ -25546,7 +25546,7 @@
 
 ; '!2@3'
 (define-model w00625
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -25587,7 +25587,7 @@
 
 ; '!345'
 (define-model w00626
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -25628,7 +25628,7 @@
 
 ; '!?.~'
 (define-model w00627
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -25669,7 +25669,7 @@
 
 ; '!@ !'
 (define-model w00628
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -25710,7 +25710,7 @@
 
 ; '!@ T'
 (define-model w00629
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -25751,7 +25751,7 @@
 
 ; '!@!@'
 (define-model w00630
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -25792,7 +25792,7 @@
 
 ; '!@!a'
 (define-model w00631
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true))))
@@ -25833,7 +25833,7 @@
 
 ; '!@34'
 (define-model w00632
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -25874,7 +25874,7 @@
 
 ; '!AEO'
 (define-model w00633
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -25915,7 +25915,7 @@
 
 ; '!BFf'
 (define-model w00634
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true))))
@@ -25956,7 +25956,7 @@
 
 ; '!a!a'
 (define-model w00635
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) true))))
@@ -25997,7 +25997,7 @@
 
 ; '!a!b'
 (define-model w00636
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) true))))
@@ -26038,7 +26038,7 @@
 
 ; '!a00'
 (define-model w00637
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) false))))
@@ -26079,7 +26079,7 @@
 
 ; '!aEi'
 (define-model w00638
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) true))))
@@ -26120,7 +26120,7 @@
 
 ; '!aaa'
 (define-model w00639
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true))))
@@ -26161,7 +26161,7 @@
 
 ; '!aee'
 (define-model w00640
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true))))
@@ -26202,7 +26202,7 @@
 
 ; '!ak@'
 (define-model w00641
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false))))
@@ -26243,7 +26243,7 @@
 
 ; '!b12'
 (define-model w00642
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) false))))
@@ -26284,7 +26284,7 @@
 
 ; '!bAc'
 (define-model w00643
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) true))))
@@ -26325,7 +26325,7 @@
 
 ; '!bcd'
 (define-model w00644
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true))))
@@ -26366,7 +26366,7 @@
 
 ; '!c23'
 (define-model w00645
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) false))))
@@ -26407,7 +26407,7 @@
 
 ; '!e31'
 (define-model w00646
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) false))))
@@ -26448,7 +26448,7 @@
 
 ; '!f3d'
 (define-model w00647
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) true))))
@@ -26489,7 +26489,7 @@
 
 ; '!hyk'
 (define-model w00648
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true))))
@@ -26530,7 +26530,7 @@
 
 ; '!iou'
 (define-model w00649
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true))))
@@ -26571,7 +26571,7 @@
 
 ; '!jgU'
 (define-model w00650
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false))))
@@ -26612,7 +26612,7 @@
 
 ; '!kD2'
 (define-model w00651
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) false))))
@@ -26653,7 +26653,7 @@
 
 ; '!qbc'
 (define-model w00652
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true))))
@@ -26694,7 +26694,7 @@
 
 ; '!sda'
 (define-model w00653
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true))))
@@ -26735,7 +26735,7 @@
 
 ; '!wow'
 (define-model w00654
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true))))
@@ -26776,7 +26776,7 @@
 
 ; '## !'
 (define-model w00655
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -26817,7 +26817,7 @@
 
 ; '####'
 (define-model w00656
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -26858,7 +26858,7 @@
 
 ; '#er2'
 (define-model w00657
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false))))
@@ -26899,7 +26899,7 @@
 
 ; ',,aa'
 (define-model w00658
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true))))
@@ -26940,7 +26940,7 @@
 
 ; ',Abd'
 (define-model w00659
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true))))
@@ -26981,7 +26981,7 @@
 
 ; ',abc'
 (define-model w00660
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true))))
@@ -27022,7 +27022,7 @@
 
 ; '-200'
 (define-model w00661
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -27063,7 +27063,7 @@
 
 ; '0000'
 (define-model w00662
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -27104,7 +27104,7 @@
 
 ; '1!3b'
 (define-model w00663
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true))))
@@ -27145,7 +27145,7 @@
 
 ; '123!'
 (define-model w00664
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -27186,7 +27186,7 @@
 
 ; '1234'
 (define-model w00665
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -27227,7 +27227,7 @@
 
 ; '123@'
 (define-model w00666
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -27268,7 +27268,7 @@
 
 ; '1345'
 (define-model w00667
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -27309,7 +27309,7 @@
 
 ; '13rS'
 (define-model w00668
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) false))))
@@ -27350,7 +27350,7 @@
 
 ; '143I'
 (define-model w00669
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -27391,7 +27391,7 @@
 
 ; '1A!b'
 (define-model w00670
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true))))
@@ -27432,7 +27432,7 @@
 
 ; '1A1A'
 (define-model w00671
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -27473,7 +27473,7 @@
 
 ; '1A2b'
 (define-model w00672
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true))))
@@ -27514,7 +27514,7 @@
 
 ; '1aAA'
 (define-model w00673
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) false))))
@@ -27555,7 +27555,7 @@
 
 ; '1aaa'
 (define-model w00674
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true))))
@@ -27596,7 +27596,7 @@
 
 ; '1abc'
 (define-model w00675
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true))))
@@ -27637,7 +27637,7 @@
 
 ; '1b00'
 (define-model w00676
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) false))))
@@ -27678,7 +27678,7 @@
 
 ; '1bbb'
 (define-model w00677
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true))))
@@ -27719,7 +27719,7 @@
 
 ; '1cat'
 (define-model w00678
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true))))
@@ -27760,7 +27760,7 @@
 
 ; '1f3Z'
 (define-model w00679
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) false))))
@@ -27801,7 +27801,7 @@
 
 ; '2,,,'
 (define-model w00680
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -27842,7 +27842,7 @@
 
 ; '20oO'
 (define-model w00681
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) false))))
@@ -27883,7 +27883,7 @@
 
 ; '23!a'
 (define-model w00682
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true))))
@@ -27924,7 +27924,7 @@
 
 ; '23f!'
 (define-model w00683
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) false))))
@@ -27965,7 +27965,7 @@
 
 ; '2b1A'
 (define-model w00684
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) false))))
@@ -28006,7 +28006,7 @@
 
 ; '345F'
 (define-model w00685
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -28047,7 +28047,7 @@
 
 ; '34bv'
 (define-model w00686
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true))))
@@ -28088,7 +28088,7 @@
 
 ; '3Dg6'
 (define-model w00687
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) true))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) false))))
@@ -28129,7 +28129,7 @@
 
 ; '543@'
 (define-model w00688
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -28170,7 +28170,7 @@
 
 ; '6fgj'
 (define-model w00689
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true))))
@@ -28211,7 +28211,7 @@
 
 ; '6rbb'
 (define-model w00690
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true))))
@@ -28252,7 +28252,7 @@
 
 ; '8 !h'
 (define-model w00691
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true))))
@@ -28293,7 +28293,7 @@
 
 ; '9!2a'
 (define-model w00692
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true))))
@@ -28334,7 +28334,7 @@
 
 ; '@!!@'
 (define-model w00693
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -28375,7 +28375,7 @@
 
 ; '@@@@'
 (define-model w00694
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -28416,7 +28416,7 @@
 
 ; '@@ee'
 (define-model w00695
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true))))
@@ -28457,7 +28457,7 @@
 
 ; '@AAA'
 (define-model w00696
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -28498,7 +28498,7 @@
 
 ; '@aaa'
 (define-model w00697
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true))))
@@ -28539,7 +28539,7 @@
 
 ; '@bla'
 (define-model w00698
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true))))
@@ -28580,7 +28580,7 @@
 
 ; '@f15'
 (define-model w00699
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) false))))
@@ -28621,7 +28621,7 @@
 
 ; 'AAAE'
 (define-model w00700
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -28662,7 +28662,7 @@
 
 ; 'AB#$'
 (define-model w00701
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -28703,7 +28703,7 @@
 
 ; 'ABCD'
 (define-model w00702
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -28744,7 +28744,7 @@
 
 ; 'Ad!d'
 (define-model w00703
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) true))))
@@ -28785,7 +28785,7 @@
 
 ; 'AnsS'
 (define-model w00704
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false))))
@@ -28826,7 +28826,7 @@
 
 ; 'B!sd'
 (define-model w00705
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true))))
@@ -28867,7 +28867,7 @@
 
 ; 'B64S'
 (define-model w00706
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -28908,7 +28908,7 @@
 
 ; 'BB!z'
 (define-model w00707
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true))))
@@ -28949,7 +28949,7 @@
 
 ; 'BIG!'
 (define-model w00708
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -28990,7 +28990,7 @@
 
 ; 'Bad!'
 (define-model w00709
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false))))
@@ -29031,7 +29031,7 @@
 
 ; 'C23!'
 (define-model w00710
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -29072,7 +29072,7 @@
 
 ; 'CCDD'
 (define-model w00711
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -29113,7 +29113,7 @@
 
 ; 'Fake'
 (define-model w00712
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true))))
@@ -29154,7 +29154,7 @@
 
 ; 'IIII'
 (define-model w00713
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -29195,7 +29195,7 @@
 
 ; 'Ie!@'
 (define-model w00714
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) false))))
@@ -29236,7 +29236,7 @@
 
 ; 'Nope'
 (define-model w00715
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true))))
@@ -29277,7 +29277,7 @@
 
 ; 'Q23d'
 (define-model w00716
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true))))
@@ -29318,7 +29318,7 @@
 
 ; 'R123'
 (define-model w00717
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -29359,7 +29359,7 @@
 
 ; 'S!cd'
 (define-model w00718
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true))))
@@ -29400,7 +29400,7 @@
 
 ; 'Saq!'
 (define-model w00719
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false))))
@@ -29441,7 +29441,7 @@
 
 ; 'U2!d'
 (define-model w00720
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true))))
@@ -29482,7 +29482,7 @@
 
 ; 'Udfa'
 (define-model w00721
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true))))
@@ -29523,7 +29523,7 @@
 
 ; 'Z2i3'
 (define-model w00722
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) true))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) false))))
@@ -29564,7 +29564,7 @@
 
 ; 'ZZZ!'
 (define-model w00723
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -29605,7 +29605,7 @@
 
 ; 'a!!C'
 (define-model w00724
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false))))
@@ -29646,7 +29646,7 @@
 
 ; 'a!5l'
 (define-model w00725
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) true))))
@@ -29687,7 +29687,7 @@
 
 ; 'a!Aa'
 (define-model w00726
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) true))))
@@ -29728,7 +29728,7 @@
 
 ; 'a!bc'
 (define-model w00727
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) true))))
@@ -29769,7 +29769,7 @@
 
 ; 'a!sa'
 (define-model w00728
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) true))))
@@ -29810,7 +29810,7 @@
 
 ; 'a100'
 (define-model w00729
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false))))
@@ -29851,7 +29851,7 @@
 
 ; 'a12!'
 (define-model w00730
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false))))
@@ -29892,7 +29892,7 @@
 
 ; 'a1a1'
 (define-model w00731
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) false))))
@@ -29933,7 +29933,7 @@
 
 ; 'a?a?'
 (define-model w00732
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) false))))
@@ -29974,7 +29974,7 @@
 
 ; 'aA@C'
 (define-model w00733
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false))))
@@ -30015,7 +30015,7 @@
 
 ; 'aAAA'
 (define-model w00734
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false))))
@@ -30056,7 +30056,7 @@
 
 ; 'aBBB'
 (define-model w00735
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false))))
@@ -30097,7 +30097,7 @@
 
 ; 'aBaB'
 (define-model w00736
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) false))))
@@ -30138,7 +30138,7 @@
 
 ; 'aCc?'
 (define-model w00737
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) false))))
@@ -30179,7 +30179,7 @@
 
 ; 'aa!B'
 (define-model w00738
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false))))
@@ -30220,7 +30220,7 @@
 
 ; 'aa00'
 (define-model w00739
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false))))
@@ -30261,7 +30261,7 @@
 
 ; 'aaaB'
 (define-model w00740
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false))))
@@ -30302,7 +30302,7 @@
 
 ; 'aaaa'
 (define-model w00741
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -30343,7 +30343,7 @@
 
 ; 'aaab'
 (define-model w00742
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -30384,7 +30384,7 @@
 
 ; 'ab!!'
 (define-model w00743
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false))))
@@ -30425,7 +30425,7 @@
 
 ; 'ab12'
 (define-model w00744
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false))))
@@ -30466,7 +30466,7 @@
 
 ; 'abab'
 (define-model w00745
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -30507,7 +30507,7 @@
 
 ; 'abc!'
 (define-model w00746
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false))))
@@ -30548,7 +30548,7 @@
 
 ; 'abc1'
 (define-model w00747
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false))))
@@ -30589,7 +30589,7 @@
 
 ; 'abc?'
 (define-model w00748
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false))))
@@ -30630,7 +30630,7 @@
 
 ; 'abc@'
 (define-model w00749
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false))))
@@ -30671,7 +30671,7 @@
 
 ; 'abcd'
 (define-model w00750
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -30712,7 +30712,7 @@
 
 ; 'acc,'
 (define-model w00751
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false))))
@@ -30753,7 +30753,7 @@
 
 ; 'adfa'
 (define-model w00752
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -30794,7 +30794,7 @@
 
 ; 'aeio'
 (define-model w00753
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -30835,7 +30835,7 @@
 
 ; 'aeo2'
 (define-model w00754
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false))))
@@ -30876,7 +30876,7 @@
 
 ; 'aeuk'
 (define-model w00755
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -30917,7 +30917,7 @@
 
 ; 'asEf'
 (define-model w00756
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) true))))
@@ -30958,7 +30958,7 @@
 
 ; 'b!!!'
 (define-model w00757
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false))))
@@ -30999,7 +30999,7 @@
 
 ; 'b///'
 (define-model w00758
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false))))
@@ -31040,7 +31040,7 @@
 
 ; 'b12A'
 (define-model w00759
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false))))
@@ -31081,7 +31081,7 @@
 
 ; 'bA!n'
 (define-model w00760
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) true))))
@@ -31122,7 +31122,7 @@
 
 ; 'baba'
 (define-model w00761
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -31163,7 +31163,7 @@
 
 ; 'bbbb'
 (define-model w00762
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -31204,7 +31204,7 @@
 
 ; 'bidf'
 (define-model w00763
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -31245,7 +31245,7 @@
 
 ; 'blah'
 (define-model w00764
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -31286,7 +31286,7 @@
 
 ; 'c10d'
 (define-model w00765
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) true))))
@@ -31327,7 +31327,7 @@
 
 ; 'c1d1'
 (define-model w00766
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) false))))
@@ -31368,7 +31368,7 @@
 
 ; 'cde@'
 (define-model w00767
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false))))
@@ -31409,7 +31409,7 @@
 
 ; 'ch a'
 (define-model w00768
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) true))))
@@ -31450,7 +31450,7 @@
 
 ; 'char'
 (define-model w00769
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -31491,7 +31491,7 @@
 
 ; 'cool'
 (define-model w00770
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -31532,7 +31532,7 @@
 
 ; 'd$$$'
 (define-model w00771
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false))))
@@ -31573,7 +31573,7 @@
 
 ; 'dF3s'
 (define-model w00772
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) true))))
@@ -31614,7 +31614,7 @@
 
 ; 'daj8'
 (define-model w00773
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false))))
@@ -31655,7 +31655,7 @@
 
 ; 'df!@'
 (define-model w00774
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false))))
@@ -31696,7 +31696,7 @@
 
 ; 'doog'
 (define-model w00775
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -31737,7 +31737,7 @@
 
 ; 'dsge'
 (define-model w00776
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -31778,7 +31778,7 @@
 
 ; 'eve!'
 (define-model w00777
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false))))
@@ -31819,7 +31819,7 @@
 
 ; 'fakE'
 (define-model w00778
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false))))
@@ -31860,7 +31860,7 @@
 
 ; 'fake'
 (define-model w00779
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -31901,7 +31901,7 @@
 
 ; 'fdR!'
 (define-model w00780
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false))))
@@ -31942,7 +31942,7 @@
 
 ; 'fe4G'
 (define-model w00781
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false))))
@@ -31983,7 +31983,7 @@
 
 ; 'fghj'
 (define-model w00782
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -32024,7 +32024,7 @@
 
 ; 'fofo'
 (define-model w00783
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -32065,7 +32065,7 @@
 
 ; 'fr2e'
 (define-model w00784
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) true))))
@@ -32106,7 +32106,7 @@
 
 ; 'gfds'
 (define-model w00785
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -32147,7 +32147,7 @@
 
 ; 'good'
 (define-model w00786
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -32188,7 +32188,7 @@
 
 ; 'hCCd'
 (define-model w00787
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) true))))
@@ -32229,7 +32229,7 @@
 
 ; 'hate'
 (define-model w00788
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -32270,7 +32270,7 @@
 
 ; 'hgf5'
 (define-model w00789
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false))))
@@ -32311,7 +32311,7 @@
 
 ; 'hj7P'
 (define-model w00790
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false))))
@@ -32352,7 +32352,7 @@
 
 ; 'i!0j'
 (define-model w00791
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) true))))
@@ -32393,7 +32393,7 @@
 
 ; 'k2$M'
 (define-model w00792
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false))))
@@ -32434,7 +32434,7 @@
 
 ; 'lo?l'
 (define-model w00793
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) true))))
@@ -32475,7 +32475,7 @@
 
 ; 'lol!'
 (define-model w00794
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false))))
@@ -32516,7 +32516,7 @@
 
 ; 'lol~'
 (define-model w00795
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false))))
@@ -32557,7 +32557,7 @@
 
 ; 'no e'
 (define-model w00796
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) true))))
@@ -32598,7 +32598,7 @@
 
 ; 'nof~'
 (define-model w00797
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false))))
@@ -32639,7 +32639,7 @@
 
 ; 'oJs!'
 (define-model w00798
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) false))))
@@ -32680,7 +32680,7 @@
 
 ; 'one!'
 (define-model w00799
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false))))
@@ -32721,7 +32721,7 @@
 
 ; 'rtyu'
 (define-model w00800
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -32762,7 +32762,7 @@
 
 ; 's!s!'
 (define-model w00801
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) false))))
@@ -32803,7 +32803,7 @@
 
 ; 'sadd'
 (define-model w00802
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -32844,7 +32844,7 @@
 
 ; 'sd!2'
 (define-model w00803
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false))))
@@ -32885,7 +32885,7 @@
 
 ; 'sdd3'
 (define-model w00804
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false))))
@@ -32926,7 +32926,7 @@
 
 ; 'tZWa'
 (define-model w00805
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) true))))
@@ -32967,7 +32967,7 @@
 
 ; 'u,3N'
 (define-model w00806
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false))))
@@ -33008,7 +33008,7 @@
 
 ; 'uwuu'
 (define-model w00807
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -33049,7 +33049,7 @@
 
 ; 'we9w'
 (define-model w00808
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) true))))
@@ -33090,7 +33090,7 @@
 
 ; 'werS'
 (define-model w00809
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false))))
@@ -33131,7 +33131,7 @@
 
 ; 'ya!y'
 (define-model w00810
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) true))))
@@ -33172,7 +33172,7 @@
 
 ; 'yay!'
 (define-model w00811
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false))))
@@ -33213,7 +33213,7 @@
 
 ; 'yay@'
 (define-model w00812
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false))))
@@ -33254,7 +33254,7 @@
 
 ; 'yayy'
 (define-model w00813
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -33295,7 +33295,7 @@
 
 ; 'yyy!'
 (define-model w00814
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false))))
@@ -33336,7 +33336,7 @@
 
 ; 'z!@A'
 (define-model w00815
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false))))
@@ -33377,7 +33377,7 @@
 
 ; "z'''"
 (define-model w00816
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false))))
@@ -33418,7 +33418,7 @@
 
 ; 'zZi2'
 (define-model w00817
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) false))))
@@ -33459,7 +33459,7 @@
 
 ; 'zzga'
 (define-model w00818
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -33500,7 +33500,7 @@
 
 ; 'zzza'
 (define-model w00819
-  (define-univ Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -33541,7 +33541,7 @@
 
 ; '  !  '
 (define-model w00820
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -33582,7 +33582,7 @@
 
 ; '  !@#'
 (define-model w00821
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -33623,7 +33623,7 @@
 
 ; ' 1! d'
 (define-model w00822
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true))))
@@ -33664,7 +33664,7 @@
 
 ; '! 234'
 (define-model w00823
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -33705,7 +33705,7 @@
 
 ; '!! 47'
 (define-model w00824
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -33746,7 +33746,7 @@
 
 ; '!!!!!'
 (define-model w00825
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -33787,7 +33787,7 @@
 
 ; '!!!!1'
 (define-model w00826
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -33828,7 +33828,7 @@
 
 ; '!!!!B'
 (define-model w00827
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -33869,7 +33869,7 @@
 
 ; '!!!!a'
 (define-model w00828
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true))))
@@ -33910,7 +33910,7 @@
 
 ; '!!!1a'
 (define-model w00829
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true))))
@@ -33951,7 +33951,7 @@
 
 ; '!!!ae'
 (define-model w00830
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true))))
@@ -33992,7 +33992,7 @@
 
 ; '!!!d@'
 (define-model w00831
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) false))))
@@ -34033,7 +34033,7 @@
 
 ; '!!111'
 (define-model w00832
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -34074,7 +34074,7 @@
 
 ; '!!eaA'
 (define-model w00833
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) false))))
@@ -34115,7 +34115,7 @@
 
 ; '!!w2B'
 (define-model w00834
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) false) (($4) false))))
@@ -34156,7 +34156,7 @@
 
 ; '!!wow'
 (define-model w00835
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true))))
@@ -34197,7 +34197,7 @@
 
 ; '!093v'
 (define-model w00836
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true))))
@@ -34238,7 +34238,7 @@
 
 ; '!100a'
 (define-model w00837
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true))))
@@ -34279,7 +34279,7 @@
 
 ; '!12SD'
 (define-model w00838
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -34320,7 +34320,7 @@
 
 ; '!43ad'
 (define-model w00839
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true))))
@@ -34361,7 +34361,7 @@
 
 ; '!45gE'
 (define-model w00840
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) false))))
@@ -34402,7 +34402,7 @@
 
 ; '!6rbb'
 (define-model w00841
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true))))
@@ -34443,7 +34443,7 @@
 
 ; '!9jjt'
 (define-model w00842
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true))))
@@ -34484,7 +34484,7 @@
 
 ; '!@a!@'
 (define-model w00843
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) false) (($4) false))))
@@ -34525,7 +34525,7 @@
 
 ; '!aab1'
 (define-model w00844
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false))))
@@ -34566,7 +34566,7 @@
 
 ; '!abc1'
 (define-model w00845
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false))))
@@ -34607,7 +34607,7 @@
 
 ; '!ddda'
 (define-model w00846
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true))))
@@ -34648,7 +34648,7 @@
 
 ; '!f12!'
 (define-model w00847
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) false))))
@@ -34689,7 +34689,7 @@
 
 ; '!fasf'
 (define-model w00848
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true))))
@@ -34730,7 +34730,7 @@
 
 ; '!fd%2'
 (define-model w00849
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) false))))
@@ -34771,7 +34771,7 @@
 
 ; '!fikg'
 (define-model w00850
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true))))
@@ -34812,7 +34812,7 @@
 
 ; '!nooo'
 (define-model w00851
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true))))
@@ -34853,7 +34853,7 @@
 
 ; '!sS!s'
 (define-model w00852
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) true))))
@@ -34894,7 +34894,7 @@
 
 ; '!sacA'
 (define-model w00853
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false))))
@@ -34935,7 +34935,7 @@
 
 ; '!some'
 (define-model w00854
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true))))
@@ -34976,7 +34976,7 @@
 
 ; '!tEr5'
 (define-model w00855
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) true) (($4) false))))
@@ -35017,7 +35017,7 @@
 
 ; '#$@#$'
 (define-model w00856
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -35058,7 +35058,7 @@
 
 ; '$#!fO'
 (define-model w00857
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) false))))
@@ -35099,7 +35099,7 @@
 
 ; ',,,  '
 (define-model w00858
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -35140,7 +35140,7 @@
 
 ; '--!--'
 (define-model w00859
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -35181,7 +35181,7 @@
 
 ; '11111'
 (define-model w00860
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -35222,7 +35222,7 @@
 
 ; '12345'
 (define-model w00861
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -35263,7 +35263,7 @@
 
 ; '123AE'
 (define-model w00862
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -35304,7 +35304,7 @@
 
 ; '124Ae'
 (define-model w00863
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true))))
@@ -35345,7 +35345,7 @@
 
 ; '12A1A'
 (define-model w00864
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -35386,7 +35386,7 @@
 
 ; '12a12'
 (define-model w00865
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) true))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) false) (($4) false))))
@@ -35427,7 +35427,7 @@
 
 ; '13aCs'
 (define-model w00866
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) false) (($4) true))))
@@ -35468,7 +35468,7 @@
 
 ; '1553I'
 (define-model w00867
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -35509,7 +35509,7 @@
 
 ; '1ZfaV'
 (define-model w00868
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) false))))
@@ -35550,7 +35550,7 @@
 
 ; '1fish'
 (define-model w00869
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true))))
@@ -35591,7 +35591,7 @@
 
 ; '2    '
 (define-model w00870
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -35632,7 +35632,7 @@
 
 ; '23ef4'
 (define-model w00871
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) true))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) false))))
@@ -35673,7 +35673,7 @@
 
 ; '29f21'
 (define-model w00872
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) true))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) false) (($4) false))))
@@ -35714,7 +35714,7 @@
 
 ; '2d1d!'
 (define-model w00873
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) false) (($4) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) true) (($4) false))))
@@ -35755,7 +35755,7 @@
 
 ; '2fish'
 (define-model w00874
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true))))
@@ -35796,7 +35796,7 @@
 
 ; '34234'
 (define-model w00875
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -35837,7 +35837,7 @@
 
 ; '3ac!!'
 (define-model w00876
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) false))))
@@ -35878,7 +35878,7 @@
 
 ; '3ddde'
 (define-model w00877
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true))))
@@ -35919,7 +35919,7 @@
 
 ; '45! K'
 (define-model w00878
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -35960,7 +35960,7 @@
 
 ; '4b 5c'
 (define-model w00879
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) true) (($4) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) true))))
@@ -36001,7 +36001,7 @@
 
 ; '5678!'
 (define-model w00880
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -36042,7 +36042,7 @@
 
 ; '6ABd3'
 (define-model w00881
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) true))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) false))))
@@ -36083,7 +36083,7 @@
 
 ; '6fE45'
 (define-model w00882
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) true) (($4) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) false))))
@@ -36124,7 +36124,7 @@
 
 ; '6k 33'
 (define-model w00883
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) true) (($4) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) false))))
@@ -36165,7 +36165,7 @@
 
 ; '789 !'
 (define-model w00884
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -36206,7 +36206,7 @@
 
 ; '86!gj'
 (define-model w00885
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true))))
@@ -36247,7 +36247,7 @@
 
 ; '87!24'
 (define-model w00886
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -36288,7 +36288,7 @@
 
 ; '87!sg'
 (define-model w00887
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true))))
@@ -36329,7 +36329,7 @@
 
 ; '875!s'
 (define-model w00888
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true))))
@@ -36370,7 +36370,7 @@
 
 ; '8h7Ud'
 (define-model w00889
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) false) (($4) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) true))))
@@ -36411,7 +36411,7 @@
 
 ; '9 !12'
 (define-model w00890
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) true) (($4) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -36452,7 +36452,7 @@
 
 ; '99999'
 (define-model w00891
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -36493,7 +36493,7 @@
 
 ; '?$AAA'
 (define-model w00892
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -36534,7 +36534,7 @@
 
 ; '?asfd'
 (define-model w00893
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true))))
@@ -36575,7 +36575,7 @@
 
 ; '@...a'
 (define-model w00894
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true))))
@@ -36616,7 +36616,7 @@
 
 ; '@@@@@'
 (define-model w00895
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -36657,7 +36657,7 @@
 
 ; '@gggg'
 (define-model w00896
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true))))
@@ -36698,7 +36698,7 @@
 
 ; 'A!f2a'
 (define-model w00897
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) false) (($4) true))))
@@ -36739,7 +36739,7 @@
 
 ; 'A1!e3'
 (define-model w00898
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) true))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) false))))
@@ -36780,7 +36780,7 @@
 
 ; 'A111a'
 (define-model w00899
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true))))
@@ -36821,7 +36821,7 @@
 
 ; 'A3467'
 (define-model w00900
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -36862,7 +36862,7 @@
 
 ; 'AA999'
 (define-model w00901
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -36903,7 +36903,7 @@
 
 ; 'AAAA!'
 (define-model w00902
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -36944,7 +36944,7 @@
 
 ; 'AAabc'
 (define-model w00903
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true))))
@@ -36985,7 +36985,7 @@
 
 ; 'AB123'
 (define-model w00904
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -37026,7 +37026,7 @@
 
 ; 'ABBcc'
 (define-model w00905
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true))))
@@ -37067,7 +37067,7 @@
 
 ; 'ABCD!'
 (define-model w00906
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -37108,7 +37108,7 @@
 
 ; 'ABcde'
 (define-model w00907
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true))))
@@ -37149,7 +37149,7 @@
 
 ; 'AE Ae'
 (define-model w00908
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true))))
@@ -37190,7 +37190,7 @@
 
 ; 'AEIOU'
 (define-model w00909
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -37231,7 +37231,7 @@
 
 ; 'Ab,!@'
 (define-model w00910
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) false))))
@@ -37272,7 +37272,7 @@
 
 ; 'AsAs!'
 (define-model w00911
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) true) (($4) false))))
@@ -37313,7 +37313,7 @@
 
 ; 'B!B12'
 (define-model w00912
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -37354,7 +37354,7 @@
 
 ; 'BCDAa'
 (define-model w00913
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true))))
@@ -37395,7 +37395,7 @@
 
 ; 'BCDF!'
 (define-model w00914
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -37436,7 +37436,7 @@
 
 ; 'BMB!s'
 (define-model w00915
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true))))
@@ -37477,7 +37477,7 @@
 
 ; 'Bunrs'
 (define-model w00916
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true))))
@@ -37518,7 +37518,7 @@
 
 ; 'FdFVs'
 (define-model w00917
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) true))))
@@ -37559,7 +37559,7 @@
 
 ; 'GFD2J'
 (define-model w00918
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -37600,7 +37600,7 @@
 
 ; 'GGabc'
 (define-model w00919
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true))))
@@ -37641,7 +37641,7 @@
 
 ; 'Hello'
 (define-model w00920
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true))))
@@ -37682,7 +37682,7 @@
 
 ; 'I!!5g'
 (define-model w00921
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true))))
@@ -37723,7 +37723,7 @@
 
 ; 'RE2d4'
 (define-model w00922
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) false) (($4) true))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) false))))
@@ -37764,7 +37764,7 @@
 
 ; 'RgfdE'
 (define-model w00923
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false))))
@@ -37805,7 +37805,7 @@
 
 ; 'S1234'
 (define-model w00924
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -37846,7 +37846,7 @@
 
 ; 'VOWEL'
 (define-model w00925
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -37887,7 +37887,7 @@
 
 ; 'Vdfgd'
 (define-model w00926
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true))))
@@ -37928,7 +37928,7 @@
 
 ; 'a 123'
 (define-model w00927
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false))))
@@ -37969,7 +37969,7 @@
 
 ; 'a!!!!'
 (define-model w00928
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false))))
@@ -38010,7 +38010,7 @@
 
 ; 'a!d!@'
 (define-model w00929
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) false) (($4) false))))
@@ -38051,7 +38051,7 @@
 
 ; 'a1cat'
 (define-model w00930
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) true))))
@@ -38092,7 +38092,7 @@
 
 ; 'a5oo2'
 (define-model w00931
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) false))))
@@ -38133,7 +38133,7 @@
 
 ; 'aA!cA'
 (define-model w00932
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) true) (($4) false))))
@@ -38174,7 +38174,7 @@
 
 ; 'aaa3a'
 (define-model w00933
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) true))))
@@ -38215,7 +38215,7 @@
 
 ; 'aaaaa'
 (define-model w00934
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -38256,7 +38256,7 @@
 
 ; 'abc12'
 (define-model w00935
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false))))
@@ -38297,7 +38297,7 @@
 
 ; 'abc1A'
 (define-model w00936
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false))))
@@ -38338,7 +38338,7 @@
 
 ; 'abcde'
 (define-model w00937
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -38379,7 +38379,7 @@
 
 ; 'abcdk'
 (define-model w00938
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -38420,7 +38420,7 @@
 
 ; 'abhh!'
 (define-model w00939
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false))))
@@ -38461,7 +38461,7 @@
 
 ; 'about'
 (define-model w00940
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -38502,7 +38502,7 @@
 
 ; 'aedtf'
 (define-model w00941
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -38543,7 +38543,7 @@
 
 ; 'aeios'
 (define-model w00942
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -38584,7 +38584,7 @@
 
 ; 'aeiou'
 (define-model w00943
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -38625,7 +38625,7 @@
 
 ; 'av@c2'
 (define-model w00944
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) false))))
@@ -38666,7 +38666,7 @@
 
 ; 'avDFG'
 (define-model w00945
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false))))
@@ -38707,7 +38707,7 @@
 
 ; 'a~!Da'
 (define-model w00946
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) true))))
@@ -38748,7 +38748,7 @@
 
 ; 'b1000'
 (define-model w00947
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false))))
@@ -38789,7 +38789,7 @@
 
 ; 'b1a1!'
 (define-model w00948
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) true) (($4) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) false) (($4) false))))
@@ -38830,7 +38830,7 @@
 
 ; 'bAb!!'
 (define-model w00949
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) false) (($4) false))))
@@ -38871,7 +38871,7 @@
 
 ; 'bbbbb'
 (define-model w00950
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -38912,7 +38912,7 @@
 
 ; 'bh12!'
 (define-model w00951
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false))))
@@ -38953,7 +38953,7 @@
 
 ; 'cAA1!'
 (define-model w00952
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false))))
@@ -38994,7 +38994,7 @@
 
 ; 'cvbnm'
 (define-model w00953
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -39035,7 +39035,7 @@
 
 ; 'ed!sd'
 (define-model w00954
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) true))))
@@ -39076,7 +39076,7 @@
 
 ; 'fi!!v'
 (define-model w00955
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) true))))
@@ -39117,7 +39117,7 @@
 
 ; 'gcaro'
 (define-model w00956
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -39158,7 +39158,7 @@
 
 ; 'hHllH'
 (define-model w00957
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) false))))
@@ -39199,7 +39199,7 @@
 
 ; 'hellO'
 (define-model w00958
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false))))
@@ -39240,7 +39240,7 @@
 
 ; 'hello'
 (define-model w00959
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -39281,7 +39281,7 @@
 
 ; 'items'
 (define-model w00960
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -39322,7 +39322,7 @@
 
 ; 'jdSS!'
 (define-model w00961
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false))))
@@ -39363,7 +39363,7 @@
 
 ; 'jfZxZ'
 (define-model w00962
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) false))))
@@ -39404,7 +39404,7 @@
 
 ; 'jhgfd'
 (define-model w00963
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -39445,7 +39445,7 @@
 
 ; 'jsd&s'
 (define-model w00964
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) true))))
@@ -39486,7 +39486,7 @@
 
 ; 'kukuk'
 (define-model w00965
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -39527,7 +39527,7 @@
 
 ; 'la0s!'
 (define-model w00966
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) false) (($4) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) false))))
@@ -39568,7 +39568,7 @@
 
 ; 'nbvcx'
 (define-model w00967
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -39609,7 +39609,7 @@
 
 ; 'o3123'
 (define-model w00968
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false))))
@@ -39650,7 +39650,7 @@
 
 ; 'only!'
 (define-model w00969
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false))))
@@ -39691,7 +39691,7 @@
 
 ; 'other'
 (define-model w00970
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -39732,7 +39732,7 @@
 
 ; 'p4A5N'
 (define-model w00971
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) true) (($4) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false))))
@@ -39773,7 +39773,7 @@
 
 ; 'tZasZ'
 (define-model w00972
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) false))))
@@ -39814,7 +39814,7 @@
 
 ; 'test!'
 (define-model w00973
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false))))
@@ -39855,7 +39855,7 @@
 
 ; 'test@'
 (define-model w00974
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false))))
@@ -39896,7 +39896,7 @@
 
 ; 'testo'
 (define-model w00975
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -39937,7 +39937,7 @@
 
 ; 'word5'
 (define-model w00976
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false))))
@@ -39978,7 +39978,7 @@
 
 ; 'words'
 (define-model w00977
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -40019,7 +40019,7 @@
 
 ; 'z!gjf'
 (define-model w00978
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) true))))
@@ -40060,7 +40060,7 @@
 
 ; 'zoggd'
 (define-model w00979
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -40101,7 +40101,7 @@
 
 ; 'zzzzu'
 (define-model w00980
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -40142,7 +40142,7 @@
 
 ; '~"Boo'
 (define-model w00981
-  (define-univ Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true))))
@@ -40183,7 +40183,7 @@
 
 ; '   123'
 (define-model w00982
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true) (($5) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -40224,7 +40224,7 @@
 
 ; '! plus'
 (define-model w00983
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true) (($5) true))))
@@ -40265,7 +40265,7 @@
 
 ; '!!!!!!'
 (define-model w00984
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -40306,7 +40306,7 @@
 
 ; '!!!!!4'
 (define-model w00985
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -40347,7 +40347,7 @@
 
 ; '!!!@6@'
 (define-model w00986
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -40388,7 +40388,7 @@
 
 ; '!!b!!b'
 (define-model w00987
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) false) (($4) false) (($5) true))))
@@ -40429,7 +40429,7 @@
 
 ; '!!so23'
 (define-model w00988
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) false) (($5) false))))
@@ -40470,7 +40470,7 @@
 
 ; '!1000b'
 (define-model w00989
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true))))
@@ -40511,7 +40511,7 @@
 
 ; '!347AA'
 (define-model w00990
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -40552,7 +40552,7 @@
 
 ; '!34@56'
 (define-model w00991
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) true) (($5) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -40593,7 +40593,7 @@
 
 ; '!8abcd'
 (define-model w00992
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true) (($5) true))))
@@ -40634,7 +40634,7 @@
 
 ; '!BBBBb'
 (define-model w00993
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true))))
@@ -40675,7 +40675,7 @@
 
 ; '!S!N!S'
 (define-model w00994
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -40716,7 +40716,7 @@
 
 ; '!aZfja'
 (define-model w00995
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) true) (($4) true) (($5) true))))
@@ -40757,7 +40757,7 @@
 
 ; '!abbbb'
 (define-model w00996
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true))))
@@ -40798,7 +40798,7 @@
 
 ; '!ds3Ef'
 (define-model w00997
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) false) (($5) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) false) (($5) true))))
@@ -40839,7 +40839,7 @@
 
 ; '!ltter'
 (define-model w00998
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true))))
@@ -40880,7 +40880,7 @@
 
 ; '#other'
 (define-model w00999
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true))))
@@ -40921,7 +40921,7 @@
 
 ; '000000'
 (define-model w01000
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -40962,7 +40962,7 @@
 
 ; '09! 23'
 (define-model w01001
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) true) (($5) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -41003,7 +41003,7 @@
 
 ; '1!!!!1'
 (define-model w01002
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -41044,7 +41044,7 @@
 
 ; '111!2@'
 (define-model w01003
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) true) (($5) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -41085,7 +41085,7 @@
 
 ; '111111'
 (define-model w01004
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -41126,7 +41126,7 @@
 
 ; '123456'
 (define-model w01005
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -41167,7 +41167,7 @@
 
 ; '123457'
 (define-model w01006
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -41208,7 +41208,7 @@
 
 ; '123478'
 (define-model w01007
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -41249,7 +41249,7 @@
 
 ; '123abc'
 (define-model w01008
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true) (($5) true))))
@@ -41290,7 +41290,7 @@
 
 ; '12A12A'
 (define-model w01009
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) true) (($5) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -41331,7 +41331,7 @@
 
 ; '12Ufka'
 (define-model w01010
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true) (($5) true))))
@@ -41372,7 +41372,7 @@
 
 ; '132fsd'
 (define-model w01011
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true) (($5) true))))
@@ -41413,7 +41413,7 @@
 
 ; '1999bC'
 (define-model w01012
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) false))))
@@ -41454,7 +41454,7 @@
 
 ; '1A2B3C'
 (define-model w01013
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) false) (($4) true) (($5) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -41495,7 +41495,7 @@
 
 ; '1Zd3Z3'
 (define-model w01014
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) true) (($4) false) (($5) true))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) false) (($4) false) (($5) false))))
@@ -41536,7 +41536,7 @@
 
 ; '1aaaaa'
 (define-model w01015
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true))))
@@ -41577,7 +41577,7 @@
 
 ; '1asRbr'
 (define-model w01016
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) true) (($5) true))))
@@ -41618,7 +41618,7 @@
 
 ; '1bbbbb'
 (define-model w01017
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true))))
@@ -41659,7 +41659,7 @@
 
 ; '1erfa2'
 (define-model w01018
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false))))
@@ -41700,7 +41700,7 @@
 
 ; '1ffddd'
 (define-model w01019
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true))))
@@ -41741,7 +41741,7 @@
 
 ; '23dT2!'
 (define-model w01020
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) true) (($5) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) false) (($4) false) (($5) false))))
@@ -41782,7 +41782,7 @@
 
 ; '2abAaZ'
 (define-model w01021
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) true) (($5) false))))
@@ -41823,7 +41823,7 @@
 
 ; '39FF1C'
 (define-model w01022
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) true) (($5) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -41864,7 +41864,7 @@
 
 ; '45!abc'
 (define-model w01023
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true) (($5) true))))
@@ -41905,7 +41905,7 @@
 
 ; '45g678'
 (define-model w01024
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) true) (($5) true))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) false) (($4) false) (($5) false))))
@@ -41946,7 +41946,7 @@
 
 ; '76543f'
 (define-model w01025
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true))))
@@ -41987,7 +41987,7 @@
 
 ; '79!dgA'
 (define-model w01026
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true) (($5) false))))
@@ -42028,7 +42028,7 @@
 
 ; '7fg@uy'
 (define-model w01027
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) true) (($5) true))))
@@ -42069,7 +42069,7 @@
 
 ; '888888'
 (define-model w01028
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -42110,7 +42110,7 @@
 
 ; '@@@!!!'
 (define-model w01029
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -42151,7 +42151,7 @@
 
 ; 'AAA000'
 (define-model w01030
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true) (($5) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -42192,7 +42192,7 @@
 
 ; 'AAA100'
 (define-model w01031
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true) (($5) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -42233,7 +42233,7 @@
 
 ; 'AAAAA1'
 (define-model w01032
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -42274,7 +42274,7 @@
 
 ; 'AAAAAA'
 (define-model w01033
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -42315,7 +42315,7 @@
 
 ; 'AAAAAa'
 (define-model w01034
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true))))
@@ -42356,7 +42356,7 @@
 
 ; 'AAAaaa'
 (define-model w01035
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true) (($5) true))))
@@ -42397,7 +42397,7 @@
 
 ; 'ABC!23'
 (define-model w01036
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -42438,7 +42438,7 @@
 
 ; 'ABCDEF'
 (define-model w01037
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -42479,7 +42479,7 @@
 
 ; 'ABCDEe'
 (define-model w01038
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true))))
@@ -42520,7 +42520,7 @@
 
 ; 'ABcdeF'
 (define-model w01039
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true) (($5) false))))
@@ -42561,7 +42561,7 @@
 
 ; 'AC4f45'
 (define-model w01040
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) false) (($4) true) (($5) true))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) false) (($5) false))))
@@ -42602,7 +42602,7 @@
 
 ; 'AEIOU!'
 (define-model w01041
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -42643,7 +42643,7 @@
 
 ; 'AEIOUa'
 (define-model w01042
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true))))
@@ -42684,7 +42684,7 @@
 
 ; 'ASch12'
 (define-model w01043
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) false) (($5) false))))
@@ -42725,7 +42725,7 @@
 
 ; 'Alice!'
 (define-model w01044
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false))))
@@ -42766,7 +42766,7 @@
 
 ; 'AsAsA1'
 (define-model w01045
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) true) (($4) false) (($5) false))))
@@ -42807,7 +42807,7 @@
 
 ; 'B1122e'
 (define-model w01046
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true))))
@@ -42848,7 +42848,7 @@
 
 ; 'BBBBBB'
 (define-model w01047
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -42889,7 +42889,7 @@
 
 ; 'BBBBBa'
 (define-model w01048
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true))))
@@ -42930,7 +42930,7 @@
 
 ; 'BBBbbb'
 (define-model w01049
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true) (($5) true))))
@@ -42971,7 +42971,7 @@
 
 ; 'BCDFF!'
 (define-model w01050
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -43012,7 +43012,7 @@
 
 ; 'C1G3X5'
 (define-model w01051
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) true) (($4) false) (($5) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -43053,7 +43053,7 @@
 
 ; 'Done !'
 (define-model w01052
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false))))
@@ -43094,7 +43094,7 @@
 
 ; 'F!2i3r'
 (define-model w01053
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) false) (($4) true) (($5) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) false) (($5) true))))
@@ -43135,7 +43135,7 @@
 
 ; 'HELLO!'
 (define-model w01054
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -43176,7 +43176,7 @@
 
 ; 'Hello,'
 (define-model w01055
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false))))
@@ -43217,7 +43217,7 @@
 
 ; 'IO3 27'
 (define-model w01056
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) false) (($4) true) (($5) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -43258,7 +43258,7 @@
 
 ; 'Letter'
 (define-model w01057
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true))))
@@ -43299,7 +43299,7 @@
 
 ; 'M    u'
 (define-model w01058
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true))))
@@ -43340,7 +43340,7 @@
 
 ; 'O!LKJo'
 (define-model w01059
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true))))
@@ -43381,7 +43381,7 @@
 
 ; 'R1234O'
 (define-model w01060
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -43422,7 +43422,7 @@
 
 ; 'UPPER!'
 (define-model w01061
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -43463,7 +43463,7 @@
 
 ; 'WEDFGH'
 (define-model w01062
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -43504,7 +43504,7 @@
 
 ; 'WEREk!'
 (define-model w01063
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) false))))
@@ -43545,7 +43545,7 @@
 
 ; 'Z!@d13'
 (define-model w01064
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) false) (($5) false))))
@@ -43586,7 +43586,7 @@
 
 ; 'a!!!!!'
 (define-model w01065
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false))))
@@ -43627,7 +43627,7 @@
 
 ; 'a!!!!1'
 (define-model w01066
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false))))
@@ -43668,7 +43668,7 @@
 
 ; 'a0a0a0'
 (define-model w01067
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) true) (($4) false) (($5) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) false) (($4) true) (($5) false))))
@@ -43709,7 +43709,7 @@
 
 ; 'a45ghy'
 (define-model w01068
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) true) (($4) true) (($5) true))))
@@ -43750,7 +43750,7 @@
 
 ; 'aa1000'
 (define-model w01069
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true) (($5) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false))))
@@ -43791,7 +43791,7 @@
 
 ; 'aaa000'
 (define-model w01070
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true) (($5) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false))))
@@ -43832,7 +43832,7 @@
 
 ; 'aaaAAA'
 (define-model w01071
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false))))
@@ -43873,7 +43873,7 @@
 
 ; 'aaaaa6'
 (define-model w01072
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false))))
@@ -43914,7 +43914,7 @@
 
 ; 'aaaaa9'
 (define-model w01073
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false))))
@@ -43955,7 +43955,7 @@
 
 ; 'aaaaaa'
 (define-model w01074
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -43996,7 +43996,7 @@
 
 ; 'abc123'
 (define-model w01075
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true) (($5) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false))))
@@ -44037,7 +44037,7 @@
 
 ; 'abcde!'
 (define-model w01076
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false))))
@@ -44078,7 +44078,7 @@
 
 ; 'abcde1'
 (define-model w01077
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false))))
@@ -44119,7 +44119,7 @@
 
 ; 'abcde2'
 (define-model w01078
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false))))
@@ -44160,7 +44160,7 @@
 
 ; 'abcdeF'
 (define-model w01079
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false))))
@@ -44201,7 +44201,7 @@
 
 ; 'abcdef'
 (define-model w01080
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -44242,7 +44242,7 @@
 
 ; 'aeioua'
 (define-model w01081
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -44283,7 +44283,7 @@
 
 ; 'afjlsf'
 (define-model w01082
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -44324,7 +44324,7 @@
 
 ; 'akfjas'
 (define-model w01083
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -44365,7 +44365,7 @@
 
 ; 'asd!sd'
 (define-model w01084
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) true) (($5) true))))
@@ -44406,7 +44406,7 @@
 
 ; 'asdfgh'
 (define-model w01085
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -44447,7 +44447,7 @@
 
 ; 'asdflk'
 (define-model w01086
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -44488,7 +44488,7 @@
 
 ; 'avowDZ'
 (define-model w01087
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false))))
@@ -44529,7 +44529,7 @@
 
 ; 'ba11!3'
 (define-model w01088
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) false) (($5) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false))))
@@ -44570,7 +44570,7 @@
 
 ; 'bbbbbb'
 (define-model w01089
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -44611,7 +44611,7 @@
 
 ; 'c2Gs23'
 (define-model w01090
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) true) (($5) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) true) (($4) false) (($5) false))))
@@ -44652,7 +44652,7 @@
 
 ; 'ccczzz'
 (define-model w01091
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -44693,7 +44693,7 @@
 
 ; 'char !'
 (define-model w01092
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false))))
@@ -44734,7 +44734,7 @@
 
 ; 'csjhd2'
 (define-model w01093
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false))))
@@ -44775,7 +44775,7 @@
 
 ; 'd 7 !#'
 (define-model w01094
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) false) (($4) false) (($5) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false))))
@@ -44816,7 +44816,7 @@
 
 ; 'd3h#4!'
 (define-model w01095
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) true) (($5) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) false) (($4) false) (($5) false))))
@@ -44857,7 +44857,7 @@
 
 ; 'dddddd'
 (define-model w01096
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -44898,7 +44898,7 @@
 
 ; 'df   !'
 (define-model w01097
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false))))
@@ -44939,7 +44939,7 @@
 
 ; 'eeeeee'
 (define-model w01098
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -44980,7 +44980,7 @@
 
 ; 'f23!!x'
 (define-model w01099
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true))))
@@ -45021,7 +45021,7 @@
 
 ; 'fffooo'
 (define-model w01100
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -45062,7 +45062,7 @@
 
 ; 'foesek'
 (define-model w01101
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -45103,7 +45103,7 @@
 
 ; 'folksy'
 (define-model w01102
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -45144,7 +45144,7 @@
 
 ; 'fore#F'
 (define-model w01103
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false))))
@@ -45185,7 +45185,7 @@
 
 ; 'foreF#'
 (define-model w01104
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false))))
@@ -45226,7 +45226,7 @@
 
 ; 'four!s'
 (define-model w01105
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) true))))
@@ -45267,7 +45267,7 @@
 
 ; 'hello!'
 (define-model w01106
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false))))
@@ -45308,7 +45308,7 @@
 
 ; 'iiiiim'
 (define-model w01107
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -45349,7 +45349,7 @@
 
 ; 'iouaew'
 (define-model w01108
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -45390,7 +45390,7 @@
 
 ; 'jinwmf'
 (define-model w01109
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -45431,7 +45431,7 @@
 
 ; 'k123A2'
 (define-model w01110
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false) (($5) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false))))
@@ -45472,7 +45472,7 @@
 
 ; 'kckckc'
 (define-model w01111
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -45513,7 +45513,7 @@
 
 ; 'kekeke'
 (define-model w01112
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -45554,7 +45554,7 @@
 
 ; 'kkkkkk'
 (define-model w01113
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -45595,7 +45595,7 @@
 
 ; 'kukuku'
 (define-model w01114
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -45636,7 +45636,7 @@
 
 ; 'lalala'
 (define-model w01115
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -45677,7 +45677,7 @@
 
 ; 'letter'
 (define-model w01116
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -45718,7 +45718,7 @@
 
 ; 'mAeg42'
 (define-model w01117
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) false) (($5) false))))
@@ -45759,7 +45759,7 @@
 
 ; 'nonono'
 (define-model w01118
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -45800,7 +45800,7 @@
 
 ; 'nope2!'
 (define-model w01119
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false))))
@@ -45841,7 +45841,7 @@
 
 ; 'normal'
 (define-model w01120
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -45882,7 +45882,7 @@
 
 ; 'oeaoes'
 (define-model w01121
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -45923,7 +45923,7 @@
 
 ; 'oooooo'
 (define-model w01122
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -45964,7 +45964,7 @@
 
 ; 'plese!'
 (define-model w01123
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false))))
@@ -46005,7 +46005,7 @@
 
 ; 'reaccs'
 (define-model w01124
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -46046,7 +46046,7 @@
 
 ; 'sososo'
 (define-model w01125
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -46087,7 +46087,7 @@
 
 ; 'ssssss'
 (define-model w01126
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -46128,7 +46128,7 @@
 
 ; 'start!'
 (define-model w01127
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false))))
@@ -46169,7 +46169,7 @@
 
 ; 'tttttt'
 (define-model w01128
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -46210,7 +46210,7 @@
 
 ; 'u01234'
 (define-model w01129
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false))))
@@ -46251,7 +46251,7 @@
 
 ; 'u92!!f'
 (define-model w01130
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true))))
@@ -46292,7 +46292,7 @@
 
 ; 'uaoiik'
 (define-model w01131
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -46333,7 +46333,7 @@
 
 ; 'unta!!'
 (define-model w01132
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false))))
@@ -46374,7 +46374,7 @@
 
 ; 'uoauuv'
 (define-model w01133
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -46415,7 +46415,7 @@
 
 ; 'when2a'
 (define-model w01134
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) true))))
@@ -46456,7 +46456,7 @@
 
 ; 'words5'
 (define-model w01135
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false))))
@@ -46497,7 +46497,7 @@
 
 ; 'xfas33'
 (define-model w01136
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false))))
@@ -46538,7 +46538,7 @@
 
 ; "you're"
 (define-model w01137
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) true) (($5) true))))
@@ -46579,7 +46579,7 @@
 
 ; 'z!!32e'
 (define-model w01138
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true) (($5) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true))))
@@ -46620,7 +46620,7 @@
 
 ; 'zAzz3U'
 (define-model w01139
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) false) (($5) false))))
@@ -46661,7 +46661,7 @@
 
 ; 'zasDds'
 (define-model w01140
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) true) (($5) true))))
@@ -46702,7 +46702,7 @@
 
 ; 'zzzzzi'
 (define-model w01141
-  (define-univ Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -46743,7 +46743,7 @@
 
 ; ' !jdfkj'
 (define-model w01142
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true))))
@@ -46784,7 +46784,7 @@
 
 ; '! abc #'
 (define-model w01143
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true) (($5) false) (($6) false))))
@@ -46825,7 +46825,7 @@
 
 ; '! is ok'
 (define-model w01144
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) false) (($5) true) (($6) true))))
@@ -46866,7 +46866,7 @@
 
 ; '!!! e c'
 (define-model w01145
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) false) (($6) true))))
@@ -46907,7 +46907,7 @@
 
 ; '!!!!!!!'
 (define-model w01146
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -46948,7 +46948,7 @@
 
 ; '!!!!!!2'
 (define-model w01147
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -46989,7 +46989,7 @@
 
 ; '!!!!123'
 (define-model w01148
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true) (($6) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -47030,7 +47030,7 @@
 
 ; '!!23abc'
 (define-model w01149
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) false) (($5) false) (($6) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true) (($6) true))))
@@ -47071,7 +47071,7 @@
 
 ; '!!fja22'
 (define-model w01150
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true) (($5) false) (($6) false))))
@@ -47112,7 +47112,7 @@
 
 ; '!076432'
 (define-model w01151
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -47153,7 +47153,7 @@
 
 ; '!AAA234'
 (define-model w01152
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true) (($6) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -47194,7 +47194,7 @@
 
 ; '!C!!fj!'
 (define-model w01153
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true) (($6) false))))
@@ -47235,7 +47235,7 @@
 
 ; '!bvcx34'
 (define-model w01154
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false) (($6) false))))
@@ -47276,7 +47276,7 @@
 
 ; '!fJ2219'
 (define-model w01155
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true) (($5) true) (($6) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false))))
@@ -47317,7 +47317,7 @@
 
 ; '!ikk???'
 (define-model w01156
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false) (($6) false))))
@@ -47358,7 +47358,7 @@
 
 ; '!ttrrpw'
 (define-model w01157
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true))))
@@ -47399,7 +47399,7 @@
 
 ; '# start'
 (define-model w01158
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true))))
@@ -47440,7 +47440,7 @@
 
 ; '#others'
 (define-model w01159
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true))))
@@ -47481,7 +47481,7 @@
 
 ; '0000000'
 (define-model w01160
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -47522,7 +47522,7 @@
 
 ; '1!!!!1a'
 (define-model w01161
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true))))
@@ -47563,7 +47563,7 @@
 
 ; '1111111'
 (define-model w01162
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -47604,7 +47604,7 @@
 
 ; '123 a !'
 (define-model w01163
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false) (($6) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) false) (($6) false))))
@@ -47645,7 +47645,7 @@
 
 ; '1234567'
 (define-model w01164
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -47686,7 +47686,7 @@
 
 ; '1a4rtgy'
 (define-model w01165
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) false) (($4) false) (($5) false) (($6) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) true) (($4) true) (($5) true) (($6) true))))
@@ -47727,7 +47727,7 @@
 
 ; '1bbbbb2'
 (define-model w01166
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) false))))
@@ -47768,7 +47768,7 @@
 
 ; '1bbbbb8'
 (define-model w01167
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) false))))
@@ -47809,7 +47809,7 @@
 
 ; '2 @ i L'
 (define-model w01168
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) false) (($6) false))))
@@ -47850,7 +47850,7 @@
 
 ; '4234fff'
 (define-model w01169
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false) (($6) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true) (($6) true))))
@@ -47891,7 +47891,7 @@
 
 ; '555@@aa'
 (define-model w01170
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false) (($6) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true))))
@@ -47932,7 +47932,7 @@
 
 ; '77!!!ok'
 (define-model w01171
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true))))
@@ -47973,7 +47973,7 @@
 
 ; '7hearts'
 (define-model w01172
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true))))
@@ -48014,7 +48014,7 @@
 
 ; '9!isfoK'
 (define-model w01173
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true) (($5) true) (($6) false))))
@@ -48055,7 +48055,7 @@
 
 ; 'AAAAAAA'
 (define-model w01174
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -48096,7 +48096,7 @@
 
 ; 'ABCDE!!'
 (define-model w01175
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -48137,7 +48137,7 @@
 
 ; 'ABCDEFG'
 (define-model w01176
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -48178,7 +48178,7 @@
 
 ; 'B1122oo'
 (define-model w01177
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false) (($6) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true))))
@@ -48219,7 +48219,7 @@
 
 ; 'BBBBBBe'
 (define-model w01178
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true))))
@@ -48260,7 +48260,7 @@
 
 ; 'Capital'
 (define-model w01179
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true))))
@@ -48301,7 +48301,7 @@
 
 ; 'Ciro211'
 (define-model w01180
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true) (($6) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false) (($6) false))))
@@ -48342,7 +48342,7 @@
 
 ; 'E!567Lk'
 (define-model w01181
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true) (($5) false) (($6) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true))))
@@ -48383,7 +48383,7 @@
 
 ; 'E@567jk'
 (define-model w01182
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true) (($5) false) (($6) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true))))
@@ -48424,7 +48424,7 @@
 
 ; 'EEE1df2'
 (define-model w01183
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) false) (($5) false) (($6) true))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true) (($6) false))))
@@ -48465,7 +48465,7 @@
 
 ; 'F32423!'
 (define-model w01184
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -48506,7 +48506,7 @@
 
 ; 'NBGFD13'
 (define-model w01185
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -48547,7 +48547,7 @@
 
 ; 'Nosmall'
 (define-model w01186
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true))))
@@ -48588,7 +48588,7 @@
 
 ; 'OIUYTRE'
 (define-model w01187
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -48629,7 +48629,7 @@
 
 ; 'PPPP!12'
 (define-model w01188
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -48670,7 +48670,7 @@
 
 ; 'SDFGHJK'
 (define-model w01189
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -48711,7 +48711,7 @@
 
 ; 'Swerfds'
 (define-model w01190
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true))))
@@ -48752,7 +48752,7 @@
 
 ; 'TESTING'
 (define-model w01191
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -48793,7 +48793,7 @@
 
 ; 'U113AAJ'
 (define-model w01192
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false) (($6) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -48834,7 +48834,7 @@
 
 ; 'WWWWWWW'
 (define-model w01193
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -48875,7 +48875,7 @@
 
 ; 'X@@123C'
 (define-model w01194
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true) (($5) true) (($6) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -48916,7 +48916,7 @@
 
 ; 'ZXCVBNM'
 (define-model w01195
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -48957,7 +48957,7 @@
 
 ; 'a0a0a0a'
 (define-model w01196
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) true) (($4) false) (($5) true) (($6) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) false) (($4) true) (($5) false) (($6) true))))
@@ -48998,7 +48998,7 @@
 
 ; 'aaaAAAA'
 (define-model w01197
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false) (($6) false))))
@@ -49039,7 +49039,7 @@
 
 ; 'aaaaaa7'
 (define-model w01198
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) false))))
@@ -49080,7 +49080,7 @@
 
 ; 'aaaaaaa'
 (define-model w01199
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -49121,7 +49121,7 @@
 
 ; 'ab1hgfD'
 (define-model w01200
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) false) (($4) false) (($5) false) (($6) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) true) (($5) true) (($6) false))))
@@ -49162,7 +49162,7 @@
 
 ; 'abCde!!'
 (define-model w01201
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) true) (($5) false) (($6) false))))
@@ -49203,7 +49203,7 @@
 
 ; 'abcd123'
 (define-model w01202
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true) (($6) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false) (($6) false))))
@@ -49244,7 +49244,7 @@
 
 ; 'abcd666'
 (define-model w01203
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true) (($6) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false) (($6) false))))
@@ -49285,7 +49285,7 @@
 
 ; 'abcde!1'
 (define-model w01204
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false) (($6) false))))
@@ -49326,7 +49326,7 @@
 
 ; 'abcde!a'
 (define-model w01205
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false) (($6) true))))
@@ -49367,7 +49367,7 @@
 
 ; 'abcdef!'
 (define-model w01206
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) false))))
@@ -49408,7 +49408,7 @@
 
 ; 'abcdefg'
 (define-model w01207
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -49449,7 +49449,7 @@
 
 ; 'aeiou!!'
 (define-model w01208
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false) (($6) false))))
@@ -49490,7 +49490,7 @@
 
 ; 'ajksdfj'
 (define-model w01209
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -49531,7 +49531,7 @@
 
 ; 'anythin'
 (define-model w01210
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -49572,7 +49572,7 @@
 
 ; 'askjdf!'
 (define-model w01211
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) false))))
@@ -49613,7 +49613,7 @@
 
 ; 'b123@45'
 (define-model w01212
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false) (($5) true) (($6) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false))))
@@ -49654,7 +49654,7 @@
 
 ; 'b1dfefe'
 (define-model w01213
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true))))
@@ -49695,7 +49695,7 @@
 
 ; 'bbbbb12'
 (define-model w01214
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false) (($6) false))))
@@ -49736,7 +49736,7 @@
 
 ; 'bbbbbbb'
 (define-model w01215
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -49777,7 +49777,7 @@
 
 ; 'cCa!!sd'
 (define-model w01216
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) false) (($4) false) (($5) true) (($6) true))))
@@ -49818,7 +49818,7 @@
 
 ; 'dgT5YGq'
 (define-model w01217
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) false) (($5) false) (($6) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true))))
@@ -49859,7 +49859,7 @@
 
 ; 'e c 123'
 (define-model w01218
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true) (($6) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) false) (($4) false) (($5) false) (($6) false))))
@@ -49900,7 +49900,7 @@
 
 ; 'e2GGasd'
 (define-model w01219
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true) (($6) true))))
@@ -49941,7 +49941,7 @@
 
 ; 'eeeeeee'
 (define-model w01220
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -49982,7 +49982,7 @@
 
 ; 'else !a'
 (define-model w01221
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false) (($6) true))))
@@ -50023,7 +50023,7 @@
 
 ; 'everyt!'
 (define-model w01222
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) false))))
@@ -50064,7 +50064,7 @@
 
 ; 'f!ACCGG'
 (define-model w01223
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false))))
@@ -50105,7 +50105,7 @@
 
 ; 'forking'
 (define-model w01224
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -50146,7 +50146,7 @@
 
 ; 'g123f22'
 (define-model w01225
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false) (($5) true) (($6) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) true) (($5) false) (($6) false))))
@@ -50187,7 +50187,7 @@
 
 ; 'ga234aa'
 (define-model w01226
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true) (($5) false) (($6) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true))))
@@ -50228,7 +50228,7 @@
 
 ; 'haffssa'
 (define-model w01227
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -50269,7 +50269,7 @@
 
 ; 'hgfd 3s'
 (define-model w01228
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false) (($6) true))))
@@ -50310,7 +50310,7 @@
 
 ; 'hoadfan'
 (define-model w01229
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -50351,7 +50351,7 @@
 
 ; 'i293AAc'
 (define-model w01230
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false) (($6) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true))))
@@ -50392,7 +50392,7 @@
 
 ; 'ijfowjf'
 (define-model w01231
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -50433,7 +50433,7 @@
 
 ; 'kkkkkko'
 (define-model w01232
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -50474,7 +50474,7 @@
 
 ; 'l and 1'
 (define-model w01233
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) true) (($5) false) (($6) false))))
@@ -50515,7 +50515,7 @@
 
 ; 'machien'
 (define-model w01234
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -50556,7 +50556,7 @@
 
 ; 'mix ! !'
 (define-model w01235
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false) (($6) false))))
@@ -50597,7 +50597,7 @@
 
 ; 'mmmmmmm'
 (define-model w01236
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -50638,7 +50638,7 @@
 
 ; 'no more'
 (define-model w01237
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) true) (($5) true) (($6) true))))
@@ -50679,7 +50679,7 @@
 
 ; 'nothing'
 (define-model w01238
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -50720,7 +50720,7 @@
 
 ; 'oiuytre'
 (define-model w01239
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -50761,7 +50761,7 @@
 
 ; 'pa12G23'
 (define-model w01240
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) false) (($5) true) (($6) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false))))
@@ -50802,7 +50802,7 @@
 
 ; 'reGREte'
 (define-model w01241
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true))))
@@ -50843,7 +50843,7 @@
 
 ; 'redfish'
 (define-model w01242
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -50884,7 +50884,7 @@
 
 ; 'roberto'
 (define-model w01243
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -50925,7 +50925,7 @@
 
 ; 'sd234ds'
 (define-model w01244
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true) (($5) false) (($6) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true))))
@@ -50966,7 +50966,7 @@
 
 ; 'sd3Aqw!'
 (define-model w01245
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) false) (($4) false) (($5) false) (($6) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) true) (($5) true) (($6) false))))
@@ -51007,7 +51007,7 @@
 
 ; 'sdfghjk'
 (define-model w01246
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -51048,7 +51048,7 @@
 
 ; 'ssjwiwo'
 (define-model w01247
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -51089,7 +51089,7 @@
 
 ; 'testing'
 (define-model w01248
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -51130,7 +51130,7 @@
 
 ; 'threads'
 (define-model w01249
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -51171,7 +51171,7 @@
 
 ; 'tre,llo'
 (define-model w01250
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) true) (($5) true) (($6) true))))
@@ -51212,7 +51212,7 @@
 
 ; 'v22vsd2'
 (define-model w01251
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false) (($6) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) true) (($4) true) (($5) true) (($6) false))))
@@ -51253,7 +51253,7 @@
 
 ; 'xY234!!'
 (define-model w01252
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true) (($5) false) (($6) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false))))
@@ -51294,7 +51294,7 @@
 
 ; 'xcfghjk'
 (define-model w01253
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -51335,7 +51335,7 @@
 
 ; '! and ##'
 (define-model w01254
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true) (($5) false) (($6) false) (($7) false))))
@@ -51376,7 +51376,7 @@
 
 ; '!!!!!!!!'
 (define-model w01255
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -51417,7 +51417,7 @@
 
 ; '!!!!!123'
 (define-model w01256
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true) (($7) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -51458,7 +51458,7 @@
 
 ; '!1111111'
 (define-model w01257
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -51499,7 +51499,7 @@
 
 ; '!2Afjsdf'
 (define-model w01258
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true))))
@@ -51540,7 +51540,7 @@
 
 ; '!a!a!a!a'
 (define-model w01259
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) true) (($4) false) (($5) true) (($6) false) (($7) true))))
@@ -51581,7 +51581,7 @@
 
 ; '!dsaklfj'
 (define-model w01260
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true))))
@@ -51622,7 +51622,7 @@
 
 ; '12345556'
 (define-model w01261
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -51663,7 +51663,7 @@
 
 ; '1234Fsdf'
 (define-model w01262
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false) (($6) false) (($7) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true) (($7) true))))
@@ -51704,7 +51704,7 @@
 
 ; '123fasdA'
 (define-model w01263
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true) (($5) true) (($6) true) (($7) false))))
@@ -51745,7 +51745,7 @@
 
 ; '1A2B3C4D'
 (define-model w01264
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) false) (($4) true) (($5) false) (($6) true) (($7) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -51786,7 +51786,7 @@
 
 ; '1a2b3c4d'
 (define-model w01265
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) false) (($4) true) (($5) false) (($6) true) (($7) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) true) (($4) false) (($5) true) (($6) false) (($7) true))))
@@ -51827,7 +51827,7 @@
 
 ; '1asd23sd'
 (define-model w01266
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true) (($6) false) (($7) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false) (($6) true) (($7) true))))
@@ -51868,7 +51868,7 @@
 
 ; '1bbbbbb2'
 (define-model w01267
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) false))))
@@ -51909,7 +51909,7 @@
 
 ; '2!eE!jde'
 (define-model w01268
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) false) (($4) false) (($5) true) (($6) true) (($7) true))))
@@ -51950,7 +51950,7 @@
 
 ; '234aeiou'
 (define-model w01269
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true))))
@@ -51991,7 +51991,7 @@
 
 ; '429-1jf!'
 (define-model w01270
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) true) (($5) false) (($6) false) (($7) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true) (($7) false))))
@@ -52032,7 +52032,7 @@
 
 ; '5afAfjw!'
 (define-model w01271
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) true) (($5) true) (($6) true) (($7) false))))
@@ -52073,7 +52073,7 @@
 
 ; '63r!7rf2'
 (define-model w01272
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) true) (($5) false) (($6) false) (($7) true))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) false) (($4) false) (($5) true) (($6) true) (($7) false))))
@@ -52114,7 +52114,7 @@
 
 ; '80943584'
 (define-model w01273
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -52155,7 +52155,7 @@
 
 ; '97!34Dgc'
 (define-model w01274
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) true) (($5) false) (($6) false) (($7) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true) (($7) true))))
@@ -52196,7 +52196,7 @@
 
 ; '9fj!ffAz'
 (define-model w01275
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) true) (($5) true) (($6) false) (($7) true))))
@@ -52237,7 +52237,7 @@
 
 ; 'ABCDEFGA'
 (define-model w01276
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -52278,7 +52278,7 @@
 
 ; 'ABCDEFGa'
 (define-model w01277
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) true))))
@@ -52319,7 +52319,7 @@
 
 ; 'AEIOU!ae'
 (define-model w01278
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true) (($7) true))))
@@ -52360,7 +52360,7 @@
 
 ; 'ALL CAPS'
 (define-model w01279
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -52401,7 +52401,7 @@
 
 ; 'BBBBBBBa'
 (define-model w01280
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) true))))
@@ -52442,7 +52442,7 @@
 
 ; 'BBBBBoui'
 (define-model w01281
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true) (($7) true))))
@@ -52483,7 +52483,7 @@
 
 ; 'CABB1CCD'
 (define-model w01282
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) false) (($6) false) (($7) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -52524,7 +52524,7 @@
 
 ; 'CCCCCCCC'
 (define-model w01283
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -52565,7 +52565,7 @@
 
 ; 'D4g#fh6m'
 (define-model w01284
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true) (($7) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) false) (($4) true) (($5) true) (($6) false) (($7) true))))
@@ -52606,7 +52606,7 @@
 
 ; 'FGREDD23'
 (define-model w01285
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true) (($7) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -52647,7 +52647,7 @@
 
 ; 'LKJHGFDS'
 (define-model w01286
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -52688,7 +52688,7 @@
 
 ; 'Nonumber'
 (define-model w01287
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true))))
@@ -52729,7 +52729,7 @@
 
 ; 'Not sure'
 (define-model w01288
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) true) (($5) true) (($6) true) (($7) true))))
@@ -52770,7 +52770,7 @@
 
 ; 'P123ffff'
 (define-model w01289
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false) (($6) false) (($7) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true) (($6) true) (($7) true))))
@@ -52811,7 +52811,7 @@
 
 ; 'PCP b 33'
 (define-model w01290
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true) (($7) true))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) false) (($6) false) (($7) false))))
@@ -52852,7 +52852,7 @@
 
 ; 'POIUYTRE'
 (define-model w01291
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -52893,7 +52893,7 @@
 
 ; 'Q234!f3r'
 (define-model w01292
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false) (($6) true) (($7) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) false) (($7) true))))
@@ -52934,7 +52934,7 @@
 
 ; 'QQQQ!abc'
 (define-model w01293
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true) (($7) true))))
@@ -52975,7 +52975,7 @@
 
 ; 'QQQQQ!!1'
 (define-model w01294
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -53016,7 +53016,7 @@
 
 ; 'Veryvery'
 (define-model w01295
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true))))
@@ -53057,7 +53057,7 @@
 
 ; 'Why not!'
 (define-model w01296
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) true) (($5) true) (($6) true) (($7) false))))
@@ -53098,7 +53098,7 @@
 
 ; 'Will no9'
 (define-model w01297
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false) (($5) true) (($6) true) (($7) false))))
@@ -53139,7 +53139,7 @@
 
 ; 'ZHFj!!sh'
 (define-model w01298
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) false) (($5) false) (($6) true) (($7) true))))
@@ -53180,7 +53180,7 @@
 
 ; 'a char 1'
 (define-model w01299
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) true) (($5) true) (($6) false) (($7) false))))
@@ -53221,7 +53221,7 @@
 
 ; 'a!e!iou!'
 (define-model w01300
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) false) (($4) true) (($5) true) (($6) true) (($7) false))))
@@ -53262,7 +53262,7 @@
 
 ; 'a#2! fff'
 (define-model w01301
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true) (($7) true))))
@@ -53303,7 +53303,7 @@
 
 ; 'aaaaaaaa'
 (define-model w01302
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -53344,7 +53344,7 @@
 
 ; 'ab!!!!!!'
 (define-model w01303
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false))))
@@ -53385,7 +53385,7 @@
 
 ; 'abc ! ##'
 (define-model w01304
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false))))
@@ -53426,7 +53426,7 @@
 
 ; 'abcd9999'
 (define-model w01305
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true) (($6) true) (($7) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false) (($6) false) (($7) false))))
@@ -53467,7 +53467,7 @@
 
 ; 'abdcedA0'
 (define-model w01306
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) false) (($7) false))))
@@ -53508,7 +53508,7 @@
 
 ; 'afdkls;?'
 (define-model w01307
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) false) (($7) false))))
@@ -53549,7 +53549,7 @@
 
 ; 'bbbbbb10'
 (define-model w01308
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true) (($7) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) false) (($7) false))))
@@ -53590,7 +53590,7 @@
 
 ; 'befeo!sd'
 (define-model w01309
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false) (($6) true) (($7) true))))
@@ -53631,7 +53631,7 @@
 
 ; 'cc234234'
 (define-model w01310
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false))))
@@ -53672,7 +53672,7 @@
 
 ; 'ch @ 456'
 (define-model w01311
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true) (($7) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false))))
@@ -53713,7 +53713,7 @@
 
 ; 'f3fsdfwr'
 (define-model w01312
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true))))
@@ -53754,7 +53754,7 @@
 
 ; 'g5Dre89V'
 (define-model w01313
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true) (($7) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) true) (($4) true) (($5) false) (($6) false) (($7) false))))
@@ -53795,7 +53795,7 @@
 
 ; 'ghjklfgh'
 (define-model w01314
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -53836,7 +53836,7 @@
 
 ; 'jfkla;fj'
 (define-model w01315
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false) (($6) true) (($7) true))))
@@ -53877,7 +53877,7 @@
 
 ; 'jih!!sda'
 (define-model w01316
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false) (($5) true) (($6) true) (($7) true))))
@@ -53918,7 +53918,7 @@
 
 ; 'learning'
 (define-model w01317
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -53959,7 +53959,7 @@
 
 ; 'mix @ 66'
 (define-model w01318
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true) (($7) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false))))
@@ -54000,7 +54000,7 @@
 
 ; 'number 1'
 (define-model w01319
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) false) (($7) false))))
@@ -54041,7 +54041,7 @@
 
 ; 'ok??ok!!'
 (define-model w01320
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) true) (($5) true) (($6) false) (($7) false))))
@@ -54082,7 +54082,7 @@
 
 ; 'reeeeeee'
 (define-model w01321
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -54123,7 +54123,7 @@
 
 ; 'rw!!Jf23'
 (define-model w01322
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true) (($7) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false) (($5) true) (($6) false) (($7) false))))
@@ -54164,7 +54164,7 @@
 
 ; 'sdf3dSdf'
 (define-model w01323
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) false) (($5) false) (($6) false) (($7) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) true) (($5) false) (($6) true) (($7) true))))
@@ -54205,7 +54205,7 @@
 
 ; 'tGFDdgff'
 (define-model w01324
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true) (($6) true) (($7) true))))
@@ -54246,7 +54246,7 @@
 
 ; 'ws12!4d@'
 (define-model w01325
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) false) (($5) true) (($6) false) (($7) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true) (($7) false))))
@@ -54287,7 +54287,7 @@
 
 ; '  !BBBeee'
 (define-model w01326
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true) (($7) true) (($8) true))))
@@ -54328,7 +54328,7 @@
 
 ; '! abc!abc'
 (define-model w01327
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true) (($5) false) (($6) true) (($7) true) (($8) true))))
@@ -54369,7 +54369,7 @@
 
 ; '!!!!!!!!!'
 (define-model w01328
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -54410,7 +54410,7 @@
 
 ; '!!!!!2342'
 (define-model w01329
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true) (($7) true) (($8) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -54451,7 +54451,7 @@
 
 ; '!!asd!!!!'
 (define-model w01330
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true) (($5) false) (($6) false) (($7) false) (($8) false))))
@@ -54492,7 +54492,7 @@
 
 ; '!239CCC34'
 (define-model w01331
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false) (($6) false) (($7) true) (($8) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -54533,7 +54533,7 @@
 
 ; '!AE 123 W'
 (define-model w01332
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true) (($6) true) (($7) false) (($8) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -54574,7 +54574,7 @@
 
 ; '!zzccddbb'
 (define-model w01333
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true))))
@@ -54615,7 +54615,7 @@
 
 ; '# ! mixed'
 (define-model w01334
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true))))
@@ -54656,7 +54656,7 @@
 
 ; ')(ASDFA*)'
 (define-model w01335
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -54697,7 +54697,7 @@
 
 ; '*er!weMwe'
 (define-model w01336
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) true) (($5) true) (($6) false) (($7) true) (($8) true))))
@@ -54738,7 +54738,7 @@
 
 ; '0345BDE1A'
 (define-model w01337
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false) (($6) false) (($7) true) (($8) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -54779,7 +54779,7 @@
 
 ; '1!76!!de!'
 (define-model w01338
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true) (($7) true) (($8) false))))
@@ -54820,7 +54820,7 @@
 
 ; '1dsasdf!F'
 (define-model w01339
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) false) (($8) false))))
@@ -54861,7 +54861,7 @@
 
 ; '222VVV!!!'
 (define-model w01340
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -54902,7 +54902,7 @@
 
 ; '23fjasdf!'
 (define-model w01341
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) false))))
@@ -54943,7 +54943,7 @@
 
 ; '34324f#$@'
 (define-model w01342
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false) (($6) false) (($7) false) (($8) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) false) (($7) false) (($8) false))))
@@ -54984,7 +54984,7 @@
 
 ; '7u7 valid'
 (define-model w01343
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true))))
@@ -55025,7 +55025,7 @@
 
 ; '8g6cg98gh'
 (define-model w01344
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) false) (($4) false) (($5) true) (($6) true) (($7) false) (($8) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) true) (($4) true) (($5) false) (($6) false) (($7) true) (($8) true))))
@@ -55066,7 +55066,7 @@
 
 ; '9914AAACC'
 (define-model w01345
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -55107,7 +55107,7 @@
 
 ; '@ifjsdfj2'
 (define-model w01346
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) false))))
@@ -55148,7 +55148,7 @@
 
 ; 'AEIOU 123'
 (define-model w01347
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true) (($7) true) (($8) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -55189,7 +55189,7 @@
 
 ; 'Ai2ZZFF23'
 (define-model w01348
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) false) (($4) false) (($5) false) (($6) false) (($7) true) (($8) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false))))
@@ -55230,7 +55230,7 @@
 
 ; 'BBBBBBBBe'
 (define-model w01349
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) true))))
@@ -55271,7 +55271,7 @@
 
 ; 'Capital !'
 (define-model w01350
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) false) (($8) false))))
@@ -55312,7 +55312,7 @@
 
 ; 'HGFDkjhgG'
 (define-model w01351
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true) (($6) true) (($7) true) (($8) false))))
@@ -55353,7 +55353,7 @@
 
 ; 'HGFdfhgfd'
 (define-model w01352
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true))))
@@ -55394,7 +55394,7 @@
 
 ; 'a!!!!!!!!'
 (define-model w01353
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false))))
@@ -55435,7 +55435,7 @@
 
 ; 'a992388ew'
 (define-model w01354
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) false) (($8) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) true) (($8) true))))
@@ -55476,7 +55476,7 @@
 
 ; 'aSS345!67'
 (define-model w01355
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true) (($5) true) (($6) false) (($7) true) (($8) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false))))
@@ -55517,7 +55517,7 @@
 
 ; 'aaaaaaAaa'
 (define-model w01356
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) false) (($7) true) (($8) true))))
@@ -55558,7 +55558,7 @@
 
 ; 'ab,,,  !!'
 (define-model w01357
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false))))
@@ -55599,7 +55599,7 @@
 
 ; 'abcdef123'
 (define-model w01358
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true) (($7) true) (($8) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) false) (($7) false) (($8) false))))
@@ -55640,7 +55640,7 @@
 
 ; 'asdfgjkls'
 (define-model w01359
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -55681,7 +55681,7 @@
 
 ; 'bbbbbbbbb'
 (define-model w01360
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -55722,7 +55722,7 @@
 
 ; 'blue fish'
 (define-model w01361
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) true) (($6) true) (($7) true) (($8) true))))
@@ -55763,7 +55763,7 @@
 
 ; 'character'
 (define-model w01362
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -55804,7 +55804,7 @@
 
 ; 'core$%008'
 (define-model w01363
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true) (($7) true) (($8) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false))))
@@ -55845,7 +55845,7 @@
 
 ; 'd!tr!tre!'
 (define-model w01364
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) false) (($5) true) (($6) true) (($7) true) (($8) false))))
@@ -55886,7 +55886,7 @@
 
 ; 'dfh2123@@'
 (define-model w01365
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true) (($5) true) (($6) true) (($7) false) (($8) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false))))
@@ -55927,7 +55927,7 @@
 
 ; 'dutttfzxi'
 (define-model w01366
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -55968,7 +55968,7 @@
 
 ; 'e123!ghjk'
 (define-model w01367
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true) (($7) true) (($8) true))))
@@ -56009,7 +56009,7 @@
 
 ; 'hdI@@(#KF'
 (define-model w01368
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false))))
@@ -56050,7 +56050,7 @@
 
 ; 'here i am'
 (define-model w01369
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) true) (($6) false) (($7) true) (($8) true))))
@@ -56091,7 +56091,7 @@
 
 ; 'jfo123!AA'
 (define-model w01370
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true) (($5) true) (($6) false) (($7) false) (($8) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false))))
@@ -56132,7 +56132,7 @@
 
 ; 'no number'
 (define-model w01371
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true))))
@@ -56173,7 +56173,7 @@
 
 ; 'noNumber!'
 (define-model w01372
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) false))))
@@ -56214,7 +56214,7 @@
 
 ; 'now!once@'
 (define-model w01373
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) true) (($5) true) (($6) true) (($7) true) (($8) false))))
@@ -56255,7 +56255,7 @@
 
 ; 'pikachu!!'
 (define-model w01374
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) false) (($8) false))))
@@ -56296,7 +56296,7 @@
 
 ; 'start a !'
 (define-model w01375
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false) (($6) true) (($7) false) (($8) false))))
@@ -56337,7 +56337,7 @@
 
 ; 'test!Now!'
 (define-model w01376
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false) (($6) true) (($7) true) (($8) false))))
@@ -56378,7 +56378,7 @@
 
 ; 'wofjwoifj'
 (define-model w01377
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -56419,7 +56419,7 @@
 
 ; '~!!!!!!!!'
 (define-model w01378
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -56460,7 +56460,7 @@
 
 ; '!!!!!!here'
 (define-model w01379
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true) (($7) true) (($8) true) (($9) true))))
@@ -56501,7 +56501,7 @@
 
 ; '!!!!bumber'
 (define-model w01380
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true))))
@@ -56542,7 +56542,7 @@
 
 ; '!!!AAABBcd'
 (define-model w01381
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) true) (($9) true))))
@@ -56583,7 +56583,7 @@
 
 ; '!1F!C!fSdf'
 (define-model w01382
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true) (($7) false) (($8) true) (($9) true))))
@@ -56624,7 +56624,7 @@
 
 ; '!number123'
 (define-model w01383
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) true) (($8) true) (($9) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) false) (($8) false) (($9) false))))
@@ -56665,7 +56665,7 @@
 
 ; '1232435345'
 (define-model w01384
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -56706,7 +56706,7 @@
 
 ; '12A23B33DD'
 (define-model w01385
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) true) (($5) false) (($6) true) (($7) true) (($8) false) (($9) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -56747,7 +56747,7 @@
 
 ; '1a2b3C4d5e'
 (define-model w01386
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) false) (($4) true) (($5) false) (($6) true) (($7) false) (($8) true) (($9) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) true) (($4) false) (($5) false) (($6) false) (($7) true) (($8) false) (($9) true))))
@@ -56788,7 +56788,7 @@
 
 ; '1a2b3c4d5e'
 (define-model w01387
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) false) (($4) true) (($5) false) (($6) true) (($7) false) (($8) true) (($9) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) true) (($4) false) (($5) true) (($6) false) (($7) true) (($8) false) (($9) true))))
@@ -56829,7 +56829,7 @@
 
 ; '567 plus a'
 (define-model w01388
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true) (($6) true) (($7) true) (($8) false) (($9) true))))
@@ -56870,7 +56870,7 @@
 
 ; '9L3G7h9l0g'
 (define-model w01389
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) false) (($4) true) (($5) false) (($6) true) (($7) false) (($8) true) (($9) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) false) (($7) true) (($8) false) (($9) true))))
@@ -56911,7 +56911,7 @@
 
 ; 'A234fasdf3'
 (define-model w01390
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) true))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) false))))
@@ -56952,7 +56952,7 @@
 
 ; 'CC ! other'
 (define-model w01391
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true))))
@@ -56993,7 +56993,7 @@
 
 ; 'FFF!!!!CCC'
 (define-model w01392
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -57034,7 +57034,7 @@
 
 ; "How's this"
 (define-model w01393
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) true) (($5) false) (($6) true) (($7) true) (($8) true) (($9) true))))
@@ -57075,7 +57075,7 @@
 
 ; 'I gues not'
 (define-model w01394
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true) (($5) true) (($6) false) (($7) true) (($8) true) (($9) true))))
@@ -57116,7 +57116,7 @@
 
 ; 'Letter 2 #'
 (define-model w01395
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) true) (($8) false) (($9) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) false) (($7) false) (($8) false) (($9) false))))
@@ -57157,7 +57157,7 @@
 
 ; 'No numeral'
 (define-model w01396
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true))))
@@ -57198,7 +57198,7 @@
 
 ; 'SOMSOM4!ab'
 (define-model w01397
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true) (($7) false) (($8) false) (($9) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) true) (($9) true))))
@@ -57239,7 +57239,7 @@
 
 ; 'Will work?'
 (define-model w01398
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false) (($5) true) (($6) true) (($7) true) (($8) true) (($9) false))))
@@ -57280,7 +57280,7 @@
 
 ; 'aaaaaaaaaa'
 (define-model w01399
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -57321,7 +57321,7 @@
 
 ; 'ab!abcdef1'
 (define-model w01400
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) false))))
@@ -57362,7 +57362,7 @@
 
 ; 'cBSDF231!!'
 (define-model w01401
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true) (($7) true) (($8) false) (($9) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false))))
@@ -57403,7 +57403,7 @@
 
 ; 'd4g4l0h7s2'
 (define-model w01402
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) true) (($4) false) (($5) true) (($6) false) (($7) true) (($8) false) (($9) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) false) (($4) true) (($5) false) (($6) true) (($7) false) (($8) true) (($9) false))))
@@ -57444,7 +57444,7 @@
 
 ; 'many words'
 (define-model w01403
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true))))
@@ -57485,7 +57485,7 @@
 
 ; 'natural!!!'
 (define-model w01404
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) false) (($8) false) (($9) false))))
@@ -57526,7 +57526,7 @@
 
 ; 'qabFF22111'
 (define-model w01405
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false))))
@@ -57567,7 +57567,7 @@
 
 ; 'some thing'
 (define-model w01406
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true))))
@@ -57608,7 +57608,7 @@
 
 ; 'something!'
 (define-model w01407
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) false))))
@@ -57649,7 +57649,7 @@
 
 ; 'special ##'
 (define-model w01408
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) false) (($8) false) (($9) false))))
@@ -57690,7 +57690,7 @@
 
 ; 'special 12'
 (define-model w01409
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) true) (($9) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) false) (($8) false) (($9) false))))
@@ -57731,7 +57731,7 @@
 
 ; 'test@here@'
 (define-model w01410
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) true) (($6) true) (($7) true) (($8) true) (($9) false))))
@@ -57772,7 +57772,7 @@
 
 ; 'testing !@'
 (define-model w01411
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) false) (($8) false) (($9) false))))
@@ -57813,7 +57813,7 @@
 
 ; 'www a char'
 (define-model w01412
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) true) (($5) false) (($6) true) (($7) true) (($8) true) (($9) true))))
@@ -57854,7 +57854,7 @@
 
 ; 'y123DAAAds'
 (define-model w01413
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) true) (($9) true))))
@@ -57895,7 +57895,7 @@
 
 ; 'ytrdcvbnjk'
 (define-model w01414
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -57936,7 +57936,7 @@
 
 ; 'z2fa111!!!'
 (define-model w01415
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) true) (($5) true) (($6) true) (($7) false) (($8) false) (($9) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false))))
@@ -57977,7 +57977,7 @@
 
 ; '     aeiou!'
 (define-model w01416
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true) (($10) false))))
@@ -58018,7 +58018,7 @@
 
 ; '!c!1!@!A!Z!'
 (define-model w01417
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false))))
@@ -58059,7 +58059,7 @@
 
 ; '!rj!aowe!CC'
 (define-model w01418
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) true) (($5) true) (($6) true) (($7) true) (($8) false) (($9) false) (($10) false))))
@@ -58100,7 +58100,7 @@
 
 ; '#abc!234aU3'
 (define-model w01419
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true) (($7) true) (($8) false) (($9) false) (($10) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false) (($6) false) (($7) false) (($8) true) (($9) false) (($10) false))))
@@ -58141,7 +58141,7 @@
 
 ; '11@@@afnsdf'
 (define-model w01420
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true))))
@@ -58182,7 +58182,7 @@
 
 ; '4234ffffddd'
 (define-model w01421
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true))))
@@ -58223,7 +58223,7 @@
 
 ; 'Abc\\Def\\Ghi'
 (define-model w01422
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) false) (($5) true) (($6) true) (($7) false) (($8) false) (($9) true) (($10) true))))
@@ -58264,7 +58264,7 @@
 
 ; 'BBcdswf!942'
 (define-model w01423
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) true) (($9) true) (($10) true))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) false) (($8) false) (($9) false) (($10) false))))
@@ -58305,7 +58305,7 @@
 
 ; 'Cosda!s!!sd'
 (define-model w01424
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false) (($6) true) (($7) false) (($8) false) (($9) true) (($10) true))))
@@ -58346,7 +58346,7 @@
 
 ; 'DFGHJKJHGFD'
 (define-model w01425
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -58387,7 +58387,7 @@
 
 ; 'Dddd!!!!123'
 (define-model w01426
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) true) (($9) true) (($10) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false))))
@@ -58428,7 +58428,7 @@
 
 ; 'EfwkeUUUald'
 (define-model w01427
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false) (($6) false) (($7) false) (($8) true) (($9) true) (($10) true))))
@@ -58469,7 +58469,7 @@
 
 ; 'Gwieuaks!!@'
 (define-model w01428
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) false) (($9) false) (($10) false))))
@@ -58510,7 +58510,7 @@
 
 ; 'Not likely%'
 (define-model w01429
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true) (($10) false))))
@@ -58551,7 +58551,7 @@
 
 ; 'Sid!sd!sd1!'
 (define-model w01430
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) true) (($10) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) true) (($5) true) (($6) false) (($7) true) (($8) true) (($9) false) (($10) false))))
@@ -58592,7 +58592,7 @@
 
 ; 'a character'
 (define-model w01431
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true))))
@@ -58633,7 +58633,7 @@
 
 ; 'ac@@!Afai12'
 (define-model w01432
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) true) (($10) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true) (($7) true) (($8) true) (($9) false) (($10) false))))
@@ -58674,7 +58674,7 @@
 
 ; 'afjkdlasfjs'
 (define-model w01433
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -58715,7 +58715,7 @@
 
 ; 'cklmnopqrtu'
 (define-model w01434
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -58756,7 +58756,7 @@
 
 ; 'e plus PLUS'
 (define-model w01435
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) true) (($5) true) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false))))
@@ -58797,7 +58797,7 @@
 
 ; 'gfd!gf34!@@'
 (define-model w01436
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true) (($7) true) (($8) false) (($9) false) (($10) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) true) (($5) true) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false))))
@@ -58838,7 +58838,7 @@
 
 ; 'nobody33a33'
 (define-model w01437
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true) (($7) true) (($8) false) (($9) true) (($10) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) false) (($7) false) (($8) true) (($9) false) (($10) false))))
@@ -58879,7 +58879,7 @@
 
 ; 'qqqqqqq!123'
 (define-model w01438
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) true) (($9) true) (($10) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) false) (($8) false) (($9) false) (($10) false))))
@@ -58920,7 +58920,7 @@
 
 ; 'somethingaa'
 (define-model w01439
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -58961,7 +58961,7 @@
 
 ; 'uhgyftcvbnm'
 (define-model w01440
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -59002,7 +59002,7 @@
 
 ; '!!!@@@ending'
 (define-model w01441
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true) (($11) true))))
@@ -59043,7 +59043,7 @@
 
 ; '!!ajflakdsjf'
 (define-model w01442
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true) (($11) true))))
@@ -59084,7 +59084,7 @@
 
 ; '!@#!@#!@#!@#'
 (define-model w01443
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -59125,7 +59125,7 @@
 
 ; '!@#$%1234Moo'
 (define-model w01444
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true) (($7) true) (($8) true) (($9) false) (($10) false) (($11) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) true) (($11) true))))
@@ -59166,7 +59166,7 @@
 
 ; '############'
 (define-model w01445
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -59207,7 +59207,7 @@
 
 ; '12 has c 3##'
 (define-model w01446
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) true) (($10) false) (($11) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true) (($5) true) (($6) false) (($7) true) (($8) false) (($9) false) (($10) false) (($11) false))))
@@ -59248,7 +59248,7 @@
 
 ; '324@#$@WERWE'
 (define-model w01447
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -59289,7 +59289,7 @@
 
 ; '4g3F5f2H6d3E'
 (define-model w01448
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) false) (($4) true) (($5) false) (($6) true) (($7) false) (($8) true) (($9) false) (($10) true) (($11) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) false) (($5) true) (($6) false) (($7) false) (($8) false) (($9) true) (($10) false) (($11) false))))
@@ -59330,7 +59330,7 @@
 
 ; '5b3d2h7f2f5h'
 (define-model w01449
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) false) (($4) true) (($5) false) (($6) true) (($7) false) (($8) true) (($9) false) (($10) true) (($11) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) true) (($4) false) (($5) true) (($6) false) (($7) true) (($8) false) (($9) true) (($10) false) (($11) true))))
@@ -59371,7 +59371,7 @@
 
 ; '67d2g4h2k22l'
 (define-model w01450
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) false) (($5) true) (($6) false) (($7) true) (($8) false) (($9) true) (($10) true) (($11) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) false) (($4) true) (($5) false) (($6) true) (($7) false) (($8) true) (($9) false) (($10) false) (($11) true))))
@@ -59412,7 +59412,7 @@
 
 ; 'AJKALJLAJKJL'
 (define-model w01451
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -59453,7 +59453,7 @@
 
 ; 'APPCweQCC831'
 (define-model w01452
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) true) (($10) true) (($11) true))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false))))
@@ -59494,7 +59494,7 @@
 
 ; 'Aa and other'
 (define-model w01453
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) true) (($4) true) (($5) true) (($6) false) (($7) true) (($8) true) (($9) true) (($10) true) (($11) true))))
@@ -59535,7 +59535,7 @@
 
 ; 'aaaaaaaaaaa!'
 (define-model w01454
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true) (($11) false))))
@@ -59576,7 +59576,7 @@
 
 ; 'bcdefg123456'
 (define-model w01455
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true) (($11) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false))))
@@ -59617,7 +59617,7 @@
 
 ; 'before ! and'
 (define-model w01456
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) false) (($7) false) (($8) false) (($9) true) (($10) true) (($11) true))))
@@ -59658,7 +59658,7 @@
 
 ; 'not staring!'
 (define-model w01457
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true) (($11) false))))
@@ -59699,7 +59699,7 @@
 
 ; 'nothing here'
 (define-model w01458
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) false) (($8) true) (($9) true) (($10) true) (($11) true))))
@@ -59740,7 +59740,7 @@
 
 ; 'other Aa and'
 (define-model w01459
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false) (($6) false) (($7) true) (($8) false) (($9) true) (($10) true) (($11) true))))
@@ -59781,7 +59781,7 @@
 
 ; 'qqqqqqqqq!!!'
 (define-model w01460
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) false) (($10) false) (($11) false))))
@@ -59822,7 +59822,7 @@
 
 ; 'working well'
 (define-model w01461
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) false) (($8) true) (($9) true) (($10) true) (($11) true))))
@@ -59863,7 +59863,7 @@
 
 ; '!!!!!!fS3DC#%'
 (define-model w01462
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) true) (($9) false) (($10) false) (($11) false) (($12) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false) (($12) false))))
@@ -59904,7 +59904,7 @@
 
 ; '!a234absdfsdf'
 (define-model w01463
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false) (($12) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true) (($11) true) (($12) true))))
@@ -59945,7 +59945,7 @@
 
 ; '!bbbbb!!!!111'
 (define-model w01464
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) true) (($11) true) (($12) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false) (($12) false))))
@@ -59986,7 +59986,7 @@
 
 ; '0we plus plus'
 (define-model w01465
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false) (($12) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) true) (($5) true) (($6) true) (($7) true) (($8) false) (($9) true) (($10) true) (($11) true) (($12) true))))
@@ -60027,7 +60027,7 @@
 
 ; '5c and a word'
 (define-model w01466
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false) (($12) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) true) (($4) true) (($5) true) (($6) false) (($7) true) (($8) false) (($9) true) (($10) true) (($11) true) (($12) true))))
@@ -60068,7 +60068,7 @@
 
 ; 'Abc\\Def\\hijkl'
 (define-model w01467
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) false) (($5) true) (($6) true) (($7) false) (($8) true) (($9) true) (($10) true) (($11) true) (($12) true))))
@@ -60109,7 +60109,7 @@
 
 ; 'LKJ::LKJK:IO!'
 (define-model w01468
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -60150,7 +60150,7 @@
 
 ; 'g86hjk678kjh6'
 (define-model w01469
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false) (($6) true) (($7) true) (($8) true) (($9) false) (($10) false) (($11) false) (($12) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) true) (($4) true) (($5) true) (($6) false) (($7) false) (($8) false) (($9) true) (($10) true) (($11) true) (($12) false))))
@@ -60191,7 +60191,7 @@
 
 ; 'no more tests'
 (define-model w01470
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) true) (($5) true) (($6) true) (($7) false) (($8) true) (($9) true) (($10) true) (($11) true) (($12) true))))
@@ -60232,7 +60232,7 @@
 
 ; 'slackvariabl '
 (define-model w01471
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true) (($11) true) (($12) false))))
@@ -60273,7 +60273,7 @@
 
 ; 'yy asudfo oaf'
 (define-model w01472
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) false) (($10) true) (($11) true) (($12) true))))
@@ -60314,7 +60314,7 @@
 
 ; 'zfZdkaCOgg23A'
 (define-model w01473
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) true) (($11) true) (($12) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) true) (($5) true) (($6) false) (($7) false) (($8) true) (($9) true) (($10) false) (($11) false) (($12) false))))
@@ -60355,7 +60355,7 @@
 
 ; 'zzzzzzzzzzzei'
 (define-model w01474
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -60396,7 +60396,7 @@
 
 ; 'zzzzzzzzzzzoz'
 (define-model w01475
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -60437,7 +60437,7 @@
 
 ; '!!!!!!!!!$#@#%'
 (define-model w01476
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -60478,7 +60478,7 @@
 
 ; '!has character'
 (define-model w01477
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true) (($11) true) (($12) true) (($13) true))))
@@ -60519,7 +60519,7 @@
 
 ; '8g4h2k7l7c4h2d'
 (define-model w01478
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) false) (($4) true) (($5) false) (($6) true) (($7) false) (($8) true) (($9) false) (($10) true) (($11) false) (($12) true) (($13) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) true) (($4) false) (($5) true) (($6) false) (($7) true) (($8) false) (($9) true) (($10) false) (($11) true) (($12) false) (($13) true))))
@@ -60560,7 +60560,7 @@
 
 ; 'KKsdaCVSSD9923'
 (define-model w01479
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) true) (($11) true) (($12) true) (($13) true))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false) (($12) false) (($13) false))))
@@ -60601,7 +60601,7 @@
 
 ; 'No big numbers'
 (define-model w01480
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) true) (($4) true) (($5) true) (($6) false) (($7) true) (($8) true) (($9) true) (($10) true) (($11) true) (($12) true) (($13) true))))
@@ -60642,7 +60642,7 @@
 
 ; 'Tel\\soapw\\Gpfa'
 (define-model w01481
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) false) (($10) false) (($11) true) (($12) true) (($13) true))))
@@ -60683,7 +60683,7 @@
 
 ; 'XfdaPPweA231cc'
 (define-model w01482
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) true) (($10) true) (($11) true) (($12) false) (($13) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false) (($5) false) (($6) true) (($7) true) (($8) false) (($9) false) (($10) false) (($11) false) (($12) true) (($13) true))))
@@ -60724,7 +60724,7 @@
 
 ; 'Zfw\\Fewfa\\Kwer'
 (define-model w01483
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) false) (($5) true) (($6) true) (($7) true) (($8) true) (($9) false) (($10) false) (($11) true) (($12) true) (($13) true))))
@@ -60765,7 +60765,7 @@
 
 ; 'b;lkjereadf!56'
 (define-model w01484
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false) (($12) true) (($13) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true) (($11) false) (($12) false) (($13) false))))
@@ -60806,7 +60806,7 @@
 
 ; 'bBcaDDaff1223f'
 (define-model w01485
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) true) (($10) true) (($11) true) (($12) true) (($13) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) false) (($5) false) (($6) true) (($7) true) (($8) true) (($9) false) (($10) false) (($11) false) (($12) false) (($13) true))))
@@ -60847,7 +60847,7 @@
 
 ; 'ccccccccccccc8'
 (define-model w01486
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false) (($12) false) (($13) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true) (($11) true) (($12) true) (($13) false))))
@@ -60888,7 +60888,7 @@
 
 ; "don't have any"
 (define-model w01487
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) true) (($5) false) (($6) true) (($7) true) (($8) true) (($9) true) (($10) false) (($11) true) (($12) true) (($13) true))))
@@ -60929,7 +60929,7 @@
 
 ; 'onlyNumber123!'
 (define-model w01488
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) true) (($11) true) (($12) true) (($13) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true) (($10) false) (($11) false) (($12) false) (($13) false))))
@@ -60970,7 +60970,7 @@
 
 ; 'slack variable'
 (define-model w01489
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true) (($11) true) (($12) true) (($13) true))))
@@ -61011,7 +61011,7 @@
 
 ; "yay I'm happy!"
 (define-model w01490
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false) (($6) true) (($7) false) (($8) true) (($9) true) (($10) true) (($11) true) (($12) true) (($13) false))))
@@ -61052,7 +61052,7 @@
 
 ; "yay I'm happy@"
 (define-model w01491
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false) (($6) true) (($7) false) (($8) true) (($9) true) (($10) true) (($11) true) (($12) true) (($13) false))))
@@ -61093,7 +61093,7 @@
 
 ; "yay! I'm happy"
 (define-model w01492
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false) (($6) false) (($7) true) (($8) false) (($9) true) (($10) true) (($11) true) (($12) true) (($13) true))))
@@ -61134,7 +61134,7 @@
 
 ; '!!!!!!!!!aFe35#'
 (define-model w01493
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false) (($12) true) (($13) true) (($14) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) true) (($10) false) (($11) true) (($12) false) (($13) false) (($14) false))))
@@ -61175,7 +61175,7 @@
 
 ; '!any!any!a!!asd'
 (define-model w01494
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) false) (($5) true) (($6) true) (($7) true) (($8) false) (($9) true) (($10) false) (($11) false) (($12) true) (($13) true) (($14) true))))
@@ -61216,7 +61216,7 @@
 
 ; '1a4f9h9h6j0k0l3'
 (define-model w01495
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) false) (($4) true) (($5) false) (($6) true) (($7) false) (($8) true) (($9) false) (($10) true) (($11) false) (($12) true) (($13) false) (($14) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) true) (($4) false) (($5) true) (($6) false) (($7) true) (($8) false) (($9) true) (($10) false) (($11) true) (($12) false) (($13) true) (($14) false))))
@@ -61257,7 +61257,7 @@
 
 ; '1dF4sD4fsdTgd3F'
 (define-model w01496
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) true) (($4) false) (($5) false) (($6) true) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false) (($12) false) (($13) true) (($14) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) true) (($5) false) (($6) false) (($7) true) (($8) true) (($9) true) (($10) false) (($11) true) (($12) true) (($13) false) (($14) false))))
@@ -61298,7 +61298,7 @@
 
 ; '22twentytwooooo'
 (define-model w01497
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false) (($12) false) (($13) false) (($14) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true) (($11) true) (($12) true) (($13) true) (($14) true))))
@@ -61339,7 +61339,7 @@
 
 ; '3h543j2l63j3k7b'
 (define-model w01498
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) true) (($5) false) (($6) true) (($7) false) (($8) true) (($9) true) (($10) false) (($11) true) (($12) false) (($13) true) (($14) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) false) (($5) true) (($6) false) (($7) true) (($8) false) (($9) false) (($10) true) (($11) false) (($12) true) (($13) false) (($14) true))))
@@ -61380,7 +61380,7 @@
 
 ; ';!!!!!!!!!!!!!!'
 (define-model w01499
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -61421,7 +61421,7 @@
 
 ; 'Start with caps'
 (define-model w01500
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false) (($6) true) (($7) true) (($8) true) (($9) true) (($10) false) (($11) true) (($12) true) (($13) true) (($14) true))))
@@ -61462,7 +61462,7 @@
 
 ; 'abc1~!3452!!!!!'
 (define-model w01501
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) false) (($5) false) (($6) true) (($7) true) (($8) true) (($9) true) (($10) false) (($11) false) (($12) false) (($13) false) (($14) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false) (($12) false) (($13) false) (($14) false))))
@@ -61503,7 +61503,7 @@
 
 ; 'afdfadsfasdfasd'
 (define-model w01502
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -61544,7 +61544,7 @@
 
 ; 'chenqiaochu123!'
 (define-model w01503
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) true) (($12) true) (($13) true) (($14) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true) (($11) false) (($12) false) (($13) false) (($14) false))))
@@ -61585,7 +61585,7 @@
 
 ; 'fjkdal;f!dsfasf'
 (define-model w01504
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) false) (($7) true) (($8) false) (($9) true) (($10) true) (($11) true) (($12) true) (($13) true) (($14) true))))
@@ -61626,7 +61626,7 @@
 
 ; 'invalid@ before'
 (define-model w01505
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) false) (($8) false) (($9) true) (($10) true) (($11) true) (($12) true) (($13) true) (($14) true))))
@@ -61667,7 +61667,7 @@
 
 ; 'kasowAVKLL12931'
 (define-model w01506
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) true) (($11) true) (($12) true) (($13) true) (($14) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false) (($12) false) (($13) false) (($14) false))))
@@ -61708,7 +61708,7 @@
 
 ; 'mmmmmmmmmmmmmi;'
 (define-model w01507
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true) (($11) true) (($12) true) (($13) true) (($14) false))))
@@ -61749,7 +61749,7 @@
 
 ; 'single number 5'
 (define-model w01508
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false) (($12) false) (($13) false) (($14) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) false) (($7) true) (($8) true) (($9) true) (($10) true) (($11) true) (($12) true) (($13) false) (($14) false))))
@@ -61790,7 +61790,7 @@
 
 ; 'something elsee'
 (define-model w01509
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) false) (($10) true) (($11) true) (($12) true) (($13) true) (($14) true))))
@@ -61831,7 +61831,7 @@
 
 ; 'this will work!'
 (define-model w01510
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) true) (($6) true) (($7) true) (($8) true) (($9) false) (($10) true) (($11) true) (($12) true) (($13) true) (($14) false))))
@@ -61872,7 +61872,7 @@
 
 ; 'u and something'
 (define-model w01511
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) true) (($5) false) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true) (($11) true) (($12) true) (($13) true) (($14) true))))
@@ -61913,7 +61913,7 @@
 
 ; '23f4dg26hj8g0g6k'
 (define-model w01512
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) false) (($5) false) (($6) true) (($7) true) (($8) false) (($9) false) (($10) true) (($11) false) (($12) true) (($13) false) (($14) true) (($15) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) false) (($4) true) (($5) true) (($6) false) (($7) false) (($8) true) (($9) true) (($10) false) (($11) true) (($12) false) (($13) true) (($14) false) (($15) true))))
@@ -61954,7 +61954,7 @@
 
 ; 'gkhgfghjkl.u,ymt'
 (define-model w01513
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true) (($10) false) (($11) true) (($12) false) (($13) true) (($14) true) (($15) true))))
@@ -61995,7 +61995,7 @@
 
 ; 'words containing'
 (define-model w01514
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true) (($11) true) (($12) true) (($13) true) (($14) true) (($15) true))))
@@ -62036,7 +62036,7 @@
 
 ; '!ff!23A!ffC!ga!f!'
 (define-model w01515
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false) (($12) false) (($13) false) (($14) false) (($15) false) (($16) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) true) (($9) true) (($10) false) (($11) false) (($12) true) (($13) true) (($14) false) (($15) true) (($16) false))))
@@ -62077,7 +62077,7 @@
 
 ; '# is this valid !'
 (define-model w01516
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) false) (($5) true) (($6) true) (($7) true) (($8) true) (($9) false) (($10) true) (($11) true) (($12) true) (($13) true) (($14) true) (($15) false) (($16) false))))
@@ -62118,7 +62118,7 @@
 
 ; 'a2kf\\Cworp\\Tawoer'
 (define-model w01517
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false) (($12) false) (($13) false) (($14) false) (($15) false) (($16) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) false) (($5) false) (($6) true) (($7) true) (($8) true) (($9) true) (($10) false) (($11) false) (($12) true) (($13) true) (($14) true) (($15) true) (($16) true))))
@@ -62159,7 +62159,7 @@
 
 ; 'nothign here!fg7!'
 (define-model w01518
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false) (($12) false) (($13) false) (($14) false) (($15) true) (($16) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) false) (($8) true) (($9) true) (($10) true) (($11) true) (($12) false) (($13) true) (($14) true) (($15) false) (($16) false))))
@@ -62200,7 +62200,7 @@
 
 ; 'what has happened'
 (define-model w01519
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) true) (($6) true) (($7) true) (($8) false) (($9) true) (($10) true) (($11) true) (($12) true) (($13) true) (($14) true) (($15) true) (($16) true))))
@@ -62241,7 +62241,7 @@
 
 ; 'zzzzzzzzzzzzzzo!!'
 (define-model w01520
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true) (($11) true) (($12) true) (($13) true) (($14) true) (($15) false) (($16) false))))
@@ -62282,7 +62282,7 @@
 
 ; '!!!sd9fs89d8f98sdf'
 (define-model w01521
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) false) (($7) false) (($8) true) (($9) true) (($10) false) (($11) true) (($12) false) (($13) true) (($14) true) (($15) false) (($16) false) (($17) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true) (($5) false) (($6) true) (($7) true) (($8) false) (($9) false) (($10) true) (($11) false) (($12) true) (($13) false) (($14) false) (($15) true) (($16) true) (($17) true))))
@@ -62323,7 +62323,7 @@
 
 ; '!A!ccf!pw3!o!dd!g!'
 (define-model w01522
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) true) (($10) false) (($11) false) (($12) false) (($13) false) (($14) false) (($15) false) (($16) false) (($17) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true) (($5) true) (($6) false) (($7) true) (($8) true) (($9) false) (($10) false) (($11) true) (($12) false) (($13) true) (($14) true) (($15) false) (($16) true) (($17) false))))
@@ -62364,7 +62364,7 @@
 
 ; '!CC!ff23!ppr1!f!q!'
 (define-model w01523
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true) (($7) true) (($8) false) (($9) false) (($10) false) (($11) false) (($12) true) (($13) false) (($14) false) (($15) false) (($16) false) (($17) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true) (($6) false) (($7) false) (($8) false) (($9) true) (($10) true) (($11) true) (($12) false) (($13) false) (($14) true) (($15) false) (($16) true) (($17) false))))
@@ -62405,7 +62405,7 @@
 
 ; '##$@234523adfFEAa!'
 (define-model w01524
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true) (($10) false) (($11) false) (($12) false) (($13) false) (($14) false) (($15) false) (($16) false) (($17) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) true) (($11) true) (($12) true) (($13) false) (($14) false) (($15) false) (($16) true) (($17) false))))
@@ -62446,7 +62446,7 @@
 
 ; 'Anything with caps'
 (define-model w01525
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) false) (($9) true) (($10) true) (($11) true) (($12) true) (($13) false) (($14) true) (($15) true) (($16) true) (($17) true))))
@@ -62487,7 +62487,7 @@
 
 ; 'adfasdfasfadsfasdf'
 (define-model w01526
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -62528,7 +62528,7 @@
 
 ; '!yuZXFHSDjf19231923'
 (define-model w01527
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) true) (($12) true) (($13) true) (($14) true) (($15) true) (($16) true) (($17) true) (($18) true))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) true) (($10) true) (($11) false) (($12) false) (($13) false) (($14) false) (($15) false) (($16) false) (($17) false) (($18) false))))
@@ -62569,7 +62569,7 @@
 
 ; 'afasdlk;fjkasd;jfkl'
 (define-model w01528
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) false) (($8) true) (($9) true) (($10) true) (($11) true) (($12) true) (($13) true) (($14) false) (($15) true) (($16) true) (($17) true) (($18) true))))
@@ -62610,7 +62610,7 @@
 
 ; 'dafsj!sdajkl;fj!sdf'
 (define-model w01529
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true) (($11) true) (($12) false) (($13) true) (($14) true) (($15) false) (($16) true) (($17) true) (($18) true))))
@@ -62651,7 +62651,7 @@
 
 ; 'm;;asdf;cjfdsFasdfF'
 (define-model w01530
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) true) (($4) true) (($5) true) (($6) true) (($7) false) (($8) true) (($9) true) (($10) true) (($11) true) (($12) true) (($13) false) (($14) true) (($15) true) (($16) true) (($17) true) (($18) false))))
@@ -62692,7 +62692,7 @@
 
 ; '7m and another wor#d'
 (define-model w01531
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false) (($12) false) (($13) false) (($14) false) (($15) false) (($16) false) (($17) false) (($18) false) (($19) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) true) (($4) true) (($5) true) (($6) false) (($7) true) (($8) true) (($9) true) (($10) true) (($11) true) (($12) true) (($13) true) (($14) false) (($15) true) (($16) true) (($17) true) (($18) false) (($19) true))))
@@ -62733,7 +62733,7 @@
 
 ; 'bfkdjfkdeibidfdasdre'
 (define-model w01532
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -62774,7 +62774,7 @@
 
 ; "y is not a vowel :'("
 (define-model w01533
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) false) (($5) true) (($6) true) (($7) true) (($8) false) (($9) true) (($10) false) (($11) true) (($12) true) (($13) true) (($14) true) (($15) true) (($16) false) (($17) false) (($18) false) (($19) false))))
@@ -62815,7 +62815,7 @@
 
 ; 'agowp\\Aowerip\\C023123'
 (define-model w01534
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false) (($12) false) (($13) false) (($14) false) (($15) true) (($16) true) (($17) true) (($18) true) (($19) true) (($20) true))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false) (($6) false) (($7) true) (($8) true) (($9) true) (($10) true) (($11) true) (($12) true) (($13) false) (($14) false) (($15) false) (($16) false) (($17) false) (($18) false) (($19) false) (($20) false))))
@@ -62856,7 +62856,7 @@
 
 ; 'fifififififififififif'
 (define-model w01535
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -62897,7 +62897,7 @@
 
 ; '!f@32!c!fj23!kfls!wor!'
 (define-model w01536
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) true) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) true) (($11) true) (($12) false) (($13) false) (($14) false) (($15) false) (($16) false) (($17) false) (($18) false) (($19) false) (($20) false) (($21) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) false) (($3) false) (($4) false) (($5) false) (($6) true) (($7) false) (($8) true) (($9) true) (($10) false) (($11) false) (($12) false) (($13) true) (($14) true) (($15) true) (($16) true) (($17) false) (($18) true) (($19) true) (($20) true) (($21) false))))
@@ -62938,7 +62938,7 @@
 
 ; 'I think this will work'
 (define-model w01537
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) false) (($8) true) (($9) true) (($10) true) (($11) true) (($12) false) (($13) true) (($14) true) (($15) true) (($16) true) (($17) false) (($18) true) (($19) true) (($20) true) (($21) true))))
@@ -62979,7 +62979,7 @@
 
 ; 'abcd\\efwa\\gowpzr\\kldfkl'
 (define-model w01538
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) true) (($6) true) (($7) true) (($8) true) (($9) false) (($10) true) (($11) true) (($12) true) (($13) true) (($14) true) (($15) true) (($16) false) (($17) true) (($18) true) (($19) true) (($20) true) (($21) true) (($22) true))))
@@ -63020,7 +63020,7 @@
 
 ; 'afdsafsafadsfadsfasdfadse'
 (define-model w01539
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -63061,7 +63061,7 @@
 
 ; 'bBbbbbbbbbbbbbbbbbbbb56i6'
 (define-model w01540
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false) (($12) false) (($13) false) (($14) false) (($15) false) (($16) false) (($17) false) (($18) false) (($19) false) (($20) false) (($21) true) (($22) true) (($23) false) (($24) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true) (($11) true) (($12) true) (($13) true) (($14) true) (($15) true) (($16) true) (($17) true) (($18) true) (($19) true) (($20) true) (($21) false) (($22) false) (($23) true) (($24) false))))
@@ -63102,7 +63102,7 @@
 
 ; 'something with no symbols'
 (define-model w01541
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) false) (($10) true) (($11) true) (($12) true) (($13) true) (($14) false) (($15) true) (($16) true) (($17) false) (($18) true) (($19) true) (($20) true) (($21) true) (($22) true) (($23) true) (($24) true))))
@@ -63143,7 +63143,7 @@
 
 ; 'g~\'"asdfoqpweru23$_AAaAaBcA'
 (define-model w01542
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false) (($12) false) (($13) false) (($14) false) (($15) true) (($16) true) (($17) false) (($18) false) (($19) false) (($20) false) (($21) false) (($22) false) (($23) false) (($24) false) (($25) false) (($26) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true) (($11) true) (($12) true) (($13) true) (($14) true) (($15) false) (($16) false) (($17) false) (($18) false) (($19) false) (($20) false) (($21) true) (($22) false) (($23) true) (($24) false) (($25) true) (($26) false))))
@@ -63184,7 +63184,7 @@
 
 ; 'k!0()sfasdhvyaQQQQAPasdfPPP'
 (define-model w01543
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false) (($12) false) (($13) false) (($14) false) (($15) false) (($16) false) (($17) false) (($18) false) (($19) false) (($20) false) (($21) false) (($22) false) (($23) false) (($24) false) (($25) false) (($26) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true) (($11) true) (($12) true) (($13) true) (($14) false) (($15) false) (($16) false) (($17) false) (($18) false) (($19) false) (($20) true) (($21) true) (($22) true) (($23) true) (($24) false) (($25) false) (($26) false))))
@@ -63225,7 +63225,7 @@
 
 ; '!!!!!!!!!!!!!!what about now'
 (define-model w01544
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false) (($12) false) (($13) false) (($14) true) (($15) true) (($16) true) (($17) true) (($18) false) (($19) true) (($20) true) (($21) true) (($22) true) (($23) true) (($24) false) (($25) true) (($26) true) (($27) true))))
@@ -63266,7 +63266,7 @@
 
 ; 'Fsdower\\Casdfr\\DDaowe\\Kaowerp'
 (define-model w01545
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) false) (($8) false) (($9) true) (($10) true) (($11) true) (($12) true) (($13) true) (($14) false) (($15) false) (($16) false) (($17) true) (($18) true) (($19) true) (($20) true) (($21) false) (($22) false) (($23) true) (($24) true) (($25) true) (($26) true) (($27) true) (($28) true))))
@@ -63307,7 +63307,7 @@
 
 ; '!@$#@@#!!$#@#@$!#%@!#@Eer3234!'
 (define-model w01546
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28 $29))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28 $29))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false) (($12) false) (($13) false) (($14) false) (($15) false) (($16) false) (($17) false) (($18) false) (($19) false) (($20) false) (($21) false) (($22) false) (($23) false) (($24) false) (($25) true) (($26) true) (($27) true) (($28) true) (($29) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false) (($12) false) (($13) false) (($14) false) (($15) false) (($16) false) (($17) false) (($18) false) (($19) false) (($20) false) (($21) false) (($22) false) (($23) true) (($24) true) (($25) false) (($26) false) (($27) false) (($28) false) (($29) false))))
@@ -63348,7 +63348,7 @@
 
 ; 'Crpwpap\\Howerp\\Gsowerp\\Toweripa'
 (define-model w01547
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28 $29 $30))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28 $29 $30))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) false) (($8) false) (($9) true) (($10) true) (($11) true) (($12) true) (($13) true) (($14) false) (($15) false) (($16) true) (($17) true) (($18) true) (($19) true) (($20) true) (($21) true) (($22) false) (($23) false) (($24) true) (($25) true) (($26) true) (($27) true) (($28) true) (($29) true) (($30) true))))
@@ -63389,7 +63389,7 @@
 
 ; '!cc!dkw!map!fo234!0ri2op!pfAA!fla'
 (define-model w01548
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28 $29 $30 $31 $32))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28 $29 $30 $31 $32))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false) (($12) false) (($13) false) (($14) true) (($15) true) (($16) true) (($17) false) (($18) true) (($19) false) (($20) false) (($21) true) (($22) false) (($23) false) (($24) false) (($25) false) (($26) false) (($27) false) (($28) false) (($29) false) (($30) false) (($31) false) (($32) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) false) (($4) true) (($5) true) (($6) true) (($7) false) (($8) true) (($9) true) (($10) true) (($11) false) (($12) true) (($13) true) (($14) false) (($15) false) (($16) false) (($17) false) (($18) false) (($19) true) (($20) true) (($21) false) (($22) true) (($23) true) (($24) false) (($25) true) (($26) true) (($27) false) (($28) false) (($29) false) (($30) true) (($31) true) (($32) true))))
@@ -63430,7 +63430,7 @@
 
 ; 'Ionosphere\\Game\\Theory\\Sucks\\Haha'
 (define-model w01549
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28 $29 $30 $31 $32))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28 $29 $30 $31 $32))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true) (($10) false) (($11) false) (($12) true) (($13) true) (($14) true) (($15) false) (($16) false) (($17) true) (($18) true) (($19) true) (($20) true) (($21) true) (($22) false) (($23) false) (($24) true) (($25) true) (($26) true) (($27) true) (($28) false) (($29) false) (($30) true) (($31) true) (($32) true))))
@@ -63471,7 +63471,7 @@
 
 ; 'aaaaaaaaaaaaaaaaaaaaaaAaaaaaghjaytr'
 (define-model w01550
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28 $29 $30 $31 $32 $33 $34))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28 $29 $30 $31 $32 $33 $34))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true) (($11) true) (($12) true) (($13) true) (($14) true) (($15) true) (($16) true) (($17) true) (($18) true) (($19) true) (($20) true) (($21) true) (($22) false) (($23) true) (($24) true) (($25) true) (($26) true) (($27) true) (($28) true) (($29) true) (($30) true) (($31) true) (($32) true) (($33) true) (($34) true))))
@@ -63512,7 +63512,7 @@
 
 ; 'Xreragsdgafawer\\Cfasdwerdfsdf\\Kapworfldsa'
 (define-model w01551
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28 $29 $30 $31 $32 $33 $34 $35 $36 $37 $38 $39 $40))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28 $29 $30 $31 $32 $33 $34 $35 $36 $37 $38 $39 $40))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true) (($11) true) (($12) true) (($13) true) (($14) true) (($15) false) (($16) false) (($17) true) (($18) true) (($19) true) (($20) true) (($21) true) (($22) true) (($23) true) (($24) true) (($25) true) (($26) true) (($27) true) (($28) true) (($29) false) (($30) false) (($31) true) (($32) true) (($33) true) (($34) true) (($35) true) (($36) true) (($37) true) (($38) true) (($39) true) (($40) true))))
@@ -63553,7 +63553,7 @@
 
 ; 'what is happening right now will this work'
 (define-model w01552
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28 $29 $30 $31 $32 $33 $34 $35 $36 $37 $38 $39 $40 $41))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28 $29 $30 $31 $32 $33 $34 $35 $36 $37 $38 $39 $40 $41))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) true) (($6) true) (($7) false) (($8) true) (($9) true) (($10) true) (($11) true) (($12) true) (($13) true) (($14) true) (($15) true) (($16) true) (($17) false) (($18) true) (($19) true) (($20) true) (($21) true) (($22) true) (($23) false) (($24) true) (($25) true) (($26) true) (($27) false) (($28) true) (($29) true) (($30) true) (($31) true) (($32) false) (($33) true) (($34) true) (($35) true) (($36) true) (($37) false) (($38) true) (($39) true) (($40) true) (($41) true))))
@@ -63594,7 +63594,7 @@
 
 ; 'Hifowld\\Asdfa\\Ddfower\\Casowerp\\Aowerp\\Gsdfa'
 (define-model w01553
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28 $29 $30 $31 $32 $33 $34 $35 $36 $37 $38 $39 $40 $41 $42))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28 $29 $30 $31 $32 $33 $34 $35 $36 $37 $38 $39 $40 $41 $42))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) false) (($8) false) (($9) true) (($10) true) (($11) true) (($12) true) (($13) false) (($14) false) (($15) true) (($16) true) (($17) true) (($18) true) (($19) true) (($20) true) (($21) false) (($22) false) (($23) true) (($24) true) (($25) true) (($26) true) (($27) true) (($28) true) (($29) true) (($30) false) (($31) false) (($32) true) (($33) true) (($34) true) (($35) true) (($36) true) (($37) false) (($38) false) (($39) true) (($40) true) (($41) true) (($42) true))))
@@ -63635,7 +63635,7 @@
 
 ; '!Why!doesnt!this!work!because!I!think!it!should'
 (define-model w01554
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28 $29 $30 $31 $32 $33 $34 $35 $36 $37 $38 $39 $40 $41 $42 $43 $44 $45 $46))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28 $29 $30 $31 $32 $33 $34 $35 $36 $37 $38 $39 $40 $41 $42 $43 $44 $45 $46))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) false) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true) (($11) false) (($12) true) (($13) true) (($14) true) (($15) true) (($16) false) (($17) true) (($18) true) (($19) true) (($20) true) (($21) false) (($22) true) (($23) true) (($24) true) (($25) true) (($26) true) (($27) true) (($28) true) (($29) false) (($30) false) (($31) false) (($32) true) (($33) true) (($34) true) (($35) true) (($36) true) (($37) false) (($38) true) (($39) true) (($40) false) (($41) true) (($42) true) (($43) true) (($44) true) (($45) true) (($46) true))))
@@ -63676,7 +63676,7 @@
 
 ; 'numeral counts a number with more than one character'
 (define-model w01555
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28 $29 $30 $31 $32 $33 $34 $35 $36 $37 $38 $39 $40 $41 $42 $43 $44 $45 $46 $47 $48 $49 $50 $51))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28 $29 $30 $31 $32 $33 $34 $35 $36 $37 $38 $39 $40 $41 $42 $43 $44 $45 $46 $47 $48 $49 $50 $51))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) false) (($8) true) (($9) true) (($10) true) (($11) true) (($12) true) (($13) true) (($14) false) (($15) true) (($16) false) (($17) true) (($18) true) (($19) true) (($20) true) (($21) true) (($22) true) (($23) false) (($24) true) (($25) true) (($26) true) (($27) true) (($28) false) (($29) true) (($30) true) (($31) true) (($32) true) (($33) false) (($34) true) (($35) true) (($36) true) (($37) true) (($38) false) (($39) true) (($40) true) (($41) true) (($42) false) (($43) true) (($44) true) (($45) true) (($46) true) (($47) true) (($48) true) (($49) true) (($50) true) (($51) true))))
@@ -63717,7 +63717,7 @@
 
 ; 'lines containing the string "!" with a letter before it'
 (define-model w01556
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28 $29 $30 $31 $32 $33 $34 $35 $36 $37 $38 $39 $40 $41 $42 $43 $44 $45 $46 $47 $48 $49 $50 $51 $52 $53 $54))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28 $29 $30 $31 $32 $33 $34 $35 $36 $37 $38 $39 $40 $41 $42 $43 $44 $45 $46 $47 $48 $49 $50 $51 $52 $53 $54))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) false) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true) (($11) true) (($12) true) (($13) true) (($14) true) (($15) true) (($16) false) (($17) true) (($18) true) (($19) true) (($20) false) (($21) true) (($22) true) (($23) true) (($24) true) (($25) true) (($26) true) (($27) false) (($28) false) (($29) false) (($30) false) (($31) false) (($32) true) (($33) true) (($34) true) (($35) true) (($36) false) (($37) true) (($38) false) (($39) true) (($40) true) (($41) true) (($42) true) (($43) true) (($44) true) (($45) false) (($46) true) (($47) true) (($48) true) (($49) true) (($50) true) (($51) true) (($52) false) (($53) true) (($54) true))))
@@ -63758,7 +63758,7 @@
 
 ; 'this is a test to see what is happening if I just type stuff in'
 (define-model w01557
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28 $29 $30 $31 $32 $33 $34 $35 $36 $37 $38 $39 $40 $41 $42 $43 $44 $45 $46 $47 $48 $49 $50 $51 $52 $53 $54 $55 $56 $57 $58 $59 $60 $61 $62))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28 $29 $30 $31 $32 $33 $34 $35 $36 $37 $38 $39 $40 $41 $42 $43 $44 $45 $46 $47 $48 $49 $50 $51 $52 $53 $54 $55 $56 $57 $58 $59 $60 $61 $62))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) true) (($6) true) (($7) false) (($8) true) (($9) false) (($10) true) (($11) true) (($12) true) (($13) true) (($14) false) (($15) true) (($16) true) (($17) false) (($18) true) (($19) true) (($20) true) (($21) false) (($22) true) (($23) true) (($24) true) (($25) true) (($26) false) (($27) true) (($28) true) (($29) false) (($30) true) (($31) true) (($32) true) (($33) true) (($34) true) (($35) true) (($36) true) (($37) true) (($38) true) (($39) false) (($40) true) (($41) true) (($42) false) (($43) false) (($44) false) (($45) true) (($46) true) (($47) true) (($48) true) (($49) false) (($50) true) (($51) true) (($52) true) (($53) true) (($54) false) (($55) true) (($56) true) (($57) true) (($58) true) (($59) true) (($60) false) (($61) true) (($62) true))))
@@ -63799,7 +63799,7 @@
 
 ; '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
 (define-model w01558
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28 $29 $30 $31 $32 $33 $34 $35 $36 $37 $38 $39 $40 $41 $42 $43 $44 $45 $46 $47 $48 $49 $50 $51 $52 $53 $54 $55 $56 $57 $58 $59 $60 $61 $62 $63 $64))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20 $21 $22 $23 $24 $25 $26 $27 $28 $29 $30 $31 $32 $33 $34 $35 $36 $37 $38 $39 $40 $41 $42 $43 $44 $45 $46 $47 $48 $49 $50 $51 $52 $53 $54 $55 $56 $57 $58 $59 $60 $61 $62 $63 $64))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))

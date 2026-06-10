@@ -43,8 +43,8 @@
 (declare-fun minus.idx (Idx Idx) Idx)
 (declare-fun lt.idx    (Idx Idx) Bool)
 
-(define-finite ExAsp   (record (model Model)))
-(define-finite CharAsp (record (model Model) (k Idx)))
+(define-aspects ExAsp   (record (model Model)))
+(define-aspects CharAsp (record (model Model) (k Idx)))
 
 (define-semantics
   ((IndexOfFirst (e Str) (asp ExAsp)))
@@ -119,8 +119,8 @@
 
 
 (define-model m0
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -150,8 +150,8 @@
 )
 
 (define-model m1
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -181,8 +181,8 @@
 )
 
 (define-model m2
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -212,8 +212,8 @@
 )
 
 (define-model m3
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -243,8 +243,8 @@
 )
 
 (define-model m4
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -274,8 +274,8 @@
 )
 
 (define-model m5
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -305,8 +305,8 @@
 )
 
 (define-model m6
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -336,8 +336,8 @@
 )
 
 (define-model m7
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -367,8 +367,8 @@
 )
 
 (define-model m8
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -398,8 +398,8 @@
 )
 
 (define-model m9
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -429,8 +429,8 @@
 )
 
 (define-model m10
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -460,8 +460,8 @@
 )
 
 (define-model m11
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -491,8 +491,8 @@
 )
 
 (define-model m12
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -522,8 +522,8 @@
 )
 
 (define-model m13
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -553,8 +553,8 @@
 )
 
 (define-model m14
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -584,8 +584,8 @@
 )
 
 (define-model m15
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -615,8 +615,8 @@
 )
 
 (define-model m16
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -646,8 +646,8 @@
 )
 
 (define-model m17
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -677,8 +677,8 @@
 )
 
 (define-model m18
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -708,8 +708,8 @@
 )
 
 (define-model m19
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -739,8 +739,8 @@
 )
 
 (define-model m20
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -770,8 +770,8 @@
 )
 
 (define-model m21
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -801,8 +801,8 @@
 )
 
 (define-model m22
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -832,8 +832,8 @@
 )
 
 (define-model m23
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -863,8 +863,8 @@
 )
 
 (define-model m24
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -894,8 +894,8 @@
 )
 
 (define-model m25
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -925,8 +925,8 @@
 )
 
 (define-model m26
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -956,8 +956,8 @@
 )
 
 (define-model m27
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -987,8 +987,8 @@
 )
 
 (define-model m28
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1018,8 +1018,8 @@
 )
 
 (define-model m29
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1049,8 +1049,8 @@
 )
 
 (define-model m30
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1080,8 +1080,8 @@
 )
 
 (define-model m31
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1111,8 +1111,8 @@
 )
 
 (define-model m32
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1142,8 +1142,8 @@
 )
 
 (define-model m33
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1173,8 +1173,8 @@
 )
 
 (define-model m34
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1204,8 +1204,8 @@
 )
 
 (define-model m35
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1235,8 +1235,8 @@
 )
 
 (define-model m36
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1266,8 +1266,8 @@
 )
 
 (define-model m37
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1297,8 +1297,8 @@
 )
 
 (define-model m38
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1328,8 +1328,8 @@
 )
 
 (define-model m39
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1359,8 +1359,8 @@
 )
 
 (define-model m40
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1390,8 +1390,8 @@
 )
 
 (define-model m41
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1421,8 +1421,8 @@
 )
 
 (define-model m42
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1452,8 +1452,8 @@
 )
 
 (define-model m43
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1483,8 +1483,8 @@
 )
 
 (define-model m44
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1514,8 +1514,8 @@
 )
 
 (define-model m45
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1545,8 +1545,8 @@
 )
 
 (define-model m46
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1576,8 +1576,8 @@
 )
 
 (define-model m47
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1607,8 +1607,8 @@
 )
 
 (define-model m48
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1638,8 +1638,8 @@
 )
 
 (define-model m49
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1669,8 +1669,8 @@
 )
 
 (define-model m50
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1700,8 +1700,8 @@
 )
 
 (define-model m51
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1731,8 +1731,8 @@
 )
 
 (define-model m52
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1762,8 +1762,8 @@
 )
 
 (define-model m53
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1793,8 +1793,8 @@
 )
 
 (define-model m54
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1824,8 +1824,8 @@
 )
 
 (define-model m55
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1855,8 +1855,8 @@
 )
 
 (define-model m56
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1886,8 +1886,8 @@
 )
 
 (define-model m57
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1917,8 +1917,8 @@
 )
 
 (define-model m58
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1948,8 +1948,8 @@
 )
 
 (define-model m59
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -1979,8 +1979,8 @@
 )
 
 (define-model m60
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2010,8 +2010,8 @@
 )
 
 (define-model m61
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2041,8 +2041,8 @@
 )
 
 (define-model m62
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2072,8 +2072,8 @@
 )
 
 (define-model m63
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2103,8 +2103,8 @@
 )
 
 (define-model m64
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2134,8 +2134,8 @@
 )
 
 (define-model m65
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2165,8 +2165,8 @@
 )
 
 (define-model m66
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2196,8 +2196,8 @@
 )
 
 (define-model m67
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2227,8 +2227,8 @@
 )
 
 (define-model m68
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2258,8 +2258,8 @@
 )
 
 (define-model m69
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2289,8 +2289,8 @@
 )
 
 (define-model m70
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2320,8 +2320,8 @@
 )
 
 (define-model m71
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2351,8 +2351,8 @@
 )
 
 (define-model m72
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2382,8 +2382,8 @@
 )
 
 (define-model m73
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2413,8 +2413,8 @@
 )
 
 (define-model m74
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2444,8 +2444,8 @@
 )
 
 (define-model m75
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2475,8 +2475,8 @@
 )
 
 (define-model m76
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2506,8 +2506,8 @@
 )
 
 (define-model m77
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2537,8 +2537,8 @@
 )
 
 (define-model m78
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2568,8 +2568,8 @@
 )
 
 (define-model m79
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2599,8 +2599,8 @@
 )
 
 (define-model m80
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2630,8 +2630,8 @@
 )
 
 (define-model m81
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2661,8 +2661,8 @@
 )
 
 (define-model m82
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2692,8 +2692,8 @@
 )
 
 (define-model m83
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2723,8 +2723,8 @@
 )
 
 (define-model m84
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2754,8 +2754,8 @@
 )
 
 (define-model m85
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2785,8 +2785,8 @@
 )
 
 (define-model m86
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2816,8 +2816,8 @@
 )
 
 (define-model m87
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2847,8 +2847,8 @@
 )
 
 (define-model m88
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2878,8 +2878,8 @@
 )
 
 (define-model m89
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2909,8 +2909,8 @@
 )
 
 (define-model m90
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2940,8 +2940,8 @@
 )
 
 (define-model m91
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9 c.s))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9 c.s))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -2971,8 +2971,8 @@
 )
 
 (define-model m92
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3002,8 +3002,8 @@
 )
 
 (define-model m93
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3033,8 +3033,8 @@
 )
 
 (define-model m94
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3064,8 +3064,8 @@
 )
 
 (define-model m95
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3095,8 +3095,8 @@
 )
 
 (define-model m96
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3126,8 +3126,8 @@
 )
 
 (define-model m97
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3157,8 +3157,8 @@
 )
 
 (define-model m98
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3188,8 +3188,8 @@
 )
 
 (define-model m99
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3219,8 +3219,8 @@
 )
 
 (define-model m100
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3250,8 +3250,8 @@
 )
 
 (define-model m101
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3281,8 +3281,8 @@
 )
 
 (define-model m102
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3312,8 +3312,8 @@
 )
 
 (define-model m103
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3343,8 +3343,8 @@
 )
 
 (define-model m104
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3374,8 +3374,8 @@
 )
 
 (define-model m105
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3405,8 +3405,8 @@
 )
 
 (define-model m106
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3436,8 +3436,8 @@
 )
 
 (define-model m107
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3467,8 +3467,8 @@
 )
 
 (define-model m108
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3498,8 +3498,8 @@
 )
 
 (define-model m109
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3529,8 +3529,8 @@
 )
 
 (define-model m110
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3560,8 +3560,8 @@
 )
 
 (define-model m111
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3591,8 +3591,8 @@
 )
 
 (define-model m112
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3622,8 +3622,8 @@
 )
 
 (define-model m113
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3653,8 +3653,8 @@
 )
 
 (define-model m114
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3684,8 +3684,8 @@
 )
 
 (define-model m115
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3715,8 +3715,8 @@
 )
 
 (define-model m116
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3746,8 +3746,8 @@
 )
 
 (define-model m117
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3777,8 +3777,8 @@
 )
 
 (define-model m118
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3808,8 +3808,8 @@
 )
 
 (define-model m119
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3839,8 +3839,8 @@
 )
 
 (define-model m120
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3870,8 +3870,8 @@
 )
 
 (define-model m121
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3901,8 +3901,8 @@
 )
 
 (define-model m122
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3932,8 +3932,8 @@
 )
 
 (define-model m123
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3963,8 +3963,8 @@
 )
 
 (define-model m124
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -3994,8 +3994,8 @@
 )
 
 (define-model m125
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4025,8 +4025,8 @@
 )
 
 (define-model m126
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4056,8 +4056,8 @@
 )
 
 (define-model m127
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4087,8 +4087,8 @@
 )
 
 (define-model m128
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4118,8 +4118,8 @@
 )
 
 (define-model m129
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4149,8 +4149,8 @@
 )
 
 (define-model m130
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4180,8 +4180,8 @@
 )
 
 (define-model m131
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4211,8 +4211,8 @@
 )
 
 (define-model m132
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4242,8 +4242,8 @@
 )
 
 (define-model m133
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4273,8 +4273,8 @@
 )
 
 (define-model m134
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4304,8 +4304,8 @@
 )
 
 (define-model m135
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4335,8 +4335,8 @@
 )
 
 (define-model m136
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4366,8 +4366,8 @@
 )
 
 (define-model m137
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4397,8 +4397,8 @@
 )
 
 (define-model m138
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4428,8 +4428,8 @@
 )
 
 (define-model m139
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4459,8 +4459,8 @@
 )
 
 (define-model m140
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4490,8 +4490,8 @@
 )
 
 (define-model m141
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4521,8 +4521,8 @@
 )
 
 (define-model m142
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4552,8 +4552,8 @@
 )
 
 (define-model m143
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4583,8 +4583,8 @@
 )
 
 (define-model m144
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4614,8 +4614,8 @@
 )
 
 (define-model m145
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4645,8 +4645,8 @@
 )
 
 (define-model m146
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4676,8 +4676,8 @@
 )
 
 (define-model m147
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4707,8 +4707,8 @@
 )
 
 (define-model m148
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4738,8 +4738,8 @@
 )
 
 (define-model m149
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4769,8 +4769,8 @@
 )
 
 (define-model m150
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4800,8 +4800,8 @@
 )
 
 (define-model m151
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4831,8 +4831,8 @@
 )
 
 (define-model m152
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4862,8 +4862,8 @@
 )
 
 (define-model m153
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4893,8 +4893,8 @@
 )
 
 (define-model m154
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4924,8 +4924,8 @@
 )
 
 (define-model m155
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4955,8 +4955,8 @@
 )
 
 (define-model m156
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -4986,8 +4986,8 @@
 )
 
 (define-model m157
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5017,8 +5017,8 @@
 )
 
 (define-model m158
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5048,8 +5048,8 @@
 )
 
 (define-model m159
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5079,8 +5079,8 @@
 )
 
 (define-model m160
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5110,8 +5110,8 @@
 )
 
 (define-model m161
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5141,8 +5141,8 @@
 )
 
 (define-model m162
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5172,8 +5172,8 @@
 )
 
 (define-model m163
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5203,8 +5203,8 @@
 )
 
 (define-model m164
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5234,8 +5234,8 @@
 )
 
 (define-model m165
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5265,8 +5265,8 @@
 )
 
 (define-model m166
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5296,8 +5296,8 @@
 )
 
 (define-model m167
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5327,8 +5327,8 @@
 )
 
 (define-model m168
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5358,8 +5358,8 @@
 )
 
 (define-model m169
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5389,8 +5389,8 @@
 )
 
 (define-model m170
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5420,8 +5420,8 @@
 )
 
 (define-model m171
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5451,8 +5451,8 @@
 )
 
 (define-model m172
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5482,8 +5482,8 @@
 )
 
 (define-model m173
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5513,8 +5513,8 @@
 )
 
 (define-model m174
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5544,8 +5544,8 @@
 )
 
 (define-model m175
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5575,8 +5575,8 @@
 )
 
 (define-model m176
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5606,8 +5606,8 @@
 )
 
 (define-model m177
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5637,8 +5637,8 @@
 )
 
 (define-model m178
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5668,8 +5668,8 @@
 )
 
 (define-model m179
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5699,8 +5699,8 @@
 )
 
 (define-model m180
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5730,8 +5730,8 @@
 )
 
 (define-model m181
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5761,8 +5761,8 @@
 )
 
 (define-model m182
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5792,8 +5792,8 @@
 )
 
 (define-model m183
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5823,8 +5823,8 @@
 )
 
 (define-model m184
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5854,8 +5854,8 @@
 )
 
 (define-model m185
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5885,8 +5885,8 @@
 )
 
 (define-model m186
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -5916,8 +5916,8 @@
 )
 
 (define-model m187
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))

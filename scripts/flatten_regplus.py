@@ -158,7 +158,7 @@ def write_theories(global_dir: Path, source: str, all_xpreds):
     out.append("   (re.inter RegLan RegLan)")
     out.append("   (re.* RegLan))))")
     out.append('')
-    out.append("(define-finite RegLan.Asp")
+    out.append("(define-aspects RegLan.Asp")
     out.append("  (record (model Model) (i Int) (j Int))")
     out.append("  :where (and (<= 0 i) (<= i j) (<= j (size (Pos model)))))")
     out.append('')
@@ -197,7 +197,7 @@ def model_block(name: str, string: str, all_xpreds):
     if n == 0:
         return None
     univ = "(" + " ".join(f"${i}" for i in range(n)) + ")"
-    out = [f"; {string!r}", f"(define-model {name}", f"  (define-univ Pos {univ})"]
+    out = [f"; {string!r}", f"(define-model {name}", f"  (interp-sort Pos {univ})"]
     for pname, predfn, _descr in STD_PREDS:
         out.append(f"  (interp-fun {pname} (match ({_arms_for(string, predfn)})))")
     for xp in sorted(all_xpreds):

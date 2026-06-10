@@ -4,11 +4,11 @@
 (require "theories/fast_paxos_epr-723563de.sl")
 
 (define-model P0
-  (define-univ c_quorum (@uc_c_quorum_0))
-  (define-univ f_quorum (@uc_f_quorum_0))
-  (define-univ node (@uc_node_0))
-  (define-univ round (@uc_round_0))
-  (define-univ value (@uc_value_0))
+  (interp-sort c_quorum (@uc_c_quorum_0))
+  (interp-sort f_quorum (@uc_f_quorum_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort round (@uc_round_0))
+  (interp-sort value (@uc_value_0))
   (interp-fun none (@uc_round_0))
   (interp-fun any_msg (match (
     ((@uc_round_0) true)
@@ -56,11 +56,11 @@
 )
 
 (define-model N0
-  (define-univ c_quorum (@uc_c_quorum_0))
-  (define-univ f_quorum (@uc_f_quorum_0))
-  (define-univ node (@uc_node_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort c_quorum (@uc_c_quorum_0))
+  (interp-sort f_quorum (@uc_f_quorum_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun none (@uc_round_0))
   (interp-fun any_msg (match (
     ((@uc_round_0) true)
@@ -111,11 +111,11 @@
 )
 
 (define-model N1
-  (define-univ c_quorum (@uc_c_quorum_0))
-  (define-univ f_quorum (@uc_f_quorum_0))
-  (define-univ node (@uc_node_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0))
+  (interp-sort c_quorum (@uc_c_quorum_0))
+  (interp-sort f_quorum (@uc_f_quorum_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0))
   (interp-fun none (@uc_round_0))
   (interp-fun any_msg (match (
     ((_) false)
@@ -166,11 +166,11 @@
 )
 
 (define-model P1
-  (define-univ c_quorum (@uc_c_quorum_0))
-  (define-univ f_quorum (@uc_f_quorum_0))
-  (define-univ node (@uc_node_0))
-  (define-univ round (@uc_round_0))
-  (define-univ value (@uc_value_0))
+  (interp-sort c_quorum (@uc_c_quorum_0))
+  (interp-sort f_quorum (@uc_f_quorum_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort round (@uc_round_0))
+  (interp-sort value (@uc_value_0))
   (interp-fun none (@uc_round_0))
   (interp-fun any_msg (match (
     ((_) false)
@@ -217,11 +217,11 @@
 )
 
 (define-model N2
-  (define-univ c_quorum (@uc_c_quorum_0))
-  (define-univ f_quorum (@uc_f_quorum_0))
-  (define-univ node (@uc_node_0))
-  (define-univ round (@uc_round_0))
-  (define-univ value (@uc_value_0))
+  (interp-sort c_quorum (@uc_c_quorum_0))
+  (interp-sort f_quorum (@uc_f_quorum_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort round (@uc_round_0))
+  (interp-sort value (@uc_value_0))
   (interp-fun none (@uc_round_0))
   (interp-fun any_msg (match (
     ((_) false)
@@ -267,11 +267,11 @@
 )
 
 (define-model N3
-  (define-univ c_quorum (@uc_c_quorum_0))
-  (define-univ f_quorum (@uc_f_quorum_0))
-  (define-univ node (@uc_node_0))
-  (define-univ round (@uc_round_0))
-  (define-univ value (@uc_value_0 @uc_value_1))
+  (interp-sort c_quorum (@uc_c_quorum_0))
+  (interp-sort f_quorum (@uc_f_quorum_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort round (@uc_round_0))
+  (interp-sort value (@uc_value_0 @uc_value_1))
   (interp-fun none (@uc_round_0))
   (interp-fun any_msg (match (
     ((_) false)
@@ -319,11 +319,11 @@
 )
 
 (define-model P2
-  (define-univ c_quorum (@uc_c_quorum_0))
-  (define-univ f_quorum (@uc_f_quorum_0))
-  (define-univ node (@uc_node_0))
-  (define-univ round (@uc_round_0))
-  (define-univ value (@uc_value_0))
+  (interp-sort c_quorum (@uc_c_quorum_0))
+  (interp-sort f_quorum (@uc_f_quorum_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort round (@uc_round_0))
+  (interp-sort value (@uc_value_0))
   (interp-fun none (@uc_round_0))
   (interp-fun any_msg (match (
     ((@uc_round_0) true)
@@ -370,11 +370,11 @@
 )
 
 (define-model P3
-  (define-univ c_quorum (@uc_c_quorum_0))
-  (define-univ f_quorum (@uc_f_quorum_0))
-  (define-univ node (@uc_node_0))
-  (define-univ round (@uc_round_0))
-  (define-univ value (@uc_value_0))
+  (interp-sort c_quorum (@uc_c_quorum_0))
+  (interp-sort f_quorum (@uc_f_quorum_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort round (@uc_round_0))
+  (interp-sort value (@uc_value_0))
   (interp-fun none (@uc_round_0))
   (interp-fun any_msg (match (
     ((_) false)
@@ -419,11 +419,11 @@
 )
 
 (define-model P4
-  (define-univ c_quorum (@uc_c_quorum_0))
-  (define-univ f_quorum (@uc_f_quorum_0))
-  (define-univ node (@uc_node_0))
-  (define-univ round (@uc_round_0))
-  (define-univ value (@uc_value_0))
+  (interp-sort c_quorum (@uc_c_quorum_0))
+  (interp-sort f_quorum (@uc_f_quorum_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort round (@uc_round_0))
+  (interp-sort value (@uc_value_0))
   (interp-fun none (@uc_round_0))
   (interp-fun any_msg (match (
     ((_) false)

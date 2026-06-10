@@ -4,11 +4,11 @@
 (require "theories/bosco_3t_safety-def425b4.sl")
 
 (define-model P0
-  (define-univ node (@uc_node_0))
-  (define-univ quorum_a (@uc_quorum_a_0))
-  (define-univ quorum_b (@uc_quorum_b_0))
-  (define-univ quorum_c (@uc_quorum_c_0))
-  (define-univ value (@uc_value_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum_a (@uc_quorum_a_0))
+  (interp-sort quorum_b (@uc_quorum_b_0))
+  (interp-sort quorum_c (@uc_quorum_c_0))
+  (interp-sort value (@uc_value_0))
   (interp-fun dec (match (
     ((_ _) false)
   )))
@@ -58,11 +58,11 @@
 )
 
 (define-model N0
-  (define-univ node (@uc_node_0))
-  (define-univ quorum_a (@uc_quorum_a_0))
-  (define-univ quorum_b (@uc_quorum_b_0))
-  (define-univ quorum_c (@uc_quorum_c_0))
-  (define-univ value (@uc_value_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum_a (@uc_quorum_a_0))
+  (interp-sort quorum_b (@uc_quorum_b_0))
+  (interp-sort quorum_c (@uc_quorum_c_0))
+  (interp-sort value (@uc_value_0))
   (interp-fun dec (match (
     ((_ _) false)
   )))
@@ -111,11 +111,11 @@
 )
 
 (define-model N1
-  (define-univ node (@uc_node_0 @uc_node_1))
-  (define-univ quorum_a (@uc_quorum_a_0))
-  (define-univ quorum_b (@uc_quorum_b_0))
-  (define-univ quorum_c (@uc_quorum_c_0))
-  (define-univ value (@uc_value_0))
+  (interp-sort node (@uc_node_0 @uc_node_1))
+  (interp-sort quorum_a (@uc_quorum_a_0))
+  (interp-sort quorum_b (@uc_quorum_b_0))
+  (interp-sort quorum_c (@uc_quorum_c_0))
+  (interp-sort value (@uc_value_0))
   (interp-fun dec (match (
     ((_ _) false)
   )))
@@ -175,11 +175,11 @@
 )
 
 (define-model N2
-  (define-univ node (@uc_node_0))
-  (define-univ quorum_a (@uc_quorum_a_0))
-  (define-univ quorum_b (@uc_quorum_b_0))
-  (define-univ quorum_c (@uc_quorum_c_0))
-  (define-univ value (@uc_value_0 @uc_value_1))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum_a (@uc_quorum_a_0))
+  (interp-sort quorum_b (@uc_quorum_b_0))
+  (interp-sort quorum_c (@uc_quorum_c_0))
+  (interp-sort value (@uc_value_0 @uc_value_1))
   (interp-fun dec (match (
     ((_ _) false)
   )))
@@ -229,11 +229,11 @@
 )
 
 (define-model N3
-  (define-univ node (@uc_node_0 @uc_node_1))
-  (define-univ quorum_a (@uc_quorum_a_0))
-  (define-univ quorum_b (@uc_quorum_b_0))
-  (define-univ quorum_c (@uc_quorum_c_0))
-  (define-univ value (@uc_value_0))
+  (interp-sort node (@uc_node_0 @uc_node_1))
+  (interp-sort quorum_a (@uc_quorum_a_0))
+  (interp-sort quorum_b (@uc_quorum_b_0))
+  (interp-sort quorum_c (@uc_quorum_c_0))
+  (interp-sort value (@uc_value_0))
   (interp-fun dec (match (
     ((_ _) false)
   )))

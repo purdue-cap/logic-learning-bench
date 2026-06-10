@@ -1989,103 +1989,103 @@
   ((fol.ctx-x0-votemap-x1-votemap.var.x0.votemap)
    (fol.ctx-x0-votemap-x1-votemap.var.x1.votemap))))
 
-(define-finite FO.Asp (record (model Model)))
+(define-aspects FO.Asp (record (model Model)))
 
-(define-finite FO.Asp.x0.inst (record (model Model) (x0 inst)))
+(define-aspects FO.Asp.x0.inst (record (model Model) (x0 inst)))
 
-(define-finite FO.Asp.x0.node (record (model Model) (x0 node)))
+(define-aspects FO.Asp.x0.node (record (model Model) (x0 node)))
 
-(define-finite FO.Asp.x0.quorum (record (model Model) (x0 quorum)))
+(define-aspects FO.Asp.x0.quorum (record (model Model) (x0 quorum)))
 
-(define-finite FO.Asp.x0.round (record (model Model) (x0 round)))
+(define-aspects FO.Asp.x0.round (record (model Model) (x0 round)))
 
-(define-finite FO.Asp.x0.value (record (model Model) (x0 value)))
+(define-aspects FO.Asp.x0.value (record (model Model) (x0 value)))
 
-(define-finite FO.Asp.x0.votemap (record (model Model) (x0 votemap)))
+(define-aspects FO.Asp.x0.votemap (record (model Model) (x0 votemap)))
 
-(define-finite FO.Asp.x1.inst (record (model Model) (x1 inst)))
+(define-aspects FO.Asp.x1.inst (record (model Model) (x1 inst)))
 
-(define-finite FO.Asp.x1.node (record (model Model) (x1 node)))
+(define-aspects FO.Asp.x1.node (record (model Model) (x1 node)))
 
-(define-finite FO.Asp.x1.quorum (record (model Model) (x1 quorum)))
+(define-aspects FO.Asp.x1.quorum (record (model Model) (x1 quorum)))
 
-(define-finite FO.Asp.x1.round (record (model Model) (x1 round)))
+(define-aspects FO.Asp.x1.round (record (model Model) (x1 round)))
 
-(define-finite FO.Asp.x1.value (record (model Model) (x1 value)))
+(define-aspects FO.Asp.x1.value (record (model Model) (x1 value)))
 
-(define-finite FO.Asp.x1.votemap (record (model Model) (x1 votemap)))
+(define-aspects FO.Asp.x1.votemap (record (model Model) (x1 votemap)))
 
-(define-finite FO.Asp.x0.inst.x1.inst (record (model Model) (x0 inst) (x1 inst)))
+(define-aspects FO.Asp.x0.inst.x1.inst (record (model Model) (x0 inst) (x1 inst)))
 
-(define-finite FO.Asp.x0.inst.x1.node (record (model Model) (x0 inst) (x1 node)))
+(define-aspects FO.Asp.x0.inst.x1.node (record (model Model) (x0 inst) (x1 node)))
 
-(define-finite FO.Asp.x0.inst.x1.quorum (record (model Model) (x0 inst) (x1 quorum)))
+(define-aspects FO.Asp.x0.inst.x1.quorum (record (model Model) (x0 inst) (x1 quorum)))
 
-(define-finite FO.Asp.x0.inst.x1.round (record (model Model) (x0 inst) (x1 round)))
+(define-aspects FO.Asp.x0.inst.x1.round (record (model Model) (x0 inst) (x1 round)))
 
-(define-finite FO.Asp.x0.inst.x1.value (record (model Model) (x0 inst) (x1 value)))
+(define-aspects FO.Asp.x0.inst.x1.value (record (model Model) (x0 inst) (x1 value)))
 
-(define-finite FO.Asp.x0.inst.x1.votemap (record (model Model) (x0 inst) (x1 votemap)))
+(define-aspects FO.Asp.x0.inst.x1.votemap (record (model Model) (x0 inst) (x1 votemap)))
 
-(define-finite FO.Asp.x0.node.x1.inst (record (model Model) (x0 node) (x1 inst)))
+(define-aspects FO.Asp.x0.node.x1.inst (record (model Model) (x0 node) (x1 inst)))
 
-(define-finite FO.Asp.x0.node.x1.node (record (model Model) (x0 node) (x1 node)))
+(define-aspects FO.Asp.x0.node.x1.node (record (model Model) (x0 node) (x1 node)))
 
-(define-finite FO.Asp.x0.node.x1.quorum (record (model Model) (x0 node) (x1 quorum)))
+(define-aspects FO.Asp.x0.node.x1.quorum (record (model Model) (x0 node) (x1 quorum)))
 
-(define-finite FO.Asp.x0.node.x1.round (record (model Model) (x0 node) (x1 round)))
+(define-aspects FO.Asp.x0.node.x1.round (record (model Model) (x0 node) (x1 round)))
 
-(define-finite FO.Asp.x0.node.x1.value (record (model Model) (x0 node) (x1 value)))
+(define-aspects FO.Asp.x0.node.x1.value (record (model Model) (x0 node) (x1 value)))
 
-(define-finite FO.Asp.x0.node.x1.votemap (record (model Model) (x0 node) (x1 votemap)))
+(define-aspects FO.Asp.x0.node.x1.votemap (record (model Model) (x0 node) (x1 votemap)))
 
-(define-finite FO.Asp.x0.quorum.x1.inst (record (model Model) (x0 quorum) (x1 inst)))
+(define-aspects FO.Asp.x0.quorum.x1.inst (record (model Model) (x0 quorum) (x1 inst)))
 
-(define-finite FO.Asp.x0.quorum.x1.node (record (model Model) (x0 quorum) (x1 node)))
+(define-aspects FO.Asp.x0.quorum.x1.node (record (model Model) (x0 quorum) (x1 node)))
 
-(define-finite FO.Asp.x0.quorum.x1.quorum (record (model Model) (x0 quorum) (x1 quorum)))
+(define-aspects FO.Asp.x0.quorum.x1.quorum (record (model Model) (x0 quorum) (x1 quorum)))
 
-(define-finite FO.Asp.x0.quorum.x1.round (record (model Model) (x0 quorum) (x1 round)))
+(define-aspects FO.Asp.x0.quorum.x1.round (record (model Model) (x0 quorum) (x1 round)))
 
-(define-finite FO.Asp.x0.quorum.x1.value (record (model Model) (x0 quorum) (x1 value)))
+(define-aspects FO.Asp.x0.quorum.x1.value (record (model Model) (x0 quorum) (x1 value)))
 
-(define-finite FO.Asp.x0.quorum.x1.votemap (record (model Model) (x0 quorum) (x1 votemap)))
+(define-aspects FO.Asp.x0.quorum.x1.votemap (record (model Model) (x0 quorum) (x1 votemap)))
 
-(define-finite FO.Asp.x0.round.x1.inst (record (model Model) (x0 round) (x1 inst)))
+(define-aspects FO.Asp.x0.round.x1.inst (record (model Model) (x0 round) (x1 inst)))
 
-(define-finite FO.Asp.x0.round.x1.node (record (model Model) (x0 round) (x1 node)))
+(define-aspects FO.Asp.x0.round.x1.node (record (model Model) (x0 round) (x1 node)))
 
-(define-finite FO.Asp.x0.round.x1.quorum (record (model Model) (x0 round) (x1 quorum)))
+(define-aspects FO.Asp.x0.round.x1.quorum (record (model Model) (x0 round) (x1 quorum)))
 
-(define-finite FO.Asp.x0.round.x1.round (record (model Model) (x0 round) (x1 round)))
+(define-aspects FO.Asp.x0.round.x1.round (record (model Model) (x0 round) (x1 round)))
 
-(define-finite FO.Asp.x0.round.x1.value (record (model Model) (x0 round) (x1 value)))
+(define-aspects FO.Asp.x0.round.x1.value (record (model Model) (x0 round) (x1 value)))
 
-(define-finite FO.Asp.x0.round.x1.votemap (record (model Model) (x0 round) (x1 votemap)))
+(define-aspects FO.Asp.x0.round.x1.votemap (record (model Model) (x0 round) (x1 votemap)))
 
-(define-finite FO.Asp.x0.value.x1.inst (record (model Model) (x0 value) (x1 inst)))
+(define-aspects FO.Asp.x0.value.x1.inst (record (model Model) (x0 value) (x1 inst)))
 
-(define-finite FO.Asp.x0.value.x1.node (record (model Model) (x0 value) (x1 node)))
+(define-aspects FO.Asp.x0.value.x1.node (record (model Model) (x0 value) (x1 node)))
 
-(define-finite FO.Asp.x0.value.x1.quorum (record (model Model) (x0 value) (x1 quorum)))
+(define-aspects FO.Asp.x0.value.x1.quorum (record (model Model) (x0 value) (x1 quorum)))
 
-(define-finite FO.Asp.x0.value.x1.round (record (model Model) (x0 value) (x1 round)))
+(define-aspects FO.Asp.x0.value.x1.round (record (model Model) (x0 value) (x1 round)))
 
-(define-finite FO.Asp.x0.value.x1.value (record (model Model) (x0 value) (x1 value)))
+(define-aspects FO.Asp.x0.value.x1.value (record (model Model) (x0 value) (x1 value)))
 
-(define-finite FO.Asp.x0.value.x1.votemap (record (model Model) (x0 value) (x1 votemap)))
+(define-aspects FO.Asp.x0.value.x1.votemap (record (model Model) (x0 value) (x1 votemap)))
 
-(define-finite FO.Asp.x0.votemap.x1.inst (record (model Model) (x0 votemap) (x1 inst)))
+(define-aspects FO.Asp.x0.votemap.x1.inst (record (model Model) (x0 votemap) (x1 inst)))
 
-(define-finite FO.Asp.x0.votemap.x1.node (record (model Model) (x0 votemap) (x1 node)))
+(define-aspects FO.Asp.x0.votemap.x1.node (record (model Model) (x0 votemap) (x1 node)))
 
-(define-finite FO.Asp.x0.votemap.x1.quorum (record (model Model) (x0 votemap) (x1 quorum)))
+(define-aspects FO.Asp.x0.votemap.x1.quorum (record (model Model) (x0 votemap) (x1 quorum)))
 
-(define-finite FO.Asp.x0.votemap.x1.round (record (model Model) (x0 votemap) (x1 round)))
+(define-aspects FO.Asp.x0.votemap.x1.round (record (model Model) (x0 votemap) (x1 round)))
 
-(define-finite FO.Asp.x0.votemap.x1.value (record (model Model) (x0 votemap) (x1 value)))
+(define-aspects FO.Asp.x0.votemap.x1.value (record (model Model) (x0 votemap) (x1 value)))
 
-(define-finite FO.Asp.x0.votemap.x1.votemap (record (model Model) (x0 votemap) (x1 votemap)))
+(define-aspects FO.Asp.x0.votemap.x1.votemap (record (model Model) (x0 votemap) (x1 votemap)))
 
 (define-semantics
   ((Term.0.round.Sem (term Term.0.round) (asp FO.Asp)))

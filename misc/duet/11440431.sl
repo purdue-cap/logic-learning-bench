@@ -1,8 +1,8 @@
 (require "theories/duet-11440431.sl")
 
 (define-model ex0
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 bot))
-  (define-univ Chr (cPad cSpace cA cC cE cF cM cN cO cS cU ca cb cc ce cg ch ci cl cm cn co cr cs ct cx cy))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 bot))
+  (interp-sort Chr (cPad cSpace cA cC cE cF cM cN cO cS cU ca cb cc ce cg ch ci cl cm cn co cr cs ct cx cy))
   (interp-fun in.len ($9))
   (interp-fun out.len ($6))
   (interp-fun in.suffix.us (true))
@@ -36,8 +36,8 @@
 )
 
 (define-model ex1
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 bot))
-  (define-univ Chr (cPad cSpace cA cC cE cF cM cN cO cS cU ca cb cc ce cg ch ci cl cm cn co cr cs ct cx cy))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 bot))
+  (interp-sort Chr (cPad cSpace cA cC cE cF cM cN cO cS cU ca cb cc ce cg ch ci cl cm cn co cr cs ct cx cy))
   (interp-fun in.len ($19))
   (interp-fun out.len ($15))
   (interp-fun in.suffix.us (false))
@@ -74,8 +74,8 @@
 )
 
 (define-model ex2
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 bot))
-  (define-univ Chr (cPad cSpace cA cC cE cF cM cN cO cS cU ca cb cc ce cg ch ci cl cm cn co cr cs ct cx cy))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 bot))
+  (interp-sort Chr (cPad cSpace cA cC cE cF cM cN cO cS cU ca cb cc ce cg ch ci cl cm cn co cr cs ct cx cy))
   (interp-fun in.len ($15))
   (interp-fun out.len ($15))
   (interp-fun in.suffix.us (false))
@@ -111,8 +111,8 @@
 )
 
 (define-model ex3
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 bot))
-  (define-univ Chr (cPad cSpace cA cC cE cF cM cN cO cS cU ca cb cc ce cg ch ci cl cm cn co cr cs ct cx cy))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 bot))
+  (interp-sort Chr (cPad cSpace cA cC cE cF cM cN cO cS cU ca cb cc ce cg ch ci cl cm cn co cr cs ct cx cy))
   (interp-fun in.len ($17))
   (interp-fun out.len ($14))
   (interp-fun in.suffix.us (true))
@@ -148,8 +148,8 @@
 )
 
 (define-model ex4
-  (define-univ Idx ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 bot))
-  (define-univ Chr (cPad cSpace cA cC cE cF cM cN cO cS cU ca cb cc ce cg ch ci cl cm cn co cr cs ct cx cy))
+  (interp-sort Idx ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 bot))
+  (interp-sort Chr (cPad cSpace cA cC cE cF cM cN cO cS cU ca cb cc ce cg ch ci cl cm cn co cr cs ct cx cy))
   (interp-fun in.len ($7))
   (interp-fun out.len ($7))
   (interp-fun in.suffix.us (false))

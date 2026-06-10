@@ -150,7 +150,7 @@ def parse_models(path: Path, sig: Sig) -> list[Model]:
         if expr[0] == 'define-model':
             m = Model(expr[1])
             for sub in expr[2:]:
-                if sub[0] == 'define-univ':
+                if sub[0] == 'interp-sort':
                     sort = sub[1]
                     m.univs[sort] = sub[2]
                 elif sub[0] == 'interp-fun':

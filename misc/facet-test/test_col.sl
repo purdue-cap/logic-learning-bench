@@ -28,14 +28,14 @@
 (declare-fun arg2_lo () Pos)
 (declare-fun arg2_hi () Pos)
 
-(define-finite Str.Asp
+(define-aspects Str.Asp
   (record (model Model) (lo Int) (hi Int))
   :where (and (<= 0 lo) (<= lo hi) (<= hi 6)))
 
-(define-finite Int.Asp
+(define-aspects Int.Asp
   (record (model Model) (exp_int SymInt)))
 
-(define-finite Bool.Asp
+(define-aspects Bool.Asp
   (record (model Model)))
 
 (define-semantics
@@ -196,8 +196,8 @@
   )))
 
 (define-model m0
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $end))
-  (define-univ SymInt (bot $neg1 $0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $end))
+  (interp-sort SymInt (bot $neg1 $0 $1 $2 $3))
   (interp-fun arg0_lo ($0))
   (interp-fun arg0_hi ($1))
   (interp-fun arg1_lo ($1))
@@ -454,8 +454,8 @@
 )
 
 (define-model m1
-  (define-univ Pos ($0 $1 $2 $3 $4 $5 $end))
-  (define-univ SymInt (bot $neg1 $0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $end))
+  (interp-sort SymInt (bot $neg1 $0 $1 $2 $3))
   (interp-fun arg0_lo ($3))
   (interp-fun arg0_hi ($4))
   (interp-fun arg1_lo ($4))

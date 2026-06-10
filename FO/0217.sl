@@ -4,10 +4,10 @@
 (require "theories/paxos_epr-6437ec1f.sl")
 
 (define-model P0
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0))
-  (define-univ value (@uc_value_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0))
+  (interp-sort value (@uc_value_0))
   (interp-fun none (@uc_round_0))
   (interp-fun decision (match (
     ((_ _) false)
@@ -39,10 +39,10 @@
 )
 
 (define-model N0
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0))
-  (define-univ value (@uc_value_0 @uc_value_1))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0))
+  (interp-sort value (@uc_value_0 @uc_value_1))
   (interp-fun none (@uc_round_0))
   (interp-fun decision (match (
     ((_ _) false)
@@ -75,10 +75,10 @@
 )
 
 (define-model P1
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0))
-  (define-univ value (@uc_value_0 @uc_value_1))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0))
+  (interp-sort value (@uc_value_0 @uc_value_1))
   (interp-fun none (@uc_round_0))
   (interp-fun decision (match (
     ((_ _) false)
@@ -109,10 +109,10 @@
 )
 
 (define-model N1
-  (define-univ node (@uc_node_0))
-  (define-univ quorum (@uc_quorum_0))
-  (define-univ round (@uc_round_0 @uc_round_1))
-  (define-univ value (@uc_value_0 @uc_value_1))
+  (interp-sort node (@uc_node_0))
+  (interp-sort quorum (@uc_quorum_0))
+  (interp-sort round (@uc_round_0 @uc_round_1))
+  (interp-sort value (@uc_value_0 @uc_value_1))
   (interp-fun none (@uc_round_0))
   (interp-fun decision (match (
     ((_ _) false)

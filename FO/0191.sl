@@ -4,7 +4,7 @@
 (require "theories/firewall-0791aba8.sl")
 
 (define-model P0
-  (define-univ node (@uc_node_0))
+  (interp-sort node (@uc_node_0))
   (interp-fun allowed_in (match (
     ((_) false)
   )))
@@ -18,7 +18,7 @@
 )
 
 (define-model N0
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun allowed_in (match (
     ((_) false)
   )))
@@ -35,7 +35,7 @@
 )
 
 (define-model N1
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun allowed_in (match (
     ((_) false)
   )))
@@ -51,7 +51,7 @@
 )
 
 (define-model P1
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun allowed_in (match (
     ((_) false)
   )))
@@ -66,7 +66,7 @@
 )
 
 (define-model P2
-  (define-univ node (@uc_node_0))
+  (interp-sort node (@uc_node_0))
   (interp-fun allowed_in (match (
     ((_) false)
   )))
@@ -80,7 +80,7 @@
 )
 
 (define-model P3
-  (define-univ node (@uc_node_0))
+  (interp-sort node (@uc_node_0))
   (interp-fun allowed_in (match (
     ((_) false)
   )))
@@ -95,7 +95,7 @@
 )
 
 (define-model P4
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun allowed_in (match (
     ((_) false)
   )))
@@ -109,7 +109,7 @@
 )
 
 (define-model P5
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun allowed_in (match (
     ((_) false)
   )))
@@ -126,7 +126,7 @@
 )
 
 (define-model N2
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun allowed_in (match (
     ((_) false)
   )))
@@ -142,7 +142,7 @@
 )
 
 (define-model P6
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun allowed_in (match (
     ((_) false)
   )))
@@ -158,7 +158,7 @@
 )
 
 (define-model P7
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun allowed_in (match (
     ((_) false)
   )))
@@ -176,7 +176,7 @@
 )
 
 (define-model P8
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun allowed_in (match (
     ((_) false)
   )))
@@ -193,7 +193,7 @@
 )
 
 (define-model N3
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun allowed_in (match (
     ((_) false)
   )))
@@ -209,7 +209,7 @@
 )
 
 (define-model P9
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun allowed_in (match (
     ((_) false)
   )))
@@ -224,7 +224,7 @@
 )
 
 (define-model P10
-  (define-univ node (@uc_node_0 @uc_node_1 @uc_node_2))
+  (interp-sort node (@uc_node_0 @uc_node_1 @uc_node_2))
   (interp-fun allowed_in (match (
     ((_) false)
   )))
@@ -242,7 +242,7 @@
 )
 
 (define-model N4
-  (define-univ node (@uc_node_0 @uc_node_1 @uc_node_2))
+  (interp-sort node (@uc_node_0 @uc_node_1 @uc_node_2))
   (interp-fun allowed_in (match (
     ((_) false)
   )))
@@ -260,7 +260,7 @@
 )
 
 (define-model N5
-  (define-univ node (@uc_node_0 @uc_node_1 @uc_node_2))
+  (interp-sort node (@uc_node_0 @uc_node_1 @uc_node_2))
   (interp-fun allowed_in (match (
     ((_) false)
   )))

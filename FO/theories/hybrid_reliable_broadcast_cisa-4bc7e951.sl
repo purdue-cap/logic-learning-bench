@@ -402,37 +402,37 @@
   ((fol.ctx-x0-quorum_b-x1-quorum_b.var.x0.quorum_b)
    (fol.ctx-x0-quorum_b-x1-quorum_b.var.x1.quorum_b))))
 
-(define-finite FO.Asp (record (model Model)))
+(define-aspects FO.Asp (record (model Model)))
 
-(define-finite FO.Asp.x0.node (record (model Model) (x0 node)))
+(define-aspects FO.Asp.x0.node (record (model Model) (x0 node)))
 
-(define-finite FO.Asp.x0.quorum_a (record (model Model) (x0 quorum_a)))
+(define-aspects FO.Asp.x0.quorum_a (record (model Model) (x0 quorum_a)))
 
-(define-finite FO.Asp.x0.quorum_b (record (model Model) (x0 quorum_b)))
+(define-aspects FO.Asp.x0.quorum_b (record (model Model) (x0 quorum_b)))
 
-(define-finite FO.Asp.x1.node (record (model Model) (x1 node)))
+(define-aspects FO.Asp.x1.node (record (model Model) (x1 node)))
 
-(define-finite FO.Asp.x1.quorum_a (record (model Model) (x1 quorum_a)))
+(define-aspects FO.Asp.x1.quorum_a (record (model Model) (x1 quorum_a)))
 
-(define-finite FO.Asp.x1.quorum_b (record (model Model) (x1 quorum_b)))
+(define-aspects FO.Asp.x1.quorum_b (record (model Model) (x1 quorum_b)))
 
-(define-finite FO.Asp.x0.node.x1.node (record (model Model) (x0 node) (x1 node)))
+(define-aspects FO.Asp.x0.node.x1.node (record (model Model) (x0 node) (x1 node)))
 
-(define-finite FO.Asp.x0.node.x1.quorum_a (record (model Model) (x0 node) (x1 quorum_a)))
+(define-aspects FO.Asp.x0.node.x1.quorum_a (record (model Model) (x0 node) (x1 quorum_a)))
 
-(define-finite FO.Asp.x0.node.x1.quorum_b (record (model Model) (x0 node) (x1 quorum_b)))
+(define-aspects FO.Asp.x0.node.x1.quorum_b (record (model Model) (x0 node) (x1 quorum_b)))
 
-(define-finite FO.Asp.x0.quorum_a.x1.node (record (model Model) (x0 quorum_a) (x1 node)))
+(define-aspects FO.Asp.x0.quorum_a.x1.node (record (model Model) (x0 quorum_a) (x1 node)))
 
-(define-finite FO.Asp.x0.quorum_a.x1.quorum_a (record (model Model) (x0 quorum_a) (x1 quorum_a)))
+(define-aspects FO.Asp.x0.quorum_a.x1.quorum_a (record (model Model) (x0 quorum_a) (x1 quorum_a)))
 
-(define-finite FO.Asp.x0.quorum_a.x1.quorum_b (record (model Model) (x0 quorum_a) (x1 quorum_b)))
+(define-aspects FO.Asp.x0.quorum_a.x1.quorum_b (record (model Model) (x0 quorum_a) (x1 quorum_b)))
 
-(define-finite FO.Asp.x0.quorum_b.x1.node (record (model Model) (x0 quorum_b) (x1 node)))
+(define-aspects FO.Asp.x0.quorum_b.x1.node (record (model Model) (x0 quorum_b) (x1 node)))
 
-(define-finite FO.Asp.x0.quorum_b.x1.quorum_a (record (model Model) (x0 quorum_b) (x1 quorum_a)))
+(define-aspects FO.Asp.x0.quorum_b.x1.quorum_a (record (model Model) (x0 quorum_b) (x1 quorum_a)))
 
-(define-finite FO.Asp.x0.quorum_b.x1.quorum_b (record (model Model) (x0 quorum_b) (x1 quorum_b)))
+(define-aspects FO.Asp.x0.quorum_b.x1.quorum_b (record (model Model) (x0 quorum_b) (x1 quorum_b)))
 
 (define-semantics
   ((Term.x0.node.node.Sem (term Term.x0.node.node) (asp FO.Asp.x0.node)))

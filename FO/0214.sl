@@ -4,7 +4,7 @@
 (require "theories/lockserv-8b9478a9.sl")
 
 (define-model P0
-  (define-univ node (@uc_node_0))
+  (interp-sort node (@uc_node_0))
   (interp-fun grant_msg (match (
     ((_) false)
   )))
@@ -21,7 +21,7 @@
 )
 
 (define-model P1
-  (define-univ node (@uc_node_0))
+  (interp-sort node (@uc_node_0))
   (interp-fun grant_msg (match (
     ((_) false)
   )))
@@ -38,7 +38,7 @@
 )
 
 (define-model N0
-  (define-univ node (@uc_node_0))
+  (interp-sort node (@uc_node_0))
   (interp-fun grant_msg (match (
     ((_) false)
   )))
@@ -56,7 +56,7 @@
 )
 
 (define-model N1
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun grant_msg (match (
     ((_) false)
   )))
@@ -74,7 +74,7 @@
 )
 
 (define-model P2
-  (define-univ node (@uc_node_0))
+  (interp-sort node (@uc_node_0))
   (interp-fun grant_msg (match (
     ((_) false)
   )))

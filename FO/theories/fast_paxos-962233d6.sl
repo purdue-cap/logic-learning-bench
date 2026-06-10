@@ -1294,77 +1294,77 @@
   ((fol.ctx-x0-value-x1-value.var.x0.value)
    (fol.ctx-x0-value-x1-value.var.x1.value))))
 
-(define-finite FO.Asp (record (model Model)))
+(define-aspects FO.Asp (record (model Model)))
 
-(define-finite FO.Asp.x0.node (record (model Model) (x0 node)))
+(define-aspects FO.Asp.x0.node (record (model Model) (x0 node)))
 
-(define-finite FO.Asp.x0.quorum_c (record (model Model) (x0 quorum_c)))
+(define-aspects FO.Asp.x0.quorum_c (record (model Model) (x0 quorum_c)))
 
-(define-finite FO.Asp.x0.quorum_f (record (model Model) (x0 quorum_f)))
+(define-aspects FO.Asp.x0.quorum_f (record (model Model) (x0 quorum_f)))
 
-(define-finite FO.Asp.x0.round (record (model Model) (x0 round)))
+(define-aspects FO.Asp.x0.round (record (model Model) (x0 round)))
 
-(define-finite FO.Asp.x0.value (record (model Model) (x0 value)))
+(define-aspects FO.Asp.x0.value (record (model Model) (x0 value)))
 
-(define-finite FO.Asp.x1.node (record (model Model) (x1 node)))
+(define-aspects FO.Asp.x1.node (record (model Model) (x1 node)))
 
-(define-finite FO.Asp.x1.quorum_c (record (model Model) (x1 quorum_c)))
+(define-aspects FO.Asp.x1.quorum_c (record (model Model) (x1 quorum_c)))
 
-(define-finite FO.Asp.x1.quorum_f (record (model Model) (x1 quorum_f)))
+(define-aspects FO.Asp.x1.quorum_f (record (model Model) (x1 quorum_f)))
 
-(define-finite FO.Asp.x1.round (record (model Model) (x1 round)))
+(define-aspects FO.Asp.x1.round (record (model Model) (x1 round)))
 
-(define-finite FO.Asp.x1.value (record (model Model) (x1 value)))
+(define-aspects FO.Asp.x1.value (record (model Model) (x1 value)))
 
-(define-finite FO.Asp.x0.node.x1.node (record (model Model) (x0 node) (x1 node)))
+(define-aspects FO.Asp.x0.node.x1.node (record (model Model) (x0 node) (x1 node)))
 
-(define-finite FO.Asp.x0.node.x1.quorum_c (record (model Model) (x0 node) (x1 quorum_c)))
+(define-aspects FO.Asp.x0.node.x1.quorum_c (record (model Model) (x0 node) (x1 quorum_c)))
 
-(define-finite FO.Asp.x0.node.x1.quorum_f (record (model Model) (x0 node) (x1 quorum_f)))
+(define-aspects FO.Asp.x0.node.x1.quorum_f (record (model Model) (x0 node) (x1 quorum_f)))
 
-(define-finite FO.Asp.x0.node.x1.round (record (model Model) (x0 node) (x1 round)))
+(define-aspects FO.Asp.x0.node.x1.round (record (model Model) (x0 node) (x1 round)))
 
-(define-finite FO.Asp.x0.node.x1.value (record (model Model) (x0 node) (x1 value)))
+(define-aspects FO.Asp.x0.node.x1.value (record (model Model) (x0 node) (x1 value)))
 
-(define-finite FO.Asp.x0.quorum_c.x1.node (record (model Model) (x0 quorum_c) (x1 node)))
+(define-aspects FO.Asp.x0.quorum_c.x1.node (record (model Model) (x0 quorum_c) (x1 node)))
 
-(define-finite FO.Asp.x0.quorum_c.x1.quorum_c (record (model Model) (x0 quorum_c) (x1 quorum_c)))
+(define-aspects FO.Asp.x0.quorum_c.x1.quorum_c (record (model Model) (x0 quorum_c) (x1 quorum_c)))
 
-(define-finite FO.Asp.x0.quorum_c.x1.quorum_f (record (model Model) (x0 quorum_c) (x1 quorum_f)))
+(define-aspects FO.Asp.x0.quorum_c.x1.quorum_f (record (model Model) (x0 quorum_c) (x1 quorum_f)))
 
-(define-finite FO.Asp.x0.quorum_c.x1.round (record (model Model) (x0 quorum_c) (x1 round)))
+(define-aspects FO.Asp.x0.quorum_c.x1.round (record (model Model) (x0 quorum_c) (x1 round)))
 
-(define-finite FO.Asp.x0.quorum_c.x1.value (record (model Model) (x0 quorum_c) (x1 value)))
+(define-aspects FO.Asp.x0.quorum_c.x1.value (record (model Model) (x0 quorum_c) (x1 value)))
 
-(define-finite FO.Asp.x0.quorum_f.x1.node (record (model Model) (x0 quorum_f) (x1 node)))
+(define-aspects FO.Asp.x0.quorum_f.x1.node (record (model Model) (x0 quorum_f) (x1 node)))
 
-(define-finite FO.Asp.x0.quorum_f.x1.quorum_c (record (model Model) (x0 quorum_f) (x1 quorum_c)))
+(define-aspects FO.Asp.x0.quorum_f.x1.quorum_c (record (model Model) (x0 quorum_f) (x1 quorum_c)))
 
-(define-finite FO.Asp.x0.quorum_f.x1.quorum_f (record (model Model) (x0 quorum_f) (x1 quorum_f)))
+(define-aspects FO.Asp.x0.quorum_f.x1.quorum_f (record (model Model) (x0 quorum_f) (x1 quorum_f)))
 
-(define-finite FO.Asp.x0.quorum_f.x1.round (record (model Model) (x0 quorum_f) (x1 round)))
+(define-aspects FO.Asp.x0.quorum_f.x1.round (record (model Model) (x0 quorum_f) (x1 round)))
 
-(define-finite FO.Asp.x0.quorum_f.x1.value (record (model Model) (x0 quorum_f) (x1 value)))
+(define-aspects FO.Asp.x0.quorum_f.x1.value (record (model Model) (x0 quorum_f) (x1 value)))
 
-(define-finite FO.Asp.x0.round.x1.node (record (model Model) (x0 round) (x1 node)))
+(define-aspects FO.Asp.x0.round.x1.node (record (model Model) (x0 round) (x1 node)))
 
-(define-finite FO.Asp.x0.round.x1.quorum_c (record (model Model) (x0 round) (x1 quorum_c)))
+(define-aspects FO.Asp.x0.round.x1.quorum_c (record (model Model) (x0 round) (x1 quorum_c)))
 
-(define-finite FO.Asp.x0.round.x1.quorum_f (record (model Model) (x0 round) (x1 quorum_f)))
+(define-aspects FO.Asp.x0.round.x1.quorum_f (record (model Model) (x0 round) (x1 quorum_f)))
 
-(define-finite FO.Asp.x0.round.x1.round (record (model Model) (x0 round) (x1 round)))
+(define-aspects FO.Asp.x0.round.x1.round (record (model Model) (x0 round) (x1 round)))
 
-(define-finite FO.Asp.x0.round.x1.value (record (model Model) (x0 round) (x1 value)))
+(define-aspects FO.Asp.x0.round.x1.value (record (model Model) (x0 round) (x1 value)))
 
-(define-finite FO.Asp.x0.value.x1.node (record (model Model) (x0 value) (x1 node)))
+(define-aspects FO.Asp.x0.value.x1.node (record (model Model) (x0 value) (x1 node)))
 
-(define-finite FO.Asp.x0.value.x1.quorum_c (record (model Model) (x0 value) (x1 quorum_c)))
+(define-aspects FO.Asp.x0.value.x1.quorum_c (record (model Model) (x0 value) (x1 quorum_c)))
 
-(define-finite FO.Asp.x0.value.x1.quorum_f (record (model Model) (x0 value) (x1 quorum_f)))
+(define-aspects FO.Asp.x0.value.x1.quorum_f (record (model Model) (x0 value) (x1 quorum_f)))
 
-(define-finite FO.Asp.x0.value.x1.round (record (model Model) (x0 value) (x1 round)))
+(define-aspects FO.Asp.x0.value.x1.round (record (model Model) (x0 value) (x1 round)))
 
-(define-finite FO.Asp.x0.value.x1.value (record (model Model) (x0 value) (x1 value)))
+(define-aspects FO.Asp.x0.value.x1.value (record (model Model) (x0 value) (x1 value)))
 
 (define-semantics
   ((Term.0.round.Sem (term Term.0.round) (asp FO.Asp)))

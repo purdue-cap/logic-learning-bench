@@ -336,37 +336,37 @@
   ((fol.ctx-x0-response-x1-response.var.x0.response)
    (fol.ctx-x0-response-x1-response.var.x1.response))))
 
-(define-finite FO.Asp (record (model Model)))
+(define-aspects FO.Asp (record (model Model)))
 
-(define-finite FO.Asp.x0.node (record (model Model) (x0 node)))
+(define-aspects FO.Asp.x0.node (record (model Model) (x0 node)))
 
-(define-finite FO.Asp.x0.request (record (model Model) (x0 request)))
+(define-aspects FO.Asp.x0.request (record (model Model) (x0 request)))
 
-(define-finite FO.Asp.x0.response (record (model Model) (x0 response)))
+(define-aspects FO.Asp.x0.response (record (model Model) (x0 response)))
 
-(define-finite FO.Asp.x1.node (record (model Model) (x1 node)))
+(define-aspects FO.Asp.x1.node (record (model Model) (x1 node)))
 
-(define-finite FO.Asp.x1.request (record (model Model) (x1 request)))
+(define-aspects FO.Asp.x1.request (record (model Model) (x1 request)))
 
-(define-finite FO.Asp.x1.response (record (model Model) (x1 response)))
+(define-aspects FO.Asp.x1.response (record (model Model) (x1 response)))
 
-(define-finite FO.Asp.x0.node.x1.node (record (model Model) (x0 node) (x1 node)))
+(define-aspects FO.Asp.x0.node.x1.node (record (model Model) (x0 node) (x1 node)))
 
-(define-finite FO.Asp.x0.node.x1.request (record (model Model) (x0 node) (x1 request)))
+(define-aspects FO.Asp.x0.node.x1.request (record (model Model) (x0 node) (x1 request)))
 
-(define-finite FO.Asp.x0.node.x1.response (record (model Model) (x0 node) (x1 response)))
+(define-aspects FO.Asp.x0.node.x1.response (record (model Model) (x0 node) (x1 response)))
 
-(define-finite FO.Asp.x0.request.x1.node (record (model Model) (x0 request) (x1 node)))
+(define-aspects FO.Asp.x0.request.x1.node (record (model Model) (x0 request) (x1 node)))
 
-(define-finite FO.Asp.x0.request.x1.request (record (model Model) (x0 request) (x1 request)))
+(define-aspects FO.Asp.x0.request.x1.request (record (model Model) (x0 request) (x1 request)))
 
-(define-finite FO.Asp.x0.request.x1.response (record (model Model) (x0 request) (x1 response)))
+(define-aspects FO.Asp.x0.request.x1.response (record (model Model) (x0 request) (x1 response)))
 
-(define-finite FO.Asp.x0.response.x1.node (record (model Model) (x0 response) (x1 node)))
+(define-aspects FO.Asp.x0.response.x1.node (record (model Model) (x0 response) (x1 node)))
 
-(define-finite FO.Asp.x0.response.x1.request (record (model Model) (x0 response) (x1 request)))
+(define-aspects FO.Asp.x0.response.x1.request (record (model Model) (x0 response) (x1 request)))
 
-(define-finite FO.Asp.x0.response.x1.response (record (model Model) (x0 response) (x1 response)))
+(define-aspects FO.Asp.x0.response.x1.response (record (model Model) (x0 response) (x1 response)))
 
 (define-semantics
   ((Term.x0.node.node.Sem (term Term.x0.node.node) (asp FO.Asp.x0.node)))

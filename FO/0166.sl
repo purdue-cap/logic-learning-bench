@@ -4,9 +4,9 @@
 (require "theories/client_server_ae-fc20465a.sl")
 
 (define-model P0
-  (define-univ node (@uc_node_0))
-  (define-univ request (@uc_request_0))
-  (define-univ response (@uc_response_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort request (@uc_request_0))
+  (interp-sort response (@uc_response_0))
   (interp-fun match (match (
     ((@uc_request_0 @uc_response_0) true)
     ((_ _) false)
@@ -24,9 +24,9 @@
 )
 
 (define-model N0
-  (define-univ node (@uc_node_0))
-  (define-univ request (@uc_request_0))
-  (define-univ response (@uc_response_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort request (@uc_request_0))
+  (interp-sort response (@uc_response_0))
   (interp-fun match (match (
     ((@uc_request_0 @uc_response_0) true)
     ((_ _) false)
@@ -44,9 +44,9 @@
 )
 
 (define-model N1
-  (define-univ node (@uc_node_0))
-  (define-univ request (@uc_request_0))
-  (define-univ response (@uc_response_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort request (@uc_request_0))
+  (interp-sort response (@uc_response_0))
   (interp-fun match (match (
     ((_ _) false)
   )))
@@ -64,9 +64,9 @@
 )
 
 (define-model N2
-  (define-univ node (@uc_node_0 @uc_node_1))
-  (define-univ request (@uc_request_0))
-  (define-univ response (@uc_response_0))
+  (interp-sort node (@uc_node_0 @uc_node_1))
+  (interp-sort request (@uc_request_0))
+  (interp-sort response (@uc_response_0))
   (interp-fun match (match (
     ((@uc_request_0 @uc_response_0) true)
     ((_ _) false)
@@ -85,9 +85,9 @@
 )
 
 (define-model N3
-  (define-univ node (@uc_node_0))
-  (define-univ request (@uc_request_0))
-  (define-univ response (@uc_response_0 @uc_response_1))
+  (interp-sort node (@uc_node_0))
+  (interp-sort request (@uc_request_0))
+  (interp-sort response (@uc_response_0 @uc_response_1))
   (interp-fun match (match (
     ((@uc_request_0 @uc_response_0) true)
     ((@uc_request_0 @uc_response_1) true)
@@ -106,9 +106,9 @@
 )
 
 (define-model P1
-  (define-univ node (@uc_node_0))
-  (define-univ request (@uc_request_0))
-  (define-univ response (@uc_response_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort request (@uc_request_0))
+  (interp-sort response (@uc_response_0))
   (interp-fun match (match (
     ((@uc_request_0 @uc_response_0) true)
     ((_ _) false)

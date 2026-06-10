@@ -4,10 +4,10 @@
 (require "theories/client_server_db_ae-1a980ae7.sl")
 
 (define-model P0
-  (define-univ db_request_id (@uc_db_request_id_0))
-  (define-univ node (@uc_node_0))
-  (define-univ request (@uc_request_0))
-  (define-univ response (@uc_response_0))
+  (interp-sort db_request_id (@uc_db_request_id_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort request (@uc_request_0))
+  (interp-sort response (@uc_response_0))
   (interp-fun db_request_sent (match (
     ((_ _) false)
   )))
@@ -33,10 +33,10 @@
 )
 
 (define-model N0
-  (define-univ db_request_id (@uc_db_request_id_0))
-  (define-univ node (@uc_node_0 @uc_node_1))
-  (define-univ request (@uc_request_0))
-  (define-univ response (@uc_response_0))
+  (interp-sort db_request_id (@uc_db_request_id_0))
+  (interp-sort node (@uc_node_0 @uc_node_1))
+  (interp-sort request (@uc_request_0))
+  (interp-sort response (@uc_response_0))
   (interp-fun db_request_sent (match (
     ((_ _) false)
   )))
@@ -63,10 +63,10 @@
 )
 
 (define-model P1
-  (define-univ db_request_id (@uc_db_request_id_0))
-  (define-univ node (@uc_node_0 @uc_node_1))
-  (define-univ request (@uc_request_0))
-  (define-univ response (@uc_response_0))
+  (interp-sort db_request_id (@uc_db_request_id_0))
+  (interp-sort node (@uc_node_0 @uc_node_1))
+  (interp-sort request (@uc_request_0))
+  (interp-sort response (@uc_response_0))
   (interp-fun db_request_sent (match (
     ((_ _) false)
   )))

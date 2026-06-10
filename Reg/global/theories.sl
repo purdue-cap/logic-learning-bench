@@ -27,7 +27,7 @@
 (declare-axiom (= (re.union (re.opt x) (re.* x)) (re.* x)))
 (declare-axiom (= (re.union (re.* x) (re.opt x)) (re.* x)))
 
-(define-finite RegLan.Asp
+(define-aspects RegLan.Asp
   (record (model Model) (i Int) (j Int))
   :where (and (<= 0 i) (<= i j) (<= j (size (Pos model)))))
 

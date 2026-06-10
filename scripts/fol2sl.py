@@ -280,7 +280,7 @@ def generate_theory(sig: Sig, sig_req: str) -> str:
 
     for ctx in ctxs:
         fields = ["(model Model)"] + [f"({var} {sort})" for var, sort in ctx.bindings]
-        lines.append(f"(define-finite {ctx.aspect} (record {' '.join(fields)}))")
+        lines.append(f"(define-aspects {ctx.aspect} (record {' '.join(fields)}))")
         lines.append("")
 
     for ctx in ctxs:
@@ -481,7 +481,7 @@ def model_to_sl(model: Model, sig: Sig) -> str:
     lines = [f"(define-model {model.name}"]
     for sort in sig.sorts:
         elems = " ".join(model.univs.get(sort, []))
-        lines.append(f"  (define-univ {sort} ({elems}))")
+        lines.append(f"  (interp-sort {sort} ({elems}))")
     for const, sort in sig.constants.items():
         lines.append(f"  (interp-fun {const} ({model.const_vals.get(const, default_value(model, sort))}))")
     for fun, (arg_sorts, ret_sort) in sig.functions.items():

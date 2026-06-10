@@ -8,7 +8,7 @@
 
 ; P is exactly the 6-node chain s -> a -> b -> c -> d -> t.
 (define-model P
-  (define-univ U ($0 $1 $2 $3 $4 $5))
+  (interp-sort U ($0 $1 $2 $3 $4 $5))
   (interp-fun s ($0))
   (interp-fun t ($1))
   (interp-fun E (match (
@@ -25,7 +25,7 @@
 ; This matches the shape the user proposed as
 ;   s -> _ -> _   _ -> _ -> t
 (define-model N
-  (define-univ U ($0 $1 $2 $3 $4 $5))
+  (interp-sort U ($0 $1 $2 $3 $4 $5))
   (interp-fun s ($0))
   (interp-fun t ($1))
   (interp-fun E (match (

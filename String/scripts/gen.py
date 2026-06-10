@@ -212,22 +212,22 @@ def emit(n_args, constants, constraints, source_tag=None):
     max_int = max(max_int, max((m['out_size'] for m in models), default=0))
     max_int = max(max_int, 1)
 
-    out.append("(define-finite Str.AspIn")
+    out.append("(define-aspects Str.AspIn")
     out.append("  (record (model Model) (lo Int) (hi Int))")
     out.append("  :where (and (<= 0 lo) (<= lo hi) (<= hi (- (size (PosIn model)) 1))))")
     out.append("")
-    out.append("(define-finite Str.AspOut")
+    out.append("(define-aspects Str.AspOut")
     out.append("  (record (model Model) (lo Int) (hi Int))")
     out.append("  :where (and (<= 0 lo) (<= lo hi) (<= hi (- (size (PosOut model)) 1))))")
     out.append("")
     # Int.Asp val is bounded per-model by max(in_size, out_size).
-    out.append(f"(define-finite Int.Asp")
+    out.append(f"(define-aspects Int.Asp")
     out.append(f"  (record (model Model) (val Int))")
     out.append(f"  :where (and (<= 0 val)")
     out.append(f"              (or (<= val (- (size (PosIn  model)) 1))")
     out.append(f"                  (<= val (- (size (PosOut model)) 1)))))")
     out.append("")
-    out.append("(define-finite Bool.Asp (record (model Model)))")
+    out.append("(define-aspects Bool.Asp (record (model Model)))")
     out.append("")
 
     # SIDES = (tag, AspName, RelName, char_fn, size_expr)
@@ -500,9 +500,9 @@ def emit_model(m, constants):
     placeholder_char = char_univ_name(char_set[0])
 
     lines.append(f"(define-model {name}")
-    lines.append(f"  (define-univ PosIn  ({pos_in_elems}))")
-    lines.append(f"  (define-univ PosOut ({pos_out_elems}))")
-    lines.append(f"  (define-univ Char   ({char_elems}))")
+    lines.append(f"  (interp-sort PosIn  ({pos_in_elems}))")
+    lines.append(f"  (interp-sort PosOut ({pos_out_elems}))")
+    lines.append(f"  (interp-sort Char   ({char_elems}))")
 
     in_clauses = [f"(({pos_elem(i)}) {char_univ_name(in_text[i])})"
                   for i in range(in_size)]

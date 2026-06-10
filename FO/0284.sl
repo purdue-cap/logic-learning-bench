@@ -4,9 +4,9 @@
 (require "theories/sharded_kv_no_lost_keys-835f8b45.sl")
 
 (define-model P0
-  (define-univ key (@uc_key_0))
-  (define-univ node (@uc_node_0))
-  (define-univ value (@uc_value_0))
+  (interp-sort key (@uc_key_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort value (@uc_value_0))
   (interp-fun owner (match (
     ((@uc_node_0 @uc_key_0) true)
     ((_ _) false)
@@ -21,9 +21,9 @@
 )
 
 (define-model N0
-  (define-univ key (@uc_key_0))
-  (define-univ node (@uc_node_0))
-  (define-univ value (@uc_value_0))
+  (interp-sort key (@uc_key_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort value (@uc_value_0))
   (interp-fun owner (match (
     ((_ _) false)
   )))
@@ -36,9 +36,9 @@
 )
 
 (define-model P1
-  (define-univ key (@uc_key_0))
-  (define-univ node (@uc_node_0))
-  (define-univ value (@uc_value_0))
+  (interp-sort key (@uc_key_0))
+  (interp-sort node (@uc_node_0))
+  (interp-sort value (@uc_value_0))
   (interp-fun owner (match (
     ((_ _) false)
   )))

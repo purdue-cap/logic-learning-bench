@@ -4,7 +4,7 @@
 (require "theories/learning_switch-8126de3d.sl")
 
 (define-model P0
-  (define-univ node (@uc_node_0))
+  (interp-sort node (@uc_node_0))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((_ _ _ _) false)
@@ -16,7 +16,7 @@
 )
 
 (define-model N0
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_1) true)
@@ -42,7 +42,7 @@
 )
 
 (define-model N1
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_1) true)
@@ -69,7 +69,7 @@
 )
 
 (define-model N2
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_1) true)
@@ -102,7 +102,7 @@
 )
 
 (define-model P1
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_1) true)
@@ -136,7 +136,7 @@
 )
 
 (define-model P2
-  (define-univ node (@uc_node_0))
+  (interp-sort node (@uc_node_0))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((_ _ _ _) false)
@@ -147,7 +147,7 @@
 )
 
 (define-model P3
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_1) true)
@@ -176,7 +176,7 @@
 )
 
 (define-model N3
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_1) true)
@@ -208,7 +208,7 @@
 )
 
 (define-model N4
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_1) true)
@@ -240,7 +240,7 @@
 )
 
 (define-model N5
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_1) true)
@@ -272,7 +272,7 @@
 )
 
 (define-model N6
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_1) true)
@@ -304,7 +304,7 @@
 )
 
 (define-model N7
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_1 @uc_node_0) true)
     ((_ _ _ _) false)
@@ -322,7 +322,7 @@
 )
 
 (define-model N8
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_1) true)
@@ -353,7 +353,7 @@
 )
 
 (define-model N9
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_1) true)
@@ -384,7 +384,7 @@
 )
 
 (define-model N10
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_1) true)
@@ -415,7 +415,7 @@
 )
 
 (define-model N11
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_1) true)
@@ -446,7 +446,7 @@
 )
 
 (define-model N12
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_1 @uc_node_1 @uc_node_0 @uc_node_1) true)
@@ -460,7 +460,7 @@
 )
 
 (define-model N13
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_1 @uc_node_0 @uc_node_1) true)
@@ -476,7 +476,7 @@
 )
 
 (define-model N14
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_1 @uc_node_0 @uc_node_0) true)
@@ -492,7 +492,7 @@
 )
 
 (define-model N15
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_1) true)
@@ -508,7 +508,7 @@
 )
 
 (define-model N16
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_1) true)
@@ -538,7 +538,7 @@
 )
 
 (define-model N17
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_1) true)
     ((@uc_node_0 @uc_node_0 @uc_node_1 @uc_node_1) true)
@@ -567,7 +567,7 @@
 )
 
 (define-model N18
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_1 @uc_node_1 @uc_node_0) true)
@@ -583,7 +583,7 @@
 )
 
 (define-model N19
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_1) true)
@@ -614,7 +614,7 @@
 )
 
 (define-model N20
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_1) true)
@@ -644,7 +644,7 @@
 )
 
 (define-model N21
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_0 @uc_node_1 @uc_node_0) true)
@@ -659,7 +659,7 @@
 )
 
 (define-model N22
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_1 @uc_node_1 @uc_node_0) true)
@@ -676,7 +676,7 @@
 )
 
 (define-model N23
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_0 @uc_node_1 @uc_node_1) true)
@@ -692,7 +692,7 @@
 )
 
 (define-model N24
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_0 @uc_node_1 @uc_node_0) true)
@@ -707,7 +707,7 @@
 )
 
 (define-model N25
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_1) true)
@@ -725,7 +725,7 @@
 )
 
 (define-model N26
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_0 @uc_node_1 @uc_node_0) true)
@@ -740,7 +740,7 @@
 )
 
 (define-model N27
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_1) true)
@@ -758,7 +758,7 @@
 )
 
 (define-model N28
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_1 @uc_node_0 @uc_node_0) true)
@@ -776,7 +776,7 @@
 )
 
 (define-model N29
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_1) true)
@@ -806,7 +806,7 @@
 )
 
 (define-model N30
-  (define-univ node (@uc_node_0 @uc_node_1 @uc_node_2))
+  (interp-sort node (@uc_node_0 @uc_node_1 @uc_node_2))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_1) true)
@@ -918,7 +918,7 @@
 )
 
 (define-model N31
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_0 @uc_node_1 @uc_node_1) true)
@@ -936,7 +936,7 @@
 )
 
 (define-model N32
-  (define-univ node (@uc_node_0 @uc_node_1))
+  (interp-sort node (@uc_node_0 @uc_node_1))
   (interp-fun pending (match (
     ((@uc_node_0 @uc_node_0 @uc_node_0 @uc_node_0) true)
     ((@uc_node_0 @uc_node_0 @uc_node_1 @uc_node_0) true)

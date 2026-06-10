@@ -141,7 +141,7 @@ def build_model_block(name, string):
     one_arms  = " ".join(f"(($ {i}) {bit(c, '1')})".replace("$ ", "$") for i, c in enumerate(string))
     return (
         f"(define-model {name}\n"
-        f"  (define-univ Pos {univ})\n"
+        f"  (interp-sort Pos {univ})\n"
         f"  (interp-fun zero (match ({zero_arms})))\n"
         f"  (interp-fun one (match ({one_arms}))))"
     )

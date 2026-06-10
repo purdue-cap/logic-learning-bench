@@ -1031,37 +1031,37 @@
    (fol.ctx-x0-tlb.processor-x1-tlb.processor.term.tlb.tp1.sk0)
    (fol.ctx-x0-tlb.processor-x1-tlb.processor.term.tlb.tp1.sk1))))
 
-(define-finite FO.Asp (record (model Model)))
+(define-aspects FO.Asp (record (model Model)))
 
-(define-finite FO.Asp.x0.tlb.pageentry (record (model Model) (x0 tlb.pageentry)))
+(define-aspects FO.Asp.x0.tlb.pageentry (record (model Model) (x0 tlb.pageentry)))
 
-(define-finite FO.Asp.x0.tlb.pmap (record (model Model) (x0 tlb.pmap)))
+(define-aspects FO.Asp.x0.tlb.pmap (record (model Model) (x0 tlb.pmap)))
 
-(define-finite FO.Asp.x0.tlb.processor (record (model Model) (x0 tlb.processor)))
+(define-aspects FO.Asp.x0.tlb.processor (record (model Model) (x0 tlb.processor)))
 
-(define-finite FO.Asp.x1.tlb.pageentry (record (model Model) (x1 tlb.pageentry)))
+(define-aspects FO.Asp.x1.tlb.pageentry (record (model Model) (x1 tlb.pageentry)))
 
-(define-finite FO.Asp.x1.tlb.pmap (record (model Model) (x1 tlb.pmap)))
+(define-aspects FO.Asp.x1.tlb.pmap (record (model Model) (x1 tlb.pmap)))
 
-(define-finite FO.Asp.x1.tlb.processor (record (model Model) (x1 tlb.processor)))
+(define-aspects FO.Asp.x1.tlb.processor (record (model Model) (x1 tlb.processor)))
 
-(define-finite FO.Asp.x0.tlb.pageentry.x1.tlb.pageentry (record (model Model) (x0 tlb.pageentry) (x1 tlb.pageentry)))
+(define-aspects FO.Asp.x0.tlb.pageentry.x1.tlb.pageentry (record (model Model) (x0 tlb.pageentry) (x1 tlb.pageentry)))
 
-(define-finite FO.Asp.x0.tlb.pageentry.x1.tlb.pmap (record (model Model) (x0 tlb.pageentry) (x1 tlb.pmap)))
+(define-aspects FO.Asp.x0.tlb.pageentry.x1.tlb.pmap (record (model Model) (x0 tlb.pageentry) (x1 tlb.pmap)))
 
-(define-finite FO.Asp.x0.tlb.pageentry.x1.tlb.processor (record (model Model) (x0 tlb.pageentry) (x1 tlb.processor)))
+(define-aspects FO.Asp.x0.tlb.pageentry.x1.tlb.processor (record (model Model) (x0 tlb.pageentry) (x1 tlb.processor)))
 
-(define-finite FO.Asp.x0.tlb.pmap.x1.tlb.pageentry (record (model Model) (x0 tlb.pmap) (x1 tlb.pageentry)))
+(define-aspects FO.Asp.x0.tlb.pmap.x1.tlb.pageentry (record (model Model) (x0 tlb.pmap) (x1 tlb.pageentry)))
 
-(define-finite FO.Asp.x0.tlb.pmap.x1.tlb.pmap (record (model Model) (x0 tlb.pmap) (x1 tlb.pmap)))
+(define-aspects FO.Asp.x0.tlb.pmap.x1.tlb.pmap (record (model Model) (x0 tlb.pmap) (x1 tlb.pmap)))
 
-(define-finite FO.Asp.x0.tlb.pmap.x1.tlb.processor (record (model Model) (x0 tlb.pmap) (x1 tlb.processor)))
+(define-aspects FO.Asp.x0.tlb.pmap.x1.tlb.processor (record (model Model) (x0 tlb.pmap) (x1 tlb.processor)))
 
-(define-finite FO.Asp.x0.tlb.processor.x1.tlb.pageentry (record (model Model) (x0 tlb.processor) (x1 tlb.pageentry)))
+(define-aspects FO.Asp.x0.tlb.processor.x1.tlb.pageentry (record (model Model) (x0 tlb.processor) (x1 tlb.pageentry)))
 
-(define-finite FO.Asp.x0.tlb.processor.x1.tlb.pmap (record (model Model) (x0 tlb.processor) (x1 tlb.pmap)))
+(define-aspects FO.Asp.x0.tlb.processor.x1.tlb.pmap (record (model Model) (x0 tlb.processor) (x1 tlb.pmap)))
 
-(define-finite FO.Asp.x0.tlb.processor.x1.tlb.processor (record (model Model) (x0 tlb.processor) (x1 tlb.processor)))
+(define-aspects FO.Asp.x0.tlb.processor.x1.tlb.processor (record (model Model) (x0 tlb.processor) (x1 tlb.processor)))
 
 (define-semantics
   ((Term.0.tlb.pageentry.Sem (term Term.0.tlb.pageentry) (asp FO.Asp)))

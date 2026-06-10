@@ -41,8 +41,8 @@
 (declare-fun minus.idx (Idx Idx) Idx)
 (declare-fun lt.idx    (Idx Idx) Bool)
 
-(define-finite ExAsp   (record (model Model)))
-(define-finite CharAsp (record (model Model) (k Idx)))
+(define-aspects ExAsp   (record (model Model)))
+(define-aspects CharAsp (record (model Model) (k Idx)))
 
 (define-semantics
   ((IndexOfFirst (e Str) (asp ExAsp)))
@@ -117,8 +117,8 @@
 
 
 (define-model m0
-  (define-univ Idx ($0 $1 $2 $3 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9 c.F c.o))
+  (interp-sort Idx ($0 $1 $2 $3 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9 c.F c.o))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -146,8 +146,8 @@
 )
 
 (define-model m1
-  (define-univ Idx ($0 $1 $2 $3 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9 c.A))
+  (interp-sort Idx ($0 $1 $2 $3 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9 c.A))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -175,8 +175,8 @@
 )
 
 (define-model m2
-  (define-univ Idx ($0 $1 $2 $3 $bot))
-  (define-univ Chr (c.pad c.x2F c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9 c.A c.N))
+  (interp-sort Idx ($0 $1 $2 $3 $bot))
+  (interp-sort Chr (c.pad c.x2F c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9 c.A c.N))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -204,8 +204,8 @@
 )
 
 (define-model m3
-  (define-univ Idx ($0 $1 $2 $3 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9 c.Z))
+  (interp-sort Idx ($0 $1 $2 $3 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9 c.Z))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))
@@ -233,8 +233,8 @@
 )
 
 (define-model m4
-  (define-univ Idx ($0 $1 $2 $3 $bot))
-  (define-univ Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9 c.B c.a c.z))
+  (interp-sort Idx ($0 $1 $2 $3 $bot))
+  (interp-sort Chr (c.pad c.0 c.1 c.2 c.3 c.4 c.5 c.6 c.7 c.8 c.9 c.B c.a c.z))
   (interp-fun idx.0 ($0))
   (interp-fun idx.1 ($1))
   (interp-fun idx.2 ($2))

@@ -6671,167 +6671,167 @@
    (fol.ctx-x0-value-x1-value.term.commit_value)
    (fol.ctx-x0-value-x1-value.term.value_at Term.x0.value.x1.value.log Term.x0.value.x1.value.index))))
 
-(define-finite FO.Asp (record (model Model)))
+(define-aspects FO.Asp (record (model Model)))
 
-(define-finite FO.Asp.x0.index (record (model Model) (x0 index)))
+(define-aspects FO.Asp.x0.index (record (model Model) (x0 index)))
 
-(define-finite FO.Asp.x0.log (record (model Model) (x0 log)))
+(define-aspects FO.Asp.x0.log (record (model Model) (x0 log)))
 
-(define-finite FO.Asp.x0.node (record (model Model) (x0 node)))
+(define-aspects FO.Asp.x0.node (record (model Model) (x0 node)))
 
-(define-finite FO.Asp.x0.option_index (record (model Model) (x0 option_index)))
+(define-aspects FO.Asp.x0.option_index (record (model Model) (x0 option_index)))
 
-(define-finite FO.Asp.x0.option_term (record (model Model) (x0 option_term)))
+(define-aspects FO.Asp.x0.option_term (record (model Model) (x0 option_term)))
 
-(define-finite FO.Asp.x0.quorum (record (model Model) (x0 quorum)))
+(define-aspects FO.Asp.x0.quorum (record (model Model) (x0 quorum)))
 
-(define-finite FO.Asp.x0.term (record (model Model) (x0 term)))
+(define-aspects FO.Asp.x0.term (record (model Model) (x0 term)))
 
-(define-finite FO.Asp.x0.value (record (model Model) (x0 value)))
+(define-aspects FO.Asp.x0.value (record (model Model) (x0 value)))
 
-(define-finite FO.Asp.x1.index (record (model Model) (x1 index)))
+(define-aspects FO.Asp.x1.index (record (model Model) (x1 index)))
 
-(define-finite FO.Asp.x1.log (record (model Model) (x1 log)))
+(define-aspects FO.Asp.x1.log (record (model Model) (x1 log)))
 
-(define-finite FO.Asp.x1.node (record (model Model) (x1 node)))
+(define-aspects FO.Asp.x1.node (record (model Model) (x1 node)))
 
-(define-finite FO.Asp.x1.option_index (record (model Model) (x1 option_index)))
+(define-aspects FO.Asp.x1.option_index (record (model Model) (x1 option_index)))
 
-(define-finite FO.Asp.x1.option_term (record (model Model) (x1 option_term)))
+(define-aspects FO.Asp.x1.option_term (record (model Model) (x1 option_term)))
 
-(define-finite FO.Asp.x1.quorum (record (model Model) (x1 quorum)))
+(define-aspects FO.Asp.x1.quorum (record (model Model) (x1 quorum)))
 
-(define-finite FO.Asp.x1.term (record (model Model) (x1 term)))
+(define-aspects FO.Asp.x1.term (record (model Model) (x1 term)))
 
-(define-finite FO.Asp.x1.value (record (model Model) (x1 value)))
+(define-aspects FO.Asp.x1.value (record (model Model) (x1 value)))
 
-(define-finite FO.Asp.x0.index.x1.index (record (model Model) (x0 index) (x1 index)))
+(define-aspects FO.Asp.x0.index.x1.index (record (model Model) (x0 index) (x1 index)))
 
-(define-finite FO.Asp.x0.index.x1.log (record (model Model) (x0 index) (x1 log)))
+(define-aspects FO.Asp.x0.index.x1.log (record (model Model) (x0 index) (x1 log)))
 
-(define-finite FO.Asp.x0.index.x1.node (record (model Model) (x0 index) (x1 node)))
+(define-aspects FO.Asp.x0.index.x1.node (record (model Model) (x0 index) (x1 node)))
 
-(define-finite FO.Asp.x0.index.x1.option_index (record (model Model) (x0 index) (x1 option_index)))
+(define-aspects FO.Asp.x0.index.x1.option_index (record (model Model) (x0 index) (x1 option_index)))
 
-(define-finite FO.Asp.x0.index.x1.option_term (record (model Model) (x0 index) (x1 option_term)))
+(define-aspects FO.Asp.x0.index.x1.option_term (record (model Model) (x0 index) (x1 option_term)))
 
-(define-finite FO.Asp.x0.index.x1.quorum (record (model Model) (x0 index) (x1 quorum)))
+(define-aspects FO.Asp.x0.index.x1.quorum (record (model Model) (x0 index) (x1 quorum)))
 
-(define-finite FO.Asp.x0.index.x1.term (record (model Model) (x0 index) (x1 term)))
+(define-aspects FO.Asp.x0.index.x1.term (record (model Model) (x0 index) (x1 term)))
 
-(define-finite FO.Asp.x0.index.x1.value (record (model Model) (x0 index) (x1 value)))
+(define-aspects FO.Asp.x0.index.x1.value (record (model Model) (x0 index) (x1 value)))
 
-(define-finite FO.Asp.x0.log.x1.index (record (model Model) (x0 log) (x1 index)))
+(define-aspects FO.Asp.x0.log.x1.index (record (model Model) (x0 log) (x1 index)))
 
-(define-finite FO.Asp.x0.log.x1.log (record (model Model) (x0 log) (x1 log)))
+(define-aspects FO.Asp.x0.log.x1.log (record (model Model) (x0 log) (x1 log)))
 
-(define-finite FO.Asp.x0.log.x1.node (record (model Model) (x0 log) (x1 node)))
+(define-aspects FO.Asp.x0.log.x1.node (record (model Model) (x0 log) (x1 node)))
 
-(define-finite FO.Asp.x0.log.x1.option_index (record (model Model) (x0 log) (x1 option_index)))
+(define-aspects FO.Asp.x0.log.x1.option_index (record (model Model) (x0 log) (x1 option_index)))
 
-(define-finite FO.Asp.x0.log.x1.option_term (record (model Model) (x0 log) (x1 option_term)))
+(define-aspects FO.Asp.x0.log.x1.option_term (record (model Model) (x0 log) (x1 option_term)))
 
-(define-finite FO.Asp.x0.log.x1.quorum (record (model Model) (x0 log) (x1 quorum)))
+(define-aspects FO.Asp.x0.log.x1.quorum (record (model Model) (x0 log) (x1 quorum)))
 
-(define-finite FO.Asp.x0.log.x1.term (record (model Model) (x0 log) (x1 term)))
+(define-aspects FO.Asp.x0.log.x1.term (record (model Model) (x0 log) (x1 term)))
 
-(define-finite FO.Asp.x0.log.x1.value (record (model Model) (x0 log) (x1 value)))
+(define-aspects FO.Asp.x0.log.x1.value (record (model Model) (x0 log) (x1 value)))
 
-(define-finite FO.Asp.x0.node.x1.index (record (model Model) (x0 node) (x1 index)))
+(define-aspects FO.Asp.x0.node.x1.index (record (model Model) (x0 node) (x1 index)))
 
-(define-finite FO.Asp.x0.node.x1.log (record (model Model) (x0 node) (x1 log)))
+(define-aspects FO.Asp.x0.node.x1.log (record (model Model) (x0 node) (x1 log)))
 
-(define-finite FO.Asp.x0.node.x1.node (record (model Model) (x0 node) (x1 node)))
+(define-aspects FO.Asp.x0.node.x1.node (record (model Model) (x0 node) (x1 node)))
 
-(define-finite FO.Asp.x0.node.x1.option_index (record (model Model) (x0 node) (x1 option_index)))
+(define-aspects FO.Asp.x0.node.x1.option_index (record (model Model) (x0 node) (x1 option_index)))
 
-(define-finite FO.Asp.x0.node.x1.option_term (record (model Model) (x0 node) (x1 option_term)))
+(define-aspects FO.Asp.x0.node.x1.option_term (record (model Model) (x0 node) (x1 option_term)))
 
-(define-finite FO.Asp.x0.node.x1.quorum (record (model Model) (x0 node) (x1 quorum)))
+(define-aspects FO.Asp.x0.node.x1.quorum (record (model Model) (x0 node) (x1 quorum)))
 
-(define-finite FO.Asp.x0.node.x1.term (record (model Model) (x0 node) (x1 term)))
+(define-aspects FO.Asp.x0.node.x1.term (record (model Model) (x0 node) (x1 term)))
 
-(define-finite FO.Asp.x0.node.x1.value (record (model Model) (x0 node) (x1 value)))
+(define-aspects FO.Asp.x0.node.x1.value (record (model Model) (x0 node) (x1 value)))
 
-(define-finite FO.Asp.x0.option_index.x1.index (record (model Model) (x0 option_index) (x1 index)))
+(define-aspects FO.Asp.x0.option_index.x1.index (record (model Model) (x0 option_index) (x1 index)))
 
-(define-finite FO.Asp.x0.option_index.x1.log (record (model Model) (x0 option_index) (x1 log)))
+(define-aspects FO.Asp.x0.option_index.x1.log (record (model Model) (x0 option_index) (x1 log)))
 
-(define-finite FO.Asp.x0.option_index.x1.node (record (model Model) (x0 option_index) (x1 node)))
+(define-aspects FO.Asp.x0.option_index.x1.node (record (model Model) (x0 option_index) (x1 node)))
 
-(define-finite FO.Asp.x0.option_index.x1.option_index (record (model Model) (x0 option_index) (x1 option_index)))
+(define-aspects FO.Asp.x0.option_index.x1.option_index (record (model Model) (x0 option_index) (x1 option_index)))
 
-(define-finite FO.Asp.x0.option_index.x1.option_term (record (model Model) (x0 option_index) (x1 option_term)))
+(define-aspects FO.Asp.x0.option_index.x1.option_term (record (model Model) (x0 option_index) (x1 option_term)))
 
-(define-finite FO.Asp.x0.option_index.x1.quorum (record (model Model) (x0 option_index) (x1 quorum)))
+(define-aspects FO.Asp.x0.option_index.x1.quorum (record (model Model) (x0 option_index) (x1 quorum)))
 
-(define-finite FO.Asp.x0.option_index.x1.term (record (model Model) (x0 option_index) (x1 term)))
+(define-aspects FO.Asp.x0.option_index.x1.term (record (model Model) (x0 option_index) (x1 term)))
 
-(define-finite FO.Asp.x0.option_index.x1.value (record (model Model) (x0 option_index) (x1 value)))
+(define-aspects FO.Asp.x0.option_index.x1.value (record (model Model) (x0 option_index) (x1 value)))
 
-(define-finite FO.Asp.x0.option_term.x1.index (record (model Model) (x0 option_term) (x1 index)))
+(define-aspects FO.Asp.x0.option_term.x1.index (record (model Model) (x0 option_term) (x1 index)))
 
-(define-finite FO.Asp.x0.option_term.x1.log (record (model Model) (x0 option_term) (x1 log)))
+(define-aspects FO.Asp.x0.option_term.x1.log (record (model Model) (x0 option_term) (x1 log)))
 
-(define-finite FO.Asp.x0.option_term.x1.node (record (model Model) (x0 option_term) (x1 node)))
+(define-aspects FO.Asp.x0.option_term.x1.node (record (model Model) (x0 option_term) (x1 node)))
 
-(define-finite FO.Asp.x0.option_term.x1.option_index (record (model Model) (x0 option_term) (x1 option_index)))
+(define-aspects FO.Asp.x0.option_term.x1.option_index (record (model Model) (x0 option_term) (x1 option_index)))
 
-(define-finite FO.Asp.x0.option_term.x1.option_term (record (model Model) (x0 option_term) (x1 option_term)))
+(define-aspects FO.Asp.x0.option_term.x1.option_term (record (model Model) (x0 option_term) (x1 option_term)))
 
-(define-finite FO.Asp.x0.option_term.x1.quorum (record (model Model) (x0 option_term) (x1 quorum)))
+(define-aspects FO.Asp.x0.option_term.x1.quorum (record (model Model) (x0 option_term) (x1 quorum)))
 
-(define-finite FO.Asp.x0.option_term.x1.term (record (model Model) (x0 option_term) (x1 term)))
+(define-aspects FO.Asp.x0.option_term.x1.term (record (model Model) (x0 option_term) (x1 term)))
 
-(define-finite FO.Asp.x0.option_term.x1.value (record (model Model) (x0 option_term) (x1 value)))
+(define-aspects FO.Asp.x0.option_term.x1.value (record (model Model) (x0 option_term) (x1 value)))
 
-(define-finite FO.Asp.x0.quorum.x1.index (record (model Model) (x0 quorum) (x1 index)))
+(define-aspects FO.Asp.x0.quorum.x1.index (record (model Model) (x0 quorum) (x1 index)))
 
-(define-finite FO.Asp.x0.quorum.x1.log (record (model Model) (x0 quorum) (x1 log)))
+(define-aspects FO.Asp.x0.quorum.x1.log (record (model Model) (x0 quorum) (x1 log)))
 
-(define-finite FO.Asp.x0.quorum.x1.node (record (model Model) (x0 quorum) (x1 node)))
+(define-aspects FO.Asp.x0.quorum.x1.node (record (model Model) (x0 quorum) (x1 node)))
 
-(define-finite FO.Asp.x0.quorum.x1.option_index (record (model Model) (x0 quorum) (x1 option_index)))
+(define-aspects FO.Asp.x0.quorum.x1.option_index (record (model Model) (x0 quorum) (x1 option_index)))
 
-(define-finite FO.Asp.x0.quorum.x1.option_term (record (model Model) (x0 quorum) (x1 option_term)))
+(define-aspects FO.Asp.x0.quorum.x1.option_term (record (model Model) (x0 quorum) (x1 option_term)))
 
-(define-finite FO.Asp.x0.quorum.x1.quorum (record (model Model) (x0 quorum) (x1 quorum)))
+(define-aspects FO.Asp.x0.quorum.x1.quorum (record (model Model) (x0 quorum) (x1 quorum)))
 
-(define-finite FO.Asp.x0.quorum.x1.term (record (model Model) (x0 quorum) (x1 term)))
+(define-aspects FO.Asp.x0.quorum.x1.term (record (model Model) (x0 quorum) (x1 term)))
 
-(define-finite FO.Asp.x0.quorum.x1.value (record (model Model) (x0 quorum) (x1 value)))
+(define-aspects FO.Asp.x0.quorum.x1.value (record (model Model) (x0 quorum) (x1 value)))
 
-(define-finite FO.Asp.x0.term.x1.index (record (model Model) (x0 term) (x1 index)))
+(define-aspects FO.Asp.x0.term.x1.index (record (model Model) (x0 term) (x1 index)))
 
-(define-finite FO.Asp.x0.term.x1.log (record (model Model) (x0 term) (x1 log)))
+(define-aspects FO.Asp.x0.term.x1.log (record (model Model) (x0 term) (x1 log)))
 
-(define-finite FO.Asp.x0.term.x1.node (record (model Model) (x0 term) (x1 node)))
+(define-aspects FO.Asp.x0.term.x1.node (record (model Model) (x0 term) (x1 node)))
 
-(define-finite FO.Asp.x0.term.x1.option_index (record (model Model) (x0 term) (x1 option_index)))
+(define-aspects FO.Asp.x0.term.x1.option_index (record (model Model) (x0 term) (x1 option_index)))
 
-(define-finite FO.Asp.x0.term.x1.option_term (record (model Model) (x0 term) (x1 option_term)))
+(define-aspects FO.Asp.x0.term.x1.option_term (record (model Model) (x0 term) (x1 option_term)))
 
-(define-finite FO.Asp.x0.term.x1.quorum (record (model Model) (x0 term) (x1 quorum)))
+(define-aspects FO.Asp.x0.term.x1.quorum (record (model Model) (x0 term) (x1 quorum)))
 
-(define-finite FO.Asp.x0.term.x1.term (record (model Model) (x0 term) (x1 term)))
+(define-aspects FO.Asp.x0.term.x1.term (record (model Model) (x0 term) (x1 term)))
 
-(define-finite FO.Asp.x0.term.x1.value (record (model Model) (x0 term) (x1 value)))
+(define-aspects FO.Asp.x0.term.x1.value (record (model Model) (x0 term) (x1 value)))
 
-(define-finite FO.Asp.x0.value.x1.index (record (model Model) (x0 value) (x1 index)))
+(define-aspects FO.Asp.x0.value.x1.index (record (model Model) (x0 value) (x1 index)))
 
-(define-finite FO.Asp.x0.value.x1.log (record (model Model) (x0 value) (x1 log)))
+(define-aspects FO.Asp.x0.value.x1.log (record (model Model) (x0 value) (x1 log)))
 
-(define-finite FO.Asp.x0.value.x1.node (record (model Model) (x0 value) (x1 node)))
+(define-aspects FO.Asp.x0.value.x1.node (record (model Model) (x0 value) (x1 node)))
 
-(define-finite FO.Asp.x0.value.x1.option_index (record (model Model) (x0 value) (x1 option_index)))
+(define-aspects FO.Asp.x0.value.x1.option_index (record (model Model) (x0 value) (x1 option_index)))
 
-(define-finite FO.Asp.x0.value.x1.option_term (record (model Model) (x0 value) (x1 option_term)))
+(define-aspects FO.Asp.x0.value.x1.option_term (record (model Model) (x0 value) (x1 option_term)))
 
-(define-finite FO.Asp.x0.value.x1.quorum (record (model Model) (x0 value) (x1 quorum)))
+(define-aspects FO.Asp.x0.value.x1.quorum (record (model Model) (x0 value) (x1 quorum)))
 
-(define-finite FO.Asp.x0.value.x1.term (record (model Model) (x0 value) (x1 term)))
+(define-aspects FO.Asp.x0.value.x1.term (record (model Model) (x0 value) (x1 term)))
 
-(define-finite FO.Asp.x0.value.x1.value (record (model Model) (x0 value) (x1 value)))
+(define-aspects FO.Asp.x0.value.x1.value (record (model Model) (x0 value) (x1 value)))
 
 (define-semantics
   ((Term.0.index.Sem (term Term.0.index) (asp FO.Asp)))
