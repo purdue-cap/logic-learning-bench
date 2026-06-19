@@ -167,6 +167,25 @@
       ))
      ((end) false))))
 
+;; Reset-state up-navigation (Krogmeier-Madhusudan 2023, Fig. 7). In the
+;; reset(z) state every symbol except top(z) navigates up one level — the
+;; paper writes this as the `_` case. Here top(z) is cfg.top.S0 (handled by
+;; the CFG.Sem-on-CFG spec above), so each Rhs/Rules constructor propagates
+;; CFG.Sem to its parent in reset.S0 mode. Listed explicitly per constructor.
+(define-semantics
+  ((CFG.Sem (n Rhs) (asp CFG.Asp)))
+  ((match n
+     ((a)          (and (= (mode asp) reset.S0) (CFG.Sem (parent n) asp)))
+     ((b)          (and (= (mode asp) reset.S0) (CFG.Sem (parent n) asp)))
+     ((cfg.++ x y) (and (= (mode asp) reset.S0) (CFG.Sem (parent n) asp)))
+     ((cfg.rhs.S0) (and (= (mode asp) reset.S0) (CFG.Sem (parent n) asp))))))
+
+(define-semantics
+  ((CFG.Sem (n Rules) (asp CFG.Asp)))
+  ((match n
+     ((cfg.lhs.S0 x y) (and (= (mode asp) reset.S0) (CFG.Sem (parent n) asp)))
+     ((end)            (and (= (mode asp) reset.S0) (CFG.Sem (parent n) asp))))))
+
 (synth-fun g () CFG)
 
 (constraint      (CFG.Sem g (CFG.Asp w_p_ab 0 (size (Pos w_p_ab)) reset.S0)))
