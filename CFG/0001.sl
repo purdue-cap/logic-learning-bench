@@ -5,186 +5,83 @@
 (set-info :source "Sipser (3e) Sec. 2.1, the canonical CFL {a^n b^n} (cf. {0^n 1^n}, grammar S -> aSb | eps)")
 (set-info :description "{ a^n b^n | n >= 1 }")
 
-
-
-(declare-term-types
- ((CFG 0) (Rhs 0) (Rules 0))
- (
-   ((cfg.top.S0 Rhs Rules))
-   ((a) (b) (cfg.++ Rhs Rhs) (cfg.rhs.S0))
-   ((cfg.lhs.S0 Rhs Rules) (end))
- )
-)
-
-(declare-sort Pos 0)
-(declare-fun a (Pos) Bool)
-(declare-fun b (Pos) Bool)
+(require "./global/theory.k1.ab.sl")
 
 (define-model w_p_ab
   (interp-sort Pos ($0 $1))
   (interp-fun a (match ((($0) true) ((_) false))))
   (interp-fun b (match ((($1) true) ((_) false))))
 )
-
 (define-model w_p_aabb
   (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun a (match ((($0) true) (($1) true) ((_) false))))
   (interp-fun b (match ((($2) true) (($3) true) ((_) false))))
 )
-
 (define-model w_p_aaabbb
   (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun a (match ((($0) true) (($1) true) (($2) true) ((_) false))))
   (interp-fun b (match ((($3) true) (($4) true) (($5) true) ((_) false))))
 )
-
 (define-model w_n_a
   (interp-sort Pos ($0))
   (interp-fun a (match ((($0) true) ((_) false))))
   (interp-fun b (match (((_) false))))
 )
-
 (define-model w_n_b
   (interp-sort Pos ($0))
   (interp-fun a (match (((_) false))))
   (interp-fun b (match ((($0) true) ((_) false))))
 )
-
 (define-model w_n_aa
   (interp-sort Pos ($0 $1))
   (interp-fun a (match ((($0) true) (($1) true) ((_) false))))
   (interp-fun b (match (((_) false))))
 )
-
 (define-model w_n_ba
   (interp-sort Pos ($0 $1))
   (interp-fun a (match ((($1) true) ((_) false))))
   (interp-fun b (match ((($0) true) ((_) false))))
 )
-
 (define-model w_n_bb
   (interp-sort Pos ($0 $1))
   (interp-fun a (match (((_) false))))
   (interp-fun b (match ((($0) true) (($1) true) ((_) false))))
 )
-
 (define-model w_n_aaa
   (interp-sort Pos ($0 $1 $2))
   (interp-fun a (match ((($0) true) (($1) true) (($2) true) ((_) false))))
   (interp-fun b (match (((_) false))))
 )
-
 (define-model w_n_aab
   (interp-sort Pos ($0 $1 $2))
   (interp-fun a (match ((($0) true) (($1) true) ((_) false))))
   (interp-fun b (match ((($2) true) ((_) false))))
 )
-
 (define-model w_n_aba
   (interp-sort Pos ($0 $1 $2))
   (interp-fun a (match ((($0) true) (($2) true) ((_) false))))
   (interp-fun b (match ((($1) true) ((_) false))))
 )
-
 (define-model w_n_abb
   (interp-sort Pos ($0 $1 $2))
   (interp-fun a (match ((($0) true) ((_) false))))
   (interp-fun b (match ((($1) true) (($2) true) ((_) false))))
 )
-
 (define-model w_n_baa
   (interp-sort Pos ($0 $1 $2))
   (interp-fun a (match ((($1) true) (($2) true) ((_) false))))
   (interp-fun b (match ((($0) true) ((_) false))))
 )
-
 (define-model w_n_bab
   (interp-sort Pos ($0 $1 $2))
   (interp-fun a (match ((($1) true) ((_) false))))
   (interp-fun b (match ((($0) true) (($2) true) ((_) false))))
 )
-
 (define-model w_n_bba
   (interp-sort Pos ($0 $1 $2))
   (interp-fun a (match ((($2) true) ((_) false))))
   (interp-fun b (match ((($0) true) (($1) true) ((_) false))))
 )
-
-(define-aspects CFG.Asp
-  (record
-    (model Model)
-    (i Int)
-    (j Int)
-    (mode (enum base reset.S0 find.S0)))
-  :where (and (<= 0 i) (<= i j) (<= j (size (Pos model)))))
-
-(define-semantics
-  ((CFG.Sem (n CFG) (asp CFG.Asp)))
-  ((match n
-     ((cfg.top.S0 x y)
-      (or
-          (and (= (mode asp) reset.S0)
-               (or (Rhs.Sem x (CFG.Asp (model asp) (i asp) (j asp) base))
-                   (Rules.Sem y (CFG.Asp (model asp) (i asp) (j asp) find.S0))))
-      )))))
-
-(define-semantics
-  ((Rhs.Sem (n Rhs) (asp CFG.Asp)))
-  ((match n
-     ((a)
-      (or (and (= (mode asp) base)
-               (= (j asp) (+ (i asp) 1))
-               (a (i asp)))
-          (and (or (= (mode asp) reset.S0))
-               (CFG.Sem (parent n) asp))))
-     ((b)
-      (or (and (= (mode asp) base)
-               (= (j asp) (+ (i asp) 1))
-               (b (i asp)))
-          (and (or (= (mode asp) reset.S0))
-               (CFG.Sem (parent n) asp))))
-     ((cfg.++ x y)
-      (or (and (= (mode asp) base)
-               (exists ((k (int-range (i asp) (j asp))))
-                 (and (Rhs.Sem x (CFG.Asp (model asp) (i asp) k base))
-                      (Rhs.Sem y (CFG.Asp (model asp) k (j asp) base)))))
-          (and (or (= (mode asp) reset.S0))
-               (CFG.Sem (parent n) asp))))
-     ((cfg.rhs.S0)
-      (and (= (mode asp) base)
-           (CFG.Sem (parent n) (CFG.Asp (model asp) (i asp) (j asp) reset.S0)))))))
-
-(define-semantics
-  ((Rules.Sem (n Rules) (asp CFG.Asp)))
-  ((match n
-     ((cfg.lhs.S0 x y)
-      (or
-          (and (or (= (mode asp) reset.S0))
-               (CFG.Sem (parent n) asp))
-          (and (= (mode asp) find.S0)
-               (or (Rhs.Sem x (CFG.Asp (model asp) (i asp) (j asp) base))
-                   (Rules.Sem y (CFG.Asp (model asp) (i asp) (j asp) find.S0))))
-      ))
-     ((end) false))))
-
-;; Reset-state up-navigation (Krogmeier-Madhusudan 2023, Fig. 7). In the
-;; reset(z) state every symbol except top(z) navigates up one level — the
-;; paper writes this as the `_` case. Here top(z) is cfg.top.S0 (handled by
-;; the CFG.Sem-on-CFG spec above), so each Rhs/Rules constructor propagates
-;; CFG.Sem to its parent in reset.S0 mode. Listed explicitly per constructor.
-(define-semantics
-  ((CFG.Sem (n Rhs) (asp CFG.Asp)))
-  ((match n
-     ((a)          (and (= (mode asp) reset.S0) (CFG.Sem (parent n) asp)))
-     ((b)          (and (= (mode asp) reset.S0) (CFG.Sem (parent n) asp)))
-     ((cfg.++ x y) (and (= (mode asp) reset.S0) (CFG.Sem (parent n) asp)))
-     ((cfg.rhs.S0) (and (= (mode asp) reset.S0) (CFG.Sem (parent n) asp))))))
-
-(define-semantics
-  ((CFG.Sem (n Rules) (asp CFG.Asp)))
-  ((match n
-     ((cfg.lhs.S0 x y) (and (= (mode asp) reset.S0) (CFG.Sem (parent n) asp)))
-     ((end)            (and (= (mode asp) reset.S0) (CFG.Sem (parent n) asp))))))
 
 (synth-fun g () CFG)
 
