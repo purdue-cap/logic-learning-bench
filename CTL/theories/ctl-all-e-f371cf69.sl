@@ -39,6 +39,15 @@
    (ctl.AU CTL CTL)
   )))
 
+; Canonical Boolean algebraic axioms for pruning.
+(declare-axiom (= (ctl.and x y) (ctl.and y x)))
+(declare-axiom (= (ctl.and (ctl.and x y) z) (ctl.and x (ctl.and y z))))
+(declare-axiom (= (ctl.and x x) x))
+(declare-axiom (= (ctl.or x y) (ctl.or y x)))
+(declare-axiom (= (ctl.or (ctl.or x y) z) (ctl.or x (ctl.or y z))))
+(declare-axiom (= (ctl.or x x) x))
+
+
 (define-aspects CTL.Asp
   (record (model Model) (state U) (depth Ctr)))
 

@@ -12,6 +12,12 @@
  )
 )
 
+; Canonical CFG algebraic axioms for pruning.
+(declare-axiom (= (cfg.++ (cfg.++ x y) z) (cfg.++ x (cfg.++ y z))))
+(declare-axiom (= (cfg.lhs.S0 x (cfg.lhs.S0 y z)) (cfg.lhs.S0 y (cfg.lhs.S0 x z))))
+(declare-axiom (= (cfg.lhs.S0 x (cfg.lhs.S0 x z)) (cfg.lhs.S0 x z)))
+(declare-axiom (= (cfg.lhs.S0 cfg.rhs.S0 z) z))
+
 (declare-sort Pos 0)
 (declare-fun a (Pos) Bool)
 (declare-fun b (Pos) Bool)

@@ -115,6 +115,15 @@
    (modal.box Modal)
    (modal.dia Modal))))
 
+; Canonical Boolean algebraic axioms for pruning.
+(declare-axiom (= (modal.and x y) (modal.and y x)))
+(declare-axiom (= (modal.and (modal.and x y) z) (modal.and x (modal.and y z))))
+(declare-axiom (= (modal.and x x) x))
+(declare-axiom (= (modal.or x y) (modal.or y x)))
+(declare-axiom (= (modal.or (modal.or x y) z) (modal.or x (modal.or y z))))
+(declare-axiom (= (modal.or x x) x))
+
+
 
 (define-aspects ModalAsp
   (record (model Model) (node U))

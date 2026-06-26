@@ -54,6 +54,15 @@ ltl.U)
    (ltl.=> LTL LTL)
    (ltl.U LTL LTL))))
 
+; Canonical Boolean algebraic axioms for pruning.
+(declare-axiom (= (ltl.and x y) (ltl.and y x)))
+(declare-axiom (= (ltl.and (ltl.and x y) z) (ltl.and x (ltl.and y z))))
+(declare-axiom (= (ltl.and x x) x))
+(declare-axiom (= (ltl.or x y) (ltl.or y x)))
+(declare-axiom (= (ltl.or (ltl.or x y) z) (ltl.or x (ltl.or y z))))
+(declare-axiom (= (ltl.or x x) x))
+
+
 (define-aspects LTL.Asp
   (record (model Model) (t Pos)))
 
