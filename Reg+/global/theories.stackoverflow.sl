@@ -11,6 +11,35 @@
    (re.inter RegLan RegLan)
    (re.* RegLan))))
 
+; Canonical algebraic axioms for pruning.
+(declare-axiom (= (re.union x y) (re.union y x)))
+(declare-axiom (= (re.union (re.union x y) z) (re.union x (re.union y z))))
+(declare-axiom (= (re.union x x) x))
+(declare-axiom (= (re.inter x y) (re.inter y x)))
+(declare-axiom (= (re.inter (re.inter x y) z) (re.inter x (re.inter y z))))
+(declare-axiom (= (re.inter x x) x))
+(declare-axiom (= (re.++ (re.++ x y) z) (re.++ x (re.++ y z))))
+
+; Regex simplifications from AlphaRegex-style normalization.
+(declare-axiom (= (re.* (re.* x)) (re.* x)))
+(declare-axiom (= (re.plus (re.plus x)) (re.plus x)))
+(declare-axiom (= (re.opt (re.opt x)) (re.opt x)))
+(declare-axiom (= (re.opt (re.* x)) (re.* x)))
+(declare-axiom (= (re.* (re.opt x)) (re.* x)))
+(declare-axiom (= (re.plus (re.* x)) (re.* x)))
+(declare-axiom (= (re.* (re.plus x)) (re.* x)))
+(declare-axiom (= (re.opt (re.plus x)) (re.* x)))
+(declare-axiom (= (re.plus (re.opt x)) (re.* x)))
+(declare-axiom (= (re.++ (re.* x) (re.* x)) (re.* x)))
+(declare-axiom (= (re.++ (re.* x) (re.opt x)) (re.* x)))
+(declare-axiom (= (re.++ (re.opt x) (re.* x)) (re.* x)))
+(declare-axiom (= (re.++ (re.plus x) (re.* x)) (re.plus x)))
+(declare-axiom (= (re.++ (re.* x) (re.plus x)) (re.plus x)))
+(declare-axiom (= (re.union (re.opt x) (re.* x)) (re.* x)))
+(declare-axiom (= (re.union (re.* x) (re.opt x)) (re.* x)))
+(declare-axiom (= (re.union (re.plus x) (re.* x)) (re.* x)))
+(declare-axiom (= (re.union (re.* x) (re.plus x)) (re.* x)))
+
 (define-aspects RegLan.Asp
   (record (model Model) (i Int) (j Int))
   :where (and (<= 0 i) (<= i j) (<= j (size (Pos model)))))
