@@ -74,14 +74,6 @@ def p_a_eq_b_plus_1(w):  return w.count("a") == w.count("b") + 1
 def p_a_eq_b_plus_2(w):  return w.count("a") == w.count("b") + 2
 def p_b_eq_a_plus_1(w):  return w.count("b") == w.count("a") + 1
 
-def p_prefix_a_ge_b(w):
-    c = 0
-    for ch in w:
-        c += 1 if ch == "a" else -1
-        if c < 0:
-            return False
-    return len(w) >= 1
-
 def p_prefix_b_ge_a(w):
     c = 0
     for ch in w:
@@ -130,7 +122,6 @@ K1 = [
     ("a_eq_b_plus_1",     "ab",  p_a_eq_b_plus_1),
     ("a_eq_b_plus_2",     "ab",  p_a_eq_b_plus_2),
     ("b_eq_a_plus_1",     "ab",  p_b_eq_a_plus_1),
-    ("prefix_a_ge_b",     "ab",  p_prefix_a_ge_b),
     ("prefix_b_ge_a",     "ab",  p_prefix_b_ge_a),
     ("palindrome_ab",     "ab",  p_palindrome_ab),
     ("wwR_even_ab",       "ab",  p_wwR_even_ab),
@@ -158,9 +149,7 @@ def p_even_length_ab(w): return len(w) >= 2 and len(w) % 2 == 0
 def p_odd_mid_a(w):      return len(w) % 2 == 1 and w[len(w) // 2] == "a"
 def p_odd_mid_b(w):      return len(w) % 2 == 1 and w[len(w) // 2] == "b"
 def p_contains_aa(w):    return "aa" in w
-def p_contains_ab(w):    return "ab" in w
 def p_contains_bb(w):    return "bb" in w
-def p_contains_ba(w):    return "ba" in w
 
 def p_wa_equal_ab(w):
     if not w or w[-1] != "a":
@@ -215,9 +204,7 @@ K2 = [
     ("odd_mid_a",      "ab", p_odd_mid_a),
     ("odd_mid_b",      "ab", p_odd_mid_b),
     ("contains_aa",    "ab", p_contains_aa),
-    ("contains_ab",    "ab", p_contains_ab),
     ("contains_bb",    "ab", p_contains_bb),
-    ("contains_ba",    "ab", p_contains_ba),
     ("wa_equal_ab",    "ab", p_wa_equal_ab),
     ("wb_equal_ab",    "ab", p_wb_equal_ab),
     ("anbn_plus",      "ab", p_anbn_plus),
@@ -428,7 +415,6 @@ METADATA = {
     "a_eq_b_plus_1":     (_SRC_GENERIC, "{ w | #a(w) = #b(w) + 1 }"),
     "a_eq_b_plus_2":     (_SRC_GENERIC, "{ w | #a(w) = #b(w) + 2 }"),
     "b_eq_a_plus_1":     (_SRC_GENERIC, "{ w | #b(w) = #a(w) + 1 }"),
-    "prefix_a_ge_b":     ("Sipser (3e) Problem 2.28(a): in every prefix, #a >= #b", "{ w | every prefix has #a >= #b }"),
     "prefix_b_ge_a":     ("Mirror of Sipser (3e) Problem 2.28(a)", "{ w | every prefix has #b >= #a }"),
     "palindrome_ab":     ("Sipser (3e) Exercise 2.4(e): palindromes w = w^R (adapted to {a,b})", "{ w | w = w^R }"),
     "wwR_even_ab":       ("Sipser (3e) Problem 2.58: { w w^R } (even-length palindromes)", "{ w w^R | w in {a,b}* }"),
@@ -450,9 +436,7 @@ METADATA = {
     "odd_mid_a":         ("Sipser (3e) Exercise 2.4(d): odd length and middle symbol is 0 (adapted: 0 -> a)", "{ w | |w| odd and middle symbol = a }"),
     "odd_mid_b":         ("Variant of Sipser (3e) Exercise 2.4(d) (middle symbol = b)", "{ w | |w| odd and middle symbol = b }"),
     "contains_aa":       (_SRC_GENERIC, "{ w | w contains substring aa }"),
-    "contains_ab":       (_SRC_GENERIC, "{ w | w contains substring ab }"),
     "contains_bb":       (_SRC_GENERIC, "{ w | w contains substring bb }"),
-    "contains_ba":       (_SRC_GENERIC, "{ w | w contains substring ba }"),
     "wa_equal_ab":       ("Sipser (3e) Problem 2.54: { w a | w has equal numbers of a's and b's }", "{ w a | #a(w) = #b(w) }"),
     "wb_equal_ab":       ("Mirror of Sipser (3e) Problem 2.54", "{ w b | #a(w) = #b(w) }"),
     "anbn_plus":         (_SRC_GENERIC, "{ (a^n b^n)+ | one or more blocks, n >= 1 per block }"),
