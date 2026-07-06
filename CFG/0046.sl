@@ -150,4 +150,11 @@
 (constraint (not (CFG.Sem g (CFG.Asp w_n_aaba 0 (size (Pos w_n_aaba)) reset.S0))))
 (constraint (not (CFG.Sem g (CFG.Asp w_n_aabb 0 (size (Pos w_n_aabb)) reset.S0))))
 
+(define-model w_p_aaabb
+  (interp-sort Pos ($0 $1 $2 $3 $4))
+  (interp-fun a (match ((($0) true) (($1) true) (($2) true) ((_) false))))
+  (interp-fun b (match ((($3) true) (($4) true) ((_) false))))
+)
+(constraint      (CFG.Sem g (CFG.Asp w_p_aaabb 0 (size (Pos w_p_aaabb)) reset.S0)))
+
 (check-synth)
