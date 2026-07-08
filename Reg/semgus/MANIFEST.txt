@@ -1,0 +1,57 @@
+0001.sl	max_len=3	pos=7	neg=7	w starts with 0
+0002.sl	max_len=4	pos=3	neg=6	end with 01
+0003.sl	max_len=8	pos=3	neg=8	w contains the substring 0101
+0004.sl	max_len=4	pos=3	neg=6	w begins with a 1 and ends with a 0
+0005.sl	max_len=5	pos=3	neg=4	Length is at least 3 and its 3rd symbol is 0.
+0006.sl	max_len=6	pos=2	neg=3	strings whose length is a multiple of 3
+0007.sl	max_len=15	pos=8	neg=7	zeros divisible by 3
+0008.sl	max_len=14	pos=7	neg=7	even number of zeros
+0009.sl	max_len=7	pos=3	neg=3	5th num from right end is 1
+0010.sl	max_len=6	pos=9	neg=8	alternating 0 and 1
+0011.sl	max_len=6	pos=7	neg=6	each 0 in w is followed by at least one 1
+0012.sl	max_len=11	pos=6	neg=5	n is greater than or equal to 3, m is even
+0013.sl	max_len=9	pos=8	neg=7	The set of all strings at most two zeros
+0014.sl	max_len=5	pos=5	neg=5	w starts with 0 and has odd length, or starts with 1 and has even length.
+0015.sl	max_len=4	pos=3	neg=2	w is any string except 0 and 1
+0016.sl	max_len=5	pos=8	neg=3	does not end with 01
+0017.sl	max_len=9	pos=6	neg=9	w contains at least one 0 and at most one 1
+0018.sl	max_len=7	pos=7	neg=7	There are at least two occurences of 1 between any two occurrences of 0.
+0019.sl	max_len=7	pos=8	neg=4	w does not contain 100 as a substring
+0020.sl	max_len=6	pos=6	neg=9	every odd position of w is 1.
+0021.sl	max_len=10	pos=4	neg=4	w has exactly one pair of consecutive 0s.
+0022.sl	max_len=4	pos=9	neg=4	w has length at least 2 and does not end with 10
+0023.sl	max_len=14	pos=6	neg=9	w has an even number of 0's and each 0 is followed by at least one 1.
+0024.sl	max_len=9	pos=9	neg=9	The set of all strings of 0s and 1s such that every pair of adjacent 0s appears before any pair of adjacent 1s.
+0025.sl	max_len=12	pos=5	neg=5	The set of strings of 0's and 1's with at most one pair of consecutive 1's
+0026.sl	max_len=5	pos=22	neg=40	contains at least three 1s
+0027.sl	max_len=4	pos=15	neg=15	starts 0 odd-len OR starts 1 even-len
+0028.sl	max_len=4	pos=25	neg=5	doesn't contain 110 substring
+0029.sl	max_len=6	pos=62	neg=64	length at most 5
+0030.sl	max_len=4	pos=28	neg=2	any string except '11' and '111'
+0031.sl	max_len=4	pos=10	neg=20	≥2 zeros AND ≤1 ones
+0032.sl	max_len=4	pos=10	neg=20	contains exactly one 1
+0033.sl	max_len=4	pos=26	neg=4	contains at least one 1
+0034.sl	max_len=4	pos=5	neg=25	contains 001 substring
+0035.sl	max_len=4	pos=20	neg=10	even length
+0036.sl	max_len=4	pos=16	neg=14	starts and ends with same symbol
+0037.sl	max_len=4	pos=8	neg=22	(0|ε)1*
+0038.sl	max_len=4	pos=18	neg=12	even #0s OR exactly two 1s
+0039.sl	max_len=5	pos=33	neg=29	no 1-pair separated by odd # of symbols
+0040.sl	max_len=4	pos=14	neg=16	no '01' substring
+0041.sl	max_len=5	pos=57	neg=5	no '0110' substring
+0042.sl	max_len=4	pos=8	neg=22	no '01' AND no '10' substring
+0043.sl	max_len=4	pos=16	neg=14	not in 0*1*
+0044.sl	max_len=4	pos=20	neg=10	not exactly two 0s
+0045.sl	max_len=4	pos=22	neg=8	not in 0* ∪ 1* (contains both)
+0046.sl	max_len=3	pos=2	neg=12	exactly {01, 10}
+0047.sl	max_len=4	pos=26	neg=4	not in (01+)*
+0048.sl	max_len=5	pos=6	neg=56	even #0s AND odd #1s AND no '01'
+0049.sl	max_len=4	pos=15	neg=15	ends with 1
+0050.sl	max_len=4	pos=7	neg=23	starts with 00
+0051.sl	max_len=4	pos=4	neg=26	all strings of 1s only
+0052.sl	max_len=5	pos=2	neg=60	repetitions of '10'
+0053.sl	max_len=4	pos=21	neg=9	no odd-length 0-run is immediately followed by an odd-length 1-run
+0054.sl	max_len=4	pos=26	neg=4	no '000' substring
+0055.sl	max_len=4	pos=10	neg=20	even number of 0s AND even number of 1s
+0056.sl	max_len=5	pos=20	neg=42	(#0 - #1) is congruent to 0 (mod 3)
+0057.sl	max_len=5	pos=55	neg=7	matches 0*1*0*1*
