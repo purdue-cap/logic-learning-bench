@@ -12,6 +12,7 @@ SMT regex values that ks2 does not operationalize reliably.
 from __future__ import annotations
 
 import argparse
+import csv
 import re
 from pathlib import Path
 
@@ -19,6 +20,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 REGPLUS = ROOT / "Reg+"
 SYGUS = REGPLUS / "sygus"
+TXT = REGPLUS / "txt"
 OUT = REGPLUS / "semgus"
 
 
@@ -107,6 +109,34 @@ def constructor_name(ch: str) -> str:
     return f"$u{code:X}"
 
 
+def parse_txt_examples(index: int) -> list[tuple[str, bool]]:
+    path = TXT / f"{index:04d}.txt"
+    if not path.is_file():
+        return []
+    examples: list[tuple[str, bool]] = []
+    in_examples = False
+    for raw in path.read_text(errors="replace").splitlines():
+        stripped = raw.strip()
+        marker = re.sub(r"\s+", "", stripped).lower()
+        if marker in {"//ex", "//example", "//examples"}:
+            in_examples = True
+            continue
+        if marker == "//gt":
+            break
+        if not in_examples or not stripped or stripped.startswith("//"):
+            continue
+        try:
+            row = next(csv.reader([stripped]))
+        except csv.Error:
+            continue
+        if len(row) != 2:
+            continue
+        label = row[1].strip()
+        if label in {"+", "-"}:
+            examples.append((row[0], label == "+"))
+    return examples
+
+
 def parse_case(index: int) -> dict[str, object]:
     delis_text = (REGPLUS / f"{index:04d}.sl").read_text()
     sygus_text = (SYGUS / f"{index:04d}.sl").read_text()
@@ -132,6 +162,25 @@ def parse_case(index: int) -> dict[str, object]:
         if name not in words:
             raise ValueError(f"constraint references unknown string {name} in {index:04d}.sl")
         constraints.append((name, not neg))
+
+    if not constraints:
+        txt_examples = parse_txt_examples(index)
+        if txt_examples:
+            words = {
+                f"w{example_index}": word
+                for example_index, (word, _) in enumerate(txt_examples, start=1)
+            }
+            constraints = [
+                (f"w{example_index}", expected)
+                for example_index, (_, expected) in enumerate(txt_examples, start=1)
+            ]
+
+    if not terminals:
+        for word in words.values():
+            for ch in word:
+                if ch not in seen:
+                    seen.add(ch)
+                    terminals.append(ch)
 
     return {
         "index": index,

@@ -213,7 +213,7 @@
 0213.sl	max_len=6	examples=9	constraints=9	pos=5	neg=4	terminals=7	Decimal numbers with max 3 decimal places, but, user can write 5 digits. Exclude ''0''
 0214.sl	max_len=9	examples=34	constraints=34	pos=24	neg=10	terminals=8	write a Regular Expression validator to accept numbers only with decimal part 0 or 5 only and in range 0-5. No matter how many 0 in front or behind the numbers it can be valid.
 0215.sl	max_len=18	examples=10	constraints=10	pos=6	neg=4	terminals=10	i need a Regular that validate Decimal (18,3) this mean max number of digits before comma is 15 and accept 3 numbers after comma . 18 precision 3 scale.
-0216.sl	max_len=0	examples=0	constraints=0	pos=0	neg=0	terminals=0	R1:can be only single numeric digit
+0216.sl	max_len=6	examples=6	constraints=6	pos=3	neg=3	terminals=9	R1:can be only single numeric digit
 0217.sl	max_len=12	examples=4	constraints=4	pos=1	neg=3	terminals=13	R1: I want to validate a 10 digit USA style phone number using a Regular Expression in Javascript
 0218.sl	max_len=10	examples=7	constraints=7	pos=4	neg=3	terminals=10	accept numeric values that are seven or ten digits
 0219.sl	max_len=15	examples=4	constraints=4	pos=3	neg=1	terminals=11	I am trying to write a regular expression which validates a text box to have only digits with length 5 or 9.”Can any one please help me in modifying or writing a new regular expression which supports below pattern: - valid (ending with comma) -valid (not ending with comma) -Invalid (should not support if 1st digit is length 5 and 2nd less than 9) -valid (must support only digit length 5 or 9)
@@ -239,7 +239,7 @@
 0239.sl	max_len=14	examples=6	constraints=6	pos=2	neg=4	terminals=14	regular expression which validates only number and min length should be 11 and maximum 16
 0240.sl	max_len=6	examples=5	constraints=5	pos=2	neg=3	terminals=9	I need to validate the next pattern: starts with 'C0' and finish with 4 digits exactly
 0241.sl	max_len=4	examples=5	constraints=5	pos=3	neg=2	terminals=4	I am trying to validate dollar amount, anything greater than equal to 0.1
-0242.sl	max_len=0	examples=0	constraints=0	pos=0	neg=0	terminals=0	I need a regular expression that satisfy these rules: The maximum number of decimal point is 3 but a number with no decimal point (e.g 12) should be accepted too. the value must be at least 0. the value must be less or equal to 99999999999.999. the radix point is DOT (e.g 2.5, not 2,5)
+0242.sl	max_len=15	examples=8	constraints=8	pos=5	neg=3	terminals=12	I need a regular expression that satisfy these rules: The maximum number of decimal point is 3 but a number with no decimal point (e.g 12) should be accepted too. the value must be at least 0. the value must be less or equal to 99999999999.999. the radix point is DOT (e.g 2.5, not 2,5)
 0243.sl	max_len=14	examples=5	constraints=5	pos=2	neg=3	terminals=8	I need a regular expression that only validates UK mobile numbers. A UK mobile number can be between 10-14 digits and either starts with '07', or omits the '0' and starts with '447'. Importantly, if the user adds '+44' it should be rejected.
 0244.sl	max_len=7	examples=10	constraints=10	pos=6	neg=4	terminals=10	I want a regular expression for decimal input, which can take 4 digits before decimal or comma and 2 digits after decimal/comma. 5 digit number without decimal is invalid.Validation show also include comma along with decimal.
 0245.sl	max_len=6	examples=7	constraints=7	pos=4	neg=3	terminals=10	I need a regular expression that validates a decimal number which includes ''+'', ''-'' sign as well.
@@ -291,7 +291,7 @@
 0291.sl	max_len=6	examples=3	constraints=3	pos=1	neg=2	terminals=7	I am writing a regular expression to validate a zip code, where it should have exactly a length of 6 characters, the first 3 characters are digits, the last 2 also, but the character 4 should be a space.
 0292.sl	max_len=7	examples=7	constraints=7	pos=4	neg=3	terminals=12	I want a regular expression that validates a string of length 1 which has either the characters 'A' or 'B' (case insensitive) at the Begin
 0293.sl	max_len=7	examples=10	constraints=10	pos=6	neg=4	terminals=5	start and finish with a percentage sign and can contain any number of characters in-between
-0294.sl	max_len=0	examples=0	constraints=0	pos=0	neg=0	terminals=0	R1: It cannot start with ''0''. It can be 1 digit to 6 digits in length.
+0294.sl	max_len=13	examples=8	constraints=8	pos=3	neg=5	terminals=12	R1: It cannot start with ''0''. It can be 1 digit to 6 digits in length.
 0295.sl	max_len=9	examples=5	constraints=5	pos=3	neg=2	terminals=8	I need a regular expression that has the following constraints. contains only [A-Z0-9.*]. 1 - 15 characters in length. Must contain a ''*''but only once
 0296.sl	max_len=10	examples=8	constraints=8	pos=4	neg=4	terminals=18	The string must be 9 characters long, starting with 'SO-' (case insensitive eg 'So-', 'so-', 'sO-' and 'SO-') followed by 6 numbers.
 0297.sl	max_len=10	examples=7	constraints=7	pos=4	neg=3	terminals=17	The first character should be a designated character like 'A', 'B' or 'C' only. and the next 3 characters should be numbers.
