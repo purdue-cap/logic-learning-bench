@@ -24,8 +24,8 @@ treated as a fixed-model corpus with documented depth-2 CEGIS provenance.
 - Delis input suite: `NNNN.sl`
 - Delis executable: release binary, `target/release/delis`
 - FOLseparators input suite: `fol/NNNN.fol`
-- FOLseparators mode: `--separate --timeout 600`, with no explicit
-  `--max-depth`, so the PLDI 2020 artifact uses its default depth bound.
+- FOLseparators mode: `--separate --max-depth 2 --timeout 600` via the
+  delis-bench wrapper default.
 
 From `delis-bench`, use:
 
@@ -132,8 +132,7 @@ which is not the fixed-model comparison used here.
 For the main table, report results over all installed dense ids using:
 
 - Delis: `NNNN.sl`
-- FOLseparators: `fol/NNNN.fol` with `--separate --timeout 600` and no explicit
-  `--max-depth`
+- FOLseparators: `fol/NNNN.fol` with `--separate --max-depth 2 --timeout 600`
 
 Record solved/error/timeout status, wall-clock time, and the number of
 quantifiers in the FOLseparators result when it succeeds.
