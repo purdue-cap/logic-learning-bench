@@ -1,0 +1,306 @@
+0001.sl	models=10	pos=3	neg=7	sorts=4	model_inputs=31	max_domains=abp.ack_msg_t=1, abp.data_msg_t=1, abp.index_t=2, abp.value=3	good-ivy-examples/liveness/alternating_bit_protocol.ivy:abp
+0002.sl	models=17	pos=4	neg=13	sorts=4	model_inputs=38	max_domains=abp.ack_msg_t=1, abp.data_msg_t=1, abp.index_t=3, abp.value=3	good-ivy-examples/liveness/alternating_bit_protocol.ivy:abp0
+0003.sl	models=14	pos=4	neg=10	sorts=4	model_inputs=38	max_domains=abp.ack_msg_t=1, abp.data_msg_t=1, abp.index_t=3, abp.value=2	good-ivy-examples/liveness/alternating_bit_protocol.ivy:abp1
+0004.sl	models=18	pos=14	neg=4	sorts=4	model_inputs=30	max_domains=abp.ack_msg_t=2, abp.data_msg_t=1, abp.index_t=1, abp.value=1	good-ivy-examples/liveness/alternating_bit_protocol.ivy:abp10
+0005.sl	models=13	pos=6	neg=7	sorts=4	model_inputs=31	max_domains=abp.ack_msg_t=1, abp.data_msg_t=1, abp.index_t=2, abp.value=1	good-ivy-examples/liveness/alternating_bit_protocol.ivy:abp11
+0006.sl	models=23	pos=8	neg=15	sorts=4	model_inputs=38	max_domains=abp.ack_msg_t=1, abp.data_msg_t=1, abp.index_t=3, abp.value=1	good-ivy-examples/liveness/alternating_bit_protocol.ivy:abp12
+0007.sl	models=15	pos=7	neg=8	sorts=4	model_inputs=36	max_domains=abp.ack_msg_t=1, abp.data_msg_t=2, abp.index_t=2, abp.value=1	good-ivy-examples/liveness/alternating_bit_protocol.ivy:abp13
+0008.sl	models=21	pos=9	neg=12	sorts=4	model_inputs=36	max_domains=abp.ack_msg_t=1, abp.data_msg_t=2, abp.index_t=2, abp.value=2	good-ivy-examples/liveness/alternating_bit_protocol.ivy:abp14
+0009.sl	models=5	pos=2	neg=3	sorts=4	model_inputs=31	max_domains=abp.ack_msg_t=1, abp.data_msg_t=2, abp.index_t=1, abp.value=2	good-ivy-examples/liveness/alternating_bit_protocol.ivy:abp15
+0010.sl	models=15	pos=7	neg=8	sorts=4	model_inputs=35	max_domains=abp.ack_msg_t=2, abp.data_msg_t=1, abp.index_t=2, abp.value=1	good-ivy-examples/liveness/alternating_bit_protocol.ivy:abp16
+0011.sl	models=24	pos=10	neg=14	sorts=4	model_inputs=35	max_domains=abp.ack_msg_t=2, abp.data_msg_t=1, abp.index_t=2, abp.value=2	good-ivy-examples/liveness/alternating_bit_protocol.ivy:abp17
+0012.sl	models=16	pos=7	neg=9	sorts=4	model_inputs=35	max_domains=abp.ack_msg_t=2, abp.data_msg_t=1, abp.index_t=2, abp.value=2	good-ivy-examples/liveness/alternating_bit_protocol.ivy:abp18
+0013.sl	models=5	pos=3	neg=2	sorts=4	model_inputs=31	max_domains=abp.ack_msg_t=1, abp.data_msg_t=1, abp.index_t=2, abp.value=1	good-ivy-examples/liveness/alternating_bit_protocol.ivy:abp2
+0014.sl	models=8	pos=6	neg=2	sorts=4	model_inputs=30	max_domains=abp.ack_msg_t=2, abp.data_msg_t=1, abp.index_t=1, abp.value=1	good-ivy-examples/liveness/alternating_bit_protocol.ivy:abp3
+0015.sl	models=16	pos=14	neg=2	sorts=4	model_inputs=31	max_domains=abp.ack_msg_t=1, abp.data_msg_t=2, abp.index_t=1, abp.value=1	good-ivy-examples/liveness/alternating_bit_protocol.ivy:abp4
+0016.sl	models=13	pos=11	neg=2	sorts=4	model_inputs=30	max_domains=abp.ack_msg_t=2, abp.data_msg_t=1, abp.index_t=1, abp.value=1	good-ivy-examples/liveness/alternating_bit_protocol.ivy:abp5
+0017.sl	models=22	pos=19	neg=3	sorts=4	model_inputs=31	max_domains=abp.ack_msg_t=1, abp.data_msg_t=2, abp.index_t=1, abp.value=1	good-ivy-examples/liveness/alternating_bit_protocol.ivy:abp6
+0018.sl	models=13	pos=11	neg=2	sorts=4	model_inputs=31	max_domains=abp.ack_msg_t=1, abp.data_msg_t=2, abp.index_t=1, abp.value=1	good-ivy-examples/liveness/alternating_bit_protocol.ivy:abp7
+0019.sl	models=21	pos=19	neg=2	sorts=4	model_inputs=30	max_domains=abp.ack_msg_t=2, abp.data_msg_t=1, abp.index_t=1, abp.value=1	good-ivy-examples/liveness/alternating_bit_protocol.ivy:abp8
+0020.sl	models=9	pos=6	neg=3	sorts=4	model_inputs=31	max_domains=abp.ack_msg_t=1, abp.data_msg_t=2, abp.index_t=1, abp.value=1	good-ivy-examples/liveness/alternating_bit_protocol.ivy:abp9
+0021.sl	models=10	pos=4	neg=6	sorts=4	model_inputs=36	max_domains=abp.ack_msg_t=3, abp.data_msg_t=1, abp.index_t=1, abp.value=1	good-ivy-examples/liveness/alternating_bit_protocol.ivy:abp_ack_msg
+0022.sl	models=6	pos=3	neg=3	sorts=4	model_inputs=36	max_domains=abp.ack_msg_t=3, abp.data_msg_t=1, abp.index_t=1, abp.value=1	good-ivy-examples/liveness/alternating_bit_protocol.ivy:abp_ack_msg0
+0023.sl	models=8	pos=4	neg=4	sorts=4	model_inputs=30	max_domains=abp.ack_msg_t=2, abp.data_msg_t=1, abp.index_t=1, abp.value=1	good-ivy-examples/liveness/alternating_bit_protocol.ivy:abp_ack_msg1
+0024.sl	models=8	pos=5	neg=3	sorts=4	model_inputs=36	max_domains=abp.ack_msg_t=3, abp.data_msg_t=1, abp.index_t=1, abp.value=1	good-ivy-examples/liveness/alternating_bit_protocol.ivy:abp_ack_msg2
+0025.sl	models=9	pos=4	neg=5	sorts=4	model_inputs=38	max_domains=abp.ack_msg_t=1, abp.data_msg_t=3, abp.index_t=1, abp.value=1	good-ivy-examples/liveness/alternating_bit_protocol.ivy:abp_data_msg
+0026.sl	models=6	pos=3	neg=3	sorts=4	model_inputs=38	max_domains=abp.ack_msg_t=1, abp.data_msg_t=3, abp.index_t=1, abp.value=1	good-ivy-examples/liveness/alternating_bit_protocol.ivy:abp_data_msg0
+0027.sl	models=10	pos=6	neg=4	sorts=4	model_inputs=31	max_domains=abp.ack_msg_t=1, abp.data_msg_t=2, abp.index_t=1, abp.value=1	good-ivy-examples/liveness/alternating_bit_protocol.ivy:abp_data_msg1
+0028.sl	models=8	pos=5	neg=3	sorts=4	model_inputs=38	max_domains=abp.ack_msg_t=1, abp.data_msg_t=3, abp.index_t=1, abp.value=1	good-ivy-examples/liveness/alternating_bit_protocol.ivy:abp_data_msg2
+0029.sl	models=3	pos=2	neg=1	sorts=5	model_inputs=22	max_domains=node=1, quorum_c=1, quorum_w=1, round=1, value=2	good-ivy-examples/fol-thresholds/byz_paxos.ivy:conj10
+0030.sl	models=8	pos=1	neg=7	sorts=5	model_inputs=48	max_domains=node=2, quorum_c=1, quorum_w=1, round=2, value=1	good-ivy-examples/fol-thresholds/byz_paxos.ivy:conj11
+0031.sl	models=8	pos=1	neg=7	sorts=5	model_inputs=48	max_domains=node=2, quorum_c=1, quorum_w=1, round=2, value=1	good-ivy-examples/fol-thresholds/byz_paxos.ivy:conj12
+0032.sl	models=5	pos=3	neg=2	sorts=5	model_inputs=37	max_domains=node=1, quorum_c=1, quorum_w=1, round=2, value=2	good-ivy-examples/fol-thresholds/byz_paxos.ivy:conj13
+0033.sl	models=15	pos=4	neg=11	sorts=5	model_inputs=69	max_domains=node=2, quorum_c=1, quorum_w=1, round=3, value=1	good-ivy-examples/fol-thresholds/byz_paxos.ivy:conj14
+0034.sl	models=3	pos=2	neg=1	sorts=5	model_inputs=22	max_domains=node=1, quorum_c=1, quorum_w=1, round=1, value=2	good-ivy-examples/fol-thresholds/byz_paxos.ivy:conj8
+0035.sl	models=6	pos=2	neg=4	sorts=5	model_inputs=48	max_domains=node=2, quorum_c=1, quorum_w=1, round=2, value=1	good-ivy-examples/fol-thresholds/byz_paxos.ivy:conj9
+0036.sl	models=3	pos=2	neg=1	sorts=5	model_inputs=21	max_domains=node=1, quorum_c=1, quorum_f=1, round=1, value=2	good-ivy-examples/fol-thresholds/fast_paxos.ivy:c
+0037.sl	models=4	pos=2	neg=2	sorts=5	model_inputs=35	max_domains=node=1, quorum_c=1, quorum_f=1, round=2, value=2	good-ivy-examples/fol-thresholds/fast_paxos.ivy:c0
+0038.sl	models=5	pos=2	neg=3	sorts=5	model_inputs=29	max_domains=node=1, quorum_c=1, quorum_f=1, round=2, value=1	good-ivy-examples/fol-thresholds/fast_paxos.ivy:c1
+0039.sl	models=15	pos=4	neg=11	sorts=5	model_inputs=57	max_domains=node=2, quorum_c=1, quorum_f=1, round=3, value=1	good-ivy-examples/fol-thresholds/fast_paxos.ivy:c10
+0040.sl	models=4	pos=1	neg=3	sorts=5	model_inputs=30	max_domains=node=2, quorum_c=1, quorum_f=1, round=1, value=2	good-ivy-examples/fol-thresholds/fast_paxos.ivy:c11
+0041.sl	models=4	pos=2	neg=2	sorts=5	model_inputs=29	max_domains=node=1, quorum_c=1, quorum_f=1, round=2, value=1	good-ivy-examples/fol-thresholds/fast_paxos.ivy:c2
+0042.sl	models=4	pos=2	neg=2	sorts=5	model_inputs=29	max_domains=node=1, quorum_c=1, quorum_f=1, round=2, value=1	good-ivy-examples/fol-thresholds/fast_paxos.ivy:c3
+0043.sl	models=8	pos=4	neg=4	sorts=5	model_inputs=35	max_domains=node=1, quorum_c=1, quorum_f=1, round=2, value=2	good-ivy-examples/fol-thresholds/fast_paxos.ivy:c4
+0044.sl	models=9	pos=5	neg=4	sorts=5	model_inputs=35	max_domains=node=1, quorum_c=1, quorum_f=1, round=2, value=2	good-ivy-examples/fol-thresholds/fast_paxos.ivy:c5
+0045.sl	models=5	pos=2	neg=3	sorts=5	model_inputs=35	max_domains=node=1, quorum_c=1, quorum_f=1, round=2, value=2	good-ivy-examples/fol-thresholds/fast_paxos.ivy:c6
+0046.sl	models=3	pos=2	neg=1	sorts=5	model_inputs=21	max_domains=node=1, quorum_c=1, quorum_f=1, round=1, value=2	good-ivy-examples/fol-thresholds/fast_paxos.ivy:c7
+0047.sl	models=12	pos=4	neg=8	sorts=5	model_inputs=35	max_domains=node=1, quorum_c=1, quorum_f=1, round=2, value=2	good-ivy-examples/fol-thresholds/fast_paxos.ivy:c8
+0048.sl	models=7	pos=2	neg=5	sorts=5	model_inputs=35	max_domains=node=1, quorum_c=1, quorum_f=1, round=2, value=2	good-ivy-examples/fol-thresholds/fast_paxos.ivy:c9
+0049.sl	models=3	pos=2	neg=1	sorts=5	model_inputs=22	max_domains=c_quorum=1, f_quorum=1, node=1, round=1, value=2	good-ivy-examples/oopsla17-paxos/fast_paxos_epr.ivy:c
+0050.sl	models=4	pos=2	neg=2	sorts=5	model_inputs=42	max_domains=c_quorum=1, f_quorum=1, node=1, round=2, value=2	good-ivy-examples/oopsla17-paxos/fast_paxos_epr.ivy:c0
+0051.sl	models=4	pos=2	neg=2	sorts=5	model_inputs=32	max_domains=c_quorum=1, f_quorum=1, node=1, round=2, value=1	good-ivy-examples/oopsla17-paxos/fast_paxos_epr.ivy:c1
+0052.sl	models=3	pos=2	neg=1	sorts=5	model_inputs=32	max_domains=c_quorum=1, f_quorum=1, node=1, round=2, value=1	good-ivy-examples/oopsla17-paxos/fast_paxos_epr.ivy:c10
+0053.sl	models=5	pos=2	neg=3	sorts=5	model_inputs=32	max_domains=c_quorum=1, f_quorum=1, node=1, round=2, value=1	good-ivy-examples/oopsla17-paxos/fast_paxos_epr.ivy:c11
+0054.sl	models=5	pos=3	neg=2	sorts=5	model_inputs=50	max_domains=c_quorum=1, f_quorum=1, node=1, round=3, value=1	good-ivy-examples/oopsla17-paxos/fast_paxos_epr.ivy:c12
+0055.sl	models=5	pos=2	neg=3	sorts=5	model_inputs=46	max_domains=c_quorum=1, f_quorum=1, node=2, round=2, value=1	good-ivy-examples/oopsla17-paxos/fast_paxos_epr.ivy:c13
+0056.sl	models=17	pos=4	neg=13	sorts=5	model_inputs=73	max_domains=c_quorum=1, f_quorum=1, node=2, round=3, value=1	good-ivy-examples/oopsla17-paxos/fast_paxos_epr.ivy:c14
+0057.sl	models=4	pos=1	neg=3	sorts=5	model_inputs=32	max_domains=c_quorum=1, f_quorum=1, node=2, round=1, value=2	good-ivy-examples/oopsla17-paxos/fast_paxos_epr.ivy:c15
+0058.sl	models=4	pos=2	neg=2	sorts=5	model_inputs=32	max_domains=c_quorum=1, f_quorum=1, node=1, round=2, value=1	good-ivy-examples/oopsla17-paxos/fast_paxos_epr.ivy:c2
+0059.sl	models=4	pos=2	neg=2	sorts=5	model_inputs=32	max_domains=c_quorum=1, f_quorum=1, node=1, round=2, value=1	good-ivy-examples/oopsla17-paxos/fast_paxos_epr.ivy:c3
+0060.sl	models=8	pos=4	neg=4	sorts=5	model_inputs=42	max_domains=c_quorum=1, f_quorum=1, node=1, round=2, value=2	good-ivy-examples/oopsla17-paxos/fast_paxos_epr.ivy:c4
+0061.sl	models=9	pos=5	neg=4	sorts=5	model_inputs=42	max_domains=c_quorum=1, f_quorum=1, node=1, round=2, value=2	good-ivy-examples/oopsla17-paxos/fast_paxos_epr.ivy:c5
+0062.sl	models=5	pos=2	neg=3	sorts=5	model_inputs=42	max_domains=c_quorum=1, f_quorum=1, node=1, round=2, value=2	good-ivy-examples/oopsla17-paxos/fast_paxos_epr.ivy:c6
+0063.sl	models=3	pos=2	neg=1	sorts=5	model_inputs=22	max_domains=c_quorum=1, f_quorum=1, node=1, round=1, value=2	good-ivy-examples/oopsla17-paxos/fast_paxos_epr.ivy:c7
+0064.sl	models=14	pos=4	neg=10	sorts=5	model_inputs=42	max_domains=c_quorum=1, f_quorum=1, node=1, round=2, value=2	good-ivy-examples/oopsla17-paxos/fast_paxos_epr.ivy:c8
+0065.sl	models=7	pos=2	neg=5	sorts=5	model_inputs=42	max_domains=c_quorum=1, f_quorum=1, node=1, round=2, value=2	good-ivy-examples/oopsla17-paxos/fast_paxos_epr.ivy:c9
+0066.sl	models=3	pos=2	neg=1	sorts=5	model_inputs=20	max_domains=node=1, quorum_1=1, quorum_2=1, round=1, value=2	good-ivy-examples/oopsla17-paxos/flexible_paxos_epr.ivy:c
+0067.sl	models=4	pos=2	neg=2	sorts=5	model_inputs=38	max_domains=node=1, quorum_1=1, quorum_2=1, round=2, value=2	good-ivy-examples/oopsla17-paxos/flexible_paxos_epr.ivy:c0
+0068.sl	models=5	pos=2	neg=3	sorts=5	model_inputs=38	max_domains=node=1, quorum_1=1, quorum_2=1, round=2, value=2	good-ivy-examples/oopsla17-paxos/flexible_paxos_epr.ivy:c1
+0069.sl	models=8	pos=1	neg=7	sorts=5	model_inputs=42	max_domains=node=2, quorum_1=1, quorum_2=1, round=2, value=1	good-ivy-examples/oopsla17-paxos/flexible_paxos_epr.ivy:c2
+0070.sl	models=3	pos=2	neg=1	sorts=5	model_inputs=28	max_domains=node=1, quorum_1=1, quorum_2=1, round=2, value=1	good-ivy-examples/oopsla17-paxos/flexible_paxos_epr.ivy:c3
+0071.sl	models=5	pos=2	neg=3	sorts=5	model_inputs=28	max_domains=node=1, quorum_1=1, quorum_2=1, round=2, value=1	good-ivy-examples/oopsla17-paxos/flexible_paxos_epr.ivy:c4
+0072.sl	models=5	pos=3	neg=2	sorts=5	model_inputs=44	max_domains=node=1, quorum_1=1, quorum_2=1, round=3, value=1	good-ivy-examples/oopsla17-paxos/flexible_paxos_epr.ivy:c5
+0073.sl	models=4	pos=1	neg=3	sorts=5	model_inputs=30	max_domains=node=2, quorum_1=1, quorum_2=1, round=1, value=2	good-ivy-examples/oopsla17-paxos/flexible_paxos_epr.ivy:c6
+0074.sl	models=5	pos=3	neg=2	sorts=5	model_inputs=38	max_domains=node=1, quorum_1=1, quorum_2=1, round=2, value=2	good-ivy-examples/oopsla17-paxos/flexible_paxos_epr.ivy:c7
+0075.sl	models=5	pos=2	neg=3	sorts=5	model_inputs=42	max_domains=node=2, quorum_1=1, quorum_2=1, round=2, value=1	good-ivy-examples/oopsla17-paxos/flexible_paxos_epr.ivy:c8
+0076.sl	models=17	pos=4	neg=13	sorts=5	model_inputs=67	max_domains=node=2, quorum_1=1, quorum_2=1, round=3, value=1	good-ivy-examples/oopsla17-paxos/flexible_paxos_epr.ivy:c9
+0077.sl	models=3	pos=2	neg=1	sorts=6	model_inputs=22	max_domains=inst=1, node=1, quorum=1, round=1, value=2, votemap=1	good-ivy-examples/oopsla17-paxos/multi_paxos_epr.ivy:c
+0078.sl	models=4	pos=2	neg=2	sorts=6	model_inputs=30	max_domains=inst=1, node=1, quorum=1, round=2, value=1, votemap=1	good-ivy-examples/oopsla17-paxos/multi_paxos_epr.ivy:c0
+0079.sl	models=3	pos=2	neg=1	sorts=6	model_inputs=22	max_domains=inst=1, node=1, quorum=1, round=1, value=2, votemap=1	good-ivy-examples/oopsla17-paxos/multi_paxos_epr.ivy:c1
+0080.sl	models=5	pos=2	neg=3	sorts=6	model_inputs=41	max_domains=inst=1, node=2, quorum=1, round=2, value=1, votemap=1	good-ivy-examples/oopsla17-paxos/multi_paxos_epr.ivy:c10
+0081.sl	models=3	pos=1	neg=2	sorts=6	model_inputs=30	max_domains=inst=1, node=1, quorum=1, round=2, value=1, votemap=1	good-ivy-examples/oopsla17-paxos/multi_paxos_epr.ivy:c2
+0082.sl	models=2	pos=1	neg=1	sorts=6	model_inputs=19	max_domains=inst=1, node=1, quorum=1, round=1, value=1, votemap=1	good-ivy-examples/oopsla17-paxos/multi_paxos_epr.ivy:c3
+0083.sl	models=4	pos=2	neg=2	sorts=6	model_inputs=30	max_domains=inst=1, node=1, quorum=1, round=2, value=1, votemap=1	good-ivy-examples/oopsla17-paxos/multi_paxos_epr.ivy:c4
+0084.sl	models=7	pos=3	neg=4	sorts=6	model_inputs=44	max_domains=inst=2, node=1, quorum=1, round=2, value=1, votemap=2	good-ivy-examples/oopsla17-paxos/multi_paxos_epr.ivy:c5
+0085.sl	models=9	pos=4	neg=5	sorts=6	model_inputs=80	max_domains=inst=2, node=1, quorum=1, round=4, value=1, votemap=2	good-ivy-examples/oopsla17-paxos/multi_paxos_epr.ivy:c6
+0086.sl	models=2	pos=1	neg=1	sorts=6	model_inputs=19	max_domains=inst=1, node=1, quorum=1, round=1, value=1, votemap=1	good-ivy-examples/oopsla17-paxos/multi_paxos_epr.ivy:c7
+0087.sl	models=6	pos=2	neg=4	sorts=6	model_inputs=30	max_domains=inst=1, node=1, quorum=1, round=2, value=1, votemap=1	good-ivy-examples/oopsla17-paxos/multi_paxos_epr.ivy:c8
+0088.sl	models=17	pos=7	neg=10	sorts=6	model_inputs=59	max_domains=inst=1, node=2, quorum=1, round=3, value=1, votemap=1	good-ivy-examples/oopsla17-paxos/multi_paxos_epr.ivy:c9
+0089.sl	models=3	pos=2	neg=1	sorts=6	model_inputs=24	max_domains=inst=1, node=1, quorum=1, round=1, value=2, votemap=1	good-ivy-examples/oopsla17-paxos/stoppable_paxos_epr.ivy:c
+0090.sl	models=3	pos=2	neg=1	sorts=6	model_inputs=29	max_domains=inst=2, node=1, quorum=1, round=1, value=1, votemap=1	good-ivy-examples/oopsla17-paxos/stoppable_paxos_epr.ivy:c0
+0091.sl	models=7	pos=2	neg=5	sorts=6	model_inputs=55	max_domains=inst=2, node=1, quorum=1, round=2, value=2, votemap=1	good-ivy-examples/oopsla17-paxos/stoppable_paxos_epr.ivy:c1
+0092.sl	models=5	pos=2	neg=3	sorts=6	model_inputs=56	max_domains=inst=3, node=1, quorum=1, round=2, value=1, votemap=1	good-ivy-examples/oopsla17-paxos/stoppable_paxos_epr.ivy:c10
+0093.sl	models=5	pos=3	neg=2	sorts=6	model_inputs=43	max_domains=inst=2, node=1, quorum=1, round=2, value=1, votemap=1	good-ivy-examples/oopsla17-paxos/stoppable_paxos_epr.ivy:c11
+0094.sl	models=5	pos=3	neg=2	sorts=6	model_inputs=43	max_domains=inst=2, node=1, quorum=1, round=2, value=1, votemap=1	good-ivy-examples/oopsla17-paxos/stoppable_paxos_epr.ivy:c12
+0095.sl	models=16	pos=4	neg=12	sorts=6	model_inputs=61	max_domains=inst=1, node=2, quorum=1, round=3, value=1, votemap=1	good-ivy-examples/oopsla17-paxos/stoppable_paxos_epr.ivy:c13
+0096.sl	models=5	pos=2	neg=3	sorts=6	model_inputs=43	max_domains=inst=1, node=2, quorum=1, round=2, value=1, votemap=1	good-ivy-examples/oopsla17-paxos/stoppable_paxos_epr.ivy:c14
+0097.sl	models=5	pos=2	neg=3	sorts=6	model_inputs=55	max_domains=inst=2, node=1, quorum=1, round=2, value=2, votemap=1	good-ivy-examples/oopsla17-paxos/stoppable_paxos_epr.ivy:c2
+0098.sl	models=5	pos=1	neg=4	sorts=6	model_inputs=55	max_domains=inst=2, node=1, quorum=1, round=2, value=2, votemap=1	good-ivy-examples/oopsla17-paxos/stoppable_paxos_epr.ivy:c3
+0099.sl	models=11	pos=1	neg=10	sorts=6	model_inputs=58	max_domains=inst=2, node=2, quorum=1, round=2, value=1, votemap=1	good-ivy-examples/oopsla17-paxos/stoppable_paxos_epr.ivy:c4
+0100.sl	models=4	pos=2	neg=2	sorts=6	model_inputs=32	max_domains=inst=1, node=1, quorum=1, round=2, value=1, votemap=1	good-ivy-examples/oopsla17-paxos/stoppable_paxos_epr.ivy:c5
+0101.sl	models=8	pos=3	neg=5	sorts=6	model_inputs=49	max_domains=inst=2, node=1, quorum=1, round=2, value=1, votemap=2	good-ivy-examples/oopsla17-paxos/stoppable_paxos_epr.ivy:c6
+0102.sl	models=9	pos=4	neg=5	sorts=6	model_inputs=85	max_domains=inst=2, node=1, quorum=1, round=4, value=1, votemap=2	good-ivy-examples/oopsla17-paxos/stoppable_paxos_epr.ivy:c7
+0103.sl	models=5	pos=1	neg=4	sorts=6	model_inputs=47	max_domains=inst=2, node=2, quorum=1, round=1, value=2, votemap=1	good-ivy-examples/oopsla17-paxos/stoppable_paxos_epr.ivy:c8
+0104.sl	models=8	pos=2	neg=6	sorts=6	model_inputs=55	max_domains=inst=2, node=1, quorum=1, round=2, value=2, votemap=1	good-ivy-examples/oopsla17-paxos/stoppable_paxos_epr.ivy:c9
+0105.sl	models=26	pos=2	neg=24	sorts=3	model_inputs=83	max_domains=tlb.pageentry=1, tlb.pmap=2, tlb.processor=2	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb
+0106.sl	models=134	pos=2	neg=132	sorts=3	model_inputs=81	max_domains=tlb.pageentry=1, tlb.pmap=1, tlb.processor=2	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb0
+0107.sl	models=36	pos=10	neg=26	sorts=3	model_inputs=169	max_domains=tlb.pageentry=1, tlb.pmap=1, tlb.processor=4	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb1
+0108.sl	models=21	pos=16	neg=5	sorts=3	model_inputs=83	max_domains=tlb.pageentry=1, tlb.pmap=2, tlb.processor=2	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb10
+0109.sl	models=241	pos=26	neg=215	sorts=3	model_inputs=81	max_domains=tlb.pageentry=1, tlb.pmap=1, tlb.processor=2	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb11
+0110.sl	models=84	pos=14	neg=70	sorts=3	model_inputs=83	max_domains=tlb.pageentry=1, tlb.pmap=2, tlb.processor=2	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb12
+0111.sl	models=38	pos=2	neg=36	sorts=3	model_inputs=81	max_domains=tlb.pageentry=1, tlb.pmap=1, tlb.processor=2	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb13
+0112.sl	models=110	pos=8	neg=102	sorts=3	model_inputs=81	max_domains=tlb.pageentry=1, tlb.pmap=1, tlb.processor=2	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb14
+0113.sl	models=121	pos=16	neg=105	sorts=3	model_inputs=81	max_domains=tlb.pageentry=1, tlb.pmap=1, tlb.processor=2	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb15
+0114.sl	models=72	pos=8	neg=64	sorts=3	model_inputs=81	max_domains=tlb.pageentry=1, tlb.pmap=1, tlb.processor=2	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb16
+0115.sl	models=64	pos=24	neg=40	sorts=3	model_inputs=83	max_domains=tlb.pageentry=2, tlb.pmap=2, tlb.processor=2	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb17
+0116.sl	models=156	pos=129	neg=27	sorts=3	model_inputs=83	max_domains=tlb.pageentry=1, tlb.pmap=2, tlb.processor=2	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb18
+0117.sl	models=387	pos=256	neg=131	sorts=3	model_inputs=81	max_domains=tlb.pageentry=1, tlb.pmap=1, tlb.processor=2	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb19
+0118.sl	models=37	pos=6	neg=31	sorts=3	model_inputs=81	max_domains=tlb.pageentry=1, tlb.pmap=1, tlb.processor=2	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb2
+0119.sl	models=239	pos=191	neg=48	sorts=3	model_inputs=83	max_domains=tlb.pageentry=1, tlb.pmap=2, tlb.processor=2	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb20
+0120.sl	models=462	pos=431	neg=31	sorts=3	model_inputs=85	max_domains=tlb.pageentry=2, tlb.pmap=3, tlb.processor=2	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb21
+0121.sl	models=39	pos=8	neg=31	sorts=3	model_inputs=83	max_domains=tlb.pageentry=1, tlb.pmap=2, tlb.processor=2	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb22
+0122.sl	models=7	pos=4	neg=3	sorts=3	model_inputs=83	max_domains=tlb.pageentry=2, tlb.pmap=2, tlb.processor=2	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb23
+0123.sl	models=2	pos=1	neg=1	sorts=3	model_inputs=43	max_domains=tlb.pageentry=1, tlb.pmap=1, tlb.processor=1	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb24
+0124.sl	models=14	pos=5	neg=9	sorts=3	model_inputs=81	max_domains=tlb.pageentry=1, tlb.pmap=1, tlb.processor=2	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb3
+0125.sl	models=1094	pos=1069	neg=25	sorts=3	model_inputs=81	max_domains=tlb.pageentry=1, tlb.pmap=1, tlb.processor=2	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb301
+0126.sl	models=36	pos=10	neg=26	sorts=3	model_inputs=123	max_domains=tlb.pageentry=1, tlb.pmap=1, tlb.processor=3	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb4
+0127.sl	models=47	pos=5	neg=42	sorts=3	model_inputs=81	max_domains=tlb.pageentry=1, tlb.pmap=1, tlb.processor=2	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb5
+0128.sl	models=9	pos=1	neg=8	sorts=3	model_inputs=81	max_domains=tlb.pageentry=1, tlb.pmap=1, tlb.processor=2	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb6
+0129.sl	models=8	pos=2	neg=6	sorts=3	model_inputs=81	max_domains=tlb.pageentry=1, tlb.pmap=1, tlb.processor=2	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb7
+0130.sl	models=29	pos=3	neg=26	sorts=3	model_inputs=83	max_domains=tlb.pageentry=1, tlb.pmap=2, tlb.processor=2	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb8
+0131.sl	models=4	pos=2	neg=2	sorts=3	model_inputs=81	max_domains=tlb.pageentry=1, tlb.pmap=1, tlb.processor=2	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb9
+0132.sl	models=27	pos=13	neg=14	sorts=3	model_inputs=83	max_domains=tlb.pageentry=1, tlb.pmap=2, tlb.processor=2	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb_tp1_impl5
+0133.sl	models=22	pos=7	neg=15	sorts=3	model_inputs=81	max_domains=tlb.pageentry=1, tlb.pmap=1, tlb.processor=2	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb_tp1_impl6
+0134.sl	models=42	pos=8	neg=34	sorts=3	model_inputs=81	max_domains=tlb.pageentry=1, tlb.pmap=1, tlb.processor=2	good-ivy-examples/liveness/tlb_pcrel.ivy:tlb_tp1_impl7
+0135.sl	models=7	pos=3	neg=4	sorts=5	model_inputs=70	max_domains=config=2, node=1, quorum=1, round=3, value=1	good-ivy-examples/oopsla17-paxos/vertical_paxos_epr_unverified_optimization.ivy:c
+0136.sl	models=3	pos=2	neg=1	sorts=5	model_inputs=25	max_domains=config=1, node=1, quorum=1, round=1, value=2	good-ivy-examples/oopsla17-paxos/vertical_paxos_epr_unverified_optimization.ivy:c0
+0137.sl	models=4	pos=2	neg=2	sorts=5	model_inputs=49	max_domains=config=1, node=1, quorum=1, round=2, value=2	good-ivy-examples/oopsla17-paxos/vertical_paxos_epr_unverified_optimization.ivy:c1
+0138.sl	models=5	pos=2	neg=3	sorts=5	model_inputs=52	max_domains=config=1, node=2, quorum=1, round=2, value=1	good-ivy-examples/oopsla17-paxos/vertical_paxos_epr_unverified_optimization.ivy:c10
+0139.sl	models=23	pos=8	neg=15	sorts=5	model_inputs=85	max_domains=config=1, node=2, quorum=1, round=3, value=1	good-ivy-examples/oopsla17-paxos/vertical_paxos_epr_unverified_optimization.ivy:c11
+0140.sl	models=27	pos=5	neg=22	sorts=5	model_inputs=70	max_domains=config=2, node=1, quorum=1, round=3, value=1	good-ivy-examples/oopsla17-paxos/vertical_paxos_epr_unverified_optimization.ivy:c12
+0141.sl	models=12	pos=3	neg=9	sorts=5	model_inputs=47	max_domains=config=2, node=1, quorum=2, round=2, value=1	good-ivy-examples/oopsla17-paxos/vertical_paxos_epr_unverified_optimization.ivy:c13
+0142.sl	models=5	pos=1	neg=4	sorts=5	model_inputs=70	max_domains=config=1, node=2, quorum=1, round=2, value=2	good-ivy-examples/oopsla17-paxos/vertical_paxos_epr_unverified_optimization.ivy:c14
+0143.sl	models=4	pos=2	neg=2	sorts=5	model_inputs=44	max_domains=config=2, node=1, quorum=1, round=2, value=1	good-ivy-examples/oopsla17-paxos/vertical_paxos_epr_unverified_optimization.ivy:c2
+0144.sl	models=36	pos=6	neg=30	sorts=5	model_inputs=70	max_domains=config=2, node=1, quorum=1, round=3, value=1	good-ivy-examples/oopsla17-paxos/vertical_paxos_epr_unverified_optimization.ivy:c3
+0145.sl	models=5	pos=2	neg=3	sorts=5	model_inputs=49	max_domains=config=1, node=1, quorum=1, round=2, value=2	good-ivy-examples/oopsla17-paxos/vertical_paxos_epr_unverified_optimization.ivy:c4
+0146.sl	models=8	pos=3	neg=5	sorts=5	model_inputs=49	max_domains=config=1, node=1, quorum=1, round=2, value=2	good-ivy-examples/oopsla17-paxos/vertical_paxos_epr_unverified_optimization.ivy:c5
+0147.sl	models=61	pos=12	neg=49	sorts=5	model_inputs=70	max_domains=config=2, node=1, quorum=1, round=3, value=1	good-ivy-examples/oopsla17-paxos/vertical_paxos_epr_unverified_optimization.ivy:c6
+0148.sl	models=41	pos=11	neg=30	sorts=5	model_inputs=70	max_domains=config=2, node=1, quorum=1, round=3, value=1	good-ivy-examples/oopsla17-paxos/vertical_paxos_epr_unverified_optimization.ivy:c7
+0149.sl	models=7	pos=1	neg=6	sorts=5	model_inputs=52	max_domains=config=1, node=2, quorum=1, round=2, value=1	good-ivy-examples/oopsla17-paxos/vertical_paxos_epr_unverified_optimization.ivy:c8
+0150.sl	models=9	pos=4	neg=5	sorts=5	model_inputs=57	max_domains=config=2, node=1, quorum=2, round=2, value=2	good-ivy-examples/oopsla17-paxos/vertical_paxos_epr_unverified_optimization.ivy:c9
+0151.sl	models=7	pos=2	neg=5	sorts=5	model_inputs=53	max_domains=node=2, quorum_a=1, quorum_b=1, quorum_c=1, value=2	examples/fol/bosco_3t_safety.pyv:agreement1
+0152.sl	models=6	pos=2	neg=4	sorts=5	model_inputs=53	max_domains=node=2, quorum_a=1, quorum_b=1, quorum_c=1, value=2	examples/fol/bosco_3t_safety.pyv:agreement2
+0153.sl	models=7	pos=2	neg=5	sorts=5	model_inputs=38	max_domains=node=2, quorum_a=1, quorum_b=1, quorum_c=1, value=1	examples/fol/bosco_3t_safety.pyv:c0
+0154.sl	models=7	pos=2	neg=5	sorts=5	model_inputs=38	max_domains=node=2, quorum_a=1, quorum_b=1, quorum_c=1, value=1	examples/fol/bosco_3t_safety.pyv:c1
+0155.sl	models=5	pos=1	neg=4	sorts=5	model_inputs=53	max_domains=node=2, quorum_a=1, quorum_b=1, quorum_c=1, value=2	examples/fol/bosco_3t_safety.pyv:c2
+0156.sl	models=6	pos=1	neg=5	sorts=5	model_inputs=53	max_domains=node=2, quorum_a=1, quorum_b=1, quorum_c=1, value=2	examples/fol/bosco_3t_safety.pyv:c3
+0157.sl	models=6	pos=3	neg=3	sorts=5	model_inputs=53	max_domains=node=2, quorum_a=1, quorum_b=1, quorum_c=1, value=2	examples/fol/bosco_3t_safety.pyv:c4
+0158.sl	models=6	pos=3	neg=3	sorts=5	model_inputs=53	max_domains=node=2, quorum_a=1, quorum_b=1, quorum_c=1, value=2	examples/fol/bosco_3t_safety.pyv:c5
+0159.sl	models=5	pos=1	neg=4	sorts=5	model_inputs=53	max_domains=node=2, quorum_a=1, quorum_b=1, quorum_c=1, value=2	examples/fol/bosco_3t_safety.pyv:c6
+0160.sl	models=9	pos=3	neg=6	sorts=5	model_inputs=53	max_domains=node=2, quorum_a=1, quorum_b=1, quorum_c=1, value=2	examples/fol/bosco_3t_safety.pyv:c7
+0161.sl	models=7	pos=3	neg=4	sorts=5	model_inputs=53	max_domains=node=2, quorum_a=1, quorum_b=1, quorum_c=1, value=2	examples/fol/bosco_3t_safety.pyv:c8
+0162.sl	models=9	pos=5	neg=4	sorts=5	model_inputs=68	max_domains=node=2, quorum_a=1, quorum_b=1, quorum_c=1, value=3	examples/fol/bosco_3t_safety.pyv:c9
+0163.sl	models=4	pos=2	neg=2	sorts=5	model_inputs=53	max_domains=node=2, quorum_a=1, quorum_b=1, quorum_c=1, value=2	examples/fol/bosco_3t_safety.pyv:validity1
+0164.sl	models=5	pos=2	neg=3	sorts=5	model_inputs=53	max_domains=node=2, quorum_a=1, quorum_b=1, quorum_c=1, value=2	examples/fol/bosco_3t_safety.pyv:validity2
+0165.sl	models=6	pos=2	neg=4	sorts=3	model_inputs=15	max_domains=node=2, request=1, response=2	examples/fol/client_server_ae.pyv:c0
+0166.sl	models=6	pos=2	neg=4	sorts=3	model_inputs=15	max_domains=node=2, request=1, response=2	examples/fol/client_server_ae.pyv:c1
+0167.sl	models=6	pos=2	neg=4	sorts=4	model_inputs=21	max_domains=db_request_id=1, node=2, request=1, response=2	examples/fol/client_server_db_ae.pyv:c0
+0168.sl	models=6	pos=2	neg=4	sorts=4	model_inputs=21	max_domains=db_request_id=1, node=2, request=1, response=2	examples/fol/client_server_db_ae.pyv:c1
+0169.sl	models=6	pos=2	neg=4	sorts=4	model_inputs=18	max_domains=db_request_id=2, node=1, request=2, response=1	examples/fol/client_server_db_ae.pyv:c2
+0170.sl	models=6	pos=2	neg=4	sorts=4	model_inputs=19	max_domains=db_request_id=2, node=1, request=1, response=2	examples/fol/client_server_db_ae.pyv:c3
+0171.sl	models=3	pos=2	neg=1	sorts=4	model_inputs=15	max_domains=db_request_id=1, node=2, request=1, response=1	examples/fol/client_server_db_ae.pyv:c4
+0172.sl	models=3	pos=2	neg=1	sorts=3	model_inputs=11	max_domains=node=1, quorum=1, value=2	examples/fol/consensus_epr.pyv:c0
+0173.sl	models=3	pos=2	neg=1	sorts=3	model_inputs=23	max_domains=node=2, quorum=1, value=1	examples/fol/consensus_epr.pyv:c1
+0174.sl	models=9	pos=2	neg=7	sorts=3	model_inputs=23	max_domains=node=2, quorum=1, value=1	examples/fol/consensus_epr.pyv:c2
+0175.sl	models=6	pos=3	neg=3	sorts=3	model_inputs=42	max_domains=node=3, quorum=1, value=1	examples/fol/consensus_epr.pyv:c3
+0176.sl	models=5	pos=2	neg=3	sorts=3	model_inputs=23	max_domains=node=2, quorum=1, value=1	examples/fol/consensus_epr.pyv:c4
+0177.sl	models=9	pos=3	neg=6	sorts=3	model_inputs=23	max_domains=node=2, quorum=1, value=1	examples/fol/consensus_epr.pyv:c5
+0178.sl	models=4	pos=2	neg=2	sorts=3	model_inputs=25	max_domains=node=2, quorum=1, value=2	examples/fol/consensus_epr.pyv:c6
+0179.sl	models=3	pos=2	neg=1	sorts=3	model_inputs=12	max_domains=node=1, quorum=1, value=2	examples/fol/consensus_forall.pyv:c0
+0180.sl	models=3	pos=2	neg=1	sorts=3	model_inputs=24	max_domains=node=2, quorum=1, value=1	examples/fol/consensus_forall.pyv:c1
+0181.sl	models=9	pos=2	neg=7	sorts=3	model_inputs=24	max_domains=node=2, quorum=1, value=1	examples/fol/consensus_forall.pyv:c2
+0182.sl	models=6	pos=3	neg=3	sorts=3	model_inputs=43	max_domains=node=3, quorum=1, value=1	examples/fol/consensus_forall.pyv:c3
+0183.sl	models=5	pos=2	neg=3	sorts=3	model_inputs=24	max_domains=node=2, quorum=1, value=1	examples/fol/consensus_forall.pyv:c4
+0184.sl	models=9	pos=3	neg=6	sorts=3	model_inputs=24	max_domains=node=2, quorum=1, value=1	examples/fol/consensus_forall.pyv:c5
+0185.sl	models=5	pos=2	neg=3	sorts=3	model_inputs=26	max_domains=node=2, quorum=1, value=2	examples/fol/consensus_forall.pyv:c6
+0186.sl	models=3	pos=2	neg=1	sorts=2	model_inputs=21	max_domains=node=2, quorum=1	examples/fol/consensus_wo_decide.pyv:c0
+0187.sl	models=9	pos=2	neg=7	sorts=2	model_inputs=21	max_domains=node=2, quorum=1	examples/fol/consensus_wo_decide.pyv:c1
+0188.sl	models=6	pos=3	neg=3	sorts=2	model_inputs=39	max_domains=node=3, quorum=1	examples/fol/consensus_wo_decide.pyv:c2
+0189.sl	models=6	pos=2	neg=4	sorts=2	model_inputs=21	max_domains=node=2, quorum=1	examples/fol/consensus_wo_decide.pyv:c3
+0190.sl	models=9	pos=3	neg=6	sorts=2	model_inputs=21	max_domains=node=2, quorum=1	examples/fol/consensus_wo_decide.pyv:c4
+0191.sl	models=17	pos=11	neg=6	sorts=1	model_inputs=16	max_domains=node=3	examples/fol/firewall.pyv:c0
+0192.sl	models=12	pos=5	neg=7	sorts=1	model_inputs=9	max_domains=node=2	examples/fol/firewall.pyv:c1
+0193.sl	models=9	pos=5	neg=4	sorts=3	model_inputs=29	max_domains=node=2, quorum_a=1, quorum_b=1	examples/fol/hybrid_reliable_broadcast_cisa.pyv:c0
+0194.sl	models=7	pos=2	neg=5	sorts=3	model_inputs=29	max_domains=node=2, quorum_a=1, quorum_b=1	examples/fol/hybrid_reliable_broadcast_cisa.pyv:c1
+0195.sl	models=10	pos=4	neg=6	sorts=3	model_inputs=29	max_domains=node=2, quorum_a=1, quorum_b=1	examples/fol/hybrid_reliable_broadcast_cisa.pyv:c2
+0196.sl	models=10	pos=4	neg=6	sorts=3	model_inputs=29	max_domains=node=2, quorum_a=1, quorum_b=1	examples/fol/hybrid_reliable_broadcast_cisa.pyv:c3
+0197.sl	models=16	pos=6	neg=10	sorts=3	model_inputs=29	max_domains=node=2, quorum_a=1, quorum_b=1	examples/fol/hybrid_reliable_broadcast_cisa.pyv:c4
+0198.sl	models=13	pos=4	neg=9	sorts=3	model_inputs=29	max_domains=node=2, quorum_a=1, quorum_b=1	examples/fol/hybrid_reliable_broadcast_cisa.pyv:c5
+0199.sl	models=13	pos=7	neg=6	sorts=3	model_inputs=51	max_domains=node=3, quorum_a=2, quorum_b=1	examples/fol/hybrid_reliable_broadcast_cisa.pyv:c6
+0200.sl	models=16	pos=7	neg=9	sorts=3	model_inputs=48	max_domains=node=3, quorum_a=1, quorum_b=1	examples/fol/hybrid_reliable_broadcast_cisa.pyv:unforgebility
+0201.sl	models=4	pos=1	neg=3	sorts=1	model_inputs=25	max_domains=node=2	examples/fol/learning_switch.pyv:c0
+0202.sl	models=9	pos=2	neg=7	sorts=1	model_inputs=109	max_domains=node=3	examples/fol/learning_switch.pyv:c1
+0203.sl	models=8	pos=2	neg=6	sorts=1	model_inputs=109	max_domains=node=3	examples/fol/learning_switch.pyv:c2
+0204.sl	models=6	pos=2	neg=4	sorts=1	model_inputs=109	max_domains=node=3	examples/fol/learning_switch.pyv:c3
+0205.sl	models=37	pos=4	neg=33	sorts=1	model_inputs=109	max_domains=node=3	examples/fol/learning_switch.pyv:c4
+0206.sl	models=8	pos=4	neg=4	sorts=1	model_inputs=109	max_domains=node=3	examples/fol/learning_switch.pyv:c5
+0207.sl	models=3	pos=2	neg=1	sorts=1	model_inputs=10	max_domains=node=2	examples/fol/lockserv.pyv:c0
+0208.sl	models=3	pos=2	neg=1	sorts=1	model_inputs=10	max_domains=node=2	examples/fol/lockserv.pyv:c1
+0209.sl	models=7	pos=3	neg=4	sorts=1	model_inputs=10	max_domains=node=2	examples/fol/lockserv.pyv:c2
+0210.sl	models=7	pos=3	neg=4	sorts=1	model_inputs=10	max_domains=node=2	examples/fol/lockserv.pyv:c3
+0211.sl	models=7	pos=3	neg=4	sorts=1	model_inputs=10	max_domains=node=2	examples/fol/lockserv.pyv:c4
+0212.sl	models=4	pos=3	neg=1	sorts=1	model_inputs=10	max_domains=node=2	examples/fol/lockserv.pyv:c5
+0213.sl	models=5	pos=3	neg=2	sorts=1	model_inputs=10	max_domains=node=2	examples/fol/lockserv.pyv:c6
+0214.sl	models=5	pos=3	neg=2	sorts=1	model_inputs=10	max_domains=node=2	examples/fol/lockserv.pyv:c7
+0215.sl	models=3	pos=2	neg=1	sorts=1	model_inputs=10	max_domains=node=2	examples/fol/lockserv.pyv:mutex
+0216.sl	models=4	pos=2	neg=2	sorts=4	model_inputs=28	max_domains=node=1, quorum=1, round=2, value=2	examples/fol/paxos_epr.pyv:c0
+0217.sl	models=4	pos=2	neg=2	sorts=4	model_inputs=28	max_domains=node=1, quorum=1, round=2, value=2	examples/fol/paxos_epr.pyv:c1
+0218.sl	models=5	pos=2	neg=3	sorts=4	model_inputs=28	max_domains=node=1, quorum=1, round=2, value=2	examples/fol/paxos_epr.pyv:c2
+0219.sl	models=5	pos=2	neg=3	sorts=4	model_inputs=28	max_domains=node=1, quorum=1, round=2, value=2	examples/fol/paxos_epr.pyv:c3
+0220.sl	models=19	pos=5	neg=14	sorts=4	model_inputs=43	max_domains=node=2, quorum=1, round=3, value=1	examples/fol/paxos_epr.pyv:c4
+0221.sl	models=5	pos=3	neg=2	sorts=4	model_inputs=28	max_domains=node=1, quorum=1, round=2, value=2	examples/fol/paxos_epr.pyv:c5
+0222.sl	models=10	pos=1	neg=9	sorts=8	model_inputs=105	max_domains=index=2, log=1, node=2, option_index=1, option_term=1, quorum=1, term=2, value=1	examples/fol/raft.pyv:AER_term_log
+0223.sl	models=15	pos=2	neg=13	sorts=8	model_inputs=89	max_domains=index=2, log=1, node=1, option_index=1, option_term=1, quorum=1, term=2, value=2	examples/fol/raft.pyv:AE_none_means_init
+0224.sl	models=6	pos=2	neg=4	sorts=8	model_inputs=65	max_domains=index=2, log=1, node=1, option_index=2, option_term=2, quorum=1, term=1, value=1	examples/fol/raft.pyv:AE_option_wf
+0225.sl	models=15	pos=2	neg=13	sorts=8	model_inputs=109	max_domains=index=2, log=1, node=1, option_index=2, option_term=1, quorum=1, term=2, value=2	examples/fol/raft.pyv:AE_prev_term_log
+0226.sl	models=19	pos=2	neg=17	sorts=8	model_inputs=91	max_domains=index=2, log=1, node=1, option_index=2, option_term=1, quorum=1, term=2, value=1	examples/fol/raft.pyv:AE_some_succ
+0227.sl	models=10	pos=1	neg=9	sorts=8	model_inputs=89	max_domains=index=2, log=1, node=1, option_index=1, option_term=1, quorum=1, term=2, value=2	examples/fol/raft.pyv:AE_term_log
+0228.sl	models=4	pos=2	neg=2	sorts=8	model_inputs=52	max_domains=index=2, log=1, node=1, option_index=1, option_term=1, quorum=1, term=1, value=1	examples/fol/raft.pyv:CI_zero_until_commit
+0229.sl	models=26	pos=10	neg=16	sorts=8	model_inputs=128	max_domains=index=2, log=2, node=2, option_index=1, option_term=2, quorum=1, term=2, value=1	examples/fol/raft.pyv:RV_none_index_not_used
+0230.sl	models=5	pos=2	neg=3	sorts=8	model_inputs=67	max_domains=index=1, log=1, node=2, option_index=2, option_term=2, quorum=1, term=1, value=1	examples/fol/raft.pyv:RV_option_wf
+0231.sl	models=5	pos=2	neg=3	sorts=8	model_inputs=67	max_domains=index=1, log=1, node=2, option_index=2, option_term=2, quorum=1, term=1, value=1	examples/fol/raft.pyv:RV_partial_func
+0232.sl	models=41	pos=16	neg=25	sorts=8	model_inputs=128	max_domains=index=2, log=2, node=2, option_index=2, option_term=1, quorum=1, term=2, value=1	examples/fol/raft.pyv:RV_some_index_no_bigger
+0233.sl	models=14	pos=6	neg=8	sorts=8	model_inputs=95	max_domains=index=1, log=1, node=2, option_index=2, option_term=1, quorum=1, term=2, value=1	examples/fol/raft.pyv:RV_some_index_term_at
+0234.sl	models=12	pos=4	neg=8	sorts=8	model_inputs=95	max_domains=index=1, log=1, node=2, option_index=1, option_term=2, quorum=1, term=2, value=1	examples/fol/raft.pyv:RV_term
+0235.sl	models=7	pos=2	neg=5	sorts=8	model_inputs=56	max_domains=index=2, log=1, node=1, option_index=1, option_term=1, quorum=1, term=1, value=2	examples/fol/raft.pyv:any_committed_commit_index_committed
+0236.sl	models=7	pos=4	neg=3	sorts=8	model_inputs=60	max_domains=index=2, log=1, node=1, option_index=1, option_term=1, quorum=1, term=1, value=3	examples/fol/raft.pyv:c0
+0237.sl	models=10	pos=1	neg=9	sorts=8	model_inputs=107	max_domains=index=2, log=1, node=2, option_index=1, option_term=1, quorum=2, term=2, value=1	examples/fol/raft.pyv:choosable_AER_current_log
+0238.sl	models=33	pos=8	neg=25	sorts=8	model_inputs=138	max_domains=index=2, log=3, node=1, option_index=1, option_term=1, quorum=1, term=3, value=1	examples/fol/raft.pyv:choosable_future_term_log
+0239.sl	models=27	pos=8	neg=19	sorts=8	model_inputs=105	max_domains=index=2, log=1, node=2, option_index=1, option_term=1, quorum=1, term=2, value=1	examples/fol/raft.pyv:choosable_vote_msg
+0240.sl	models=12	pos=8	neg=4	sorts=8	model_inputs=88	max_domains=index=2, log=2, node=1, option_index=1, option_term=1, quorum=1, term=2, value=1	examples/fol/raft.pyv:commit_log_no_future_entries
+0241.sl	models=34	pos=7	neg=27	sorts=8	model_inputs=125	max_domains=index=3, log=2, node=1, option_index=1, option_term=1, quorum=1, term=2, value=2	examples/fol/raft.pyv:commit_log_uses_up_to_commit_index
+0242.sl	models=13	pos=3	neg=10	sorts=8	model_inputs=117	max_domains=index=2, log=1, node=2, option_index=1, option_term=1, quorum=2, term=2, value=2	examples/fol/raft.pyv:commit_quorum
+0243.sl	models=10	pos=2	neg=8	sorts=8	model_inputs=63	max_domains=index=2, log=2, node=1, option_index=1, option_term=1, quorum=1, term=1, value=2	examples/fol/raft.pyv:committed_iff_in_commit_log
+0244.sl	models=20	pos=9	neg=11	sorts=8	model_inputs=114	max_domains=index=2, log=2, node=2, option_index=1, option_term=1, quorum=1, term=2, value=1	examples/fol/raft.pyv:current_log_no_future_entries
+0245.sl	models=9	pos=4	neg=5	sorts=8	model_inputs=124	max_domains=index=1, log=1, node=2, option_index=1, option_term=1, quorum=1, term=3, value=1	examples/fol/raft.pyv:current_term_partial_func
+0246.sl	models=29	pos=3	neg=26	sorts=8	model_inputs=97	max_domains=index=2, log=3, node=1, option_index=1, option_term=1, quorum=1, term=2, value=1	examples/fol/raft.pyv:entries_from_term_in_term_log
+0247.sl	models=45	pos=13	neg=32	sorts=8	model_inputs=83	max_domains=index=3, log=3, node=1, option_index=1, option_term=1, quorum=1, term=1, value=1	examples/fol/raft.pyv:index_used_downward_closed
+0248.sl	models=13	pos=5	neg=8	sorts=8	model_inputs=88	max_domains=index=2, log=2, node=1, option_index=1, option_term=1, quorum=1, term=2, value=1	examples/fol/raft.pyv:index_used_term_log_started
+0249.sl	models=6	pos=2	neg=4	sorts=8	model_inputs=85	max_domains=index=1, log=1, node=2, option_index=1, option_term=1, quorum=1, term=2, value=1	examples/fol/raft.pyv:leader_started
+0250.sl	models=17	pos=4	neg=13	sorts=8	model_inputs=90	max_domains=index=1, log=2, node=2, option_index=1, option_term=1, quorum=1, term=2, value=1	examples/fol/raft.pyv:leader_term_log
+0251.sl	models=18	pos=7	neg=11	sorts=8	model_inputs=124	max_domains=index=1, log=1, node=2, option_index=1, option_term=1, quorum=1, term=3, value=1	examples/fol/raft.pyv:left_term_downward
+0252.sl	models=7	pos=2	neg=5	sorts=8	model_inputs=85	max_domains=index=1, log=1, node=2, option_index=1, option_term=1, quorum=1, term=2, value=1	examples/fol/raft.pyv:left_term_not_current
+0253.sl	models=26	pos=8	neg=18	sorts=8	model_inputs=107	max_domains=index=2, log=3, node=1, option_index=1, option_term=1, quorum=1, term=2, value=2	examples/fol/raft.pyv:log_matching
+0254.sl	models=27	pos=6	neg=21	sorts=8	model_inputs=124	max_domains=index=1, log=1, node=2, option_index=1, option_term=1, quorum=1, term=3, value=1	examples/fol/raft.pyv:lt_current_left_term
+0255.sl	models=13	pos=4	neg=9	sorts=8	model_inputs=85	max_domains=index=1, log=1, node=2, option_index=1, option_term=1, quorum=1, term=2, value=1	examples/fol/raft.pyv:no_future_leaders
+0256.sl	models=7	pos=3	neg=4	sorts=8	model_inputs=111	max_domains=index=1, log=1, node=3, option_index=1, option_term=1, quorum=1, term=2, value=1	examples/fol/raft.pyv:one_leader_per_term
+0257.sl	models=4	pos=2	neg=2	sorts=8	model_inputs=63	max_domains=index=1, log=1, node=1, option_index=1, option_term=1, quorum=1, term=2, value=1	examples/fol/raft.pyv:started_term_leader
+0258.sl	models=5	pos=2	neg=3	sorts=8	model_inputs=59	max_domains=index=2, log=2, node=1, option_index=1, option_term=1, quorum=1, term=1, value=1	examples/fol/raft.pyv:term_at_commit_term
+0259.sl	models=12	pos=4	neg=8	sorts=8	model_inputs=88	max_domains=index=2, log=2, node=1, option_index=1, option_term=1, quorum=1, term=2, value=1	examples/fol/raft.pyv:term_at_index_used
+0260.sl	models=21	pos=6	neg=15	sorts=8	model_inputs=138	max_domains=index=2, log=3, node=1, option_index=1, option_term=1, quorum=1, term=3, value=1	examples/fol/raft.pyv:term_log_no_future_entries
+0261.sl	models=3	pos=1	neg=2	sorts=8	model_inputs=47	max_domains=index=1, log=2, node=1, option_index=1, option_term=1, quorum=1, term=1, value=1	examples/fol/raft.pyv:valid_commit_log
+0262.sl	models=5	pos=2	neg=3	sorts=8	model_inputs=58	max_domains=index=1, log=2, node=2, option_index=1, option_term=1, quorum=1, term=1, value=1	examples/fol/raft.pyv:valid_current_log
+0263.sl	models=3	pos=1	neg=2	sorts=8	model_inputs=68	max_domains=index=1, log=2, node=1, option_index=1, option_term=1, quorum=1, term=2, value=1	examples/fol/raft.pyv:valid_term_log
+0264.sl	models=15	pos=2	neg=13	sorts=8	model_inputs=111	max_domains=index=1, log=1, node=3, option_index=1, option_term=1, quorum=1, term=2, value=1	examples/fol/raft.pyv:vote_msg_partial_func
+0265.sl	models=20	pos=4	neg=16	sorts=8	model_inputs=85	max_domains=index=1, log=1, node=2, option_index=1, option_term=1, quorum=1, term=2, value=1	examples/fol/raft.pyv:vote_msg_voted
+0266.sl	models=23	pos=6	neg=17	sorts=8	model_inputs=124	max_domains=index=1, log=1, node=2, option_index=1, option_term=1, quorum=1, term=3, value=1	examples/fol/raft.pyv:voters_left_term
+0267.sl	models=26	pos=4	neg=22	sorts=8	model_inputs=87	max_domains=index=1, log=1, node=2, option_index=1, option_term=1, quorum=2, term=2, value=1	examples/fol/raft.pyv:voting_quorum_vote_msg
+0268.sl	models=6	pos=4	neg=2	sorts=2	model_inputs=22	max_domains=id=2, node=2	examples/fol/ring_id.pyv:leader_max
+0269.sl	models=3	pos=2	neg=1	sorts=2	model_inputs=22	max_domains=id=2, node=2	examples/fol/ring_id.pyv:leader_unique
+0270.sl	models=4	pos=3	neg=1	sorts=2	model_inputs=53	max_domains=id=3, node=3	examples/fol/ring_id.pyv:no_bypass
+0271.sl	models=6	pos=4	neg=2	sorts=2	model_inputs=22	max_domains=id=2, node=2	examples/fol/ring_id.pyv:self_pending_max
+0272.sl	models=7	pos=5	neg=2	sorts=2	model_inputs=24	max_domains=id=2, node=2	examples/fol/ring_id_not_dead.pyv:for_not_dead
+0273.sl	models=7	pos=5	neg=2	sorts=2	model_inputs=24	max_domains=id=2, node=2	examples/fol/ring_id_not_dead.pyv:leader_max
+0274.sl	models=4	pos=2	neg=2	sorts=2	model_inputs=56	max_domains=id=3, node=3	examples/fol/ring_id_not_dead.pyv:leader_unique
+0275.sl	models=4	pos=3	neg=1	sorts=2	model_inputs=56	max_domains=id=3, node=3	examples/fol/ring_id_not_dead.pyv:no_bypass
+0276.sl	models=7	pos=6	neg=1	sorts=2	model_inputs=12	max_domains=id=2, node=1	examples/fol/ring_id_not_dead.pyv:not_dead
+0277.sl	models=6	pos=4	neg=2	sorts=2	model_inputs=24	max_domains=id=2, node=2	examples/fol/ring_id_not_dead.pyv:seflf_pending_max
+0278.sl	models=3	pos=2	neg=1	sorts=3	model_inputs=9	max_domains=key=1, node=2, value=1	examples/fol/sharded_kv.pyv:c0
+0279.sl	models=5	pos=2	neg=3	sorts=3	model_inputs=15	max_domains=key=2, node=2, value=1	examples/fol/sharded_kv.pyv:c1
+0280.sl	models=2	pos=1	neg=1	sorts=3	model_inputs=6	max_domains=key=1, node=1, value=1	examples/fol/sharded_kv.pyv:c2
+0281.sl	models=3	pos=1	neg=2	sorts=3	model_inputs=13	max_domains=key=1, node=2, value=2	examples/fol/sharded_kv.pyv:c3
+0282.sl	models=3	pos=1	neg=2	sorts=3	model_inputs=13	max_domains=key=1, node=2, value=2	examples/fol/sharded_kv.pyv:keys_unique
+0283.sl	models=2	pos=1	neg=1	sorts=3	model_inputs=6	max_domains=key=1, node=1, value=1	examples/fol/sharded_kv_no_lost_keys.pyv:c0
+0284.sl	models=3	pos=2	neg=1	sorts=3	model_inputs=6	max_domains=key=1, node=1, value=1	examples/fol/sharded_kv_no_lost_keys.pyv:c1
+0285.sl	models=11	pos=7	neg=4	sorts=2	model_inputs=14	max_domains=thread=2, ticket=1	examples/fol/ticket.pyv:c0
+0286.sl	models=4	pos=2	neg=2	sorts=2	model_inputs=14	max_domains=thread=2, ticket=1	examples/fol/ticket.pyv:c1
+0287.sl	models=5	pos=2	neg=3	sorts=2	model_inputs=19	max_domains=thread=2, ticket=2	examples/fol/ticket.pyv:c10
+0288.sl	models=3	pos=2	neg=1	sorts=2	model_inputs=14	max_domains=thread=1, ticket=2	examples/fol/ticket.pyv:c11
+0289.sl	models=8	pos=4	neg=4	sorts=2	model_inputs=24	max_domains=thread=3, ticket=2	examples/fol/ticket.pyv:c12
+0290.sl	models=4	pos=2	neg=2	sorts=2	model_inputs=14	max_domains=thread=2, ticket=1	examples/fol/ticket.pyv:c2
+0291.sl	models=4	pos=2	neg=2	sorts=2	model_inputs=14	max_domains=thread=2, ticket=1	examples/fol/ticket.pyv:c3
+0292.sl	models=11	pos=4	neg=7	sorts=2	model_inputs=26	max_domains=thread=2, ticket=3	examples/fol/ticket.pyv:c4
+0293.sl	models=5	pos=3	neg=2	sorts=2	model_inputs=19	max_domains=thread=2, ticket=2	examples/fol/ticket.pyv:c5
+0294.sl	models=11	pos=6	neg=5	sorts=2	model_inputs=26	max_domains=thread=2, ticket=3	examples/fol/ticket.pyv:c6
+0295.sl	models=7	pos=3	neg=4	sorts=2	model_inputs=19	max_domains=thread=2, ticket=2	examples/fol/ticket.pyv:c7
+0296.sl	models=7	pos=3	neg=4	sorts=2	model_inputs=19	max_domains=thread=2, ticket=2	examples/fol/ticket.pyv:c8
+0297.sl	models=7	pos=4	neg=3	sorts=2	model_inputs=26	max_domains=thread=2, ticket=3	examples/fol/ticket.pyv:c9
+0298.sl	models=3	pos=2	neg=1	sorts=2	model_inputs=14	max_domains=thread=2, ticket=1	examples/fol/ticket.pyv:mutex
+0299.sl	models=3	pos=2	neg=1	sorts=3	model_inputs=9	max_domains=node=1, quorum=1, value=2	examples/fol/toy_consensus_epr.pyv:c0
+0300.sl	models=5	pos=2	neg=3	sorts=3	model_inputs=13	max_domains=node=2, quorum=1, value=2	examples/fol/toy_consensus_epr.pyv:c1
+0301.sl	models=3	pos=2	neg=1	sorts=3	model_inputs=9	max_domains=node=1, quorum=1, value=2	examples/fol/toy_consensus_epr.pyv:c2
+0302.sl	models=7	pos=4	neg=3	sorts=3	model_inputs=13	max_domains=node=2, quorum=1, value=2	examples/fol/toy_consensus_epr.pyv:c3
+0303.sl	models=3	pos=2	neg=1	sorts=3	model_inputs=10	max_domains=node=1, quorum=1, value=2	examples/fol/toy_consensus_forall.pyv:c0
+0304.sl	models=5	pos=2	neg=3	sorts=3	model_inputs=14	max_domains=node=2, quorum=1, value=2	examples/fol/toy_consensus_forall.pyv:c1
+0305.sl	models=3	pos=2	neg=1	sorts=3	model_inputs=10	max_domains=node=1, quorum=1, value=2	examples/fol/toy_consensus_forall.pyv:c2
+0306.sl	models=6	pos=3	neg=3	sorts=3	model_inputs=14	max_domains=node=2, quorum=1, value=2	examples/fol/toy_consensus_forall.pyv:c3

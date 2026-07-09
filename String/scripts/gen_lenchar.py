@@ -102,6 +102,33 @@ def idx_e(i: int) -> str:
     return f'${i}'
 
 
+def string_axioms():
+    """Conservative algebraic laws used by the enumerator for pruning.
+
+    Keep these to equations that are valid for both real String semantics and
+    this finite Len/Char encoding.  In particular, avoid laws for operators
+    that are currently stubbed or intentionally approximate in some String
+    encodings, such as replace.
+    """
+    lines = [
+        "; Canonical String algebraic axioms for pruning.",
+        "(declare-axiom (= (str.++ (str.++ x y) z) (str.++ x (str.++ y z))))",
+        "(declare-axiom (= (str.ite bool.true x y) x))",
+        "(declare-axiom (= (str.ite bool.false x y) y))",
+        "(declare-axiom (= (str.ite b x x) x))",
+        "(declare-axiom (= (int.+ x y) (int.+ y x)))",
+        "(declare-axiom (= (int.+ (int.+ x y) z) (int.+ x (int.+ y z))))",
+        "(declare-axiom (= (int.+ int.0 x) x))",
+        "(declare-axiom (= (int.+ x int.0) x))",
+        "(declare-axiom (= (int.- x int.0) x))",
+        "(declare-axiom (= (int.ite bool.true x y) x))",
+        "(declare-axiom (= (int.ite bool.false x y) y))",
+        "(declare-axiom (= (int.ite b x x) x))",
+        "(declare-axiom (= (bool.= x y) (bool.= y x)))",
+    ]
+    return lines
+
+
 # ===========================================================================
 # Enumeration helpers (the core mechanism)
 # ===========================================================================
@@ -392,6 +419,8 @@ def emit(n_args, constants, constraints, slack=0, source_tag=None):
     o.append("   (" + " ".join(bool_terms) + ")")
     o.append(" )")
     o.append(")")
+    o.append("")
+    o.extend(string_axioms())
     o.append("")
 
     # ---- signature ---------------------------------------------------------
