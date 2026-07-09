@@ -1,7 +1,7 @@
 (set-logic SLIA)
 
 ; Converted from upstream Regel benchmark stackoverflow/44.
-; Grammar mirrors delis RegLan theory: char literals actually used + re.allchar + standard ops.
+; Grammar mirrors the Delis RegLan terminal set plus standard ops.
 
 (define-fun w1 () String "0")
 (define-fun w2 () String "2")
@@ -17,6 +17,20 @@
     (
         (Start RegLan
             (
+                re.allchar
+                (re.range "0" "9")
+                (re.range "a" "z")
+                (re.range "A" "Z")
+                (re.union (re.range "A" "Z") (re.range "a" "z"))
+                (re.union (re.union (re.range "A" "Z") (re.range "a" "z")) (re.range "0" "9"))
+                (re.union (re.union (re.union (re.range "A" "Z") (re.range "a" "z")) (re.range "0" "9")) (str.to_re "_"))
+                (re.union (str.to_re " ") (re.union (str.to_re "\u{9}") (str.to_re "\u{A}")))
+                (re.union (re.range "0" "9") (re.union (re.range "a" "f") (re.range "A" "F")))
+                (str.to_re " ")
+                (str.to_re "!")
+                (str.to_re "#")
+                (str.to_re "%")
+                (str.to_re ",")
                 (str.to_re "-")
                 (str.to_re ".")
                 (str.to_re "0")
@@ -29,7 +43,27 @@
                 (str.to_re "7")
                 (str.to_re "8")
                 (str.to_re "9")
-                re.allchar
+                (str.to_re "@")
+                (str.to_re "A")
+                (str.to_re "B")
+                (str.to_re "E")
+                (str.to_re "H")
+                (str.to_re "L")
+                (str.to_re "O")
+                (str.to_re "Z")
+                (str.to_re "a")
+                (str.to_re "b")
+                (str.to_re "c")
+                (str.to_re "d")
+                (str.to_re "e")
+                (str.to_re "g")
+                (str.to_re "h")
+                (str.to_re "i")
+                (str.to_re "n")
+                (str.to_re "o")
+                (str.to_re "t")
+                (str.to_re "y")
+                (str.to_re "\u{39B}")
                 (re.opt Start)
                 (re.++ Start Start)
                 (re.union Start Start)

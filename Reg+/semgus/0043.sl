@@ -9,8 +9,7 @@
     (
         (($eval R))
         (
-            ($any)
-            ($x21) ($x27) ($x28) ($x2A) ($x31) ($x3B) ($x40) ($x41) ($x4D) ($x4E) ($x50) ($x5A) ($x5B) ($x61) ($x6B) ($x6D) ($x70) ($x7A)
+            ($any) ($digit) ($lower) ($upper) ($alpha) ($alnum) ($word) ($space) ($hex) ($x1B) ($x21) ($x22) ($x23) ($x24) ($x25) ($x26) ($x27) ($x28) ($x29) ($x2A) ($x2C) ($x2D) ($x2E) ($x2F) ($x3A) ($x3B) ($x3C) ($x3E) ($x3F) ($x40) ($x5B) ($x5C) ($x5E) ($x5F) ($x60) ($x7B) ($x7E)
             ($question R)
             ($plus R)
             ($or R R)
@@ -40,10 +39,52 @@
         )) :input (len s_0 s_1) :output (result))
         (! (match t (
             ($any
-                (and (= X_0_0 false) (= X_0_1 (< 0 len)) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (< 1 len)) (= X_2_2 false))
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) true)) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) true)) (= X_2_2 false))
+            )
+            ($digit
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (and (<= 48 s_0) (<= s_0 57)))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (and (<= 48 s_1) (<= s_1 57)))) (= X_2_2 false))
+            )
+            ($lower
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (and (<= 97 s_0) (<= s_0 122)))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (and (<= 97 s_1) (<= s_1 122)))) (= X_2_2 false))
+            )
+            ($upper
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (and (<= 65 s_0) (<= s_0 90)))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (and (<= 65 s_1) (<= s_1 90)))) (= X_2_2 false))
+            )
+            ($alpha
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (or (and (<= 65 s_0) (<= s_0 90)) (and (<= 97 s_0) (<= s_0 122))))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (or (and (<= 65 s_1) (<= s_1 90)) (and (<= 97 s_1) (<= s_1 122))))) (= X_2_2 false))
+            )
+            ($alnum
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (or (or (and (<= 65 s_0) (<= s_0 90)) (and (<= 97 s_0) (<= s_0 122))) (and (<= 48 s_0) (<= s_0 57))))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (or (or (and (<= 65 s_1) (<= s_1 90)) (and (<= 97 s_1) (<= s_1 122))) (and (<= 48 s_1) (<= s_1 57))))) (= X_2_2 false))
+            )
+            ($word
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (or (or (or (and (<= 65 s_0) (<= s_0 90)) (and (<= 97 s_0) (<= s_0 122))) (and (<= 48 s_0) (<= s_0 57))) (= s_0 95)))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (or (or (or (and (<= 65 s_1) (<= s_1 90)) (and (<= 97 s_1) (<= s_1 122))) (and (<= 48 s_1) (<= s_1 57))) (= s_1 95)))) (= X_2_2 false))
+            )
+            ($space
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (or (= s_0 32) (= s_0 9) (= s_0 10)))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (or (= s_1 32) (= s_1 9) (= s_1 10)))) (= X_2_2 false))
+            )
+            ($hex
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (or (and (<= 48 s_0) (<= s_0 57)) (and (<= 97 s_0) (<= s_0 102)) (and (<= 65 s_0) (<= s_0 70))))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (or (and (<= 48 s_1) (<= s_1 57)) (and (<= 97 s_1) (<= s_1 102)) (and (<= 65 s_1) (<= s_1 70))))) (= X_2_2 false))
+            )
+            ($x1B
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 27))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 27))) (= X_2_2 false))
             )
             ($x21
                 (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 33))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 33))) (= X_2_2 false))
+            )
+            ($x22
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 34))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 34))) (= X_2_2 false))
+            )
+            ($x23
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 35))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 35))) (= X_2_2 false))
+            )
+            ($x24
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 36))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 36))) (= X_2_2 false))
+            )
+            ($x25
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 37))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 37))) (= X_2_2 false))
+            )
+            ($x26
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 38))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 38))) (= X_2_2 false))
             )
             ($x27
                 (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 39))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 39))) (= X_2_2 false))
@@ -51,50 +92,62 @@
             ($x28
                 (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 40))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 40))) (= X_2_2 false))
             )
+            ($x29
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 41))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 41))) (= X_2_2 false))
+            )
             ($x2A
                 (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 42))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 42))) (= X_2_2 false))
             )
-            ($x31
-                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 49))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 49))) (= X_2_2 false))
+            ($x2C
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 44))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 44))) (= X_2_2 false))
+            )
+            ($x2D
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 45))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 45))) (= X_2_2 false))
+            )
+            ($x2E
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 46))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 46))) (= X_2_2 false))
+            )
+            ($x2F
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 47))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 47))) (= X_2_2 false))
+            )
+            ($x3A
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 58))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 58))) (= X_2_2 false))
             )
             ($x3B
                 (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 59))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 59))) (= X_2_2 false))
             )
+            ($x3C
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 60))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 60))) (= X_2_2 false))
+            )
+            ($x3E
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 62))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 62))) (= X_2_2 false))
+            )
+            ($x3F
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 63))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 63))) (= X_2_2 false))
+            )
             ($x40
                 (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 64))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 64))) (= X_2_2 false))
-            )
-            ($x41
-                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 65))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 65))) (= X_2_2 false))
-            )
-            ($x4D
-                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 77))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 77))) (= X_2_2 false))
-            )
-            ($x4E
-                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 78))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 78))) (= X_2_2 false))
-            )
-            ($x50
-                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 80))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 80))) (= X_2_2 false))
-            )
-            ($x5A
-                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 90))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 90))) (= X_2_2 false))
             )
             ($x5B
                 (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 91))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 91))) (= X_2_2 false))
             )
-            ($x61
-                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 97))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 97))) (= X_2_2 false))
+            ($x5C
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 92))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 92))) (= X_2_2 false))
             )
-            ($x6B
-                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 107))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 107))) (= X_2_2 false))
+            ($x5E
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 94))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 94))) (= X_2_2 false))
             )
-            ($x6D
-                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 109))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 109))) (= X_2_2 false))
+            ($x5F
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 95))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 95))) (= X_2_2 false))
             )
-            ($x70
-                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 112))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 112))) (= X_2_2 false))
+            ($x60
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 96))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 96))) (= X_2_2 false))
             )
-            ($x7A
-                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 122))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 122))) (= X_2_2 false))
+            ($x7B
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 123))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 123))) (= X_2_2 false))
+            )
+            ($x7E
+                (and (= X_0_0 false) (= X_0_1 (and (< 0 len) (= s_0 126))) (= X_0_2 false) (= X_1_1 false) (= X_1_2 (and (< 1 len) (= s_1 126))) (= X_2_2 false))
             )
             (($or t1 t2)
                 (exists
