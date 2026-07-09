@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# Batch-translate every PROSE SyGuS SLIA benchmark into a Delis .sl file.
+# Batch-translate every PROSE SyGuS SLIA benchmark into a Delis .sl file
+# using the eq-style encoding (gen_eqstyle.py).
 # Layout mirrors benchmark/LTL/, benchmark/CTL/, benchmark/Reg/: numbered
 # 0001.sl … 0354.sl in the benchmark directory; the original SyGuS filename
 # is embedded as (set-info :source ...) for traceability.
@@ -8,7 +9,7 @@ set -u
 cd "$(dirname "$0")/../../.."   # repo root
 SRC=benchmark/String/sygus
 DST=benchmark/String
-GEN=benchmark/String/scripts/gen_lenchar.py
+GEN=benchmark/String/scripts/gen_eqstyle.py
 
 # Wipe any stale numbered outputs from a previous run, but keep sygus/,
 # scripts/, README.md, etc.

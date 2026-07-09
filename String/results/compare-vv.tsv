@@ -1,0 +1,11 @@
+case	encoding	path	stats_status	stats_wall_s	sygus_ms	sygus_bytes	sygus_lines	solve_status	solve_wall_s	max_search_size	solution
+0020	lenchar	/Users/wuchentian/Codes/Rust/delis/benchmark/String/0020.sl	ok	1.512	1403	13935344	97	solved	4.732	2	(define-fun f ((arg0 Str)) Str (str.++ arg0 str.c2))
+0020	eq-style	/Users/wuchentian/Codes/Rust/delis/benchmark/String/eq-style/0020.sl	ok	0.248	205	575128	37	solved	0.398	2	(define-fun f ((arg0 Str)) Str (str.++ arg0 str.c2))
+0021	lenchar	/Users/wuchentian/Codes/Rust/delis/benchmark/String/0021.sl	ok	1.409	1314	14160824	96	solved	6.045	7	(define-fun f ((arg0 Str)) Str (str.ite (bool.suffixof str.c1 arg0) arg0 (str.++ arg0 str.c1)))
+0021	eq-style	/Users/wuchentian/Codes/Rust/delis/benchmark/String/eq-style/0021.sl	ok	0.272	228	562677	36	solved	0.435	7	(define-fun f ((arg0 Str)) Str (str.ite (bool.suffixof str.c1 arg0) arg0 (str.++ arg0 str.c1)))
+0022	lenchar	/Users/wuchentian/Codes/Rust/delis/benchmark/String/0022.sl	ok	0.924	843	8887585	78	solved	3.421	7	(define-fun f ((arg0 Str)) Str (str.ite (bool.suffixof str.c0 arg0) arg0 (str.++ arg0 str.c0)))
+0022	eq-style	/Users/wuchentian/Codes/Rust/delis/benchmark/String/eq-style/0022.sl	ok	0.159	119	375402	34	solved	0.265	7	(define-fun f ((arg0 Str)) Str (str.ite (bool.suffixof str.c0 arg0) arg0 (str.++ arg0 str.c0)))
+0031	lenchar	/Users/wuchentian/Codes/Rust/delis/benchmark/String/0031.sl	ok	0.109	69	720865	52	solved	0.610	10	(define-fun f ((arg0 Str)) Str (str.++ (str.substr (str.++ arg0 (str.int2str int.0)) int.0 int.1) (str.at arg0 int.1)))
+0031	eq-style	/Users/wuchentian/Codes/Rust/delis/benchmark/String/eq-style/0031.sl	ok	1.173	1134	571879	32	solved	1.504	11	(define-fun f ((arg0 Str)) Str (str.++ (str.at (str.int2str int.0) (int.len arg0)) (str.substr arg0 int.0 (int.+ int.1 int.1))))
+0036	lenchar	/Users/wuchentian/Codes/Rust/delis/benchmark/String/0036.sl	ok	0.069	30	333893	37	solved	0.144	4	(define-fun f ((arg0 Str) (arg1 Str) (arg2 Str)) Str (str.++ arg0 (str.++ arg1 arg2)))
+0036	eq-style	/Users/wuchentian/Codes/Rust/delis/benchmark/String/eq-style/0036.sl	ok	0.041	4	20060	29	solved	0.046	4	(define-fun f ((arg0 Str) (arg1 Str) (arg2 Str)) Str (str.++ arg0 (str.++ arg1 arg2)))
