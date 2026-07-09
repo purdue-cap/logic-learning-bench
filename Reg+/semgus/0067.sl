@@ -1,6 +1,6 @@
 ;; Reg+_0067: lines with string '!' followed by a character , 4 or more times
 ;; source: REGEL (deepregex/67) — gt=repeatatleast(concat(<m0>,contain(<any>)),4)
-;; examples: 13, constraints: 13, max_len: 33
+;; examples: 14, constraints: 14, max_len: 33
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -249,4 +249,5 @@
 (constraint (Start.Sem match_regex 11 33 114 106 33 97 111 119 101 33 67 67 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 33 33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 7 33 67 33 33 102 106 33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

@@ -1,6 +1,6 @@
 ;; Reg+_0174: lines with 5 or more of a letter before string '!'
 ;; source: REGEL (deepregex/181) — gt=concat(repeatatleast(<let>,5),contain(<m0>))
-;; examples: 13, constraints: 13, max_len: 12
+;; examples: 14, constraints: 14, max_len: 12
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -159,4 +159,5 @@
 (constraint (Start.Sem match_regex 1 33 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 5 97 98 104 104 33 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 10 97 98 33 97 98 99 100 101 102 49 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

@@ -1,6 +1,6 @@
 ;; Reg+_0080: items with a numeral preceding a letter , at least twice .
 ;; source: REGEL (deepregex/81) — gt=concat(<num>,contain(repeatatleast(<let>,2)))
-;; examples: 13, constraints: 13, max_len: 52
+;; examples: 14, constraints: 14, max_len: 52
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -269,4 +269,5 @@
 (constraint (Start.Sem match_regex 5 97 49 99 97 116 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 4 121 97 121 33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 52 110 117 109 101 114 97 108 32 99 111 117 110 116 115 32 97 32 110 117 109 98 101 114 32 119 105 116 104 32 109 111 114 101 32 116 104 97 110 32 111 110 101 32 99 104 97 114 97 99 116 101 114 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

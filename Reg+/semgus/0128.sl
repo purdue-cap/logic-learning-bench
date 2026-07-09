@@ -1,6 +1,6 @@
 ;; Reg+_0128: lines with a number followed by a capital letter , zero or more times in it
 ;; source: REGEL (deepregex/134) — gt=star(concat(<num>,contain(<cap>)))
-;; examples: 13, constraints: 13, max_len: 15
+;; examples: 14, constraints: 14, max_len: 15
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -210,4 +210,5 @@
 (constraint (Start.Sem match_regex 9 56 103 54 99 103 57 56 103 104 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 5 65 51 52 54 55 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 7 78 66 71 70 68 49 51 0 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 true))
 (check-synth)

@@ -1,6 +1,6 @@
 ;; Reg+_0078: lines containing words wherein the string '!' precedes a letter
 ;; source: REGEL (deepregex/79) — gt=concat(<m0>,contain(<let>))
-;; examples: 12, constraints: 13, max_len: 16
+;; examples: 13, constraints: 14, max_len: 16
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -173,4 +173,5 @@
 (constraint (Start.Sem match_regex 3 44 44 44 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 33 44 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 3 108 111 108 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

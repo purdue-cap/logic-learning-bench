@@ -12,6 +12,8 @@
 (define-fun w7 () String " ")
 (define-fun w8 () String "1.234")
 
+(define-fun w9 () String "")
+
 (synth-fun r () RegLan
     ((Start RegLan))
     (
@@ -46,5 +48,7 @@
 (constraint (not (str.in_re w6 r)))
 (constraint (not (str.in_re w7 r)))
 (constraint (not (str.in_re w8 r)))
+
+(constraint (not (str.in_re w9 r)))
 
 (check-synth)

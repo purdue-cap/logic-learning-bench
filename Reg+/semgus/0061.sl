@@ -1,6 +1,6 @@
 ;; Reg+_0061: lines containing a capital after a letter
 ;; source: REGEL (deepregex/61) — gt=concat(<let>,contain(contain(<cap>)))
-;; examples: 13, constraints: 13, max_len: 10
+;; examples: 14, constraints: 14, max_len: 10
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -185,4 +185,5 @@
 (constraint (Start.Sem match_regex 7 103 49 50 51 102 50 50 0 0 0 false))
 (constraint (Start.Sem match_regex 1 65 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 1 90 0 0 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

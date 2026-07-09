@@ -1,6 +1,6 @@
 ;; Reg+_0192: lines with lower-case letter or character , 5 or more times
 ;; source: REGEL (deepregex/200) — gt=repeatatleast(or(<low>,<any>),5)
-;; examples: 13, constraints: 13, max_len: 6
+;; examples: 14, constraints: 14, max_len: 6
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -141,4 +141,5 @@
 (constraint (Start.Sem match_regex 2 49 50 0 0 0 0 false))
 (constraint (Start.Sem match_regex 3 49 50 51 0 0 0 false))
 (constraint (Start.Sem match_regex 4 49 50 51 52 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 false))
 (check-synth)

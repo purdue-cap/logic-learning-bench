@@ -1,6 +1,6 @@
 ;; Reg+_0123: lines beginning with the string '!' 4 or more times
 ;; source: REGEL (deepregex/129) — gt=repeatatleast(startwith(<m0>),4)
-;; examples: 13, constraints: 13, max_len: 15
+;; examples: 14, constraints: 14, max_len: 15
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -189,4 +189,5 @@
 (constraint (Start.Sem match_regex 6 102 111 117 114 33 115 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 5 102 105 33 33 118 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 11 83 105 100 33 115 100 33 115 100 49 33 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

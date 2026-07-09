@@ -1,6 +1,6 @@
 ;; Reg+_0151: lines with string '!' before either string '@' , capital letter , or letter
 ;; source: REGEL (deepregex/158) — gt=concat(<m0>,contain(or(or(<m1>,<cap>),<let>)))
-;; examples: 13, constraints: 13, max_len: 3
+;; examples: 14, constraints: 14, max_len: 3
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -126,4 +126,5 @@
 (constraint (Start.Sem match_regex 1 49 0 0 false))
 (constraint (Start.Sem match_regex 1 44 0 0 false))
 (constraint (Start.Sem match_regex 2 33 49 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 false))
 (check-synth)

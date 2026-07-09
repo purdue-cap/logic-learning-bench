@@ -1,6 +1,6 @@
 ;; Reg+_0168: lines with a number followed by the string '!'
 ;; source: REGEL (deepregex/175) — gt=concat(contain(<num>),contain(<m0>))
-;; examples: 13, constraints: 13, max_len: 5
+;; examples: 14, constraints: 14, max_len: 5
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -127,4 +127,5 @@
 (constraint (Start.Sem match_regex 1 97 0 0 0 0 false))
 (constraint (Start.Sem match_regex 3 49 50 51 0 0 false))
 (constraint (Start.Sem match_regex 3 49 50 97 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 false))
 (check-synth)

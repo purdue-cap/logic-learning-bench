@@ -1,6 +1,6 @@
 ;; Reg+_0063: lines without a capital letter before string '!'
 ;; source: REGEL (deepregex/63) — gt=concat(not(<cap>),contain(<m0>))
-;; examples: 13, constraints: 13, max_len: 11
+;; examples: 14, constraints: 14, max_len: 11
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -193,4 +193,5 @@
 (constraint (Start.Sem match_regex 6 49 50 85 102 107 97 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 6 107 49 50 51 65 50 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 52 67 0 0 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

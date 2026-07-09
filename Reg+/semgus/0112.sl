@@ -1,6 +1,6 @@
 ;; Reg+_0112: lines having either a vowel , character , or number
 ;; source: REGEL (deepregex/117) — gt=contain(or(or(<vow>,<any>),<num>))
-;; examples: 7, constraints: 7, max_len: 7
+;; examples: 8, constraints: 8, max_len: 7
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -155,4 +155,5 @@
 (constraint (Start.Sem match_regex 5 106 115 100 38 115 0 0 true))
 (constraint (Start.Sem match_regex 3 101 65 101 0 0 0 0 true))
 (constraint (Start.Sem match_regex 7 104 111 97 100 102 97 110 true))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 false))
 (check-synth)

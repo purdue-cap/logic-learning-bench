@@ -1,6 +1,6 @@
 ;; Reg+_0185: items beginning with a character preceding a letter .
 ;; source: REGEL (deepregex/193) — gt=concat(startwith(<any>),contain(<let>))
-;; examples: 13, constraints: 13, max_len: 5
+;; examples: 14, constraints: 14, max_len: 5
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -124,4 +124,5 @@
 (constraint (Start.Sem match_regex 2 98 33 0 0 0 false))
 (constraint (Start.Sem match_regex 2 99 46 0 0 0 false))
 (constraint (Start.Sem match_regex 2 49 49 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 false))
 (check-synth)

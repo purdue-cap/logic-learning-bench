@@ -1,6 +1,6 @@
 ;; Reg+_0075: lines with a letter 3 times before a character
 ;; source: REGEL (deepregex/76) — gt=concat(repeatatleast(<let>,3),contain(<any>))
-;; examples: 13, constraints: 13, max_len: 4
+;; examples: 14, constraints: 14, max_len: 4
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -143,4 +143,5 @@
 (constraint (Start.Sem match_regex 4 108 111 63 108 false))
 (constraint (Start.Sem match_regex 4 121 97 33 121 false))
 (constraint (Start.Sem match_regex 3 32 32 32 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 false))
 (check-synth)

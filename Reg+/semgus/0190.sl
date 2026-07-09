@@ -1,6 +1,6 @@
 ;; Reg+_0190: lines which are not containing the string '!' or the string '@'
 ;; source: REGEL (deepregex/198) — gt=not(contain(or(<m0>,<m1>)))
-;; examples: 13, constraints: 13, max_len: 2
+;; examples: 14, constraints: 14, max_len: 2
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -121,4 +121,5 @@
 (constraint (Start.Sem match_regex 2 33 97 false))
 (constraint (Start.Sem match_regex 2 33 98 false))
 (constraint (Start.Sem match_regex 2 64 98 false))
+(constraint (Start.Sem match_regex 0 0 0 true))
 (check-synth)

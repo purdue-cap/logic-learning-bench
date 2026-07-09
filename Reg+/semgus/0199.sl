@@ -1,6 +1,6 @@
 ;; Reg+_0199: lines with a capital letter , 5 or more times before a vowel in them
 ;; source: REGEL (deepregex/207) — gt=concat(repeatatleast(<cap>,5),contain(<vow>))
-;; examples: 13, constraints: 13, max_len: 8
+;; examples: 14, constraints: 14, max_len: 8
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -151,4 +151,5 @@
 (constraint (Start.Sem match_regex 1 49 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 65 65 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 3 65 65 65 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

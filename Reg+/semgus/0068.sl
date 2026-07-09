@@ -1,6 +1,6 @@
 ;; Reg+_0068: lines with letter , 7 or more times before number
 ;; source: REGEL (deepregex/68) — gt=concat(repeatatleast(<let>,7),contain(<num>))
-;; examples: 13, constraints: 13, max_len: 15
+;; examples: 14, constraints: 14, max_len: 15
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -252,4 +252,5 @@
 (constraint (Start.Sem match_regex 1 74 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 1 99 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 6 99 115 106 104 100 50 0 0 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

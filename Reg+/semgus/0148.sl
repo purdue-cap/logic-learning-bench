@@ -1,6 +1,6 @@
 ;; Reg+_0148: lines containing lower-case letter and not string '!'
 ;; source: REGEL (deepregex/155) — gt=and(contain(<low>),not(<m0>))
-;; examples: 13, constraints: 13, max_len: 7
+;; examples: 14, constraints: 14, max_len: 7
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -179,4 +179,5 @@
 (constraint (Start.Sem match_regex 1 52 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 5 71 70 68 50 74 0 0 false))
 (constraint (Start.Sem match_regex 2 33 33 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 false))
 (check-synth)

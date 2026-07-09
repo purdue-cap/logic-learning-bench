@@ -1,6 +1,6 @@
 ;; Reg+_0166: lines with 4 or more capital letters followed by the string '!'
 ;; source: REGEL (deepregex/173) — gt=concat(repeatatleast(<cap>,4),contain(<m0>))
-;; examples: 13, constraints: 13, max_len: 8
+;; examples: 14, constraints: 14, max_len: 8
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -154,4 +154,5 @@
 (constraint (Start.Sem match_regex 1 98 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 65 66 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 3 65 66 67 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

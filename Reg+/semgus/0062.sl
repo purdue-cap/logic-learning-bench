@@ -1,6 +1,6 @@
 ;; Reg+_0062: lines with lower-case letter and a character
 ;; source: REGEL (deepregex/62) — gt=repeatatleast(concat(<low>,contain(<any>)),1)
-;; examples: 13, constraints: 13, max_len: 11
+;; examples: 14, constraints: 14, max_len: 11
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -187,4 +187,5 @@
 (constraint (Start.Sem match_regex 9 50 50 50 86 86 86 33 33 33 0 0 false))
 (constraint (Start.Sem match_regex 8 80 49 50 51 102 102 102 102 0 0 0 false))
 (constraint (Start.Sem match_regex 6 33 33 115 111 50 51 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

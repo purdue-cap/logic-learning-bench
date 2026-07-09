@@ -1,6 +1,6 @@
 ;; Reg+_0031: lines with at least 6 numbers or vowels
 ;; source: REGEL (deepregex/31) — gt=repeatatleast(or(<num>,<vow>),6)
-;; examples: 13, constraints: 13, max_len: 7
+;; examples: 14, constraints: 14, max_len: 7
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -116,4 +116,5 @@
 (constraint (Start.Sem match_regex 2 97 97 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 3 48 48 48 0 0 0 0 false))
 (constraint (Start.Sem match_regex 3 97 97 97 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 false))
 (check-synth)

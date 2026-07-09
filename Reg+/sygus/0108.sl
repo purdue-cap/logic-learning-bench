@@ -11,6 +11,8 @@
 (define-fun w6 () String "12 has c 3##")
 (define-fun w7 () String "!@ T")
 
+(define-fun w8 () String "")
+
 (synth-fun r () RegLan
     ((Start RegLan))
     (
@@ -58,5 +60,7 @@
 (constraint (str.in_re w5 r))
 (constraint (str.in_re w6 r))
 (constraint (str.in_re w7 r))
+
+(constraint (not (str.in_re w8 r)))
 
 (check-synth)

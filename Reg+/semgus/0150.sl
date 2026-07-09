@@ -1,6 +1,6 @@
 ;; Reg+_0150: lines with words with string '!' before character or capital letter
 ;; source: REGEL (deepregex/157) — gt=concat(<m0>,contain(or(<any>,<cap>)))
-;; examples: 13, constraints: 13, max_len: 5
+;; examples: 14, constraints: 14, max_len: 5
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -136,4 +136,5 @@
 (constraint (Start.Sem match_regex 1 49 0 0 0 0 false))
 (constraint (Start.Sem match_regex 1 98 0 0 0 0 false))
 (constraint (Start.Sem match_regex 1 65 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 false))
 (check-synth)

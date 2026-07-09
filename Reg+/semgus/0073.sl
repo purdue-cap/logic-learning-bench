@@ -1,6 +1,6 @@
 ;; Reg+_0073: lines which are not starting with the string '!' or a number
 ;; source: REGEL (deepregex/74) — gt=not(startwith(or(<m0>,<num>)))
-;; examples: 13, constraints: 13, max_len: 8
+;; examples: 14, constraints: 14, max_len: 8
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -187,4 +187,5 @@
 (constraint (Start.Sem match_regex 7 33 33 102 106 97 50 50 0 false))
 (constraint (Start.Sem match_regex 1 50 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 1 57 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 true))
 (check-synth)

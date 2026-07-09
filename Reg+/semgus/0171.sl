@@ -1,6 +1,6 @@
 ;; Reg+_0171: lines with words with letter and containing only a character
 ;; source: REGEL (deepregex/178) — gt=and(<let>,<any>)
-;; examples: 13, constraints: 13, max_len: 3
+;; examples: 14, constraints: 14, max_len: 3
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -132,4 +132,5 @@
 (constraint (Start.Sem match_regex 3 65 101 98 false))
 (constraint (Start.Sem match_regex 1 49 0 0 false))
 (constraint (Start.Sem match_regex 1 33 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 false))
 (check-synth)

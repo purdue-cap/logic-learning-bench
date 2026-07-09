@@ -1,6 +1,6 @@
 ;; Reg+_0211: I want to develop one regular expression which validates only strings which have 'A', 'B' or 'C'
 ;; source: REGEL (stackoverflow/11) — gt=repeatatleast(or(<A>,or(<B>,<C>)),1)
-;; examples: 6, constraints: 6, max_len: 10
+;; examples: 7, constraints: 7, max_len: 10
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -124,4 +124,5 @@
 (constraint (Start.Sem match_regex 4 65 66 66 67 0 0 0 0 0 0 true))
 (constraint (Start.Sem match_regex 5 65 66 66 68 70 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 3 65 83 68 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

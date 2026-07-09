@@ -1,6 +1,6 @@
 ;; Reg+_0006: lines that do not contain a character , a vowel , or a letter
 ;; source: REGEL (deepregex/6) — gt=not(or(or(<vow>,<any>),<let>))
-;; examples: 7, constraints: 7, max_len: 1
+;; examples: 8, constraints: 8, max_len: 1
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -110,4 +110,5 @@
 (constraint (Start.Sem match_regex 1 79 false))
 (constraint (Start.Sem match_regex 1 44 false))
 (constraint (Start.Sem match_regex 1 64 false))
+(constraint (Start.Sem match_regex 0 0 true))
 (check-synth)

@@ -1,6 +1,6 @@
 ;; Reg+_0155: lines that don't only contain a letter , once or more
 ;; source: REGEL (deepregex/162) — gt=not(repeatatleast(<let>,1))
-;; examples: 11, constraints: 13, max_len: 4
+;; examples: 12, constraints: 14, max_len: 4
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -134,4 +134,5 @@
 (constraint (Start.Sem match_regex 2 65 66 0 0 false))
 (constraint (Start.Sem match_regex 1 97 0 0 0 false))
 (constraint (Start.Sem match_regex 1 66 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 true))
 (check-synth)

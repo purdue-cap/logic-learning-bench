@@ -1,6 +1,6 @@
 ;; Reg+_0142: lines with character before number followed by vowel
 ;; source: REGEL (deepregex/148) — gt=concat(<any>,contain(concat(<num>,contain(<vow>))))
-;; examples: 13, constraints: 13, max_len: 8
+;; examples: 14, constraints: 14, max_len: 8
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -190,4 +190,5 @@
 (constraint (Start.Sem match_regex 4 104 106 55 80 0 0 0 0 false))
 (constraint (Start.Sem match_regex 1 97 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 1 52 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

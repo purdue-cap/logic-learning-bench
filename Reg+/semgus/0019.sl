@@ -1,6 +1,6 @@
 ;; Reg+_0019: lines with words with string '!' or vowel
 ;; source: REGEL (deepregex/19) — gt=or(<m0>,<vow>)
-;; examples: 13, constraints: 13, max_len: 2
+;; examples: 14, constraints: 14, max_len: 2
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -130,4 +130,5 @@
 (constraint (Start.Sem match_regex 2 33 97 false))
 (constraint (Start.Sem match_regex 2 97 101 false))
 (constraint (Start.Sem match_regex 1 32 0 false))
+(constraint (Start.Sem match_regex 0 0 0 false))
 (check-synth)

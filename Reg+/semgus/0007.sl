@@ -1,6 +1,6 @@
 ;; Reg+_0007: lines ending with a capital letter preceding a vowel
 ;; source: REGEL (deepregex/7) — gt=endwith(concat(<cap>,contain(<vow>)))
-;; examples: 13, constraints: 13, max_len: 9
+;; examples: 14, constraints: 14, max_len: 9
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -153,4 +153,5 @@
 (constraint (Start.Sem match_regex 1 65 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 1 33 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 3 32 65 119 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

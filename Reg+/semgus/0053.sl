@@ -1,6 +1,6 @@
 ;; Reg+_0053: lines with a character before the string '!' then capital letter
 ;; source: REGEL (deepregex/53) — gt=concat(concat(<any>,contain(<m0>)),contain(<cap>))
-;; examples: 13, constraints: 13, max_len: 11
+;; examples: 14, constraints: 14, max_len: 11
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -199,4 +199,5 @@
 (constraint (Start.Sem match_regex 3 97 33 62 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 3 98 33 48 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 3 97 42 67 0 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

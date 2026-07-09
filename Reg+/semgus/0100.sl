@@ -1,6 +1,6 @@
 ;; Reg+_0100: lines with only the string '!' or '@' at least once
 ;; source: REGEL (deepregex/104) — gt=repeatatleast(or(<m0>,<m1>),1)
-;; examples: 13, constraints: 13, max_len: 9
+;; examples: 14, constraints: 14, max_len: 9
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -168,4 +168,5 @@
 (constraint (Start.Sem match_regex 2 35 35 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 9 35 32 33 32 109 105 120 101 100 false))
 (constraint (Start.Sem match_regex 8 109 105 120 32 64 32 54 54 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

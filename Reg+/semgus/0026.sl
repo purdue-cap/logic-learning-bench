@@ -1,6 +1,6 @@
 ;; Reg+_0026: lines containing a capital letter followed by a number
 ;; source: REGEL (deepregex/26) — gt=concat(<cap>,contain(<num>))
-;; examples: 13, constraints: 13, max_len: 6
+;; examples: 14, constraints: 14, max_len: 6
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -120,4 +120,5 @@
 (constraint (Start.Sem match_regex 3 97 97 48 0 0 0 false))
 (constraint (Start.Sem match_regex 4 97 97 48 48 0 0 false))
 (constraint (Start.Sem match_regex 6 97 97 97 48 48 48 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 false))
 (check-synth)

@@ -1,6 +1,6 @@
 ;; Reg+_0018: a line with a '!'  , a capital  , or a lower case before a character
 ;; source: REGEL (deepregex/18) — gt=concat(or(or(<m0>,<cap>),<low>),contain(<any>))
-;; examples: 13, constraints: 13, max_len: 5
+;; examples: 14, constraints: 14, max_len: 5
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -139,4 +139,5 @@
 (constraint (Start.Sem match_regex 5 44 44 44 32 32 false))
 (constraint (Start.Sem match_regex 2 32 100 0 0 0 false))
 (constraint (Start.Sem match_regex 3 32 32 32 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 false))
 (check-synth)

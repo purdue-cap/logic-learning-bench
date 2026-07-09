@@ -1,6 +1,6 @@
 ;; Reg+_0157: items with a character preceding a vowel preceding '!' .
 ;; source: REGEL (deepregex/164) — gt=contain(concat(concat(<any>,contain(<vow>)),contain(<m0>)))
-;; examples: 13, constraints: 13, max_len: 11
+;; examples: 14, constraints: 14, max_len: 11
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -151,4 +151,5 @@
 (constraint (Start.Sem match_regex 2 98 101 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 98 105 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 3 97 84 33 0 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

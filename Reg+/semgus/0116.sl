@@ -1,6 +1,6 @@
 ;; Reg+_0116: lines which are starting with a lower-case letter before the string '!' or a letter
 ;; source: REGEL (deepregex/121) — gt=startwith(or(concat(<low>,contain(<m0>)),<let>))
-;; examples: 9, constraints: 9, max_len: 6
+;; examples: 10, constraints: 10, max_len: 6
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -152,4 +152,5 @@
 (constraint (Start.Sem match_regex 6 109 65 101 103 52 50 true))
 (constraint (Start.Sem match_regex 1 33 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 3 33 115 100 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 false))
 (check-synth)

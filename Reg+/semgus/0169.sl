@@ -1,6 +1,6 @@
 ;; Reg+_0169: lines with a number , a lower-case letter , or the string '!'
 ;; source: REGEL (deepregex/176) — gt=contain(or(or(<num>,<low>),<m0>))
-;; examples: 13, constraints: 13, max_len: 4
+;; examples: 14, constraints: 14, max_len: 4
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -137,4 +137,5 @@
 (constraint (Start.Sem match_regex 1 64 0 0 0 false))
 (constraint (Start.Sem match_regex 1 36 0 0 0 false))
 (constraint (Start.Sem match_regex 2 68 70 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 false))
 (check-synth)

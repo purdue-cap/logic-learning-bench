@@ -1,6 +1,6 @@
 ;; Reg+_0017: lines with a lower-case or capital letter
 ;; source: REGEL (deepregex/17) — gt=or(or(<let>,<low>),<cap>)
-;; examples: 10, constraints: 13, max_len: 2
+;; examples: 11, constraints: 14, max_len: 2
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -118,4 +118,5 @@
 (constraint (Start.Sem match_regex 2 97 98 false))
 (constraint (Start.Sem match_regex 2 65 98 false))
 (constraint (Start.Sem match_regex 1 44 0 false))
+(constraint (Start.Sem match_regex 0 0 0 false))
 (check-synth)

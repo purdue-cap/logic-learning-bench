@@ -1,6 +1,6 @@
 ;; Reg+_0117: lines with 3 or more of the string '!' before a letter
 ;; source: REGEL (deepregex/122) — gt=or(concat(<m0>,contain(<let>)),repeatatleast(<low>,3))
-;; examples: 13, constraints: 13, max_len: 7
+;; examples: 14, constraints: 14, max_len: 7
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -164,4 +164,5 @@
 (constraint (Start.Sem match_regex 7 101 118 101 114 121 116 33 false))
 (constraint (Start.Sem match_regex 4 49 50 51 33 0 0 0 false))
 (constraint (Start.Sem match_regex 4 101 118 101 33 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 false))
 (check-synth)

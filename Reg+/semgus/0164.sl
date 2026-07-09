@@ -1,6 +1,6 @@
 ;; Reg+_0164: lines starting with a letter or a lower-case letter
 ;; source: REGEL (deepregex/171) — gt=startwith(or(<let>,<low>))
-;; examples: 13, constraints: 13, max_len: 3
+;; examples: 14, constraints: 14, max_len: 3
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -129,4 +129,5 @@
 (constraint (Start.Sem match_regex 1 33 0 0 false))
 (constraint (Start.Sem match_regex 1 44 0 0 false))
 (constraint (Start.Sem match_regex 2 49 97 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 false))
 (check-synth)

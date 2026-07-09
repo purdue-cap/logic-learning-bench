@@ -1,6 +1,6 @@
 ;; Reg+_0027: lines ending with a lower-case letter followed by a number in them
 ;; source: REGEL (deepregex/27) — gt=endwith(concat(<low>,contain(<num>)))
-;; examples: 13, constraints: 13, max_len: 6
+;; examples: 14, constraints: 14, max_len: 6
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -129,4 +129,5 @@
 (constraint (Start.Sem match_regex 2 49 97 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 50 98 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 51 99 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 false))
 (check-synth)

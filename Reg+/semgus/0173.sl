@@ -1,6 +1,6 @@
 ;; Reg+_0173: lines beginning with the string '!' followed by the string '@'
 ;; source: REGEL (deepregex/180) — gt=startwith(concat(<m0>,contain(<m1>)))
-;; examples: 13, constraints: 13, max_len: 5
+;; examples: 14, constraints: 14, max_len: 5
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -124,4 +124,5 @@
 (constraint (Start.Sem match_regex 1 97 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 33 97 0 0 0 false))
 (constraint (Start.Sem match_regex 2 33 50 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 false))
 (check-synth)

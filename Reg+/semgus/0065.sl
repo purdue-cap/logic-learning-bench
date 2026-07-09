@@ -1,6 +1,6 @@
 ;; Reg+_0065: lines end with the string '!' or a vowel
 ;; source: REGEL (deepregex/65) — gt=endwith(or(<m0>,<vow>))
-;; examples: 13, constraints: 13, max_len: 7
+;; examples: 14, constraints: 14, max_len: 7
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -170,4 +170,5 @@
 (constraint (Start.Sem match_regex 6 51 57 70 70 49 67 0 false))
 (constraint (Start.Sem match_regex 7 105 50 57 51 65 65 99 false))
 (constraint (Start.Sem match_regex 7 85 49 49 51 65 65 74 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 false))
 (check-synth)

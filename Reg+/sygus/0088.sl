@@ -16,6 +16,8 @@
 (define-fun w11 () String "fghj")
 (define-fun w12 () String "xcfghjk")
 
+(define-fun w13 () String "")
+
 (synth-fun r () RegLan
     ((Start RegLan))
     (
@@ -65,5 +67,7 @@
 (constraint (not (str.in_re w11 r)))
 (constraint (not (str.in_re w8 r)))
 (constraint (not (str.in_re w12 r)))
+
+(constraint (not (str.in_re w13 r)))
 
 (check-synth)

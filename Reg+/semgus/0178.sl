@@ -1,6 +1,6 @@
 ;; Reg+_0178: lines containing the string '!' , '@' , or number
 ;; source: REGEL (deepregex/185) — gt=contain(or(or(<m0>,<m1>),<num>))
-;; examples: 13, constraints: 13, max_len: 3
+;; examples: 14, constraints: 14, max_len: 3
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -126,4 +126,5 @@
 (constraint (Start.Sem match_regex 1 65 0 0 false))
 (constraint (Start.Sem match_regex 1 66 0 0 false))
 (constraint (Start.Sem match_regex 2 97 98 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 false))
 (check-synth)

@@ -1,6 +1,6 @@
 ;; Reg+_0167: lines with the string '!' , a letter , or number
 ;; source: REGEL (deepregex/174) — gt=contain(or(or(<m0>,<let>),<num>))
-;; examples: 13, constraints: 13, max_len: 4
+;; examples: 14, constraints: 14, max_len: 4
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -131,4 +131,5 @@
 (constraint (Start.Sem match_regex 3 36 37 94 0 false))
 (constraint (Start.Sem match_regex 4 35 35 35 35 false))
 (constraint (Start.Sem match_regex 2 35 35 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 false))
 (check-synth)

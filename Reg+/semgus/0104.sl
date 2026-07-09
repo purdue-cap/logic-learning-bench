@@ -1,6 +1,6 @@
 ;; Reg+_0104: lines that have a vowel and a character
 ;; source: REGEL (deepregex/108) — gt=contain(and(<vow>,<any>))
-;; examples: 13, constraints: 13, max_len: 9
+;; examples: 14, constraints: 14, max_len: 9
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -189,4 +189,5 @@
 (constraint (Start.Sem match_regex 1 78 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 8 99 104 32 64 32 52 53 54 0 false))
 (constraint (Start.Sem match_regex 2 33 33 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

@@ -1,6 +1,6 @@
 ;; Reg+_0091: lines starting in words with a number or letter
 ;; source: REGEL (deepregex/94) — gt=startwith(or(<num>,<let>))
-;; examples: 13, constraints: 13, max_len: 6
+;; examples: 14, constraints: 14, max_len: 6
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -174,4 +174,5 @@
 (constraint (Start.Sem match_regex 1 64 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 1 35 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 1 36 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 false))
 (check-synth)

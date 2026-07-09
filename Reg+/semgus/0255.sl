@@ -1,6 +1,6 @@
 ;; Reg+_0255: it doesn't start with a space, doesn't contain a space, and doesn't end with a space.
 ;; source: REGEL (stackoverflow/58) — gt=not(contain(< >))
-;; examples: 6, constraints: 6, max_len: 6
+;; examples: 7, constraints: 7, max_len: 6
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -113,4 +113,5 @@
 (constraint (Start.Sem match_regex 6 32 72 69 76 76 79 false))
 (constraint (Start.Sem match_regex 6 72 69 76 76 79 32 false))
 (constraint (Start.Sem match_regex 1 32 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 true))
 (check-synth)

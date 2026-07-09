@@ -1,6 +1,6 @@
 ;; Reg+_0099: lines with words starting with 4 or more lower-case letters
 ;; source: REGEL (deepregex/103) — gt=startwith(repeatatleast(<low>,4))
-;; examples: 13, constraints: 13, max_len: 12
+;; examples: 14, constraints: 14, max_len: 12
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -150,4 +150,5 @@
 (constraint (Start.Sem match_regex 2 63 52 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 63 63 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 5 63 36 65 65 65 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

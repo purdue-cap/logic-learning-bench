@@ -1,6 +1,6 @@
 ;; Reg+_0161: lines which are having either a vowel , the string '!' , or a lower-case letter before the string '@'
 ;; source: REGEL (deepregex/168) — gt=concat(or(or(<vow>,<m0>),<low>),contain(<m1>))
-;; examples: 13, constraints: 13, max_len: 7
+;; examples: 14, constraints: 14, max_len: 7
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -149,4 +149,5 @@
 (constraint (Start.Sem match_regex 1 98 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 66 64 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 49 64 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 false))
 (check-synth)

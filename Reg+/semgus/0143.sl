@@ -1,6 +1,6 @@
 ;; Reg+_0143: lines that have a character preceding a letter , or containing a number
 ;; source: REGEL (deepregex/149) — gt=or(concat(<any>,contain(<let>)),contain(<num>))
-;; examples: 13, constraints: 13, max_len: 4
+;; examples: 14, constraints: 14, max_len: 4
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -146,4 +146,5 @@
 (constraint (Start.Sem match_regex 1 33 0 0 0 false))
 (constraint (Start.Sem match_regex 2 64 35 0 0 false))
 (constraint (Start.Sem match_regex 1 101 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 false))
 (check-synth)

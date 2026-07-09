@@ -1,6 +1,6 @@
 ;; Reg+_0284: The value can have at max 3 decimals (but also none) with comma as the separator.
 ;; source: REGEL (stackoverflow/88) — gt=concat(repeatatleast(<num>,1),optional(concat(<,>,repeatrange(<num>,1,3))))
-;; examples: 8, constraints: 8, max_len: 6
+;; examples: 9, constraints: 9, max_len: 6
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -127,4 +127,5 @@
 (constraint (Start.Sem match_regex 1 65 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 1 32 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 5 49 46 50 51 52 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 false))
 (check-synth)

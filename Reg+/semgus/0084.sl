@@ -1,6 +1,6 @@
 ;; Reg+_0084: lines with a lower-case letter before vowel and character
 ;; source: REGEL (deepregex/86) — gt=concat(<low>,contain(and(<vow>,<any>)))
-;; examples: 13, constraints: 13, max_len: 4
+;; examples: 14, constraints: 14, max_len: 4
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -140,4 +140,5 @@
 (constraint (Start.Sem match_regex 2 78 111 0 0 false))
 (constraint (Start.Sem match_regex 2 78 126 0 0 false))
 (constraint (Start.Sem match_regex 2 88 44 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 false))
 (check-synth)

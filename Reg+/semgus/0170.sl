@@ -1,6 +1,6 @@
 ;; Reg+_0170: lines that contain a number , a lower-case letter , or the string '!' followed by a character
 ;; source: REGEL (deepregex/177) — gt=concat(or(or(<num>,<low>),<m0>),contain(<any>))
-;; examples: 13, constraints: 13, max_len: 5
+;; examples: 14, constraints: 14, max_len: 5
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -133,4 +133,5 @@
 (constraint (Start.Sem match_regex 1 33 0 0 0 0 false))
 (constraint (Start.Sem match_regex 1 65 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 65 50 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 false))
 (check-synth)

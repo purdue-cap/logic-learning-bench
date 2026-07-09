@@ -1,6 +1,6 @@
 ;; Reg+_0125: lines with words that include a letter , the string '!' , or a lower-case letter
 ;; source: REGEL (deepregex/131) — gt=or(or(<m0>,<low>),<let>)
-;; examples: 13, constraints: 13, max_len: 2
+;; examples: 14, constraints: 14, max_len: 2
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -133,4 +133,5 @@
 (constraint (Start.Sem match_regex 2 100 83 false))
 (constraint (Start.Sem match_regex 2 49 50 false))
 (constraint (Start.Sem match_regex 1 51 0 false))
+(constraint (Start.Sem match_regex 0 0 0 false))
 (check-synth)

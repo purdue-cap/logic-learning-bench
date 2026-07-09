@@ -1,6 +1,6 @@
 ;; Reg+_0180: lines with at least 7 of  the string '!' or a vowel
 ;; source: REGEL (deepregex/188) — gt=repeatatleast(or(<vow>,<m0>),7)
-;; examples: 13, constraints: 13, max_len: 8
+;; examples: 14, constraints: 14, max_len: 8
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -148,4 +148,5 @@
 (constraint (Start.Sem match_regex 6 33 33 33 33 33 33 0 0 false))
 (constraint (Start.Sem match_regex 6 97 101 105 111 117 97 0 0 false))
 (constraint (Start.Sem match_regex 6 65 69 73 79 85 33 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

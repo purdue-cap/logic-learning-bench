@@ -1,6 +1,6 @@
 ;; Reg+_0024: lines with characters or the string '!' followed by the string '@'
 ;; source: REGEL (deepregex/24) — gt=or(contain(<any>),concat(<m0>,contain(<m1>)))
-;; examples: 7, constraints: 7, max_len: 5
+;; examples: 8, constraints: 8, max_len: 5
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -124,4 +124,5 @@
 (constraint (Start.Sem match_regex 1 49 0 0 0 0 true))
 (constraint (Start.Sem match_regex 3 65 98 64 0 0 true))
 (constraint (Start.Sem match_regex 5 65 98 44 33 64 true))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 false))
 (check-synth)

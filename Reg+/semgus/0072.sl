@@ -1,6 +1,6 @@
 ;; Reg+_0072: lines with words with ending with character , 7 or more times
 ;; source: REGEL (deepregex/73) — gt=repeatatleast(endwith(<any>),7)
-;; examples: 13, constraints: 13, max_len: 18
+;; examples: 14, constraints: 14, max_len: 18
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -219,4 +219,5 @@
 (constraint (Start.Sem match_regex 2 65 97 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 3 67 51 70 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 5 33 33 119 50 66 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

@@ -14,6 +14,7 @@
 (define-fun w9 () String "A")
 (define-fun w10 () String "B")
 (define-fun w11 () String "AB")
+(define-fun w12 () String "")
 
 (synth-fun r () RegLan
     ((Start RegLan))
@@ -49,6 +50,7 @@
 (constraint (str.in_re w4 r))
 (constraint (str.in_re w5 r))
 (constraint (str.in_re w6 r))
+(constraint (str.in_re w12 r))
 (constraint (not (str.in_re w7 r)))
 (constraint (not (str.in_re w8 r)))
 (constraint (not (str.in_re w9 r)))

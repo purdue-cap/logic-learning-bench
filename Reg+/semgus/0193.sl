@@ -1,6 +1,6 @@
 ;; Reg+_0193: lines with 5 letters before a character
 ;; source: REGEL (deepregex/201) — gt=concat(repeatatleast(<let>,5),contain(<any>))
-;; examples: 13, constraints: 13, max_len: 6
+;; examples: 14, constraints: 14, max_len: 6
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -144,4 +144,5 @@
 (constraint (Start.Sem match_regex 2 97 97 0 0 0 0 false))
 (constraint (Start.Sem match_regex 4 97 97 97 97 0 0 false))
 (constraint (Start.Sem match_regex 5 97 97 97 97 97 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 false))
 (check-synth)

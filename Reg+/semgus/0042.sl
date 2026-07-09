@@ -1,6 +1,6 @@
 ;; Reg+_0042: items with '!' preceding a character .
 ;; source: REGEL (deepregex/42) — gt=concat(<m0>,contain(contain(<any>)))
-;; examples: 13, constraints: 13, max_len: 4
+;; examples: 14, constraints: 14, max_len: 4
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -146,4 +146,5 @@
 (constraint (Start.Sem match_regex 2 109 33 0 0 false))
 (constraint (Start.Sem match_regex 2 122 33 0 0 false))
 (constraint (Start.Sem match_regex 3 48 48 55 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 false))
 (check-synth)

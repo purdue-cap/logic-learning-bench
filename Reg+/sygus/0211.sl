@@ -10,6 +10,8 @@
 (define-fun w5 () String "ABBDF")
 (define-fun w6 () String "ASD")
 
+(define-fun w7 () String "")
+
 (synth-fun r () RegLan
     ((Start RegLan))
     (
@@ -39,5 +41,7 @@
 (constraint (str.in_re w4 r))
 (constraint (not (str.in_re w5 r)))
 (constraint (not (str.in_re w6 r)))
+
+(constraint (not (str.in_re w7 r)))
 
 (check-synth)

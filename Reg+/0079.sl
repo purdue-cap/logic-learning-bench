@@ -4,6 +4,7 @@
 
 (require "./global/theories.deepregex.sl")
 (require "./global/models.deepregex.sl")
+(require "./global/models.deepregex.empty.sl")
 
 (synth-fun r () RegLan)
 
@@ -20,5 +21,7 @@
 (constraint (not (RegLan.Sem r (RegLan.Asp w01407 0 (size (Pos w01407))))))
 (constraint (not (RegLan.Sem r (RegLan.Asp w00224 0 (size (Pos w00224))))))
 (constraint (not (RegLan.Sem r (RegLan.Asp w00282 0 (size (Pos w00282))))))
+
+(constraint (not (RegLan.Sem r (RegLan.Asp wempty_deepregex 0 (size (Pos wempty_deepregex))))))
 
 (check-synth)

@@ -1,6 +1,6 @@
 ;; Reg+_0055: lines that contain a lower-case letter followed by the strings '!' or '@' at least once
 ;; source: REGEL (deepregex/55) — gt=concat(<low>,contain(repeatatleast(or(<m0>,<m1>),1)))
-;; examples: 13, constraints: 13, max_len: 14
+;; examples: 14, constraints: 14, max_len: 14
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -220,4 +220,5 @@
 (constraint (Start.Sem match_regex 7 110 111 32 109 111 114 101 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 9 51 52 51 50 52 102 35 36 64 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 9 99 111 114 101 36 37 48 48 56 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

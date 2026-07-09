@@ -8,6 +8,7 @@
 (define-fun w3 () String "anything@!#--")
 (define-fun w4 () String "a.2")
 (define-fun w5 () String "2,a")
+(define-fun w6 () String "")
 
 (synth-fun r () RegLan
     ((Start RegLan))
@@ -45,6 +46,7 @@
 
 (constraint (str.in_re w1 r))
 (constraint (str.in_re w2 r))
+(constraint (str.in_re w6 r))
 (constraint (not (str.in_re w3 r)))
 (constraint (not (str.in_re w4 r)))
 (constraint (not (str.in_re w5 r)))

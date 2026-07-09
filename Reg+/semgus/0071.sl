@@ -1,6 +1,6 @@
 ;; Reg+_0071: lines with a lower-case letter followed by a vowel at least once in them
 ;; source: REGEL (deepregex/72) — gt=repeatatleast(concat(<low>,contain(<vow>)),1)
-;; examples: 13, constraints: 13, max_len: 11
+;; examples: 14, constraints: 14, max_len: 11
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -169,4 +169,5 @@
 (constraint (Start.Sem match_regex 11 52 50 51 52 102 102 102 102 100 100 100 false))
 (constraint (Start.Sem match_regex 6 99 99 99 122 122 122 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 7 52 50 51 52 102 102 102 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

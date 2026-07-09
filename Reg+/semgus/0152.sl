@@ -1,6 +1,6 @@
 ;; Reg+_0152: lines ending with string '!' before either string '@' , string '#' , or number
 ;; source: REGEL (deepregex/159) — gt=concat(endwith(<m0>),contain(or(or(<m1>,<m2>),<num>)))
-;; examples: 13, constraints: 13, max_len: 5
+;; examples: 14, constraints: 14, max_len: 5
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -130,4 +130,5 @@
 (constraint (Start.Sem match_regex 1 49 0 0 0 0 false))
 (constraint (Start.Sem match_regex 3 64 33 98 0 0 false))
 (constraint (Start.Sem match_regex 1 33 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 false))
 (check-synth)

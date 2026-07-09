@@ -1,6 +1,6 @@
 ;; Reg+_0038: lines that have a letter and then a lower-case letter
 ;; source: REGEL (deepregex/38) — gt=concat(<low>,contain(contain(<let>)))
-;; examples: 13, constraints: 13, max_len: 2
+;; examples: 14, constraints: 14, max_len: 2
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -139,4 +139,5 @@
 (constraint (Start.Sem match_regex 2 68 68 false))
 (constraint (Start.Sem match_regex 2 69 59 false))
 (constraint (Start.Sem match_regex 2 33 59 false))
+(constraint (Start.Sem match_regex 0 0 0 false))
 (check-synth)

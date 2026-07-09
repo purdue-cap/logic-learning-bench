@@ -1,6 +1,6 @@
 ;; Reg+_0014: lines with a number preceding a capital letter 2 or more times
 ;; source: REGEL (deepregex/14) — gt=repeatatleast(concat(<num>,contain(<cap>)),2)
-;; examples: 13, constraints: 13, max_len: 10
+;; examples: 14, constraints: 14, max_len: 10
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -155,4 +155,5 @@
 (constraint (Start.Sem match_regex 2 97 49 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 4 49 65 50 98 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 4 50 98 49 65 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

@@ -1,6 +1,6 @@
 ;; Reg+_0158: lines starting with words ending with the string '!'
 ;; source: REGEL (deepregex/165) — gt=startwith(endwith(<m0>))
-;; examples: 13, constraints: 13, max_len: 9
+;; examples: 14, constraints: 14, max_len: 9
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -153,4 +153,5 @@
 (constraint (Start.Sem match_regex 2 100 102 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 3 64 64 64 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 4 44 65 98 100 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

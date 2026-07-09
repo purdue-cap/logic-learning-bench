@@ -1,6 +1,6 @@
 ;; Reg+_0012: lines with the string '!' or lower-case letter before string '@'
 ;; source: REGEL (deepregex/12) — gt=concat(or(<m0>,<low>),contain(<m1>))
-;; examples: 13, constraints: 13, max_len: 4
+;; examples: 14, constraints: 14, max_len: 4
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -128,4 +128,5 @@
 (constraint (Start.Sem match_regex 1 64 0 0 0 false))
 (constraint (Start.Sem match_regex 2 65 64 0 0 false))
 (constraint (Start.Sem match_regex 2 33 97 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 false))
 (check-synth)

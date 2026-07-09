@@ -1,6 +1,6 @@
 ;; Reg+_0198: lines containing 4 or more of the string '!' before a number
 ;; source: REGEL (deepregex/206) — gt=concat(repeatatleast(contain(<m0>),4),contain(<num>))
-;; examples: 13, constraints: 13, max_len: 7
+;; examples: 14, constraints: 14, max_len: 7
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -128,4 +128,5 @@
 (constraint (Start.Sem match_regex 1 33 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 33 33 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 4 33 33 33 49 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 false))
 (check-synth)

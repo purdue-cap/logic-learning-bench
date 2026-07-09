@@ -1,6 +1,6 @@
 ;; Reg+_0089: lines having an upper-case letter numbering at least 6 times or greater
 ;; source: REGEL (deepregex/91) — gt=repeatatleast(<cap>,6)
-;; examples: 13, constraints: 13, max_len: 16
+;; examples: 14, constraints: 14, max_len: 16
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -263,4 +263,5 @@
 (constraint (Start.Sem match_regex 10 121 116 114 100 99 118 98 110 106 107 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 16 103 107 104 103 102 103 104 106 107 108 46 117 44 121 109 116 false))
 (constraint (Start.Sem match_regex 11 117 104 103 121 102 116 99 118 98 110 109 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

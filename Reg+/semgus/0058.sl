@@ -1,6 +1,6 @@
 ;; Reg+_0058: lines starting in capital letter with a character
 ;; source: REGEL (deepregex/58) — gt=repeatatleast(startwith(concat(<cap>,contain(<any>))),1)
-;; examples: 13, constraints: 13, max_len: 22
+;; examples: 14, constraints: 14, max_len: 22
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -224,4 +224,5 @@
 (constraint (Start.Sem match_regex 2 40 76 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 6 102 111 114 101 35 70 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 6 102 111 114 101 70 35 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

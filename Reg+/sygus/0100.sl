@@ -17,6 +17,8 @@
 (define-fun w12 () String "# ! mixed")
 (define-fun w13 () String "mix @ 66")
 
+(define-fun w14 () String "")
+
 (synth-fun r () RegLan
     ((Start RegLan))
     (
@@ -66,5 +68,7 @@
 (constraint (not (str.in_re w11 r)))
 (constraint (not (str.in_re w12 r)))
 (constraint (not (str.in_re w13 r)))
+
+(constraint (not (str.in_re w14 r)))
 
 (check-synth)

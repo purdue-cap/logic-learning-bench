@@ -1,6 +1,6 @@
 ;; Reg+_0108: lines containing character or a capital
 ;; source: REGEL (deepregex/113) — gt=contain(or(<any>,<cap>))
-;; examples: 7, constraints: 7, max_len: 12
+;; examples: 8, constraints: 8, max_len: 12
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -180,4 +180,5 @@
 (constraint (Start.Sem match_regex 10 115 111 109 101 32 116 104 105 110 103 0 0 true))
 (constraint (Start.Sem match_regex 12 49 50 32 104 97 115 32 99 32 51 35 35 true))
 (constraint (Start.Sem match_regex 4 33 64 32 84 0 0 0 0 0 0 0 0 true))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

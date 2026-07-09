@@ -1,6 +1,6 @@
 ;; Reg+_0126: lines with words with either vowel , lower-case letter , or character
 ;; source: REGEL (deepregex/132) — gt=or(or(<vow>,<low>),<any>)
-;; examples: 13, constraints: 13, max_len: 3
+;; examples: 14, constraints: 14, max_len: 3
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -141,4 +141,5 @@
 (constraint (Start.Sem match_regex 2 114 51 0 false))
 (constraint (Start.Sem match_regex 3 76 107 100 false))
 (constraint (Start.Sem match_regex 3 115 51 100 false))
+(constraint (Start.Sem match_regex 0 0 0 0 false))
 (check-synth)

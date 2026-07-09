@@ -1,6 +1,6 @@
 ;; Reg+_0043: lines with a character before a letter and lower-case letter
 ;; source: REGEL (deepregex/43) — gt=concat(<any>,contain(and(<let>,<low>)))
-;; examples: 13, constraints: 13, max_len: 2
+;; examples: 14, constraints: 14, max_len: 2
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -151,4 +151,5 @@
 (constraint (Start.Sem match_regex 2 78 80 false))
 (constraint (Start.Sem match_regex 2 33 80 false))
 (constraint (Start.Sem match_regex 1 90 0 false))
+(constraint (Start.Sem match_regex 0 0 0 false))
 (check-synth)

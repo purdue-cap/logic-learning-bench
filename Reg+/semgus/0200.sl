@@ -1,6 +1,6 @@
 ;; Reg+_0200: lines with vowel or character , 6 or more times
 ;; source: REGEL (deepregex/208) — gt=repeatatleast(or(<vow>,<any>),6)
-;; examples: 13, constraints: 13, max_len: 9
+;; examples: 14, constraints: 14, max_len: 9
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -171,4 +171,5 @@
 (constraint (Start.Sem match_regex 2 49 50 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 3 49 50 51 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 4 49 51 52 53 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

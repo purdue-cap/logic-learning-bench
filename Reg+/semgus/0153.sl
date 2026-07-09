@@ -1,6 +1,6 @@
 ;; Reg+_0153: lines with character followed by vowel at least once
 ;; source: REGEL (deepregex/160) — gt=repeatatleast(concat(<any>,contain(<vow>)),1)
-;; examples: 13, constraints: 13, max_len: 8
+;; examples: 14, constraints: 14, max_len: 8
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -148,4 +148,5 @@
 (constraint (Start.Sem match_regex 2 97 116 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 49 116 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 33 116 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

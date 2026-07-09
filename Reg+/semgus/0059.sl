@@ -1,6 +1,6 @@
 ;; Reg+_0059: lines that end with '!' or have just have a number
 ;; source: REGEL (deepregex/59) — gt=endwith(or(<m0>,<num>))
-;; examples: 13, constraints: 13, max_len: 10
+;; examples: 14, constraints: 14, max_len: 10
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -176,4 +176,5 @@
 (constraint (Start.Sem match_regex 6 102 50 51 33 33 120 0 0 0 0 false))
 (constraint (Start.Sem match_regex 9 49 100 115 97 115 100 102 33 70 0 false))
 (constraint (Start.Sem match_regex 1 67 0 0 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

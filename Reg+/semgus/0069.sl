@@ -1,6 +1,6 @@
 ;; Reg+_0069: lines that don't begin with a capital letter or vowel
 ;; source: REGEL (deepregex/69) — gt=not(startwith(or(<cap>,<vow>)))
-;; examples: 13, constraints: 13, max_len: 9
+;; examples: 14, constraints: 14, max_len: 9
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -189,4 +189,5 @@
 (constraint (Start.Sem match_regex 4 85 100 102 97 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 3 69 97 102 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 6 117 57 50 33 33 102 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 true))
 (check-synth)

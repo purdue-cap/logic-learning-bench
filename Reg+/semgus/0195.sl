@@ -1,6 +1,6 @@
 ;; Reg+_0195: lines containing  letter , 5 or more times
 ;; source: REGEL (deepregex/203) — gt=contain(repeatatleast(<let>,5))
-;; examples: 13, constraints: 13, max_len: 9
+;; examples: 14, constraints: 14, max_len: 9
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -138,4 +138,5 @@
 (constraint (Start.Sem match_regex 3 97 98 99 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 4 97 98 99 100 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 3 49 50 51 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

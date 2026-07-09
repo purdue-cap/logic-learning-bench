@@ -1,6 +1,6 @@
 ;; Reg+_0196: lines that feature a small letter no less than 5 times and any number more than 5
 ;; source: REGEL (deepregex/204) — gt=contain(repeatatleast(<low>,5))
-;; examples: 13, constraints: 13, max_len: 14
+;; examples: 14, constraints: 14, max_len: 14
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -175,4 +175,5 @@
 (constraint (Start.Sem match_regex 5 97 98 99 49 50 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 7 97 98 99 100 54 54 54 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 8 97 98 99 100 57 57 57 57 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

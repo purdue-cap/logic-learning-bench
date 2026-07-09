@@ -1,6 +1,6 @@
 ;; Reg+_0030: lines without the string '!' followsed by a character
 ;; source: REGEL (deepregex/30) — gt=not(concat(contain(<m0>),contain(<any>)))
-;; examples: 12, constraints: 13, max_len: 3
+;; examples: 13, constraints: 14, max_len: 3
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -114,4 +114,5 @@
 (constraint (Start.Sem match_regex 2 33 48 0 false))
 (constraint (Start.Sem match_regex 3 33 33 33 false))
 (constraint (Start.Sem match_regex 3 33 33 97 false))
+(constraint (Start.Sem match_regex 0 0 0 0 true))
 (check-synth)

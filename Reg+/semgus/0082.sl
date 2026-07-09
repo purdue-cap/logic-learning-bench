@@ -1,6 +1,6 @@
 ;; Reg+_0082: lines containing string '!' followed by string '@' or string '#'
 ;; source: REGEL (deepregex/83) — gt=contain(or(concat(<m0>,contain(<m1>)),<m2>))
-;; examples: 13, constraints: 13, max_len: 5
+;; examples: 14, constraints: 14, max_len: 5
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -139,4 +139,5 @@
 (constraint (Start.Sem match_regex 5 33 110 111 111 111 false))
 (constraint (Start.Sem match_regex 1 64 0 0 0 0 false))
 (constraint (Start.Sem match_regex 4 102 97 107 101 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 false))
 (check-synth)

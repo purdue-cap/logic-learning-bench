@@ -1,6 +1,6 @@
 ;; Reg+_0052: lines with words starting with string '!' , 6 or more times
 ;; source: REGEL (deepregex/52) — gt=startwith(repeatatleast(<m0>,6))
-;; examples: 13, constraints: 13, max_len: 65
+;; examples: 14, constraints: 14, max_len: 65
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -331,4 +331,5 @@
 (constraint (Start.Sem match_regex 12 110 111 116 104 105 110 103 32 104 101 114 101 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 30 33 64 36 35 64 64 35 33 33 36 35 64 35 64 36 33 35 37 64 33 35 64 69 101 114 51 50 51 52 33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 6 68 111 110 101 32 33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

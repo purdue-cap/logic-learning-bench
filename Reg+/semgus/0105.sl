@@ -1,6 +1,6 @@
 ;; Reg+_0105: lines starting with a vowel or string '!'
 ;; source: REGEL (deepregex/109) — gt=startwith(or(<vow>,<m0>))
-;; examples: 13, constraints: 13, max_len: 15
+;; examples: 14, constraints: 14, max_len: 15
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -210,4 +210,5 @@
 (constraint (Start.Sem match_regex 9 115 116 97 114 116 32 97 32 33 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 12 98 101 102 111 114 101 32 33 32 97 110 100 0 0 0 false))
 (constraint (Start.Sem match_regex 4 64 98 108 97 0 0 0 0 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

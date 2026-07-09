@@ -1,6 +1,6 @@
 ;; Reg+_0176: lines with a capital letter either the string '!' , a number , or the string '@'
 ;; source: REGEL (deepregex/183) — gt=concat(<cap>,contain(or(or(<m0>,<num>),<m1>)))
-;; examples: 13, constraints: 13, max_len: 6
+;; examples: 14, constraints: 14, max_len: 6
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -141,4 +141,5 @@
 (constraint (Start.Sem match_regex 1 49 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 1 64 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 65 97 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 false))
 (check-synth)

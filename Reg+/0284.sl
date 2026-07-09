@@ -4,6 +4,7 @@
 
 (require "./global/theories.stackoverflow.sl")
 (require "./global/models.stackoverflow.sl")
+(require "./global/models.stackoverflow.empty.sl")
 
 (synth-fun r () RegLan)
 
@@ -15,5 +16,7 @@
 (constraint (not (RegLan.Sem r (RegLan.Asp w00014 0 (size (Pos w00014))))))
 (constraint (not (RegLan.Sem r (RegLan.Asp w00002 0 (size (Pos w00002))))))
 (constraint (not (RegLan.Sem r (RegLan.Asp w00274 0 (size (Pos w00274))))))
+
+(constraint (not (RegLan.Sem r (RegLan.Asp wempty_stackoverflow 0 (size (Pos wempty_stackoverflow))))))
 
 (check-synth)

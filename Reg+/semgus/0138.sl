@@ -1,6 +1,6 @@
 ;; Reg+_0138: lines with words without only a character
 ;; source: REGEL (deepregex/144) — gt=not(<any>)
-;; examples: 13, constraints: 13, max_len: 8
+;; examples: 14, constraints: 14, max_len: 8
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -166,4 +166,5 @@
 (constraint (Start.Sem match_regex 1 77 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 1 48 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 1 64 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 true))
 (check-synth)

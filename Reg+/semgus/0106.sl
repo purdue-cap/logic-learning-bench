@@ -1,6 +1,6 @@
 ;; Reg+_0106: lines with a character followed by '!'
 ;; source: REGEL (deepregex/110) — gt=concat(<any>,contain(<m0>))
-;; examples: 13, constraints: 13, max_len: 17
+;; examples: 14, constraints: 14, max_len: 17
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -211,4 +211,5 @@
 (constraint (Start.Sem match_regex 6 33 32 112 108 117 115 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 85 73 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 7 33 32 97 98 99 32 35 0 0 0 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

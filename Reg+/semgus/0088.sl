@@ -1,6 +1,6 @@
 ;; Reg+_0088: lines with words and ending in a number or lower-case letter
 ;; source: REGEL (deepregex/90) — gt=or(endwith(<num>),<low>)
-;; examples: 12, constraints: 13, max_len: 7
+;; examples: 13, constraints: 14, max_len: 7
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -164,4 +164,5 @@
 (constraint (Start.Sem match_regex 4 102 103 104 106 0 0 0 false))
 (constraint (Start.Sem match_regex 5 106 104 103 102 100 0 0 false))
 (constraint (Start.Sem match_regex 7 120 99 102 103 104 106 107 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 false))
 (check-synth)

@@ -1,6 +1,6 @@
 ;; Reg+_0267: I need a regular expression validation expression that will allow positive number (0-9), '','' and ''.''. It will not allow letter (a - z) or any other letter or symbol except ''.'' and '',''
 ;; source: REGEL (stackoverflow/71) — gt=star(or(<num>,or(<.>,<,>)))
-;; examples: 5, constraints: 5, max_len: 13
+;; examples: 6, constraints: 6, max_len: 13
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -162,4 +162,5 @@
 (constraint (Start.Sem match_regex 13 97 110 121 116 104 105 110 103 64 33 35 45 45 false))
 (constraint (Start.Sem match_regex 3 97 46 50 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 3 50 44 97 0 0 0 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 0 true))
 (check-synth)

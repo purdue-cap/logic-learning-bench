@@ -1,6 +1,6 @@
 ;; Reg+_0060: lines starting with a capital letter at least 1 time
 ;; source: REGEL (deepregex/60) — gt=repeatatleast(startwith(<cap>),1)
-;; examples: 13, constraints: 13, max_len: 9
+;; examples: 14, constraints: 14, max_len: 9
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -165,4 +165,5 @@
 (constraint (Start.Sem match_regex 7 102 33 65 67 67 71 71 0 0 false))
 (constraint (Start.Sem match_regex 9 57 57 49 52 65 65 65 67 67 false))
 (constraint (Start.Sem match_regex 5 50 57 102 50 49 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

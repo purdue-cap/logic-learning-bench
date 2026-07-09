@@ -1,6 +1,6 @@
 ;; Reg+_0077: lines that end with a number then after has a character
 ;; source: REGEL (deepregex/78) — gt=endwith(concat(<num>,contain(<any>)))
-;; examples: 13, constraints: 13, max_len: 11
+;; examples: 14, constraints: 14, max_len: 11
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -160,4 +160,5 @@
 (constraint (Start.Sem match_regex 1 44 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 44 97 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 3 121 101 115 0 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

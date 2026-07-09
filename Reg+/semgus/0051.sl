@@ -1,6 +1,6 @@
 ;; Reg+_0051: lines ending with a lower-case letter followed by the string '!' at least once in them
 ;; source: REGEL (deepregex/51) — gt=endwith(repeatatleast(concat(<low>,contain(<m0>)),1))
-;; examples: 13, constraints: 13, max_len: 18
+;; examples: 14, constraints: 14, max_len: 18
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -258,4 +258,5 @@
 (constraint (Start.Sem match_regex 2 48 33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 75 33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 13 76 75 74 58 58 76 75 74 75 58 73 79 33 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

@@ -1,6 +1,6 @@
 ;; Reg+_0094: lines that contain a vowel before a number
 ;; source: REGEL (deepregex/97) — gt=contain(concat(<vow>,contain(<num>)))
-;; examples: 13, constraints: 13, max_len: 14
+;; examples: 14, constraints: 14, max_len: 14
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -187,4 +187,5 @@
 (constraint (Start.Sem match_regex 3 116 111 111 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 13 115 108 97 99 107 118 97 114 105 97 98 108 32 0 false))
 (constraint (Start.Sem match_regex 14 115 108 97 99 107 32 118 97 114 105 97 98 108 101 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

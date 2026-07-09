@@ -1,6 +1,6 @@
 ;; Reg+_0122: the lines that contain a letter coming before the string '!' at least 2 times
 ;; source: REGEL (deepregex/128) — gt=concat(<let>,contain(repeatatleast(<m0>,2)))
-;; examples: 13, constraints: 13, max_len: 11
+;; examples: 14, constraints: 14, max_len: 11
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -181,4 +181,5 @@
 (constraint (Start.Sem match_regex 4 99 111 111 108 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 8 98 101 102 101 111 33 115 100 0 0 0 false))
 (constraint (Start.Sem match_regex 4 49 50 51 33 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

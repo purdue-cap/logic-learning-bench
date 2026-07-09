@@ -1,6 +1,6 @@
 ;; Reg+_0074: lines containing a vowel followed by a character
 ;; source: REGEL (deepregex/75) — gt=concat(<vow>,contain(<any>))
-;; examples: 13, constraints: 13, max_len: 8
+;; examples: 14, constraints: 14, max_len: 8
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -151,4 +151,5 @@
 (constraint (Start.Sem match_regex 4 121 121 121 33 0 0 0 0 false))
 (constraint (Start.Sem match_regex 1 121 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 110 111 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

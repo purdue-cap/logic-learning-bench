@@ -6,7 +6,7 @@
 (define-fun w1 () String "aaaaaaAaa")
 (define-fun w2 () String "m;;asdf;cjfdsFasdfF")
 (define-fun w3 () String "k!0()sfasdhvyaQQQQAPasdfPPP")
-(define-fun w4 () String "g~'\"asdfoqpweru23$_AAaAaBcA")
+(define-fun w4 () String "g~'""asdfoqpweru23$_AAaAaBcA")
 (define-fun w5 () String "aB")
 (define-fun w6 () String "aBa")
 (define-fun w7 () String "1Zd3Z3")
@@ -15,7 +15,7 @@
 (define-fun w10 () String "CCCCCCCC")
 (define-fun w11 () String "G")
 (define-fun w12 () String "!Lm")
-(define-fun w13 () String "~\"Boo")
+(define-fun w13 () String "~""Boo")
 (define-fun w14 () String "!@#$%1234Moo")
 
 (synth-fun r () RegLan
@@ -24,7 +24,7 @@
         (Start RegLan
             (
                 (str.to_re "!")
-                (str.to_re "\"")
+                (str.to_re """")
                 (str.to_re "#")
                 (str.to_re "$")
                 (str.to_re "%")

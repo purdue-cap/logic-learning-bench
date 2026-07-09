@@ -1,6 +1,6 @@
 ;; Reg+_0079: lines with at least capital letter followed by letter
 ;; source: REGEL (deepregex/80) — gt=repeatatleast(concat(<cap>,contain(<let>)),1)
-;; examples: 13, constraints: 13, max_len: 15
+;; examples: 14, constraints: 14, max_len: 15
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -198,4 +198,5 @@
 (constraint (Start.Sem match_regex 10 115 111 109 101 116 104 105 110 103 33 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 97 65 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 110 48 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

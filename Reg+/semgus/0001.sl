@@ -1,6 +1,6 @@
 ;; Reg+_0001: items with an upper case letter preceding either '!' , a small letter , or a character .
 ;; source: REGEL (deepregex/1) — gt=concat(<cap>,contain(or(or(<any>,<low>),<m0>)))
-;; examples: 13, constraints: 13, max_len: 2
+;; examples: 14, constraints: 14, max_len: 2
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -133,4 +133,5 @@
 (constraint (Start.Sem match_regex 1 64 0 false))
 (constraint (Start.Sem match_regex 1 32 0 false))
 (constraint (Start.Sem match_regex 1 59 0 false))
+(constraint (Start.Sem match_regex 0 0 0 false))
 (check-synth)

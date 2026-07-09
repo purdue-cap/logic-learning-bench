@@ -1,6 +1,6 @@
 ;; Reg+_0124: lines that have words with a character or a capital letter
 ;; source: REGEL (deepregex/130) — gt=or(<cap>,<any>)
-;; examples: 13, constraints: 13, max_len: 3
+;; examples: 14, constraints: 14, max_len: 3
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -138,4 +138,5 @@
 (constraint (Start.Sem match_regex 2 52 68 0 false))
 (constraint (Start.Sem match_regex 2 64 35 0 false))
 (constraint (Start.Sem match_regex 3 100 49 68 false))
+(constraint (Start.Sem match_regex 0 0 0 0 false))
 (check-synth)

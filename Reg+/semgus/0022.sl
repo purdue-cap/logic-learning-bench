@@ -1,6 +1,6 @@
 ;; Reg+_0022: lines that contain words with a lower-case letter , a vowel , or a number
 ;; source: REGEL (deepregex/22) — gt=contain(or(or(<low>,<vow>),<num>))
-;; examples: 12, constraints: 12, max_len: 8
+;; examples: 13, constraints: 13, max_len: 8
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -150,4 +150,5 @@
 (constraint (Start.Sem match_regex 1 39 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 1 33 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 1 38 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

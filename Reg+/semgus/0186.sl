@@ -1,6 +1,6 @@
 ;; Reg+_0186: lines with the string '!' or '@' or a number before a vowel
 ;; source: REGEL (deepregex/194) — gt=concat(or(or(<m0>,<num>),<m1>),contain(<vow>))
-;; examples: 12, constraints: 13, max_len: 5
+;; examples: 13, constraints: 14, max_len: 5
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -136,4 +136,5 @@
 (constraint (Start.Sem match_regex 1 49 0 0 0 0 false))
 (constraint (Start.Sem match_regex 1 33 0 0 0 0 false))
 (constraint (Start.Sem match_regex 1 64 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 false))
 (check-synth)

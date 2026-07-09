@@ -1,6 +1,6 @@
 ;; Reg+_0159: lines without only a character before string '!'
 ;; source: REGEL (deepregex/166) — gt=not(concat(<any>,contain(<m0>)))
-;; examples: 13, constraints: 13, max_len: 3
+;; examples: 14, constraints: 14, max_len: 3
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -117,4 +117,5 @@
 (constraint (Start.Sem match_regex 3 97 33 98 false))
 (constraint (Start.Sem match_regex 3 97 33 49 false))
 (constraint (Start.Sem match_regex 3 97 33 33 false))
+(constraint (Start.Sem match_regex 0 0 0 0 true))
 (check-synth)

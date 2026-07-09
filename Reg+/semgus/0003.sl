@@ -1,6 +1,6 @@
 ;; Reg+_0003: lines that end with a character or a vowel
 ;; source: REGEL (deepregex/3) — gt=endwith(or(<any>,<vow>))
-;; examples: 7, constraints: 7, max_len: 5
+;; examples: 8, constraints: 8, max_len: 5
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -115,4 +115,5 @@
 (constraint (Start.Sem match_regex 5 64 46 46 46 97 true))
 (constraint (Start.Sem match_regex 2 44 98 0 0 0 true))
 (constraint (Start.Sem match_regex 2 64 64 0 0 0 true))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 false))
 (check-synth)

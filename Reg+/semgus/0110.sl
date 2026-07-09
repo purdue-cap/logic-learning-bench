@@ -1,6 +1,6 @@
 ;; Reg+_0110: lines with words with a number followed by a character at least once in them
 ;; source: REGEL (deepregex/115) — gt=repeatatleast(concat(<num>,contain(<any>)),1)
-;; examples: 13, constraints: 13, max_len: 20
+;; examples: 14, constraints: 14, max_len: 20
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -229,4 +229,5 @@
 (constraint (Start.Sem match_regex 5 119 111 114 100 53 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 3 35 35 53 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 6 73 79 51 32 50 55 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

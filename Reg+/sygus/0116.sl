@@ -13,6 +13,8 @@
 (define-fun w8 () String "!")
 (define-fun w9 () String "!sd")
 
+(define-fun w10 () String "")
+
 (synth-fun r () RegLan
     ((Start RegLan))
     (
@@ -56,5 +58,7 @@
 (constraint (str.in_re w7 r))
 (constraint (not (str.in_re w8 r)))
 (constraint (not (str.in_re w9 r)))
+
+(constraint (not (str.in_re w10 r)))
 
 (check-synth)

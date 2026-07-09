@@ -1,6 +1,6 @@
 ;; Reg+_0102: the lines that have a vowel coming before a character
 ;; source: REGEL (deepregex/106) — gt=contain(concat(<vow>,contain(<any>)))
-;; examples: 13, constraints: 13, max_len: 10
+;; examples: 14, constraints: 14, max_len: 10
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -164,4 +164,5 @@
 (constraint (Start.Sem match_regex 1 97 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 4 99 104 32 97 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 4 33 33 32 101 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

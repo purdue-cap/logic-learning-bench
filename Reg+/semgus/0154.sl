@@ -1,6 +1,6 @@
 ;; Reg+_0154: lines with zero or more characters before a number
 ;; source: REGEL (deepregex/161) — gt=concat(contain(star(<any>)),contain(<num>))
-;; examples: 13, constraints: 13, max_len: 6
+;; examples: 14, constraints: 14, max_len: 6
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -147,4 +147,5 @@
 (constraint (Start.Sem match_regex 1 98 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 5 97 98 99 100 101 0 false))
 (constraint (Start.Sem match_regex 4 65 66 35 36 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 false))
 (check-synth)

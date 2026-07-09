@@ -1,6 +1,6 @@
 ;; Reg+_0081: lines with the string '!' containing only a lower-case letter
 ;; source: REGEL (deepregex/82) — gt=repeatatleast(or(<m0>,<low>),1)
-;; examples: 13, constraints: 13, max_len: 18
+;; examples: 14, constraints: 14, max_len: 18
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -177,4 +177,5 @@
 (constraint (Start.Sem match_regex 2 49 33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 33 49 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 3 97 33 65 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

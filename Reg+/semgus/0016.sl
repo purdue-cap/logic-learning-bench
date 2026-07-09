@@ -1,6 +1,6 @@
 ;; Reg+_0016: lines without a character , a vowel , or a capital letter
 ;; source: REGEL (deepregex/16) — gt=not(or(or(<any>,<vow>),<cap>))
-;; examples: 7, constraints: 7, max_len: 1
+;; examples: 8, constraints: 8, max_len: 1
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -110,4 +110,5 @@
 (constraint (Start.Sem match_regex 1 87 false))
 (constraint (Start.Sem match_regex 1 49 false))
 (constraint (Start.Sem match_regex 1 64 false))
+(constraint (Start.Sem match_regex 0 0 true))
 (check-synth)

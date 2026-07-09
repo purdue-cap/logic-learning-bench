@@ -1,6 +1,6 @@
 ;; Reg+_0005: lines ending with 3 or more words with a character .
 ;; source: REGEL (deepregex/5) — gt=endwith(repeatatleast(<any>,3))
-;; examples: 13, constraints: 13, max_len: 7
+;; examples: 14, constraints: 14, max_len: 7
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -155,4 +155,5 @@
 (constraint (Start.Sem match_regex 2 49 50 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 44 50 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 32 100 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 false))
 (check-synth)

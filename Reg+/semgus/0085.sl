@@ -1,6 +1,6 @@
 ;; Reg+_0085: lines with words and a letter or capital letter
 ;; source: REGEL (deepregex/87) — gt=repeatatleast(or(<let>,<cap>),1)
-;; examples: 13, constraints: 13, max_len: 7
+;; examples: 14, constraints: 14, max_len: 7
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -173,4 +173,5 @@
 (constraint (Start.Sem match_regex 7 116 114 101 44 108 108 111 false))
 (constraint (Start.Sem match_regex 6 121 111 117 39 114 101 0 false))
 (constraint (Start.Sem match_regex 3 48 49 50 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 false))
 (check-synth)

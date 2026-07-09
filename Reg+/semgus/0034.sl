@@ -1,6 +1,6 @@
 ;; Reg+_0034: lines starting with string '!' or character followed by number
 ;; source: REGEL (deepregex/34) — gt=or(startwith(<m0>),concat(<any>,contain(<num>)))
-;; examples: 13, constraints: 13, max_len: 5
+;; examples: 14, constraints: 14, max_len: 5
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -121,4 +121,5 @@
 (constraint (Start.Sem match_regex 2 64 97 0 0 0 false))
 (constraint (Start.Sem match_regex 2 64 33 0 0 0 false))
 (constraint (Start.Sem match_regex 2 64 64 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 false))
 (check-synth)

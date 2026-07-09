@@ -1,6 +1,6 @@
 ;; Reg+_0107: lines in which a character appears no less than zero times before a '!' string occurs
 ;; source: REGEL (deepregex/112) — gt=concat(star(<any>),contain(<m0>))
-;; examples: 13, constraints: 13, max_len: 15
+;; examples: 14, constraints: 14, max_len: 15
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -216,4 +216,5 @@
 (constraint (Start.Sem match_regex 10 115 112 101 99 105 97 108 32 49 50 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 10 115 112 101 99 105 97 108 32 35 35 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 15 105 110 118 97 108 105 100 64 32 98 101 102 111 114 101 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

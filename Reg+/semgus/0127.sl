@@ -1,6 +1,6 @@
 ;; Reg+_0127: lines with a capital letter and a lower-case letter following it
 ;; source: REGEL (deepregex/133) — gt=contain(concat(<cap>,contain(<low>)))
-;; examples: 13, constraints: 13, max_len: 8
+;; examples: 14, constraints: 14, max_len: 8
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -160,4 +160,5 @@
 (constraint (Start.Sem match_regex 4 119 101 114 83 0 0 0 0 false))
 (constraint (Start.Sem match_regex 7 115 100 50 51 52 100 115 0 false))
 (constraint (Start.Sem match_regex 5 83 49 50 51 52 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

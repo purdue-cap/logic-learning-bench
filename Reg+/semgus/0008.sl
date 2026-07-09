@@ -1,6 +1,6 @@
 ;; Reg+_0008: lines with lower-case letter , before capital letter or character
 ;; source: REGEL (deepregex/8) — gt=concat(<low>,contain(or(<cap>,<any>)))
-;; examples: 13, constraints: 13, max_len: 8
+;; examples: 14, constraints: 14, max_len: 8
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -160,4 +160,5 @@
 (constraint (Start.Sem match_regex 1 32 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 32 46 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 5 54 65 66 100 51 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

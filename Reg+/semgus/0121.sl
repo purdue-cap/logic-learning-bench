@@ -1,6 +1,6 @@
 ;; Reg+_0121: lines with words with zero or more capital letters before the string '!'
 ;; source: REGEL (deepregex/127) — gt=concat(star(<cap>),contain(<m0>))
-;; examples: 13, constraints: 13, max_len: 10
+;; examples: 14, constraints: 14, max_len: 10
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -179,4 +179,5 @@
 (constraint (Start.Sem match_regex 4 100 97 106 56 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 4 115 100 100 51 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 115 100 0 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

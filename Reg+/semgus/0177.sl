@@ -1,6 +1,6 @@
 ;; Reg+_0177: lines that have either a character , the string '!' , or the string '@' before a number
 ;; source: REGEL (deepregex/184) — gt=concat(or(or(<m0>,<any>),<m1>),contain(<num>))
-;; examples: 13, constraints: 13, max_len: 3
+;; examples: 14, constraints: 14, max_len: 3
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -123,4 +123,5 @@
 (constraint (Start.Sem match_regex 1 33 0 0 false))
 (constraint (Start.Sem match_regex 1 64 0 0 false))
 (constraint (Start.Sem match_regex 2 97 97 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 false))
 (check-synth)

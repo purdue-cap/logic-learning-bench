@@ -1,6 +1,6 @@
 ;; Reg+_0037: a letter or a numbre appears at the end of the lines
 ;; source: REGEL (deepregex/37) — gt=contain(endwith(or(<let>,<num>)))
-;; examples: 13, constraints: 13, max_len: 3
+;; examples: 14, constraints: 14, max_len: 3
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -117,4 +117,5 @@
 (constraint (Start.Sem match_regex 2 64 64 0 false))
 (constraint (Start.Sem match_regex 2 33 33 0 false))
 (constraint (Start.Sem match_regex 3 33 33 33 false))
+(constraint (Start.Sem match_regex 0 0 0 0 false))
 (check-synth)

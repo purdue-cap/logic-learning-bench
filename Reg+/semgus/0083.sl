@@ -1,6 +1,6 @@
 ;; Reg+_0083: items terminating withe a vowel at least twice .
 ;; source: REGEL (deepregex/84) — gt=endwith(repeatatleast(<vow>,2))
-;; examples: 13, constraints: 13, max_len: 20
+;; examples: 14, constraints: 14, max_len: 20
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -211,4 +211,5 @@
 (constraint (Start.Sem match_regex 4 115 97 100 100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 6 114 101 97 99 99 115 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 5 111 110 108 121 33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

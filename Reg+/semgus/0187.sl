@@ -1,6 +1,6 @@
 ;; Reg+_0187: lines not starting with a letter or string '!'
 ;; source: REGEL (deepregex/195) — gt=not(startwith(or(<let>,<m0>)))
-;; examples: 13, constraints: 13, max_len: 4
+;; examples: 14, constraints: 14, max_len: 4
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -125,4 +125,5 @@
 (constraint (Start.Sem match_regex 2 33 97 0 0 false))
 (constraint (Start.Sem match_regex 2 33 49 0 0 false))
 (constraint (Start.Sem match_regex 4 33 33 33 33 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 true))
 (check-synth)

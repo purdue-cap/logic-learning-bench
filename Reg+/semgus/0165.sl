@@ -1,6 +1,6 @@
 ;; Reg+_0165: lines with zero or more of the string '!' before a vowel
 ;; source: REGEL (deepregex/172) — gt=concat(star(<m0>),contain(contain(<vow>)))
-;; examples: 13, constraints: 13, max_len: 6
+;; examples: 14, constraints: 14, max_len: 6
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -138,4 +138,5 @@
 (constraint (Start.Sem match_regex 2 49 50 0 0 0 0 false))
 (constraint (Start.Sem match_regex 1 98 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 33 98 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 false))
 (check-synth)

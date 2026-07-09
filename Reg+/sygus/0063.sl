@@ -17,6 +17,8 @@
 (define-fun w12 () String "k123A2")
 (define-fun w13 () String "4C")
 
+(define-fun w14 () String "")
+
 (synth-fun r () RegLan
     ((Start RegLan))
     (
@@ -73,5 +75,7 @@
 (constraint (not (str.in_re w11 r)))
 (constraint (not (str.in_re w12 r)))
 (constraint (not (str.in_re w13 r)))
+
+(constraint (not (str.in_re w14 r)))
 
 (check-synth)

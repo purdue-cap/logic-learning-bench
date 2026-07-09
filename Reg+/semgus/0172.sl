@@ -1,6 +1,6 @@
 ;; Reg+_0172: lines with 3 or more of a vowel or character
 ;; source: REGEL (deepregex/179) — gt=repeatatleast(or(<vow>,<any>),3)
-;; examples: 13, constraints: 13, max_len: 6
+;; examples: 14, constraints: 14, max_len: 6
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -147,4 +147,5 @@
 (constraint (Start.Sem match_regex 1 98 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 1 65 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 49 50 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 false))
 (check-synth)

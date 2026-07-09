@@ -1,6 +1,6 @@
 ;; Reg+_0086: lines in which a number comes prior to a lower-case letter , and followed by a letter
 ;; source: REGEL (deepregex/88) — gt=concat(<num>,contain(concat(<low>,contain(<let>))))
-;; examples: 13, constraints: 13, max_len: 6
+;; examples: 14, constraints: 14, max_len: 6
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -162,4 +162,5 @@
 (constraint (Start.Sem match_regex 3 65 97 49 0 0 0 false))
 (constraint (Start.Sem match_regex 3 44 44 44 0 0 0 false))
 (constraint (Start.Sem match_regex 6 104 101 108 108 111 33 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 false))
 (check-synth)

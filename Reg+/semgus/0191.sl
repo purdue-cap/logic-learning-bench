@@ -1,6 +1,6 @@
 ;; Reg+_0191: lines with words with string '!' or string '@' , 4 or more times
 ;; source: REGEL (deepregex/199) — gt=repeatatleast(or(<m0>,<m1>),4)
-;; examples: 13, constraints: 13, max_len: 6
+;; examples: 14, constraints: 14, max_len: 6
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -120,4 +120,5 @@
 (constraint (Start.Sem match_regex 1 33 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 2 33 33 0 0 0 0 false))
 (constraint (Start.Sem match_regex 3 33 64 33 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 false))
 (check-synth)

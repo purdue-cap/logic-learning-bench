@@ -1,6 +1,6 @@
 ;; Reg+_0076: lines with words ending in string '!' or '@'
 ;; source: REGEL (deepregex/77) — gt=endwith(or(<m0>,<m1>))
-;; examples: 13, constraints: 13, max_len: 25
+;; examples: 14, constraints: 14, max_len: 25
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -206,4 +206,5 @@
 (constraint (Start.Sem match_regex 25 115 111 109 101 116 104 105 110 103 32 119 105 116 104 32 110 111 32 115 121 109 98 111 108 115 false))
 (constraint (Start.Sem match_regex 12 33 33 33 64 64 64 101 110 100 105 110 103 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 4 33 64 33 97 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

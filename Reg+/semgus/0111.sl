@@ -1,6 +1,6 @@
 ;; Reg+_0111: lines containing either lower-case letter , a letter , or character
 ;; source: REGEL (deepregex/116) — gt=contain(or(or(<low>,<let>),<any>))
-;; examples: 7, constraints: 7, max_len: 7
+;; examples: 8, constraints: 8, max_len: 7
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -140,4 +140,5 @@
 (constraint (Start.Sem match_regex 2 51 51 0 0 0 0 0 true))
 (constraint (Start.Sem match_regex 3 33 97 33 0 0 0 0 true))
 (constraint (Start.Sem match_regex 2 35 35 0 0 0 0 0 true))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 false))
 (check-synth)

@@ -1,6 +1,6 @@
 ;; Reg+_0183: lines containing the string '!' or a letter after a character
 ;; source: REGEL (deepregex/191) — gt=concat(<any>,contain(or(<let>,<m0>)))
-;; examples: 13, constraints: 13, max_len: 4
+;; examples: 14, constraints: 14, max_len: 4
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -116,4 +116,5 @@
 (constraint (Start.Sem match_regex 1 98 0 0 0 false))
 (constraint (Start.Sem match_regex 1 33 0 0 0 false))
 (constraint (Start.Sem match_regex 2 97 49 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 false))
 (check-synth)

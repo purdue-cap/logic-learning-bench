@@ -7,7 +7,7 @@
 (define-fun w2 () String "fjkdal;f!dsfasf")
 (define-fun w3 () String "dafsj!sdajkl;fj!sdf")
 (define-fun w4 () String "a!!!!")
-(define-fun w5 () String "lines containing the string \"!\" with a letter before it")
+(define-fun w5 () String "lines containing the string ""!"" with a letter before it")
 (define-fun w6 () String "ok??ok!!")
 (define-fun w7 () String "pikachu!!")
 (define-fun w8 () String "!!!")
@@ -17,6 +17,8 @@
 (define-fun w12 () String "!!ak")
 (define-fun w13 () String "--!--")
 
+(define-fun w14 () String "")
+
 (synth-fun r () RegLan
     ((Start RegLan))
     (
@@ -24,7 +26,7 @@
             (
                 (str.to_re " ")
                 (str.to_re "!")
-                (str.to_re "\"")
+                (str.to_re """")
                 (str.to_re "%")
                 (str.to_re "-")
                 (str.to_re ";")
@@ -74,5 +76,7 @@
 (constraint (not (str.in_re w11 r)))
 (constraint (not (str.in_re w12 r)))
 (constraint (not (str.in_re w13 r)))
+
+(constraint (not (str.in_re w14 r)))
 
 (check-synth)

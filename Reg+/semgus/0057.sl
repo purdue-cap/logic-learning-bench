@@ -1,6 +1,6 @@
 ;; Reg+_0057: lines that contain a letter , 2 times or more before a vowel
 ;; source: REGEL (deepregex/57) — gt=concat(repeatatleast(<let>,2),contain(<vow>))
-;; examples: 13, constraints: 13, max_len: 35
+;; examples: 14, constraints: 14, max_len: 35
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -238,4 +238,5 @@
 (constraint (Start.Sem match_regex 3 35 64 97 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 3 33 33 111 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 3 102 102 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

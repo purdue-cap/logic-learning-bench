@@ -1,6 +1,6 @@
 ;; Reg+_0010: lines with a lower case letter or character
 ;; source: REGEL (deepregex/10) — gt=contain(or(<low>,<any>))
-;; examples: 7, constraints: 7, max_len: 3
+;; examples: 8, constraints: 8, max_len: 3
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -114,4 +114,5 @@
 (constraint (Start.Sem match_regex 3 97 49 50 true))
 (constraint (Start.Sem match_regex 3 97 39 44 true))
 (constraint (Start.Sem match_regex 1 32 0 0 true))
+(constraint (Start.Sem match_regex 0 0 0 0 false))
 (check-synth)

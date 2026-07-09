@@ -1,6 +1,6 @@
 ;; Reg+_0141: lines ending with a character or a number
 ;; source: REGEL (deepregex/147) — gt=endwith(or(repeatatleast(<any>,1),<num>))
-;; examples: 7, constraints: 7, max_len: 3
+;; examples: 8, constraints: 8, max_len: 3
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -114,4 +114,5 @@
 (constraint (Start.Sem match_regex 3 102 100 51 true))
 (constraint (Start.Sem match_regex 2 100 33 0 true))
 (constraint (Start.Sem match_regex 3 115 51 97 true))
+(constraint (Start.Sem match_regex 0 0 0 0 false))
 (check-synth)

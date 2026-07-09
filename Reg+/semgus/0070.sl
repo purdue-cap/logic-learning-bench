@@ -1,6 +1,6 @@
 ;; Reg+_0070: lines starting with string '!' followed by vowel at least once
 ;; source: REGEL (deepregex/70) — gt=repeatatleast(startwith(concat(<m0>,contain(<vow>))),1)
-;; examples: 13, constraints: 13, max_len: 19
+;; examples: 14, constraints: 14, max_len: 19
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -218,4 +218,5 @@
 (constraint (Start.Sem match_regex 1 97 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 3 49 50 51 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 8 102 51 102 115 100 102 119 114 0 0 0 0 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)

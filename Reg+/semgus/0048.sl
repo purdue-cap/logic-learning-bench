@@ -1,6 +1,6 @@
 ;; Reg+_0048: lines starting with a vowel before a character
 ;; source: REGEL (deepregex/48) — gt=repeatatleast(startwith(concat(<vow>,contain(<any>))),1)
-;; examples: 13, constraints: 13, max_len: 4
+;; examples: 14, constraints: 14, max_len: 4
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -155,4 +155,5 @@
 (constraint (Start.Sem match_regex 3 109 59 59 0 false))
 (constraint (Start.Sem match_regex 4 122 39 39 39 false))
 (constraint (Start.Sem match_regex 2 113 33 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 false))
 (check-synth)

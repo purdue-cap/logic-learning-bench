@@ -1,6 +1,6 @@
 ;; Reg+_0013: lines with words that contain a character followed by a letter
 ;; source: REGEL (deepregex/13) — gt=concat(<any>,contain(<let>))
-;; examples: 13, constraints: 13, max_len: 3
+;; examples: 14, constraints: 14, max_len: 3
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -120,4 +120,5 @@
 (constraint (Start.Sem match_regex 1 97 0 0 false))
 (constraint (Start.Sem match_regex 1 66 0 0 false))
 (constraint (Start.Sem match_regex 3 32 32 32 false))
+(constraint (Start.Sem match_regex 0 0 0 0 false))
 (check-synth)

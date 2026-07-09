@@ -1,6 +1,6 @@
 ;; Reg+_0188: lines containing the string '!' preceding a character before a number
 ;; source: REGEL (deepregex/196) — gt=concat(concat(<m0>,contain(<any>)),contain(<num>))
-;; examples: 13, constraints: 13, max_len: 13
+;; examples: 14, constraints: 14, max_len: 13
 
 ;; (set-info :format-version "2.2.0")
 ;; (set-info :author "Chentian Wu")
@@ -146,4 +146,5 @@
 (constraint (Start.Sem match_regex 1 33 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 3 33 97 97 0 0 0 0 0 0 0 0 0 0 false))
 (constraint (Start.Sem match_regex 4 33 33 33 97 0 0 0 0 0 0 0 0 0 false))
+(constraint (Start.Sem match_regex 0 0 0 0 0 0 0 0 0 0 0 0 0 0 false))
 (check-synth)
