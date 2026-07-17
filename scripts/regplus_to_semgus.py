@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """Generate SemGuS regular-expression benchmarks from benchmark/Reg+.
 
-The Reg+ SyGuS files already contain the concrete example strings and a
-per-case regex grammar.  This generator mirrors that grammar in SemGuS while
-using the finite-interval Boolean semantics used by the Reg SemGuS benchmarks:
+The generated grammar mirrors the Delis RegLan terminal set used by each
+benchmark instance.  The semantics are finite-interval Boolean semantics:
 each regex term denotes, for a fixed example length, which substrings it
 matches.  Characters are represented by integer code points, avoiding native
 SMT regex values that ks2 does not operationalize reliably.
@@ -32,7 +31,8 @@ DEFINE_STRING_RE = re.compile(
 CONSTRAINT_RE = re.compile(
     r"\(constraint\s+(\(not\s+)?\(str\.in_re\s+(w\d+)\s+r\)\)?\s*\)"
 )
-STR_TO_RE_RE = re.compile(r'\(str\.to_re\s+("(?:\\u\{[0-9A-Fa-f]+\}|""|\\.|[^"\\])*")\)')
+THEORY_REQUIRE_RE = re.compile(r'\(require\s+"\.\/global\/(theories\.[^"]+\.sl)"\)')
+PROVIDE_RE = re.compile(r"\(provide\s+([^)]*)\)", re.S)
 
 
 def atom_or(items: list[str]) -> str:
@@ -102,11 +102,66 @@ def parse_string_info(text: str, key: str) -> str:
     return match.group(1) if match else ""
 
 
-def constructor_name(ch: str) -> str:
-    code = ord(ch)
-    if code <= 0xFFFF:
-        return f"$x{code:02X}"
-    return f"$u{code:X}"
+def constructor_name(term: str) -> str:
+    if term == "char.any":
+        return "$any"
+    if term.startswith("char.x"):
+        return f"$x{term[6:].upper()}"
+    if term.startswith("char."):
+        return f"${term[5:]}"
+    raise ValueError(f"unsupported terminal term: {term}")
+
+
+def theory_for_case(index: int, delis_text: str) -> Path:
+    match = THEORY_REQUIRE_RE.search(delis_text)
+    if not match:
+        raise ValueError(f"could not find Reg+ theory require in {index:04d}.sl")
+    return REGPLUS / "global" / match.group(1)
+
+
+def char_terms_from_theory(path: Path) -> list[str]:
+    text = path.read_text()
+    match = PROVIDE_RE.search(text)
+    if not match:
+        raise ValueError(f"could not find provide list in {path}")
+    terms = [term for term in match.group(1).split() if term.startswith("char.")]
+    if not terms:
+        raise ValueError(f"no character terminals found in {path}")
+    return terms
+
+
+def code_for_xterm(term: str) -> int:
+    if not term.startswith("char.x"):
+        raise ValueError(term)
+    return int(term[6:], 16)
+
+
+def char_test(term: str, value: str) -> str:
+    if term == "char.any":
+        return "true"
+    if term == "char.digit":
+        return f"(and (<= 48 {value}) (<= {value} 57))"
+    if term == "char.lower":
+        return f"(and (<= 97 {value}) (<= {value} 122))"
+    if term == "char.upper":
+        return f"(and (<= 65 {value}) (<= {value} 90))"
+    if term == "char.alpha":
+        return f"(or {char_test('char.upper', value)} {char_test('char.lower', value)})"
+    if term == "char.alnum":
+        return f"(or {char_test('char.alpha', value)} {char_test('char.digit', value)})"
+    if term == "char.word":
+        return f"(or {char_test('char.alnum', value)} (= {value} 95))"
+    if term == "char.space":
+        return f"(or (= {value} 32) (= {value} 9) (= {value} 10))"
+    if term == "char.hex":
+        return (
+            f"(or {char_test('char.digit', value)} "
+            f"(and (<= 97 {value}) (<= {value} 102)) "
+            f"(and (<= 65 {value}) (<= {value} 70)))"
+        )
+    if term.startswith("char.x"):
+        return f"(= {value} {code_for_xterm(term)})"
+    raise ValueError(f"unsupported terminal term: {term}")
 
 
 def parse_txt_examples(index: int) -> list[tuple[str, bool]]:
@@ -145,17 +200,7 @@ def parse_case(index: int) -> dict[str, object]:
         name: decode_smt_string(literal)
         for name, literal in DEFINE_STRING_RE.findall(sygus_text)
     }
-    terminals: list[str] = []
-    seen: set[str] = set()
-    for literal in STR_TO_RE_RE.findall(sygus_text):
-        text = decode_smt_string(literal)
-        if len(text) != 1:
-            raise ValueError(
-                f"expected one-character regex terminal in {index:04d}.sl, got {text!r}"
-            )
-        if text not in seen:
-            seen.add(text)
-            terminals.append(text)
+    terminals = char_terms_from_theory(theory_for_case(index, delis_text))
 
     constraints: list[tuple[str, bool]] = []
     for neg, name in CONSTRAINT_RE.findall(sygus_text):
@@ -174,13 +219,6 @@ def parse_case(index: int) -> dict[str, object]:
                 (f"w{example_index}", expected)
                 for example_index, (_, expected) in enumerate(txt_examples, start=1)
             ]
-
-    if not terminals:
-        for word in words.values():
-            for ch in word:
-                if ch not in seen:
-                    seen.add(ch)
-                    terminals.append(ch)
 
     return {
         "index": index,
@@ -219,16 +257,14 @@ def start_sem(max_len: int) -> str:
         )) :input ({input_vars}) :output (result))"""
 
 
-def leaf_equalities(max_len: int, code: int | None) -> list[str]:
+def leaf_equalities(max_len: int, term: str) -> list[str]:
     equalities: list[str] = []
     for i, j in intervals(max_len):
         name = x("X", i, j)
         if j != i + 1:
             rhs = "false"
-        elif code is None:
-            rhs = f"(< {i} len)"
         else:
-            rhs = atom_and([f"(< {i} len)", eq(f"s_{i}", str(code))])
+            rhs = atom_and([f"(< {i} len)", char_test(term, f"s_{i}")])
         equalities.append(eq(name, rhs))
     return equalities
 
@@ -366,15 +402,11 @@ def plus_case(max_len: int) -> str:
 
 
 def r_sem(max_len: int, terminals: list[str]) -> str:
-    cases = [
-        f"""            ($any
-                {atom_and(leaf_equalities(max_len, None))}
-            )"""
-    ]
-    for ch in terminals:
+    cases = []
+    for term in terminals:
         cases.append(
-            f"""            ({constructor_name(ch)}
-                {atom_and(leaf_equalities(max_len, ord(ch)))}
+            f"""            ({constructor_name(term)}
+                {atom_and(leaf_equalities(max_len, term))}
             )"""
         )
     cases.extend(
@@ -442,7 +474,7 @@ def emit_case(case: dict[str, object]) -> str:
             *[f"({name} Bool)" for name in output_vars(max_len)],
         ]
     )
-    terminal_productions = " ".join(f"({constructor_name(ch)})" for ch in terminals)
+    terminal_productions = " ".join(f"({constructor_name(term)})" for term in terminals)
     constraints_text = "\n".join(
         constraint_for(words[name], expected, max_len) for name, expected in constraints
     )
@@ -460,7 +492,6 @@ def emit_case(case: dict[str, object]) -> str:
     (
         (($eval R))
         (
-            ($any)
             {terminal_productions}
             ($question R)
             ($plus R)
@@ -495,11 +526,20 @@ def main() -> None:
     parser.add_argument("--out", type=Path, default=OUT)
     parser.add_argument("--start", type=int, default=1)
     parser.add_argument("--end", type=int, default=322)
+    parser.add_argument("--ids-file", type=Path)
     args = parser.parse_args()
 
     args.out.mkdir(parents=True, exist_ok=True)
     manifest = []
-    for index in range(args.start, args.end + 1):
+    if args.ids_file:
+        indices = [
+            int(line.split("#", 1)[0].strip().removesuffix(".sl"))
+            for line in args.ids_file.read_text().splitlines()
+            if line.split("#", 1)[0].strip()
+        ]
+    else:
+        indices = list(range(args.start, args.end + 1))
+    for index in indices:
         case = parse_case(index)
         output = emit_case(case)
         out_path = args.out / f"{index:04d}.sl"
@@ -517,7 +557,8 @@ def main() -> None:
         )
         manifest.append(manifest_line)
         print(manifest_line)
-    (args.out / "MANIFEST.txt").write_text("\n".join(manifest) + "\n")
+    if not args.ids_file:
+        (args.out / "MANIFEST.txt").write_text("\n".join(manifest) + "\n")
 
 
 if __name__ == "__main__":

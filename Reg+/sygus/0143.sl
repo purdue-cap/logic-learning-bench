@@ -1,7 +1,7 @@
 (set-logic SLIA)
 
 ; Converted from upstream Regel benchmark deepregex/149.
-; Grammar mirrors delis RegLan theory: char literals actually used + re.allchar + standard ops.
+; Grammar mirrors the Delis RegLan terminal set plus standard ops.
 
 (define-fun w1 () String "2D")
 (define-fun w2 () String "ae")
@@ -17,27 +17,50 @@
 (define-fun w12 () String "@#")
 (define-fun w13 () String "e")
 
+(define-fun w14 () String "")
+
 (synth-fun r () RegLan
     ((Start RegLan))
     (
         (Start RegLan
             (
-                (str.to_re "!")
-                (str.to_re "#")
-                (str.to_re "1")
-                (str.to_re "2")
-                (str.to_re "3")
-                (str.to_re "4")
-                (str.to_re "@")
-                (str.to_re "D")
-                (str.to_re "G")
-                (str.to_re "^")
-                (str.to_re "a")
-                (str.to_re "d")
-                (str.to_re "e")
-                (str.to_re "f")
-                (str.to_re "s")
                 re.allchar
+                (re.range "0" "9")
+                (re.range "a" "z")
+                (re.range "A" "Z")
+                (re.union (re.range "A" "Z") (re.range "a" "z"))
+                (re.union (re.union (re.range "A" "Z") (re.range "a" "z")) (re.range "0" "9"))
+                (re.union (re.union (re.union (re.range "A" "Z") (re.range "a" "z")) (re.range "0" "9")) (str.to_re "_"))
+                (re.union (str.to_re " ") (re.union (str.to_re "\u{9}") (str.to_re "\u{A}")))
+                (re.union (re.range "0" "9") (re.union (re.range "a" "f") (re.range "A" "F")))
+                (str.to_re "\u{1B}")
+                (str.to_re "!")
+                (str.to_re """")
+                (str.to_re "#")
+                (str.to_re "$")
+                (str.to_re "%")
+                (str.to_re "&")
+                (str.to_re "'")
+                (str.to_re "(")
+                (str.to_re ")")
+                (str.to_re "*")
+                (str.to_re ",")
+                (str.to_re "-")
+                (str.to_re ".")
+                (str.to_re "/")
+                (str.to_re ":")
+                (str.to_re ";")
+                (str.to_re "<")
+                (str.to_re ">")
+                (str.to_re "?")
+                (str.to_re "@")
+                (str.to_re "[")
+                (str.to_re "\u{5C}")
+                (str.to_re "^")
+                (str.to_re "_")
+                (str.to_re "`")
+                (str.to_re "{")
+                (str.to_re "~")
                 (re.opt Start)
                 (re.++ Start Start)
                 (re.union Start Start)
@@ -62,5 +85,7 @@
 (constraint (not (str.in_re w11 r)))
 (constraint (not (str.in_re w12 r)))
 (constraint (not (str.in_re w13 r)))
+
+(constraint (not (str.in_re w14 r)))
 
 (check-synth)
