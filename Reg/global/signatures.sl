@@ -1,4 +1,11 @@
-(provide Pos zero one)
+(provide Pos zero one succ leq head tail)
 (declare-sort Pos 0)
 (declare-fun zero (Pos) Bool)
 (declare-fun one (Pos) Bool)
+; succ j i  <=>  j = i + 1   (matches Figure 1: char-a -> succ a.j a.i)
+(declare-fun succ (Pos Pos) Bool)
+; leq p q   <=>  p <= q      (position order)
+(declare-fun leq (Pos Pos) Bool)
+; boundary positions of the whole string: head = 0, tail = |w|
+(declare-fun head () Pos)
+(declare-fun tail () Pos)

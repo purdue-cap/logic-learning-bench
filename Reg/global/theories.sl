@@ -27,30 +27,36 @@
 (declare-axiom (= (re.union (re.opt x) (re.* x)) (re.* x)))
 (declare-axiom (= (re.union (re.* x) (re.opt x)) (re.* x)))
 
+; Self-contained (Figure 1) aspect: substring boundaries (i, j) over the finite
+; sort Pos. The :where (leq i j) guard keeps the aspect space triangular (as the
+; int-range `0 <= i <= j` bound did); the compiler bounds re.++/re.* quantifiers
+; via the leq guards inside the body, so no out-of-range sub-aspect is referenced.
 (define-aspects RegLan.Asp
-  (record (model Model) (i Int) (j Int))
-  :where (and (<= 0 i) (<= i j) (<= j (size (Pos model)))))
+  (record (model Model) (i Pos) (j Pos))
+  :where (leq i j))
 
 (define-semantics
   ((RegLan.Sem (r RegLan) (asp RegLan.Asp)))
   ((match r
      ((char.0)
-      (and (= (j asp) (+ (i asp) 1)) (zero (i asp))))
+      (and (succ (j asp) (i asp)) (zero (i asp))))
      ((char.1)
-      (and (= (j asp) (+ (i asp) 1)) (one (i asp))))
+      (and (succ (j asp) (i asp)) (one (i asp))))
      ((re.allchar)
-      (= (j asp) (+ (i asp) 1)))
+      (succ (j asp) (i asp)))
      ((re.opt x)
       (or (= (i asp) (j asp))
           (RegLan.Sem x asp)))
      ((re.++ x y)
-      (exists ((k (int-range (i asp) (j asp))))
-        (and (RegLan.Sem x (RegLan.Asp (model asp) (i asp) k))
+      (exists ((k (univ (Pos (model asp)))))
+        (and (leq (i asp) k) (leq k (j asp))
+             (RegLan.Sem x (RegLan.Asp (model asp) (i asp) k))
              (RegLan.Sem y (RegLan.Asp (model asp) k (j asp))))))
      ((re.union x y)
       (or (RegLan.Sem x asp) (RegLan.Sem y asp)))
      ((re.* x)
       (or (= (i asp) (j asp))
-          (exists ((k (int-range (+ (i asp) 1) (j asp))))
-            (and (RegLan.Sem x (RegLan.Asp (model asp) (i asp) k))
+          (exists ((k (univ (Pos (model asp)))))
+            (and (leq (i asp) k) (not (= (i asp) k)) (leq k (j asp))
+                 (RegLan.Sem x (RegLan.Asp (model asp) (i asp) k))
                  (RegLan.Sem r (RegLan.Asp (model asp) k (j asp))))))))))
