@@ -1,7 +1,7 @@
 ;; Shared CFG theory: K=2 nonterminals, alphabet {a,b}.
 ;; Used by the CFG/*.sl instances that (require) it.
 
-(provide CFG Rhs Rules Pos a b CFG.Asp CFG.Sem Rhs.Sem Rules.Sem)
+(provide CFG Rhs Rules Pos a b succ leq head tail CFG.Asp CFG.Sem Rhs.Sem Rules.Sem)
 
 (declare-term-types
  ((CFG 0) (Rhs 0) (Rules 0))
@@ -24,14 +24,18 @@
 (declare-sort Pos 0)
 (declare-fun a (Pos) Bool)
 (declare-fun b (Pos) Bool)
+(declare-fun succ (Pos Pos) Bool)
+(declare-fun leq (Pos Pos) Bool)
+(declare-fun head () Pos)
+(declare-fun tail () Pos)
 
 (define-aspects CFG.Asp
   (record
     (model Model)
-    (i Int)
-    (j Int)
+    (i Pos)
+    (j Pos)
     (mode (enum base reset.S0 reset.S1 find.S0 find.S1)))
-  :where (and (<= 0 i) (<= i j) (<= j (size (Pos model)))))
+  :where (leq i j))
 
 (define-semantics
   ((CFG.Sem (n CFG) (asp CFG.Asp)))
@@ -50,20 +54,21 @@
   ((match n
      ((a)
       (or (and (= (mode asp) base)
-               (= (j asp) (+ (i asp) 1))
+               (succ (j asp) (i asp))
                (a (i asp)))
           (and (or (= (mode asp) reset.S0) (= (mode asp) reset.S1))
                (CFG.Sem (parent n) asp))))
      ((b)
       (or (and (= (mode asp) base)
-               (= (j asp) (+ (i asp) 1))
+               (succ (j asp) (i asp))
                (b (i asp)))
           (and (or (= (mode asp) reset.S0) (= (mode asp) reset.S1))
                (CFG.Sem (parent n) asp))))
      ((cfg.++ x y)
       (or (and (= (mode asp) base)
-               (exists ((k (int-range (i asp) (j asp))))
-                 (and (Rhs.Sem x (CFG.Asp (model asp) (i asp) k base))
+               (exists ((k (univ (Pos (model asp)))))
+                 (and (leq (i asp) k) (leq k (j asp))
+                      (Rhs.Sem x (CFG.Asp (model asp) (i asp) k base))
                       (Rhs.Sem y (CFG.Asp (model asp) k (j asp) base)))))
           (and (or (= (mode asp) reset.S0) (= (mode asp) reset.S1))
                (CFG.Sem (parent n) asp))))
