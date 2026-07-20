@@ -3,7 +3,7 @@
 
 ; 0216 1: '1@100%'
 (define-model w0216_01
-  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) true) (($5) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -51,11 +51,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) (($6 $5) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($0 $6) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($1 $6) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($2 $6) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($3 $6) true) (($4 $4) true) (($4 $5) true) (($4 $6) true) (($5 $5) true) (($5 $6) true) (($6 $6) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($6))
 )
 
 ; 0216 2: '9@50%'
 (define-model w0216_02
-  (interp-sort Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -103,11 +108,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($4 $4) true) (($4 $5) true) (($5 $5) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($5))
 )
 
 ; 0216 3: '5@10%'
 (define-model w0216_03
-  (interp-sort Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -155,11 +165,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($4 $4) true) (($4 $5) true) (($5 $5) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($5))
 )
 
 ; 0216 4: '0@100%'
 (define-model w0216_04
-  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) true) (($5) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -207,11 +222,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) (($6 $5) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($0 $6) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($1 $6) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($2 $6) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($3 $6) true) (($4 $4) true) (($4 $5) true) (($4 $6) true) (($5 $5) true) (($5 $6) true) (($6 $6) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($6))
 )
 
 ; 0216 5: 'a@50%'
 (define-model w0216_05
-  (interp-sort Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) false))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false))))
@@ -259,11 +279,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($4 $4) true) (($4 $5) true) (($5 $5) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($5))
 )
 
 ; 0216 6: '1@abc%'
 (define-model w0216_06
-  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false) (($3) false) (($4) false) (($5) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true) (($3) true) (($4) true) (($5) false))))
@@ -311,11 +336,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) (($6 $5) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($0 $6) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($1 $6) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($2 $6) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($3 $6) true) (($4 $4) true) (($4 $5) true) (($4 $6) true) (($5 $5) true) (($5 $6) true) (($6 $6) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($6))
 )
 
 ; 0220 1: '0'
 (define-model w0220_01
-  (interp-sort Pos ($0))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -363,11 +393,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($1 $1) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($1))
 )
 
 ; 0220 2: '0.00'
 (define-model w0220_02
-  (interp-sort Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -415,11 +450,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($3 $3) true) (($3 $4) true) (($4 $4) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($4))
 )
 
 ; 0220 3: '0.12'
 (define-model w0220_03
-  (interp-sort Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -467,11 +507,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($3 $3) true) (($3 $4) true) (($4 $4) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($4))
 )
 
 ; 0220 4: '0.14'
 (define-model w0220_04
-  (interp-sort Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -519,11 +564,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($3 $3) true) (($3 $4) true) (($4 $4) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($4))
 )
 
 ; 0220 5: '0.'
 (define-model w0220_05
-  (interp-sort Pos ($0 $1))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -571,11 +621,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($1 $1) true) (($1 $2) true) (($2 $2) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($2))
 )
 
 ; 0220 6: '1'
 (define-model w0220_06
-  (interp-sort Pos ($0))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -623,11 +678,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($1 $1) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($1))
 )
 
 ; 0220 7: '1.00'
 (define-model w0220_07
-  (interp-sort Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -675,11 +735,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($3 $3) true) (($3 $4) true) (($4 $4) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($4))
 )
 
 ; 0220 8: '2.00'
 (define-model w0220_08
-  (interp-sort Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -727,11 +792,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($3 $3) true) (($3 $4) true) (($4 $4) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($4))
 )
 
 ; 0220 9: '0.000'
 (define-model w0220_09
-  (interp-sort Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -779,11 +849,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($4 $4) true) (($4 $5) true) (($5 $5) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($5))
 )
 
 ; 0223 1: '4'
 (define-model w0223_01
-  (interp-sort Pos ($0))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -831,11 +906,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($1 $1) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($1))
 )
 
 ; 0223 2: '10.25'
 (define-model w0223_02
-  (interp-sort Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -883,11 +963,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($4 $4) true) (($4 $5) true) (($5 $5) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($5))
 )
 
 ; 0223 3: '15.3'
 (define-model w0223_03
-  (interp-sort Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -935,11 +1020,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($3 $3) true) (($3 $4) true) (($4 $4) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($4))
 )
 
 ; 0223 4: '29.99'
 (define-model w0223_04
-  (interp-sort Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -987,11 +1077,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($4 $4) true) (($4 $5) true) (($5 $5) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($5))
 )
 
 ; 0223 5: '30'
 (define-model w0223_05
-  (interp-sort Pos ($0 $1))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -1039,11 +1134,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($1 $1) true) (($1 $2) true) (($2 $2) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($2))
 )
 
 ; 0223 6: '30.01'
 (define-model w0223_06
-  (interp-sort Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -1091,11 +1191,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($4 $4) true) (($4 $5) true) (($5 $5) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($5))
 )
 
 ; 0241 1: '1'
 (define-model w0241_01
-  (interp-sort Pos ($0))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -1143,11 +1248,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($1 $1) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($1))
 )
 
 ; 0241 2: '0.1'
 (define-model w0241_02
-  (interp-sort Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -1195,11 +1305,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($2 $2) true) (($2 $3) true) (($3 $3) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($3))
 )
 
 ; 0241 3: '9999'
 (define-model w0241_03
-  (interp-sort Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -1247,11 +1362,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($3 $3) true) (($3 $4) true) (($4 $4) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($4))
 )
 
 ; 0241 4: '0.0'
 (define-model w0241_04
-  (interp-sort Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -1299,11 +1419,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($2 $2) true) (($2 $3) true) (($3 $3) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($3))
 )
 
 ; 0241 5: '0'
 (define-model w0241_05
-  (interp-sort Pos ($0))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -1351,11 +1476,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($1 $1) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($1))
 )
 
 ; 0242 1: '0'
 (define-model w0242_01
-  (interp-sort Pos ($0))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -1403,11 +1533,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($1 $1) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($1))
 )
 
 ; 0242 2: '2'
 (define-model w0242_02
-  (interp-sort Pos ($0))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -1455,11 +1590,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($1 $1) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($1))
 )
 
 ; 0242 3: '0.4'
 (define-model w0242_03
-  (interp-sort Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -1507,11 +1647,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($2 $2) true) (($2 $3) true) (($3 $3) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($3))
 )
 
 ; 0242 4: '78784764.23'
 (define-model w0242_04
-  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) false) (($9) true) (($10) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -1559,11 +1704,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) (($6 $5) true) (($7 $6) true) (($8 $7) true) (($9 $8) true) (($10 $9) true) (($11 $10) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($0 $6) true) (($0 $7) true) (($0 $8) true) (($0 $9) true) (($0 $10) true) (($0 $11) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($1 $6) true) (($1 $7) true) (($1 $8) true) (($1 $9) true) (($1 $10) true) (($1 $11) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($2 $6) true) (($2 $7) true) (($2 $8) true) (($2 $9) true) (($2 $10) true) (($2 $11) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($3 $6) true) (($3 $7) true) (($3 $8) true) (($3 $9) true) (($3 $10) true) (($3 $11) true) (($4 $4) true) (($4 $5) true) (($4 $6) true) (($4 $7) true) (($4 $8) true) (($4 $9) true) (($4 $10) true) (($4 $11) true) (($5 $5) true) (($5 $6) true) (($5 $7) true) (($5 $8) true) (($5 $9) true) (($5 $10) true) (($5 $11) true) (($6 $6) true) (($6 $7) true) (($6 $8) true) (($6 $9) true) (($6 $10) true) (($6 $11) true) (($7 $7) true) (($7 $8) true) (($7 $9) true) (($7 $10) true) (($7 $11) true) (($8 $8) true) (($8 $9) true) (($8 $10) true) (($8 $11) true) (($9 $9) true) (($9 $10) true) (($9 $11) true) (($10 $10) true) (($10 $11) true) (($11 $11) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($11))
 )
 
 ; 0242 5: '45.232'
 (define-model w0242_05
-  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) true) (($5) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -1611,11 +1761,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) (($6 $5) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($0 $6) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($1 $6) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($2 $6) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($3 $6) true) (($4 $4) true) (($4 $5) true) (($4 $6) true) (($5 $5) true) (($5 $6) true) (($6 $6) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($6))
 )
 
 ; 0242 6: '-2'
 (define-model w0242_06
-  (interp-sort Pos ($0 $1))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -1663,11 +1818,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($1 $1) true) (($1 $2) true) (($2 $2) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($2))
 )
 
 ; 0242 7: '123456789522144'
 (define-model w0242_07
-  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -1715,11 +1875,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) (($6 $5) true) (($7 $6) true) (($8 $7) true) (($9 $8) true) (($10 $9) true) (($11 $10) true) (($12 $11) true) (($13 $12) true) (($14 $13) true) (($15 $14) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($0 $6) true) (($0 $7) true) (($0 $8) true) (($0 $9) true) (($0 $10) true) (($0 $11) true) (($0 $12) true) (($0 $13) true) (($0 $14) true) (($0 $15) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($1 $6) true) (($1 $7) true) (($1 $8) true) (($1 $9) true) (($1 $10) true) (($1 $11) true) (($1 $12) true) (($1 $13) true) (($1 $14) true) (($1 $15) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($2 $6) true) (($2 $7) true) (($2 $8) true) (($2 $9) true) (($2 $10) true) (($2 $11) true) (($2 $12) true) (($2 $13) true) (($2 $14) true) (($2 $15) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($3 $6) true) (($3 $7) true) (($3 $8) true) (($3 $9) true) (($3 $10) true) (($3 $11) true) (($3 $12) true) (($3 $13) true) (($3 $14) true) (($3 $15) true) (($4 $4) true) (($4 $5) true) (($4 $6) true) (($4 $7) true) (($4 $8) true) (($4 $9) true) (($4 $10) true) (($4 $11) true) (($4 $12) true) (($4 $13) true) (($4 $14) true) (($4 $15) true) (($5 $5) true) (($5 $6) true) (($5 $7) true) (($5 $8) true) (($5 $9) true) (($5 $10) true) (($5 $11) true) (($5 $12) true) (($5 $13) true) (($5 $14) true) (($5 $15) true) (($6 $6) true) (($6 $7) true) (($6 $8) true) (($6 $9) true) (($6 $10) true) (($6 $11) true) (($6 $12) true) (($6 $13) true) (($6 $14) true) (($6 $15) true) (($7 $7) true) (($7 $8) true) (($7 $9) true) (($7 $10) true) (($7 $11) true) (($7 $12) true) (($7 $13) true) (($7 $14) true) (($7 $15) true) (($8 $8) true) (($8 $9) true) (($8 $10) true) (($8 $11) true) (($8 $12) true) (($8 $13) true) (($8 $14) true) (($8 $15) true) (($9 $9) true) (($9 $10) true) (($9 $11) true) (($9 $12) true) (($9 $13) true) (($9 $14) true) (($9 $15) true) (($10 $10) true) (($10 $11) true) (($10 $12) true) (($10 $13) true) (($10 $14) true) (($10 $15) true) (($11 $11) true) (($11 $12) true) (($11 $13) true) (($11 $14) true) (($11 $15) true) (($12 $12) true) (($12 $13) true) (($12 $14) true) (($12 $15) true) (($13 $13) true) (($13 $14) true) (($13 $15) true) (($14 $14) true) (($14 $15) true) (($15 $15) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($15))
 )
 
 ; 0242 8: '84.2564'
 (define-model w0242_08
-  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) true) (($5) true) (($6) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -1767,11 +1932,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) (($6 $5) true) (($7 $6) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($0 $6) true) (($0 $7) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($1 $6) true) (($1 $7) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($2 $6) true) (($2 $7) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($3 $6) true) (($3 $7) true) (($4 $4) true) (($4 $5) true) (($4 $6) true) (($4 $7) true) (($5 $5) true) (($5 $6) true) (($5 $7) true) (($6 $6) true) (($6 $7) true) (($7 $7) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($7))
 )
 
 ; 0266 1: '1A'
 (define-model w0266_01
-  (interp-sort Pos ($0 $1))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -1819,11 +1989,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($1 $1) true) (($1 $2) true) (($2 $2) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($2))
 )
 
 ; 0266 2: '2BZ'
 (define-model w0266_02
-  (interp-sort Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -1871,11 +2046,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($2 $2) true) (($2 $3) true) (($3 $3) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($3))
 )
 
 ; 0266 3: '7B'
 (define-model w0266_03
-  (interp-sort Pos ($0 $1))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -1923,11 +2103,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($1 $1) true) (($1 $2) true) (($2 $2) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($2))
 )
 
 ; 0294 1: '1-252'
 (define-model w0294_01
-  (interp-sort Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -1975,11 +2160,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($4 $4) true) (($4 $5) true) (($5 $5) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($5))
 )
 
 ; 0294 2: '9823-10000'
 (define-model w0294_02
-  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -2027,11 +2217,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) (($6 $5) true) (($7 $6) true) (($8 $7) true) (($9 $8) true) (($10 $9) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($0 $6) true) (($0 $7) true) (($0 $8) true) (($0 $9) true) (($0 $10) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($1 $6) true) (($1 $7) true) (($1 $8) true) (($1 $9) true) (($1 $10) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($2 $6) true) (($2 $7) true) (($2 $8) true) (($2 $9) true) (($2 $10) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($3 $6) true) (($3 $7) true) (($3 $8) true) (($3 $9) true) (($3 $10) true) (($4 $4) true) (($4 $5) true) (($4 $6) true) (($4 $7) true) (($4 $8) true) (($4 $9) true) (($4 $10) true) (($5 $5) true) (($5 $6) true) (($5 $7) true) (($5 $8) true) (($5 $9) true) (($5 $10) true) (($6 $6) true) (($6 $7) true) (($6 $8) true) (($6 $9) true) (($6 $10) true) (($7 $7) true) (($7 $8) true) (($7 $9) true) (($7 $10) true) (($8 $8) true) (($8 $9) true) (($8 $10) true) (($9 $9) true) (($9 $10) true) (($10 $10) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($10))
 )
 
 ; 0294 3: '123456-123457'
 (define-model w0294_03
-  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) false) (($7) true) (($8) true) (($9) true) (($10) true) (($11) true) (($12) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -2079,11 +2274,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) (($6 $5) true) (($7 $6) true) (($8 $7) true) (($9 $8) true) (($10 $9) true) (($11 $10) true) (($12 $11) true) (($13 $12) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($0 $6) true) (($0 $7) true) (($0 $8) true) (($0 $9) true) (($0 $10) true) (($0 $11) true) (($0 $12) true) (($0 $13) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($1 $6) true) (($1 $7) true) (($1 $8) true) (($1 $9) true) (($1 $10) true) (($1 $11) true) (($1 $12) true) (($1 $13) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($2 $6) true) (($2 $7) true) (($2 $8) true) (($2 $9) true) (($2 $10) true) (($2 $11) true) (($2 $12) true) (($2 $13) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($3 $6) true) (($3 $7) true) (($3 $8) true) (($3 $9) true) (($3 $10) true) (($3 $11) true) (($3 $12) true) (($3 $13) true) (($4 $4) true) (($4 $5) true) (($4 $6) true) (($4 $7) true) (($4 $8) true) (($4 $9) true) (($4 $10) true) (($4 $11) true) (($4 $12) true) (($4 $13) true) (($5 $5) true) (($5 $6) true) (($5 $7) true) (($5 $8) true) (($5 $9) true) (($5 $10) true) (($5 $11) true) (($5 $12) true) (($5 $13) true) (($6 $6) true) (($6 $7) true) (($6 $8) true) (($6 $9) true) (($6 $10) true) (($6 $11) true) (($6 $12) true) (($6 $13) true) (($7 $7) true) (($7 $8) true) (($7 $9) true) (($7 $10) true) (($7 $11) true) (($7 $12) true) (($7 $13) true) (($8 $8) true) (($8 $9) true) (($8 $10) true) (($8 $11) true) (($8 $12) true) (($8 $13) true) (($9 $9) true) (($9 $10) true) (($9 $11) true) (($9 $12) true) (($9 $13) true) (($10 $10) true) (($10 $11) true) (($10 $12) true) (($10 $13) true) (($11 $11) true) (($11 $12) true) (($11 $13) true) (($12 $12) true) (($12 $13) true) (($13 $13) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($13))
 )
 
 ; 0294 4: '0-252'
 (define-model w0294_04
-  (interp-sort Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -2131,11 +2331,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($4 $4) true) (($4 $5) true) (($5 $5) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($5))
 )
 
 ; 0294 5: '12345'
 (define-model w0294_05
-  (interp-sort Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -2183,11 +2388,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($4 $4) true) (($4 $5) true) (($5 $5) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($5))
 )
 
 ; 0294 6: '498 8987'
 (define-model w0294_06
-  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) false) (($4) true) (($5) true) (($6) true) (($7) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -2235,11 +2445,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) (($6 $5) true) (($7 $6) true) (($8 $7) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($0 $6) true) (($0 $7) true) (($0 $8) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($1 $6) true) (($1 $7) true) (($1 $8) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($2 $6) true) (($2 $7) true) (($2 $8) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($3 $6) true) (($3 $7) true) (($3 $8) true) (($4 $4) true) (($4 $5) true) (($4 $6) true) (($4 $7) true) (($4 $8) true) (($5 $5) true) (($5 $6) true) (($5 $7) true) (($5 $8) true) (($6 $6) true) (($6 $7) true) (($6 $8) true) (($7 $7) true) (($7 $8) true) (($8 $8) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($8))
 )
 
 ; 0294 7: '0023-002343'
 (define-model w0294_07
-  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) false) (($5) true) (($6) true) (($7) true) (($8) true) (($9) true) (($10) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -2287,11 +2502,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) (($6 $5) true) (($7 $6) true) (($8 $7) true) (($9 $8) true) (($10 $9) true) (($11 $10) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($0 $6) true) (($0 $7) true) (($0 $8) true) (($0 $9) true) (($0 $10) true) (($0 $11) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($1 $6) true) (($1 $7) true) (($1 $8) true) (($1 $9) true) (($1 $10) true) (($1 $11) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($2 $6) true) (($2 $7) true) (($2 $8) true) (($2 $9) true) (($2 $10) true) (($2 $11) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($3 $6) true) (($3 $7) true) (($3 $8) true) (($3 $9) true) (($3 $10) true) (($3 $11) true) (($4 $4) true) (($4 $5) true) (($4 $6) true) (($4 $7) true) (($4 $8) true) (($4 $9) true) (($4 $10) true) (($4 $11) true) (($5 $5) true) (($5 $6) true) (($5 $7) true) (($5 $8) true) (($5 $9) true) (($5 $10) true) (($5 $11) true) (($6 $6) true) (($6 $7) true) (($6 $8) true) (($6 $9) true) (($6 $10) true) (($6 $11) true) (($7 $7) true) (($7 $8) true) (($7 $9) true) (($7 $10) true) (($7 $11) true) (($8 $8) true) (($8 $9) true) (($8 $10) true) (($8 $11) true) (($9 $9) true) (($9 $10) true) (($9 $11) true) (($10 $10) true) (($10 $11) true) (($11 $11) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($11))
 )
 
 ; 0294 8: '2-10-233'
 (define-model w0294_08
-  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) true) (($3) true) (($4) false) (($5) true) (($6) true) (($7) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -2339,11 +2559,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) (($6 $5) true) (($7 $6) true) (($8 $7) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($0 $6) true) (($0 $7) true) (($0 $8) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($1 $6) true) (($1 $7) true) (($1 $8) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($2 $6) true) (($2 $7) true) (($2 $8) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($3 $6) true) (($3 $7) true) (($3 $8) true) (($4 $4) true) (($4 $5) true) (($4 $6) true) (($4 $7) true) (($4 $8) true) (($5 $5) true) (($5 $6) true) (($5 $7) true) (($5 $8) true) (($6 $6) true) (($6 $7) true) (($6 $8) true) (($7 $7) true) (($7 $8) true) (($8 $8) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($8))
 )
 
 ; 0305 1: 'aab'
 (define-model w0305_01
-  (interp-sort Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -2391,11 +2616,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($2 $2) true) (($2 $3) true) (($3 $3) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($3))
 )
 
 ; 0305 2: 'abb'
 (define-model w0305_02
-  (interp-sort Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -2443,11 +2673,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($2 $2) true) (($2 $3) true) (($3 $3) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($3))
 )
 
 ; 0305 3: 'aaba'
 (define-model w0305_03
-  (interp-sort Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -2495,11 +2730,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($3 $3) true) (($3 $4) true) (($4 $4) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($4))
 )
 
 ; 0305 4: U+039B
 (define-model w0305_04
-  (interp-sort Pos ($0))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -2547,11 +2787,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) true))))
+
+  (interp-fun succ (match ((($1 $0) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($1 $1) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($1))
 )
 
 ; 0305 5: 'ab'
 (define-model w0305_05
-  (interp-sort Pos ($0 $1))
+  (interp-sort Pos ($0 $1 $2))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -2599,11 +2844,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($1 $1) true) (($1 $2) true) (($2 $2) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($2))
 )
 
 ; 0305 6: 'abaa'
 (define-model w0305_06
-  (interp-sort Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -2651,11 +2901,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($3 $3) true) (($3 $4) true) (($4 $4) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($4))
 )
 
 ; 0316 1: 'hoho'
 (define-model w0316_01
-  (interp-sort Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -2703,11 +2958,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($3 $3) true) (($3 $4) true) (($4 $4) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($4))
 )
 
 ; 0316 2: 'hihi'
 (define-model w0316_02
-  (interp-sort Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -2755,11 +3015,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($3 $3) true) (($3 $4) true) (($4 $4) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($4))
 )
 
 ; 0316 3: 'haha'
 (define-model w0316_03
-  (interp-sort Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -2807,11 +3072,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($3 $3) true) (($3 $4) true) (($4 $4) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($4))
 )
 
 ; 0316 4: 'hede'
 (define-model w0316_04
-  (interp-sort Pos ($0 $1 $2 $3))
+  (interp-sort Pos ($0 $1 $2 $3 $4))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) true))))
@@ -2859,11 +3129,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($3 $3) true) (($3 $4) true) (($4 $4) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($4))
 )
 
 ; 0255 1: 'HELLO'
 (define-model w0255_01
-  (interp-sort Pos ($0 $1 $2 $3 $4))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -2911,11 +3186,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($4 $4) true) (($4 $5) true) (($5 $5) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($5))
 )
 
 ; 0255 2: 'H'
 (define-model w0255_02
-  (interp-sort Pos ($0))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -2963,11 +3243,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($1 $1) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($1))
 )
 
 ; 0255 3: ''
 (define-model w0255_03
-  (interp-sort Pos ())
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) false))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -3015,11 +3300,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match (((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($0))
 )
 
 ; 0255 4: 'HE LLO'
 (define-model w0255_04
-  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -3067,11 +3357,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) (($6 $5) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($0 $6) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($1 $6) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($2 $6) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($3 $6) true) (($4 $4) true) (($4 $5) true) (($4 $6) true) (($5 $5) true) (($5 $6) true) (($6 $6) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($6))
 )
 
 ; 0255 5: ' HELLO'
 (define-model w0255_05
-  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -3119,11 +3414,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) (($6 $5) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($0 $6) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($1 $6) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($2 $6) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($3 $6) true) (($4 $4) true) (($4 $5) true) (($4 $6) true) (($5 $5) true) (($5 $6) true) (($6 $6) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($6))
 )
 
 ; 0255 6: 'HELLO '
 (define-model w0255_06
-  (interp-sort Pos ($0 $1 $2 $3 $4 $5))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -3171,11 +3471,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) (($6 $5) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($0 $6) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($1 $6) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($2 $6) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($3 $6) true) (($4 $4) true) (($4 $5) true) (($4 $6) true) (($5 $5) true) (($5 $6) true) (($6 $6) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($6))
 )
 
 ; 0255 7: ' '
 (define-model w0255_07
-  (interp-sort Pos ($0))
+  (interp-sort Pos ($0 $1))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -3223,11 +3528,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($1 $1) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($1))
 )
 
 ; 0267 1: '10.000,50'
 (define-model w0267_01
-  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) true) (($5) true) (($6) false) (($7) true) (($8) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -3275,11 +3585,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) (($6 $5) true) (($7 $6) true) (($8 $7) true) (($9 $8) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($0 $6) true) (($0 $7) true) (($0 $8) true) (($0 $9) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($1 $6) true) (($1 $7) true) (($1 $8) true) (($1 $9) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($2 $6) true) (($2 $7) true) (($2 $8) true) (($2 $9) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($3 $6) true) (($3 $7) true) (($3 $8) true) (($3 $9) true) (($4 $4) true) (($4 $5) true) (($4 $6) true) (($4 $7) true) (($4 $8) true) (($4 $9) true) (($5 $5) true) (($5 $6) true) (($5 $7) true) (($5 $8) true) (($5 $9) true) (($6 $6) true) (($6 $7) true) (($6 $8) true) (($6 $9) true) (($7 $7) true) (($7 $8) true) (($7 $9) true) (($8 $8) true) (($8 $9) true) (($9 $9) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($9))
 )
 
 ; 0267 2: '10,000.50'
 (define-model w0267_02
-  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) true) (($2) false) (($3) true) (($4) true) (($5) true) (($6) false) (($7) true) (($8) true))))
   (interp-fun is.lower (match (((_) false))))
@@ -3327,11 +3642,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) (($6 $5) true) (($7 $6) true) (($8 $7) true) (($9 $8) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($0 $6) true) (($0 $7) true) (($0 $8) true) (($0 $9) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($1 $6) true) (($1 $7) true) (($1 $8) true) (($1 $9) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($2 $6) true) (($2 $7) true) (($2 $8) true) (($2 $9) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($3 $6) true) (($3 $7) true) (($3 $8) true) (($3 $9) true) (($4 $4) true) (($4 $5) true) (($4 $6) true) (($4 $7) true) (($4 $8) true) (($4 $9) true) (($5 $5) true) (($5 $6) true) (($5 $7) true) (($5 $8) true) (($5 $9) true) (($6 $6) true) (($6 $7) true) (($6 $8) true) (($6 $9) true) (($7 $7) true) (($7 $8) true) (($7 $9) true) (($8 $8) true) (($8 $9) true) (($9 $9) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($9))
 )
 
 ; 0267 3: 'anything@!#--'
 (define-model w0267_03
-  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12))
+  (interp-sort Pos ($0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match ((($0) true) (($1) true) (($2) true) (($3) true) (($4) true) (($5) true) (($6) true) (($7) true) (($8) false) (($9) false) (($10) false) (($11) false) (($12) false))))
@@ -3379,11 +3699,16 @@
   (interp-fun is.x74 (match ((($0) false) (($1) false) (($2) false) (($3) true) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false) (($12) false))))
   (interp-fun is.x79 (match ((($0) false) (($1) false) (($2) true) (($3) false) (($4) false) (($5) false) (($6) false) (($7) false) (($8) false) (($9) false) (($10) false) (($11) false) (($12) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) (($4 $3) true) (($5 $4) true) (($6 $5) true) (($7 $6) true) (($8 $7) true) (($9 $8) true) (($10 $9) true) (($11 $10) true) (($12 $11) true) (($13 $12) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($0 $4) true) (($0 $5) true) (($0 $6) true) (($0 $7) true) (($0 $8) true) (($0 $9) true) (($0 $10) true) (($0 $11) true) (($0 $12) true) (($0 $13) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($1 $4) true) (($1 $5) true) (($1 $6) true) (($1 $7) true) (($1 $8) true) (($1 $9) true) (($1 $10) true) (($1 $11) true) (($1 $12) true) (($1 $13) true) (($2 $2) true) (($2 $3) true) (($2 $4) true) (($2 $5) true) (($2 $6) true) (($2 $7) true) (($2 $8) true) (($2 $9) true) (($2 $10) true) (($2 $11) true) (($2 $12) true) (($2 $13) true) (($3 $3) true) (($3 $4) true) (($3 $5) true) (($3 $6) true) (($3 $7) true) (($3 $8) true) (($3 $9) true) (($3 $10) true) (($3 $11) true) (($3 $12) true) (($3 $13) true) (($4 $4) true) (($4 $5) true) (($4 $6) true) (($4 $7) true) (($4 $8) true) (($4 $9) true) (($4 $10) true) (($4 $11) true) (($4 $12) true) (($4 $13) true) (($5 $5) true) (($5 $6) true) (($5 $7) true) (($5 $8) true) (($5 $9) true) (($5 $10) true) (($5 $11) true) (($5 $12) true) (($5 $13) true) (($6 $6) true) (($6 $7) true) (($6 $8) true) (($6 $9) true) (($6 $10) true) (($6 $11) true) (($6 $12) true) (($6 $13) true) (($7 $7) true) (($7 $8) true) (($7 $9) true) (($7 $10) true) (($7 $11) true) (($7 $12) true) (($7 $13) true) (($8 $8) true) (($8 $9) true) (($8 $10) true) (($8 $11) true) (($8 $12) true) (($8 $13) true) (($9 $9) true) (($9 $10) true) (($9 $11) true) (($9 $12) true) (($9 $13) true) (($10 $10) true) (($10 $11) true) (($10 $12) true) (($10 $13) true) (($11 $11) true) (($11 $12) true) (($11 $13) true) (($12 $12) true) (($12 $13) true) (($13 $13) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($13))
 )
 
 ; 0267 4: 'a.2'
 (define-model w0267_04
-  (interp-sort Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) false) (($1) false) (($2) true))))
   (interp-fun is.lower (match ((($0) true) (($1) false) (($2) false))))
@@ -3431,11 +3756,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($2 $2) true) (($2 $3) true) (($3 $3) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($3))
 )
 
 ; 0267 5: '2,a'
 (define-model w0267_05
-  (interp-sort Pos ($0 $1 $2))
+  (interp-sort Pos ($0 $1 $2 $3))
   (interp-fun is.any (match (((_) true))))
   (interp-fun is.digit (match ((($0) true) (($1) false) (($2) false))))
   (interp-fun is.lower (match ((($0) false) (($1) false) (($2) true))))
@@ -3483,11 +3813,16 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match ((($1 $0) true) (($2 $1) true) (($3 $2) true) ((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) (($0 $1) true) (($0 $2) true) (($0 $3) true) (($1 $1) true) (($1 $2) true) (($1 $3) true) (($2 $2) true) (($2 $3) true) (($3 $3) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($3))
 )
 
 ; 0267 6: ''
 (define-model w0267_06
-  (interp-sort Pos ())
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) false))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -3535,4 +3870,9 @@
   (interp-fun is.x74 (match (((_) false))))
   (interp-fun is.x79 (match (((_) false))))
   (interp-fun is.x39B (match (((_) false))))
+
+  (interp-fun succ (match (((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($0))
 )

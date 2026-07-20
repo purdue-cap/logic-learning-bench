@@ -1,4 +1,4 @@
-(provide Pos is.any is.digit is.lower is.upper is.alpha is.alnum is.word is.space is.hex is.x1B is.x21 is.x22 is.x23 is.x24 is.x25 is.x26 is.x27 is.x28 is.x29 is.x2A is.x2C is.x2D is.x2E is.x2F is.x3A is.x3B is.x3C is.x3E is.x3F is.x40 is.x5B is.x5C is.x5E is.x5F is.x60 is.x7B is.x7E)
+(provide Pos is.any is.digit is.lower is.upper is.alpha is.alnum is.word is.space is.hex is.x1B is.x21 is.x22 is.x23 is.x24 is.x25 is.x26 is.x27 is.x28 is.x29 is.x2A is.x2C is.x2D is.x2E is.x2F is.x3A is.x3B is.x3C is.x3E is.x3F is.x40 is.x5B is.x5C is.x5E is.x5F is.x60 is.x7B is.x7E succ leq head tail)
 (declare-sort Pos 0)
 ; any character
 (declare-fun is.any (Pos) Bool)
@@ -74,3 +74,9 @@
 (declare-fun is.x7B (Pos) Bool)
 ; '~' (0x7E)
 (declare-fun is.x7E (Pos) Bool)
+; succ j i  <=>  j = i + 1
+(declare-fun succ (Pos Pos) Bool)
+; leq p q   <=>  p <= q
+(declare-fun leq (Pos Pos) Bool)
+(declare-fun head () Pos)
+(declare-fun tail () Pos)

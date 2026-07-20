@@ -8,14 +8,14 @@
 
 (synth-fun r () RegLan)
 
-(constraint      (RegLan.Sem r (RegLan.Asp w00052 0 (size (Pos w00052)))))
-(constraint      (RegLan.Sem r (RegLan.Asp w00011 0 (size (Pos w00011)))))
-(constraint      (RegLan.Sem r (RegLan.Asp w00003 0 (size (Pos w00003)))))
-(constraint      (RegLan.Sem r (RegLan.Asp w00588 0 (size (Pos w00588)))))
-(constraint      (RegLan.Sem r (RegLan.Asp w00567 0 (size (Pos w00567)))))
-(constraint      (RegLan.Sem r (RegLan.Asp w00256 0 (size (Pos w00256)))))
-(constraint      (RegLan.Sem r (RegLan.Asp w00584 0 (size (Pos w00584)))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00052 head tail)))
+(constraint      (RegLan.Sem r (RegLan.Asp w00011 head tail)))
+(constraint      (RegLan.Sem r (RegLan.Asp w00003 head tail)))
+(constraint      (RegLan.Sem r (RegLan.Asp w00588 head tail)))
+(constraint      (RegLan.Sem r (RegLan.Asp w00567 head tail)))
+(constraint      (RegLan.Sem r (RegLan.Asp w00256 head tail)))
+(constraint      (RegLan.Sem r (RegLan.Asp w00584 head tail)))
 
-(constraint (not (RegLan.Sem r (RegLan.Asp wempty_deepregex 0 (size (Pos wempty_deepregex))))))
+(constraint (not (RegLan.Sem r (RegLan.Asp wempty_deepregex head tail))))
 
 (check-synth)

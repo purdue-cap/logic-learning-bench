@@ -7,14 +7,14 @@
 
 (synth-fun r () RegLan)
 
-(constraint      (RegLan.Sem r (RegLan.Asp w00014 0 (size (Pos w00014)))))
-(constraint      (RegLan.Sem r (RegLan.Asp w00063 0 (size (Pos w00063)))))
-(constraint      (RegLan.Sem r (RegLan.Asp w00061 0 (size (Pos w00061)))))
-(constraint      (RegLan.Sem r (RegLan.Asp w00220 0 (size (Pos w00220)))))
-(constraint      (RegLan.Sem r (RegLan.Asp w00218 0 (size (Pos w00218)))))
-(constraint (not (RegLan.Sem r (RegLan.Asp w00013 0 (size (Pos w00013))))))
-(constraint (not (RegLan.Sem r (RegLan.Asp w00060 0 (size (Pos w00060))))))
-(constraint (not (RegLan.Sem r (RegLan.Asp w00232 0 (size (Pos w00232))))))
-(constraint (not (RegLan.Sem r (RegLan.Asp w00137 0 (size (Pos w00137))))))
+(constraint      (RegLan.Sem r (RegLan.Asp w00014 head tail)))
+(constraint      (RegLan.Sem r (RegLan.Asp w00063 head tail)))
+(constraint      (RegLan.Sem r (RegLan.Asp w00061 head tail)))
+(constraint      (RegLan.Sem r (RegLan.Asp w00220 head tail)))
+(constraint      (RegLan.Sem r (RegLan.Asp w00218 head tail)))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00013 head tail))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00060 head tail))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00232 head tail))))
+(constraint (not (RegLan.Sem r (RegLan.Asp w00137 head tail))))
 
 (check-synth)

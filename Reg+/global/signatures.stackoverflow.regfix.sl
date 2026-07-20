@@ -1,4 +1,4 @@
-(provide Pos is.any is.digit is.lower is.upper is.alpha is.alnum is.word is.space is.hex is.x20 is.x21 is.x23 is.x25 is.x2C is.x2D is.x2E is.x30 is.x31 is.x32 is.x33 is.x34 is.x35 is.x36 is.x37 is.x38 is.x39 is.x40 is.x41 is.x42 is.x45 is.x48 is.x4C is.x4F is.x5A is.x61 is.x62 is.x63 is.x64 is.x65 is.x67 is.x68 is.x69 is.x6E is.x6F is.x74 is.x79 is.x39B)
+(provide Pos is.any is.digit is.lower is.upper is.alpha is.alnum is.word is.space is.hex is.x20 is.x21 is.x23 is.x25 is.x2C is.x2D is.x2E is.x30 is.x31 is.x32 is.x33 is.x34 is.x35 is.x36 is.x37 is.x38 is.x39 is.x40 is.x41 is.x42 is.x45 is.x48 is.x4C is.x4F is.x5A is.x61 is.x62 is.x63 is.x64 is.x65 is.x67 is.x68 is.x69 is.x6E is.x6F is.x74 is.x79 is.x39B succ leq head tail)
 (declare-sort Pos 0)
 (declare-fun is.any (Pos) Bool)
 (declare-fun is.digit (Pos) Bool)
@@ -85,3 +85,9 @@
 (declare-fun is.x79 (Pos) Bool)
 ; U+039B (0x39B)
 (declare-fun is.x39B (Pos) Bool)
+; succ j i  <=>  j = i + 1
+(declare-fun succ (Pos Pos) Bool)
+; leq p q   <=>  p <= q
+(declare-fun leq (Pos Pos) Bool)
+(declare-fun head () Pos)
+(declare-fun tail () Pos)

@@ -2,7 +2,7 @@
 (provide wempty_deepregex)
 
 (define-model wempty_deepregex
-  (interp-sort Pos ())
+  (interp-sort Pos ($0))
   (interp-fun is.any (match (((_) false))))
   (interp-fun is.digit (match (((_) false))))
   (interp-fun is.lower (match (((_) false))))
@@ -40,4 +40,9 @@
   (interp-fun is.x60 (match (((_) false))))
   (interp-fun is.x7B (match (((_) false))))
   (interp-fun is.x7E (match (((_) false))))
+
+  (interp-fun succ (match (((_ _) false))))
+  (interp-fun leq (match ((($0 $0) true) ((_ _) false))))
+  (interp-fun head ($0))
+  (interp-fun tail ($0))
 )
