@@ -213,12 +213,12 @@
 
 (synth-fun phi () Modal)
 
-(constraint (Modal.Sem phi (ModalAsp Grid1 $0)))
-(constraint (Modal.Sem phi (ModalAsp Grid2 $0)))
-(constraint (Modal.Sem phi (ModalAsp Grid3 $0)))
-(constraint (Modal.Sem phi (ModalAsp Grid4 $0)))
-(constraint (not (Modal.Sem phi (ModalAsp Grid5 $0))))
-(constraint (not (Modal.Sem phi (ModalAsp Grid6 $0))))
-(constraint (not (Modal.Sem phi (ModalAsp Grid7 $0))))
+(constraint (with-model Grid1 (Modal.Sem phi (ModalAsp $0))))
+(constraint (with-model Grid2 (Modal.Sem phi (ModalAsp $0))))
+(constraint (with-model Grid3 (Modal.Sem phi (ModalAsp $0))))
+(constraint (with-model Grid4 (Modal.Sem phi (ModalAsp $0))))
+(constraint (not (with-model Grid5 (Modal.Sem phi (ModalAsp $0)))))
+(constraint (not (with-model Grid6 (Modal.Sem phi (ModalAsp $0)))))
+(constraint (not (with-model Grid7 (Modal.Sem phi (ModalAsp $0)))))
 
 (check-synth)

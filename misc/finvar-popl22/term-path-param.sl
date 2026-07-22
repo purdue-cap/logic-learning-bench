@@ -10,7 +10,7 @@
    (tx.src)
    (tx.nxt TermU.x0))))
 
-(define-aspects TermU.x0.Asp (record (model Model) (x0 U)))
+(define-aspects TermU.x0.Asp (record (x0 U)))
 
 (define-semantics
   ((TermU.x0.Sem (term TermU.x0) (asp TermU.x0.Asp)))

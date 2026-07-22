@@ -8,15 +8,15 @@
 
 (synth-fun r () RegLan)
 
-(constraint      (RegLan.Sem r (RegLan.Asp w00271 head tail)))
-(constraint      (RegLan.Sem r (RegLan.Asp w00181 head tail)))
-(constraint      (RegLan.Sem r (RegLan.Asp w00100 head tail)))
-(constraint      (RegLan.Sem r (RegLan.Asp w00007 head tail)))
-(constraint (not (RegLan.Sem r (RegLan.Asp w00338 head tail))))
-(constraint (not (RegLan.Sem r (RegLan.Asp w00014 head tail))))
-(constraint (not (RegLan.Sem r (RegLan.Asp w00002 head tail))))
-(constraint (not (RegLan.Sem r (RegLan.Asp w00274 head tail))))
+(constraint      (with-model w00271 (RegLan.Sem r (RegLan.Asp head tail))))
+(constraint      (with-model w00181 (RegLan.Sem r (RegLan.Asp head tail))))
+(constraint      (with-model w00100 (RegLan.Sem r (RegLan.Asp head tail))))
+(constraint      (with-model w00007 (RegLan.Sem r (RegLan.Asp head tail))))
+(constraint (not (with-model w00338 (RegLan.Sem r (RegLan.Asp head tail)))))
+(constraint (not (with-model w00014 (RegLan.Sem r (RegLan.Asp head tail)))))
+(constraint (not (with-model w00002 (RegLan.Sem r (RegLan.Asp head tail)))))
+(constraint (not (with-model w00274 (RegLan.Sem r (RegLan.Asp head tail)))))
 
-(constraint (not (RegLan.Sem r (RegLan.Asp wempty_stackoverflow head tail))))
+(constraint (not (with-model wempty_stackoverflow (RegLan.Sem r (RegLan.Asp head tail)))))
 
 (check-synth)

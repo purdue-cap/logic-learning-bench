@@ -84,7 +84,6 @@
 
 (define-aspects CFG.Asp
   (record
-    (model Model)
     (i Int)
     (j Int)
     (mode (enum base reset.S find.S reset.T find.T)))
@@ -96,10 +95,10 @@
      ((cfg.top.S x y)
       (or
         (and (= (mode asp) reset.S)
-             (or (Rhs.Sem x (CFG.Asp (model asp) (i asp) (j asp) base))
-                 (Rules.Sem y (CFG.Asp (model asp) (i asp) (j asp) find.S))))
+             (or (Rhs.Sem x (CFG.Asp (i asp) (j asp) base))
+                 (Rules.Sem y (CFG.Asp (i asp) (j asp) find.S))))
         (and (= (mode asp) reset.T)
-             (Rules.Sem y (CFG.Asp (model asp) (i asp) (j asp) find.T))))))))
+             (Rules.Sem y (CFG.Asp (i asp) (j asp) find.T))))))))
 
 (define-semantics
   ((Rhs.Sem (n Rhs) (asp CFG.Asp)))
@@ -124,18 +123,18 @@
       (or
         (and (= (mode asp) base)
              (exists ((k (int-range (i asp) (j asp))))
-               (and (Rhs.Sem x (CFG.Asp (model asp) (i asp) k base))
-                    (Rhs.Sem y (CFG.Asp (model asp) k (j asp) base)))))
+               (and (Rhs.Sem x (CFG.Asp (i asp) k base))
+                    (Rhs.Sem y (CFG.Asp k (j asp) base)))))
         (and (or (= (mode asp) reset.S) (= (mode asp) reset.T))
              (CFG.Sem (parent n) asp))))
 
      ((cfg.rhs.S)
       (and (= (mode asp) base)
-           (CFG.Sem (parent n) (CFG.Asp (model asp) (i asp) (j asp) reset.S))))
+           (CFG.Sem (parent n) (CFG.Asp (i asp) (j asp) reset.S))))
 
      ((cfg.rhs.T)
       (and (= (mode asp) base)
-           (CFG.Sem (parent n) (CFG.Asp (model asp) (i asp) (j asp) reset.T)))))))
+           (CFG.Sem (parent n) (CFG.Asp (i asp) (j asp) reset.T)))))))
 
 (define-semantics
   ((Rules.Sem (n Rules) (asp CFG.Asp)))
@@ -145,27 +144,27 @@
         (and (or (= (mode asp) reset.S) (= (mode asp) reset.T))
              (CFG.Sem (parent n) asp))
         (and (= (mode asp) find.S)
-             (or (Rhs.Sem x (CFG.Asp (model asp) (i asp) (j asp) base))
-                 (Rules.Sem y (CFG.Asp (model asp) (i asp) (j asp) find.S))))
+             (or (Rhs.Sem x (CFG.Asp (i asp) (j asp) base))
+                 (Rules.Sem y (CFG.Asp (i asp) (j asp) find.S))))
         (and (= (mode asp) find.T)
-             (Rules.Sem y (CFG.Asp (model asp) (i asp) (j asp) find.T)))))
+             (Rules.Sem y (CFG.Asp (i asp) (j asp) find.T)))))
 
      ((cfg.lhs.T x y)
       (or
         (and (or (= (mode asp) reset.S) (= (mode asp) reset.T))
              (CFG.Sem (parent n) asp))
         (and (= (mode asp) find.T)
-             (or (Rhs.Sem x (CFG.Asp (model asp) (i asp) (j asp) base))
-                 (Rules.Sem y (CFG.Asp (model asp) (i asp) (j asp) find.T))))
+             (or (Rhs.Sem x (CFG.Asp (i asp) (j asp) base))
+                 (Rules.Sem y (CFG.Asp (i asp) (j asp) find.T))))
         (and (= (mode asp) find.S)
-             (Rules.Sem y (CFG.Asp (model asp) (i asp) (j asp) find.S)))))
+             (Rules.Sem y (CFG.Asp (i asp) (j asp) find.S)))))
 
      ((end)
       false))))
 
 (synth-fun g () CFG)
-(constraint (CFG.Sem g (CFG.Asp w1 0 (size (Pos w1)) reset.S)))
-(constraint (CFG.Sem g (CFG.Asp w2 0 (size (Pos w2)) reset.S)))
-(constraint (not (CFG.Sem g (CFG.Asp w5 0 (size (Pos w5)) reset.S))))
+(constraint (with-model w1 (CFG.Sem g (CFG.Asp 0 (size (Pos w1)) reset.S))))
+(constraint (with-model w2 (CFG.Sem g (CFG.Asp 0 (size (Pos w2)) reset.S))))
+(constraint (not (with-model w5 (CFG.Sem g (CFG.Asp 0 (size (Pos w5)) reset.S)))))
 
 (check-synth)

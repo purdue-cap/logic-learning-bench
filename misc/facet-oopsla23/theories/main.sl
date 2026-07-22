@@ -126,7 +126,7 @@
 
 
 (define-aspects ModalAsp
-  (record (model Model) (node U))
+  (record (node U))
   :where true)
 
 (define-semantics
@@ -139,10 +139,10 @@
      ((modal.and x y) (and (Modal.Sem x asp) (Modal.Sem y asp)))
      ((modal.or x y) (or (Modal.Sem x asp) (Modal.Sem y asp)))
      ((modal.box x)
-      (forall ((next (univ (U (model asp)))))
+      (forall ((next U))
         (or (not (R (node asp) next))
-            (Modal.Sem x (ModalAsp (model asp) next)))))
+            (Modal.Sem x (ModalAsp next)))))
      ((modal.dia x)
-      (exists ((next (univ (U (model asp)))))
+      (exists ((next U))
         (and (R (node asp) next)
-             (Modal.Sem x (ModalAsp (model asp) next))))))))
+             (Modal.Sem x (ModalAsp next))))))))

@@ -90,9 +90,9 @@
 (declare-fun c6.eq (Pos Pos) Bool)
 (declare-fun c6.val () Val)
 
-(define-aspects ExAsp (record (model Model)))
+(define-aspects ExAsp (record))
 (define-aspects EqAsp
-  (record (model Model) (i Int) (j Int))
+  (record (i Int) (j Int))
   :where (and (<= i j) (<= j (size (PosOut model)))))
 
 (define-semantics
@@ -108,14 +108,14 @@
      ((arg0) (arg0.eq (i asp) (j asp)))
      ((str.++ x y)
       (exists ((k (int-range (i asp) (j asp))))
-        (and (Str.Eq x (EqAsp (model asp) (i asp) k))
-             (Str.Eq y (EqAsp (model asp) k (j asp))))))
+        (and (Str.Eq x (EqAsp (i asp) k))
+             (Str.Eq y (EqAsp k (j asp))))))
      ((str.replace x y z) false)
      ((str.at x i) false)
      ((str.int2str i) false)
      ((str.ite b x y)
-      (or (and (SBool.Sem b (ExAsp (model asp))) (Str.Eq x asp))
-          (and (not (SBool.Sem b (ExAsp (model asp)))) (Str.Eq y asp))))
+      (or (and (SBool.Sem b (ExAsp)) (Str.Eq x asp))
+          (and (not (SBool.Sem b (ExAsp))) (Str.Eq y asp))))
      ((str.substr x i n) false)
   )))
 
@@ -819,15 +819,15 @@
 
 (synth-fun f ((arg0 Str)) Str)
 
-(constraint (Str.Eq f (EqAsp m0 0 22)))
-(constraint (Str.Eq f (EqAsp m1 0 25)))
-(constraint (Str.Eq f (EqAsp m2 0 21)))
-(constraint (Str.Eq f (EqAsp m3 0 19)))
-(constraint (Str.Eq f (EqAsp m4 0 23)))
-(constraint (Str.Eq f (EqAsp m5 0 18)))
-(constraint (Str.Eq f (EqAsp m6 0 17)))
-(constraint (Str.Eq f (EqAsp m7 0 20)))
-(constraint (Str.Eq f (EqAsp m8 0 26)))
-(constraint (Str.Eq f (EqAsp m9 0 28)))
+(constraint (with-model m0 (Str.Eq f (EqAsp 0 22))))
+(constraint (with-model m1 (Str.Eq f (EqAsp 0 25))))
+(constraint (with-model m2 (Str.Eq f (EqAsp 0 21))))
+(constraint (with-model m3 (Str.Eq f (EqAsp 0 19))))
+(constraint (with-model m4 (Str.Eq f (EqAsp 0 23))))
+(constraint (with-model m5 (Str.Eq f (EqAsp 0 18))))
+(constraint (with-model m6 (Str.Eq f (EqAsp 0 17))))
+(constraint (with-model m7 (Str.Eq f (EqAsp 0 20))))
+(constraint (with-model m8 (Str.Eq f (EqAsp 0 26))))
+(constraint (with-model m9 (Str.Eq f (EqAsp 0 28))))
 
 (check-synth)

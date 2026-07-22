@@ -52,7 +52,7 @@
 )
 
 (synth-fun f () StrProg)
-(constraint (StrProg.OutEq f (ExAsp ex0)))
-(constraint (StrProg.OutEq f (ExAsp ex1)))
-(constraint (StrProg.OutEq f (ExAsp ex2)))
+(constraint (with-model ex0 (StrProg.OutEq f (ExAsp))))
+(constraint (with-model ex1 (StrProg.OutEq f (ExAsp))))
+(constraint (with-model ex2 (StrProg.OutEq f (ExAsp))))
 (check-synth)

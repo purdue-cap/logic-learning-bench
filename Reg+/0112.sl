@@ -8,14 +8,14 @@
 
 (synth-fun r () RegLan)
 
-(constraint      (RegLan.Sem r (RegLan.Asp w00041 head tail)))
-(constraint      (RegLan.Sem r (RegLan.Asp w00570 head tail)))
-(constraint      (RegLan.Sem r (RegLan.Asp w01210 head tail)))
-(constraint      (RegLan.Sem r (RegLan.Asp w01011 head tail)))
-(constraint      (RegLan.Sem r (RegLan.Asp w00964 head tail)))
-(constraint      (RegLan.Sem r (RegLan.Asp w00564 head tail)))
-(constraint      (RegLan.Sem r (RegLan.Asp w01229 head tail)))
+(constraint      (with-model w00041 (RegLan.Sem r (RegLan.Asp head tail))))
+(constraint      (with-model w00570 (RegLan.Sem r (RegLan.Asp head tail))))
+(constraint      (with-model w01210 (RegLan.Sem r (RegLan.Asp head tail))))
+(constraint      (with-model w01011 (RegLan.Sem r (RegLan.Asp head tail))))
+(constraint      (with-model w00964 (RegLan.Sem r (RegLan.Asp head tail))))
+(constraint      (with-model w00564 (RegLan.Sem r (RegLan.Asp head tail))))
+(constraint      (with-model w01229 (RegLan.Sem r (RegLan.Asp head tail))))
 
-(constraint (not (RegLan.Sem r (RegLan.Asp wempty_deepregex head tail))))
+(constraint (not (with-model wempty_deepregex (RegLan.Sem r (RegLan.Asp head tail)))))
 
 (check-synth)

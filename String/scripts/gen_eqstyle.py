@@ -361,7 +361,7 @@ def obs_x(B: int) -> list[str]:
 def obs_y(yl: int) -> list[str]:
     """Needle chars must be alphabet-observable for (not OccAt) to be exact."""
     return [
-        f"(exists ((cc (univ (Chr (model asp)))))"
+        f"(exists ((cc Chr))"
         f" (Str.CharIs y (CharIsAsp (model asp) pos.{j} cc)))"
         for j in range(yl)
     ]
@@ -539,13 +539,13 @@ def str_occ_at(n_args: int, constants: list[str]) -> list[str]:
         arms.append(f"     ((arg{i}) false)")
     arms.append("     ((str.++ x y) false)")
     charm0 = (
-        "(exists ((cc (univ (Chr (model asp)))))"
+        "(exists ((cc Chr))"
         " (and (Str.CharIs x (CharIsAsp (model asp) (p asp) cc))"
         " (Str.CharIs y (CharIsAsp (model asp) pos.0 cc))))"
     )
     charm1 = (
         f"(ite (= {len_call('y')} pos.2)"
-        " (exists ((cc (univ (Chr (model asp)))))"
+        " (exists ((cc Chr))"
         " (and (Str.CharIs x (CharIsAsp (model asp) (plus.pos (p asp) pos.1) cc))"
         " (Str.CharIs y (CharIsAsp (model asp) pos.1 cc))))"
         " true)"
@@ -592,7 +592,7 @@ def str_eq(
         at_demand = out_demand(0, lambda o: f"(Str.CharEq x (CharEqAsp (model asp) iv {o}))")
         arms.append(
             "     ((str.at x i)\n"
-            "      (exists ((iv (univ (Pos (model asp)))))\n"
+            "      (exists ((iv Pos))\n"
             f"        (and (= iv {sint_call('i')})\n"
             f"             (= (minus.pos (j asp) (i asp)) (ite (ltl.pos iv {len_call('x')}) pos.1 pos.0))\n"
             f"             {at_demand})))"
@@ -600,7 +600,7 @@ def str_eq(
         i2s_demand = out_demand(0, lambda o: f"(digit.eq iv {o})")
         arms.append(
             "     ((str.int2str i)\n"
-            "      (exists ((iv (univ (Pos (model asp)))))\n"
+            "      (exists ((iv Pos))\n"
             f"        (and (= iv {sint_call('i')})\n"
             "             (= (minus.pos (j asp) (i asp)) (int2str.len iv))\n"
             f"             {i2s_demand})))"
@@ -641,7 +641,7 @@ def str_eq(
             "     ((str.substr x i n)\n"
             f"      (and {width_ok}\n"
             "           (or (< (- (j asp) 1) (i asp))\n"
-            "               (exists ((iv (univ (Pos (model asp)))))\n"
+            "               (exists ((iv Pos))\n"
             f"                 (and (= iv {iv_c})\n"
             "                      " + "\n                      ".join(demands) + ")))))"
         )
@@ -666,7 +666,7 @@ def str_char_eq(
         arms.append(f"     ((arg{i}) (arg{i}.chareq (k asp) (o asp)))")
     arms.append(
         "     ((str.++ x y)\n"
-        "      (exists ((lx (univ (Pos (model asp)))))\n"
+        "      (exists ((lx Pos))\n"
         f"        (and (= lx {len_call('x')})\n"
         "             (or (and (ltl.pos (k asp) lx)\n"
         "                      (Str.CharEq x asp))\n"
@@ -682,14 +682,14 @@ def str_char_eq(
     arms.append(
         "     ((str.at x i)\n"
         "      (and (= (k asp) pos.0)\n"
-        "           (exists ((iv (univ (Pos (model asp)))))\n"
+        "           (exists ((iv Pos))\n"
         f"             (and (= iv {sint_call('i')})\n"
         "                  (Str.CharEq x (CharEqAsp (model asp) iv (o asp)))))))"
     )
     arms.append(
         "     ((str.int2str i)\n"
         "      (and (= (k asp) pos.0)\n"
-        "           (exists ((iv (univ (Pos (model asp)))))\n"
+        "           (exists ((iv Pos))\n"
         f"             (and (= iv {sint_call('i')})\n"
         "                  (digit.eq iv (o asp))))))"
     )
@@ -708,7 +708,7 @@ def str_char_eq(
         "     ((str.substr x i n)\n"
         f"      (and (not (= {sint_call('i')} pos.inv))\n"
         f"           (lt.pos (k asp) {sint_call('n')})\n"
-        "           (exists ((iv (univ (Pos (model asp)))))\n"
+        "           (exists ((iv Pos))\n"
         f"             (and (= iv {sint_call('i')})\n"
         "                  (Str.CharEq x (CharEqAsp (model asp) (plus.pos iv (k asp)) (o asp)))))))"
     )
@@ -735,7 +735,7 @@ def str_char_is(n_args: int, constants: list[str], B: int) -> list[str]:
         arms.append(f"     ((arg{i}) (arg{i}.charis (k asp) (c asp)))")
     arms.append(
         "     ((str.++ x y)\n"
-        "      (exists ((lx (univ (Pos (model asp)))))\n"
+        "      (exists ((lx Pos))\n"
         f"        (and (= lx {len_call('x')})\n"
         "             (or (and (ltl.pos (k asp) lx)\n"
         "                      (Str.CharIs x asp))\n"
@@ -750,7 +750,7 @@ def str_char_is(n_args: int, constants: list[str], B: int) -> list[str]:
     arms.append(
         "     ((str.at x i)\n"
         "      (and (= (k asp) pos.0)\n"
-        "           (exists ((iv (univ (Pos (model asp)))))\n"
+        "           (exists ((iv Pos))\n"
         f"             (and (= iv {sint_call('i')})\n"
         "                  (Str.CharIs x (CharIsAsp (model asp) iv (c asp)))))))"
     )
@@ -759,7 +759,7 @@ def str_char_is(n_args: int, constants: list[str], B: int) -> list[str]:
     )
     arms.append(
         "     ((str.int2str i)\n"
-        "      (exists ((iv (univ (Pos (model asp)))))\n"
+        "      (exists ((iv Pos))\n"
         f"        (and (= iv {sint_call('i')})\n"
         f"             (or (and (= (k asp) pos.0) (digit.is iv (c asp))) {second_digit}))))"
     )
@@ -772,7 +772,7 @@ def str_char_is(n_args: int, constants: list[str], B: int) -> list[str]:
         "     ((str.substr x i n)\n"
         f"      (and (not (= {sint_call('i')} pos.inv))\n"
         f"           (lt.pos (k asp) {sint_call('n')})\n"
-        "           (exists ((iv (univ (Pos (model asp)))))\n"
+        "           (exists ((iv Pos))\n"
         f"             (and (= iv {sint_call('i')})\n"
         "                  (Str.CharIs x (CharIsAsp (model asp) (plus.pos iv (k asp)) (c asp)))))))"
     )
@@ -800,20 +800,20 @@ def str_len(
         ly, lx, lz = "(Str.Len y asp)", "(Str.Len x asp)", "(Str.Len z asp)"
         obs = " ".join(
             f"(ite (lt.pos pos.{j} {ly})"
-            f" (exists ((cc (univ (Chr (model asp))))) (Str.CharIs y (CharIsAsp (model asp) pos.{j} cc)))"
+            f" (exists ((cc Chr)) (Str.CharIs y (CharIsAsp (model asp) pos.{j} cc)))"
             f" true)"
             for j in range(2)
         )
         def inline_occ(q: int) -> str:
             charm0 = (
-                f"(exists ((cc (univ (Chr (model asp)))))"
+                f"(exists ((cc Chr))"
                 f" (and (Str.CharIs x (CharIsAsp (model asp) pos.{q} cc))"
                 f" (Str.CharIs y (CharIsAsp (model asp) pos.0 cc))))"
             )
             charm1 = (
                 f"(ite (= {ly} pos.2)"
                 + (
-                    f" (exists ((cc (univ (Chr (model asp)))))"
+                    f" (exists ((cc Chr))"
                     f" (and (Str.CharIs x (CharIsAsp (model asp) pos.{q + 1} cc))"
                     f" (Str.CharIs y (CharIsAsp (model asp) pos.1 cc))))"
                     if q + 1 <= B
@@ -927,7 +927,7 @@ def indexof_expr(B: int) -> str:
         if pp + j > B:
             return "false"
         atom = (
-            f"(exists ((cc (univ (Chr (model asp)))))"
+            f"(exists ((cc Chr))"
             f" (and (Str.CharIs x (CharIsAsp (model asp) pos.{pp + j} cc))"
             f" (Str.CharIs y (CharIsAsp (model asp) pos.{j} cc))))"
         )
@@ -945,7 +945,7 @@ def indexof_expr(B: int) -> str:
         scan = f"(ite {cond} pos.{pp} {scan})"
     obs = " ".join(
         f"(ite (lt.pos pos.{j} {ly})"
-        f" (exists ((cc (univ (Chr (model asp))))) (Str.CharIs y (CharIsAsp (model asp) pos.{j} cc)))"
+        f" (exists ((cc Chr)) (Str.CharIs y (CharIsAsp (model asp) pos.{j} cc)))"
         f" true)"
         for j in range(2)
     )

@@ -29,7 +29,7 @@
 
 
 (define-aspects CTL.Asp
-  (record (model Model) (state U) (depth Ctr)))
+  (record (state U) (depth Ctr)))
 
 (define-semantics
   ((CTL.Sem (phi CTL) (asp CTL.Asp)))
@@ -39,21 +39,21 @@
      ((ctl.not x) (not (CTL.Sem x asp)))
      ((ctl.or x y) (or (CTL.Sem x asp) (CTL.Sem y asp)))
      ((ctl.EX x)
-      (exists ((next (univ (U (model asp)))))
+      (exists ((next U))
         (and (R (state asp) next)
-             (CTL.Sem x (CTL.Asp (model asp) next (depth asp))))))
+             (CTL.Sem x (CTL.Asp next (depth asp))))))
      ((ctl.EG x)
       (and (CTL.Sem x asp)
            (or (= (depth asp) czero)
                (= (depth asp) cbot)
-               (exists ((next (univ (U (model asp)))))
+               (exists ((next U))
                  (and (R (state asp) next)
-                      (CTL.Sem phi (CTL.Asp (model asp) next (next.depth next (depth asp)))))))))
+                      (CTL.Sem phi (CTL.Asp next (next.depth next (depth asp)))))))))
      ((ctl.EU x y)
       (or (CTL.Sem y asp)
           (and (not (= (depth asp) czero))
                (not (= (depth asp) cbot))
                (CTL.Sem x asp)
-               (exists ((next (univ (U (model asp)))))
+               (exists ((next U))
                  (and (R (state asp) next)
-                      (CTL.Sem phi (CTL.Asp (model asp) next (next.depth next (depth asp))))))))))))
+                      (CTL.Sem phi (CTL.Asp next (next.depth next (depth asp))))))))))))

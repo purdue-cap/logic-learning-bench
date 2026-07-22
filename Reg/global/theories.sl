@@ -32,7 +32,7 @@
 ; int-range `0 <= i <= j` bound did); the compiler bounds re.++/re.* quantifiers
 ; via the leq guards inside the body, so no out-of-range sub-aspect is referenced.
 (define-aspects RegLan.Asp
-  (record (model Model) (i Pos) (j Pos))
+  (record (i Pos) (j Pos))
   :where (leq i j))
 
 (define-semantics
@@ -48,15 +48,15 @@
       (or (= (i asp) (j asp))
           (RegLan.Sem x asp)))
      ((re.++ x y)
-      (exists ((k (univ (Pos (model asp)))))
+      (exists ((k Pos))
         (and (leq (i asp) k) (leq k (j asp))
-             (RegLan.Sem x (RegLan.Asp (model asp) (i asp) k))
-             (RegLan.Sem y (RegLan.Asp (model asp) k (j asp))))))
+             (RegLan.Sem x (RegLan.Asp (i asp) k))
+             (RegLan.Sem y (RegLan.Asp k (j asp))))))
      ((re.union x y)
       (or (RegLan.Sem x asp) (RegLan.Sem y asp)))
      ((re.* x)
       (or (= (i asp) (j asp))
-          (exists ((k (univ (Pos (model asp)))))
+          (exists ((k Pos))
             (and (leq (i asp) k) (not (= (i asp) k)) (leq k (j asp))
-                 (RegLan.Sem x (RegLan.Asp (model asp) (i asp) k))
-                 (RegLan.Sem r (RegLan.Asp (model asp) k (j asp))))))))))
+                 (RegLan.Sem x (RegLan.Asp (i asp) k))
+                 (RegLan.Sem r (RegLan.Asp k (j asp))))))))))

@@ -68,8 +68,8 @@
 
 (synth-fun phi () FO0)
 
-(constraint (FO.Sem phi (FO.Asp P0)))
-(constraint (FO.Sem phi (FO.Asp P1)))
-(constraint (not (FO.Sem phi (FO.Asp N0))))
+(constraint (with-model P0 (FO.Sem phi (FO.Asp))))
+(constraint (with-model P1 (FO.Sem phi (FO.Asp))))
+(constraint (not (with-model N0 (FO.Sem phi (FO.Asp)))))
 
 (check-synth)

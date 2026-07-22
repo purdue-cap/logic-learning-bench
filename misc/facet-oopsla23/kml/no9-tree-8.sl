@@ -269,13 +269,13 @@
 
 (synth-fun phi2 () Modal)
 
-(constraint (Modal.Sem phi2 (ModalAsp Tree1 $0)))
-(constraint (Modal.Sem phi2 (ModalAsp Tree2 $0)))
-(constraint (Modal.Sem phi2 (ModalAsp Tree3 $0)))
-(constraint (Modal.Sem phi2 (ModalAsp Tree4 $0)))
-(constraint (not (Modal.Sem phi2 (ModalAsp Tree5 $0))))
-(constraint (not (Modal.Sem phi2 (ModalAsp Tree6 $0))))
-(constraint (not (Modal.Sem phi2 (ModalAsp Tree7 $0))))
-(constraint (not (Modal.Sem phi2 (ModalAsp Tree8 $0))))
+(constraint (with-model Tree1 (Modal.Sem phi2 (ModalAsp $0))))
+(constraint (with-model Tree2 (Modal.Sem phi2 (ModalAsp $0))))
+(constraint (with-model Tree3 (Modal.Sem phi2 (ModalAsp $0))))
+(constraint (with-model Tree4 (Modal.Sem phi2 (ModalAsp $0))))
+(constraint (not (with-model Tree5 (Modal.Sem phi2 (ModalAsp $0)))))
+(constraint (not (with-model Tree6 (Modal.Sem phi2 (ModalAsp $0)))))
+(constraint (not (with-model Tree7 (Modal.Sem phi2 (ModalAsp $0)))))
+(constraint (not (with-model Tree8 (Modal.Sem phi2 (ModalAsp $0)))))
 
 (check-synth)

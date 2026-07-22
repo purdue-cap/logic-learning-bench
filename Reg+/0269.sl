@@ -7,14 +7,14 @@
 
 (synth-fun r () RegLan)
 
-(constraint      (RegLan.Sem r (RegLan.Asp w00006 head tail)))
-(constraint      (RegLan.Sem r (RegLan.Asp w00108 head tail)))
-(constraint      (RegLan.Sem r (RegLan.Asp w00269 head tail)))
-(constraint      (RegLan.Sem r (RegLan.Asp w00341 head tail)))
-(constraint (not (RegLan.Sem r (RegLan.Asp w00034 head tail))))
-(constraint (not (RegLan.Sem r (RegLan.Asp w00343 head tail))))
-(constraint (not (RegLan.Sem r (RegLan.Asp w00193 head tail))))
-(constraint (not (RegLan.Sem r (RegLan.Asp w00399 head tail))))
-(constraint (not (RegLan.Sem r (RegLan.Asp w00403 head tail))))
+(constraint      (with-model w00006 (RegLan.Sem r (RegLan.Asp head tail))))
+(constraint      (with-model w00108 (RegLan.Sem r (RegLan.Asp head tail))))
+(constraint      (with-model w00269 (RegLan.Sem r (RegLan.Asp head tail))))
+(constraint      (with-model w00341 (RegLan.Sem r (RegLan.Asp head tail))))
+(constraint (not (with-model w00034 (RegLan.Sem r (RegLan.Asp head tail)))))
+(constraint (not (with-model w00343 (RegLan.Sem r (RegLan.Asp head tail)))))
+(constraint (not (with-model w00193 (RegLan.Sem r (RegLan.Asp head tail)))))
+(constraint (not (with-model w00399 (RegLan.Sem r (RegLan.Asp head tail)))))
+(constraint (not (with-model w00403 (RegLan.Sem r (RegLan.Asp head tail)))))
 
 (check-synth)

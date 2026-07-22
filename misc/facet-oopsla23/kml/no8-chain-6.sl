@@ -183,11 +183,11 @@
 
 (synth-fun phi1 () Modal)
 
-(constraint (Modal.Sem phi1 (ModalAsp Chain1 $0)))
-(constraint (Modal.Sem phi1 (ModalAsp Chain2 $0)))
-(constraint (Modal.Sem phi1 (ModalAsp Chain3 $0)))
-(constraint (not (Modal.Sem phi1 (ModalAsp Chain4 $0))))
-(constraint (not (Modal.Sem phi1 (ModalAsp Chain5 $0))))
-(constraint (not (Modal.Sem phi1 (ModalAsp Chain6 $0))))
+(constraint (with-model Chain1 (Modal.Sem phi1 (ModalAsp $0))))
+(constraint (with-model Chain2 (Modal.Sem phi1 (ModalAsp $0))))
+(constraint (with-model Chain3 (Modal.Sem phi1 (ModalAsp $0))))
+(constraint (not (with-model Chain4 (Modal.Sem phi1 (ModalAsp $0)))))
+(constraint (not (with-model Chain5 (Modal.Sem phi1 (ModalAsp $0)))))
+(constraint (not (with-model Chain6 (Modal.Sem phi1 (ModalAsp $0)))))
 
 (check-synth)

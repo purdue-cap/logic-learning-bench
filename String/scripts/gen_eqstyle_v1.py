@@ -313,7 +313,7 @@ def str_eq(n_args: int, constants: list[str], L: int, enable_char_ops: bool) -> 
         arms.append(f"     ((arg{i}) (arg{i}.eq (i asp) (j asp)))")
     arms.append(
         "     ((str.++ x y)\n"
-        "      (exists ((k (univ (Pos (model asp)))))\n"
+        "      (exists ((k Pos))\n"
         "        (and (le.pos (i asp) k)\n"
         "             (le.pos k (j asp))\n"
         "             (Str.Eq x (EqAsp (model asp) (i asp) k))\n"
@@ -323,8 +323,8 @@ def str_eq(n_args: int, constants: list[str], L: int, enable_char_ops: bool) -> 
     if enable_char_ops:
         arms.append(
             "     ((str.at x i)\n"
-            "      (exists ((iv (univ (Pos (model asp)))))\n"
-            "        (exists ((lx (univ (Pos (model asp)))))\n"
+            "      (exists ((iv Pos))\n"
+            "        (exists ((lx Pos))\n"
             "          (and (SInt.Is i (IntAsp (model asp) iv))\n"
             "               (Str.Len x (LenAsp (model asp) lx))\n"
             "               (= (minus.pos (j asp) (i asp)) (ite (lt.pos iv lx) pos.1 pos.0))\n"
@@ -334,7 +334,7 @@ def str_eq(n_args: int, constants: list[str], L: int, enable_char_ops: bool) -> 
         )
         arms.append(
             "     ((str.int2str i)\n"
-            "      (exists ((iv (univ (Pos (model asp)))))\n"
+            "      (exists ((iv Pos))\n"
             "        (and (SInt.Is i (IntAsp (model asp) iv))\n"
             f"             (= (minus.pos (j asp) (i asp)) {int2str_len_expr('iv', L)})\n"
             "             (ite (le.pos (plus.pos (i asp) pos.1) (j asp))\n"
@@ -352,10 +352,10 @@ def str_eq(n_args: int, constants: list[str], L: int, enable_char_ops: bool) -> 
     if enable_char_ops:
         arms.append(
             "     ((str.substr x i n)\n"
-            "      (exists ((iv (univ (Pos (model asp)))))\n"
-            "        (exists ((nv (univ (Pos (model asp)))))\n"
-            "          (exists ((lx (univ (Pos (model asp)))))\n"
-            "            (exists ((rlen (univ (Pos (model asp)))))\n"
+            "      (exists ((iv Pos))\n"
+            "        (exists ((nv Pos))\n"
+            "          (exists ((lx Pos))\n"
+            "            (exists ((rlen Pos))\n"
             "              (and (SInt.Is i (IntAsp (model asp) iv))\n"
             "                   (SInt.Is n (IntAsp (model asp) nv))\n"
             "                   (Str.Len x (LenAsp (model asp) lx))\n"
@@ -382,7 +382,7 @@ def str_char_eq(n_args: int, constants: list[str], L: int) -> list[str]:
         arms.append(f"     ((arg{i}) (arg{i}.chareq (k asp) (o asp)))")
     arms.append(
         "     ((str.++ x y)\n"
-        "      (exists ((lx (univ (Pos (model asp)))))\n"
+        "      (exists ((lx Pos))\n"
         "        (and (Str.Len x (LenAsp (model asp) lx))\n"
         "             (or (and (lt.pos (k asp) lx)\n"
         "                      (Str.CharEq x asp))\n"
@@ -392,14 +392,14 @@ def str_char_eq(n_args: int, constants: list[str], L: int) -> list[str]:
     arms.append("     ((str.replace x y z) false)")
     arms.append(
         "     ((str.at x i)\n"
-        "      (exists ((iv (univ (Pos (model asp)))))\n"
+        "      (exists ((iv Pos))\n"
         "        (and (= (k asp) pos.0)\n"
         "             (SInt.Is i (IntAsp (model asp) iv))\n"
         "             (Str.CharEq x (CharEqAsp (model asp) iv (o asp))))))"
     )
     arms.append(
         "     ((str.int2str i)\n"
-        "      (exists ((iv (univ (Pos (model asp)))))\n"
+        "      (exists ((iv Pos))\n"
         "        (and (= (k asp) pos.0)\n"
         "             (SInt.Is i (IntAsp (model asp) iv))\n"
         "             (digit.eq iv (o asp)))))"
@@ -411,10 +411,10 @@ def str_char_eq(n_args: int, constants: list[str], L: int) -> list[str]:
     )
     arms.append(
         "     ((str.substr x i n)\n"
-        "      (exists ((iv (univ (Pos (model asp)))))\n"
-        "        (exists ((nv (univ (Pos (model asp)))))\n"
-        "          (exists ((lx (univ (Pos (model asp)))))\n"
-        "            (exists ((rlen (univ (Pos (model asp)))))\n"
+        "      (exists ((iv Pos))\n"
+        "        (exists ((nv Pos))\n"
+        "          (exists ((lx Pos))\n"
+        "            (exists ((rlen Pos))\n"
         "              (and (SInt.Is i (IntAsp (model asp) iv))\n"
         "                   (SInt.Is n (IntAsp (model asp) nv))\n"
         "                   (Str.Len x (LenAsp (model asp) lx))\n"
@@ -439,8 +439,8 @@ def str_val(n_args: int, constants: list[str]) -> list[str]:
         arms.append(f"     ((arg{i}) (= (v asp) arg{i}.val))")
     arms.append(
         "     ((str.++ x y)\n"
-        "      (exists ((vx (univ (Val (model asp)))))\n"
-        "        (exists ((vy (univ (Val (model asp)))))\n"
+        "      (exists ((vx Val))\n"
+        "        (exists ((vy Val))\n"
         "          (and (Str.Val x (ValAsp (model asp) vx))\n"
         "               (Str.Val y (ValAsp (model asp) vy))\n"
         "               (= (v asp) (concat.val vx vy))))))"
@@ -473,7 +473,7 @@ def str_len(n_args: int, constants: list[str], L: int, enable_char_ops: bool) ->
         arms.append(f"     ((arg{i}) (= (n asp) arg{i}.len))")
     arms.append(
         "     ((str.++ x y)\n"
-        "      (exists ((k (univ (Pos (model asp)))))\n"
+        "      (exists ((k Pos))\n"
         "        (and (Str.Len x (LenAsp (model asp) k))\n"
         "             (Str.Len y (LenAsp (model asp) (minus.pos (n asp) k))))))"
     )
@@ -481,15 +481,15 @@ def str_len(n_args: int, constants: list[str], L: int, enable_char_ops: bool) ->
     if enable_char_ops:
         arms.append(
             "     ((str.at x i)\n"
-            "      (exists ((iv (univ (Pos (model asp)))))\n"
-            "        (exists ((lx (univ (Pos (model asp)))))\n"
+            "      (exists ((iv Pos))\n"
+            "        (exists ((lx Pos))\n"
             "          (and (SInt.Is i (IntAsp (model asp) iv))\n"
             "               (Str.Len x (LenAsp (model asp) lx))\n"
             "               (= (n asp) (ite (lt.pos iv lx) pos.1 pos.0))))))"
         )
         arms.append(
             "     ((str.int2str i)\n"
-            "      (exists ((iv (univ (Pos (model asp)))))\n"
+            "      (exists ((iv Pos))\n"
             "        (and (SInt.Is i (IntAsp (model asp) iv))\n"
             f"             (= (n asp) {int2str_len_expr('iv', L)}))))"
         )
@@ -504,9 +504,9 @@ def str_len(n_args: int, constants: list[str], L: int, enable_char_ops: bool) ->
     if enable_char_ops:
         arms.append(
             "     ((str.substr x i n)\n"
-            "      (exists ((iv (univ (Pos (model asp)))))\n"
-            "        (exists ((nv (univ (Pos (model asp)))))\n"
-            "          (exists ((lx (univ (Pos (model asp)))))\n"
+            "      (exists ((iv Pos))\n"
+            "        (exists ((nv Pos))\n"
+            "          (exists ((lx Pos))\n"
             "            (and (SInt.Is i (IntAsp (model asp) iv))\n"
             "                 (SInt.Is n (IntAsp (model asp) nv))\n"
             "                 (Str.Len x (LenAsp (model asp) lx))\n"
@@ -529,14 +529,14 @@ def sint_is() -> list[str]:
         "     ((int.1) (= (n asp) pos.1))",
         "     ((int.neg1) (= (n asp) pos.neg))",
         "     ((int.+ x y)\n"
-        "      (exists ((a (univ (Pos (model asp)))))\n"
-        "        (exists ((b (univ (Pos (model asp)))))\n"
+        "      (exists ((a Pos))\n"
+        "        (exists ((b Pos))\n"
         "          (and (SInt.Is x (IntAsp (model asp) a))\n"
         "               (SInt.Is y (IntAsp (model asp) b))\n"
         "               (= (n asp) (plus.pos a b))))))",
         "     ((int.- x y)\n"
-        "      (exists ((a (univ (Pos (model asp)))))\n"
-        "        (exists ((b (univ (Pos (model asp)))))\n"
+        "      (exists ((a Pos))\n"
+        "        (exists ((b Pos))\n"
         "          (and (SInt.Is x (IntAsp (model asp) a))\n"
         "               (SInt.Is y (IntAsp (model asp) b))\n"
         "               (= (n asp) (minus.pos a b))))))",
@@ -561,24 +561,24 @@ def sbool_sem() -> list[str]:
         "     ((bool.true) true)",
         "     ((bool.false) false)",
         "     ((bool.= x y)\n"
-        "      (exists ((k (univ (Pos (model asp)))))\n"
+        "      (exists ((k Pos))\n"
         "        (and (SInt.Is x (IntAsp (model asp) k))\n"
         "             (SInt.Is y (IntAsp (model asp) k)))))",
         "     ((bool.prefixof x y)\n"
-        "      (exists ((vx (univ (Val (model asp)))))\n"
-        "        (exists ((vy (univ (Val (model asp)))))\n"
+        "      (exists ((vx Val))\n"
+        "        (exists ((vy Val))\n"
         "          (and (Str.Val x (ValAsp (model asp) vx))\n"
         "               (Str.Val y (ValAsp (model asp) vy))\n"
         "               (prefix.val vx vy)))))",
         "     ((bool.suffixof x y)\n"
-        "      (exists ((vx (univ (Val (model asp)))))\n"
-        "        (exists ((vy (univ (Val (model asp)))))\n"
+        "      (exists ((vx Val))\n"
+        "        (exists ((vy Val))\n"
         "          (and (Str.Val x (ValAsp (model asp) vx))\n"
         "               (Str.Val y (ValAsp (model asp) vy))\n"
         "               (suffix.val vx vy)))))",
         "     ((bool.contains x y)\n"
-        "      (exists ((vx (univ (Val (model asp)))))\n"
-        "        (exists ((vy (univ (Val (model asp)))))\n"
+        "      (exists ((vx Val))\n"
+        "        (exists ((vy Val))\n"
         "          (and (Str.Val x (ValAsp (model asp) vx))\n"
         "               (Str.Val y (ValAsp (model asp) vy))\n"
         "               (contains.val vx vy)))))",

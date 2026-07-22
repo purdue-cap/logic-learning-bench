@@ -9,9 +9,9 @@
 ;; - a labeling (or interpretation) function L: S → 2AP.
 (synth-fun phi () Modal)
 
-(constraint (Modal.Sem phi (ModalAsp K1 $0)))
-(constraint (Modal.Sem phi (ModalAsp K2 $0)))
-(constraint (not (Modal.Sem phi (ModalAsp K3 $0))))
-(constraint (not (Modal.Sem phi (ModalAsp K4 $0))))
+(constraint (with-model K1 (Modal.Sem phi (ModalAsp $0))))
+(constraint (with-model K2 (Modal.Sem phi (ModalAsp $0))))
+(constraint (not (with-model K3 (Modal.Sem phi (ModalAsp $0)))))
+(constraint (not (with-model K4 (Modal.Sem phi (ModalAsp $0)))))
 
 (check-synth)

@@ -8,7 +8,7 @@
  (((t.src)
    (t.nxt TermU))))
 
-(define-aspects TermU.Asp (record (model Model)))
+(define-aspects TermU.Asp (record))
 
 (define-semantics
   ((TermU.Sem (term TermU) (asp TermU.Asp)))

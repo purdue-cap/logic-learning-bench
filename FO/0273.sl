@@ -203,12 +203,12 @@
 
 (synth-fun phi () FO0)
 
-(constraint (FO.Sem phi (FO.Asp P0)))
-(constraint (FO.Sem phi (FO.Asp P1)))
-(constraint (FO.Sem phi (FO.Asp P2)))
-(constraint (FO.Sem phi (FO.Asp P3)))
-(constraint (FO.Sem phi (FO.Asp P4)))
-(constraint (not (FO.Sem phi (FO.Asp N0))))
-(constraint (not (FO.Sem phi (FO.Asp N1))))
+(constraint (with-model P0 (FO.Sem phi (FO.Asp))))
+(constraint (with-model P1 (FO.Sem phi (FO.Asp))))
+(constraint (with-model P2 (FO.Sem phi (FO.Asp))))
+(constraint (with-model P3 (FO.Sem phi (FO.Asp))))
+(constraint (with-model P4 (FO.Sem phi (FO.Asp))))
+(constraint (not (with-model N0 (FO.Sem phi (FO.Asp)))))
+(constraint (not (with-model N1 (FO.Sem phi (FO.Asp)))))
 
 (check-synth)

@@ -7,9 +7,9 @@
 
 (synth-fun r () RegLan)
 
-(constraint      (RegLan.Sem r (RegLan.Asp w00584 head tail)))
-(constraint (not (RegLan.Sem r (RegLan.Asp w00665 head tail))))
-(constraint (not (RegLan.Sem r (RegLan.Asp w00583 head tail))))
-(constraint (not (RegLan.Sem r (RegLan.Asp w00616 head tail))))
+(constraint      (with-model w00584 (RegLan.Sem r (RegLan.Asp head tail))))
+(constraint (not (with-model w00665 (RegLan.Sem r (RegLan.Asp head tail)))))
+(constraint (not (with-model w00583 (RegLan.Sem r (RegLan.Asp head tail)))))
+(constraint (not (with-model w00616 (RegLan.Sem r (RegLan.Asp head tail)))))
 
 (check-synth)

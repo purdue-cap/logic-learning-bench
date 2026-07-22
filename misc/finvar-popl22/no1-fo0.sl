@@ -12,7 +12,7 @@
   ((FO0.term.s)
    (FO0.term.t))))
 
-(define-aspects FO0.Asp (record (model Model)))
+(define-aspects FO0.Asp (record))
 
 (define-semantics
   ((FO0.TermU.Sem (term FO0.TermU) (asp FO0.Asp)))
@@ -36,9 +36,9 @@
 
 (synth-fun phi () FO0.Formula)
 
-(constraint (FO0.Sem phi (FO0.Asp G1)))
-(constraint (FO0.Sem phi (FO0.Asp G2)))
-(constraint (not (FO0.Sem phi (FO0.Asp G3))))
-(constraint (not (FO0.Sem phi (FO0.Asp G4))))
+(constraint (with-model G1 (FO0.Sem phi (FO0.Asp))))
+(constraint (with-model G2 (FO0.Sem phi (FO0.Asp))))
+(constraint (not (with-model G3 (FO0.Sem phi (FO0.Asp)))))
+(constraint (not (with-model G4 (FO0.Sem phi (FO0.Asp)))))
 
 (check-synth)
