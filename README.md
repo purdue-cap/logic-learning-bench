@@ -1,9 +1,9 @@
-# Delis Benchmark Suite
+# Loom Benchmark Suite
 
-This directory contains the benchmark problems used to evaluate **Delis** in the paper
-*"Learning Formulas from Finite Models"* (Wu & Ding, 2025).
+This directory contains the benchmark problems used to evaluate **Loom** in the paper
+*"Efficient Meta-Synthesis for Finite-Aspect Checkable Languages"* (Wu & Qiu 2027).
 Each family corresponds to a representative finite-aspect concept (FAC) language;
-the Delis DSL descriptions live in the `theories/` subdirectories.
+the Loom DSL descriptions live in the `theories/` subdirectories.
 
 ## Families
 
@@ -19,8 +19,8 @@ the Delis DSL descriptions live in the `theories/` subdirectories.
 
 ## File layout
 
-* `0001.sl`, `0002.sl`, … — Delis input files in SyGuS-IF extended with aspects.
-* `theories/` — Delis DSL descriptions (`*.sl`) that define the aspect space, semantics, and grammar for the family.
+* `0001.sl`, `0002.sl`, … — Loom input files in SyGuS-IF extended with aspects.
+* `theories/` — Loom DSL descriptions (`*.sl`) that define the aspect space, semantics, and grammar for the family.
 * Other subdirectories (`sygus/`, `semgus/`, `txt/`, `trace/`, `fol/`, `kst/`, etc.) contain alternative encodings used to run the comparison tools reported in the paper.
 
 ## Running a benchmark
