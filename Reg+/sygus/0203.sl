@@ -1,7 +1,7 @@
 (set-logic SLIA)
 
 ; Converted from upstream Regel benchmark stackoverflow/3.
-; Grammar mirrors delis RegLan theory: char literals actually used + re.allchar + standard ops.
+; Grammar mirrors loom RegLan theory: char literals actually used + re.allchar + standard ops.
 
 (define-fun w1 () String "(0.4545 && 0.567) || 456")
 (define-fun w2 () String "0.456 && 0.567")

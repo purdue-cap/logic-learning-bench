@@ -1,7 +1,7 @@
 (set-logic SLIA)
 
 ; Converted from upstream Regel benchmark deepregex/60.
-; Grammar mirrors the Delis RegLan terminal set plus standard ops.
+; Grammar mirrors the Loom RegLan terminal set plus standard ops.
 
 (define-fun w1 () String "A")
 (define-fun w2 () String "ZaC")

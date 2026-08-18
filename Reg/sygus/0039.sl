@@ -1,8 +1,8 @@
 (set-logic SLIA)
 
-; Converted from benchmark/Reg/sipser/0014.sl (delis semantic format).
+; Converted from benchmark/Reg/sipser/0014.sl (loom semantic format).
 ; Alphabet is {0,1}; no wildcards in source.
-; Grammar mirrors delis RegLan theory, including re.allchar.
+; Grammar mirrors loom RegLan theory, including re.allchar.
 
 (define-fun w1 () String
     "0"

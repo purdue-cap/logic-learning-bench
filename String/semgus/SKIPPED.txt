@@ -38,5 +38,5 @@
 0349.sl	L=42	reason=above-max-l
 0351.sl	L=42	reason=above-max-l
 0352.sl	L=117	reason=above-max-l
-0353.sl	error=no usable constraints in /Users/wuchentian/Codes/Rust/delis/benchmark/String/sygus/0353.sl
+0353.sl	error=no usable constraints in /Users/wuchentian/Codes/Rust/loom/benchmark/String/sygus/0353.sl
 0354.sl	L=89	reason=above-max-l
