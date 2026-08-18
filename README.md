@@ -2,8 +2,7 @@
 
 This directory contains the benchmark problems used to evaluate **Loom** in the paper
 *"Efficient Meta-Synthesis for Finite-Aspect Checkable Languages"* (Wu & Qiu 2027).
-Each family corresponds to a representative finite-aspect concept (FAC) language;
-the Loom DSL descriptions live in the `theories/` subdirectories.
+Each family corresponds to a representative finite-aspect concept (FAC) language.
 
 ## Families
 
@@ -23,22 +22,13 @@ the Loom DSL descriptions live in the `theories/` subdirectories.
 * `theories/` — Loom DSL descriptions (`*.sl`) that define the aspect space, semantics, and grammar for the family.
 * Other subdirectories (`sygus/`, `semgus/`, `txt/`, `trace/`, `fol/`, `kst/`, etc.) contain alternative encodings used to run the comparison tools reported in the paper.
 
-## Running a benchmark
-
-From the repository root:
-
-```sh
-cargo run --release -- benchmark/Reg/0001.sl
-```
-
 ## References
 
-* AlphaRegex: `alpharegex`
-* Regel: `regel`
-* Deepregex: `deepregex`
-* SamplesToLTL: `samples2ltl`
-* LearnCTL: `learnctl`
-* FOLseparators: `folseparators`
-* FlashFill: `flashfill`
-* ASPforCFG: `asp4cfg`
-* Sipser, M. *Introduction to the Theory of Computation*, Chapters 1 & 2.
+* AlphaRegex: [`AlphaRegexPublic`](https://github.com/kupl/AlphaRegexPublic)
+* Regel: [`regel`](https://github.com/utopia-group/regel/)
+* SamplesToLTL: [`samples2ltl`](https://github.com/ivan-gavran/samples2LTL)
+* LearnCTL: [`learnctl`](https://gitlab.lre.epita.fr/adrien/learnctl)
+* FOLseparators: [`folseparators`](https://github.com/jrkoenig/folseparators)
+* FlashFill: [`flashfill`](https://github.com/microsoft/prose-benchmarks)
+* ASPforCFG: [`asp4cfg`](https://gitlab.com/answer-set-programming/asp4cfg)
+* Sipser, M. [*Introduction to the Theory of Computation*](https://math.mit.edu/~sipser/book.html), Chapters 1 & 2.
