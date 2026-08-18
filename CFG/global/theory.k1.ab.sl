@@ -1,7 +1,9 @@
 ;; Shared CFG theory: K=1 nonterminals, alphabet {a,b}.
 ;; Used by the CFG/*.sl instances that (require) it.
 
-(provide CFG Rhs Rules Pos a b succ leq head tail CFG.Asp CFG.Sem Rhs.Sem Rules.Sem)
+(provide CFG Rhs Rules Pos a b succ leq head tail CFG.Asp
+         CFG.Sem Rhs.Sem Rules.Sem
+         CFG.Sem.dual Rhs.Sem.dual Rules.Sem.dual)
 
 (declare-term-types
  ((CFG 0) (Rhs 0) (Rules 0))
@@ -99,3 +101,70 @@
   ((match n
      ((cfg.lhs.S0 x y) (and (= (mode asp) reset.S0) (CFG.Sem (parent n) asp)))
      ((end) (and (= (mode asp) reset.S0) (CFG.Sem (parent n) asp))))))
+
+;; Explicit De Morgan dual of the three CFG evaluators.  Keeping rejection as
+;; its own positive semantics gives the parent-bearing encoder a founded
+;; rejection witness instead of asking it to negate primal acceptance.
+(define-semantics
+  ((CFG.Sem.dual (n CFG) (asp CFG.Asp)))
+  ((match n
+     ((cfg.top.S0 x y)
+      (and
+          (or (not (= (mode asp) reset.S0))
+              (and (Rhs.Sem.dual x (CFG.Asp (i asp) (j asp) base))
+                   (Rules.Sem.dual y (CFG.Asp (i asp) (j asp) find.S0))))
+      )))))
+
+(define-semantics
+  ((Rhs.Sem.dual (n Rhs) (asp CFG.Asp)))
+  ((match n
+     ((a)
+      (and (or (not (= (mode asp) base))
+               (not (succ (j asp) (i asp)))
+               (not (a (i asp))))
+           (or (and (not (= (mode asp) reset.S0)))
+               (CFG.Sem.dual (parent n) asp))))
+     ((b)
+      (and (or (not (= (mode asp) base))
+               (not (succ (j asp) (i asp)))
+               (not (b (i asp))))
+           (or (and (not (= (mode asp) reset.S0)))
+               (CFG.Sem.dual (parent n) asp))))
+     ((cfg.++ x y)
+      (and (or (not (= (mode asp) base))
+               (forall ((k Pos))
+                 (or (not (leq (i asp) k)) (not (leq k (j asp)))
+                     (Rhs.Sem.dual x (CFG.Asp (i asp) k base))
+                     (Rhs.Sem.dual y (CFG.Asp k (j asp) base)))))
+           (or (and (not (= (mode asp) reset.S0)))
+               (CFG.Sem.dual (parent n) asp))))
+     ((cfg.rhs.S0)
+      (or (not (= (mode asp) base))
+          (CFG.Sem.dual (parent n) (CFG.Asp (i asp) (j asp) reset.S0)))))))
+
+(define-semantics
+  ((Rules.Sem.dual (n Rules) (asp CFG.Asp)))
+  ((match n
+     ((cfg.lhs.S0 x y)
+      (and
+          (or (and (not (= (mode asp) reset.S0)))
+              (CFG.Sem.dual (parent n) asp))
+          (or (not (= (mode asp) find.S0))
+              (and (Rhs.Sem.dual x (CFG.Asp (i asp) (j asp) base))
+                   (Rules.Sem.dual y (CFG.Asp (i asp) (j asp) find.S0))))
+      ))
+     ((end) true))))
+
+(define-semantics
+  ((CFG.Sem.dual (n Rhs) (asp CFG.Asp)))
+  ((match n
+     ((a) (or (not (= (mode asp) reset.S0)) (CFG.Sem.dual (parent n) asp)))
+     ((b) (or (not (= (mode asp) reset.S0)) (CFG.Sem.dual (parent n) asp)))
+     ((cfg.++ x y) (or (not (= (mode asp) reset.S0)) (CFG.Sem.dual (parent n) asp)))
+     ((cfg.rhs.S0) (or (not (= (mode asp) reset.S0)) (CFG.Sem.dual (parent n) asp))))))
+
+(define-semantics
+  ((CFG.Sem.dual (n Rules) (asp CFG.Asp)))
+  ((match n
+     ((cfg.lhs.S0 x y) (or (not (= (mode asp) reset.S0)) (CFG.Sem.dual (parent n) asp)))
+     ((end) (or (not (= (mode asp) reset.S0)) (CFG.Sem.dual (parent n) asp))))))
