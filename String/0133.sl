@@ -86,10 +86,10 @@
 (define-aspects ExAsp (record))
 (define-aspects EqAsp
   (record (i Int) (j Int))
-  :where (and (<= i j) (<= j (size (PosOut model)))))
+  :where (and (<= i j) (<= j (size PosOut))))
 (define-aspects CharEqAsp
   (record (k Pos) (o Int))
-  :where (< o (size (PosOut model))))
+  :where (< o (size PosOut)))
 
 (define-semantics
   ((Str.Eq (e Str) (asp EqAsp)))

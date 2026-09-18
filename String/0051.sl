@@ -101,7 +101,7 @@
 (define-aspects ExAsp (record))
 (define-aspects EqAsp
   (record (i Int) (j Int))
-  :where (and (<= i j) (<= j (size (PosOut model)))))
+  :where (and (<= i j) (<= j (size PosOut))))
 
 (define-semantics
   ((Str.Eq (e Str) (asp EqAsp)))
